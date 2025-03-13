@@ -1,9 +1,4 @@
 
-
-Here's a concise English README focused on pattern classification and key findings:
-
----
-
 # Mock Sequence Pattern Analyzer
 
 ## Overview
@@ -62,14 +57,32 @@ output/
      - **cases**: Number of mock sequences in this file
    - Contains detailed mock patterns:
      ```json
-     {
-       "variableName": "network",
-       "variableType": "Network",
-       "mockedClass": "Network",
-       "mockPattern": "Creation:\n- Local Mock Creation",
-       "pattern_id": 2,
-       "statements": [...]
-     }
+      {
+        "variableName": "uuidMock",
+        "variableType": "UUID",
+        "mockedClass": "UUID",
+        "isReuseableMock": false,
+        "mockPattern": "Creation:\n— Attribute Mock Creation\n\nStubbing:\n— None\n\nVerification:\n— None",
+        "classContext": {
+          "packageName": "com.cloud.agent",
+          "filePath": "C:\\java tool\\Apache\\cloudstack\\agent\\src\\test\\java\\com\\cloud\\agent\\AgentShellTest.java",
+          "className": "AgentShellTest"
+        },
+        "statements": [
+          {
+            "type": "FIELD_MOCK_CREATION",
+            "code": "@Mock\r\nUUID uuidMock;",
+            "line": 58,
+            "locate": "Attribute",
+            "locationContext": {
+              "methodName": "[FieldDeclaration]",
+              "methodAnnotations": [
+                "@Mock"
+              ]
+            }
+          }
+        ]
+      }
      ```
 
 4. **Excel Reports**
