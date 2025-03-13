@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "tungstenGuestNetworkIpAddressDao",
+    "variableType": "TungstenGuestNetworkIpAddressDao",
+    "mockedClass": "TungstenGuestNetworkIpAddressDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenGuestNetworkIpAddressDao tungstenGuestNetworkIpAddressDao;",
+        "line": 246,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenGuestNetworkIpAddressDao.persist(any(TungstenGuestNetworkIpAddressVO.class))).thenReturn(tungstenGuestNetworkIpAddressVO);",
+        "line": 604,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateDnsIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenGuestNetworkIpAddressDao.findByNetworkAndGuestIpAddress(anyLong(), anyString())).thenReturn(tungstenGuestNetworkIpAddressVO);",
+        "line": 621,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deallocateDnsIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenGuestNetworkIpAddressDao, times(1)).expunge(anyLong());",
+        "line": 625,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deallocateDnsIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenGuestNetworkIpAddressDao.findByNetworkIdAndPublicIp(anyLong(), anyString())).thenReturn(tungstenGuestNetworkIpAddressVO);",
+        "line": 712,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateLoadBalancerTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenGuestNetworkIpAddressDao.findByNetworkAndLogicalRouter(anyLong(), anyString())).thenReturn(tungstenGuestNetworkIpAddressVO);",
+        "line": 1770,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeNetworkGatewayFromLogicalRouterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

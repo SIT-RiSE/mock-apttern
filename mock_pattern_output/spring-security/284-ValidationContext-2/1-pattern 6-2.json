@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "ValidationContext",
+    "mockedClass": "ValidationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\authentication\\OpenSaml4AuthenticationProviderTests.java",
+      "className": "OpenSaml4AuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ValidationContext context = mock(ValidationContext.class);",
+        "line": 581,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenValidationContextCustomizedThenUsers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(context.getStaticParameters()).willReturn(parameters);",
+        "line": 582,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenValidationContextCustomizedThenUsers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(context, atLeastOnce()).getStaticParameters();",
+        "line": 595,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenValidationContextCustomizedThenUsers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "context",
+    "variableType": "ValidationContext",
+    "mockedClass": "ValidationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml5Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\authentication\\OpenSaml5AuthenticationProviderTests.java",
+      "className": "OpenSaml5AuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ValidationContext context = mock(ValidationContext.class);",
+        "line": 581,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenValidationContextCustomizedThenUsers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(context.getStaticParameters()).willReturn(parameters);",
+        "line": 582,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenValidationContextCustomizedThenUsers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(context, atLeastOnce()).getStaticParameters();",
+        "line": 595,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenValidationContextCustomizedThenUsers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

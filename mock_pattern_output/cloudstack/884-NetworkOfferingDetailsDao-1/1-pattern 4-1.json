@@ -1,0 +1,149 @@
+[
+  {
+    "variableName": "detailsDao",
+    "variableType": "NetworkOfferingDetailsDao",
+    "mockedClass": "NetworkOfferingDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.offerings.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\offerings\\dao\\NetworkOfferingDaoImplTest.java",
+      "className": "NetworkOfferingDaoImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNetworkOfferingDetailsDao detailsDao;",
+        "line": 32,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(detailsDao.getDetail(offeringId, NetworkOffering.Detail.internetProtocol)).thenReturn(null);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetNetworkOfferingInternetProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(detailsDao.getDetail(offeringId, NetworkOffering.Detail.internetProtocol)).thenReturn(\"IPv4\");",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetNetworkOfferingInternetProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(detailsDao.getDetail(offeringId, NetworkOffering.Detail.internetProtocol)).thenReturn(\"IPv6\");",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetNetworkOfferingInternetProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(detailsDao.getDetail(offeringId, NetworkOffering.Detail.internetProtocol)).thenReturn(\"DualStack\");",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetNetworkOfferingInternetProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(detailsDao.getDetail(offeringId, NetworkOffering.Detail.internetProtocol)).thenReturn(null);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetNetworkOfferingInternetProtocolWithDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(detailsDao.getDetail(offeringId, NetworkOffering.Detail.internetProtocol)).thenReturn(\"IPv6\");",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetNetworkOfferingInternetProtocolWithDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(detailsDao.getDetail(offeringId, NetworkOffering.Detail.internetProtocol)).thenReturn(\"\");",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIpv6Supported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(detailsDao.getDetail(offeringId, NetworkOffering.Detail.internetProtocol)).thenReturn(\"IPv4\");",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIpv6Supported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(detailsDao.getDetail(offeringId, NetworkOffering.Detail.internetProtocol)).thenReturn(\"IPv6\");",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIpv6Supported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(detailsDao.getDetail(offeringId, NetworkOffering.Detail.internetProtocol)).thenReturn(\"DualStack\");",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIpv6Supported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

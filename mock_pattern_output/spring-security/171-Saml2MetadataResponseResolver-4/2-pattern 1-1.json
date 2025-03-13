@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "resolver",
+    "variableType": "Saml2MetadataResponseResolver",
+    "mockedClass": "Saml2MetadataResponseResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\Saml2MetadataFilterTests.java",
+      "className": "Saml2MetadataFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Saml2MetadataResponseResolver resolver = mock(Saml2MetadataResponseResolver.class);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenRespondsWithMetadata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(resolver.resolve(this.request)).willReturn(metadata);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenRespondsWithMetadata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

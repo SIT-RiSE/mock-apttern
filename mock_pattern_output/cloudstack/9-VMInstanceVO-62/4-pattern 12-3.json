@@ -1,0 +1,251 @@
+[
+  {
+    "variableName": "vmInstanceMock",
+    "variableType": "VMInstanceVO",
+    "mockedClass": "VMInstanceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VMInstanceVO vmInstanceMock;",
+        "line": 134,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceMock.getId()).thenReturn(vmInstanceVoMockId);",
+        "line": 203,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceMock.getServiceOfferingId()).thenReturn(2L);",
+        "line": 204,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceMock.getState()).thenReturn(State.Stopped);",
+        "line": 353,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckIfCanUpgrade",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceMock.getServiceOfferingId()).thenReturn(1l);",
+        "line": 355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckIfCanUpgrade",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  },
+  {
+    "variableName": "vmInstanceVO",
+    "variableType": "VMInstanceVO",
+    "mockedClass": "VMInstanceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.dpdk",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\dpdk\\DpdkHelperImplTest.java",
+      "className": "DpdkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceVO vmInstanceVO;",
+        "line": 81,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceVO.getType()).thenReturn(VirtualMachine.Type.User);",
+        "line": 129,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceVO.getHostId()).thenReturn(hostId);",
+        "line": 130,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceVO.getServiceOfferingId()).thenReturn(offeringId);",
+        "line": 131,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceVO.getId()).thenReturn(vmId);",
+        "line": 132,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceVO.getType()).thenReturn(VirtualMachine.Type.SecondaryStorageVm);",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVMDpdkEnabledGuestType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  },
+  {
+    "variableName": "virtualMachine",
+    "variableType": "VMInstanceVO",
+    "mockedClass": "VMInstanceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\vm\\UnmanagedVMsManagerImplTest.java",
+      "className": "UnmanagedVMsManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VMInstanceVO virtualMachine;",
+        "line": 187,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualMachine.getState()).thenReturn(VirtualMachine.State.Running);",
+        "line": 327,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualMachine.getInstanceName()).thenReturn(\"i-2-7-VM\");",
+        "line": 328,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualMachine.getId()).thenReturn(virtualMachineId);",
+        "line": 329,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualMachine.getState()).thenReturn(VirtualMachine.State.Destroyed);",
+        "line": 406,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "unmanageVMInstanceDestroyedInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualMachine.getState()).thenReturn(VirtualMachine.State.Expunging);",
+        "line": 412,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "unmanageVMInstanceExpungedInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  }
+]

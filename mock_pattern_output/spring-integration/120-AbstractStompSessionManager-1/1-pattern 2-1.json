@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "sessionManager",
+    "variableType": "AbstractStompSessionManager",
+    "mockedClass": "AbstractStompSessionManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.stomp",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-stomp\\src\\test\\java\\org\\springframework\\integration\\stomp\\StompSessionManagerTests.java",
+      "className": "StompSessionManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractStompSessionManager sessionManager = new AbstractStompSessionManager(stompClient) {\r\n\r\n    private final AtomicBoolean thrown = new AtomicBoolean();\r\n\r\n    @Override\r\n    protected CompletableFuture<StompSession> doConnect(StompSessionHandler handler) {\r\n        if (!this.thrown.getAndSet(true)) {\r\n            throw new RuntimeException(\"intentional\");\r\n        } else {\r\n            CompletableFuture<StompSession> future = new CompletableFuture<>();\r\n            StompSession stompSession = mock(StompSession.class);\r\n            future.complete(stompSession);\r\n            handler.afterConnected(stompSession, getConnectHeaders());\r\n            return future;\r\n        }\r\n    }\r\n};",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoConnectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

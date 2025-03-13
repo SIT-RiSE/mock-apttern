@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "annotationVO",
+    "variableType": "AnnotationVO",
+    "mockedClass": "AnnotationVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.annotation",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\annotation\\AnnotationManagerImplTest.java",
+      "className": "AnnotationManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AnnotationVO annotationVO = Mockito.mock(AnnotationVO.class);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddAnnotationResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(annotationVO.getEntityType()).thenReturn(type);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddAnnotationResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "annotationVO",
+    "variableType": "AnnotationVO",
+    "mockedClass": "AnnotationVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.annotation",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\annotation\\AnnotationManagerImplTest.java",
+      "className": "AnnotationManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AnnotationVO annotationVO = Mockito.mock(AnnotationVO.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveAnnotationResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(annotationVO.getUuid()).thenReturn(annotationUuid);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveAnnotationResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(annotationVO.getUserUuid()).thenReturn(user.getUuid());",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveAnnotationResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(annotationVO.getEntityType()).thenReturn(type);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveAnnotationResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(annotationVO.getEntityUuid()).thenReturn(uuid);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveAnnotationResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

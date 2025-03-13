@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "sc",
+    "variableType": "SearchCriteria<HostPodVO>",
+    "mockedClass": "SearchCriteria",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.router.deployment",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\network\\router\\deployment\\RouterDeploymentDefinitionTest.java",
+      "className": "RouterDeploymentDefinitionTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SearchCriteria<HostPodVO> sc = mock(SearchCriteria.class);",
+        "line": 450,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListByDataCenterIdVMTypeAndStates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(sc, times(1)).setParameters(\"dc\", DATA_CENTER_ID);",
+        "line": 469,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListByDataCenterIdVMTypeAndStates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(sc, times(1)).setJoinParameters(\"vmInstanceSearch\", \"type\", VirtualMachine.Type.User);",
+        "line": 470,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListByDataCenterIdVMTypeAndStates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(sc, times(1)).setJoinParameters(\"vmInstanceSearch\", \"states\", VirtualMachine.State.Starting, VirtualMachine.State.Running);",
+        "line": 471,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListByDataCenterIdVMTypeAndStates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

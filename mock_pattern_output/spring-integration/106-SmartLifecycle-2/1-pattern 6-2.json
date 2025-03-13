@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "lc2",
+    "variableType": "SmartLifecycle",
+    "mockedClass": "SmartLifecycle",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.support",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\support\\SmartLifecycleRoleControllerTests.java",
+      "className": "SmartLifecycleRoleControllerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SmartLifecycle lc2 = mock(SmartLifecycle.class);",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrder",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lc2.getPhase()).thenReturn(1);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrder",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(lc2).start();",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrder",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(lc2).stop();",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrder",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "lc1",
+    "variableType": "SmartLifecycle",
+    "mockedClass": "SmartLifecycle",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.support",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\support\\SmartLifecycleRoleControllerTests.java",
+      "className": "SmartLifecycleRoleControllerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SmartLifecycle lc1 = mock(SmartLifecycle.class);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrder",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lc1.getPhase()).thenReturn(2);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrder",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(lc1).start();",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrder",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(lc1).stop();",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrder",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

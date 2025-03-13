@@ -1,0 +1,413 @@
+[
+  {
+    "variableName": "writer",
+    "variableType": "PrintWriter",
+    "mockedClass": "PrintWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.util",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\util\\OnCommittedResponseWrapperTests.java",
+      "className": "OnCommittedResponseWrapperTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nPrintWriter writer;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.writer.checkError()).willReturn(expected);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterCheckError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).write(expected);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterWriteInt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).write(buff, off, len);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterWriteCharIntInt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).write(buff);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterWriteChar",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).write(s, off, len);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterWriteStringIntInt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).write(s);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterWriteString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).print(b);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintBoolean",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).print(c);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintChar",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).print(i);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintInt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).print(l);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintLong",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).print(f);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintFloat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).print(x);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintDouble",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).print(x);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintCharArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).print(x);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).print(x);",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).println();",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintln",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).println(b);",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintlnBoolean",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).println(c);",
+        "line": 222,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintlnChar",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).println(i);",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintlnInt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).println(l);",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintlnLong",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).println(f);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintlnFloat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).println(x);",
+        "line": 254,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintlnDouble",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).println(x);",
+        "line": 262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintlnCharArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).println(x);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintlnString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).println(x);",
+        "line": 278,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintlnObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).printf(format, args);",
+        "line": 287,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintfStringObjectVargs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).printf(l, format, args);",
+        "line": 297,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterPrintfLocaleStringObjectVargs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).format(format, args);",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterFormatStringObjectVargs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).format(l, format, args);",
+        "line": 316,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterFormatLocaleStringObjectVargs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).append(x);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterAppendCharSequence",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).append(x, start, end);",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterAppendCharSequenceIntInt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.writer).append(x);",
+        "line": 342,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "printWriterAppendChar",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

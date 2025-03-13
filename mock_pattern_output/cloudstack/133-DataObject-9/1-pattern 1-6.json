@@ -1,0 +1,236 @@
+[
+  {
+    "variableName": "srcObj",
+    "variableType": "DataObject",
+    "mockedClass": "DataObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\integration-test\\src\\test\\java\\org\\apache\\cloudstack\\storage\\test\\EndpointSelectorTest.java",
+      "className": "EndpointSelectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataObject srcObj = mock(DataObject.class);",
+        "line": 290,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcObj.getDataStore()).thenReturn(srcStore);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destObj",
+    "variableType": "DataObject",
+    "mockedClass": "DataObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\integration-test\\src\\test\\java\\org\\apache\\cloudstack\\storage\\test\\EndpointSelectorTest.java",
+      "className": "EndpointSelectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataObject destObj = mock(DataObject.class);",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destObj.getDataStore()).thenReturn(destStore);",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "DataObject",
+    "mockedClass": "DataObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataObject srcData = Mockito.mock(DataObject.class);",
+        "line": 487,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyOfflineVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getTO()).thenReturn(srcDataTO);",
+        "line": 489,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyOfflineVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destData",
+    "variableType": "DataObject",
+    "mockedClass": "DataObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataObject destData = Mockito.mock(DataObject.class);",
+        "line": 490,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyOfflineVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getTO()).thenReturn(destDataTO);",
+        "line": 492,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyOfflineVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "DataObject",
+    "mockedClass": "DataObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataObject srcData = Mockito.mock(DataObject.class);",
+        "line": 511,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyOfflineVolumeFailureWhenNoEndpointFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getTO()).thenReturn(srcDataTO);",
+        "line": 513,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyOfflineVolumeFailureWhenNoEndpointFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destData",
+    "variableType": "DataObject",
+    "mockedClass": "DataObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataObject destData = Mockito.mock(DataObject.class);",
+        "line": 514,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyOfflineVolumeFailureWhenNoEndpointFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getTO()).thenReturn(destDataTO);",
+        "line": 516,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyOfflineVolumeFailureWhenNoEndpointFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

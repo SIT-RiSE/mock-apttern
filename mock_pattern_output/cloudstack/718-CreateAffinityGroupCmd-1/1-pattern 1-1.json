@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "mockCreateAffinityGroupCmd",
+    "variableType": "CreateAffinityGroupCmd",
+    "mockedClass": "CreateAffinityGroupCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.affinity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\affinity\\AffinityGroupServiceImplTest.java",
+      "className": "AffinityGroupServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateAffinityGroupCmd mockCreateAffinityGroupCmd = Mockito.mock(CreateAffinityGroupCmd.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAffinityGroupFromCmdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockCreateAffinityGroupCmd.getProjectId()).thenReturn(PROJECT_ID);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAffinityGroupFromCmdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockCreateAffinityGroupCmd.getAffinityGroupName()).thenReturn(AFFINITY_GROUP_NAME);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAffinityGroupFromCmdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockCreateAffinityGroupCmd.getAffinityGroupType()).thenReturn(\"mock\");",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAffinityGroupFromCmdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockCreateAffinityGroupCmd.getDescription()).thenReturn(\"affinity group one\");",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAffinityGroupFromCmdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

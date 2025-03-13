@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "tungstenProvider",
+    "variableType": "TungstenProviderVO",
+    "mockedClass": "TungstenProviderVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TungstenProviderVO tungstenProvider = mock(TungstenProviderVO.class);",
+        "line": 879,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processHostAboutToBeRemovedWithSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenProvider.getGateway()).thenReturn(\"192.168.100.100\");",
+        "line": 886,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processHostAboutToBeRemovedWithSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "tungstenProvider",
+    "variableType": "TungstenProviderVO",
+    "mockedClass": "TungstenProviderVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TungstenProviderVO tungstenProvider = mock(TungstenProviderVO.class);",
+        "line": 899,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processHostAboutToBeRemovedWithoutSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenProvider.getGateway()).thenReturn(\"192.168.100.100\");",
+        "line": 905,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processHostAboutToBeRemovedWithoutSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "tungstenProviderVO",
+    "variableType": "TungstenProviderVO",
+    "mockedClass": "TungstenProviderVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TungstenProviderVO tungstenProviderVO = mock(TungstenProviderVO.class);",
+        "line": 1593,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSharedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenProviderVO.getGateway()).thenReturn(\"192.168.100.1\");",
+        "line": 1625,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSharedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

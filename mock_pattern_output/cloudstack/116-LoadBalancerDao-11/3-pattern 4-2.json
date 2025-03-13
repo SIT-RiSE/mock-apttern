@@ -1,0 +1,200 @@
+[
+  {
+    "variableName": "lbDao",
+    "variableType": "LoadBalancerDao",
+    "mockedClass": "LoadBalancerDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLoadBalancerDao lbDao;",
+        "line": 148,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.listByIpAddress(anyLong())).thenReturn(loadBalancerVOList);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.listByIpAddress(anyLong())).thenReturn(loadBalancerVOList);",
+        "line": 441,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.listByIpAddress(anyLong())).thenReturn(loadBalancerVOList1);",
+        "line": 474,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesRevokeRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.listByIpAddress(anyLong())).thenReturn(loadBalancerVOList);",
+        "line": 507,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesRevokeRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "lbDao",
+    "variableType": "LoadBalancerDao",
+    "mockedClass": "LoadBalancerDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLoadBalancerDao lbDao;",
+        "line": 219,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.findById(loadBalancerId)).thenReturn(loadBalancerMock);",
+        "line": 946,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.findById(loadBalancerId)).thenReturn(loadBalancerMock);",
+        "line": 1059,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.findById(loadBalancerId)).thenReturn(loadBalancerMock);",
+        "line": 1890,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.findById(loadBalancerId)).thenReturn(null);",
+        "line": 1901,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getNetworkFail1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.findById(loadBalancerId)).thenReturn(loadBalancerMock);",
+        "line": 1908,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getNetworkFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.findById(loadBalancerId)).thenReturn(loadBalancerMock);",
+        "line": 1917,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getPublicIpAndPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.findById(loadBalancerId)).thenReturn(null);",
+        "line": 1931,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getPublicIpAndPortFail1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbDao.findById(loadBalancerId)).thenReturn(loadBalancerMock);",
+        "line": 1937,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getPublicIpAndPortFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

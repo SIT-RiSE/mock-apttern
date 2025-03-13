@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "securityGroupVMMapDao",
+    "variableType": "SecurityGroupVMMapDao",
+    "mockedClass": "SecurityGroupVMMapDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSecurityGroupVMMapDao securityGroupVMMapDao;",
+        "line": 264,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityGroupVMMapDao.listVmIdsBySecurityGroup(anyLong())).thenReturn(List.of(1L));",
+        "line": 785,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityGroupVMMapDao.listVmIdsBySecurityGroup(anyLong())).thenReturn(List.of(1L));",
+        "line": 841,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

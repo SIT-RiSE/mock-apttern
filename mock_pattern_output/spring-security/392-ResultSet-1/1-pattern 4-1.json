@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "resultSet",
+    "variableType": "ResultSet",
+    "mockedClass": "ResultSet",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.jdbc",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\jdbc\\AclClassIdUtilsTests.java",
+      "className": "AclClassIdUtilsTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ResultSet resultSet;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.resultSet.getString(\"class_id_type\")).willReturn(null);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldReturnLongIfClassIdTypeIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.resultSet.getString(\"class_id_type\")).willThrow(SQLException.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldReturnLongIfNoClassIdTypeColumn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.resultSet.getString(\"class_id_type\")).willReturn(\"com.example.UnknownType\");",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldReturnLongIfTypeClassNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.resultSet.getString(\"class_id_type\")).willReturn(\"java.lang.Long\");",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldReturnLongEvenIfCustomConversionServiceDoesNotSupportLongConversion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.resultSet.getString(\"class_id_type\")).willReturn(\"java.lang.Long\");",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldReturnLongWhenLongClassIdType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.resultSet.getString(\"class_id_type\")).willReturn(\"java.util.UUID\");",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldReturnUUIDWhenUUIDClassIdType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.resultSet.getString(\"class_id_type\")).willReturn(\"java.lang.String\");",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldReturnStringWhenStringClassIdType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

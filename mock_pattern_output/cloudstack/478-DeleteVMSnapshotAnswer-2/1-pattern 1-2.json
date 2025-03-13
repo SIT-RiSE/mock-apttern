@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "answer",
+    "variableType": "DeleteVMSnapshotAnswer",
+    "mockedClass": "DeleteVMSnapshotAnswer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DeleteVMSnapshotAnswer answer = Mockito.mock(DeleteVMSnapshotAnswer.class);",
+        "line": 294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteVMsnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(answer.getResult()).thenReturn(true);",
+        "line": 295,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteVMsnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "answer",
+    "variableType": "DeleteVMSnapshotAnswer",
+    "mockedClass": "DeleteVMSnapshotAnswer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyTest.java",
+      "className": "VMSnapshotStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DeleteVMSnapshotAnswer answer = Mockito.mock(DeleteVMSnapshotAnswer.class);",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteVMSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(answer.getResult()).thenReturn(true);",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteVMSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

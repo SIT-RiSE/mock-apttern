@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "addrMgr",
+    "variableType": "IpAddressManager",
+    "mockedClass": "IpAddressManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.firewall",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\firewall\\FirewallManagerTest.java",
+      "className": "FirewallManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "IpAddressManager addrMgr = mock(IpAddressManager.class);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyRules",
+          "methodAnnotations": [
+            "@Ignore",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(addrMgr).applyRules(any(List.class), any(FirewallRule.Purpose.class), any(NetworkRuleApplier.class), anyBoolean());",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyRules",
+          "methodAnnotations": [
+            "@Ignore",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

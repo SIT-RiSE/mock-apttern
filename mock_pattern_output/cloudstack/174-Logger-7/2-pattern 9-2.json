@@ -1,0 +1,467 @@
+[
+  {
+    "variableName": "loggerMock",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.upgrade.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\upgrade\\dao\\DatabaseAccessObjectTest.java",
+      "className": "DatabaseAccessObjectTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Logger loggerMock;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(contains(\"successfully\"));",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(\"Created index myindex\");",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createIndexTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(contains(\"Exception\"));",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(contains(\"Exception\"));",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenKeyIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(contains(\"successfully\"));",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenKeysAreForeignKeys",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(contains(\"Exception\"));",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenPrepareStatementResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(contains(\"Exception\"));",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenExecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(0)).warn(anyString(), any(Throwable.class));",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClosePreparedStatementWhenPreparedStatementIsNull",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(0)).warn(anyString(), any(Throwable.class));",
+        "line": 259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClosePreparedStatementWhenPreparedStatementIsNotNullAndThereIsNoException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).warn(errorMessage, sqlException);",
+        "line": 274,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClosePreparedStatementWhenPreparedStatementIsNotNullAndThereIsException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(contains(\"successfully\"));",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(contains(\"Exception\"));",
+        "line": 314,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(contains(\"Exception\"));",
+        "line": 330,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenPrepareStatementResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(contains(\"Exception\"));",
+        "line": 347,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenExecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(0)).debug(anyString(), any(Throwable.class));",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(anyString());",
+        "line": 390,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExistsWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(anyString());",
+        "line": 408,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExistsWhenColumnNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).debug(anyString());",
+        "line": 425,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(0)).warn(anyString(), any(Throwable.class));",
+        "line": 426,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(0)).debug(anyString());",
+        "line": 454,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).warn(anyString(), eq(sqlException));",
+        "line": 455,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(0)).debug(anyString());",
+        "line": 473,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenColumnNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).warn(anyString(), eq(sqlException));",
+        "line": 474,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenColumnNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(0)).debug(anyString());",
+        "line": 491,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenPrepareStatementResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).warn(anyString(), eq(sqlException));",
+        "line": 492,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenPrepareStatementResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(0)).debug(anyString());",
+        "line": 510,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenexecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, times(1)).warn(anyString(), eq(sqlException));",
+        "line": 511,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenexecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "loggerMock",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLogger loggerMock;",
+        "line": 240,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(loggerMock).error(Mockito.anyString(), Mockito.any());",
+        "line": 6141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmsToSetMemoryBalloonStatsPeriodTestLibvirtError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(loggerMock).info(\"Skipping the memory balloon stats period setting, since there are no VMs (active Libvirt domains) on this host.\");",
+        "line": 6151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmsToSetMemoryBalloonStatsPeriodTestWithNoVMs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(loggerMock).info(String.format(\"The [%s] property is set to '0', this prevents memory statistics from being displayed correctly. \" + \"Adjust (increase) the value of this parameter to correct this.\", AgentProperties.VM_MEMBALLOON_STATS_PERIOD.getName()));",
+        "line": 6186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCurrentVmBalloonStatsPeriodTestWhenStatsPeriodIsZero",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(loggerMock).debug(\"The memory balloon stats period [0] has been set successfully for the VM (Libvirt Domain) with ID [1] and name [fake-VM-name].\");",
+        "line": 6224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setupMemoryBalloonStatsPeriodTestMemBalloonPropertyDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(loggerMock).error(\"Unable to set up memory balloon stats period for VM (Libvirt Domain) with ID [1] due to an error when running the [virsh \" + \"dommemstat 1 --period 60 --live] command. Output: [some-fake-error].\");",
+        "line": 6239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setupMemoryBalloonStatsPeriodTestErrorWhenSetNewPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(loggerMock, Mockito.never()).error(Mockito.anyString());",
+        "line": 6257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setupMemoryBalloonStatsPeriodTestSetNewPeriodSuccessfully",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(loggerMock).debug(\"Skipping the memory balloon stats period setting for the VM (Libvirt Domain) with ID [1] and name [fake-VM-name] because this\" + \" VM has no memory balloon.\");",
+        "line": 6270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setupMemoryBalloonStatsPeriodTestSkipVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

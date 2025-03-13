@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "violationException",
+    "variableType": "ConstraintViolationException",
+    "mockedClass": "ConstraintViolationException",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.protocol.rest",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-rest\\src\\test\\java\\org\\apache\\dubbo\\rpc\\protocol\\rest\\RpcExceptionMapperTest.java",
+      "className": "RpcExceptionMapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConstraintViolationException violationException = mock(ConstraintViolationException.class);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConstraintViolationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(violationException.getConstraintViolations()).willReturn(Sets.newSet(violation));",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConstraintViolationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

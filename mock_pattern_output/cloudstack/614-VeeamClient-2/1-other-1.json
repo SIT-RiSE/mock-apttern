@@ -1,0 +1,111 @@
+[
+  {
+    "variableName": "mockClient",
+    "variableType": "VeeamClient",
+    "mockedClass": "VeeamClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.backup.veeam",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\backup\\veeam\\src\\test\\java\\org\\apache\\cloudstack\\backup\\veeam\\VeeamClientTest.java",
+      "className": "VeeamClientTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private VeeamClient mockClient;",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockClient = Mockito.mock(VeeamClient.class);",
+        "line": 70,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockClient.getRepositoryNameFromJob(Mockito.anyString())).thenCallRealMethod();",
+        "line": 71,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockClient.getVeeamServerVersion()).thenCallRealMethod();",
+        "line": 72,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockClient.get(Mockito.anyString())).thenReturn(httpResponse);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfRestoreSessionFinishedTestTimeoutException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockClient.parseRestoreSessionResponse(httpResponse)).thenReturn(restoreSession);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfRestoreSessionFinishedTestTimeoutException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockClient.checkIfRestoreSessionFinished(Mockito.eq(\"RestoreTest\"), Mockito.eq(\"any\"))).thenCallRealMethod();",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfRestoreSessionFinishedTestTimeoutException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockClient, times(10)).get(Mockito.anyString());",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfRestoreSessionFinishedTestTimeoutException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 21
+  }
+]

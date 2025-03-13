@@ -1,0 +1,108 @@
+[
+  {
+    "variableName": "template",
+    "variableType": "KafkaTemplate<String,String>",
+    "mockedClass": "KafkaTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "KafkaTemplate<String, String> template = mock(KafkaTemplate.class);",
+        "line": 746,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTxNonTx",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(template.isTransactional()).willReturn(true);",
+        "line": 747,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTxNonTx",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(template.inTransaction()).willReturn(false);",
+        "line": 748,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTxNonTx",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(template.isAllowNonTransactional()).willReturn(true);",
+        "line": 749,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTxNonTx",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(template.getProducerFactory()).willReturn(mock(ProducerFactory.class));",
+        "line": 750,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTxNonTx",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(template, never()).executeInTransaction(any());",
+        "line": 754,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTxNonTx",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(template).send(any(ProducerRecord.class));",
+        "line": 755,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTxNonTx",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "variableName": "mockFactory",
+    "variableType": "LoadedSegmentDataProviderFactory",
+    "mockedClass": "LoadedSegmentDataProviderFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.msq.test",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-core\\multi-stage-query\\src\\test\\java\\org\\apache\\druid\\msq\\test\\CalciteMSQTestsHelper.java",
+      "className": "CalciteMSQTestsHelper"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Currently, there is no metadata in this test for loaded segments. Therefore, this should not be called.\r\n// In the future, if this needs to be supported, mocks for LoadedSegmentDataProvider should be added like\r\n// org.apache.druid.msq.exec.MSQLoadedSegmentTests.\r\nLoadedSegmentDataProviderFactory mockFactory = Mockito.mock(LoadedSegmentDataProviderFactory.class);",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTestLoadedSegmentDataProviderFactory",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "mockFactory",
+    "variableType": "LoadedSegmentDataProviderFactory",
+    "mockedClass": "LoadedSegmentDataProviderFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.msq.test",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-core\\multi-stage-query\\src\\test\\java\\org\\apache\\druid\\msq\\test\\MSQTestBase.java",
+      "className": "MSQTestBase"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LoadedSegmentDataProviderFactory mockFactory = Mockito.mock(LoadedSegmentDataProviderFactory.class);",
+        "line": 587,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTestLoadedSegmentDataProviderFactory",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

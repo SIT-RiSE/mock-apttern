@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "extensionElementProvider",
+    "variableType": "GcmExtensionProvider",
+    "mockedClass": "GcmExtensionProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.xmpp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-xmpp\\src\\test\\java\\org\\springframework\\integration\\xmpp\\outbound\\ChatMessageSendingMessageHandlerTests.java",
+      "className": "ChatMessageSendingMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "GcmExtensionProvider extensionElementProvider = spy(new GcmExtensionProvider());",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExtensionProvider",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(extensionElementProvider).from(eq(json));",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExtensionProvider",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

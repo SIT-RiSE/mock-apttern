@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "t",
+    "variableType": "Thread",
+    "mockedClass": "Thread",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\NamedThreadFactoryTest.java",
+      "className": "NamedThreadFactoryTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Thread t = factory.newThread(Mockito.mock(Runnable.class));",
+        "line": 40,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewThread",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "t",
+    "variableType": "Thread",
+    "mockedClass": "Thread",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\NamedThreadFactoryTest.java",
+      "className": "NamedThreadFactoryTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Thread t = factory.newThread(Mockito.mock(Runnable.class));",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrefixAndDaemon",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

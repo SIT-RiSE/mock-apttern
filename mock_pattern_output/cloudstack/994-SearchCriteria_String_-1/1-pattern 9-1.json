@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "sc",
+    "variableType": "SearchCriteria<String>",
+    "mockedClass": "SearchCriteria<String>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.api.query",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\query\\MutualExclusiveIdsManagerBaseTest.java",
+      "className": "MutualExclusiveIdsManagerBaseTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSearchCriteria<String> sc;",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(sc).setParameters(Mockito.same(\"idIN\"), Mockito.same(id1), Mockito.same(id2));",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetIdsListToSearchCriteria",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(sc, never()).setParameters(Mockito.anyString(), Mockito.any());",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetIdsListToSearchCriteriaEmptyList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

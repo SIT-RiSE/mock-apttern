@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "valueIndex",
+    "variableType": "DictionaryEncodedStringValueIndex",
+    "mockedClass": "DictionaryEncodedStringValueIndex",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.cli",
+      "filePath": "C:\\java tool\\Apache\\druid\\services\\src\\test\\java\\org\\apache\\druid\\cli\\DumpSegmentTest.java",
+      "className": "DumpSegmentTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DictionaryEncodedStringValueIndex valueIndex = Mockito.mock(DictionaryEncodedStringValueIndex.class);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDumpBitmap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(valueIndex.getCardinality()).thenReturn(1);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDumpBitmap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(valueIndex.getBitmap(0)).thenReturn(bitmap);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDumpBitmap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(valueIndex.getValue(0)).thenReturn(\"val\");",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDumpBitmap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "cache",
+    "variableType": "Cache",
+    "mockedClass": "Cache",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Cache cache = mock(Cache.class);",
+        "line": 725,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(cache.get(eq(JWK_SET_URI), eq(String.class))).willReturn(JWK_SET);",
+        "line": 726,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(cache.get(eq(JWK_SET_URI))).willReturn(new SimpleValueWrapper(JWK_SET));",
+        "line": 727,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

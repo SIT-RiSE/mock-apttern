@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "resourceTag",
+    "variableType": "ResourceTag",
+    "mockedClass": "ResourceTag",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.tags",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\tags\\TaggedResourceManagerImplTest.java",
+      "className": "TaggedResourceManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ResourceTag resourceTag = Mockito.mock(ResourceTag.class);",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckTagsDeletePermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resourceTag.getAccountId()).thenReturn(accountId);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckTagsDeletePermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "resourceTag2",
+    "variableType": "ResourceTag",
+    "mockedClass": "ResourceTag",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.tags",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\tags\\TaggedResourceManagerImplTest.java",
+      "className": "TaggedResourceManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ResourceTag resourceTag2 = Mockito.mock(ResourceTag.class);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckTagsDeletePermissionFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resourceTag2.getAccountId()).thenReturn(ownerAccountId);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckTagsDeletePermissionFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "resourceTag1",
+    "variableType": "ResourceTag",
+    "mockedClass": "ResourceTag",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.tags",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\tags\\TaggedResourceManagerImplTest.java",
+      "className": "TaggedResourceManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ResourceTag resourceTag1 = Mockito.mock(ResourceTag.class);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckTagsDeletePermissionFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resourceTag1.getAccountId()).thenReturn(callerAccountId);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckTagsDeletePermissionFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

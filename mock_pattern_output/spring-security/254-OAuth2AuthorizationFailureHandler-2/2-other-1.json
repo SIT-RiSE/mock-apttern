@@ -1,0 +1,85 @@
+[
+  {
+    "variableName": "authorizationFailureHandler",
+    "variableType": "OAuth2AuthorizationFailureHandler",
+    "mockedClass": "OAuth2AuthorizationFailureHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Other Methods\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServletOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServletOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate OAuth2AuthorizationFailureHandler authorizationFailureHandler;",
+        "line": 155,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizationFailureHandler).onAuthorizationFailure(this.authorizationExceptionCaptor.capture(), this.authenticationCaptor.capture(), this.attributesCaptor.capture());",
+        "line": 700,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "assertHttpStatusInvokesFailureHandler",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizationFailureHandler).onAuthorizationFailure(this.authorizationExceptionCaptor.capture(), this.authenticationCaptor.capture(), this.attributesCaptor.capture());",
+        "line": 735,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenWWWAuthenticateHeaderIncludesErrorThenInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizationFailureHandler).onAuthorizationFailure(this.authorizationExceptionCaptor.capture(), this.authenticationCaptor.capture(), this.attributesCaptor.capture());",
+        "line": 783,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "assertHttpStatusWithWebClientExceptionInvokesFailureHandler",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizationFailureHandler).onAuthorizationFailure(this.authorizationExceptionCaptor.capture(), this.authenticationCaptor.capture(), this.attributesCaptor.capture());",
+        "line": 816,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationExceptionThenInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.authorizationFailureHandler);",
+        "line": 845,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenOtherHttpStatusThenDoesNotInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 49
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "entityManagerMock",
+    "variableType": "EntityManager",
+    "mockedClass": "EntityManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate EntityManager entityManagerMock;",
+        "line": 83,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(entityManagerMock).findById(Vpc.class, networkMockVpcMockId);",
+        "line": 422,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateNetworkAclTestAclNotDefaulWithVpc",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(entityManagerMock).findById(Mockito.eq(Vpc.class), Mockito.anyLong());",
+        "line": 886,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(entityManagerMock).findById(eq(Vpc.class), Mockito.anyLong());",
+        "line": 1086,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(entityManagerMock).findById(Vpc.class, networkMockVpcMockId);",
+        "line": 1117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMoveAclRulesDataTestSuccesfullExecution",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "storagePoolHostVO",
+    "variableType": "StoragePoolHostVO",
+    "mockedClass": "StoragePoolHostVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\guru\\VMwareGuruTest.java",
+      "className": "VMwareGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StoragePoolHostVO storagePoolHostVO = Mockito.mock(StoragePoolHostVO.class);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "finalizeMigrateForLocalStorageToHaveTargetHostGuid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(storagePoolHostVO.getHostId()).thenReturn(2L);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "finalizeMigrateForLocalStorageToHaveTargetHostGuid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

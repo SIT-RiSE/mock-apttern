@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "vpcMock",
+    "variableType": "Vpc",
+    "mockedClass": "Vpc",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\VpcManagerImplTest.java",
+      "className": "VpcManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Vpc vpcMock = Mockito.mock(Vpc.class);",
+        "line": 319,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVpcNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcMock.isRegionLevelVpc()).thenReturn(true);",
+        "line": 330,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVpcNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcMock.getId()).thenReturn(VPC_ID);",
+        "line": 332,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVpcNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcMock.getCidr()).thenReturn(\"10.0.0.0/8\");",
+        "line": 338,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVpcNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcMock.getNetworkDomain()).thenReturn(\"cs1cloud.internal\");",
+        "line": 339,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVpcNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

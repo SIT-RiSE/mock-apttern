@@ -1,0 +1,131 @@
+[
+  {
+    "variableName": "namingService",
+    "variableType": "NamingService",
+    "mockedClass": "NacosNamingService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosRegistryTest.java",
+      "className": "NacosRegistryTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NamingService namingService = mock(NacosNamingService.class);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(namingService.getAllInstances(serviceName, this.registryUrl.getParameter(GROUP_KEY, Constants.DEFAULT_GROUP))).thenReturn(instances);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "namingService",
+    "variableType": "NamingService",
+    "mockedClass": "NacosNamingService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosRegistryTest.java",
+      "className": "NacosRegistryTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NamingService namingService = mock(NacosNamingService.class);",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(namingService.getAllInstances(serviceName, this.registryUrl.getParameter(GROUP_KEY, Constants.DEFAULT_GROUP))).thenReturn(instances);",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "namingService",
+    "variableType": "NamingService",
+    "mockedClass": "NacosNamingService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosRegistryTest.java",
+      "className": "NacosRegistryTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NamingService namingService = mock(NacosNamingService.class);",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsConformRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(namingService.getAllInstances(serviceName, this.registryUrl.getParameter(GROUP_KEY, Constants.DEFAULT_GROUP))).thenReturn(instances);",
+        "line": 262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsConformRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(namingService.getServicesOfServer(1, Integer.MAX_VALUE, registryUrl.getParameter(GROUP_KEY, Constants.DEFAULT_GROUP))).thenReturn(result);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsConformRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

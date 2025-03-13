@@ -1,0 +1,137 @@
+[
+  {
+    "variableName": "server",
+    "variableType": "RemotingServer",
+    "mockedClass": "RemotingServer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.exchange.support.header",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-api\\src\\test\\java\\org\\apache\\dubbo\\remoting\\exchange\\support\\header\\HeaderExchangeServerTest.java",
+      "className": "HeaderExchangeServerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RemotingServer server = Mockito.mock(RemotingServer.class);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(server.getUrl()).thenReturn(url);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(server.canHandleIdle()).thenReturn(false);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(server.getChannels()).thenReturn(Arrays.asList(channel1, channel2));",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(server.getChannel(Mockito.eq(address1))).thenReturn(channel1);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(server.getChannel(Mockito.eq(address2))).thenReturn(channel2);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(server, Mockito.times(1)).send(\"test\");",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(server, Mockito.times(1)).send(\"test\", true);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(server, Mockito.times(1)).startClose();",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(server, Mockito.times(1)).close(1000);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

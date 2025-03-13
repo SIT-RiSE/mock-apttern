@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "oids",
+    "variableType": "ObjectIdentityRetrievalStrategy",
+    "mockedClass": "ObjectIdentityRetrievalStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.acls",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\AclPermissionCacheOptimizerTests.java",
+      "className": "AclPermissionCacheOptimizerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObjectIdentityRetrievalStrategy oids = mock(ObjectIdentityRetrievalStrategy.class);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ignoresEmptyCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(service, sids, oids);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ignoresEmptyCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

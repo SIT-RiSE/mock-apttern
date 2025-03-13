@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "socketAddress",
+    "variableType": "InetSocketAddress",
+    "mockedClass": "InetSocketAddress",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.permission",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\permission\\DefaultAnonymousAccessPermissionCheckerTest.java",
+      "className": "DefaultAnonymousAccessPermissionCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InetSocketAddress socketAddress = Mockito.mock(InetSocketAddress.class);",
+        "line": 37,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(socketAddress.getAddress()).thenReturn(inetAddress);",
+        "line": 38,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(socketAddress.getAddress()).thenReturn(inetAddress);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

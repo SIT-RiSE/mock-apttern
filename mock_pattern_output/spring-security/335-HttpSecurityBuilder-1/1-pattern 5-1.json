@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "http",
+    "variableType": "HttpSecurityBuilder",
+    "mockedClass": "HttpSecurityBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers.oauth2.server.resource",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\oauth2\\server\\resource\\OAuth2ResourceServerConfigurerTests.java",
+      "className": "OAuth2ResourceServerConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HttpSecurityBuilder http = mock(HttpSecurityBuilder.class);",
+        "line": 1270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getAuthenticationManagerWhenConfiguredAuthenticationManagerThenTakesPrecedence",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(http, never()).authenticationProvider(any(AuthenticationProvider.class));",
+        "line": 1280,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getAuthenticationManagerWhenConfiguredAuthenticationManagerThenTakesPrecedence",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

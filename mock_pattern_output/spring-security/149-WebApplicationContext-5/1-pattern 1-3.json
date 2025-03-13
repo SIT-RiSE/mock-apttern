@@ -1,0 +1,146 @@
+[
+  {
+    "variableName": "wac",
+    "variableType": "WebApplicationContext",
+    "mockedClass": "WebApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.taglibs.authz",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\taglibs\\src\\test\\java\\org\\springframework\\security\\taglibs\\authz\\AbstractAuthorizeTagTests.java",
+      "className": "AbstractAuthorizeTagTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebApplicationContext wac = mock(WebApplicationContext.class);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(wac.getBeanNamesForType(SecurityContextHolderStrategy.class)).willReturn(new String[0]);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "wac",
+    "variableType": "WebApplicationContext",
+    "mockedClass": "WebApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.taglibs.authz",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\taglibs\\src\\test\\java\\org\\springframework\\security\\taglibs\\authz\\AbstractAuthorizeTagTests.java",
+      "className": "AbstractAuthorizeTagTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebApplicationContext wac = mock(WebApplicationContext.class);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromChildContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(wac.getBeansOfType(WebInvocationPrivilegeEvaluator.class)).willReturn(Collections.singletonMap(\"wipe\", expected));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromChildContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(wac.getBeanNamesForType(SecurityContextHolderStrategy.class)).willReturn(new String[0]);",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromChildContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "wac",
+    "variableType": "WebApplicationContext",
+    "mockedClass": "WebApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.taglibs.authz",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\taglibs\\src\\test\\java\\org\\springframework\\security\\taglibs\\authz\\AbstractAuthorizeTagTests.java",
+      "className": "AbstractAuthorizeTagTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebApplicationContext wac = mock(WebApplicationContext.class);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "expressionFromChildContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(wac.getBeansOfType(SecurityExpressionHandler.class)).willReturn(Collections.<String, SecurityExpressionHandler>singletonMap(\"wipe\", expected));",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "expressionFromChildContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(wac.getBeanNamesForType(SecurityContextHolderStrategy.class)).willReturn(new String[0]);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "expressionFromChildContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

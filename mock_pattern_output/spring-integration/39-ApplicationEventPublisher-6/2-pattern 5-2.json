@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "eventPublisher",
+    "variableType": "ApplicationEventPublisher",
+    "mockedClass": "ApplicationEventPublisher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mqtt",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mqtt\\src\\test\\java\\org\\springframework\\integration\\mqtt\\MqttAdapterTests.java",
+      "className": "MqttAdapterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationEventPublisher eventPublisher = mock(ApplicationEventPublisher.class);",
+        "line": 458,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(eventPublisher).publishEvent(any(MqttConnectionFailedEvent.class));",
+        "line": 461,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "publisher",
+    "variableType": "ApplicationEventPublisher",
+    "mockedClass": "ApplicationEventPublisher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.stream",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-stream\\src\\test\\java\\org\\springframework\\integration\\stream\\CharacterStreamSourceTests.java",
+      "className": "CharacterStreamSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationEventPublisher publisher = mock(ApplicationEventPublisher.class);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEOF",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(publisher).publishEvent(any(StreamClosedEvent.class));",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEOF",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

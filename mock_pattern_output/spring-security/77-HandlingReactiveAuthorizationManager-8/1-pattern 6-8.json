@@ -1,0 +1,602 @@
+[
+  {
+    "variableName": "mockReactiveAuthorizationManager",
+    "variableType": "HandlingReactiveAuthorizationManager",
+    "mockedClass": "HandlingReactiveAuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HandlingReactiveAuthorizationManager mockReactiveAuthorizationManager = mock(HandlingReactiveAuthorizationManager.class);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenAllValuesDeniedAndPostProcessorThenPostProcessorAppliedToEachValueEmitted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.handleDeniedInvocationResult(any(), any(AuthorizationResult.class))).willAnswer(this::masking);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenAllValuesDeniedAndPostProcessorThenPostProcessorAppliedToEachValueEmitted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.check(any(), any())).willReturn(Mono.empty());",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenAllValuesDeniedAndPostProcessorThenPostProcessorAppliedToEachValueEmitted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenAllValuesDeniedAndPostProcessorThenPostProcessorAppliedToEachValueEmitted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockReactiveAuthorizationManager, times(2)).check(any(), any());",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenAllValuesDeniedAndPostProcessorThenPostProcessorAppliedToEachValueEmitted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "mockReactiveAuthorizationManager",
+    "variableType": "HandlingReactiveAuthorizationManager",
+    "mockedClass": "HandlingReactiveAuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HandlingReactiveAuthorizationManager mockReactiveAuthorizationManager = mock(HandlingReactiveAuthorizationManager.class);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenOneValueDeniedAndPostProcessorThenPostProcessorAppliedToDeniedValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.handleDeniedInvocationResult(any(), any(AuthorizationResult.class))).willAnswer((invocation) -> {\r\n    MethodInvocationResult argument = invocation.getArgument(0);\r\n    if (!\"john\".equals(argument.getResult())) {\r\n        return monoMasking(invocation);\r\n    }\r\n    return Mono.just(argument.getResult());\r\n});",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenOneValueDeniedAndPostProcessorThenPostProcessorAppliedToDeniedValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.check(any(), any())).willReturn(Mono.empty());",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenOneValueDeniedAndPostProcessorThenPostProcessorAppliedToDeniedValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenOneValueDeniedAndPostProcessorThenPostProcessorAppliedToDeniedValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockReactiveAuthorizationManager, times(2)).check(any(), any());",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenOneValueDeniedAndPostProcessorThenPostProcessorAppliedToDeniedValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "mockReactiveAuthorizationManager",
+    "variableType": "HandlingReactiveAuthorizationManager",
+    "mockedClass": "HandlingReactiveAuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HandlingReactiveAuthorizationManager mockReactiveAuthorizationManager = mock(HandlingReactiveAuthorizationManager.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionThenPostProcess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.handleDeniedInvocationResult(any(), any(AuthorizationResult.class))).willAnswer(this::masking);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionThenPostProcess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.check(any(), any())).willReturn(Mono.empty());",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionThenPostProcess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionThenPostProcess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockReactiveAuthorizationManager).check(any(), any());",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionThenPostProcess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "mockReactiveAuthorizationManager",
+    "variableType": "HandlingReactiveAuthorizationManager",
+    "mockedClass": "HandlingReactiveAuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HandlingReactiveAuthorizationManager mockReactiveAuthorizationManager = mock(HandlingReactiveAuthorizationManager.class);",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsMonoThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.handleDeniedInvocationResult(any(), any(AuthorizationResult.class))).willAnswer(this::monoMasking);",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsMonoThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.check(any(), any())).willReturn(Mono.empty());",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsMonoThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsMonoThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockReactiveAuthorizationManager).check(any(), any());",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsMonoThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "mockReactiveAuthorizationManager",
+    "variableType": "HandlingReactiveAuthorizationManager",
+    "mockedClass": "HandlingReactiveAuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HandlingReactiveAuthorizationManager mockReactiveAuthorizationManager = mock(HandlingReactiveAuthorizationManager.class);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsNullThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.handleDeniedInvocationResult(any(), any(AuthorizationResult.class))).willReturn(null);",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsNullThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.check(any(), any())).willReturn(Mono.empty());",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsNullThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsNullThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockReactiveAuthorizationManager).check(any(), any());",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsNullThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "mockReactiveAuthorizationManager",
+    "variableType": "HandlingReactiveAuthorizationManager",
+    "mockedClass": "HandlingReactiveAuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HandlingReactiveAuthorizationManager mockReactiveAuthorizationManager = mock(HandlingReactiveAuthorizationManager.class);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.check(any(), eq(mockMethodInvocation))).willReturn(Mono.empty());",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.handleDeniedInvocation(any(), any(AuthorizationResult.class))).willReturn(\"***\");",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockReactiveAuthorizationManager).check(any(), eq(mockMethodInvocation));",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "mockReactiveAuthorizationManager",
+    "variableType": "HandlingReactiveAuthorizationManager",
+    "mockedClass": "HandlingReactiveAuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HandlingReactiveAuthorizationManager mockReactiveAuthorizationManager = mock(HandlingReactiveAuthorizationManager.class);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndMonoPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.check(any(), eq(mockMethodInvocation))).willReturn(Mono.empty());",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndMonoPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndMonoPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.handleDeniedInvocation(any(), any(AuthorizationResult.class))).willReturn(Mono.just(\"***\"));",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndMonoPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockReactiveAuthorizationManager).check(any(), eq(mockMethodInvocation));",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndMonoPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "mockReactiveAuthorizationManager",
+    "variableType": "HandlingReactiveAuthorizationManager",
+    "mockedClass": "HandlingReactiveAuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HandlingReactiveAuthorizationManager mockReactiveAuthorizationManager = mock(HandlingReactiveAuthorizationManager.class);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.check(any(), eq(mockMethodInvocation))).willReturn(Mono.empty());",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockReactiveAuthorizationManager.handleDeniedInvocation(any(), any(AuthorizationResult.class))).willReturn(Mono.just(\"***\"));",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockReactiveAuthorizationManager).check(any(), eq(mockMethodInvocation));",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

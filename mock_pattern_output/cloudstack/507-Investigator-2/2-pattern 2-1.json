@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "investigator",
+    "variableType": "Investigator",
+    "mockedClass": "CheckOnAgentInvestigator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.ha",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\ha\\HighAvailabilityManagerImplTest.java",
+      "className": "HighAvailabilityManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Set the list of investigators, CheckOnAgentInvestigator suffices for now\r\n// Also no need to mock isAgentAlive() as actual implementation returns null\r\nInvestigator investigator = Mockito.mock(CheckOnAgentInvestigator.class);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "investigateHostStatusFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

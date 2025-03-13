@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "userVmDetailsDaoMock",
+    "variableType": "UserVmDetailsDao",
+    "mockedClass": "UserVmDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota.activationrule.presetvariables",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\activationrule\\presetvariables\\PresetVariableHelperTest.java",
+      "className": "PresetVariableHelperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserVmDetailsDao userVmDetailsDaoMock;",
+        "line": 163,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmDetailsDaoMock, Mockito.never()).listDetails(Mockito.anyLong());",
+        "line": 1079,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getPresetVariableValueComputingResourceTestServiceOfferingIsNotDynamicReturnsServiceOfferingValues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmDetailsDaoMock).listDetails(Mockito.anyLong());",
+        "line": 1097,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getPresetVariableValueComputingResourceTestServiceOfferingIsDynamicReturnsVmDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "userVmDetailsDao",
+    "variableType": "UserVmDetailsDao",
+    "mockedClass": "UserVmDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\resource\\ResourceManagerImplTest.java",
+      "className": "ResourceManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UserVmDetailsDao userVmDetailsDao;",
+        "line": 95,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(userVmDetailsDao).addDetail(eq(vm1Id), eq(\"kvm.vnc.address\"), eq(vm1VncAddress), anyBoolean());",
+        "line": 309,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureVncAccessForKVMHostFailedMigrations",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(userVmDetailsDao).addDetail(eq(vm1Id), eq(\"kvm.vnc.port\"), eq(String.valueOf(vm1VncPort)), anyBoolean());",
+        "line": 310,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureVncAccessForKVMHostFailedMigrations",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(userVmDetailsDao).addDetail(eq(vm2Id), eq(\"kvm.vnc.address\"), eq(vm2VncAddress), anyBoolean());",
+        "line": 311,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureVncAccessForKVMHostFailedMigrations",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(userVmDetailsDao).addDetail(eq(vm2Id), eq(\"kvm.vnc.port\"), eq(String.valueOf(vm2VncPort)), anyBoolean());",
+        "line": 312,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureVncAccessForKVMHostFailedMigrations",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

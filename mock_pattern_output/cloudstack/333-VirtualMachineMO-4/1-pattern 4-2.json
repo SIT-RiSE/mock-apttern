@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "vmMo3dgpu",
+    "variableType": "VirtualMachineMO",
+    "mockedClass": "VirtualMachineMO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\resource\\VmwareResourceTest.java",
+      "className": "VmwareResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVirtualMachineMO vmMo3dgpu;",
+        "line": 133,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmMo3dgpu.getAllDeviceList()).thenReturn(Arrays.asList(videoCard, virtualDevice));",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetNewVRamSizeVmVideoCardPresent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmMo3dgpu.getAllDeviceList()).thenReturn(Arrays.asList(virtualDevice));",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetNewVRamSizeVmVideoCardNotPresent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "virtualMachineMO",
+    "variableType": "VirtualMachineMO",
+    "mockedClass": "VirtualMachineMO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.util",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\vmware-base\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\util\\VmwareHelperTest.java",
+      "className": "VmwareHelperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VirtualMachineMO virtualMachineMO;",
+        "line": 33,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(virtualMachineMO.getIDEDeviceControllerKey()).thenReturn(1);",
+        "line": 38,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareDiskDeviceTestNotLimitingIOPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(virtualMachineMO.getIDEDeviceControllerKey()).thenReturn(1);",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareDiskDeviceTestLimitingIOPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(virtualMachineMO.getIDEDeviceControllerKey()).thenReturn(1);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareDiskDeviceTestLimitingIOPSToZero",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

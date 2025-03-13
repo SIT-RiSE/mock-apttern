@@ -1,0 +1,161 @@
+[
+  {
+    "variableName": "tungstenSecurityGroupRuleDao",
+    "variableType": "TungstenSecurityGroupRuleDao",
+    "mockedClass": "TungstenSecurityGroupRuleDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenSecurityGroupRuleDao tungstenSecurityGroupRuleDao;",
+        "line": 262,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.findDefaultSecurityRule(anyLong(), anyString(), anyString())).thenReturn(tungstenSecurityGroupRuleVO);",
+        "line": 782,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.persist(any(TungstenSecurityGroupRuleVO.class))).thenReturn(tungstenSecurityGroupRuleVO);",
+        "line": 791,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.persist(any(TungstenSecurityGroupRuleVO.class))).thenReturn(tungstenSecurityGroupRuleVO);",
+        "line": 835,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.expunge(anyLong())).thenReturn(true);",
+        "line": 843,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.findBySecurityGroupAndRuleTypeAndRuleTarget(anyLong(), anyString(), anyString())).thenReturn(tungstenSecurityGroupRuleVO);",
+        "line": 848,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.persist(any(TungstenSecurityGroupRuleVO.class))).thenReturn(tungstenSecurityGroupRuleVO);",
+        "line": 897,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenNicSecondaryIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.listByRuleTarget(anyString())).thenReturn(List.of(tungstenSecurityGroupRuleVO));",
+        "line": 922,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenNicSecondaryIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.expunge(anyLong())).thenReturn(true);",
+        "line": 924,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenNicSecondaryIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.persist(any(TungstenSecurityGroupRuleVO.class))).thenReturn(tungstenSecurityGroupRuleVO);",
+        "line": 1663,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenVmSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.expunge(anyLong())).thenReturn(true);",
+        "line": 1694,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenVmSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenSecurityGroupRuleDao.listByRuleTarget(anyString())).thenReturn(List.of(tungstenSecurityGroupRuleVO));",
+        "line": 1695,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenVmSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

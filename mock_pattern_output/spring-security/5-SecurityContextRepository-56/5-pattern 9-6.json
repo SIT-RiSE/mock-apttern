@@ -1,0 +1,344 @@
+[
+  {
+    "variableName": "repository",
+    "variableType": "SecurityContextRepository",
+    "mockedClass": "SecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.servlet.request",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\servlet\\request\\SecurityMockMvcRequestPostProcessorsAuthenticationTests.java",
+      "className": "SecurityMockMvcRequestPostProcessorsAuthenticationTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SecurityContextRepository repository;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "userDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "repository",
+    "variableType": "SecurityContextRepository",
+    "mockedClass": "SecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.servlet.request",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\servlet\\request\\SecurityMockMvcRequestPostProcessorsJwtTests.java",
+      "className": "SecurityMockMvcRequestPostProcessorsJwtTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SecurityContextRepository repository;",
+        "line": 68,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "jwtWhenUsingDefaultsThenProducesDefaultJwtAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "jwtWhenProvidingBuilderConsumerThenProducesJwtAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "jwtWhenProvidingCustomAuthoritiesThenProducesJwtAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "jwtWhenProvidingScopedAuthoritiesThenProducesJwtAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "jwtWhenProvidingGrantedAuthoritiesThenProducesJwtAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "jwtWhenProvidingPreparedJwtThenUsesItForAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "repository",
+    "variableType": "SecurityContextRepository",
+    "mockedClass": "SecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.servlet.request",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\servlet\\request\\SecurityMockMvcRequestPostProcessorsSecurityContextTests.java",
+      "className": "SecurityMockMvcRequestPostProcessorsSecurityContextTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SecurityContextRepository repository;",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "userDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "repository",
+    "variableType": "SecurityContextRepository",
+    "mockedClass": "SecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.servlet.request",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\servlet\\request\\SecurityMockMvcRequestPostProcessorsTestSecurityContextTests.java",
+      "className": "SecurityMockMvcRequestPostProcessorsTestSecurityContextTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SecurityContextRepository repository;",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(eq(this.context), eq(this.request), any(HttpServletResponse.class));",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityContextSaves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository, never()).saveContext(any(SecurityContext.class), eq(this.request), any(HttpServletResponse.class));",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityContextNoContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "repository",
+    "variableType": "SecurityContextRepository",
+    "mockedClass": "SecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.servlet.request",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\servlet\\request\\SecurityMockMvcRequestPostProcessorsUserDetailsTests.java",
+      "className": "SecurityMockMvcRequestPostProcessorsUserDetailsTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SecurityContextRepository repository;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "userDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "repository",
+    "variableType": "SecurityContextRepository",
+    "mockedClass": "SecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.servlet.request",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\servlet\\request\\SecurityMockMvcRequestPostProcessorsUserTests.java",
+      "className": "SecurityMockMvcRequestPostProcessorsUserTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SecurityContextRepository repository;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "userWithDefaults",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "userWithCustom",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "userCustomAuthoritiesVarargs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.repository).saveContext(this.contextCaptor.capture(), eq(this.request), any(HttpServletResponse.class));",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "userCustomAuthoritiesList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

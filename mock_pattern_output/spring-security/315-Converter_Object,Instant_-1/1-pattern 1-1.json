@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "expiresAtConverter",
+    "variableType": "Converter<Object,Instant>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\MappedJwtClaimSetConverterTests.java",
+      "className": "MappedJwtClaimSetConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<Object, Instant> expiresAtConverter = mock(Converter.class);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenUsingCustomExpiresAtConverterThenIssuedAtConverterStillConsultsIt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(expiresAtConverter.convert(any())).willReturn(at);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenUsingCustomExpiresAtConverterThenIssuedAtConverterStillConsultsIt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

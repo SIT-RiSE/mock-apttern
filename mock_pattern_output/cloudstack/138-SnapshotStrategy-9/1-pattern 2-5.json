@@ -1,0 +1,137 @@
+[
+  {
+    "variableName": "strategy",
+    "variableType": "SnapshotStrategy",
+    "mockedClass": "SnapshotStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotStrategy strategy = Mockito.mock(SnapshotStrategy.class);",
+        "line": 250,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDiskSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "hyperStrategy",
+    "variableType": "SnapshotStrategy",
+    "mockedClass": "SnapshotStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.subsystem.api.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\src\\test\\java\\org\\apache\\cloudstack\\engine\\subsystem\\api\\storage\\StrategyPriorityTest.java",
+      "className": "StrategyPriorityTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotStrategy hyperStrategy = mock(SnapshotStrategy.class);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSortSnapshotStrategies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "highestStrategy",
+    "variableType": "SnapshotStrategy",
+    "mockedClass": "SnapshotStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.subsystem.api.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\src\\test\\java\\org\\apache\\cloudstack\\engine\\subsystem\\api\\storage\\StrategyPriorityTest.java",
+      "className": "StrategyPriorityTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotStrategy highestStrategy = mock(SnapshotStrategy.class);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSortSnapshotStrategies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "cantHandleStrategy",
+    "variableType": "SnapshotStrategy",
+    "mockedClass": "SnapshotStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.subsystem.api.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\src\\test\\java\\org\\apache\\cloudstack\\engine\\subsystem\\api\\storage\\StrategyPriorityTest.java",
+      "className": "StrategyPriorityTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotStrategy cantHandleStrategy = mock(SnapshotStrategy.class);",
+        "line": 40,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSortSnapshotStrategies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "defaultStrategy",
+    "variableType": "SnapshotStrategy",
+    "mockedClass": "SnapshotStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.subsystem.api.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\src\\test\\java\\org\\apache\\cloudstack\\engine\\subsystem\\api\\storage\\StrategyPriorityTest.java",
+      "className": "StrategyPriorityTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotStrategy defaultStrategy = mock(SnapshotStrategy.class);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSortSnapshotStrategies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

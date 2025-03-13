@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "networkDetailsDao",
+    "variableType": "NetworkDetailsDao",
+    "mockedClass": "NetworkDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenGuestNetworkGuruTest.java",
+      "className": "TungstenGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNetworkDetailsDao networkDetailsDao;",
+        "line": 147,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(networkDetailsDao.findDetail(anyLong(), anyString())).thenReturn(networkDetailVO);",
+        "line": 460,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(networkDetailsDao, times(1)).expunge(anyLong());",
+        "line": 472,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

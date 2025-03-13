@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "volumeStatsDao",
+    "variableType": "VolumeStatsDao",
+    "mockedClass": "VolumeStatsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\StatsCollectorTest.java",
+      "className": "StatsCollectorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVolumeStatsDao volumeStatsDao;",
+        "line": 106,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volumeStatsDao.persist(Mockito.any(VolumeStatsVO.class))).thenAnswer((Answer<VolumeStatsVO>) invocation -> {\r\n    VolumeStatsVO statsVO = (VolumeStatsVO) invocation.getArguments()[0];\r\n    persistedStats.add(statsVO);\r\n    return statsVO;\r\n});",
+        "line": 464,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "performPersistVolumeStatsTest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

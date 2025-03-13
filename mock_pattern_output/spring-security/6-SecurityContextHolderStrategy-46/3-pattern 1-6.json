@@ -1,0 +1,248 @@
+[
+  {
+    "variableName": "securityContextHolderStrategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.jaas",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\jaas\\SecurityContextLoginModuleTests.java",
+      "className": "SecurityContextLoginModuleTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy securityContextHolderStrategy = mock(SecurityContextHolderStrategy.class);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenCustomSecurityContextHolderStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(securityContextHolderStrategy.getContext()).willReturn(new SecurityContextImpl(this.auth));",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenCustomSecurityContextHolderStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.core.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\context\\ListeningSecurityContextHolderStrategyTests.java",
+      "className": "ListeningSecurityContextHolderStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy delegate = spy(new MockSecurityContextHolderStrategy());",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenInvokedThenListenersAreNotified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(delegate.createEmptyContext()).willReturn(new SecurityContextImpl());",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenInvokedThenListenersAreNotified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.core.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\context\\ListeningSecurityContextHolderStrategyTests.java",
+      "className": "ListeningSecurityContextHolderStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy delegate = mock(SecurityContextHolderStrategy.class);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenNoChangeToContextThenListenersAreNotNotified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(delegate.getContext()).willReturn(context);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenNoChangeToContextThenListenersAreNotNotified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.core.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\context\\ListeningSecurityContextHolderStrategyTests.java",
+      "className": "ListeningSecurityContextHolderStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy delegate = mock(SecurityContextHolderStrategy.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "clearContextWhenNoGetContextThenContextIsNotRead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(delegate.getDeferredContext()).willReturn(context);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "clearContextWhenNoGetContextThenContextIsNotRead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(delegate.getContext()).willAnswer((invocation) -> context.get());",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "clearContextWhenNoGetContextThenContextIsNotRead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "strategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.provisioning",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\provisioning\\InMemoryUserDetailsManagerTests.java",
+      "className": "InMemoryUserDetailsManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy strategy = mock(SecurityContextHolderStrategy.class);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createUserWhenInstanceOfMutableUserDetailsThenChangePasswordWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(strategy.getContext()).willReturn(new SecurityContextImpl(authentication));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createUserWhenInstanceOfMutableUserDetailsThenChangePasswordWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "strategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.jaasapi",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\jaasapi\\JaasApiIntegrationFilterTests.java",
+      "className": "JaasApiIntegrationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy strategy = mock(SecurityContextHolderStrategy.class);",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterUsesCustomSecurityContextHolderStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(strategy.getContext()).willReturn(new SecurityContextImpl(this.token));",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterUsesCustomSecurityContextHolderStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

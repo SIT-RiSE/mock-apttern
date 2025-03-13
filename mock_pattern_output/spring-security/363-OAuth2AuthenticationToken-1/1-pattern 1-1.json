@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "authentication",
+    "variableType": "OAuth2AuthenticationToken",
+    "mockedClass": "OAuth2AuthenticationToken",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.method.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\method\\annotation\\OAuth2AuthorizedClientArgumentResolverTests.java",
+      "className": "OAuth2AuthorizedClientArgumentResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2AuthenticationToken authentication = mock(OAuth2AuthenticationToken.class);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenRegistrationIdEmptyAndOAuth2AuthenticationThenResolves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authentication.getAuthorizedClientRegistrationId()).willReturn(\"client1\");",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenRegistrationIdEmptyAndOAuth2AuthenticationThenResolves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "logicalSwitch",
+    "variableType": "LogicalSwitch",
+    "mockedClass": "LogicalSwitch",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpRequestWrapperTest.java",
+      "className": "NiciraNvpRequestWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LogicalSwitch logicalSwitch = Mockito.mock(LogicalSwitch.class);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchCommandWrapper",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logicalSwitch.getUuid()).thenReturn(transportUuid);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchCommandWrapper",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "ls",
+    "variableType": "LogicalSwitch",
+    "mockedClass": "LogicalSwitch",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LogicalSwitch ls = mock(LogicalSwitch.class);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRetries",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ls.getUuid()).thenReturn(\"cccc\").thenReturn(\"cccc\");",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRetries",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "ls",
+    "variableType": "LogicalSwitch",
+    "mockedClass": "LogicalSwitch",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LogicalSwitch ls = mock(LogicalSwitch.class);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ls.getUuid()).thenReturn(\"cccc\").thenReturn(\"cccc\");",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "ls",
+    "variableType": "LogicalSwitch",
+    "mockedClass": "LogicalSwitch",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LogicalSwitch ls = mock(LogicalSwitch.class);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ls.getUuid()).thenReturn(\"cccc\").thenReturn(\"cccc\");",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

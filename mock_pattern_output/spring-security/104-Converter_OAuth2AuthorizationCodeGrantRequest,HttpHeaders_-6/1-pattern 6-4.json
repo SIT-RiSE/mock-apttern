@@ -1,0 +1,206 @@
+[
+  {
+    "variableName": "headersConverter",
+    "variableType": "Converter<OAuth2AuthorizationCodeGrantRequest,HttpHeaders>",
+    "mockedClass": "Converter<OAuth2AuthorizationCodeGrantRequest,HttpHeaders>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\RestClientAuthorizationCodeTokenResponseClientTests.java",
+      "className": "RestClientAuthorizationCodeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2AuthorizationCodeGrantRequest, HttpHeaders> headersConverter = mock();",
+        "line": 347,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenHeadersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(headersConverter.convert(grantRequest)).willReturn(headers);",
+        "line": 350,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenHeadersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(headersConverter).convert(grantRequest);",
+        "line": 353,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenHeadersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "headersConverter",
+    "variableType": "Converter<OAuth2AuthorizationCodeGrantRequest,HttpHeaders>",
+    "mockedClass": "Converter<OAuth2AuthorizationCodeGrantRequest,HttpHeaders>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\RestClientAuthorizationCodeTokenResponseClientTests.java",
+      "className": "RestClientAuthorizationCodeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2AuthorizationCodeGrantRequest, HttpHeaders> headersConverter = mock();",
+        "line": 365,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenHeadersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(headersConverter.convert(grantRequest)).willReturn(headers);",
+        "line": 368,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenHeadersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(headersConverter).convert(grantRequest);",
+        "line": 371,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenHeadersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "addedHeadersConverter",
+    "variableType": "Converter<OAuth2AuthorizationCodeGrantRequest,HttpHeaders>",
+    "mockedClass": "Converter<OAuth2AuthorizationCodeGrantRequest,HttpHeaders>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\WebClientReactiveAuthorizationCodeTokenResponseClientTests.java",
+      "className": "WebClientReactiveAuthorizationCodeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2AuthorizationCodeGrantRequest, HttpHeaders> addedHeadersConverter = mock();",
+        "line": 313,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenHeadersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(addedHeadersConverter.convert(request)).willReturn(headers);",
+        "line": 316,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenHeadersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(addedHeadersConverter).convert(request);",
+        "line": 320,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenHeadersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "headersConverter",
+    "variableType": "Converter<OAuth2AuthorizationCodeGrantRequest,HttpHeaders>",
+    "mockedClass": "Converter<OAuth2AuthorizationCodeGrantRequest,HttpHeaders>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\WebClientReactiveAuthorizationCodeTokenResponseClientTests.java",
+      "className": "WebClientReactiveAuthorizationCodeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2AuthorizationCodeGrantRequest, HttpHeaders> headersConverter = mock();",
+        "line": 332,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenHeadersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(headersConverter.convert(request)).willReturn(headers);",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenHeadersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(headersConverter).convert(request);",
+        "line": 339,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenHeadersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

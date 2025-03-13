@@ -1,0 +1,72 @@
+[
+  {
+    "variableName": "headers",
+    "variableType": "ClientResponse.Headers",
+    "mockedClass": "ClientResponse.Headers",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\NimbusReactiveOpaqueTokenIntrospectorTests.java",
+      "className": "NimbusReactiveOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientResponse.Headers headers = mock(ClientResponse.Headers.class);",
+        "line": 275,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(headers.contentType()).willReturn(Optional.ofNullable(mediaType).map(MediaType::parseMediaType));",
+        "line": 276,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "headers",
+    "variableType": "ClientResponse.Headers",
+    "mockedClass": "ClientResponse.Headers",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\SpringReactiveOpaqueTokenIntrospectorTests.java",
+      "className": "SpringReactiveOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientResponse.Headers headers = mock(ClientResponse.Headers.class);",
+        "line": 276,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(headers.contentType()).willReturn(Optional.of(MediaType.APPLICATION_JSON));",
+        "line": 277,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

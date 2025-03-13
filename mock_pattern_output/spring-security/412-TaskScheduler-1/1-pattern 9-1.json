@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "scheduler",
+    "variableType": "TaskScheduler",
+    "mockedClass": "TaskScheduler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.scheduling",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\scheduling\\DelegatingSecurityContextTaskSchedulerTests.java",
+      "className": "DelegatingSecurityContextTaskSchedulerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TaskScheduler scheduler;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.scheduler).schedule(any(Runnable.class), any(Trigger.class));",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleWhenRunnableTriggerThenDelegates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.scheduler).schedule(any(Runnable.class), any(Instant.class));",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleWhenRunnableDateThenDelegates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.scheduler).scheduleAtFixedRate(isA(Runnable.class), isA(Date.class), eq(1000L));",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleAtFixedRateWhenRunnableDateLongThenDelegates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.scheduler).scheduleAtFixedRate(isA(Runnable.class), eq(1000L));",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleAtFixedRateWhenRunnableLongThenDelegates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

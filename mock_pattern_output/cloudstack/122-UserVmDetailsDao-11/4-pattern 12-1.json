@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "userVmDetailsDao",
+    "variableType": "UserVmDetailsDao",
+    "mockedClass": "UserVmDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.dpdk",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\dpdk\\DpdkHelperImplTest.java",
+      "className": "DpdkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserVmDetailsDao userVmDetailsDao;",
+        "line": 56,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmDetailsDao.listDetails(vmId)).thenReturn(Arrays.asList(dpdkNumaVmDetail, dpdkHugePagesVmDetail));",
+        "line": 138,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmDetailsDao.listDetails(vmId)).thenReturn(Arrays.asList(dpdkNumaVmDetail));",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVMDpdkEnabledGuestTypeMissingConfigurationOnDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmDetailsDao.listDetails(vmId)).thenReturn(new ArrayList<>());",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVMDpdkEnabledGuestTypeEmptyDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmDetailsDao.listDetails(vmId)).thenReturn(Collections.singletonList(dpdkNumaVmDetail));",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVMDpdkEnabledGuestTypeMissingConfigurationOnVmDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmDetailsDao.listDetails(vmId)).thenReturn(new ArrayList<>());",
+        "line": 233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVMDpdkEnabledGuestTypeEmptyVmDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmDetailsDao.listDetails(vmId)).thenReturn(Collections.singletonList(dpdkNumaVmDetail));",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVMDpdkEnabledGuestTypeMixedConfigurationOnDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  }
+]

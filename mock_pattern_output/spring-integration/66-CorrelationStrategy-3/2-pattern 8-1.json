@@ -1,0 +1,135 @@
+[
+  {
+    "variableName": "correlationStrategy",
+    "variableType": "CorrelationStrategy",
+    "mockedClass": "CorrelationStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\CorrelatingMessageHandlerTests.java",
+      "className": "CorrelatingMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private CorrelationStrategy correlationStrategy;",
+        "line": 56,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "correlationStrategy = mock(CorrelationStrategy.class);",
+        "line": 69,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "initializeSubject",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(correlationStrategy.getCorrelationKey(isA(Message.class))).thenReturn(correlationKey);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "bufferCompletesNormally",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(correlationStrategy).getCorrelationKey(message1);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "bufferCompletesNormally",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(correlationStrategy).getCorrelationKey(message2);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "bufferCompletesNormally",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(correlationStrategy.getCorrelationKey(isA(Message.class))).thenReturn(correlationKey);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "bufferCompletesWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(correlationStrategy).getCorrelationKey(message1);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "bufferCompletesWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(correlationStrategy).getCorrelationKey(message2);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "bufferCompletesWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(correlationStrategy.getCorrelationKey(isA(Message.class))).thenReturn(correlationKey);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotPruneWhileCompleting",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(correlationStrategy.getCorrelationKey(isA(Message.class))).thenReturn(null);",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNullCorrelationKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

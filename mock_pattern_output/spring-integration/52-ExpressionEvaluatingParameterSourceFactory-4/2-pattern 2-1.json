@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "requestParameterSourceFactory",
+    "variableType": "ExpressionEvaluatingParameterSourceFactory",
+    "mockedClass": "ExpressionEvaluatingParameterSourceFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jpa.core",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jpa\\src\\test\\java\\org\\springframework\\integration\\jpa\\core\\HibernateJpaOperationsTests.java",
+      "className": "HibernateJpaOperationsTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ExpressionEvaluatingParameterSourceFactory requestParameterSourceFactory = new ExpressionEvaluatingParameterSourceFactory(mock(BeanFactory.class));",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateWithNativeQuery",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

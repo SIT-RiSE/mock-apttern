@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "converter",
+    "variableType": "ServerAuthenticationConverter",
+    "mockedClass": "ServerAuthenticationConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\AuthenticationConverterServerWebExchangeMatcherTests.java",
+      "className": "AuthenticationConverterServerWebExchangeMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerAuthenticationConverter converter;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.converter.convert(any())).willReturn(Mono.just(this.authentication));",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNotEmptyThenReturnTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.converter.convert(any())).willReturn(Mono.empty());",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenEmptyThenReturnFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.converter.convert(any())).willReturn(Mono.error(new RuntimeException()));",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenErrorThenReturnFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.converter.convert(any())).willReturn(null);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNullThenThrowsException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.converter.convert(any())).willThrow(RuntimeException.class);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenExceptionThenPropagates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

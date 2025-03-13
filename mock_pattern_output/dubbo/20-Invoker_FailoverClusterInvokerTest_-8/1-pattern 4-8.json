@@ -1,0 +1,2122 @@
+[
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker<FailoverClusterInvokerTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\FailoverClusterInvokerTest.java",
+      "className": "FailoverClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final Invoker<FailoverClusterInvokerTest> invoker1 = mock(Invoker.class);",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RuntimeException());",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(true);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException());",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(true);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.TIMEOUT_EXCEPTION));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.TIMEOUT_EXCEPTION));",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.BIZ_EXCEPTION));",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker<FailoverClusterInvokerTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\FailoverClusterInvokerTest.java",
+      "className": "FailoverClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final Invoker<FailoverClusterInvokerTest> invoker2 = mock(Invoker.class);",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RuntimeException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willReturn(expectedResult);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException());",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException());",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException(RpcException.BIZ_EXCEPTION));",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker<FailoverClusterInvokerTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\FailoverClusterInvokerTest.java",
+      "className": "FailoverClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final Invoker<FailoverClusterInvokerTest> invoker1 = mock(Invoker.class);",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RuntimeException());",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(true);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException());",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(true);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.TIMEOUT_EXCEPTION));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.TIMEOUT_EXCEPTION));",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.BIZ_EXCEPTION));",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker<FailoverClusterInvokerTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\FailoverClusterInvokerTest.java",
+      "className": "FailoverClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final Invoker<FailoverClusterInvokerTest> invoker2 = mock(Invoker.class);",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RuntimeException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willReturn(expectedResult);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException());",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException());",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException(RpcException.BIZ_EXCEPTION));",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker<FailoverClusterInvokerTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\FailoverClusterInvokerTest.java",
+      "className": "FailoverClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final Invoker<FailoverClusterInvokerTest> invoker1 = mock(Invoker.class);",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RuntimeException());",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(true);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException());",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(true);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.TIMEOUT_EXCEPTION));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.TIMEOUT_EXCEPTION));",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.BIZ_EXCEPTION));",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker<FailoverClusterInvokerTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\FailoverClusterInvokerTest.java",
+      "className": "FailoverClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final Invoker<FailoverClusterInvokerTest> invoker2 = mock(Invoker.class);",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RuntimeException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willReturn(expectedResult);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException());",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException());",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException(RpcException.BIZ_EXCEPTION));",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker<FailoverClusterInvokerTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\FailoverClusterInvokerTest.java",
+      "className": "FailoverClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final Invoker<FailoverClusterInvokerTest> invoker1 = mock(Invoker.class);",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RuntimeException());",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(true);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException());",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(true);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.TIMEOUT_EXCEPTION));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.TIMEOUT_EXCEPTION));",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willThrow(new RpcException(RpcException.BIZ_EXCEPTION));",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker<FailoverClusterInvokerTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\FailoverClusterInvokerTest.java",
+      "className": "FailoverClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final Invoker<FailoverClusterInvokerTest> invoker2 = mock(Invoker.class);",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RuntimeException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRuntimeException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willReturn(expectedResult);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithRPCException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException());",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException());",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RpcException(RpcException.BIZ_EXCEPTION));",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(false);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(FailoverClusterInvokerTest.class);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke_retryTimes_withBizException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

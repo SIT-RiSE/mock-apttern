@@ -1,0 +1,111 @@
+[
+  {
+    "variableName": "httpClient",
+    "variableType": "CloseableHttpClient",
+    "mockedClass": "CloseableHttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.nicira",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\nicira\\NiciraRestClientTest.java",
+      "className": "NiciraRestClientTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final CloseableHttpClient httpClient = mock(CloseableHttpClient.class);",
+        "line": 80,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(eq(HTTP_HOST), eq(request), eq(httpClientContext))).thenReturn(mockResponse);",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteSuccessAtFirstAttempt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(eq(HTTP_HOST), HttpRequestMatcher.eq(request), eq(httpClientContext))).thenReturn(mockResponse).thenReturn(mockResponse);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUnauthorizedThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(eq(HTTP_HOST), HttpRequestMatcher.eq(loginRequest), eq(httpClientContext))).thenReturn(mockResponse);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUnauthorizedThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(eq(HTTP_HOST), HttpRequestMatcher.eq(request), eq(httpClientContext))).thenReturn(mockResponse);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteTwoConsecutiveUnauthorizedExecutions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(eq(HTTP_HOST), HttpRequestMatcher.eq(loginRequest), eq(httpClientContext))).thenReturn(mockResponse);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteTwoConsecutiveUnauthorizedExecutions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(eq(HTTP_HOST), HttpRequestMatcher.eq(request), eq(httpClientContext))).thenReturn(mockResponse).thenReturn(mockResponse).thenReturn(mockResponse).thenReturn(mockResponse).thenReturn(mockResponse);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteLiveLockWhenControllerAllowsLoginAndFollowsWithUnauthorizedButDoesNotRediect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(eq(HTTP_HOST), HttpRequestMatcher.eq(loginRequest), eq(httpClientContext))).thenReturn(mockResponse).thenReturn(mockResponse).thenReturn(mockResponse).thenReturn(mockResponse);",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteLiveLockWhenControllerAllowsLoginAndFollowsWithUnauthorizedButDoesNotRediect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

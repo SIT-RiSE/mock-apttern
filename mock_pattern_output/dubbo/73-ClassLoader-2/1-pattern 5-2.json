@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "classLoader",
+    "variableType": "ClassLoader",
+    "mockedClass": "ClassLoader",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\ClassUtilsTest.java",
+      "className": "ClassUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClassLoader classLoader = Mockito.mock(ClassLoader.class);",
+        "line": 34,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForNameWithThreadContextClassLoader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(classLoader).loadClass(\"a.b.c.D\");",
+        "line": 37,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForNameWithThreadContextClassLoader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "classLoader",
+    "variableType": "ClassLoader",
+    "mockedClass": "ClassLoader",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\ClassUtilsTest.java",
+      "className": "ClassUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClassLoader classLoader = Mockito.mock(ClassLoader.class);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForName3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(classLoader).loadClass(\"a.b.c.D\");",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForName3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

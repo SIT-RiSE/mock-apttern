@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "staticpinProvider",
+    "variableType": "UserTwoFactorAuthenticator",
+    "mockedClass": "UserTwoFactorAuthenticator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserTwoFactorAuthenticator staticpinProvider = Mockito.mock(UserTwoFactorAuthenticator.class);",
+        "line": 998,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVerify2FAcode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

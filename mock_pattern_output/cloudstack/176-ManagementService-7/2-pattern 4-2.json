@@ -1,0 +1,103 @@
+[
+  {
+    "variableName": "mgr",
+    "variableType": "ManagementService",
+    "mockedClass": "ManagementService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\ListCfgCmdTest.java",
+      "className": "ListCfgCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ManagementService mgr;",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mgr = Mockito.mock(ManagementService.class);",
+        "line": 48,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mgr.searchForConfigurations(listCfgsByCmd)).thenReturn(result);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_mgr",
+    "variableType": "ManagementService",
+    "mockedClass": "ManagementService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.user.userdata",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\user\\userdata\\ListUserDataCmdTest.java",
+      "className": "ListUserDataCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nManagementService _mgr;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_mgr.listUserDatas(cmd)).thenReturn(result);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_mgr.listUserDatas(cmd)).thenReturn(result);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmptyList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

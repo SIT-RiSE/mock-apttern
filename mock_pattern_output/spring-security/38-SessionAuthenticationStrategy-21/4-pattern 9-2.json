@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "strategy1",
+    "variableType": "SessionAuthenticationStrategy",
+    "mockedClass": "SessionAuthenticationStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.session",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\session\\CompositeSessionAuthenticationStrategyTests.java",
+      "className": "CompositeSessionAuthenticationStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SessionAuthenticationStrategy strategy1;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.strategy1).onAuthentication(this.authentication, this.request, this.response);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "delegatesToAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.strategy1).onAuthentication(this.authentication, this.request, this.response);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "delegateShortCircuits",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "strategy2",
+    "variableType": "SessionAuthenticationStrategy",
+    "mockedClass": "SessionAuthenticationStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.session",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\session\\CompositeSessionAuthenticationStrategyTests.java",
+      "className": "CompositeSessionAuthenticationStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SessionAuthenticationStrategy strategy2;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.strategy2).onAuthentication(this.authentication, this.request, this.response);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "delegatesToAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.strategy2, times(0)).onAuthentication(this.authentication, this.request, this.response);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "delegateShortCircuits",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

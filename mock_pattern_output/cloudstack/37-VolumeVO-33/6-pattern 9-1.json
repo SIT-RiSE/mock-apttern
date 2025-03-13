@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "volumeVoMock",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.volume",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\volume\\src\\test\\java\\org\\apache\\cloudstack\\storage\\volume\\VolumeObjectTest.java",
+      "className": "VolumeObjectTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVolumeVO volumeVoMock;",
+        "line": 67,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(volumeVoMock);",
+        "line": 365,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSetVolumeFormatNullFormatAndSetFormatFalseDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(volumeVoMock);",
+        "line": 374,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSetVolumeFormatNullFormatAndSetFormatTrueDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(volumeVoMock);",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSetVolumeFormatValidFormatAndSetFormatFalseDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeVoMock, Mockito.never()).setSize(Mockito.anyLong());",
+        "line": 433,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateUpdateVolumeInfoSetSetVolumeSizeFalseAndVolumeSizeNullDoNotSetVolumeSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeVoMock, Mockito.never()).setSize(Mockito.anyLong());",
+        "line": 445,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateUpdateVolumeInfoSetSetVolumeSizeTrueAndVolumeSizeNullDoNotSetVolumeSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeVoMock, Mockito.never()).setSize(Mockito.anyLong());",
+        "line": 457,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateUpdateVolumeInfoSetSetVolumeSizeFalseAndVolumeSizeNotNullDoNotSetVolumeSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeVoMock, Mockito.times(1)).setSize(Mockito.anyLong());",
+        "line": 469,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateUpdateVolumeInfoSetSetVolumeSizeTrueAndVolumeSizeNotNullVolumeSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

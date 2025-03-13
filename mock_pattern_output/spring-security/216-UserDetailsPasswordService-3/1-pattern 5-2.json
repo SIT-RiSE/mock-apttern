@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "passwordManager",
+    "variableType": "UserDetailsPasswordService",
+    "mockedClass": "UserDetailsPasswordService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.dao",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\dao\\DaoAuthenticationProviderTests.java",
+      "className": "DaoAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDetailsPasswordService passwordManager = mock(UserDetailsPasswordService.class);",
+        "line": 300,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenBadCredentialsAndPasswordManagerThenNoUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(passwordManager);",
+        "line": 309,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenBadCredentialsAndPasswordManagerThenNoUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "passwordManager",
+    "variableType": "UserDetailsPasswordService",
+    "mockedClass": "UserDetailsPasswordService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.dao",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\dao\\DaoAuthenticationProviderTests.java",
+      "className": "DaoAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDetailsPasswordService passwordManager = mock(UserDetailsPasswordService.class);",
+        "line": 318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenNotUpgradeAndPasswordManagerThenNoUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(passwordManager);",
+        "line": 328,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenNotUpgradeAndPasswordManagerThenNoUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

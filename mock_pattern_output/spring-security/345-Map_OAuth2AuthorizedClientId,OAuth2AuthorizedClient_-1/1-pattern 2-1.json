@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "authorizedClients",
+    "variableType": "Map<OAuth2AuthorizedClientId,OAuth2AuthorizedClient>",
+    "mockedClass": "Map<OAuth2AuthorizedClientId,OAuth2AuthorizedClient>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\InMemoryOAuth2AuthorizedClientServiceTests.java",
+      "className": "InMemoryOAuth2AuthorizedClientServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Map<OAuth2AuthorizedClientId, OAuth2AuthorizedClient> authorizedClients = Collections.singletonMap(new OAuth2AuthorizedClientId(this.registration3.getRegistrationId(), this.principalName1), mock(OAuth2AuthorizedClient.class));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorWhenAuthorizedClientsProvidedThenUseProvidedAuthorizedClients",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

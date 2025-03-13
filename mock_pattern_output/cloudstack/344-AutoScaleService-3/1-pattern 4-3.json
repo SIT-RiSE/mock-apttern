@@ -1,0 +1,185 @@
+[
+  {
+    "variableName": "autoScaleService",
+    "variableType": "AutoScaleService",
+    "mockedClass": "AutoScaleService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\CreateAutoScaleVmProfileCmdTest.java",
+      "className": "CreateAutoScaleVmProfileCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private AutoScaleService autoScaleService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "autoScaleService = Mockito.spy(AutoScaleService.class);",
+        "line": 78,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleService.createAutoScaleVmProfile(createAutoScaleVmProfileCmd)).thenReturn(autoScaleVmProfile);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmProfileSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleService.createAutoScaleVmProfile(createAutoScaleVmProfileCmd)).thenReturn(null);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmProfileFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "autoScaleService",
+    "variableType": "AutoScaleService",
+    "mockedClass": "AutoScaleService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\UpdateAutoScaleVmProfileCmdTest.java",
+      "className": "UpdateAutoScaleVmProfileCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private AutoScaleService autoScaleService;",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "autoScaleService = Mockito.spy(AutoScaleService.class);",
+        "line": 63,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleService.updateAutoScaleVmProfile(updateAutoScaleVmProfileCmd)).thenReturn(autoScaleVmProfile);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmProfileSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleService.updateAutoScaleVmProfile(updateAutoScaleVmProfileCmd)).thenReturn(null);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmProfileFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "autoScaleService",
+    "variableType": "AutoScaleService",
+    "mockedClass": "AutoScaleService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\UpdateConditionCmdTest.java",
+      "className": "UpdateConditionCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private AutoScaleService autoScaleService;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "autoScaleService = Mockito.spy(AutoScaleService.class);",
+        "line": 60,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(autoScaleService.updateCondition(Mockito.any(UpdateConditionCmd.class))).thenReturn(condition);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(autoScaleService.updateCondition(Mockito.any(UpdateConditionCmd.class))).thenThrow(exception);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

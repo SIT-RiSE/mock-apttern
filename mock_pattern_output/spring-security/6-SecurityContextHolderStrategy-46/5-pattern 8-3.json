@@ -1,0 +1,153 @@
+[
+  {
+    "variableName": "securityContextHolderStrategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.domain",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\domain\\AclAuthorizationStrategyImplTests.java",
+      "className": "AclAuthorizationStrategyImplTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSecurityContextHolderStrategy securityContextHolderStrategy;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.securityContextHolderStrategy.getContext()).willReturn(this.context);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "securityCheckWhenCustomSecurityContextHolderStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.securityContextHolderStrategy).getContext();",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "securityCheckWhenCustomSecurityContextHolderStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "securityContextHolderStrategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.domain",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\domain\\AclAuthorizationStrategyImplTests.java",
+      "className": "AclAuthorizationStrategyImplTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSecurityContextHolderStrategy securityContextHolderStrategy;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.securityContextHolderStrategy.getContext()).willReturn(this.context);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "securityCheckWhenCustomSecurityContextHolderStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.securityContextHolderStrategy).getContext();",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "securityCheckWhenCustomSecurityContextHolderStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "securityContextHolderStrategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\Saml2LogoutRequestFilterTests.java",
+      "className": "Saml2LogoutRequestFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "SecurityContextHolderStrategy securityContextHolderStrategy = mock(SecurityContextHolderStrategy.class);",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.securityContextHolderStrategy.getContext()).willReturn(new SecurityContextImpl(authentication));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlRequestThenPosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.securityContextHolderStrategy).getContext();",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlRequestThenPosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

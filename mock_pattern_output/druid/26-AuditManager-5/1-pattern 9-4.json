@@ -1,0 +1,170 @@
+[
+  {
+    "variableName": "mockAuditManager",
+    "variableType": "AuditManager",
+    "mockedClass": "AuditManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.common.config",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\common\\config\\JacksonConfigManagerTest.java",
+      "className": "JacksonConfigManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AuditManager mockAuditManager;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockAuditManager).doAudit(ArgumentMatchers.eq(key), ArgumentMatchers.eq(key), ArgumentMatchers.eq(auditInfo), ArgumentMatchers.eq(val), configSerdeCapture.capture());",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "mockAuditManager",
+    "variableType": "AuditManager",
+    "mockedClass": "AuditManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.common.config",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\common\\config\\JacksonConfigManagerTest.java",
+      "className": "JacksonConfigManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AuditManager mockAuditManager;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockAuditManager).doAudit(ArgumentMatchers.eq(key), ArgumentMatchers.eq(key), ArgumentMatchers.eq(auditInfo), ArgumentMatchers.eq(val), configSerdeCapture.capture());",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "mockAuditManager",
+    "variableType": "AuditManager",
+    "mockedClass": "AuditManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.common.config",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\common\\config\\JacksonConfigManagerTest.java",
+      "className": "JacksonConfigManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AuditManager mockAuditManager;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockAuditManager).doAudit(ArgumentMatchers.eq(key), ArgumentMatchers.eq(key), ArgumentMatchers.eq(auditInfo), ArgumentMatchers.eq(val), configSerdeCapture.capture());",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "mockAuditManager",
+    "variableType": "AuditManager",
+    "mockedClass": "AuditManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\KillAuditLogTest.java",
+      "className": "KillAuditLogTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AuditManager mockAuditManager;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(mockAuditManager);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunSkipIfLastRunLessThanPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockAuditManager).removeAuditLogsOlderThan(ArgumentMatchers.anyLong());",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunNotSkipIfLastRunMoreThanPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

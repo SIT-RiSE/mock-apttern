@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "authorizationManager",
+    "variableType": "AuthorizationManager<Message<?>>",
+    "mockedClass": "AuthorizationManager<Message<?>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.access.intercept",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\access\\intercept\\AuthorizationChannelInterceptorTests.java",
+      "className": "AuthorizationChannelInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAuthorizationManager<Message<?>> authorizationManager;",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationManager.check(any(), any())).willReturn(new AuthorizationDecision(true));",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preSendWhenAllowThenSameMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preSendWhenAllowThenSameMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationManager.check(any(), any())).willReturn(new AuthorizationDecision(false));",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preSendWhenDenyThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preSendWhenDenyThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationManager.check(any(), any())).willReturn(new AuthorizationDecision(true));",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preSendWhenAuthorizationEventPublisherThenPublishes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preSendWhenAuthorizationEventPublisherThenPublishes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

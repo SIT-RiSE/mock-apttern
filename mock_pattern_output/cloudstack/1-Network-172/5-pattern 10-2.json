@@ -1,0 +1,122 @@
+[
+  {
+    "variableName": "network",
+    "variableType": "Network",
+    "mockedClass": "Network",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.orchestration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\org\\apache\\cloudstack\\engine\\orchestration\\NetworkOrchestratorTest.java",
+      "className": "NetworkOrchestratorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Network network = Mockito.mock(Network.class);",
+        "line": 590,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(network.getGuruName()).thenReturn(GuestNetworkGuru.class.getSimpleName());",
+        "line": 591,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(network.getDns1()).thenReturn(ip4Dns[0]);",
+        "line": 592,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(network.getDns2()).thenReturn(ip4Dns[1]);",
+        "line": 593,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(network.getIp6Dns1()).thenReturn(ip6Dns[0]);",
+        "line": 594,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(network.getIp6Dns2()).thenReturn(ip6Dns[1]);",
+        "line": 595,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "network",
+    "variableType": "Network",
+    "mockedClass": "Network",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\Ipv6AddressManagerTest.java",
+      "className": "Ipv6AddressManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Network network = mock(Network.class);",
+        "line": 111,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockNetwork",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(network.getId()).thenReturn(0l);",
+        "line": 112,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockNetwork",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(network.getIp6Cidr()).thenReturn(\"2001:db8::/32\");",
+        "line": 113,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockNetwork",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

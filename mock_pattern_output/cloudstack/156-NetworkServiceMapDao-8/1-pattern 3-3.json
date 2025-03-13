@@ -1,0 +1,81 @@
+[
+  {
+    "variableName": "_ntwkSrvcDao",
+    "variableType": "NetworkServiceMapDao",
+    "mockedClass": "NetworkServiceMapDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\cisco-vnmc\\src\\test\\java\\com\\cloud\\network\\element\\CiscoVnmcElementTest.java",
+      "className": "CiscoVnmcElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "NetworkServiceMapDao _ntwkSrvcDao = mock(NetworkServiceMapDao.class);",
+        "line": 98,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 3
+  },
+  {
+    "variableName": "networkServiceMapDao",
+    "variableType": "NetworkServiceMapDao",
+    "mockedClass": "NetworkServiceMapDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ConfigTungstenFabricServiceCmdTest.java",
+      "className": "ConfigTungstenFabricServiceCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNetworkServiceMapDao networkServiceMapDao;",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 3
+  },
+  {
+    "variableName": "_ntwkSrvcProviderDao",
+    "variableType": "NetworkServiceMapDao",
+    "mockedClass": "NetworkServiceMapDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\ExternalLoadBalancerDeviceManagerImplTest.java",
+      "className": "ExternalLoadBalancerDeviceManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNetworkServiceMapDao _ntwkSrvcProviderDao;",
+        "line": 134,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

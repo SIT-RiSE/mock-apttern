@@ -1,0 +1,92 @@
+[
+  {
+    "variableName": "globalLockMock",
+    "variableType": "GlobalLock",
+    "mockedClass": "GlobalLock",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.consoleproxy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\consoleproxy\\ConsoleProxyManagerTest.java",
+      "className": "ConsoleProxyManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nGlobalLock globalLockMock;",
+        "line": 60,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Allocate a new one\r\nMockito.when(globalLockMock.lock(Mockito.anyInt())).thenReturn(true);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewCPVMCreation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(globalLockMock.unlock()).thenReturn(true);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewCPVMCreation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "quotaLimitLock",
+    "variableType": "GlobalLock",
+    "mockedClass": "GlobalLock",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.resourcelimit",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\resourcelimit\\CheckedReservationTest.java",
+      "className": "CheckedReservationTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nGlobalLock quotaLimitLock;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(quotaLimitLock.lock(anyInt())).thenReturn(true);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

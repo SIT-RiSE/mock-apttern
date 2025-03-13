@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "mimeMessage",
+    "variableType": "MimeMessage",
+    "mockedClass": "MimeMessage",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\config\\MailToStringTransformerParserTests.java",
+      "className": "MailToStringTransformerParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MimeMessage mimeMessage = Mockito.mock(MimeMessage.class);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "topLevelTransformer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mimeMessage.getContent()).thenReturn(\"hello\");",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "topLevelTransformer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mimeMessage).getContent();",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "topLevelTransformer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "mimeMessage",
+    "variableType": "MimeMessage",
+    "mockedClass": "MimeMessage",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\config\\MailToStringTransformerParserTests.java",
+      "className": "MailToStringTransformerParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MimeMessage mimeMessage = Mockito.mock(MimeMessage.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformerWithinChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mimeMessage.getContent()).thenReturn(\"foo\");",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformerWithinChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mimeMessage).getContent();",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformerWithinChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

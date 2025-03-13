@@ -1,0 +1,51 @@
+[
+  {
+    "variableName": "app",
+    "variableType": "Application",
+    "mockedClass": "Application",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.protocol.rest.integration.swagger",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-rest\\src\\test\\java\\org\\apache\\dubbo\\rpc\\protocol\\rest\\integration\\swagger\\DubboSwaggerApiListingResourceTest.java",
+      "className": "DubboSwaggerApiListingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private Application app;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "app = mock(Application.class);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(app.getClasses()).thenReturn(sets);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 23
+  }
+]

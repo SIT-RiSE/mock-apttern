@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "securityContext",
+    "variableType": "SecurityContext",
+    "mockedClass": "SecurityContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.jaas",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\jaas\\DefaultJaasAuthenticationProviderTests.java",
+      "className": "DefaultJaasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContext securityContext = mock(SecurityContext.class);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(securityContext).getAuthentication();",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(event, securityContext);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

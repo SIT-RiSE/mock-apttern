@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "serverResourceBaseSpy",
+    "variableType": "ServerResourceBase",
+    "mockedClass": "ServerResourceBase",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\core\\src\\test\\java\\com\\cloud\\resource\\ServerResourceBaseTest.java",
+      "className": "ServerResourceBaseTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "ServerResourceBase serverResourceBaseSpy = Mockito.spy(ServerResourceBase.class);",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(serverResourceBaseSpy, Mockito.times(2)).isValidNicToUseAsPrivateNic(Mockito.any());",
+        "line": 164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "tryToAutoDiscoverResourcePrivateNetworkInterfaceTestThrowConfigurationExceptionWhenThereIsNoValidNics",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(serverResourceBaseSpy, Mockito.times(2)).isValidNicToUseAsPrivateNic(Mockito.any());",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "tryToAutoDiscoverResourcePrivateNetworkInterfaceTestReturnNic",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

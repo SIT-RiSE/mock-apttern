@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "mapping",
+    "variableType": "MatchableHandlerMapping",
+    "mockedClass": "MatchableHandlerMapping",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.servlet.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\servlet\\util\\matcher\\MvcRequestMatcherTests.java",
+      "className": "MvcRequestMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nMatchableHandlerMapping mapping;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.mapping.match(eq(this.request), this.pattern.capture())).willReturn(this.result);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "extractUriTemplateVariablesFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.mapping.match(eq(this.request), this.pattern.capture())).willReturn(this.result);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesServletPathTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.mapping.match(eq(this.request), this.pattern.capture())).willReturn(this.result);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesPathOnlyTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.mapping.match(eq(this.request), this.pattern.capture())).willReturn(this.result);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMethodAndPathTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

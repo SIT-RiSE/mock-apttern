@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "hostDetails",
+    "variableType": "Map<String,String>",
+    "mockedClass": "Map<String,String>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.manager",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\manager\\VmwareManagerImplTest.java",
+      "className": "VmwareManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Map<String, String> hostDetails;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(hostDetails, Mockito.times(3)).put(Mockito.anyString(), Mockito.anyString());",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVmwareDatacenterNormalUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "clusterDetails",
+    "variableType": "Map<String,String>",
+    "mockedClass": "Map<String,String>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.manager",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\manager\\VmwareManagerImplTest.java",
+      "className": "VmwareManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Map<String, String> clusterDetails;",
+        "line": 68,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(clusterDetails, Mockito.times(2)).put(Mockito.anyString(), Mockito.anyString());",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVmwareDatacenterNormalUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

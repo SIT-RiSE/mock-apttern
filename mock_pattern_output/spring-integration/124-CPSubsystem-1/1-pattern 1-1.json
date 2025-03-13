@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "cpSubsystem",
+    "variableType": "CPSubsystem",
+    "mockedClass": "CPSubsystem",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.hazelcast.leader",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-hazelcast\\src\\test\\java\\org\\springframework\\integration\\hazelcast\\leader\\LeaderInitiatorTests.java",
+      "className": "LeaderInitiatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CPSubsystem cpSubsystem = mock(CPSubsystem.class);",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(cpSubsystem.getLock(anyString())).willReturn(fencedLock);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

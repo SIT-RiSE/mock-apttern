@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.dubbo",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-default\\src\\test\\java\\org\\apache\\dubbo\\monitor\\dubbo\\DubboMonitorTest.java",
+      "className": "DubboMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAvailable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.isAvailable()).willReturn(true);",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAvailable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.getUrl()).willReturn(URL.valueOf(\"dubbo://127.0.0.1:7070?interval=20\"));",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAvailable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(invoker).isAvailable();",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAvailable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "variableName": "api",
+    "variableType": "BrocadeVcsApi",
+    "mockedClass": "BrocadeVcsApi",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\resource\\BrocadeVcsResourceTest.java",
+      "className": "BrocadeVcsResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "BrocadeVcsApi api = mock(BrocadeVcsApi.class);",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.getSwitchStatus()).thenReturn(output);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.getSwitchStatus()).thenReturn(output);",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.getSwitchStatus()).thenThrow(new BrocadeVcsApiException());",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.createNetwork(VLAN_ID, NETWORK_ID)).thenThrow(new BrocadeVcsApiException()).thenThrow(new BrocadeVcsApiException()).thenReturn(true);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRetries",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.createNetwork(VLAN_ID, NETWORK_ID)).thenReturn(true);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkApi",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.createNetwork(VLAN_ID, NETWORK_ID)).thenThrow(new BrocadeVcsApiException());",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.deleteNetwork(VLAN_ID, NETWORK_ID)).thenReturn(true);",
+        "line": 200,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteNetworkApi",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.deleteNetwork(VLAN_ID, NETWORK_ID)).thenThrow(new BrocadeVcsApiException());",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteNetworkApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.associateMacToNetwork(NETWORK_ID, MAC_ADDRESS_32)).thenReturn(true);",
+        "line": 222,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAssociateMacToNetworkApi",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.associateMacToNetwork(NETWORK_ID, MAC_ADDRESS_32)).thenThrow(new BrocadeVcsApiException());",
+        "line": 233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAssociateMacToNetworkApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.disassociateMacFromNetwork(NETWORK_ID, MAC_ADDRESS_32)).thenReturn(true);",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisassociateMacFromNetworkApi",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(api.disassociateMacFromNetwork(NETWORK_ID, MAC_ADDRESS_32)).thenThrow(new BrocadeVcsApiException());",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisassociateMacFromNetworkApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

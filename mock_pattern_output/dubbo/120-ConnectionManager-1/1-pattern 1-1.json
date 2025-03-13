@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "connectionManager",
+    "variableType": "ConnectionManager",
+    "mockedClass": "ConnectionManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.protocol.tri",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-triple\\src\\test\\java\\org\\apache\\dubbo\\rpc\\protocol\\tri\\TripleInvokerTest.java",
+      "className": "TripleInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConnectionManager connectionManager = Mockito.mock(ConnectionManager.class);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewCall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(connectionManager.connect(any(URL.class), any(ChannelHandler.class))).thenReturn(connectionClient);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewCall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

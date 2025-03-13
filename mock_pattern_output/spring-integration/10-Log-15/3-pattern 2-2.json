@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.support",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\support\\BoundRabbitChannelAdviceIntegrationTests.java",
+      "className": "BoundRabbitChannelAdviceIntegrationTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log logger = spy(TestUtils.getPropertyValue(advice, \"logger\", Log.class));",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAdvice",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\TcpNioConnectionTests.java",
+      "className": "TcpNioConnectionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log logger = spy(TestUtils.getPropertyValue(connection, \"logger\", Log.class));",
+        "line": 755,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "int3453RaceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "principal",
+    "variableType": "OAuth2AuthenticatedPrincipal",
+    "mockedClass": "OAuth2AuthenticatedPrincipal",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.servlet.request",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\servlet\\request\\SecurityMockMvcRequestPostProcessorsOpaqueTokenTests.java",
+      "className": "SecurityMockMvcRequestPostProcessorsOpaqueTokenTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2AuthenticatedPrincipal principal = mock(OAuth2AuthenticatedPrincipal.class);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "opaqueTokenWhenPrincipalSpecifiedThenAuthenticationHasPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(principal.getName()).willReturn(\"ben\");",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "opaqueTokenWhenPrincipalSpecifiedThenAuthenticationHasPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(principal.getAuthorities()).willReturn(authorities);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "opaqueTokenWhenPrincipalSpecifiedThenAuthenticationHasPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

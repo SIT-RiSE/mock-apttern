@@ -1,0 +1,140 @@
+[
+  {
+    "variableName": "vmTO",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVirtualMachineTO vmTO;",
+        "line": 236,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getLimitCpuUse()).thenReturn(true);",
+        "line": 5687,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetQuotaAndPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getCpuQuotaPercentage()).thenReturn(pct);",
+        "line": 5688,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetQuotaAndPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getLimitCpuUse()).thenReturn(false);",
+        "line": 5699,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetQuotaAndPeriodNoCpuLimitUse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getCpuQuotaPercentage()).thenReturn(pct);",
+        "line": 5700,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetQuotaAndPeriodNoCpuLimitUse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getLimitCpuUse()).thenReturn(true);",
+        "line": 5711,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetQuotaAndPeriodMinQuota",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getCpuQuotaPercentage()).thenReturn(pct);",
+        "line": 5712,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetQuotaAndPeriodMinQuota",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "vmSpec3dgpu",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\resource\\VmwareResourceTest.java",
+      "className": "VmwareResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVirtualMachineTO vmSpec3dgpu;",
+        "line": 135,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmSpec3dgpu.getDetails()).thenReturn(specDetails);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureVideoCardSvgaVramProvided",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

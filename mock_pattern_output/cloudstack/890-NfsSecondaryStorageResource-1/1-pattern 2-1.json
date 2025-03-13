@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "spyResource",
+    "variableType": "NfsSecondaryStorageResource",
+    "mockedClass": "NfsSecondaryStorageResource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\secondary-storage\\server\\src\\test\\java\\org\\apache\\cloudstack\\storage\\resource\\NfsSecondaryStorageResourceTest.java",
+      "className": "NfsSecondaryStorageResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NfsSecondaryStorageResource spyResource = spy(resource);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCleanupStagingNfs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

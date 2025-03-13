@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "authorizedClient",
+    "variableType": "OAuth2AuthorizedClient",
+    "mockedClass": "OAuth2AuthorizedClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configuration",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configuration\\OAuth2ClientConfigurationTests.java",
+      "className": "OAuth2ClientConfigurationTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2AuthorizedClient authorizedClient = mock(OAuth2AuthorizedClient.class);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientFoundThenMethodArgumentResolved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClient.getClientRegistration()).willReturn(clientRegistration);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientFoundThenMethodArgumentResolved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClient.getAccessToken()).willReturn(accessToken);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientFoundThenMethodArgumentResolved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

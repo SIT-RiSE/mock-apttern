@@ -1,0 +1,296 @@
+[
+  {
+    "variableName": "sourceStoragePoolVoMock",
+    "variableType": "StoragePoolVO",
+    "mockedClass": "StoragePoolVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\StorageSystemDataMotionStrategyTest.java",
+      "className": "StorageSystemDataMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nStoragePoolVO sourceStoragePoolVoMock, destinationStoragePoolVoMock;",
+        "line": 87,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mapStringStoragePoolTypeMock, sourceStoragePoolVoMock, destinationStoragePoolVoMock);",
+        "line": 382,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapDestinationPoolIsManaged",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mapStringStoragePoolTypeMock, sourceStoragePoolVoMock, destinationStoragePoolVoMock);",
+        "line": 399,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapDestinationPoolIsNotNFS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(sourceStoragePoolVoMock).getUuid();",
+        "line": 413,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mapStringStoragePoolTypeMock, sourceStoragePoolVoMock, destinationStoragePoolVoMock);",
+        "line": 415,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(sourceStoragePoolVoMock, times).getUuid();",
+        "line": 437,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapDoesNotContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(sourceStoragePoolVoMock, times).getPoolType();",
+        "line": 439,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapDoesNotContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mapStringStoragePoolTypeMock, sourceStoragePoolVoMock, destinationStoragePoolVoMock);",
+        "line": 441,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapDoesNotContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "destinationStoragePoolVoMock",
+    "variableType": "StoragePoolVO",
+    "mockedClass": "StoragePoolVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\StorageSystemDataMotionStrategyTest.java",
+      "className": "StorageSystemDataMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nStoragePoolVO sourceStoragePoolVoMock, destinationStoragePoolVoMock;",
+        "line": 87,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(destinationStoragePoolVoMock).isManaged();",
+        "line": 381,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapDestinationPoolIsManaged",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mapStringStoragePoolTypeMock, sourceStoragePoolVoMock, destinationStoragePoolVoMock);",
+        "line": 382,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapDestinationPoolIsManaged",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(destinationStoragePoolVoMock, times).isManaged();",
+        "line": 397,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapDestinationPoolIsNotNFS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(destinationStoragePoolVoMock, times).getPoolType();",
+        "line": 398,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapDestinationPoolIsNotNFS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mapStringStoragePoolTypeMock, sourceStoragePoolVoMock, destinationStoragePoolVoMock);",
+        "line": 399,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapDestinationPoolIsNotNFS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(destinationStoragePoolVoMock, never()).getScope();",
+        "line": 410,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(destinationStoragePoolVoMock).isManaged();",
+        "line": 411,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(destinationStoragePoolVoMock).getPoolType();",
+        "line": 412,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mapStringStoragePoolTypeMock, sourceStoragePoolVoMock, destinationStoragePoolVoMock);",
+        "line": 415,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(destinationStoragePoolVoMock, never()).getScope();",
+        "line": 434,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapDoesNotContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(destinationStoragePoolVoMock, times).isManaged();",
+        "line": 435,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapDoesNotContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(destinationStoragePoolVoMock, times).getPoolType();",
+        "line": 436,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapDoesNotContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mapStringStoragePoolTypeMock, sourceStoragePoolVoMock, destinationStoragePoolVoMock);",
+        "line": 441,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAddSourcePoolToPoolsMapMapDoesNotContainsKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

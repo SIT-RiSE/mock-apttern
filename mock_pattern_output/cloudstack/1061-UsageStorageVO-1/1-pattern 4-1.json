@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "userStorageVOMock",
+    "variableType": "UsageStorageVO",
+    "mockedClass": "UsageStorageVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.usage.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\usage\\dao\\UsageStorageDaoImplTest.java",
+      "className": "UsageStorageDaoImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UsageStorageVO userStorageVOMock;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userStorageVOMock.getAccountId()).thenReturn(accountId);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userStorageVOMock.getEntityId()).thenReturn(id);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userStorageVOMock.getStorageType()).thenReturn(storageType);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userStorageVOMock.getZoneId()).thenReturn(zoneId);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userStorageVOMock.getDeleted()).thenReturn(deleted);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

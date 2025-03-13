@@ -1,0 +1,496 @@
+[
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.admin.vlan",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\admin\\vlan\\UpdateVlanIpRangeCmdTest.java",
+      "className": "UpdateVlanIpRangeCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 35,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createVlanIpRangeResponse(result)).thenReturn(ipRes);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 23
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\AddClusterCmdTest.java",
+      "className": "AddClusterCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteForResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 34
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\AddIpToVmNicTest.java",
+      "className": "AddIpToVmNicTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createSecondaryIPToNicResponse(secIp)).thenReturn(ipres);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 23
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\CreateSnapshotCmdTest.java",
+      "className": "CreateSnapshotCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createSnapshotResponse(snapshot)).thenReturn(snapshotResponse);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 23
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\RegionCmdTest.java",
+      "className": "RegionCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createRegionResponse(region)).thenReturn(regionResponse);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 23
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\UpdateVmNicIpTest.java",
+      "className": "UpdateVmNicIpTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createUserVmResponse(ResponseView.Restricted, \"virtualmachine\", userVm)).thenReturn(list);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 23
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.user.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\user\\network\\CreateNetworkCmdTest.java",
+      "className": "CreateNetworkCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 340,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createNetworkResponse(ResponseObject.ResponseView.Restricted, createdNetwork)).thenReturn(response);",
+        "line": 342,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 23
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.user.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\user\\network\\UpdateNetworkCmdTest.java",
+      "className": "UpdateNetworkCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createNetworkResponse(ResponseObject.ResponseView.Restricted, network)).thenReturn(response);",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseGenerator).createNetworkResponse(Mockito.any(ResponseObject.ResponseView.class), Mockito.any(Network.class));",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 35
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.user.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\user\\vpc\\CreateVPCCmdTest.java",
+      "className": "CreateVPCCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createVpcResponse(ResponseObject.ResponseView.Restricted, vpc)).thenReturn(response);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 23
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.user.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\user\\vpc\\UpdateVPCCmdTest.java",
+      "className": "UpdateVPCCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createVpcResponse(ResponseObject.ResponseView.Full, vpc)).thenReturn(response);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 23
+  }
+]

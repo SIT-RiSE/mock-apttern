@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "logger",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.debug",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\debug\\DebugFilterTests.java",
+      "className": "DebugFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Logger logger;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logger).info(anyString());",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterProcessesRequests",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logger).info(anyString());",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterProcessesForwardedRequests",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logger).info(this.logCaptor.capture());",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterLogsProperly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

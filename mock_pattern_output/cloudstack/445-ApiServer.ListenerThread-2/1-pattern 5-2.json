@@ -1,0 +1,76 @@
+[
+  {
+    "variableName": "mocked",
+    "variableType": "ApiServer.ListenerThread",
+    "mockedClass": "ApiServer.ListenerThread",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.api",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\ApiServerTest.java",
+      "className": "ApiServerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApiServer.ListenerThread mocked = Mockito.mock(ApiServer.ListenerThread.class);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runTestSetupIntegrationPortListenerInvalidPorts",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mocked, Mockito.never()).start();",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runTestSetupIntegrationPortListenerInvalidPorts",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "mocked",
+    "variableType": "ApiServer.ListenerThread",
+    "mockedClass": "ApiServer.ListenerThread",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.api",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\ApiServerTest.java",
+      "className": "ApiServerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApiServer.ListenerThread mocked = Mockito.mock(ApiServer.ListenerThread.class);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetupIntegrationPortListenerValidPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mocked).start();",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetupIntegrationPortListenerValidPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

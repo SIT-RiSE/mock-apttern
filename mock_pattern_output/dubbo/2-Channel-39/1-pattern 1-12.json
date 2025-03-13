@@ -1,0 +1,530 @@
+[
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.permission",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\permission\\DefaultAnonymousAccessPermissionCheckerTest.java",
+      "className": "DefaultAnonymousAccessPermissionCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = Mockito.mock(Channel.class);",
+        "line": 39,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.remoteAddress()).thenReturn(socketAddress);",
+        "line": 40,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\ForeignHostPermitHandlerTest.java",
+      "className": "ForeignHostPermitHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = mock(Channel.class);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndEmptyWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(channel.remoteAddress()).thenReturn(address);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndEmptyWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\ForeignHostPermitHandlerTest.java",
+      "className": "ForeignHostPermitHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = mock(Channel.class);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndNotMatchWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(channel.remoteAddress()).thenReturn(address);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndNotMatchWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\ForeignHostPermitHandlerTest.java",
+      "className": "ForeignHostPermitHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = mock(Channel.class);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndMatchWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(channel.remoteAddress()).thenReturn(address);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndMatchWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\ForeignHostPermitHandlerTest.java",
+      "className": "ForeignHostPermitHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = mock(Channel.class);",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndMatchWhiteListRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(channel.remoteAddress()).thenReturn(address);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndMatchWhiteListRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel1",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.exchange.support.header",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-api\\src\\test\\java\\org\\apache\\dubbo\\remoting\\exchange\\support\\header\\HeaderExchangeServerTest.java",
+      "className": "HeaderExchangeServerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// test getChannels() and getExchangeChannels()\r\nChannel channel1 = Mockito.mock(Channel.class);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel1.getAttribute(HeaderExchangeChannel.class.getName() + \".CHANNEL\")).thenReturn(exchangeChannel1);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel2",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.exchange.support.header",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-api\\src\\test\\java\\org\\apache\\dubbo\\remoting\\exchange\\support\\header\\HeaderExchangeServerTest.java",
+      "className": "HeaderExchangeServerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel2 = Mockito.mock(Channel.class);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel2.getAttribute(HeaderExchangeChannel.class.getName() + \".CHANNEL\")).thenReturn(exchangeChannel2);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.telnet.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-api\\src\\test\\java\\org\\apache\\dubbo\\remoting\\telnet\\support\\HelpTelnetHandlerTest.java",
+      "className": "HelpTelnetHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = Mockito.mock(Channel.class);",
+        "line": 31,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.getUrl()).thenReturn(URL.valueOf(\"dubbo://127.0.0.1:12345\"));",
+        "line": 32,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.telnet.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-api\\src\\test\\java\\org\\apache\\dubbo\\remoting\\telnet\\support\\StatusTelnetHandlerTest.java",
+      "className": "StatusTelnetHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = Mockito.mock(Channel.class);",
+        "line": 30,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.getUrl()).thenReturn(URL.valueOf(\"dubbo://127.0.0.1:12345\"));",
+        "line": 31,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.getUrl()).thenReturn(URL.valueOf(\"dubbo://127.0.0.1:12345?status=load,memory\"));",
+        "line": 40,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.telnet.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-api\\src\\test\\java\\org\\apache\\dubbo\\remoting\\telnet\\support\\TelnetHandlerAdapterTest.java",
+      "className": "TelnetHandlerAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = Mockito.mock(Channel.class);",
+        "line": 37,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTelnet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.getUrl()).thenReturn(url);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTelnet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.transport",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-api\\src\\test\\java\\org\\apache\\dubbo\\remoting\\transport\\AbstractCodecTest.java",
+      "className": "AbstractCodecTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = mock(Channel.class);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsClientSide",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(channel.getRemoteAddress()).willReturn(new InetSocketAddress(\"172.24.157.13\", 9103));",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsClientSide",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(channel.getUrl()).willReturn(URL.valueOf(\"dubbo://172.24.157.13:9103\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsClientSide",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(channel.getRemoteAddress()).willReturn(new InetSocketAddress(\"172.24.157.14\", 9103));",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsClientSide",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(channel.getUrl()).willReturn(URL.valueOf(\"dubbo://172.24.157.13:9103\"));",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsClientSide",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.transport.netty4",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-netty4\\src\\test\\java\\org\\apache\\dubbo\\remoting\\transport\\netty4\\NettyChannelTest.java",
+      "className": "NettyChannelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = Mockito.mock(Channel.class);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.isActive()).thenReturn(true);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.isActive()).thenReturn(false);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

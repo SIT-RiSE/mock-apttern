@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "archiver",
+    "variableType": "DataSegmentArchiver",
+    "mockedClass": "DataSegmentArchiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.segment.loading",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\segment\\loading\\OmniDataSegmentArchiverTest.java",
+      "className": "OmniDataSegmentArchiverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DataSegmentArchiver archiver = Mockito.mock(DataSegmentArchiver.class);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testArchiveSegmentWithType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(archiver, Mockito.times(1)).archive(segment);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testArchiveSegmentWithType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

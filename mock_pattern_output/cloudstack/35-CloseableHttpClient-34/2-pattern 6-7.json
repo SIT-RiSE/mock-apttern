@@ -1,0 +1,479 @@
+[
+  {
+    "variableName": "httpClient",
+    "variableType": "CloseableHttpClient",
+    "mockedClass": "CloseableHttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils.rest",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\com\\cloud\\utils\\rest\\RESTServiceConnectorTest.java",
+      "className": "RESTServiceConnectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final CloseableHttpClient httpClient = mock(CloseableHttpClient.class);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(any(HttpHost.class), any(HttpRequest.class), any(HttpClientContext.class))).thenReturn(response);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestMethodMatcher.aMethod(\"PUT\"), any(HttpClientContext.class));",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestPayloadMatcher.aPayload(newObjectJson), any(HttpClientContext.class));",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "httpClient",
+    "variableType": "CloseableHttpClient",
+    "mockedClass": "CloseableHttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils.rest",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\com\\cloud\\utils\\rest\\RESTServiceConnectorTest.java",
+      "className": "RESTServiceConnectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final CloseableHttpClient httpClient = mock(CloseableHttpClient.class);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(any(HttpHost.class), any(HttpRequest.class), any(HttpClientContext.class))).thenReturn(response);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestMethodMatcher.aMethod(\"PUT\"), any(HttpClientContext.class));",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestPayloadMatcher.aPayload(newObjectJson), any(HttpClientContext.class));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestQueryMatcher.aQueryThatContains(\"arg2=val2\"), any(HttpClientContext.class));",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestQueryMatcher.aQueryThatContains(\"arg1=val1\"), any(HttpClientContext.class));",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "httpClient",
+    "variableType": "CloseableHttpClient",
+    "mockedClass": "CloseableHttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils.rest",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\com\\cloud\\utils\\rest\\RESTServiceConnectorTest.java",
+      "className": "RESTServiceConnectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final CloseableHttpClient httpClient = mock(CloseableHttpClient.class);",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(any(HttpHost.class), any(HttpRequest.class), any(HttpClientContext.class))).thenReturn(response);",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestMethodMatcher.aMethod(\"POST\"), any(HttpClientContext.class));",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestPayloadMatcher.aPayload(newObjectJson), any(HttpClientContext.class));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "httpClient",
+    "variableType": "CloseableHttpClient",
+    "mockedClass": "CloseableHttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils.rest",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\com\\cloud\\utils\\rest\\RESTServiceConnectorTest.java",
+      "className": "RESTServiceConnectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final CloseableHttpClient httpClient = mock(CloseableHttpClient.class);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(any(HttpHost.class), any(HttpRequest.class), any(HttpClientContext.class))).thenReturn(response);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestMethodMatcher.aMethod(\"POST\"), any(HttpClientContext.class));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestPayloadMatcher.aPayload(newObjectJson), any(HttpClientContext.class));",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestQueryMatcher.aQueryThatContains(\"arg2=val2\"), any(HttpClientContext.class));",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestQueryMatcher.aQueryThatContains(\"arg1=val1\"), any(HttpClientContext.class));",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "httpClient",
+    "variableType": "CloseableHttpClient",
+    "mockedClass": "CloseableHttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils.rest",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\com\\cloud\\utils\\rest\\RESTServiceConnectorTest.java",
+      "className": "RESTServiceConnectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final CloseableHttpClient httpClient = mock(CloseableHttpClient.class);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(any(HttpHost.class), any(HttpRequest.class), any(HttpClientContext.class))).thenReturn(response);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestMethodMatcher.aMethod(\"DELETE\"), any(HttpClientContext.class));",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "httpClient",
+    "variableType": "CloseableHttpClient",
+    "mockedClass": "CloseableHttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils.rest",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\com\\cloud\\utils\\rest\\RESTServiceConnectorTest.java",
+      "className": "RESTServiceConnectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final CloseableHttpClient httpClient = mock(CloseableHttpClient.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(any(HttpHost.class), any(HttpRequest.class), any(HttpClientContext.class))).thenReturn(response);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestMethodMatcher.aMethod(\"GET\"), any(HttpClientContext.class));",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "httpClient",
+    "variableType": "CloseableHttpClient",
+    "mockedClass": "CloseableHttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils.rest",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\com\\cloud\\utils\\rest\\RESTServiceConnectorTest.java",
+      "className": "RESTServiceConnectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final CloseableHttpClient httpClient = mock(CloseableHttpClient.class);",
+        "line": 200,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(httpClient.execute(any(HttpHost.class), any(HttpRequest.class), any(HttpClientContext.class))).thenReturn(response);",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestMethodMatcher.aMethod(\"GET\"), any(HttpClientContext.class));",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestQueryMatcher.aQueryThatContains(\"arg2=val2\"), any(HttpClientContext.class));",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(httpClient).execute(any(HttpHost.class), HttpUriRequestQueryMatcher.aQueryThatContains(\"arg1=val1\"), any(HttpClientContext.class));",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveObjectWithParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

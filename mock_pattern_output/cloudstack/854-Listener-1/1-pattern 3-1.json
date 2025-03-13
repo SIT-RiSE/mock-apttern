@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "storagePoolMonitor",
+    "variableType": "Listener",
+    "mockedClass": "Listener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.agent.manager",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\agent\\manager\\AgentManagerImplTest.java",
+      "className": "AgentManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private Listener storagePoolMonitor;",
+        "line": 39,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "storagePoolMonitor = Mockito.mock(Listener.class);",
+        "line": 53,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

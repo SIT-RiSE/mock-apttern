@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "passwordEncoder",
+    "variableType": "PasswordEncoder",
+    "mockedClass": "PasswordEncoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ReactiveUserDetailsServiceAuthenticationManagerTests.java",
+      "className": "ReactiveUserDetailsServiceAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nPasswordEncoder passwordEncoder;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.passwordEncoder.matches(any(), any())).willReturn(true);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordEncoderAndSuccessThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.passwordEncoder.matches(any(), any())).willReturn(false);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordEncoderAndFailThenFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

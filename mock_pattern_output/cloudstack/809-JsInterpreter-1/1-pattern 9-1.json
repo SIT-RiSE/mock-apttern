@@ -1,0 +1,173 @@
+[
+  {
+    "variableName": "jsInterpreterMock",
+    "variableType": "JsInterpreter",
+    "mockedClass": "JsInterpreter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\QuotaManagerImplTest.java",
+      "className": "QuotaManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nJsInterpreter jsInterpreterMock;",
+        "line": 85,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"account\"), Mockito.anyString());",
+        "line": 267,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNullDoNotInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"domain\"), Mockito.anyString());",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNullDoNotInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock, Mockito.never()).injectVariable(Mockito.eq(\"project\"), Mockito.anyString());",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNullDoNotInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"resourceType\"), Mockito.anyString());",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNullDoNotInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"value\"), Mockito.anyString());",
+        "line": 271,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNullDoNotInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"zone\"), Mockito.anyString());",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNullDoNotInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"account\"), Mockito.anyString());",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNotNullInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"domain\"), Mockito.anyString());",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNotNullInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"project\"), Mockito.anyString());",
+        "line": 290,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNotNullInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"resourceType\"), Mockito.anyString());",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNotNullInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"value\"), Mockito.anyString());",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNotNullInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(jsInterpreterMock).injectVariable(Mockito.eq(\"zone\"), Mockito.anyString());",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "injectPresetVariablesIntoJsInterpreterTestProjectIsNotNullInjectProject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

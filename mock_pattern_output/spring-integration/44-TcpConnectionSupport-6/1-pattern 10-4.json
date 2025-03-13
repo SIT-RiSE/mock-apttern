@@ -1,0 +1,162 @@
+[
+  {
+    "variableName": "mockConn1",
+    "variableType": "TcpConnectionSupport",
+    "mockedClass": "TcpConnectionSupport",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TcpConnectionSupport mockConn1 = mock(TcpConnectionSupport.class);",
+        "line": 407,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "makeMockConnection",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockConn1.getConnectionId()).thenReturn(name);",
+        "line": 408,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "makeMockConnection",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockConn1.toString()).thenReturn(name);",
+        "line": 409,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "makeMockConnection",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockConn1.isOpen()).thenReturn(true);",
+        "line": 410,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "makeMockConnection",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "connection",
+    "variableType": "TcpConnectionSupport",
+    "mockedClass": "TcpConnectionSupport",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TcpConnectionSupport connection = mock(TcpConnectionSupport.class);",
+        "line": 815,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "makeMockConnection",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(connection.isOpen()).thenReturn(true);",
+        "line": 816,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "makeMockConnection",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "connection",
+    "variableType": "TcpConnectionSupport",
+    "mockedClass": "TcpConnectionSupport",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TcpConnectionSupport connection = mock(TcpConnectionSupport.class);",
+        "line": 349,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "makeMockConnection",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(connection.isOpen()).thenReturn(true);",
+        "line": 350,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "makeMockConnection",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "connection",
+    "variableType": "TcpConnectionSupport",
+    "mockedClass": "TcpConnectionSupport",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\TcpOutboundGatewayTests.java",
+      "className": "TcpOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TcpConnectionSupport connection = mock(TcpConnectionSupport.class);",
+        "line": 621,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "makeMockConnection",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(connection.isOpen()).thenReturn(true);",
+        "line": 622,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "makeMockConnection",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

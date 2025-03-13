@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "jwtDecoder",
+    "variableType": "JwtDecoder",
+    "mockedClass": "JwtDecoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\authentication\\OidcAuthorizationCodeAuthenticationProviderTests.java",
+      "className": "OidcAuthorizationCodeAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JwtDecoder jwtDecoder = mock(JwtDecoder.class);",
+        "line": 331,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpIdToken",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwtDecoder.decode(anyString())).willReturn(idToken);",
+        "line": 332,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpIdToken",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

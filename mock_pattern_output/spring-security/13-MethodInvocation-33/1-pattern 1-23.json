@@ -1,0 +1,899 @@
+[
+  {
+    "variableName": "mi",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.intercept.aopalliance",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\intercept\\aopalliance\\MethodSecurityInterceptorTests.java",
+      "className": "MethodSecurityInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mi = mock(MethodInvocation.class);",
+        "line": 313,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "afterInvocationManagerIsNotInvokedIfExceptionIsRaised",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mi.proceed()).willThrow(new Throwable());",
+        "line": 319,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "afterInvocationManagerIsNotInvokedIfExceptionIsRaised",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = mock(MethodInvocation.class);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeWhenMockAuthorizationManagerThenCheckAndReturnedObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(result.getResult());",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeWhenMockAuthorizationManagerThenCheckAndReturnedObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = mock(MethodInvocation.class);",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenAuthorizationEventPublisherThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(result.getResult());",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenAuthorizationEventPublisherThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mi",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mi = mock(MethodInvocation.class);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenCustomAuthorizationDeniedExceptionThenThrows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mi.proceed()).willReturn(\"ok\");",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenCustomAuthorizationDeniedExceptionThenThrows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenMockReactiveAuthorizationManagerThenVerify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenMockReactiveAuthorizationManagerThenVerify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"flux\")));",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenMockReactiveAuthorizationManagerThenVerify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Flux.just(\"john\", \"bob\"));",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenMockReactiveAuthorizationManagerThenVerify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenMockReactiveAuthorizationManagerDeniedThenAccessDeniedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenMockReactiveAuthorizationManagerDeniedThenAccessDeniedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"flux\")));",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenAllValuesDeniedAndPostProcessorThenPostProcessorAppliedToEachValueEmitted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Flux.just(\"john\", \"bob\"));",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenAllValuesDeniedAndPostProcessorThenPostProcessorAppliedToEachValueEmitted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"flux\")));",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenOneValueDeniedAndPostProcessorThenPostProcessorAppliedToDeniedValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Flux.just(\"john\", \"bob\"));",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenOneValueDeniedAndPostProcessorThenPostProcessorAppliedToDeniedValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionThenPostProcess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionThenPostProcess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsMonoThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsMonoThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsNullThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenPostProcessableDecisionAndPostProcessResultIsNullThenPostProcessWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenEmptyDecisionThenUseDefaultPostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenEmptyDecisionThenUseDefaultPostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenCustomAuthorizationDeniedExceptionThenThrows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"ok\"));",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenCustomAuthorizationDeniedExceptionThenThrows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = mock(MethodInvocation.class);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenAuthorizationEventPublisherThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(result.getResult());",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenAuthorizationEventPublisherThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenMockReactiveAuthorizationManagerThenVerify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenMockReactiveAuthorizationManagerThenVerify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"flux\")));",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenMockReactiveAuthorizationManagerThenVerify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Flux.just(\"john\", \"bob\"));",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenMockReactiveAuthorizationManagerThenVerify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenMockReactiveAuthorizationManagerDeniedThenAccessDeniedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenMockReactiveAuthorizationManagerDeniedThenAccessDeniedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndMonoPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenDeniedAndMonoPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"flux\")));",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Flux.just(\"john\", \"bob\"));",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenDeniedAndPostProcessorThenInvokePostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"mono\")));",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenEmptyDecisionThenInvokeDefaultPostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Mono.just(\"john\"));",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeMonoWhenEmptyDecisionThenInvokeDefaultPostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMethodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation mockMethodInvocation = spy(new MockMethodInvocation(new Sample(), Sample.class.getDeclaredMethod(\"flux\")));",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenEmptyDecisionThenInvokeDefaultPostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMethodInvocation.proceed()).willReturn(Flux.just(\"john\", \"bob\"));",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeFluxWhenEmptyDecisionThenInvokeDefaultPostProcessor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

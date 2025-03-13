@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "vmDef",
+    "variableType": "LibvirtVMDef",
+    "mockedClass": "LibvirtVMDef",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLibvirtVMDef vmDef;",
+        "line": 238,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmDef, never()).addComp(any());",
+        "line": 5749,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddExtraConfigComponentEmptyExtraConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmDef, times(1)).addComp(any());",
+        "line": 5760,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddExtraConfigComponentNotEmptyExtraConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

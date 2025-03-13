@@ -1,0 +1,47 @@
+[
+  {
+    "variableName": "testOrchastrator",
+    "variableType": "NetworkOrchestrator",
+    "mockedClass": "NetworkOrchestrator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Other Methods\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.orchestration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\org\\apache\\cloudstack\\engine\\orchestration\\NetworkOrchestratorTest.java",
+      "className": "NetworkOrchestratorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "NetworkOrchestrator testOrchastrator = Mockito.spy(new NetworkOrchestrator());",
+        "line": 95,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(testOrchastrator, times(acquireLockAndCheckIfIpv4IsFreeTimes)).acquireLockAndCheckIfIpv4IsFree(Mockito.any(Network.class), Mockito.anyString());",
+        "line": 398,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "verifyAndAssert",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(testOrchastrator, Mockito.times(validateTimes)).validateLockedRequestedIp(Mockito.any(IPAddressVO.class), Mockito.any(IPAddressVO.class));",
+        "line": 456,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestAcquireLockAndCheckIfIpv4IsFree",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 49
+  }
+]

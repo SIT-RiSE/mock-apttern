@@ -1,0 +1,49 @@
+[
+  {
+    "variableName": "testVMProfile",
+    "variableType": "VirtualMachineProfile",
+    "mockedClass": "VirtualMachineProfile",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\element\\VirtualRouterElementTest.java",
+      "className": "VirtualRouterElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVirtualMachineProfile testVMProfile;",
+        "line": 210,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(testVMProfile.getType()).thenReturn(VirtualMachine.Type.User);",
+        "line": 310,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockMgrs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(testVMProfile.getHypervisorType()).thenReturn(HypervisorType.XenServer);",
+        "line": 311,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockMgrs",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

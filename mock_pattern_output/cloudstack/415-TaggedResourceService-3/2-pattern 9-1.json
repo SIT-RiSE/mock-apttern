@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "taggedResourceServiceMock",
+    "variableType": "TaggedResourceService",
+    "mockedClass": "TaggedResourceService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\snapshot\\SnapshotManagerTest.java",
+      "className": "SnapshotManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTaggedResourceService taggedResourceServiceMock;",
+        "line": 177,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(taggedResourceServiceMock, Mockito.never()).createTags(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any());",
+        "line": 460,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCreateTagsForSnapshotPolicyWithNullTags",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(taggedResourceServiceMock, Mockito.never()).createTags(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any());",
+        "line": 466,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCreateTagsForSnapshotPolicyWithEmptyTags",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(taggedResourceServiceMock, Mockito.times(1)).createTags(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any());",
+        "line": 477,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCreateTagsForSnapshotPolicyWithValidTags",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "variableName": "nspvo",
+    "variableType": "PhysicalNetworkServiceProviderVO",
+    "mockedClass": "PhysicalNetworkServiceProviderVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\stratosphere-ssp\\src\\test\\java\\org\\apache\\cloudstack\\network\\element\\SspElementTest.java",
+      "className": "SspElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "PhysicalNetworkServiceProviderVO nspvo = mock(PhysicalNetworkServiceProviderVO.class);",
+        "line": 77,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nspvo.getState()).thenReturn(PhysicalNetworkServiceProvider.State.Enabled);",
+        "line": 88,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "fullyConfigured",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nspvo.getPhysicalNetworkId()).thenReturn(physicalNetworkId);",
+        "line": 89,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "fullyConfigured",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// isReady is called in changing the networkserviceprovider state to Enabled.\r\nwhen(nspvo.getState()).thenReturn(PhysicalNetworkServiceProvider.State.Disabled);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isReadyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// You can disable ssp temporary by truning the state disabled\r\nwhen(nspvo.getState()).thenReturn(PhysicalNetworkServiceProvider.State.Disabled);",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "canHandleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// restore...\r\nwhen(nspvo.getState()).thenReturn(PhysicalNetworkServiceProvider.State.Enabled);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "canHandleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 26
+  }
+]

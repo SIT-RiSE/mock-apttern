@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "vmProfile",
+    "variableType": "VirtualMachineProfileImpl",
+    "mockedClass": "VirtualMachineProfileImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.implicitplanner",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\deployment-planners\\implicit-dedication\\src\\test\\java\\org\\apache\\cloudstack\\implicitplanner\\ImplicitPlannerTest.java",
+      "className": "ImplicitPlannerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineProfileImpl vmProfile = mock(VirtualMachineProfileImpl.class);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenDcInAvoidList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmProfile.getVirtualMachine()).thenReturn(vm);",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenDcInAvoidList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

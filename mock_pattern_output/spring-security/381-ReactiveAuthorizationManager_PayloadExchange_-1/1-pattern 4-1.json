@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "authorizationManager",
+    "variableType": "ReactiveAuthorizationManager<PayloadExchange>",
+    "mockedClass": "ReactiveAuthorizationManager<PayloadExchange>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\authorization\\AuthorizationPayloadInterceptorTests.java",
+      "className": "AuthorizationPayloadInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveAuthorizationManager<PayloadExchange> authorizationManager;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationManager.verify(any(), any())).willReturn(this.managerResult.mono());",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticationNotSubscribedAndEmptyThenCompletes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "router",
+    "variableType": "TagStateRouter<String>",
+    "mockedClass": "TagStateRouter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.router.tag",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\router\\tag\\TagStateRouterTest.java",
+      "className": "TagStateRouterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TagStateRouter<String> router = Mockito.mock(TagStateRouter.class);",
+        "line": 216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "tagRouterRuleParseTestV3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(router.getInvokers()).thenReturn(getInvokers());",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "tagRouterRuleParseTestV3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

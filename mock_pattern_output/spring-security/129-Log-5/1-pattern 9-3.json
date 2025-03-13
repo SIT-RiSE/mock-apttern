@@ -1,0 +1,204 @@
+[
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\DefaultFilterChainValidatorTests.java",
+      "className": "DefaultFilterChainValidatorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Log logger;",
+        "line": 65,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logger).info(\"Unable to check access to the login page to determine if anonymous access is allowed. This might be an error, but can happen under normal circumstances.\", toBeThrown);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCheckLoginPageIsntProtectedThrowsIllegalArgumentException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logger).warn(\"Anonymous access to the login page doesn't appear to be enabled. \" + \"This is almost certainly an error. Please check your configuration allows unauthenticated \" + \"access to the configured login page. (Simulated access was rejected)\");",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCheckLoginPageAllowsAnonymous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\SpringSecurityCoreVersionTests.java",
+      "className": "SpringSecurityCoreVersionTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Log logger;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.logger);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noLoggingIfVersionsAreEqual",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.logger);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noLoggingIfSpringVersionNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logger, times(1)).warn(any());",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "warnIfSpringVersionTooSmall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logger, never()).warn(any());",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noWarnIfSpringVersionLarger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logger, never()).warn(any());",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noWarnIfSpringPatchVersionDoubleDigits",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.logger);",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noLoggingIfPropertySet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.rememberme",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\rememberme\\JdbcTokenRepositoryImplTests.java",
+      "className": "JdbcTokenRepositoryImplTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Log logger;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logger).debug(captor.capture(), any(EmptyResultDataAccessException.class));",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retrievingTokenWithNoSeriesReturnsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.logger);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retrievingTokenWithNoSeriesReturnsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

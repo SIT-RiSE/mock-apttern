@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "kubernetesClusterDetailsDao",
+    "variableType": "KubernetesClusterDetailsDao",
+    "mockedClass": "KubernetesClusterDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.cluster.actionworkers",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\cluster\\actionworkers\\KubernetesClusterActionWorkerTest.java",
+      "className": "KubernetesClusterActionWorkerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nKubernetesClusterDetailsDao kubernetesClusterDetailsDao;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(kubernetesClusterDetailsDao.findDetail(DEFAULT_ID, ApiConstants.PUBLIC_IP_ID)).thenReturn(detailsVO);",
+        "line": 88,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockClusterPublicIpDetail",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

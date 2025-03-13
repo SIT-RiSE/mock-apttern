@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "asyncTemplate",
+    "variableType": "AsyncRabbitTemplate",
+    "mockedClass": "AsyncRabbitTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\outbound\\AsyncAmqpGatewayTests.java",
+      "className": "AsyncAmqpGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AsyncRabbitTemplate asyncTemplate = new AsyncRabbitTemplate(template, container);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfirmsAndReturns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "asyncTemplate = mock(AsyncRabbitTemplate.class);",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfirmsAndReturns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  }
+]

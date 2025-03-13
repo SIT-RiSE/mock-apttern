@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "networkACLItemDaoMock",
+    "variableType": "NetworkACLItemDao",
+    "mockedClass": "NetworkACLItemDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLManagerImplTest.java",
+      "className": "NetworkACLManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate NetworkACLItemDao networkACLItemDaoMock;",
+        "line": 39,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkACLItemDaoMock).update(1L, networkACLItemVOMock);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLItemTestHappyDay",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

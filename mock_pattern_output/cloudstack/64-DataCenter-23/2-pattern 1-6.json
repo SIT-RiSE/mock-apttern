@@ -1,0 +1,244 @@
+[
+  {
+    "variableName": "dc",
+    "variableType": "DataCenter",
+    "mockedClass": "DataCenter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\cisco-vnmc\\src\\test\\java\\com\\cloud\\network\\element\\CiscoVnmcElementTest.java",
+      "className": "CiscoVnmcElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenter dc = mock(DataCenter.class);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dc.getNetworkType()).thenReturn(NetworkType.Advanced);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dataCenter",
+    "variableType": "DataCenter",
+    "mockedClass": "DataCenter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ConfigTungstenFabricServiceCmdTest.java",
+      "className": "ConfigTungstenFabricServiceCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenter dataCenter = Mockito.mock(DataCenter.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataCenter.isSecurityGroupEnabled()).thenReturn(true);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dataCenter",
+    "variableType": "DataCenter",
+    "mockedClass": "DataCenter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenter dataCenter = mock(DataCenter.class);",
+        "line": 875,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenNicSecondaryIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenter.isSecurityGroupEnabled()).thenReturn(true);",
+        "line": 893,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenNicSecondaryIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dataCenter",
+    "variableType": "DataCenter",
+    "mockedClass": "DataCenter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenter dataCenter = mock(DataCenter.class);",
+        "line": 908,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenNicSecondaryIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenter.isSecurityGroupEnabled()).thenReturn(true);",
+        "line": 920,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenNicSecondaryIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dc",
+    "variableType": "DataCenter",
+    "mockedClass": "DataCenter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenter dc = Mockito.mock(DataCenter.class);",
+        "line": 427,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "avoidDisabledDataCentersTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dc.getId()).thenReturn(123l);",
+        "line": 428,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "avoidDisabledDataCentersTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dc.getAllocationState()).thenReturn(allocationStates[i]);",
+        "line": 433,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "avoidDisabledDataCentersTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dc",
+    "variableType": "DataCenter",
+    "mockedClass": "DataCenter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenter dc = Mockito.mock(DataCenter.class);",
+        "line": 896,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAvoidDisabledTests",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dc.getId()).thenReturn(123l);",
+        "line": 897,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAvoidDisabledTests",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

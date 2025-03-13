@@ -1,0 +1,63 @@
+[
+  {
+    "variableName": "comparator",
+    "variableType": "Comparator<File>",
+    "mockedClass": "Comparator<File>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\FileReadingMessageSourceTests.java",
+      "className": "FileReadingMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final Comparator<File> comparator = mock();",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// record the comparator to reverse order the files\r\nwhen(comparator.compare(file1, file2)).thenReturn(1);",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "orderedReception",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(comparator.compare(file1, file3)).thenReturn(1);",
+        "line": 145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "orderedReception",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(comparator.compare(file3, file2)).thenReturn(-1);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "orderedReception",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

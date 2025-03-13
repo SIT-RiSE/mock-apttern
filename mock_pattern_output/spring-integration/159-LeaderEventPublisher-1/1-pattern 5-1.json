@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "leaderEventPublisher",
+    "variableType": "LeaderEventPublisher",
+    "mockedClass": "LeaderEventPublisher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.hazelcast.leader",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-hazelcast\\src\\test\\java\\org\\springframework\\integration\\hazelcast\\leader\\LeaderInitiatorTests.java",
+      "className": "LeaderInitiatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LeaderEventPublisher leaderEventPublisher = mock();",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// verify revoke event is published\r\nverify(leaderEventPublisher).publishOnRevoked(any(Object.class), any(Context.class), anyString());",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

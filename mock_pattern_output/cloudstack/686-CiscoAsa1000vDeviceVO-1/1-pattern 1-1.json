@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "asaVO",
+    "variableType": "CiscoAsa1000vDeviceVO",
+    "mockedClass": "CiscoAsa1000vDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\cisco-vnmc\\src\\test\\java\\com\\cloud\\network\\element\\CiscoVnmcElementTest.java",
+      "className": "CiscoVnmcElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CiscoAsa1000vDeviceVO asaVO = mock(CiscoAsa1000vDeviceVO.class);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asaVO.getInPortProfile()).thenReturn(\"foo\");",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asaVO.getManagementIp()).thenReturn(\"1.2.3.4\");",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

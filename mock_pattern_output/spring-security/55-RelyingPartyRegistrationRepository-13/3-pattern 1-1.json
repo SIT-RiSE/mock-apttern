@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "repository",
+    "variableType": "RelyingPartyRegistrationRepository",
+    "mockedClass": "RelyingPartyRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\Saml2LoginBeanDefinitionParserTests.java",
+      "className": "Saml2LoginBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelyingPartyRegistrationRepository repository = mock(RelyingPartyRegistrationRepository.class);",
+        "line": 316,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAuthnRequestRepositoryThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.repository.findByRegistrationId(anyString())).willReturn(TestRelyingPartyRegistrations.relyingPartyRegistration().build());",
+        "line": 317,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAuthnRequestRepositoryThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

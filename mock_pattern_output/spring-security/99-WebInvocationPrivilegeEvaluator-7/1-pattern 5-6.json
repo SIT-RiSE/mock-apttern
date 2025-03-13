@@ -1,0 +1,260 @@
+[
+  {
+    "variableName": "expected",
+    "variableType": "WebInvocationPrivilegeEvaluator",
+    "mockedClass": "WebInvocationPrivilegeEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.taglibs.authz",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\taglibs\\src\\test\\java\\org\\springframework\\security\\taglibs\\authz\\AbstractAuthorizeTagTests.java",
+      "className": "AbstractAuthorizeTagTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebInvocationPrivilegeEvaluator expected = mock(WebInvocationPrivilegeEvaluator.class);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(expected).isAllowed(eq(\"\"), eq(uri), eq(\"GET\"), any());",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "expected",
+    "variableType": "WebInvocationPrivilegeEvaluator",
+    "mockedClass": "WebInvocationPrivilegeEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.taglibs.authz",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\taglibs\\src\\test\\java\\org\\springframework\\security\\taglibs\\authz\\AbstractAuthorizeTagTests.java",
+      "className": "AbstractAuthorizeTagTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebInvocationPrivilegeEvaluator expected = mock(WebInvocationPrivilegeEvaluator.class);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromRequestUsesSecurityContextHolderStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(expected).isAllowed(eq(\"\"), eq(uri), eq(\"GET\"), any());",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromRequestUsesSecurityContextHolderStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "expected",
+    "variableType": "WebInvocationPrivilegeEvaluator",
+    "mockedClass": "WebInvocationPrivilegeEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.taglibs.authz",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\taglibs\\src\\test\\java\\org\\springframework\\security\\taglibs\\authz\\AbstractAuthorizeTagTests.java",
+      "className": "AbstractAuthorizeTagTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebInvocationPrivilegeEvaluator expected = mock(WebInvocationPrivilegeEvaluator.class);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromChildContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(expected).isAllowed(eq(\"\"), eq(uri), eq(\"GET\"), any());",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "privilegeEvaluatorFromChildContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "spyDeny",
+    "variableType": "WebInvocationPrivilegeEvaluator",
+    "mockedClass": "WebInvocationPrivilegeEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\RequestMatcherDelegatingWebInvocationPrivilegeEvaluatorTests.java",
+      "className": "RequestMatcherDelegatingWebInvocationPrivilegeEvaluatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebInvocationPrivilegeEvaluator spyDeny = spy(deny);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAllowedWhenFirstDelegateDenyThenDoNotInvokeOthers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(spyDeny).isAllowed(any(), any());",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAllowedWhenFirstDelegateDenyThenDoNotInvokeOthers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "spyAllow",
+    "variableType": "WebInvocationPrivilegeEvaluator",
+    "mockedClass": "WebInvocationPrivilegeEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\RequestMatcherDelegatingWebInvocationPrivilegeEvaluatorTests.java",
+      "className": "RequestMatcherDelegatingWebInvocationPrivilegeEvaluatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebInvocationPrivilegeEvaluator spyAllow = spy(allow);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAllowedWhenFirstDelegateDenyThenDoNotInvokeOthers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(spyAllow);",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAllowedWhenFirstDelegateDenyThenDoNotInvokeOthers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "spyDeny",
+    "variableType": "WebInvocationPrivilegeEvaluator",
+    "mockedClass": "WebInvocationPrivilegeEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\RequestMatcherDelegatingWebInvocationPrivilegeEvaluatorTests.java",
+      "className": "RequestMatcherDelegatingWebInvocationPrivilegeEvaluatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebInvocationPrivilegeEvaluator spyDeny = spy(deny);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAllowedWhenDifferentArgumentsThenCallSpecificIsAllowedInDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(spyDeny).isAllowed(any(), any());",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAllowedWhenDifferentArgumentsThenCallSpecificIsAllowedInDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(spyDeny).isAllowed(any(), any(), any(), any());",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAllowedWhenDifferentArgumentsThenCallSpecificIsAllowedInDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(spyDeny);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAllowedWhenDifferentArgumentsThenCallSpecificIsAllowedInDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

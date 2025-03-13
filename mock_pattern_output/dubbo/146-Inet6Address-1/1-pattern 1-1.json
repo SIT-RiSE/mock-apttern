@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "address",
+    "variableType": "Inet6Address",
+    "mockedClass": "Inet6Address",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\NetUtilsTest.java",
+      "className": "NetUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Inet6Address address = mock(Inet6Address.class);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNormalizeV6Address",
+          "methodAnnotations": [
+            "@Disabled",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(address.getHostAddress()).thenReturn(\"fe80:0:0:0:894:aeec:f37d:23e1%en0\");",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNormalizeV6Address",
+          "methodAnnotations": [
+            "@Disabled",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(address.getScopeId()).thenReturn(5);",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNormalizeV6Address",
+          "methodAnnotations": [
+            "@Disabled",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

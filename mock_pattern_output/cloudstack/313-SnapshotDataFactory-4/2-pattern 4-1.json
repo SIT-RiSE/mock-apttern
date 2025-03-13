@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "_snapshotFactory",
+    "variableType": "SnapshotDataFactory",
+    "mockedClass": "SnapshotDataFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\snapshot\\SnapshotServiceImplTest.java",
+      "className": "SnapshotServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSnapshotDataFactory _snapshotFactory;",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_snapshotFactory.getSnapshot(1L, DataStoreRole.Primary)).thenReturn(null);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotWithNoPrimaryStorageEntry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

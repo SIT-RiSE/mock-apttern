@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "clientRegistrationRepositorySupplier",
+    "variableType": "Supplier<InMemoryClientRegistrationRepository>",
+    "mockedClass": "Supplier<InMemoryClientRegistrationRepository>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.registration",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\registration\\SupplierClientRegistrationRepositoryTests.java",
+      "className": "SupplierClientRegistrationRepositoryTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSupplier<InMemoryClientRegistrationRepository> clientRegistrationRepositorySupplier;",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.clientRegistrationRepositorySupplier.get()).willReturn(new InMemoryClientRegistrationRepository(this.registration));",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findByRegistrationIdThenSingletonSupplierCached",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.clientRegistrationRepositorySupplier, times(1)).get();",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findByRegistrationIdThenSingletonSupplierCached",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

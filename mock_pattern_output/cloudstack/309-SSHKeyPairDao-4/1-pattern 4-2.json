@@ -1,0 +1,92 @@
+[
+  {
+    "variableName": "sshKeyPairDao",
+    "variableType": "SSHKeyPairDao",
+    "mockedClass": "SSHKeyPairDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSSHKeyPairDao sshKeyPairDao;",
+        "line": 236,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sshKeyPairDao.findByName(anyLong(), anyLong(), anyString())).thenReturn(keypair1).thenReturn(keypair2);",
+        "line": 1466,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmSshKeyPairs1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "sshKeyPairDao",
+    "variableType": "SSHKeyPairDao",
+    "mockedClass": "SSHKeyPairDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\ManagementServerImplTest.java",
+      "className": "ManagementServerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSSHKeyPairDao sshKeyPairDao;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(sshKeyPairDao.findByName(1L, 1L, \"name\")).thenReturn(null).thenReturn(null);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDuplicateRegistraitons",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sshKeyPairDao.findByPublicKey(1L, 1L, publicKeyMaterial)).thenReturn(null).thenReturn(existingPair);",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDuplicateRegistraitons",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

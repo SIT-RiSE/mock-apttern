@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "permissionEvaluator",
+    "variableType": "PermissionEvaluator",
+    "mockedClass": "PermissionEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\access\\expression\\DefaultMessageSecurityExpressionHandlerTests.java",
+      "className": "DefaultMessageSecurityExpressionHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nPermissionEvaluator permissionEvaluator;",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.permissionEvaluator.hasPermission(this.authentication, this.message, \"read\")).willReturn(true);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "permissionEvaluator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "permissionEvaluator",
+    "variableType": "PermissionEvaluator",
+    "mockedClass": "PermissionEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.taglibs.authz",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\taglibs\\src\\test\\java\\org\\springframework\\security\\taglibs\\authz\\AuthorizeTagTests.java",
+      "className": "AuthorizeTagTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PermissionEvaluator permissionEvaluator;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.permissionEvaluator.hasPermission(eq(this.currentUser), eq(domain), anyString())).willReturn(true);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "taglibsDocumentationHasPermissionOr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "permissionEvaluator",
+    "variableType": "PermissionEvaluator",
+    "mockedClass": "PermissionEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.taglibs.authz",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\taglibs\\src\\test\\java\\org\\springframework\\security\\taglibs\\authz\\AuthorizeTagTests.java",
+      "className": "AuthorizeTagTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PermissionEvaluator permissionEvaluator;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.permissionEvaluator.hasPermission(eq(this.currentUser), eq(domain), anyString())).willReturn(true);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "taglibsDocumentationHasPermissionOr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "msg1",
+    "variableType": "MimeMessage",
+    "mockedClass": "MimeMessage",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MimeMessage msg1 = spy(GreenMailUtil.newMimeMessage(\"test1\"));",
+        "line": 1000,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndMarkAsReadDontDeleteWithThrowingWhenCopying",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(msg1, times(0)).setFlags(Mockito.any(), Mockito.anyBoolean());",
+        "line": 1012,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndMarkAsReadDontDeleteWithThrowingWhenCopying",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// msg2 is marked with the user and seen flags\r\nverify(msg1, times(2)).setFlags(Mockito.any(), Mockito.anyBoolean());",
+        "line": 1018,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndMarkAsReadDontDeleteWithThrowingWhenCopying",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "listener",
+    "variableType": "ApplicationListener<ApplicationEvent>",
+    "mockedClass": "ApplicationListener<ApplicationEvent>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.history",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\history\\AnnotatedTests.java",
+      "className": "AnnotatedTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationListener<ApplicationEvent> listener = new ApplicationListener<ApplicationEvent>() {\r\n\r\n    @Override\r\n    public void onApplicationEvent(ApplicationEvent event) {\r\n        MessageHistory history = MessageHistory.read((Message<?>) event.getSource());\r\n        Properties adapterHistory = history.get(1);\r\n        assertThat(adapterHistory.get(\"name\")).isEqualTo(\"myAdapter\");\r\n        assertThat(adapterHistory.get(\"type\")).isEqualTo(\"outbound-channel-adapter\");\r\n    }\r\n};",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHistoryWithAnnotatedComponents",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "listener = spy(listener);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHistoryWithAnnotatedComponents",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(listener, times(1)).onApplicationEvent((ApplicationEvent) Mockito.any());",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHistoryWithAnnotatedComponents",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  }
+]

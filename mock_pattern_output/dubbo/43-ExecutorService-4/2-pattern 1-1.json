@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "executor",
+    "variableType": "ExecutorService",
+    "mockedClass": "ExecutorService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\ExecutorUtilTest.java",
+      "className": "ExecutorUtilTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ExecutorService executor = Mockito.mock(ExecutorService.class);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsTerminated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(executor.isTerminated()).thenReturn(true);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsTerminated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

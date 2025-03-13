@@ -1,0 +1,140 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 755,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.remove(\"testremote/x/f1\")).thenReturn(Boolean.TRUE);",
+        "line": 759,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session).remove(\"testremote/x/f1\");",
+        "line": 764,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.ws.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ws\\src\\test\\java\\org\\springframework\\integration\\ws\\config\\UriVariableTests.java",
+      "className": "UriVariableTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = Mockito.mock(Session.class);",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt2720JmsUriVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.createQueue(Mockito.anyString())).thenReturn(queue);",
+        "line": 145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt2720JmsUriVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.createBytesMessage()).thenReturn(Mockito.mock(BytesMessage.class));",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt2720JmsUriVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.createProducer(queue)).thenReturn(producer);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt2720JmsUriVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// For this test it's enough to not go ahead. Invoked in the 'JmsSenderConnection#onSendAfterWrite' on the\r\n// 'WebServiceTemplate#sendRequest' after invocation of our 'TestClientInterceptor'\r\nMockito.when(session.createTemporaryQueue()).thenThrow(new WebServiceIOException(\"intentional\"));",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt2720JmsUriVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(session).createQueue(destinationName);",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt2720JmsUriVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "customProvider",
+    "variableType": "ReactiveOAuth2AuthorizedClientProvider",
+    "mockedClass": "ReactiveOAuth2AuthorizedClientProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\ReactiveOAuth2AuthorizedClientProviderBuilderTests.java",
+      "className": "ReactiveOAuth2AuthorizedClientProviderBuilderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOAuth2AuthorizedClientProvider customProvider = mock(ReactiveOAuth2AuthorizedClientProvider.class);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "buildWhenCustomProviderThenProviderCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customProvider.authorize(any())).willReturn(Mono.empty());",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "buildWhenCustomProviderThenProviderCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customProvider).authorize(any(OAuth2AuthorizationContext.class));",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "buildWhenCustomProviderThenProviderCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

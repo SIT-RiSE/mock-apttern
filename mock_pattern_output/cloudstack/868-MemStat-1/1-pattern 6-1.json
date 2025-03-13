@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "memStat",
+    "variableType": "MemStat",
+    "mockedClass": "MemStat",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final MemStat memStat = Mockito.mock(MemStat.class);",
+        "line": 1458,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(memStat.getAvailable()).thenReturn(1500L);",
+        "line": 1467,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(memStat.getTotal()).thenReturn(15000L);",
+        "line": 1468,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(memStat, times(1)).getAvailable();",
+        "line": 1479,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(memStat, times(1)).getTotal();",
+        "line": 1480,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "principal",
+    "variableType": "OidcUser",
+    "mockedClass": "OidcUser",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\authentication\\OidcAuthorizationCodeAuthenticationProviderTests.java",
+      "className": "OidcAuthorizationCodeAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OidcUser principal = mock(OidcUser.class);",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenLoginSuccessThenReturnAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(principal.getAuthorities()).willAnswer((Answer<List<GrantedAuthority>>) (invocation) -> authorities);",
+        "line": 271,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenLoginSuccessThenReturnAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "principal",
+    "variableType": "OidcUser",
+    "mockedClass": "OidcUser",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\authentication\\OidcAuthorizationCodeAuthenticationProviderTests.java",
+      "className": "OidcAuthorizationCodeAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OidcUser principal = mock(OidcUser.class);",
+        "line": 294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAuthoritiesMapperSetThenReturnMappedAuthorities",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(principal.getAuthorities()).willAnswer((Answer<List<GrantedAuthority>>) (invocation) -> authorities);",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAuthoritiesMapperSetThenReturnMappedAuthorities",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "principal",
+    "variableType": "OidcUser",
+    "mockedClass": "OidcUser",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\authentication\\OidcAuthorizationCodeAuthenticationProviderTests.java",
+      "className": "OidcAuthorizationCodeAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OidcUser principal = mock(OidcUser.class);",
+        "line": 318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenTokenSuccessResponseThenAdditionalParametersAddedToUserRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(principal.getAuthorities()).willAnswer((Answer<List<GrantedAuthority>>) (invocation) -> authorities);",
+        "line": 320,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenTokenSuccessResponseThenAdditionalParametersAddedToUserRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

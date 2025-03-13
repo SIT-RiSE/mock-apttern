@@ -1,0 +1,63 @@
+[
+  {
+    "variableName": "handler",
+    "variableType": "MetadataStorageUpdaterJobHandler",
+    "mockedClass": "MetadataStorageUpdaterJobHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.indexer",
+      "filePath": "C:\\java tool\\Apache\\druid\\indexing-hadoop\\src\\test\\java\\org\\apache\\druid\\indexer\\MetadataStorageUpdaterJobTest.java",
+      "className": "MetadataStorageUpdaterJobTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private MetadataStorageUpdaterJobHandler handler;",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "handler = mock(MetadataStorageUpdaterJobHandler.class);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_run",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler).publishSegments(SEGMENT_TABLE, DATA_SEGMENT_AND_INDEX_ZIP_FILE_PATHS.stream().map(s -> s.getSegment()).collect(Collectors.toList()), HadoopDruidIndexerConfig.JSON_MAPPER);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_run",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(handler, metadataUpdateSpec, ioConfig, spec, config);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_run",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 44
+  }
+]

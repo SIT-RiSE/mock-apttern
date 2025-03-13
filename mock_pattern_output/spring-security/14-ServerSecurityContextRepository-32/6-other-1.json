@@ -1,0 +1,87 @@
+[
+  {
+    "variableName": "repository",
+    "variableType": "ServerSecurityContextRepository",
+    "mockedClass": "ServerSecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\context\\ReactorContextWebFilterTests.java",
+      "className": "ReactorContextWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerSecurityContextRepository repository;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.repository.load(any())).willReturn(this.securityContext.mono());",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenNoPrincipalAccessThenNoInteractions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.repository.load(any())).willReturn(this.securityContext.mono());",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenGetPrincipalMonoThenNoInteractions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.repository.load(any())).willReturn(Mono.just(context));",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenPrincipalAndGetPrincipalThenInteractAndUseOriginalPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.repository.load(any())).willReturn(this.securityContext.mono());",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenMainContextThenDoesNotOverride",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.repository.load(any())).willReturn(Mono.just(context));",
+        "line": 143,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "assertSecurityContextLoaded",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 25
+  }
+]

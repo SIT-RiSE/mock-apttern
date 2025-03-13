@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "authorizationRequestRepository",
+    "variableType": "ServerAuthorizationRequestRepository<OAuth2AuthorizationRequest>",
+    "mockedClass": "ServerAuthorizationRequestRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerAuthorizationRequestRepository<OAuth2AuthorizationRequest> authorizationRequestRepository = mock(ServerAuthorizationRequestRepository.class);",
+        "line": 629,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureAuthorizationRequestRepositoryForOAuth2Login",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestRepository.removeAuthorizationRequest(any())).willReturn(Mono.just(authorizationRequest));",
+        "line": 634,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureAuthorizationRequestRepositoryForOAuth2Login",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authorizationRequestRepository).removeAuthorizationRequest(any());",
+        "line": 643,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureAuthorizationRequestRepositoryForOAuth2Login",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

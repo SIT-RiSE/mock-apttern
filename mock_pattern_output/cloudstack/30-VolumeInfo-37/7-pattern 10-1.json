@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "srcVolumeInfo",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\StorageSystemDataMotionStrategyTest.java",
+      "className": "StorageSystemDataMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo srcVolumeInfo = Mockito.mock(VolumeObject.class);",
+        "line": 278,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureAndVerifyIsSourceAndDestinationPoolTypeOfNfs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(srcVolumeInfo.getId()).thenReturn(0l);",
+        "line": 279,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureAndVerifyIsSourceAndDestinationPoolTypeOfNfs",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "authenticationToken",
+    "variableType": "JaasAuthenticationToken",
+    "mockedClass": "JaasAuthenticationToken",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.builders",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\builders\\NamespaceHttpTests.java",
+      "className": "NamespaceHttpTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JaasAuthenticationToken authenticationToken = mock(JaasAuthenticationToken.class);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenJaasApiIntegrationFilterAddedThenJaasSubjectObtained",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authenticationToken.isAuthenticated()).willReturn(true);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenJaasApiIntegrationFilterAddedThenJaasSubjectObtained",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authenticationToken.getLoginContext()).willReturn(loginContext);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenJaasApiIntegrationFilterAddedThenJaasSubjectObtained",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

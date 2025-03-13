@@ -1,0 +1,596 @@
+[
+  {
+    "variableName": "registrations",
+    "variableType": "RelyingPartyRegistrationRepository",
+    "mockedClass": "RelyingPartyRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\OpenSaml4LogoutRequestValidatorParametersResolverTests.java",
+      "className": "OpenSaml4LogoutRequestValidatorParametersResolverTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nRelyingPartyRegistrationRepository registrations;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(registrationId)).willReturn(this.registration);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutRegistrationIdResolveWhenMatchesThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(registrationId)).willReturn(this.registration);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutRegistrationIdWhenUnauthenticatedThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(registrationId)).willReturn(this.registration);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutResolveWhenAuthenticatedThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findUniqueByAssertingPartyEntityId(TestOpenSamlObjects.ASSERTING_PARTY_ENTITY_ID)).willReturn(this.registration);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutResolveWhenUnauthenticatedThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findUniqueByAssertingPartyEntityId(TestOpenSamlObjects.ASSERTING_PARTY_ENTITY_ID)).willReturn(this.registration);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutResolveWhenUnauthenticatedGetRequestThenInflates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "registrations",
+    "variableType": "RelyingPartyRegistrationRepository",
+    "mockedClass": "RelyingPartyRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\OpenSamlLogoutRequestValidatorParametersResolverTests.java",
+      "className": "OpenSamlLogoutRequestValidatorParametersResolverTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nRelyingPartyRegistrationRepository registrations;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(registrationId)).willReturn(this.registration);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutRegistrationIdResolveWhenMatchesThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(registrationId)).willReturn(this.registration);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutRegistrationIdWhenUnauthenticatedThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(registrationId)).willReturn(this.registration);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutResolveWhenAuthenticatedThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findUniqueByAssertingPartyEntityId(TestOpenSamlObjects.ASSERTING_PARTY_ENTITY_ID)).willReturn(this.registration);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutResolveWhenUnauthenticatedThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findUniqueByAssertingPartyEntityId(TestOpenSamlObjects.ASSERTING_PARTY_ENTITY_ID)).willReturn(this.registration);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutResolveWhenUnauthenticatedGetRequestThenInflates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "registrations",
+    "variableType": "RelyingPartyRegistrationRepository",
+    "mockedClass": "RelyingPartyRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\OpenSaml4AuthenticationTokenConverterTests.java",
+      "className": "OpenSaml4AuthenticationTokenConverterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nRelyingPartyRegistrationRepository registrations;",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenSamlResponseThenToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenSamlResponseInvalidBase64ThenSaml2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenGetRequestThenInflates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenGetRequestInvalidDeflatedThenSaml2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenUsingSamlUtilsBase64ThenXmlIsValid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenSavedAuthenticationRequestThenToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findUniqueByAssertingPartyEntityId(TestOpenSamlObjects.ASSERTING_PARTY_ENTITY_ID)).willReturn(this.registration);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenMatchingNoRegistrationIdThenLooksUpByAssertingEntityId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "registrations",
+    "variableType": "RelyingPartyRegistrationRepository",
+    "mockedClass": "RelyingPartyRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\OpenSamlAuthenticationTokenConverterTests.java",
+      "className": "OpenSamlAuthenticationTokenConverterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nRelyingPartyRegistrationRepository registrations;",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenSamlResponseThenToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenSamlResponseInvalidBase64ThenSaml2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenGetRequestThenInflates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenGetRequestInvalidDeflatedThenSaml2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenUsingSamlUtilsBase64ThenXmlIsValid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenSavedAuthenticationRequestThenToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findUniqueByAssertingPartyEntityId(TestOpenSamlObjects.ASSERTING_PARTY_ENTITY_ID)).willReturn(this.registration);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenMatchingNoRegistrationIdThenLooksUpByAssertingEntityId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "registrations",
+    "variableType": "RelyingPartyRegistrationRepository",
+    "mockedClass": "RelyingPartyRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml5Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\OpenSaml5LogoutRequestValidatorParametersResolverTests.java",
+      "className": "OpenSaml5LogoutRequestValidatorParametersResolverTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nRelyingPartyRegistrationRepository registrations;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(registrationId)).willReturn(this.registration);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutRegistrationIdResolveWhenMatchesThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(registrationId)).willReturn(this.registration);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutRegistrationIdWhenUnauthenticatedThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(registrationId)).willReturn(this.registration);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutResolveWhenAuthenticatedThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findUniqueByAssertingPartyEntityId(TestOpenSamlObjects.ASSERTING_PARTY_ENTITY_ID)).willReturn(this.registration);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutResolveWhenUnauthenticatedThenParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findUniqueByAssertingPartyEntityId(TestOpenSamlObjects.ASSERTING_PARTY_ENTITY_ID)).willReturn(this.registration);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saml2LogoutResolveWhenUnauthenticatedGetRequestThenInflates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "registrations",
+    "variableType": "RelyingPartyRegistrationRepository",
+    "mockedClass": "RelyingPartyRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml5Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\OpenSaml5AuthenticationTokenConverterTests.java",
+      "className": "OpenSaml5AuthenticationTokenConverterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nRelyingPartyRegistrationRepository registrations;",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenSamlResponseThenToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenSamlResponseInvalidBase64ThenSaml2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenGetRequestThenInflates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenGetRequestInvalidDeflatedThenSaml2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenUsingSamlUtilsBase64ThenXmlIsValid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findByRegistrationId(any())).willReturn(this.registration);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenSavedAuthenticationRequestThenToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.registrations.findUniqueByAssertingPartyEntityId(TestOpenSamlObjects.ASSERTING_PARTY_ENTITY_ID)).willReturn(this.registration);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenMatchingNoRegistrationIdThenLooksUpByAssertingEntityId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

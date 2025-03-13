@@ -1,0 +1,51 @@
+[
+  {
+    "variableName": "authenticationRequestRepository",
+    "variableType": "Saml2AuthenticationRequestRepository<AbstractSaml2AuthenticationRequest>",
+    "mockedClass": "Saml2AuthenticationRequestRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\Saml2WebSsoAuthenticationRequestFilterTests.java",
+      "className": "Saml2WebSsoAuthenticationRequestFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Saml2AuthenticationRequestRepository<AbstractSaml2AuthenticationRequest> authenticationRequestRepository = mock(Saml2AuthenticationRequestRepository.class);",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationRequestRepository).saveAuthenticationRequest(any(Saml2RedirectAuthenticationRequest.class), eq(this.request), eq(this.response));",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenRedirectThenSaveRedirectRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationRequestRepository).saveAuthenticationRequest(any(Saml2PostAuthenticationRequest.class), eq(this.request), eq(this.response));",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenPostThenSaveRedirectRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

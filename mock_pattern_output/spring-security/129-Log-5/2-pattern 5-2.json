@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\SecurityNamespaceHandlerTests.java",
+      "className": "SecurityNamespaceHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log logger = mock(Log.class);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initDoesNotLogErrorWhenFilterChainProxyFailsToLoad",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(logger);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initDoesNotLogErrorWhenFilterChainProxyFailsToLoad",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\AbstractAuthenticationProcessingFilterTests.java",
+      "className": "AbstractAuthenticationProcessingFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log logger = mock(Log.class);",
+        "line": 430,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginErrorWithInternAuthenticationServiceExceptionLogsError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).error(anyString(), eq(filter.exceptionToThrow));",
+        "line": 437,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginErrorWithInternAuthenticationServiceExceptionLogsError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

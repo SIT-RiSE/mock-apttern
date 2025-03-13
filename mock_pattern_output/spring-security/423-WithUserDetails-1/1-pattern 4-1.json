@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "withUserDetails",
+    "variableType": "WithUserDetails",
+    "mockedClass": "WithUserDetails",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithUserDetailsSecurityContextFactoryTests.java",
+      "className": "WithUserDetailsSecurityContextFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate WithUserDetails withUserDetails;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUserDetails.value()).willReturn(\"\");",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextEmptyValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUserDetails.value()).willReturn(username);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithExistingUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUserDetails.value()).willReturn(username);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithUserDetailsServiceName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUserDetails.userDetailsServiceBeanName()).willReturn(beanName);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithUserDetailsServiceName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUserDetails.value()).willReturn(username);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithReactiveUserDetailsService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUserDetails.value()).willReturn(username);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithReactiveUserDetailsServiceAndBeanName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUserDetails.userDetailsServiceBeanName()).willReturn(beanName);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithReactiveUserDetailsServiceAndBeanName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

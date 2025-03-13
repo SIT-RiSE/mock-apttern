@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "fencedLock",
+    "variableType": "FencedLock",
+    "mockedClass": "FencedLock",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.hazelcast.leader",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-hazelcast\\src\\test\\java\\org\\springframework\\integration\\hazelcast\\leader\\LeaderInitiatorTests.java",
+      "className": "LeaderInitiatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FencedLock fencedLock = mock();",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(fencedLock.getGroupId()).willReturn(new CPGroupId() {\r\n\r\n    @Override\r\n    public String getName() {\r\n        return \"\";\r\n    }\r\n\r\n    @Override\r\n    public long getId() {\r\n        return 0;\r\n    }\r\n});",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Simulate that the lock is currently held by this thread\r\ngiven(fencedLock.isLockedByCurrentThread()).willReturn(true, false);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Lock acquisition fails\r\ngiven(fencedLock.tryLock(anyLong(), any(TimeUnit.class))).willReturn(false);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Verify that revokeLeadership was called due to lock not being acquired\r\n// unlock is part of revokeLeadership\r\nverify(fencedLock).unlock();",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "projectAccountDaoMock",
+    "variableType": "ProjectAccountDao",
+    "mockedClass": "ProjectAccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.acl",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\acl\\project-role-based\\src\\main\\test\\java\\org\\apache\\cloudstack\\acl\\ProjectRoleBasedApiAccessCheckerTest.java",
+      "className": "ProjectRoleBasedApiAccessCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nProjectAccountDao projectAccountDaoMock;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(projectAccountDaoMock.findByProjectIdAccountId(Mockito.anyLong(), Mockito.anyLong())).thenReturn(null);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getApisAllowedToUserTestProjectAccountIsNullThrowPermissionDeniedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(projectAccountDaoMock.findByProjectIdUserId(Mockito.anyLong(), Mockito.anyLong(), Mockito.anyLong())).thenReturn(null);",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getApisAllowedToUserTestProjectAccountIsNullThrowPermissionDeniedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

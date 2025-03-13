@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "networkOfferingJoinDao",
+    "variableType": "NetworkOfferingJoinDao",
+    "mockedClass": "NetworkOfferingJoinDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\DomainManagerImplTest.java",
+      "className": "DomainManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNetworkOfferingJoinDao networkOfferingJoinDao;",
+        "line": 86,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(networkOfferingJoinDao.findByDomainId(Mockito.anyLong(), Mockito.anyBoolean())).thenReturn(Collections.emptyList());",
+        "line": 153,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  }
+]

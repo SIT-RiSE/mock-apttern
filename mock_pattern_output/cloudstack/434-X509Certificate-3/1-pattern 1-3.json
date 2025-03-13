@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "certificate",
+    "variableType": "X509Certificate",
+    "mockedClass": "X509Certificate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.ca.provider",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\ca\\root-ca\\src\\test\\java\\org\\apache\\cloudstack\\ca\\provider\\RootCAProviderTest.java",
+      "className": "RootCAProviderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "X509Certificate certificate = Mockito.mock(X509Certificate.class);",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsManagementCertificateNoAltNames",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(certificate.getSubjectAlternativeNames()).thenReturn(new ArrayList<>());",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsManagementCertificateNoAltNames",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "certificate",
+    "variableType": "X509Certificate",
+    "mockedClass": "X509Certificate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.ca.provider",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\ca\\root-ca\\src\\test\\java\\org\\apache\\cloudstack\\ca\\provider\\RootCAProviderTest.java",
+      "className": "RootCAProviderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "X509Certificate certificate = Mockito.mock(X509Certificate.class);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsManagementCertificateNoMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(certificate.getSubjectAlternativeNames()).thenReturn(collection);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsManagementCertificateNoMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "certificate",
+    "variableType": "X509Certificate",
+    "mockedClass": "X509Certificate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.ca.provider",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\ca\\root-ca\\src\\test\\java\\org\\apache\\cloudstack\\ca\\provider\\RootCAProviderTest.java",
+      "className": "RootCAProviderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "X509Certificate certificate = Mockito.mock(X509Certificate.class);",
+        "line": 200,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsManagementCertificateMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(certificate.getSubjectAlternativeNames()).thenReturn(collection);",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsManagementCertificateMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

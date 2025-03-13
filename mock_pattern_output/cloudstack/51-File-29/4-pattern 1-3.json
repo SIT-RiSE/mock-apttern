@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "fileMock",
+    "variableType": "File",
+    "mockedClass": "File",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.configdrive",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\configdrive\\src\\test\\java\\org\\apache\\cloudstack\\storage\\configdrive\\ConfigDriveBuilderTest.java",
+      "className": "ConfigDriveBuilderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "File fileMock = Mockito.mock(File.class);",
+        "line": 360,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "generateAndRetrieveIsoAsBase64IsoTest",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fileMock.getAbsolutePath()).thenReturn(\"absolutePath\");",
+        "line": 366,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "generateAndRetrieveIsoAsBase64IsoTest",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dir",
+    "variableType": "File",
+    "mockedClass": "File",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\storage\\ScaleIOStoragePoolTest.java",
+      "className": "ScaleIOStoragePoolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "File dir = PowerMockito.mock(File.class);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetPhysicalDiskWithWildcardFileFilter",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "PowerMockito.when(dir.listFiles(any(FileFilter.class))).thenReturn(files);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetPhysicalDiskWithWildcardFileFilter",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "file",
+    "variableType": "File",
+    "mockedClass": "File",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\storage\\ScaleIOStoragePoolTest.java",
+      "className": "ScaleIOStoragePoolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// TODO: Mock file exists\r\nFile file = PowerMockito.mock(File.class);",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetPhysicalDiskWithSystemId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "PowerMockito.when(file.exists()).thenReturn(true);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetPhysicalDiskWithSystemId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

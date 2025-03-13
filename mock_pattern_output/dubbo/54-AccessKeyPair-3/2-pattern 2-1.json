@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "accessKey",
+    "variableType": "AccessKeyPair",
+    "mockedClass": "AccessKeyPair",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.auth",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-auth\\src\\test\\java\\org\\apache\\dubbo\\auth\\DefaultAccessKeyStorageTest.java",
+      "className": "DefaultAccessKeyStorageTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccessKeyPair accessKey = defaultAccessKeyStorage.getAccessKey(url, mock(Invocation.class));",
+        "line": 37,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetAccessKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

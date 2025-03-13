@@ -1,0 +1,236 @@
+[
+  {
+    "variableName": "mandateUserTwoFactorAuthentication",
+    "variableType": "ConfigKey<Boolean>",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.api",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\ApiServletTest.java",
+      "className": "ApiServletTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey<Boolean> mandateUserTwoFactorAuthentication = Mockito.mock(ConfigKey.class);",
+        "line": 362,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoNotSkip2FAcheckForUserWhen2FAMandated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mandateUserTwoFactorAuthentication.valueIn(1L)).thenReturn(false);",
+        "line": 364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoNotSkip2FAcheckForUserWhen2FAMandated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "enableUserTwoFactorAuthentication",
+    "variableType": "ConfigKey<Boolean>",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.api",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\ApiServletTest.java",
+      "className": "ApiServletTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey<Boolean> enableUserTwoFactorAuthentication = Mockito.mock(ConfigKey.class);",
+        "line": 381,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSkip2FAcheckForUserWhen2FAisNotEnabledAndNotMandated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(enableUserTwoFactorAuthentication.valueIn(1L)).thenReturn(true);",
+        "line": 383,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSkip2FAcheckForUserWhen2FAisNotEnabledAndNotMandated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mandateUserTwoFactorAuthentication",
+    "variableType": "ConfigKey<Boolean>",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.api",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\ApiServletTest.java",
+      "className": "ApiServletTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey<Boolean> mandateUserTwoFactorAuthentication = Mockito.mock(ConfigKey.class);",
+        "line": 385,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSkip2FAcheckForUserWhen2FAisNotEnabledAndNotMandated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mandateUserTwoFactorAuthentication.valueIn(1L)).thenReturn(true);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSkip2FAcheckForUserWhen2FAisNotEnabledAndNotMandated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "enableUserTwoFactorAuthentication",
+    "variableType": "ConfigKey<Boolean>",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey<Boolean> enableUserTwoFactorAuthentication = Mockito.mock(ConfigKey.class);",
+        "line": 867,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthenticationWhenDomainlevelSettingisDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(enableUserTwoFactorAuthentication.valueIn(1L)).thenReturn(false);",
+        "line": 870,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthenticationWhenDomainlevelSettingisDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "enableUserTwoFactorAuthentication",
+    "variableType": "ConfigKey<Boolean>",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey<Boolean> enableUserTwoFactorAuthentication = Mockito.mock(ConfigKey.class);",
+        "line": 886,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthenticationWhenProviderNameIsNullExpectedDefaultProviderTOTP",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(enableUserTwoFactorAuthentication.valueIn(1L)).thenReturn(true);",
+        "line": 888,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthenticationWhenProviderNameIsNullExpectedDefaultProviderTOTP",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "enableUserTwoFactorAuthentication",
+    "variableType": "ConfigKey<Boolean>",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey<Boolean> enableUserTwoFactorAuthentication = Mockito.mock(ConfigKey.class);",
+        "line": 915,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(enableUserTwoFactorAuthentication.valueIn(1L)).thenReturn(true);",
+        "line": 917,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "mockTLSCertificateChecker",
+    "variableType": "TLSCertificateChecker",
+    "mockedClass": "TLSCertificateChecker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.initialization",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\initialization\\JettyTest.java",
+      "className": "JettyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TLSCertificateChecker mockTLSCertificateChecker = Mockito.mock(TLSCertificateChecker.class);",
+        "line": 536,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCustomCheckX509TrustManagerSetEndpointIdentificationAlgorithmToNullWithValidateServerHostnamesSetToFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockTLSCertificateChecker).checkServer(ArgumentMatchers.eq(chain), ArgumentMatchers.eq(authType), captor.capture(), ArgumentMatchers.eq(mockX509ExtendedTrustManager));",
+        "line": 553,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCustomCheckX509TrustManagerSetEndpointIdentificationAlgorithmToNullWithValidateServerHostnamesSetToFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

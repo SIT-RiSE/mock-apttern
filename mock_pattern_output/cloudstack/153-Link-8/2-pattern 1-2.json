@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "testLink1",
+    "variableType": "Link",
+    "mockedClass": "Link",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "streamer",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\console-proxy\\rdpconsole\\src\\test\\java\\streamer\\BaseElementTest.java",
+      "className": "BaseElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Link testLink1 = mock(Link.class);",
+        "line": 40,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPoll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(testLink1.pull(anyBoolean())).thenReturn(new ByteBuffer(\"hello\".getBytes()));",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPoll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "testLink2",
+    "variableType": "Link",
+    "mockedClass": "Link",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "streamer",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\console-proxy\\rdpconsole\\src\\test\\java\\streamer\\BaseElementTest.java",
+      "className": "BaseElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Link testLink2 = mock(Link.class);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPoll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(testLink2.pull(anyBoolean())).thenReturn(new ByteBuffer(\"hello\".getBytes()));",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPoll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

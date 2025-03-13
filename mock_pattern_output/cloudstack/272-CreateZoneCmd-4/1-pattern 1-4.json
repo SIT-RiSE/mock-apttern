@@ -1,0 +1,254 @@
+[
+  {
+    "variableName": "cmd",
+    "variableType": "CreateZoneCmd",
+    "mockedClass": "CreateZoneCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateZoneCmd cmd = Mockito.mock(CreateZoneCmd.class);",
+        "line": 1252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.isEdge()).thenReturn(true);",
+        "line": 1253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getNetworkType()).thenReturn(NetworkType.Advanced.toString());",
+        "line": 1254,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getDomainId()).thenReturn(null);",
+        "line": 1255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "CreateZoneCmd",
+    "mockedClass": "CreateZoneCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateZoneCmd cmd = Mockito.mock(CreateZoneCmd.class);",
+        "line": 1265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCoreZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.isEdge()).thenReturn(false);",
+        "line": 1266,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCoreZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getNetworkType()).thenReturn(NetworkType.Advanced.toString());",
+        "line": 1267,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCoreZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getDomainId()).thenReturn(null);",
+        "line": 1268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCoreZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "CreateZoneCmd",
+    "mockedClass": "CreateZoneCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateZoneCmd cmd = Mockito.mock(CreateZoneCmd.class);",
+        "line": 1278,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateBasicZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.isEdge()).thenReturn(false);",
+        "line": 1279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateBasicZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getNetworkType()).thenReturn(NetworkType.Basic.toString());",
+        "line": 1280,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateBasicZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getDomainId()).thenReturn(null);",
+        "line": 1281,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateBasicZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "CreateZoneCmd",
+    "mockedClass": "CreateZoneCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateZoneCmd cmd = Mockito.mock(CreateZoneCmd.class);",
+        "line": 1290,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateBasicEdgeZoneFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.isEdge()).thenReturn(true);",
+        "line": 1291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateBasicEdgeZoneFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getNetworkType()).thenReturn(NetworkType.Basic.toString());",
+        "line": 1292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateBasicEdgeZoneFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getDomainId()).thenReturn(null);",
+        "line": 1293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateBasicEdgeZoneFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

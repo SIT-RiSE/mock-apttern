@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "lbStickinessPolicy",
+    "variableType": "LoadBalancingRule.LbStickinessPolicy",
+    "mockedClass": "LoadBalancingRule.LbStickinessPolicy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LoadBalancingRule.LbStickinessPolicy lbStickinessPolicy = mock(LoadBalancingRule.LbStickinessPolicy.class);",
+        "line": 338,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbStickinessPolicy.getMethodName()).thenReturn(\"AppCookie\");",
+        "line": 352,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbStickinessPolicy.getParams()).thenReturn(pairList);",
+        "line": 358,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "lbStickinessPolicy",
+    "variableType": "LoadBalancingRule.LbStickinessPolicy",
+    "mockedClass": "LoadBalancingRule.LbStickinessPolicy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LoadBalancingRule.LbStickinessPolicy lbStickinessPolicy = mock(LoadBalancingRule.LbStickinessPolicy.class);",
+        "line": 403,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbStickinessPolicy.getMethodName()).thenReturn(\"AppCookie\");",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbStickinessPolicy.getParams()).thenReturn(pairList);",
+        "line": 418,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

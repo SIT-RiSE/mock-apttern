@@ -1,0 +1,108 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "ApplicationContext",
+    "mockedClass": "ApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\config\\OutboundGatewayTests.java",
+      "className": "OutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationContext context = mock(ApplicationContext.class);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExpressionsBeanResolver",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.containsBean(IntegrationContextUtils.INTEGRATION_EVALUATION_CONTEXT_BEAN_NAME)).thenReturn(true);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExpressionsBeanResolver",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getBean(SpelPropertyAccessorRegistrar.class)).thenThrow(NoSuchBeanDefinitionException.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExpressionsBeanResolver",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getBean(IntegrationContextUtils.INTEGRATION_EVALUATION_CONTEXT_BEAN_NAME, StandardEvaluationContext.class)).thenReturn(evalContext);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExpressionsBeanResolver",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "ctx",
+    "variableType": "ApplicationContext",
+    "mockedClass": "ApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.support.management",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\support\\management\\IntegrationManagementConfigurerTests.java",
+      "className": "IntegrationManagementConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationContext ctx = mock(ApplicationContext.class);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDefaults",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ctx.getBeansOfType(IntegrationManagement.class)).thenReturn(beans);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDefaults",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

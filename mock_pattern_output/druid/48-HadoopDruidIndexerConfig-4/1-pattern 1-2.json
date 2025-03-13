@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "config",
+    "variableType": "HadoopDruidIndexerConfig",
+    "mockedClass": "HadoopDruidIndexerConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.indexer",
+      "filePath": "C:\\java tool\\Apache\\druid\\indexing-hadoop\\src\\test\\java\\org\\apache\\druid\\indexer\\HadoopDruidDetermineConfigurationJobTest.java",
+      "className": "HadoopDruidDetermineConfigurationJobTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final HadoopDruidIndexerConfig config = Mockito.mock(HadoopDruidIndexerConfig.class);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunWithHashedPartitionsSpecCreateHashBasedNumberedShardSpecWithHashPartitionFunction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(config.isDeterminingPartitions()).thenReturn(false);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunWithHashedPartitionsSpecCreateHashBasedNumberedShardSpecWithHashPartitionFunction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(config.getPartitionsSpec()).thenReturn(partitionsSpec);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunWithHashedPartitionsSpecCreateHashBasedNumberedShardSpecWithHashPartitionFunction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(config.getSegmentGranularIntervals()).thenReturn(intervals);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunWithHashedPartitionsSpecCreateHashBasedNumberedShardSpecWithHashPartitionFunction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "config",
+    "variableType": "HadoopDruidIndexerConfig",
+    "mockedClass": "HadoopDruidIndexerConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.indexer",
+      "filePath": "C:\\java tool\\Apache\\druid\\indexing-hadoop\\src\\test\\java\\org\\apache\\druid\\indexer\\HadoopDruidDetermineConfigurationJobTest.java",
+      "className": "HadoopDruidDetermineConfigurationJobTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final HadoopDruidIndexerConfig config = Mockito.mock(HadoopDruidIndexerConfig.class);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunWithSingleDimensionPartitionsSpecCreateHashBasedNumberedShardSpecWithoutHashPartitionFunction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(config.isDeterminingPartitions()).thenReturn(false);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunWithSingleDimensionPartitionsSpecCreateHashBasedNumberedShardSpecWithoutHashPartitionFunction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(config.getPartitionsSpec()).thenReturn(partitionsSpec);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunWithSingleDimensionPartitionsSpecCreateHashBasedNumberedShardSpecWithoutHashPartitionFunction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(config.getSegmentGranularIntervals()).thenReturn(intervals);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunWithSingleDimensionPartitionsSpecCreateHashBasedNumberedShardSpecWithoutHashPartitionFunction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

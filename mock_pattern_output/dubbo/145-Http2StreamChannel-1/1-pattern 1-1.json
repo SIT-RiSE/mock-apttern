@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "http2StreamChannel",
+    "variableType": "Http2StreamChannel",
+    "mockedClass": "Http2StreamChannel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.protocol.tri.stream",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-triple\\src\\test\\java\\org\\apache\\dubbo\\rpc\\protocol\\tri\\stream\\TripleClientStreamTest.java",
+      "className": "TripleClientStreamTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Http2StreamChannel http2StreamChannel = mock(Http2StreamChannel.class);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(http2StreamChannel.isActive()).thenReturn(true);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(http2StreamChannel.newSucceededFuture()).thenReturn(channel.newSucceededFuture());",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(http2StreamChannel.eventLoop()).thenReturn(new NioEventLoopGroup().next());",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(http2StreamChannel.newPromise()).thenReturn(channel.newPromise());",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(http2StreamChannel.parent()).thenReturn(channel);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "clientRegistrationRepository",
+    "variableType": "ClientRegistrationRepository",
+    "mockedClass": "ClientRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configuration",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configuration\\OAuth2ClientConfigurationTests.java",
+      "className": "OAuth2ClientConfigurationTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientRegistrationRepository clientRegistrationRepository = mock(ClientRegistrationRepository.class);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientFoundThenMethodArgumentResolved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientRegistrationRepository.findByRegistrationId(eq(clientRegistrationId))).willReturn(clientRegistration);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientFoundThenMethodArgumentResolved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "clientRegistrationRepository",
+    "variableType": "ClientRegistrationRepository",
+    "mockedClass": "ClientRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configuration",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configuration\\OAuth2ClientConfigurationTests.java",
+      "className": "OAuth2ClientConfigurationTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientRegistrationRepository clientRegistrationRepository = mock(ClientRegistrationRepository.class);",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientNotFoundAndClientCredentialsThenTokenResponseClientIsUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientRegistrationRepository.findByRegistrationId(clientRegistrationId)).willReturn(clientRegistration);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientNotFoundAndClientCredentialsThenTokenResponseClientIsUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "clientRegistrationRepository",
+    "variableType": "ClientRegistrationRepository",
+    "mockedClass": "ClientRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\InMemoryOAuth2AuthorizedClientServiceTests.java",
+      "className": "InMemoryOAuth2AuthorizedClientServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientRegistrationRepository clientRegistrationRepository = mock(ClientRegistrationRepository.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorWhenAuthorizedClientsProvidedThenUseProvidedAuthorizedClients",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientRegistrationRepository.findByRegistrationId(eq(registrationId))).willReturn(this.registration3);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorWhenAuthorizedClientsProvidedThenUseProvidedAuthorizedClients",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

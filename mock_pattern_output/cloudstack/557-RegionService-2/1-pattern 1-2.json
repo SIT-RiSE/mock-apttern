@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "regionService",
+    "variableType": "RegionService",
+    "mockedClass": "RegionService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\RegionCmdTest.java",
+      "className": "RegionCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RegionService regionService = Mockito.mock(RegionService.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(regionService.addRegion(anyInt(), anyString(), isNull())).thenReturn(region);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "regionService",
+    "variableType": "RegionService",
+    "mockedClass": "RegionService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\RegionCmdTest.java",
+      "className": "RegionCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RegionService regionService = Mockito.mock(RegionService.class);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(regionService.addRegion(anyInt(), anyString(), isNull())).thenReturn(null);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

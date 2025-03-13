@@ -1,0 +1,125 @@
+[
+  {
+    "variableName": "backupProvider",
+    "variableType": "BackupProvider",
+    "mockedClass": "BackupProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.backup",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\backup\\BackupManagerTest.java",
+      "className": "BackupManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nBackupProvider backupProvider;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(backupProvider.restoreBackedUpVolume(Mockito.any(), Mockito.eq(volumeUuid), Mockito.eq(\"127.0.0.1\"), Mockito.eq(\"e9804933-8609-4de3-bccc-6278072a496c\"))).thenReturn(new Pair<Boolean, String>(Boolean.TRUE, \"Success\"));",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "restoreBackedUpVolumeTestHostIpAndDatastoreUuid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(backupProvider, times(1)).restoreBackedUpVolume(Mockito.any(), Mockito.anyString(), Mockito.anyString(), Mockito.anyString());",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "restoreBackedUpVolumeTestHostIpAndDatastoreUuid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(backupProvider.restoreBackedUpVolume(Mockito.any(), Mockito.eq(volumeUuid), Mockito.eq(\"127.0.0.1\"), Mockito.eq(\"datastore-name\"))).thenReturn(new Pair<Boolean, String>(Boolean.TRUE, \"Success2\"));",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "restoreBackedUpVolumeTestHostIpAndDatastoreName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(backupProvider, times(2)).restoreBackedUpVolume(Mockito.any(), Mockito.anyString(), Mockito.anyString(), Mockito.anyString());",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "restoreBackedUpVolumeTestHostIpAndDatastoreName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(backupProvider.restoreBackedUpVolume(Mockito.any(), Mockito.eq(volumeUuid), Mockito.eq(\"hostname\"), Mockito.eq(\"e9804933-8609-4de3-bccc-6278072a496c\"))).thenReturn(new Pair<Boolean, String>(Boolean.TRUE, \"Success3\"));",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "restoreBackedUpVolumeTestHostNameAndDatastoreUuid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(backupProvider, times(3)).restoreBackedUpVolume(Mockito.any(), Mockito.anyString(), Mockito.anyString(), Mockito.anyString());",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "restoreBackedUpVolumeTestHostNameAndDatastoreUuid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(backupProvider.restoreBackedUpVolume(Mockito.any(), Mockito.eq(volumeUuid), Mockito.eq(\"hostname\"), Mockito.eq(\"datastore-name\"))).thenReturn(new Pair<Boolean, String>(Boolean.TRUE, \"Success4\"));",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "restoreBackedUpVolumeTestHostAndDatastoreName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(backupProvider, times(4)).restoreBackedUpVolume(Mockito.any(), Mockito.anyString(), Mockito.anyString(), Mockito.anyString());",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "restoreBackedUpVolumeTestHostAndDatastoreName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

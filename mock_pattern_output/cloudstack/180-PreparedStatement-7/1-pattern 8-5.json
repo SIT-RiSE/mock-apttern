@@ -1,0 +1,1097 @@
+[
+  {
+    "variableName": "preparedStatementMock",
+    "variableType": "PreparedStatement",
+    "mockedClass": "PreparedStatement",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.upgrade.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\upgrade\\dao\\DatabaseAccessObjectTest.java",
+      "className": "DatabaseAccessObjectTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PreparedStatement preparedStatementMock;",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeQuery()).thenReturn(resultSetMock);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "indexExistsFalseTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeQuery();",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "indexExistsFalseTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "indexExistsFalseTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeQuery()).thenReturn(resultSetMock);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "indexExistsTrueTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeQuery();",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "indexExistsTrueTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "indexExistsTrueTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.execute()).thenReturn(true);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createIndexTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).execute();",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createIndexTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createIndexTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeUpdate()).thenThrow(sqlException);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeUpdate()).thenThrow(sqlException);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenKeyIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenKeyIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenKeyIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenKeysAreForeignKeys",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenKeysAreForeignKeys",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(0)).executeUpdate();",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenPrepareStatementResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(0)).close();",
+        "line": 216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenPrepareStatementResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeUpdate()).thenThrow(sqlException);",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenExecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenExecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyWhenExecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 287,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeUpdate()).thenThrow(sqlException);",
+        "line": 304,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 312,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 313,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(0)).executeUpdate();",
+        "line": 328,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenPrepareStatementResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(0)).close();",
+        "line": 329,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenPrepareStatementResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeUpdate()).thenThrow(sqlException);",
+        "line": 337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenExecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 345,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenExecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 346,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKeyWhenExecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeQuery();",
+        "line": 361,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 362,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeQuery()).thenThrow(sqlException);",
+        "line": 379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExistsWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeQuery();",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExistsWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExistsWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeQuery()).thenThrow(sqlException);",
+        "line": 397,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExistsWhenColumnNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeQuery();",
+        "line": 406,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExistsWhenColumnNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 407,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testColumnExistsWhenColumnNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(0)).executeQuery();",
+        "line": 422,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 423,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 424,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeUpdate()).thenThrow(sqlException);",
+        "line": 443,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 452,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 453,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenTableNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeUpdate()).thenThrow(sqlException);",
+        "line": 462,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenColumnNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 471,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenColumnNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 472,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenColumnNameIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(0)).executeUpdate();",
+        "line": 489,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenPrepareStatementResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(0)).close();",
+        "line": 490,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenPrepareStatementResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(preparedStatementMock.executeUpdate()).thenThrow(sqlException);",
+        "line": 499,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenexecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 508,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenexecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).close();",
+        "line": 509,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropColumnWhenexecuteUpdateResultsInException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "preparedStatement",
+    "variableType": "PreparedStatement",
+    "mockedClass": "PreparedStatement",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\db\\src\\test\\java\\com\\cloud\\utils\\DbUtilTest.java",
+      "className": "DbUtilTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nPreparedStatement preparedStatement;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "preparedStatement",
+    "variableType": "PreparedStatement",
+    "mockedClass": "PreparedStatement",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\db\\src\\test\\java\\com\\cloud\\utils\\DbUtilTest.java",
+      "className": "DbUtilTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nPreparedStatement preparedStatement;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "preparedStatement",
+    "variableType": "PreparedStatement",
+    "mockedClass": "PreparedStatement",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\db\\src\\test\\java\\com\\cloud\\utils\\DbUtilTest.java",
+      "className": "DbUtilTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nPreparedStatement preparedStatement;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "preparedStatement",
+    "variableType": "PreparedStatement",
+    "mockedClass": "PreparedStatement",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\db\\src\\test\\java\\com\\cloud\\utils\\DbUtilTest.java",
+      "className": "DbUtilTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nPreparedStatement preparedStatement;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(preparedStatement.executeQuery()).thenReturn(resultSet);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(preparedStatement).close();",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

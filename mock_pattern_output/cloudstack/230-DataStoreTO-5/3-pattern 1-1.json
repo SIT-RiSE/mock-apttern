@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "dataStoreTO",
+    "variableType": "DataStoreTO",
+    "mockedClass": "DataStoreTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.secondarystorage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\secondary-storage\\controller\\src\\test\\java\\org\\apache\\cloudstack\\secondarystorage\\SecondaryStorageManagerImplTest.java",
+      "className": "SecondaryStorageManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStoreTO dataStoreTO = Mockito.mock(DataStoreTO.class);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "mockDataStoresForTestAddSecondaryStorageServerAddressToBuffer",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataStoreTO.getUrl()).thenReturn(NetUtils.isValidIp4(address) ? String.format(\"http://%s\", address) : address);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "mockDataStoresForTestAddSecondaryStorageServerAddressToBuffer",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

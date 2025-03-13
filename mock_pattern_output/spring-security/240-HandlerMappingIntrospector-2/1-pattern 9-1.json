@@ -1,0 +1,137 @@
+[
+  {
+    "variableName": "hmi",
+    "variableType": "HandlerMappingIntrospector",
+    "mockedClass": "HandlerMappingIntrospector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\HandlerMappingIntrospectorRequestTransformerTests.java",
+      "className": "HandlerMappingIntrospectorRequestTransformerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHandlerMappingIntrospector hmi;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.hmi).setCache(requestArg.capture());",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformThenNewRequestPassedToSetCache",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.hmi).setCache(requestArg.capture());",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformThenResultPassedToSetCache",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.hmi).setCache(requestArg.capture());",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformThenResultDoesNotDelegateToSetAttribute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.hmi).setCache(requestArg.capture());",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformThenSetAttributeWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.hmi).setCache(requestArg.capture());",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformThenResultDoesNotDelegateToGetAttribute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.hmi).setCache(requestArg.capture());",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformThenResultDoesNotDelegateToGetAttributeNames",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.hmi).setCache(requestArg.capture());",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformThenGetAttributeNamesWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.hmi).setCache(requestArg.capture());",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformThenResultDoesNotDelegateToRemoveAttribute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.hmi).setCache(requestArg.capture());",
+        "line": 200,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformThenResultDoesNotDelegateToGetDispatcherType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

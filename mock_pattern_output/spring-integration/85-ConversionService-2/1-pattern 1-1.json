@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "conversionService",
+    "variableType": "ConversionService",
+    "mockedClass": "ConversionService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.util",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\util\\BeanFactoryTypeConverterTests.java",
+      "className": "BeanFactoryTypeConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConversionService conversionService = mock(ConversionService.class);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testObjectToStringIsConverted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(conversionService.canConvert(any(TypeDescriptor.class), any(TypeDescriptor.class))).thenReturn(true);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testObjectToStringIsConverted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(conversionService.convert(any(), any(TypeDescriptor.class), any(TypeDescriptor.class))).thenReturn(\"foo\");",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testObjectToStringIsConverted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

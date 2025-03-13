@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "createSnapshotPayload",
+    "variableType": "CreateSnapshotPayload",
+    "mockedClass": "CreateSnapshotPayload",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 @Override\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\integration-test\\src\\test\\java\\org\\apache\\cloudstack\\storage\\test\\SnapshotTestWithFakeData.java",
+      "className": "SnapshotTestWithFakeData"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateSnapshotPayload createSnapshotPayload = mock(CreateSnapshotPayload.class);",
+        "line": 337,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "call",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(createSnapshotPayload.getAccount()).thenReturn(account);",
+        "line": 338,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "call",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(createSnapshotPayload.getSnapshotId()).thenReturn(snapshotVO.getId());",
+        "line": 339,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "call",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(createSnapshotPayload.getSnapshotPolicyId()).thenReturn(0L);",
+        "line": 340,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "call",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 24
+  }
+]

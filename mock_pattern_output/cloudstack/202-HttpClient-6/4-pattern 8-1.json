@@ -1,0 +1,137 @@
+[
+  {
+    "variableName": "client",
+    "variableType": "HttpClient",
+    "mockedClass": "HttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.utils.redfish",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\org\\apache\\cloudstack\\utils\\redfish\\RedfishClientTest.java",
+      "className": "RedfishClientTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHttpClient client;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(client, Mockito.never()).execute(Mockito.any());",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retryHttpRequestNoRetries",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(client.execute(httpReq)).thenThrow(IOException.class).thenReturn(httpResponse);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retryHttpRequestExceptionAfterOneRetry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(client, Mockito.never()).execute(Mockito.any());",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retryHttpRequestExceptionAfterOneRetry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(client.execute(httpReq)).thenThrow(IOException.class).thenThrow(IOException.class).thenReturn(httpResponse);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retryHttpRequestNoException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(client, Mockito.times(3)).execute(Mockito.any());",
+        "line": 208,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retryHttpRequestNoException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(client.execute(httpReq)).thenThrow(IOException.class).thenThrow(IOException.class);",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retryHttpRequestExceptionAfterTwoRetries",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(client, Mockito.never()).execute(Mockito.any());",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retryHttpRequestExceptionAfterTwoRetries",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(client.execute(httpReq)).thenThrow(IOException.class).thenReturn(httpResponse);",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retryHttpRequestSuccessAtTheSecondRetry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(client, Mockito.times(REDFISHT_REQUEST_RETRIES)).execute(Mockito.any());",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retryHttpRequestSuccessAtTheSecondRetry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

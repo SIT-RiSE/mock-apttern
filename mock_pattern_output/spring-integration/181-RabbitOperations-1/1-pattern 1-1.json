@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "template",
+    "variableType": "RabbitOperations",
+    "mockedClass": "RabbitOperations",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.support",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\support\\BoundRabbitChannelAdviceTests.java",
+      "className": "BoundRabbitChannelAdviceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RabbitOperations template = mock(RabbitOperations.class);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(template.getConnectionFactory()).willReturn(mock(org.springframework.amqp.rabbit.connection.ConnectionFactory.class));",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

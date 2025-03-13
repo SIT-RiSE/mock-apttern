@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "storagePoolAllocatorMock3",
+    "variableType": "StoragePoolAllocator",
+    "mockedClass": "StoragePoolAllocator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StoragePoolAllocator storagePoolAllocatorMock3 = Mockito.mock(StoragePoolAllocator.class);",
+        "line": 605,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCandidateStoragePoolsToMigrateLocalVolumeTestMoreThanOneAllocator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(storagePoolAllocatorMock3).allocateToPool(any(DiskProfile.class), any(VirtualMachineProfile.class), any(DeploymentPlan.class), any(ExcludeList.class), Mockito.eq(StoragePoolAllocator.RETURN_UPTO_ALL));",
+        "line": 639,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCandidateStoragePoolsToMigrateLocalVolumeTestMoreThanOneAllocator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "storagePoolAllocatorMock2",
+    "variableType": "StoragePoolAllocator",
+    "mockedClass": "StoragePoolAllocator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StoragePoolAllocator storagePoolAllocatorMock2 = Mockito.mock(StoragePoolAllocator.class);",
+        "line": 604,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCandidateStoragePoolsToMigrateLocalVolumeTestMoreThanOneAllocator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(storagePoolAllocatorMock2).allocateToPool(any(DiskProfile.class), any(VirtualMachineProfile.class), any(DeploymentPlan.class), any(ExcludeList.class), Mockito.eq(StoragePoolAllocator.RETURN_UPTO_ALL));",
+        "line": 637,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCandidateStoragePoolsToMigrateLocalVolumeTestMoreThanOneAllocator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

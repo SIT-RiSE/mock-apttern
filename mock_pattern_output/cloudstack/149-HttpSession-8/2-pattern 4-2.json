@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "HttpSession",
+    "mockedClass": "HttpSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\user-authenticators\\saml2\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\ListAndSwitchSAMLAccountCmdTest.java",
+      "className": "ListAndSwitchSAMLAccountCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHttpSession session;",
+        "line": 83,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getAttribute(ApiConstants.SESSIONKEY)).thenReturn(sessionKeyValue);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListAndSwitchSAMLAccountCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getAttribute(\"userid\")).thenReturn(2L);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListAndSwitchSAMLAccountCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getId()).thenReturn(sessionId);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListAndSwitchSAMLAccountCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.isNew()).thenReturn(false);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListAndSwitchSAMLAccountCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "session",
+    "variableType": "HttpSession",
+    "mockedClass": "HttpSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\user-authenticators\\saml2\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\SAML2LoginAPIAuthenticatorCmdTest.java",
+      "className": "SAML2LoginAPIAuthenticatorCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHttpSession session;",
+        "line": 105,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(session.getAttribute(Mockito.anyString())).thenReturn(null);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthenticate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

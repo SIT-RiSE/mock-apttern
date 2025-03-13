@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "networkOfferingVoMock",
+    "variableType": "NetworkOfferingVO",
+    "mockedClass": "NetworkOfferingVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota.activationrule.presetvariables",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\activationrule\\presetvariables\\PresetVariableHelperTest.java",
+      "className": "PresetVariableHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkOfferingVO networkOfferingVoMock = Mockito.mock(NetworkOfferingVO.class);",
+        "line": 947,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForNetworkOfferingTestRecordIsSnapshotSetFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

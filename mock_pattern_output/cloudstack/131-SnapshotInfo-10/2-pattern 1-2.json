@@ -1,0 +1,92 @@
+[
+  {
+    "variableName": "snapshotInfo",
+    "variableType": "SnapshotInfo",
+    "mockedClass": "SnapshotInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\snapshot\\CephSnapshotStrategyTest.java",
+      "className": "CephSnapshotStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotInfo snapshotInfo = Mockito.mock(SnapshotInfo.class);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertSnapshotTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(snapshotInfo.getBaseVolume()).thenReturn(volumeInfo);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertSnapshotTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "snapshot",
+    "variableType": "SnapshotInfo",
+    "mockedClass": "SnapshotInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\snapshot\\SnapshotServiceImplTest.java",
+      "className": "SnapshotServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotInfo snapshot = Mockito.mock(SnapshotInfo.class);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotWithNoPrimaryStorageEntry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(snapshot.getId()).thenReturn(1L);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotWithNoPrimaryStorageEntry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(snapshot.getVolumeId()).thenReturn(1L);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotWithNoPrimaryStorageEntry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "variableName": "msg2",
+    "variableType": "Message",
+    "mockedClass": "MimeMessage",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Message msg2 = mock(MimeMessage.class);",
+        "line": 403,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveExpungedAndNotExpungedLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(msg2.getSubject()).willReturn(\"msg2\");",
+        "line": 406,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveExpungedAndNotExpungedLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(msg2).isExpunged();",
+        "line": 412,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveExpungedAndNotExpungedLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(msg2).getSubject();",
+        "line": 414,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveExpungedAndNotExpungedLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "msg1",
+    "variableType": "Message",
+    "mockedClass": "MimeMessage",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Message msg1 = mock(MimeMessage.class);",
+        "line": 402,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveExpungedAndNotExpungedLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(msg1.isExpunged()).willReturn(true);",
+        "line": 404,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveExpungedAndNotExpungedLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(msg1.getSubject()).willReturn(\"msg1\");",
+        "line": 405,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveExpungedAndNotExpungedLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(msg1).isExpunged();",
+        "line": 411,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveExpungedAndNotExpungedLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(msg1, never()).getSubject();",
+        "line": 413,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveExpungedAndNotExpungedLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

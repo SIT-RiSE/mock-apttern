@@ -1,0 +1,215 @@
+[
+  {
+    "variableName": "vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\resource\\ResourceManagerImplTest.java",
+      "className": "ResourceManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VMInstanceDao vmInstanceDao;",
+        "line": 101,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.listByHostId(hostId)).thenReturn(new ArrayList<>());",
+        "line": 176,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.listVmsMigratingFromHost(hostId)).thenReturn(new ArrayList<>());",
+        "line": 177,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.listNonMigratingVmsByHostEqualsLastHost(hostId)).thenReturn(new ArrayList<>());",
+        "line": 178,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByHostInStates(hostId, VirtualMachine.State.Running)).thenReturn(Arrays.asList(vm2));",
+        "line": 249,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAndMaintainErrorInPrepareForMaintenanceFailedMigrationsPendingRetries",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.listVmsMigratingFromHost(hostId)).thenReturn(Arrays.asList(vm2));",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAndMaintainErrorInPrepareForMaintenanceWithErrorVmsPendingRetries",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.listVmsMigratingFromHost(hostId)).thenReturn(Arrays.asList(vm2));",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAndMaintainErrorInPrepareForMaintenanceFailedMigrationsAndMigratingVms",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.listVmsMigratingFromHost(hostId)).thenReturn(Arrays.asList(vm2));",
+        "line": 278,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAndMaintainErrorInPrepareForMaintenanceWithErrorVmsAndMigratingVms",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByHostInStates(hostId, VirtualMachine.State.Stopping)).thenReturn(Arrays.asList(vm2));",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAndMaintainErrorInPrepareForMaintenanceFailedMigrationsAndStoppingVms",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.listByHostId(hostId)).thenReturn(Arrays.asList(vm1, vm2));",
+        "line": 396,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupRunningVMs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByHostInStates(hostId, VirtualMachine.State.Migrating, VirtualMachine.State.Running, VirtualMachine.State.Starting, VirtualMachine.State.Stopping, VirtualMachine.State.Error, VirtualMachine.State.Unknown)).thenReturn(Arrays.asList(vm1, vm2));",
+        "line": 397,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupRunningVMs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByHostInStates(hostId, VirtualMachine.State.Running)).thenReturn(Arrays.asList(vm1, vm2));",
+        "line": 398,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupRunningVMs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.listByHostId(hostId)).thenReturn(Arrays.asList(vm1, vm2));",
+        "line": 407,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupFailedMigrations",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByHostInStates(hostId, VirtualMachine.State.Migrating, VirtualMachine.State.Running, VirtualMachine.State.Starting, VirtualMachine.State.Stopping, VirtualMachine.State.Error, VirtualMachine.State.Unknown)).thenReturn(Arrays.asList(vm1, vm2));",
+        "line": 408,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupFailedMigrations",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.listNonMigratingVmsByHostEqualsLastHost(hostId)).thenReturn(Arrays.asList(vm1));",
+        "line": 409,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupFailedMigrations",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.listByHostId(hostId)).thenReturn(Arrays.asList(vm1, vm2));",
+        "line": 413,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupErrorVms",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByHostInStates(hostId, VirtualMachine.State.Migrating, VirtualMachine.State.Running, VirtualMachine.State.Starting, VirtualMachine.State.Stopping, VirtualMachine.State.Error, VirtualMachine.State.Unknown)).thenReturn(Arrays.asList(vm1, vm2));",
+        "line": 414,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupErrorVms",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByHostInStates(hostId, VirtualMachine.State.Unknown, VirtualMachine.State.Error)).thenReturn(Arrays.asList(vm1));",
+        "line": 415,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupErrorVms",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 52
+  }
+]

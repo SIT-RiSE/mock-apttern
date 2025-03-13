@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "xmppConnectionFactoryBean",
+    "variableType": "XmppConnectionFactoryBean",
+    "mockedClass": "XmppConnectionFactoryBean",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.xmpp.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-xmpp\\src\\test\\java\\org\\springframework\\integration\\xmpp\\config\\XmppConnectionFactoryBeanTests.java",
+      "className": "XmppConnectionFactoryBeanTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "XmppConnectionFactoryBean xmppConnectionFactoryBean = new XmppConnectionFactoryBean() {\r\n\r\n    @Override\r\n    protected XMPPConnection createInstance() {\r\n        return mock(XMPPTCPConnection.class);\r\n    }\r\n};",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testXmppConnectionFactoryBeanNoRoster",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "xmppConnectionFactoryBean",
+    "variableType": "XmppConnectionFactoryBean",
+    "mockedClass": "XmppConnectionFactoryBean",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.xmpp.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-xmpp\\src\\test\\java\\org\\springframework\\integration\\xmpp\\config\\XmppConnectionFactoryBeanTests.java",
+      "className": "XmppConnectionFactoryBeanTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "XmppConnectionFactoryBean xmppConnectionFactoryBean = new XmppConnectionFactoryBean() {\r\n\r\n    @Override\r\n    protected XMPPConnection createInstance() {\r\n        return mock(XMPPTCPConnection.class);\r\n    }\r\n};",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testXmppConnectionFactoryBeanWithRoster",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

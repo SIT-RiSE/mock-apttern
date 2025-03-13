@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "resourceService",
+    "variableType": "StorageService",
+    "mockedClass": "StorageService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\AddSecondaryStorageCmdTest.java",
+      "className": "AddSecondaryStorageCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StorageService resourceService = Mockito.mock(StorageService.class);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteForResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resourceService.discoverImageStore(isNull(), isNull(), isNull(), isNull(), isNull())).thenReturn(store);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteForResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "resourceService",
+    "variableType": "StorageService",
+    "mockedClass": "StorageService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\AddSecondaryStorageCmdTest.java",
+      "className": "AddSecondaryStorageCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StorageService resourceService = Mockito.mock(StorageService.class);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteForNullResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resourceService.discoverImageStore(anyString(), anyString(), anyString(), anyLong(), (Map) anyObject())).thenReturn(null);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteForNullResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

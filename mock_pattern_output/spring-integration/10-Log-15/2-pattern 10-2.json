@@ -1,0 +1,72 @@
+[
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\channel\\DispatcherHasNoSubscribersTests.java",
+      "className": "DispatcherHasNoSubscribersTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log logger = mock(Log.class);",
+        "line": 111,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "insertMockLoggerInListener",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isWarnEnabled()).thenReturn(true);",
+        "line": 120,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "insertMockLoggerInListener",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\SubscribableJmsChannelTests.java",
+      "className": "SubscribableJmsChannelTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log logger = mock(Log.class);",
+        "line": 297,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "insertMockLoggerInListener",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isWarnEnabled()).thenReturn(true);",
+        "line": 306,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "insertMockLoggerInListener",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

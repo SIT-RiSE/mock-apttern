@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "spyHttpClient",
+    "variableType": "HttpClient",
+    "mockedClass": "HttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.discovery",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\discovery\\DruidLeaderClientTest.java",
+      "className": "DruidLeaderClientTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HttpClient spyHttpClient = Mockito.spy(this.httpClient);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test503ResponseFromServerAndCacheRefresh",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

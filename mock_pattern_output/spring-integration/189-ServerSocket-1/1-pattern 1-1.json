@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "serverSocket",
+    "variableType": "ServerSocket",
+    "mockedClass": "ServerSocket",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\SocketSupportTests.java",
+      "className": "SocketSupportTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerSocket serverSocket = mock(ServerSocket.class);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetServer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serverSocket.getInetAddress()).thenReturn(inetAddress);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetServer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serverSocket.accept()).thenReturn(socket).then(invocation -> {\r\n    if (closed.get()) {\r\n        throw new SocketException();\r\n    }\r\n    latch1.countDown();\r\n    latch2.await(10, TimeUnit.SECONDS);\r\n    Thread.sleep(50);\r\n    return socket1;\r\n});",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetServer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

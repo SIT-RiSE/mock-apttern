@@ -1,0 +1,626 @@
+[
+  {
+    "variableName": "manager",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.cas.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\cas\\src\\test\\java\\org\\springframework\\security\\cas\\web\\CasAuthenticationFilterTests.java",
+      "className": "CasAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager manager = mock(AuthenticationManager.class);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoFilterAuthenticateAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(manager.authenticate(any(Authentication.class))).willReturn(authentication);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoFilterAuthenticateAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "parent",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ProviderManagerTests.java",
+      "className": "ProviderManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager parent = mock(AuthenticationManager.class);",
+        "line": 195,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "parentAuthenticationIsUsedIfProvidersDontAuthenticate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(parent.authenticate(authReq)).willReturn(authReq);",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "parentAuthenticationIsUsedIfProvidersDontAuthenticate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "parent",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ProviderManagerTests.java",
+      "className": "ProviderManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager parent = mock(AuthenticationManager.class);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "providerNotFoundFromParentIsIgnored",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(parent.authenticate(authReq)).willThrow(new ProviderNotFoundException(\"\"));",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "providerNotFoundFromParentIsIgnored",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "parent",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ProviderManagerTests.java",
+      "className": "ProviderManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager parent = mock(AuthenticationManager.class);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationExceptionFromParentOverridesPreviousOnes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(parent.authenticate(authReq)).willThrow(expected);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationExceptionFromParentOverridesPreviousOnes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.provisioning",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\provisioning\\JdbcUserDetailsManagerTests.java",
+      "className": "JdbcUserDetailsManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "changePasswordSucceedsWithIfReAuthenticationSucceeds",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(currentAuth)).willReturn(currentAuth);",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "changePasswordSucceedsWithIfReAuthenticationSucceeds",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.provisioning",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\provisioning\\JdbcUserDetailsManagerTests.java",
+      "className": "JdbcUserDetailsManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "changePasswordFailsIfReAuthenticationFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(any(Authentication.class))).willThrow(new BadCredentialsException(\"\"));",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "changePasswordFailsIfReAuthenticationFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.preauth",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\preauth\\AbstractPreAuthenticatedProcessingFilterTests.java",
+      "className": "AbstractPreAuthenticatedProcessingFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterChainProceedsOnFailedAuthenticationByDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(any(Authentication.class))).willThrow(new BadCredentialsException(\"\"));",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterChainProceedsOnFailedAuthenticationByDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.preauth",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\preauth\\AbstractPreAuthenticatedProcessingFilterTests.java",
+      "className": "AbstractPreAuthenticatedProcessingFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "exceptionIsThrownOnFailedAuthenticationIfContinueFilterChainOnUnsuccessfulAuthenticationSetToFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(any(Authentication.class))).willThrow(new BadCredentialsException(\"\"));",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "exceptionIsThrownOnFailedAuthenticationIfContinueFilterChainOnUnsuccessfulAuthenticationSetToFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.preauth",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\preauth\\AbstractPreAuthenticatedProcessingFilterTests.java",
+      "className": "AbstractPreAuthenticatedProcessingFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "securityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(any())).willReturn(authRequest);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "securityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.preauth.websphere",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\preauth\\websphere\\WebSpherePreAuthenticatedProcessingFilterTests.java",
+      "className": "WebSpherePreAuthenticatedProcessingFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "principalsAndCredentialsAreExtractedCorrectly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(any(Authentication.class))).willAnswer((Answer<Authentication>) (invocation) -> (Authentication) invocation.getArguments()[0]);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "principalsAndCredentialsAreExtractedCorrectly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.rememberme",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\rememberme\\RememberMeAuthenticationFilterTests.java",
+      "className": "RememberMeAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOperationWhenNoAuthenticationInContextHolder",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(this.remembered)).willReturn(this.remembered);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOperationWhenNoAuthenticationInContextHolder",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.rememberme",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\rememberme\\RememberMeAuthenticationFilterTests.java",
+      "className": "RememberMeAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onUnsuccessfulLoginIsCalledWhenProviderRejectsAuth",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(any(Authentication.class))).willThrow(new BadCredentialsException(\"\"));",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onUnsuccessfulLoginIsCalledWhenProviderRejectsAuth",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.rememberme",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\rememberme\\RememberMeAuthenticationFilterTests.java",
+      "className": "RememberMeAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationSuccessHandlerIsInvokedOnSuccessfulAuthenticationIfSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(this.remembered)).willReturn(this.remembered);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationSuccessHandlerIsInvokedOnSuccessfulAuthenticationIfSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.rememberme",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\rememberme\\RememberMeAuthenticationFilterTests.java",
+      "className": "RememberMeAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "securityContextRepositoryInvokedIfSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(this.remembered)).willReturn(this.remembered);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "securityContextRepositoryInvokedIfSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.rememberme",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\rememberme\\RememberMeAuthenticationFilterTests.java",
+      "className": "RememberMeAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sessionAuthenticationStrategyInvokedIfSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(this.remembered)).willReturn(this.remembered);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sessionAuthenticationStrategyInvokedIfSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\UsernamePasswordAuthenticationFilterTests.java",
+      "className": "UsernamePasswordAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailedAuthenticationThrowsException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(am.authenticate(any(Authentication.class))).willThrow(new BadCredentialsException(\"\"));",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailedAuthenticationThrowsException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

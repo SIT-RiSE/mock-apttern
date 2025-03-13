@@ -1,0 +1,750 @@
+[
+  {
+    "variableName": "sourceTemplateDataStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\KvmNonManagedStorageSystemDataMotionTest.java",
+      "className": "KvmNonManagedStorageSystemDataMotionTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore sourceTemplateDataStore = Mockito.mock(DataStore.class);",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureAndTestcopyTemplateToTargetStorageIfNeeded",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(sourceTemplateDataStore.getName()).thenReturn(\"sourceTemplateName\");",
+        "line": 370,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureAndTestcopyTemplateToTargetStorageIfNeeded",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dataStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\StorageSystemDataMotionStrategyTest.java",
+      "className": "StorageSystemDataMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore dataStore = Mockito.mock(DataStore.class);",
+        "line": 313,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formatEntryOfVolumesAndStoragesAsJsonToDisplayOnLogValidateFormat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataStore.getId()).thenReturn(to);",
+        "line": 317,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formatEntryOfVolumesAndStoragesAsJsonToDisplayOnLogValidateFormat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\integration-test\\src\\test\\java\\org\\apache\\cloudstack\\storage\\test\\EndpointSelectorTest.java",
+      "className": "EndpointSelectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore destStore = mock(DataStore.class);",
+        "line": 281,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destStore.getScope()).thenReturn(srcScope);",
+        "line": 286,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destStore.getRole()).thenReturn(DataStoreRole.Image);",
+        "line": 287,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destStore.getId()).thenReturn(destStoreId);",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destStore.getId()).thenReturn(srcStoreId);",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destStore.getRole()).thenReturn(DataStoreRole.Primary);",
+        "line": 304,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\integration-test\\src\\test\\java\\org\\apache\\cloudstack\\storage\\test\\EndpointSelectorTest.java",
+      "className": "EndpointSelectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore srcStore = mock(DataStore.class);",
+        "line": 280,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getScope()).thenReturn(srcScope);",
+        "line": 283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getRole()).thenReturn(DataStoreRole.Primary);",
+        "line": 284,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getId()).thenReturn(srcStoreId);",
+        "line": 285,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getRole()).thenReturn(DataStoreRole.Image);",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getId()).thenReturn(destStoreId);",
+        "line": 302,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getRole()).thenReturn(DataStoreRole.Primary);",
+        "line": 313,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getScope()).thenReturn(clusterScope);",
+        "line": 314,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getId()).thenReturn(xenStoreId);",
+        "line": 315,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMixZonePrimaryStorages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore destStore = Mockito.mock(DataStore.class);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSameScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destStore.getId()).thenReturn(2L);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSameScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore srcStore = Mockito.mock(DataStore.class);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSameScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getId()).thenReturn(1L);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSameScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore destStore = Mockito.mock(DataStore.class);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDifferentScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destStore.getId()).thenReturn(2L);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDifferentScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore srcStore = Mockito.mock(DataStore.class);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDifferentScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getId()).thenReturn(1L);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDifferentScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore destStore = Mockito.mock(DataStore.class);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckVolumeOnDifferentScaleIOStorageInstanceSystemIdShouldNotBeNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destStore.getId()).thenReturn(2L);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckVolumeOnDifferentScaleIOStorageInstanceSystemIdShouldNotBeNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore srcStore = Mockito.mock(DataStore.class);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckVolumeOnDifferentScaleIOStorageInstanceSystemIdShouldNotBeNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getId()).thenReturn(1L);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckVolumeOnDifferentScaleIOStorageInstanceSystemIdShouldNotBeNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore destStore = Mockito.mock(DataStore.class);",
+        "line": 353,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destStore.getId()).thenReturn(2L);",
+        "line": 354,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore destStore = Mockito.mock(DataStore.class);",
+        "line": 391,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destStore.getId()).thenReturn(2L);",
+        "line": 392,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore srcStore = Mockito.mock(DataStore.class);",
+        "line": 444,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getId()).thenReturn(1L);",
+        "line": 445,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore srcStore = Mockito.mock(DataStore.class);",
+        "line": 471,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioWhenNoSDCisFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcStore.getId()).thenReturn(1L);",
+        "line": 472,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioWhenNoSDCisFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dataStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.lifecycle",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\lifecycle\\ScaleIOPrimaryDataStoreLifeCycleTest.java",
+      "className": "ScaleIOPrimaryDataStoreLifeCycleTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DataStore dataStore = mock(DataStore.class);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataStore.getId()).thenReturn(1L);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dataStore",
+    "variableType": "DataStore",
+    "mockedClass": "DataStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.secondarystorage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\secondary-storage\\controller\\src\\test\\java\\org\\apache\\cloudstack\\secondarystorage\\SecondaryStorageManagerImplTest.java",
+      "className": "SecondaryStorageManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore dataStore = Mockito.mock(DataStore.class);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "mockDataStoresForTestAddSecondaryStorageServerAddressToBuffer",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataStore.getTO()).thenReturn(dataStoreTO);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "mockDataStoresForTestAddSecondaryStorageServerAddressToBuffer",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

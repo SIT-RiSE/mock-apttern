@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "avoids",
+    "variableType": "ExcludeList",
+    "mockedClass": "ExcludeList",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.implicitplanner",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\deployment-planners\\implicit-dedication\\src\\test\\java\\org\\apache\\cloudstack\\implicitplanner\\ImplicitPlannerTest.java",
+      "className": "ImplicitPlannerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ExcludeList avoids = mock(ExcludeList.class);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenDcInAvoidList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(avoids.shouldAvoid(mockDc)).thenReturn(true);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenDcInAvoidList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

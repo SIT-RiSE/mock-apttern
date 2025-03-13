@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "jwtDecoder",
+    "variableType": "JwtDecoder",
+    "mockedClass": "JwtDecoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\JwtAuthenticationProviderTests.java",
+      "className": "JwtAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nJwtDecoder jwtDecoder;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(\"token\")).willReturn(jwt);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenJwtDecodesThenAuthenticationHasAttributesContainedInJwt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(\"token\")).willThrow(BadJwtException.class);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenJwtDecodeFailsThenRespondsWithInvalidToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(token.getToken())).willThrow(new BadJwtException(\"with \\\"invalid\\\" chars\"));",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenDecoderThrowsIncompatibleErrorMessageThenWrapsWithGenericOne",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(token.getToken())).willThrow(new JwtException(\"no jwk set\"));",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenDecoderFailsGenericallyThenThrowsGenericException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(token.getToken())).willReturn(jwt);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenConverterReturnsAuthenticationThenProviderPropagatesIt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(token.getToken())).willReturn(jwt);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenConverterDoesNotSetAuthenticationDetailsThenProviderSetsItWithTokenDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(token.getToken())).willReturn(jwt);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenConverterSetsAuthenticationDetailsThenProviderDoesNotOverwriteIt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

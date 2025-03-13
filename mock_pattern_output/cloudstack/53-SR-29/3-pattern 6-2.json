@@ -1,0 +1,140 @@
+[
+  {
+    "variableName": "srMock",
+    "variableType": "SR",
+    "mockedClass": "SR",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\CitrixResourceBaseTest.java",
+      "className": "CitrixResourceBaseTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SR srMock = Mockito.mock(SR.class);",
+        "line": 322,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureStorageNameAndDescriptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srMock.getUuid(connectionMock)).thenReturn(srUuid);",
+        "line": 328,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureStorageNameAndDescriptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srMock.getType(connectionMock)).thenReturn(srType);",
+        "line": 329,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureStorageNameAndDescriptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(srMock).setNameLabel(connectionMock, srUuid);",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureStorageNameAndDescriptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(srMock).setNameDescription(connectionMock, expectedNameDescription);",
+        "line": 337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureStorageNameAndDescriptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "srMock",
+    "variableType": "SR",
+    "mockedClass": "SR",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\Xenserver625StorageProcessorTest.java",
+      "className": "Xenserver625StorageProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SR srMock = Mockito.mock(SR.class);",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forgetSrTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srMock.getPBDs(connectionMock)).thenReturn(pbds);",
+        "line": 262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forgetSrTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(srMock).getPBDs(connectionMock);",
+        "line": 267,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forgetSrTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(srMock).forget(connectionMock);",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forgetSrTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

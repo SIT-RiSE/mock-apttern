@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\DefaultJmsHeaderMapperTests.java",
+      "className": "DefaultJmsHeaderMapperTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = Mockito.mock(Session.class);",
+        "line": 536,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testJsonHeaderMapping",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

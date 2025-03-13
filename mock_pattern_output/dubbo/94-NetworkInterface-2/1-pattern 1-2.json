@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "mockIgnoredNetif",
+    "variableType": "NetworkInterface",
+    "mockedClass": "NetworkInterface",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\NetUtilsInterfaceDisplayNameHasMetaCharactersTest.java",
+      "className": "NetUtilsInterfaceDisplayNameHasMetaCharactersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkInterface mockIgnoredNetif = Mockito.mock(NetworkInterface.class);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockIgnoredNetif.isUp()).thenReturn(true);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockIgnoredNetif.getDisplayName()).thenReturn(IGNORED_DISPLAY_NAME_HAS_METACHARACTERS);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockSelectedNetif",
+    "variableType": "NetworkInterface",
+    "mockedClass": "NetworkInterface",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\NetUtilsInterfaceDisplayNameHasMetaCharactersTest.java",
+      "className": "NetUtilsInterfaceDisplayNameHasMetaCharactersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkInterface mockSelectedNetif = Mockito.mock(NetworkInterface.class);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockSelectedNetif.isUp()).thenReturn(true);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockSelectedNetif.getDisplayName()).thenReturn(SELECTED_DISPLAY_NAME);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockSelectedNetif.getInetAddresses()).thenReturn(mockEnumAddrs);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

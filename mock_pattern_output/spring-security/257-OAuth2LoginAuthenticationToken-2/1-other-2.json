@@ -1,0 +1,212 @@
+[
+  {
+    "variableName": "loginAuthentication",
+    "variableType": "OAuth2LoginAuthenticationToken",
+    "mockedClass": "OAuth2LoginAuthenticationToken",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\OAuth2LoginAuthenticationFilterTests.java",
+      "className": "OAuth2LoginAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private OAuth2LoginAuthenticationToken loginAuthentication;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getPrincipal()).willReturn(user);",
+        "line": 496,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getName()).willReturn(this.principalName1);",
+        "line": 497,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getAuthorities()).willReturn(AuthorityUtils.createAuthorityList(\"ROLE_USER\"));",
+        "line": 498,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getClientRegistration()).willReturn(registration);",
+        "line": 499,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getAuthorizationExchange()).willReturn(TestOAuth2AuthorizationExchanges.success());",
+        "line": 500,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getAccessToken()).willReturn(mock(OAuth2AccessToken.class));",
+        "line": 502,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getRefreshToken()).willReturn(mock(OAuth2RefreshToken.class));",
+        "line": 503,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.isAuthenticated()).willReturn(true);",
+        "line": 504,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 56
+  },
+  {
+    "variableName": "loginAuthentication",
+    "variableType": "OAuth2LoginAuthenticationToken",
+    "mockedClass": "OAuth2LoginAuthenticationToken",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\OAuth2LoginAuthenticationFilterTests.java",
+      "className": "OAuth2LoginAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private OAuth2LoginAuthenticationToken loginAuthentication;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getPrincipal()).willReturn(user);",
+        "line": 496,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getName()).willReturn(this.principalName1);",
+        "line": 497,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getAuthorities()).willReturn(AuthorityUtils.createAuthorityList(\"ROLE_USER\"));",
+        "line": 498,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getClientRegistration()).willReturn(registration);",
+        "line": 499,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getAuthorizationExchange()).willReturn(TestOAuth2AuthorizationExchanges.success());",
+        "line": 500,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getAccessToken()).willReturn(mock(OAuth2AccessToken.class));",
+        "line": 502,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.getRefreshToken()).willReturn(mock(OAuth2RefreshToken.class));",
+        "line": 503,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.loginAuthentication.isAuthenticated()).willReturn(true);",
+        "line": 504,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 56
+  }
+]

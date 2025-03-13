@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "remoteService",
+    "variableType": "RemoteServiceImpl",
+    "mockedClass": "RemoteServiceImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.proxy",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\proxy\\MethodInvokerTest.java",
+      "className": "MethodInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RemoteServiceImpl remoteService = Mockito.mock(RemoteServiceImpl.class);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(remoteService, Mockito.times(2)).getThreadName();",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(remoteService, Mockito.times(1)).sayHello(\"Hello arg1\");",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(remoteService, Mockito.times(1)).sayHello(\"Hello arg1\", \"Hello arg2\");",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "userAccount",
+    "variableType": "UserAccountVO",
+    "mockedClass": "UserAccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserAccountVO userAccount = Mockito.mock(UserAccountVO.class);",
+        "line": 860,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthenticationWhenDomainlevelSettingisDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccount.getDomainId()).thenReturn(1L);",
+        "line": 865,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthenticationWhenDomainlevelSettingisDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userAccount",
+    "variableType": "UserAccountVO",
+    "mockedClass": "UserAccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserAccountVO userAccount = Mockito.mock(UserAccountVO.class);",
+        "line": 879,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthenticationWhenProviderNameIsNullExpectedDefaultProviderTOTP",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccount.getDomainId()).thenReturn(1L);",
+        "line": 884,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthenticationWhenProviderNameIsNullExpectedDefaultProviderTOTP",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userAccount",
+    "variableType": "UserAccountVO",
+    "mockedClass": "UserAccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserAccountVO userAccount = Mockito.mock(UserAccountVO.class);",
+        "line": 908,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccount.getDomainId()).thenReturn(1L);",
+        "line": 913,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableUserTwoFactorAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

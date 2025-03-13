@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "segmentManager",
+    "variableType": "SegmentManager",
+    "mockedClass": "SegmentManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordination",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordination\\SegmentLoadDropHandlerTest.java",
+      "className": "SegmentLoadDropHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SegmentManager segmentManager = Mockito.mock(SegmentManager.class);",
+        "line": 520,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchDuplicateLoadRequestsWhenFirstRequestFailsSecondRequestShouldSucceed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(segmentManager.loadSegment(ArgumentMatchers.any(), ArgumentMatchers.anyBoolean(), ArgumentMatchers.any(), ArgumentMatchers.any())).thenThrow(new RuntimeException(\"segment loading failure test\")).thenReturn(true);",
+        "line": 521,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchDuplicateLoadRequestsWhenFirstRequestFailsSecondRequestShouldSucceed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

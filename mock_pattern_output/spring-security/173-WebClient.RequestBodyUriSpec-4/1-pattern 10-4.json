@@ -1,0 +1,142 @@
+[
+  {
+    "variableName": "spec",
+    "variableType": "WebClient.RequestBodyUriSpec",
+    "mockedClass": "WebClient.RequestBodyUriSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\NimbusReactiveOpaqueTokenIntrospectorTests.java",
+      "className": "NimbusReactiveOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebClient.RequestBodyUriSpec spec = spy(real.post());",
+        "line": 269,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(spec.exchange()).willReturn(Mono.just(clientResponse));",
+        "line": 278,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "spec",
+    "variableType": "WebClient.RequestBodyUriSpec",
+    "mockedClass": "WebClient.RequestBodyUriSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\NimbusReactiveOpaqueTokenIntrospectorTests.java",
+      "className": "NimbusReactiveOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebClient.RequestBodyUriSpec spec = spy(real.post());",
+        "line": 284,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(spec.exchange()).willThrow(ex);",
+        "line": 287,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "spec",
+    "variableType": "WebClient.RequestBodyUriSpec",
+    "mockedClass": "WebClient.RequestBodyUriSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\SpringReactiveOpaqueTokenIntrospectorTests.java",
+      "className": "SpringReactiveOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebClient.RequestBodyUriSpec spec = spy(real.post());",
+        "line": 270,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(spec.exchange()).willReturn(Mono.just(clientResponse));",
+        "line": 279,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "spec",
+    "variableType": "WebClient.RequestBodyUriSpec",
+    "mockedClass": "WebClient.RequestBodyUriSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\SpringReactiveOpaqueTokenIntrospectorTests.java",
+      "className": "SpringReactiveOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebClient.RequestBodyUriSpec spec = spy(real.post());",
+        "line": 295,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(spec.exchange()).willThrow(ex);",
+        "line": 298,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

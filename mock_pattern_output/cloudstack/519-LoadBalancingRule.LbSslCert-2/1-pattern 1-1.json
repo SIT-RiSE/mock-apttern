@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "lbSslCert",
+    "variableType": "LoadBalancingRule.LbSslCert",
+    "mockedClass": "LoadBalancingRule.LbSslCert",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\GetLoadBalancerSslCertificateCmdTest.java",
+      "className": "GetLoadBalancerSslCertificateCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LoadBalancingRule.LbSslCert lbSslCert = Mockito.mock(LoadBalancingRule.LbSslCert.class);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(lbSslCert.getCert()).thenReturn(\"test\");",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(lbSslCert.getKey()).thenReturn(\"test\");",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(lbSslCert.getChain()).thenReturn(\"test\");",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

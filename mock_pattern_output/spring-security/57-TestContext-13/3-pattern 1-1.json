@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TestContext testContext = mock(TestContext.class);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handlesGenericAnnotation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(testContext.getTestMethod()).willReturn(method);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handlesGenericAnnotation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handlesGenericAnnotation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

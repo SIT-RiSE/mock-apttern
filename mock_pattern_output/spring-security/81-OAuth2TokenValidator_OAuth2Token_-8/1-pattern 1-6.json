@@ -1,0 +1,236 @@
+[
+  {
+    "variableName": "success",
+    "variableType": "OAuth2TokenValidator<OAuth2Token>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\DelegatingOAuth2TokenValidatorTests.java",
+      "className": "DelegatingOAuth2TokenValidatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<OAuth2Token> success = mock(OAuth2TokenValidator.class);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenAnyValidatorFailsThenReturnsFailureResultContainingDetailFromFailingValidator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(success.validate(any(OAuth2Token.class))).willReturn(OAuth2TokenValidatorResult.success());",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenAnyValidatorFailsThenReturnsFailureResultContainingDetailFromFailingValidator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "failure",
+    "variableType": "OAuth2TokenValidator<OAuth2Token>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\DelegatingOAuth2TokenValidatorTests.java",
+      "className": "DelegatingOAuth2TokenValidatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<OAuth2Token> failure = mock(OAuth2TokenValidator.class);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenAnyValidatorFailsThenReturnsFailureResultContainingDetailFromFailingValidator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(failure.validate(any(OAuth2Token.class))).willReturn(OAuth2TokenValidatorResult.failure(DETAIL));",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenAnyValidatorFailsThenReturnsFailureResultContainingDetailFromFailingValidator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "secondFailure",
+    "variableType": "OAuth2TokenValidator<OAuth2Token>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\DelegatingOAuth2TokenValidatorTests.java",
+      "className": "DelegatingOAuth2TokenValidatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<OAuth2Token> secondFailure = mock(OAuth2TokenValidator.class);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenMultipleValidatorsFailThenReturnsFailureResultContainingAllDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(secondFailure.validate(any(OAuth2Token.class))).willReturn(OAuth2TokenValidatorResult.failure(otherDetail));",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenMultipleValidatorsFailThenReturnsFailureResultContainingAllDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "firstFailure",
+    "variableType": "OAuth2TokenValidator<OAuth2Token>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\DelegatingOAuth2TokenValidatorTests.java",
+      "className": "DelegatingOAuth2TokenValidatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<OAuth2Token> firstFailure = mock(OAuth2TokenValidator.class);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenMultipleValidatorsFailThenReturnsFailureResultContainingAllDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(firstFailure.validate(any(OAuth2Token.class))).willReturn(OAuth2TokenValidatorResult.failure(DETAIL));",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenMultipleValidatorsFailThenReturnsFailureResultContainingAllDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "secondSuccess",
+    "variableType": "OAuth2TokenValidator<OAuth2Token>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\DelegatingOAuth2TokenValidatorTests.java",
+      "className": "DelegatingOAuth2TokenValidatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<OAuth2Token> secondSuccess = mock(OAuth2TokenValidator.class);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenAllValidatorsSucceedThenReturnsSuccessfulResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(secondSuccess.validate(any(OAuth2Token.class))).willReturn(OAuth2TokenValidatorResult.success());",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenAllValidatorsSucceedThenReturnsSuccessfulResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "firstSuccess",
+    "variableType": "OAuth2TokenValidator<OAuth2Token>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\DelegatingOAuth2TokenValidatorTests.java",
+      "className": "DelegatingOAuth2TokenValidatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<OAuth2Token> firstSuccess = mock(OAuth2TokenValidator.class);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenAllValidatorsSucceedThenReturnsSuccessfulResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(firstSuccess.validate(any(OAuth2Token.class))).willReturn(OAuth2TokenValidatorResult.success());",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateWhenAllValidatorsSucceedThenReturnsSuccessfulResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

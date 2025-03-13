@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "dm",
+    "variableType": "Domain",
+    "mockedClass": "Domain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Domain dm = Mockito.mock(Domain.class);",
+        "line": 1774,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dm.getXMLDesc(8)).thenReturn(\"<domain type='kvm' id='3'>\" + \"  <devices>\" + \"    <graphics type='vnc' port='5900' autoport='yes' listen='10.10.10.1'>\" + \"      <listen type='address' address='10.10.10.1'/>\" + \"    </graphics>\" + \"  </devices>\" + \"</domain>\");",
+        "line": 1779,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dm.getXMLDesc(1)).thenReturn(\"<domain type='kvm' id='3'>\" + \"  <devices>\" + \"    <graphics type='vnc' port='5900' autoport='yes' listen='10.10.10.1'>\" + \"      <listen type='address' address='10.10.10.1'/>\" + \"    </graphics>\" + \"  </devices>\" + \"</domain>\");",
+        "line": 1781,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dm.isPersistent()).thenReturn(1);",
+        "line": 1783,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(dm, times(1)).getXMLDesc(8);",
+        "line": 1815,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(dm, times(1)).getXMLDesc(1);",
+        "line": 1818,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

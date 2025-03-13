@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "rest",
+    "variableType": "RestOperations",
+    "mockedClass": "RestOperations",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.userinfo",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\userinfo\\DefaultOAuth2UserServiceTests.java",
+      "className": "DefaultOAuth2UserServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RestOperations rest = mock(RestOperations.class);",
+        "line": 427,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "withMockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(rest.exchange(nullable(RequestEntity.class), any(ParameterizedTypeReference.class))).willReturn(responseEntity);",
+        "line": 428,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "withMockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

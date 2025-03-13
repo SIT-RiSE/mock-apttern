@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "templateService",
+    "variableType": "TemplateApiService",
+    "mockedClass": "TemplateApiService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.version",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\version\\KubernetesVersionServiceTest.java",
+      "className": "KubernetesVersionServiceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TemplateApiService templateService;",
+        "line": 92,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateService.registerIso(Mockito.any(RegisterIsoCmd.class))).thenReturn(Mockito.mock(VirtualMachineTemplate.class));",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionIsoUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateService.deleteIso(Mockito.any(DeleteIsoCmd.class))).thenReturn(true);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteKubernetesSupportedVersionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

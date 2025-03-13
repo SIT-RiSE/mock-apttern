@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "_stateMachine",
+    "variableType": "StateMachine2<State,VirtualMachine.Event,VirtualMachine>",
+    "mockedClass": "StateMachine2<State,VirtualMachine.Event,VirtualMachine>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprotected StateMachine2<State, VirtualMachine.Event, VirtualMachine> _stateMachine;",
+        "line": 196,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_stateMachine.transitTo(vmInstance, VirtualMachine.Event.OperationRetry, new Pair(vmInstance.getHostId(), 1L), vmInstanceDaoMock)).thenThrow(new CloudRuntimeException(\"Error while transitioning\"));",
+        "line": 1000,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_stateMachine.transitTo(vmInstance, VirtualMachine.Event.OperationFailed, new Pair(vmInstance.getHostId(), null), vmInstanceDaoMock)).thenReturn(true);",
+        "line": 1001,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_stateMachine.transitTo(vmInstance, VirtualMachine.Event.OperationRetry, new Pair(vmInstance.getHostId(), 1L), vmInstanceDaoMock)).thenThrow(new CloudRuntimeException(\"Error while transitioning\"));",
+        "line": 1092,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_stateMachine.transitTo(vmInstance, VirtualMachine.Event.OperationFailed, new Pair(vmInstance.getHostId(), null), vmInstanceDaoMock)).thenReturn(true);",
+        "line": 1093,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

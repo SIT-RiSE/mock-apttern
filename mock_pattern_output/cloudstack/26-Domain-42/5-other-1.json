@@ -1,0 +1,85 @@
+[
+  {
+    "variableName": "domainMock",
+    "variableType": "Domain",
+    "mockedClass": "Domain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\u2014 Helper Method\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDomain domainMock;",
+        "line": 250,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainMock.getSchedulerParameters()).thenReturn(cpuSharesOf2000);",
+        "line": 5902,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCpuSharesTestReturnCpuSharesIfFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainMock.getSchedulerParameters()).thenReturn(withoutCpuShares);",
+        "line": 5912,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCpuSharesTestReturnZeroIfCpuSharesNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock, times(1)).setSchedulerParameters(Mockito.argThat(schedParameters -> {\r\n    if (schedParameters == null || schedParameters.length > 1 || !(schedParameters[0] instanceof SchedUlongParameter)) {\r\n        return false;\r\n    }\r\n    SchedUlongParameter param = (SchedUlongParameter) schedParameters[0];\r\n    if (param.field != \"cpu_shares\" || param.value != 2000) {\r\n        return false;\r\n    }\r\n    return true;\r\n}));",
+        "line": 5921,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setCpuSharesTestSuccessfullySetCpuShares",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainMock.getXMLDesc(Mockito.anyInt())).thenReturn(\"\");",
+        "line": 6207,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksToSetupMemoryBalloonStatsPeriod",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainMock.getName()).thenReturn(\"fake-VM-name\");",
+        "line": 6208,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksToSetupMemoryBalloonStatsPeriod",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 51
+  }
+]

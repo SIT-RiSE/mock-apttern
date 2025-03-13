@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "authorizedClientRepository",
+    "variableType": "ServerOAuth2AuthorizedClientRepository",
+    "mockedClass": "ServerOAuth2AuthorizedClientRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.reactive",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\reactive\\ReactiveOAuth2ClientImportSelectorTests.java",
+      "className": "ReactiveOAuth2ClientImportSelectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerOAuth2AuthorizedClientRepository authorizedClientRepository = mock(ServerOAuth2AuthorizedClientRepository.class);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientManagerNotConfigureThenUseDefaultAuthorizedClientManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClientRepository.loadAuthorizedClient(any(), any(), any())).willReturn(Mono.just(authorizedClient));",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientManagerNotConfigureThenUseDefaultAuthorizedClientManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

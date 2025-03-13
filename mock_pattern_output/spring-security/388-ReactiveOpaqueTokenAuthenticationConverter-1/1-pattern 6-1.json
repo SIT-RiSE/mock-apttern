@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "authenticationConverter",
+    "variableType": "ReactiveOpaqueTokenAuthenticationConverter",
+    "mockedClass": "ReactiveOpaqueTokenAuthenticationConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\OpaqueTokenReactiveAuthenticationManagerTests.java",
+      "className": "OpaqueTokenReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOpaqueTokenAuthenticationConverter authenticationConverter = mock(ReactiveOpaqueTokenAuthenticationConverter.class);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAuthenticationConverterThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authenticationConverter.convert(any(), any(OAuth2AuthenticatedPrincipal.class))).willReturn(Mono.just(new TestingAuthenticationToken(principal, null, Collections.emptyList())));",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAuthenticationConverterThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authenticationConverter).convert(\"token\", principal);",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAuthenticationConverterThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(introspector, authenticationConverter);",
+        "line": 145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAuthenticationConverterThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "pool3",
+    "variableType": "StoragePoolVO",
+    "mockedClass": "StoragePoolVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\KvmNonManagedStorageSystemDataMotionTest.java",
+      "className": "KvmNonManagedStorageSystemDataMotionTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nStoragePoolVO pool3;",
+        "line": 121,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(pool3.getPoolType()).thenReturn(Storage.StoragePoolType.NetworkFilesystem);",
+        "line": 427,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(pool3.getScope()).thenReturn(ScopeType.CLUSTER);",
+        "line": 428,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "poolMock",
+    "variableType": "StoragePoolVO",
+    "mockedClass": "StoragePoolVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\snapshot\\SnapshotManagerTest.java",
+      "className": "SnapshotManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nStoragePoolVO poolMock;",
+        "line": 147,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(poolMock.getScope()).thenReturn(ScopeType.ZONE);",
+        "line": 248,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(poolMock.getHypervisor()).thenReturn(HypervisorType.KVM);",
+        "line": 249,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  }
+]

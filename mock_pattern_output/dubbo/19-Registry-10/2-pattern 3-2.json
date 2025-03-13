@@ -1,0 +1,52 @@
+[
+  {
+    "variableName": "registryDelegate",
+    "variableType": "Registry",
+    "mockedClass": "Registry",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-api\\src\\test\\java\\org\\apache\\dubbo\\config\\ServiceConfigTest.java",
+      "className": "ServiceConfigTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Registry registryDelegate = Mockito.mock(Registry.class);",
+        "line": 90,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 3
+  },
+  {
+    "variableName": "registry",
+    "variableType": "Registry",
+    "mockedClass": "Registry",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\SimpleRegistryFactory.java",
+      "className": "SimpleRegistryFactory"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "static Registry registry = Mockito.mock(Registry.class);",
+        "line": 24,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

@@ -1,0 +1,120 @@
+[
+  {
+    "variableName": "connection",
+    "variableType": "Connection",
+    "mockedClass": "Connection",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\inbound\\AmqpMessageSourceTests.java",
+      "className": "AmqpMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Connection connection = mock(Connection.class);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection, times(2)).createChannel();",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection, times(2)).createChannel();",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection).close(30000);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "connection",
+    "variableType": "Connection",
+    "mockedClass": "Connection",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\inbound\\AmqpMessageSourceTests.java",
+      "className": "AmqpMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Connection connection = mock(Connection.class);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackOrRequeue",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection).createChannel();",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackOrRequeue",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection).createChannel();",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackOrRequeue",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection).close(30000);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackOrRequeue",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

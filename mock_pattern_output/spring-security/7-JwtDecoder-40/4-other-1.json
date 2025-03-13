@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "jwtDecoder",
+    "variableType": "JwtDecoder",
+    "mockedClass": "JwtDecoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\oauth2\\client\\OAuth2LoginConfigurerTests.java",
+      "className": "JwtDecoderFactoryConfig"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JwtDecoder jwtDecoder = mock(JwtDecoder.class);",
+        "line": 1285,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "getJwtDecoder",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwtDecoder.decode(any())).willReturn(jwt);",
+        "line": 1286,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "getJwtDecoder",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 20
+  }
+]

@@ -1,0 +1,3851 @@
+[
+  {
+    "variableName": "group",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\ExpressionEvaluatingMessageGroupProcessorTests.java",
+      "className": "ExpressionEvaluatingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup group;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(group.getMessages()).thenReturn(messages);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessAndSendWithSizeExpressionEvaluated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(group.getMessages()).thenReturn(messages);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessAndCheckHeaders",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(group.getMessages()).thenReturn(messages);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessAndSendWithProjectionExpressionEvaluated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(group.getMessages()).thenReturn(messages);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessAndSendWithFilterAndProjectionExpressionEvaluated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(group.getMessages()).thenReturn(messages);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessAndSendWithFilterAndProjectionAndMethodInvokingExpressionEvaluated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "messageGroupMock",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\MethodInvokingMessageGroupProcessorTests.java",
+      "className": "MethodInvokingMessageGroupProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageGroup messageGroupMock;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodForMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(messageGroupMock.getMessages()).thenReturn(messagesUpForProcessing);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindListPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindAnnotatedPayloadsWithNoType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldUseAnnotatedPayloads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindSimpleAggregatorMethodWithIterator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodAmongMultipleUnannotated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldFindFittingMethodForIteratorOfMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.messageGroupMock.getMessages()).thenReturn(this.messagesUpForProcessing);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTwoMethodsWithSameParameterTypesAmbiguous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

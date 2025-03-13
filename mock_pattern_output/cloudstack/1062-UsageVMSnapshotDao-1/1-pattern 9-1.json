@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "usageVMSnapshotDaoMock",
+    "variableType": "UsageVMSnapshotDao",
+    "mockedClass": "UsageVMSnapshotDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.usage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\usage\\src\\test\\java\\com\\cloud\\usage\\UsageManagerImplTest.java",
+      "className": "UsageManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UsageVMSnapshotDao usageVMSnapshotDaoMock;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(usageVMSnapshotDaoMock, Mockito.times(1)).persist(Mockito.any(UsageVMSnapshotVO.class));",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createUsageVMSnapshotTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(usageVMSnapshotDaoMock, Mockito.times(1)).update(Mockito.any(UsageVMSnapshotVO.class));",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteUsageVMSnapshotTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(usageVMSnapshotDaoMock, Mockito.times(3)).update(Mockito.any(UsageVMSnapshotVO.class));",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteUsageVMSnapshotMultipleSnapshotsFoundTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

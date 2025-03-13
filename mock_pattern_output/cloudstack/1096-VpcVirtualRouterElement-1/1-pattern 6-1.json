@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "vpcVirtualRouter",
+    "variableType": "VpcVirtualRouterElement",
+    "mockedClass": "VpcVirtualRouterElement",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.firewall",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\firewall\\FirewallManagerTest.java",
+      "className": "FirewallManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VpcVirtualRouterElement vpcVirtualRouter = mock(VpcVirtualRouterElement.class);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyFWRules",
+          "methodAnnotations": [
+            "@Ignore",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vpcVirtualRouter.applyFWRules(any(Network.class), any(List.class))).thenReturn(true);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyFWRules",
+          "methodAnnotations": [
+            "@Ignore",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vpcVirtualRouter).applyFWRules(any(Network.class), any(List.class));",
+        "line": 164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyFWRules",
+          "methodAnnotations": [
+            "@Ignore",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

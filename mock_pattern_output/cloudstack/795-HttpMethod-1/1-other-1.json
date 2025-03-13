@@ -1,0 +1,711 @@
+[
+  {
+    "variableName": "_method",
+    "variableType": "HttpMethod",
+    "mockedClass": "GetMethod",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.bigswitch",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\bigswitch\\src\\test\\java\\com\\cloud\\network\\bigswitch\\BigSwitchApiTest.java",
+      "className": "BigSwitchApiTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "HttpMethod _method;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(PostMethod.class);",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectOK",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getResponseHeader(\"X-BSN-BVS-HASH-MATCH\")).thenReturn(new Header(\"X-BSN-BVS-HASH-MATCH\", UUID.randomUUID().toString()));",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectOK",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_OK);",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectOK",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectOK",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(PostMethod.class);",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectConflict",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_CONFLICT);",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectConflict",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(PostMethod.class);",
+        "line": 259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectSecondary",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_SEE_OTHER);",
+        "line": 260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectSecondary",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(PostMethod.class);",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_INTERNAL_SERVER_ERROR);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getResponseHeader(\"content-type\")).thenReturn(header);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getResponseBodyAsString()).thenReturn(\"Off to timbuktu, won't be back later.\");",
+        "line": 274,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.isRequestSent()).thenReturn(true);",
+        "line": 275,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(PostMethod.class);",
+        "line": 287,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_INTERNAL_SERVER_ERROR);",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getResponseHeader(\"content-type\")).thenReturn(header);",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getResponseBodyAsString()).thenReturn(\"Off to timbuktu, won't be back later.\");",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteCreateObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(PutMethod.class);",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectOK",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getResponseHeader(\"X-BSN-BVS-HASH-MATCH\")).thenReturn(new Header(\"X-BSN-BVS-HASH-MATCH\", UUID.randomUUID().toString()));",
+        "line": 304,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectOK",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_OK);",
+        "line": 305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectOK",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectOK",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(PutMethod.class);",
+        "line": 317,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectConflict",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_CONFLICT);",
+        "line": 318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectConflict",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(PutMethod.class);",
+        "line": 325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectSecondary",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_SEE_OTHER);",
+        "line": 326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectSecondary",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(PutMethod.class);",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_INTERNAL_SERVER_ERROR);",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getResponseHeader(\"content-type\")).thenReturn(header);",
+        "line": 338,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getResponseBodyAsString()).thenReturn(\"Off to timbuktu, won't be back later.\");",
+        "line": 339,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.isRequestSent()).thenReturn(true);",
+        "line": 340,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 344,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(PutMethod.class);",
+        "line": 351,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_OK);",
+        "line": 352,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteUpdateObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(DeleteMethod.class);",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_OK);",
+        "line": 364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 366,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(DeleteMethod.class);",
+        "line": 372,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_INTERNAL_SERVER_ERROR);",
+        "line": 373,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getResponseHeader(\"content-type\")).thenReturn(header);",
+        "line": 376,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getResponseBodyAsString()).thenReturn(\"Off to timbuktu, won't be back later.\");",
+        "line": 377,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.isRequestSent()).thenReturn(true);",
+        "line": 378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 382,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObjectFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(DeleteMethod.class);",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_OK);",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 394,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteDeleteObjectException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(GetMethod.class);",
+        "line": 400,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveControllerPrimaryStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_OK);",
+        "line": 401,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveControllerPrimaryStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 405,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveControllerPrimaryStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(GetMethod.class);",
+        "line": 412,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveControllerPrimaryStatusWithTopoConflict",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_CONFLICT);",
+        "line": 413,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveControllerPrimaryStatusWithTopoConflict",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveControllerPrimaryStatusWithTopoConflict",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_method = mock(GetMethod.class);",
+        "line": 424,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveControllerSecondaryStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_method.getStatusCode()).thenReturn(HttpStatus.SC_SEE_OTHER);",
+        "line": 425,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveControllerSecondaryStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_method, times(1)).releaseConnection();",
+        "line": 429,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRetrieveControllerSecondaryStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 35
+  }
+]

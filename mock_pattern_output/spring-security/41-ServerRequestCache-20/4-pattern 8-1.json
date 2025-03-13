@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "requestCache",
+    "variableType": "ServerRequestCache",
+    "mockedClass": "ServerRequestCache",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\server\\OAuth2AuthorizationRequestRedirectWebFilterTests.java",
+      "className": "OAuth2AuthorizationRequestRedirectWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerRequestCache requestCache;",
+        "line": 67,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestCache.saveRequest(any())).willReturn(Mono.empty());",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenExceptionThenSaveRequestSessionAttribute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(this.requestCache).saveRequest(any());",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenExceptionThenSaveRequestSessionAttribute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverifyNoInteractions(this.requestCache);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenPathMatchesThenRequestSessionAttributeNotSaved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverifyNoInteractions(this.requestCache);",
+        "line": 260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenCustomRedirectStrategySetThenRedirectUriInResponseBody",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

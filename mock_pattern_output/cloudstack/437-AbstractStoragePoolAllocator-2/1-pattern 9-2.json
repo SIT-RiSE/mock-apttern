@@ -1,0 +1,268 @@
+[
+  {
+    "variableName": "allocator",
+    "variableType": "AbstractStoragePoolAllocator",
+    "mockedClass": "MockStorapoolAllocater",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.allocator",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\src\\test\\java\\org\\apache\\cloudstack\\storage\\allocator\\AbstractStoragePoolAllocatorTest.java",
+      "className": "AbstractStoragePoolAllocatorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "AbstractStoragePoolAllocator allocator = Mockito.spy(MockStorapoolAllocater.class);",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderPoolsByCapacity(plan, pools);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_random",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderPoolsByNumberOfVolumes(plan, pools, account);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_random",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(1)).reorderRandomPools(pools);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_random",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderPoolsByCapacity(plan, pools);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_userdispersing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(1)).reorderPoolsByNumberOfVolumes(plan, pools, account);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_userdispersing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderRandomPools(pools);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_userdispersing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(1)).reorderPoolsByCapacity(plan, pools);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_firstfitleastconsumed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderPoolsByNumberOfVolumes(plan, pools, account);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_firstfitleastconsumed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderRandomPools(pools);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_firstfitleastconsumed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "allocator",
+    "variableType": "AbstractStoragePoolAllocator",
+    "mockedClass": "MockStorapoolAllocater",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.allocator",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\src\\test\\java\\org\\apache\\cloudstack\\storage\\allocator\\AbstractStoragePoolAllocatorTest.java",
+      "className": "AbstractStoragePoolAllocatorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "AbstractStoragePoolAllocator allocator = Mockito.spy(MockStorapoolAllocater.class);",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderPoolsByCapacity(plan, pools);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_random",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderPoolsByNumberOfVolumes(plan, pools, account);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_random",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(1)).reorderRandomPools(pools);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_random",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderPoolsByCapacity(plan, pools);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_userdispersing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(1)).reorderPoolsByNumberOfVolumes(plan, pools, account);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_userdispersing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderRandomPools(pools);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_userdispersing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(1)).reorderPoolsByCapacity(plan, pools);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_firstfitleastconsumed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderPoolsByNumberOfVolumes(plan, pools, account);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_firstfitleastconsumed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(allocator, Mockito.times(0)).reorderRandomPools(pools);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "reorderStoragePoolsBasedOnAlgorithm_firstfitleastconsumed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

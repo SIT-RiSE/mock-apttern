@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "searchCriteriaCountAvailableVmsByGroup",
+    "variableType": "SearchCriteria<Integer>",
+    "mockedClass": "SearchCriteria<Integer>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\network\\as\\dao\\AutoScaleVmGroupVmMapDaoImplTest.java",
+      "className": "AutoScaleVmGroupVmMapDaoImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSearchCriteria<Integer> searchCriteriaCountAvailableVmsByGroup;",
+        "line": 56,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaCountAvailableVmsByGroup).setParameters(\"vmGroupId\", groupId);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCountAvailableVmsByGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaCountAvailableVmsByGroup).setJoinParameters(\"vmSearch\", \"states\", new Object[] { VirtualMachine.State.Starting, VirtualMachine.State.Running, VirtualMachine.State.Stopping, VirtualMachine.State.Migrating });",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCountAvailableVmsByGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

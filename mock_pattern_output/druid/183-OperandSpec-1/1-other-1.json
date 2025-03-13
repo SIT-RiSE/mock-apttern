@@ -1,0 +1,27 @@
+[
+  {
+    "variableName": "operand",
+    "variableType": "OperandSpec",
+    "mockedClass": "OperandSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.sql.calcite.expression",
+      "filePath": "C:\\java tool\\Apache\\druid\\sql\\src\\test\\java\\org\\apache\\druid\\sql\\calcite\\expression\\OperatorConversionsTest.java",
+      "className": "DefaultOperandTypeCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "for (OperandSpec operand : actualOperands) {\r\n    final SqlNode node;\r\n    if (operand.isLiteral) {\r\n        node = Mockito.mock(SqlLiteral.class);\r\n        Mockito.when(node.getKind()).thenReturn(SqlKind.LITERAL);\r\n    } else {\r\n        node = Mockito.mock(SqlNode.class);\r\n        // Setting this as SqlUtil.isLiteral makes a call on\r\n        // node.getKind() and without this change would\r\n        // return a NPE\r\n        Mockito.when(node.getKind()).thenReturn(SqlKind.OTHER_FUNCTION);\r\n    }\r\n    RelDataType relDataType = Mockito.mock(RelDataType.class);\r\n    if (operand.isNullable) {\r\n        Mockito.when(relDataType.isNullable()).thenReturn(true);\r\n    } else {\r\n        Mockito.when(relDataType.isNullable()).thenReturn(false);\r\n    }\r\n    Mockito.when(validator.deriveType(ArgumentMatchers.any(), ArgumentMatchers.eq(node))).thenReturn(relDataType);\r\n    Mockito.when(relDataType.getSqlTypeName()).thenReturn(operand.type);\r\n    operands.add(node);\r\n}",
+        "line": 463,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 17
+  }
+]

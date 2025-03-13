@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "vmwareContext",
+    "variableType": "VmwareContext",
+    "mockedClass": "VmwareContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.util",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\vmware-base\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\util\\VmwareContextTest.java",
+      "className": "VmwareContextTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VmwareContext vmwareContext = Mockito.spy(new VmwareContext(client, address));",
+        "line": 38,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUploadResourceContentCharsetException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

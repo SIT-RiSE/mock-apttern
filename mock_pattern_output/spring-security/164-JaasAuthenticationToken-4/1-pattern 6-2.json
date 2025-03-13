@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "token",
+    "variableType": "JaasAuthenticationToken",
+    "mockedClass": "JaasAuthenticationToken",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.jaas",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\jaas\\DefaultJaasAuthenticationProviderTests.java",
+      "className": "DefaultJaasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JaasAuthenticationToken token = mock(JaasAuthenticationToken.class);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(token.getLoginContext()).willReturn(context);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(token).getLoginContext();",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(event, securityContext, token, context);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "token",
+    "variableType": "JaasAuthenticationToken",
+    "mockedClass": "JaasAuthenticationToken",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.jaas",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\jaas\\DefaultJaasAuthenticationProviderTests.java",
+      "className": "DefaultJaasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JaasAuthenticationToken token = mock(JaasAuthenticationToken.class);",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutLoginException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(token.getLoginContext()).willReturn(context);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutLoginException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(token).getLoginContext();",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutLoginException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(event, securityContext, token, context);",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutLoginException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

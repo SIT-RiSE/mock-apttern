@@ -1,0 +1,272 @@
+[
+  {
+    "variableName": "zone",
+    "variableType": "DataCenterVO",
+    "mockedClass": "DataCenterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.version",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\version\\KubernetesVersionServiceTest.java",
+      "className": "KubernetesVersionServiceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenterVO zone = Mockito.mock(DataCenterVO.class);",
+        "line": 116,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(zone.getId()).thenReturn(1L);",
+        "line": 117,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "dc",
+    "variableType": "DataCenterVO",
+    "mockedClass": "DataCenterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DataCenterVO dc = mock(DataCenterVO.class);",
+        "line": 112,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dc.getNetworkType()).thenReturn(NetworkType.Advanced);",
+        "line": 113,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dc.getGuestNetworkCidr()).thenReturn(\"10.1.1.1/24\");",
+        "line": 114,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "dc",
+    "variableType": "DataCenterVO",
+    "mockedClass": "DataCenterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DataCenterVO dc = mock(DataCenterVO.class);",
+        "line": 102,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dc.getNetworkType()).thenReturn(NetworkType.Advanced);",
+        "line": 103,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dc.getGuestNetworkCidr()).thenReturn(\"10.1.1.1/24\");",
+        "line": 104,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "dc",
+    "variableType": "DataCenterVO",
+    "mockedClass": "DataCenterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\vxlan\\src\\test\\java\\com\\cloud\\network\\guru\\VxlanGuestNetworkGuruTest.java",
+      "className": "VxlanGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenterVO dc = mock(DataCenterVO.class);",
+        "line": 86,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dc.getNetworkType()).thenReturn(NetworkType.Advanced);",
+        "line": 87,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dc.getGuestNetworkCidr()).thenReturn(\"10.1.1.1/24\");",
+        "line": 88,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "enabledZone",
+    "variableType": "DataCenterVO",
+    "mockedClass": "DataCenterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenterVO enabledZone = Mockito.mock(DataCenterVO.class);",
+        "line": 407,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(enabledZone.getAllocationState()).thenReturn(Grouping.AllocationState.Enabled);",
+        "line": 408,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "zone",
+    "variableType": "DataCenterVO",
+    "mockedClass": "DataCenterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\vm\\UnmanagedVMsManagerImplTest.java",
+      "className": "UnmanagedVMsManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenterVO zone = Mockito.mock(DataCenterVO.class);",
+        "line": 255,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(zone.getId()).thenReturn(1L);",
+        "line": 256,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  }
+]

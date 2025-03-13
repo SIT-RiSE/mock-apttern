@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "meshEnvListenerFactory2",
+    "variableType": "MeshEnvListenerFactory",
+    "mockedClass": "MeshEnvListenerFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.router.mesh.route",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\router\\mesh\\route\\MeshRuleManagerTest.java",
+      "className": "MeshRuleManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MeshEnvListenerFactory meshEnvListenerFactory2 = Mockito.mock(MeshEnvListenerFactory.class);",
+        "line": 200,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegister3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(meshEnvListenerFactory2.getListener()).thenReturn(meshEnvListener2);",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegister3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "meshEnvListenerFactory1",
+    "variableType": "MeshEnvListenerFactory",
+    "mockedClass": "MeshEnvListenerFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.router.mesh.route",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\router\\mesh\\route\\MeshRuleManagerTest.java",
+      "className": "MeshRuleManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MeshEnvListenerFactory meshEnvListenerFactory1 = Mockito.mock(MeshEnvListenerFactory.class);",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegister3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(meshEnvListenerFactory1.getListener()).thenReturn(meshEnvListener1);",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegister3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,479 @@
+[
+  {
+    "variableName": "device",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO device = mock(NiciraNvpDeviceVO.class);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementIsolatedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getId()).thenReturn(1L);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementIsolatedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getHostId()).thenReturn(NICIRA_NVP_HOST_ID);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementIsolatedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "nndVO",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO nndVO = mock(NiciraNvpDeviceVO.class);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyIpTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nndVO.getHostId()).thenReturn(NETWORK_ID);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyIpTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "device",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO device = mock(NiciraNvpDeviceVO.class);",
+        "line": 281,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkUuidVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getId()).thenReturn(1L);",
+        "line": 283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkUuidVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getHostId()).thenReturn(NICIRA_NVP_HOST_ID);",
+        "line": 284,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkUuidVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "device",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO device = mock(NiciraNvpDeviceVO.class);",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getId()).thenReturn(1L);",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getHostId()).thenReturn(NICIRA_NVP_HOST_ID);",
+        "line": 337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "device",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO device = mock(NiciraNvpDeviceVO.class);",
+        "line": 386,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdWithoutL2GatewayService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getId()).thenReturn(1L);",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdWithoutL2GatewayService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getHostId()).thenReturn(NICIRA_NVP_HOST_ID);",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdWithoutL2GatewayService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "device",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO device = mock(NiciraNvpDeviceVO.class);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getId()).thenReturn(1L);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "device",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO device = mock(NiciraNvpDeviceVO.class);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignNoConnectivityInOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getId()).thenReturn(1L);",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignNoConnectivityInOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "device",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO device = mock(NiciraNvpDeviceVO.class);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getId()).thenReturn(1L);",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "device",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO device = mock(NiciraNvpDeviceVO.class);",
+        "line": 310,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getId()).thenReturn(1L);",
+        "line": 312,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "device",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO device = mock(NiciraNvpDeviceVO.class);",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getId()).thenReturn(1L);",
+        "line": 371,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "device",
+    "variableType": "NiciraNvpDeviceVO",
+    "mockedClass": "NiciraNvpDeviceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpDeviceVO device = mock(NiciraNvpDeviceVO.class);",
+        "line": 424,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(device.getId()).thenReturn(1L);",
+        "line": 426,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

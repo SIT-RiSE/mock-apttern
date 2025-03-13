@@ -1,0 +1,87 @@
+[
+  {
+    "variableName": "mockConfig",
+    "variableType": "ConfigKey",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\ManagementServerImplTest.java",
+      "className": "ManagementServerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "ConfigKey mockConfig;",
+        "line": 127,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockConfig = Mockito.mock(ConfigKey.class);",
+        "line": 139,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockConfig.value()).thenReturn(Boolean.TRUE);",
+        "line": 208,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setParametersTestWhenStateIsFreeAndSystemVmPublicIsTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockConfig.value()).thenReturn(Boolean.FALSE);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setParametersTestWhenStateIsFreeAndSystemVmPublicIsFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockConfig.value()).thenReturn(Boolean.FALSE);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setParametersTestWhenStateIsNullAndSystemVmPublicIsFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockConfig.value()).thenReturn(Boolean.TRUE);",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setParametersTestWhenStateIsNullAndSystemVmPublicIsTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

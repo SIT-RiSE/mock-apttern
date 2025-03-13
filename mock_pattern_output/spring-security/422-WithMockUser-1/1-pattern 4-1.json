@@ -1,0 +1,293 @@
+[
+  {
+    "variableName": "withUser",
+    "variableType": "WithMockUser",
+    "mockedClass": "WithMockUser",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithMockUserSecurityContextFactoryTests.java",
+      "className": "WithMockUserSecurityContextFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate WithMockUser withUser;",
+        "line": 33,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.value()).willReturn(\"valueUser\");",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "valueDefaultsUsername",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.password()).willReturn(\"password\");",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "valueDefaultsUsername",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.roles()).willReturn(new String[] { \"USER\" });",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "valueDefaultsUsername",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.authorities()).willReturn(new String[] {});",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "valueDefaultsUsername",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.username()).willReturn(\"customUser\");",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "usernamePrioritizedOverValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.password()).willReturn(\"password\");",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "usernamePrioritizedOverValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.roles()).willReturn(new String[] { \"USER\" });",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "usernamePrioritizedOverValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.authorities()).willReturn(new String[] {});",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "usernamePrioritizedOverValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.value()).willReturn(\"valueUser\");",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rolesWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.password()).willReturn(\"password\");",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rolesWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.roles()).willReturn(new String[] { \"USER\", \"CUSTOM\" });",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rolesWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.authorities()).willReturn(new String[] {});",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rolesWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.value()).willReturn(\"valueUser\");",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authoritiesWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.password()).willReturn(\"password\");",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authoritiesWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.roles()).willReturn(new String[] { \"USER\" });",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authoritiesWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.authorities()).willReturn(new String[] { \"USER\", \"CUSTOM\" });",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authoritiesWorks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.value()).willReturn(\"valueUser\");",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authoritiesAndRolesInvalid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.roles()).willReturn(new String[] { \"CUSTOM\" });",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authoritiesAndRolesInvalid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.authorities()).willReturn(new String[] { \"USER\", \"CUSTOM\" });",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authoritiesAndRolesInvalid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.value()).willReturn(\"valueUser\");",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rolesWithRolePrefixFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.roles()).willReturn(new String[] { \"ROLE_FAIL\" });",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rolesWithRolePrefixFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.withUser.authorities()).willReturn(new String[] {});",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rolesWithRolePrefixFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

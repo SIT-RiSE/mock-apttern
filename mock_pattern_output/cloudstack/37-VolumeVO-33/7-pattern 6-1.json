@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "vol1",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeVO vol1 = Mockito.spy(new VolumeVO(\"vol1\", dataCenterId, podId, 1L, 1L, instanceId, \"folder\", \"path\", Storage.ProvisioningType.THIN, (long) 10 << 30, Volume.Type.ROOT));",
+        "line": 742,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findSuitablePoolsForVolumesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol1.getId()).thenReturn(1L);",
+        "line": 744,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findSuitablePoolsForVolumesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vol1, times(1)).setPoolId(null);",
+        "line": 804,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findSuitablePoolsForVolumesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

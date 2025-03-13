@@ -1,0 +1,49 @@
+[
+  {
+    "variableName": "volumeDetailsDao",
+    "variableType": "VolumeDetailsDao",
+    "mockedClass": "VolumeDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVolumeDetailsDao volumeDetailsDao;",
+        "line": 85,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeDetailsDao.findDetail(1L, DiskTO.SCSI_NAA_DEVICE_ID)).thenReturn(null);",
+        "line": 262,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "fillSrcVolumeDetails",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeDetailsDao.findDetail(2L, DiskTO.SCSI_NAA_DEVICE_ID)).thenReturn(null);",
+        "line": 281,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "fillDestVolumeDetails",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  }
+]

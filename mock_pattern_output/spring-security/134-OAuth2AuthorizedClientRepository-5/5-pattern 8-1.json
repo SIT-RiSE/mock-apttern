@@ -1,0 +1,149 @@
+[
+  {
+    "variableName": "authorizedClientRepository",
+    "variableType": "OAuth2AuthorizedClientRepository",
+    "mockedClass": "OAuth2AuthorizedClientRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServletOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServletOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate OAuth2AuthorizedClientRepository authorizedClientRepository;",
+        "line": 137,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.authorizedClientRepository);",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "defaultRequestAuthenticationWhenAuthenticationSetThenAuthenticationSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.authorizedClientRepository);",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "defaultRequestAuthenticationWhenCustomSecurityContextHolderStrategyThenAuthenticationSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(this.authorizedClientCaptor.capture(), eq(this.authentication), any(), any());",
+        "line": 344,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenRefreshRequiredThenRefresh",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(this.authorizedClientCaptor.capture(), eq(this.authentication), any(), any());",
+        "line": 400,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenRefreshRequiredThenRefreshAndResponseDoesNotContainRefreshToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository, never()).saveAuthorizedClient(any(), eq(this.authentication), any(), any());",
+        "line": 429,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientCredentialsTokenNotExpiredThenUseCurrentToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(any(), eq(this.authentication), any(), any());",
+        "line": 461,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientCredentialsTokenExpiredThenGetNewToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(any(), eq(this.authentication), any(), any());",
+        "line": 507,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenPasswordClientNotAuthorizedThenGetNewToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(any(), eq(jwtAuthentication), any(), any());",
+        "line": 549,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenJwtBearerClientNotAuthorizedThenExchangeToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(any(), any(), any(), any());",
+        "line": 583,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenRefreshRequiredAndEmptyReactiveSecurityContextThenSaved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(eq(authentication.getAuthorizedClientRegistrationId()), eq(authentication), eq(servletRequest))).willReturn(authorizedClient);",
+        "line": 648,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenChainedThenDefaultsStillAvailable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

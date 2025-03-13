@@ -1,0 +1,403 @@
+[
+  {
+    "variableName": "vm",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VirtualMachineTO vm = Mockito.mock(VirtualMachineTO.class);",
+        "line": 1499,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vm.getNics()).thenReturn(new NicTO[] { nicTO });",
+        "line": 1514,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vm.getDisks()).thenReturn(new DiskTO[] { diskTO });",
+        "line": 1515,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vm, times(1)).getNics();",
+        "line": 1537,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vm, times(1)).getDisks();",
+        "line": 1538,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "vm",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VirtualMachineTO vm = Mockito.mock(VirtualMachineTO.class);",
+        "line": 1547,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vm.getNics()).thenReturn(new NicTO[] { nicTO });",
+        "line": 1562,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vm.getDisks()).thenReturn(new DiskTO[] { diskTO });",
+        "line": 1563,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vm, times(1)).getNics();",
+        "line": 1586,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vm, times(1)).getDisks();",
+        "line": 1587,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "vm",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VirtualMachineTO vm = Mockito.mock(VirtualMachineTO.class);",
+        "line": 1596,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vm.getNics()).thenReturn(new NicTO[] { nicTO });",
+        "line": 1610,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vm, times(1)).getNics();",
+        "line": 1630,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "vm",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VirtualMachineTO vm = Mockito.mock(VirtualMachineTO.class);",
+        "line": 1639,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vm.getNics()).thenReturn(new NicTO[] { nicTO });",
+        "line": 1654,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vm.getDisks()).thenReturn(new DiskTO[] { volume });",
+        "line": 1655,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vm, times(1)).getNics();",
+        "line": 1684,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vm, times(1)).getDisks();",
+        "line": 1685,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "vm",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VirtualMachineTO vm = Mockito.mock(VirtualMachineTO.class);",
+        "line": 1695,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vm.getNics()).thenReturn(new NicTO[] { nicTO });",
+        "line": 1709,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vm, times(1)).getNics();",
+        "line": 1736,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "vmTo",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTO vmTo = Mockito.mock(VirtualMachineTO.class);",
+        "line": 5783,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetCurrentMemAccordingToMemBallooningWithtMemBalooning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTo.getType()).thenReturn(Type.User);",
+        "line": 5784,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetCurrentMemAccordingToMemBallooningWithtMemBalooning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTo.getMinRam()).thenReturn(minMemory);",
+        "line": 5785,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetCurrentMemAccordingToMemBallooningWithtMemBalooning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmTo).getMinRam();",
+        "line": 5789,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetCurrentMemAccordingToMemBallooningWithtMemBalooning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

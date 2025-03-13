@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "mockVpcOffDao",
+    "variableType": "VpcOfferingDao",
+    "mockedClass": "VpcOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.router.deployment",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\network\\router\\deployment\\VpcRouterDeploymentDefinitionTest.java",
+      "className": "VpcRouterDeploymentDefinitionTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprotected VpcOfferingDao mockVpcOffDao;",
+        "line": 72,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockVpcOffDao.findById(VPC_OFFERING_ID)).thenReturn(vpcOffering);",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindOfferingIdDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockVpcOffDao.findById(VPC_OFFERING_ID)).thenReturn(vpcOffering);",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindOfferingIdFromVPC",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

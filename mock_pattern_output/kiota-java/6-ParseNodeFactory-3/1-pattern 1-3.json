@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "mockParseNodeFactory",
+    "variableType": "ParseNodeFactory",
+    "mockedClass": "ParseNodeFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\DeserializationHelpersTest.java",
+      "className": "DeserializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ParseNodeFactory mockParseNodeFactory = mock(ParseNodeFactory.class);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithoutReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNodeFactory.getParseNode(any(), any())).thenReturn(mockParseNode);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithoutReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockParseNodeFactory",
+    "variableType": "ParseNodeFactory",
+    "mockedClass": "ParseNodeFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\DeserializationHelpersTest.java",
+      "className": "DeserializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ParseNodeFactory mockParseNodeFactory = mock(ParseNodeFactory.class);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNodeFactory.getParseNode(any(), any())).thenReturn(mockParseNode);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockParseNodeFactory",
+    "variableType": "ParseNodeFactory",
+    "mockedClass": "ParseNodeFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\DeserializationHelpersTest.java",
+      "className": "DeserializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ParseNodeFactory mockParseNodeFactory = mock(ParseNodeFactory.class);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesCollectionOfObjects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNodeFactory.getParseNode(any(), any())).thenReturn(mockParseNode);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesCollectionOfObjects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

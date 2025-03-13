@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "jwtAssertionResolver",
+    "variableType": "Function<OAuth2AuthorizationContext,Jwt>",
+    "mockedClass": "Function",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\JwtBearerOAuth2AuthorizedClientProviderTests.java",
+      "className": "JwtBearerOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Function<OAuth2AuthorizationContext, Jwt> jwtAssertionResolver = mock(Function.class);",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenCustomJwtAssertionResolverSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwtAssertionResolver.apply(any())).willReturn(this.jwtAssertion);",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenCustomJwtAssertionResolverSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(jwtAssertionResolver).apply(any());",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenCustomJwtAssertionResolverSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

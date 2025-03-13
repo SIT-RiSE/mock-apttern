@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "attributes",
+    "variableType": "SftpClient.Attributes",
+    "mockedClass": "SftpClient.Attributes",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.sftp.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-sftp\\src\\test\\java\\org\\springframework\\integration\\sftp\\inbound\\SftpInboundRemoteFileSystemSynchronizerTests.java",
+      "className": "TestSftpSessionFactory"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SftpClient.Attributes attributes = spy(new SftpClient.Attributes());",
+        "line": 179,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "init",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(attributes.isRegularFile()).willReturn(true);",
+        "line": 181,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "init",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

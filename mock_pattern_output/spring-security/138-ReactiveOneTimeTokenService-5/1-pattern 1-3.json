@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "oneTimeTokenService",
+    "variableType": "ReactiveOneTimeTokenService",
+    "mockedClass": "ReactiveOneTimeTokenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.ott.reactive",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ott\\reactive\\OneTimeTokenReactiveAuthenticationManagerTests.java",
+      "className": "OneTimeTokenReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOneTimeTokenService oneTimeTokenService = mock(ReactiveOneTimeTokenService.class);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenOneTimeTokenAuthenticationTokenIsPresentThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(oneTimeTokenService.consume(ArgumentMatchers.any(OneTimeTokenAuthenticationToken.class))).willReturn(Mono.just(new DefaultOneTimeToken(TOKEN, USERNAME, Instant.now())));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenOneTimeTokenAuthenticationTokenIsPresentThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "oneTimeTokenService",
+    "variableType": "ReactiveOneTimeTokenService",
+    "mockedClass": "ReactiveOneTimeTokenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.ott.reactive",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ott\\reactive\\OneTimeTokenReactiveAuthenticationManagerTests.java",
+      "className": "OneTimeTokenReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOneTimeTokenService oneTimeTokenService = mock(ReactiveOneTimeTokenService.class);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenInvalidOneTimeTokenAuthenticationTokenIsPresentThenFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(oneTimeTokenService.consume(ArgumentMatchers.any(OneTimeTokenAuthenticationToken.class))).willReturn(Mono.empty());",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenInvalidOneTimeTokenAuthenticationTokenIsPresentThenFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "oneTimeTokenService",
+    "variableType": "ReactiveOneTimeTokenService",
+    "mockedClass": "ReactiveOneTimeTokenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.ott.reactive",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ott\\reactive\\OneTimeTokenReactiveAuthenticationManagerTests.java",
+      "className": "OneTimeTokenReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOneTimeTokenService oneTimeTokenService = mock(ReactiveOneTimeTokenService.class);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenIncorrectTypeOfAuthenticationIsPresentThenFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(oneTimeTokenService.consume(ArgumentMatchers.any(OneTimeTokenAuthenticationToken.class))).willReturn(Mono.empty());",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenIncorrectTypeOfAuthenticationIsPresentThenFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,133 @@
+[
+  {
+    "variableName": "networkACLVOMock",
+    "variableType": "NetworkACLVO",
+    "mockedClass": "NetworkACLVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate NetworkACLVO networkACLVOMock;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkACLVOMock).setName(name);",
+        "line": 890,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkACLVOMock).setDescription(description);",
+        "line": 891,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkACLVOMock).setUuid(customId);",
+        "line": 892,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkACLVOMock).setDisplay(false);",
+        "line": 893,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkACLVOMock, Mockito.times(0)).setName(null);",
+        "line": 1089,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkACLVOMock, Mockito.times(0)).setDescription(null);",
+        "line": 1090,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkACLVOMock, Mockito.times(0)).setUuid(null);",
+        "line": 1091,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkACLVOMock, Mockito.times(0)).setDisplay(false);",
+        "line": 1092,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

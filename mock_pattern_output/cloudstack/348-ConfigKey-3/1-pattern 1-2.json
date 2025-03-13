@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "testConfig",
+    "variableType": "ConfigKey",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey testConfig = mock(ConfigKey.class);",
+        "line": 233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testaddHostIpToCertDetailsIfConfigAllows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(testConfig.valueIn(dataCenterId)).thenReturn(true);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testaddHostIpToCertDetailsIfConfigAllows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "testConfig",
+    "variableType": "ConfigKey",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey testConfig = mock(ConfigKey.class);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testaddHostIpToCertDetailsIfConfigAllowsWhenConfigFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(testConfig.valueIn(dataCenterId)).thenReturn(false);",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testaddHostIpToCertDetailsIfConfigAllowsWhenConfigFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

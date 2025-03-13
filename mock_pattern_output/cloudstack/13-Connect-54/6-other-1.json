@@ -1,0 +1,75 @@
+[
+  {
+    "variableName": "connMock",
+    "variableType": "Connect",
+    "mockedClass": "Connect",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nConnect connMock;",
+        "line": 242,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(connMock.listDomains()).thenThrow(LibvirtException.class);",
+        "line": 6137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmsToSetMemoryBalloonStatsPeriodTestLibvirtError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(connMock.listDomains()).thenReturn(new int[0]);",
+        "line": 6147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmsToSetMemoryBalloonStatsPeriodTestWithNoVMs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(connMock.listDomains()).thenReturn(fakeList);",
+        "line": 6159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmsToSetMemoryBalloonStatsPeriodTestWhenSuccessfullyGetVmIds",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(connMock.domainLookupByID(1)).thenReturn(domainMock);",
+        "line": 6209,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksToSetupMemoryBalloonStatsPeriod",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 30
+  }
+]

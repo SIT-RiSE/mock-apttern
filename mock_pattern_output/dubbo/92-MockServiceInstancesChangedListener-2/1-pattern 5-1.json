@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "multiAppsInstanceListener",
+    "variableType": "MockServiceInstancesChangedListener",
+    "mockedClass": "MockServiceInstancesChangedListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\ServiceDiscoveryRegistryTest.java",
+      "className": "ServiceDiscoveryRegistryTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MockServiceInstancesChangedListener multiAppsInstanceListener = spy(new MockServiceInstancesChangedListener(multiApps, serviceDiscovery));",
+        "line": 200,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeURLs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(multiAppsInstanceListener, times(2)).onEvent(any());",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeURLs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(multiAppsInstanceListener, times(1)).addListenerAndNotify(any(), eq(testServiceListener));",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeURLs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(multiAppsInstanceListener, times(1)).addListenerAndNotify(any(), eq(testServiceListener));",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeURLs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

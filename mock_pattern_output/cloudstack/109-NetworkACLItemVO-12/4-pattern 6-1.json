@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "rule2Add",
+    "variableType": "NetworkACLItemVO",
+    "mockedClass": "NetworkACLItemVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLManagerTest.java",
+      "className": "NetworkACLManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NetworkACLItemVO rule2Add = Mockito.mock(NetworkACLItemVO.class);",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "driveTestApplyNetworkACL",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(rule2Add.getState()).thenReturn(NetworkACLItem.State.Add);",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "driveTestApplyNetworkACL",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(rule2Add.getId()).thenReturn(addId);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "driveTestApplyNetworkACL",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(rule2Add, Mockito.times(timesProcessingDone)).setState(NetworkACLItem.State.Active);",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "driveTestApplyNetworkACL",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

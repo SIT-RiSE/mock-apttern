@@ -1,0 +1,125 @@
+[
+  {
+    "variableName": "mockSqlSegmentsMetadataManager",
+    "variableType": "SqlSegmentsMetadataManager",
+    "mockedClass": "SqlSegmentsMetadataManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\KillCompactionConfigTest.java",
+      "className": "KillCompactionConfigTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SqlSegmentsMetadataManager mockSqlSegmentsMetadataManager;",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(mockSqlSegmentsMetadataManager);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunSkipIfLastRunLessThanPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(mockSqlSegmentsMetadataManager);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunDoNothingIfCurrentConfigIsEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockSqlSegmentsMetadataManager.retrieveAllDataSourceNames()).thenReturn(ImmutableSet.of(activeDatasourceName));",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRemoveInactiveDatasourceCompactionConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockSqlSegmentsMetadataManager).retrieveAllDataSourceNames();",
+        "line": 276,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRemoveInactiveDatasourceCompactionConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mockSqlSegmentsMetadataManager);",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRemoveInactiveDatasourceCompactionConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockSqlSegmentsMetadataManager.retrieveAllDataSourceNames()).thenReturn(ImmutableSet.of());",
+        "line": 312,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRetryForRetryableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Should call retrieveAllDataSourceNames four times due to RetryableException when failed\r\nMockito.verify(mockSqlSegmentsMetadataManager, Mockito.times(4)).retrieveAllDataSourceNames();",
+        "line": 365,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRetryForRetryableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mockSqlSegmentsMetadataManager);",
+        "line": 366,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRetryForRetryableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

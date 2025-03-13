@@ -1,0 +1,205 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "Session<TestLsEntry>",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "@SuppressWarnings(\"unchecked\")\r\nSession<TestLsEntry> session = mock(Session.class);",
+        "line": 773,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPut",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session).write(any(InputStream.class), captor.capture());",
+        "line": 799,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPut",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session).rename(\"foo/bar.txt.writing\", \"foo/bar.txt\");",
+        "line": 801,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPut",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session<TestLsEntry>",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "@SuppressWarnings(\"unchecked\")\r\nSession<TestLsEntry> session = mock(Session.class);",
+        "line": 808,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPutExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session).write(any(InputStream.class), captor.capture());",
+        "line": 832,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPutExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session).rename(\"foo/bar.txt.writing\", \"foo/bar.txt\");",
+        "line": 834,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPutExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session, times(2)).write(any(InputStream.class), captor.capture());",
+        "line": 846,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPutExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session, times(2)).rename(\"foo/bar.txt.writing\", \"foo/bar.txt\");",
+        "line": 848,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPutExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session).append(any(InputStream.class), captor.capture());",
+        "line": 854,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPutExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// no more writes/appends\r\nverify(session, times(2)).write(any(InputStream.class), anyString());",
+        "line": 861,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPutExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session, times(1)).append(any(InputStream.class), anyString());",
+        "line": 862,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPutExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session<TestLsEntry>",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session<TestLsEntry> session = mock(Session.class);",
+        "line": 940,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMputCollection",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session).rename(\"foo/buz.txt.writing\", \"foo/buz.txt\");",
+        "line": 965,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMputCollection",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

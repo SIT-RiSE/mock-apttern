@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "converter",
+    "variableType": "RecordMessageConverter",
+    "mockedClass": "RecordMessageConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RecordMessageConverter converter = mock(RecordMessageConverter.class);",
+        "line": 809,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "conversion",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(converter.fromMessage(any(), any())).willReturn(recordFromConverter);",
+        "line": 811,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "conversion",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

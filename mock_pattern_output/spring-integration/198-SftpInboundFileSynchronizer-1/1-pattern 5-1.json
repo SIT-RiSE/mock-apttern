@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "synchronizer",
+    "variableType": "SftpInboundFileSynchronizer",
+    "mockedClass": "SftpInboundFileSynchronizer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.sftp.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-sftp\\src\\test\\java\\org\\springframework\\integration\\sftp\\inbound\\SftpInboundRemoteFileSystemSynchronizerTests.java",
+      "className": "SftpInboundRemoteFileSystemSynchronizerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SftpInboundFileSynchronizer synchronizer = spy(new SftpInboundFileSynchronizer(ftpSessionFactory));",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyFileToLocalDir",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// two times because on the third receive (above) the internal queue will be empty, so it will attempt\r\nverify(synchronizer, times(2)).synchronizeToLocalDirectory(localDirectory, Integer.MIN_VALUE);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyFileToLocalDir",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(synchronizer).close();",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyFileToLocalDir",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

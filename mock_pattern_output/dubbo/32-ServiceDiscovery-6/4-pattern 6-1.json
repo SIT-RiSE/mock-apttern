@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "serviceDiscoveryMock",
+    "variableType": "ServiceDiscovery",
+    "mockedClass": "ServiceDiscovery",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.multiple",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-multiple\\src\\test\\java\\org\\apache\\dubbo\\registry\\multiple\\MultipleServiceDiscoveryTest.java",
+      "className": "MultipleServiceDiscoveryTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServiceDiscovery serviceDiscoveryMock = Mockito.mock(ServiceDiscovery.class);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOnEvent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(serviceDiscoveryMock.getRemoteMetadata(Mockito.anyString(), Mockito.anyList())).thenReturn(metadataInfo);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOnEvent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(serviceDiscoveryMock, Mockito.times(1)).getRemoteMetadata(Mockito.anyString(), Mockito.anyList());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOnEvent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

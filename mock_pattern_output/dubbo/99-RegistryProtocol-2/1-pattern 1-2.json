@@ -1,0 +1,110 @@
+[
+  {
+    "variableName": "registryProtocol",
+    "variableType": "RegistryProtocol",
+    "mockedClass": "RegistryProtocol",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\MigrationInvokerTest.java",
+      "className": "MigrationInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RegistryProtocol registryProtocol = Mockito.mock(RegistryProtocol.class);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(registryProtocol.getInvoker(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(invoker);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(registryProtocol.getServiceDiscoveryInvoker(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(serviceDiscoveryInvoker);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "registryProtocol",
+    "variableType": "RegistryProtocol",
+    "mockedClass": "RegistryProtocol",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\MigrationInvokerTest.java",
+      "className": "MigrationInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RegistryProtocol registryProtocol = Mockito.mock(RegistryProtocol.class);",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDecide",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(registryProtocol.getInvoker(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(invoker);",
+        "line": 262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDecide",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(registryProtocol.getServiceDiscoveryInvoker(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(serviceDiscoveryInvoker);",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDecide",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

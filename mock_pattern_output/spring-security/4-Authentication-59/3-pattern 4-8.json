@@ -1,0 +1,986 @@
+[
+  {
+    "variableName": "authentication",
+    "variableType": "Authentication",
+    "mockedClass": "Authentication",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ReactiveAuthenticationManagerAdapterTests.java",
+      "className": "ReactiveAuthenticationManagerAdapterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAuthentication authentication;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.isAuthenticated()).willReturn(true);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenSuccessThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "authentication",
+    "variableType": "Authentication",
+    "mockedClass": "Authentication",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\AuthenticatedReactiveAuthorizationManagerTests.java",
+      "className": "AuthenticatedReactiveAuthorizationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAuthentication authentication;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.isAuthenticated()).willReturn(true);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenAuthenticatedThenReturnTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "authentication",
+    "variableType": "Authentication",
+    "mockedClass": "Authentication",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\AuthorityReactiveAuthorizationManagerTests.java",
+      "className": "AuthorityReactiveAuthorizationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAuthentication authentication;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.isAuthenticated()).willReturn(true);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenHasAuthorityAndAuthenticatedAndNoAuthoritiesThenReturnFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getAuthorities()).willReturn(Collections.emptyList());",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenHasAuthorityAndAuthenticatedAndNoAuthoritiesThenReturnFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "authentication",
+    "variableType": "Authentication",
+    "mockedClass": "Authentication",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.reactive.result.method.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\reactive\\result\\method\\annotation\\AuthenticationPrincipalArgumentResolverTests.java",
+      "className": "AuthenticationPrincipalArgumentResolverTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAuthentication authentication;",
+        "line": 64,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenIsAuthenticationThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMonoIsAuthenticationThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMonoIsAuthenticationAndNoGenericThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenSpelThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenSpelWithPrimitiveThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenBeanThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMetaThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeImplicit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeExplicitFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeExplicitTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(principal);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentCustomMetaAnnotation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(principal);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentCustomMetaAnnotationTpl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "authentication",
+    "variableType": "Authentication",
+    "mockedClass": "Authentication",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.reactive.result.method.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\reactive\\result\\method\\annotation\\AuthenticationPrincipalArgumentResolverTests.java",
+      "className": "AuthenticationPrincipalArgumentResolverTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAuthentication authentication;",
+        "line": 64,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenIsAuthenticationThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMonoIsAuthenticationThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMonoIsAuthenticationAndNoGenericThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenSpelThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenSpelWithPrimitiveThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenBeanThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMetaThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeImplicit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeExplicitFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeExplicitTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(principal);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentCustomMetaAnnotation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(principal);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentCustomMetaAnnotationTpl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "authentication",
+    "variableType": "Authentication",
+    "mockedClass": "Authentication",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.reactive.result.method.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\reactive\\result\\method\\annotation\\AuthenticationPrincipalArgumentResolverTests.java",
+      "className": "AuthenticationPrincipalArgumentResolverTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAuthentication authentication;",
+        "line": 64,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenIsAuthenticationThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMonoIsAuthenticationThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMonoIsAuthenticationAndNoGenericThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenSpelThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenSpelWithPrimitiveThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenBeanThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMetaThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeImplicit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeExplicitFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeExplicitTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(principal);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentCustomMetaAnnotation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(principal);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentCustomMetaAnnotationTpl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "authentication",
+    "variableType": "Authentication",
+    "mockedClass": "Authentication",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.reactive.result.method.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\reactive\\result\\method\\annotation\\AuthenticationPrincipalArgumentResolverTests.java",
+      "className": "AuthenticationPrincipalArgumentResolverTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAuthentication authentication;",
+        "line": 64,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenIsAuthenticationThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMonoIsAuthenticationThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMonoIsAuthenticationAndNoGenericThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenSpelThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenSpelWithPrimitiveThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenBeanThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMetaThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeImplicit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeExplicitFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeExplicitTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(principal);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentCustomMetaAnnotation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(principal);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentCustomMetaAnnotationTpl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "authentication",
+    "variableType": "Authentication",
+    "mockedClass": "Authentication",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.reactive.result.method.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\reactive\\result\\method\\annotation\\AuthenticationPrincipalArgumentResolverTests.java",
+      "className": "AuthenticationPrincipalArgumentResolverTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAuthentication authentication;",
+        "line": 64,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenIsAuthenticationThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMonoIsAuthenticationThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMonoIsAuthenticationAndNoGenericThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenSpelThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenSpelWithPrimitiveThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(user);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenBeanThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenMetaThenObtainsPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeImplicit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeExplicitFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(\"user\");",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenErrorOnInvalidTypeExplicitTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(principal);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentCustomMetaAnnotation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authentication.getPrincipal()).willReturn(principal);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentCustomMetaAnnotationTpl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

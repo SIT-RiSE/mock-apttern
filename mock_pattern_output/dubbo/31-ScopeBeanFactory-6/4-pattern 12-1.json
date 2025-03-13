@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "scopeBeanFactory",
+    "variableType": "ScopeBeanFactory",
+    "mockedClass": "ScopeBeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metrics.collector.sample",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metrics\\dubbo-metrics-default\\src\\test\\java\\org\\apache\\dubbo\\metrics\\collector\\sample\\ThreadPoolMetricsSamplerTest.java",
+      "className": "ThreadPoolMetricsSamplerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nScopeBeanFactory scopeBeanFactory;",
+        "line": 126,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(scopeBeanFactory.getBean(FrameworkExecutorRepository.class)).thenReturn(new FrameworkExecutorRepository());",
+        "line": 145,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp2",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(scopeBeanFactory.getBean(FrameworkExecutorRepository.class)).thenReturn(frameworkExecutorRepository);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDataSourceNotify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  }
+]

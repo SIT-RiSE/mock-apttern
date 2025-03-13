@@ -1,0 +1,422 @@
+[
+  {
+    "variableName": "network1",
+    "variableType": "NetworkVO",
+    "mockedClass": "NetworkVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.contrail.model",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\juniper-contrail\\src\\test\\java\\org\\apache\\cloudstack\\network\\contrail\\model\\VirtualNetworkModelTest.java",
+      "className": "VirtualNetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "//Virtual-Network 1\r\nNetworkVO network1 = mock(NetworkVO.class);",
+        "line": 118,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network1.getName()).thenReturn(\"testnetwork\");",
+        "line": 119,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network1.getState()).thenReturn(State.Allocated);",
+        "line": 120,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network1.getGateway()).thenReturn(\"10.1.1.1\");",
+        "line": 121,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network1.getCidr()).thenReturn(\"10.1.1.0/24\");",
+        "line": 122,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network1.getPhysicalNetworkId()).thenReturn(42L);",
+        "line": 123,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network1.getDomainId()).thenReturn(10L);",
+        "line": 124,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network1.getAccountId()).thenReturn(42L);",
+        "line": 125,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "network3",
+    "variableType": "NetworkVO",
+    "mockedClass": "NetworkVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.contrail.model",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\juniper-contrail\\src\\test\\java\\org\\apache\\cloudstack\\network\\contrail\\model\\VirtualNetworkModelTest.java",
+      "className": "VirtualNetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "//Virtual-Network 3\r\nNetworkVO network3 = mock(NetworkVO.class);",
+        "line": 138,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network3.getName()).thenReturn(\"Testnetwork\");",
+        "line": 139,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network3.getState()).thenReturn(State.Allocated);",
+        "line": 140,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network3.getGateway()).thenReturn(\"10.1.1.1\");",
+        "line": 141,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network3.getCidr()).thenReturn(\"10.1.1.0/24\");",
+        "line": 142,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network3.getPhysicalNetworkId()).thenReturn(42L);",
+        "line": 143,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network3.getDomainId()).thenReturn(10L);",
+        "line": 144,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network3.getAccountId()).thenReturn(42L);",
+        "line": 145,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "network2",
+    "variableType": "NetworkVO",
+    "mockedClass": "NetworkVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.contrail.model",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\juniper-contrail\\src\\test\\java\\org\\apache\\cloudstack\\network\\contrail\\model\\VirtualNetworkModelTest.java",
+      "className": "VirtualNetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "//Virtual-Network 2\r\nNetworkVO network2 = mock(NetworkVO.class);",
+        "line": 128,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network2.getName()).thenReturn(\"Testnetwork\");",
+        "line": 129,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network2.getState()).thenReturn(State.Allocated);",
+        "line": 130,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network2.getGateway()).thenReturn(\"10.1.1.1\");",
+        "line": 131,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network2.getCidr()).thenReturn(\"10.1.1.0/24\");",
+        "line": 132,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network2.getPhysicalNetworkId()).thenReturn(42L);",
+        "line": 133,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network2.getDomainId()).thenReturn(10L);",
+        "line": 134,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network2.getAccountId()).thenReturn(42L);",
+        "line": 135,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "networkVO",
+    "variableType": "NetworkVO",
+    "mockedClass": "NetworkVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\vm\\UnmanagedVMsManagerImplTest.java",
+      "className": "UnmanagedVMsManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkVO networkVO = Mockito.mock(NetworkVO.class);",
+        "line": 302,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(networkVO.getGuestType()).thenReturn(Network.GuestType.L2);",
+        "line": 303,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(networkVO.getBroadcastUri()).thenReturn(URI.create(String.format(\"vlan://%d\", instanceNic.getVlan())));",
+        "line": 304,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(networkVO.getDataCenterId()).thenReturn(1L);",
+        "line": 305,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  }
+]

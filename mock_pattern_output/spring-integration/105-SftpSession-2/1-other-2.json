@@ -1,0 +1,54 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "SftpSession",
+    "mockedClass": "SftpSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.sftp.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-sftp\\src\\test\\java\\org\\springframework\\integration\\sftp\\config\\SftpStreamingInboundChannelAdapterParserTests.java",
+      "className": "TestSessionFactoryBean"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SftpSession session = mock(SftpSession.class);",
+        "line": 99,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getObject",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 37
+  },
+  {
+    "variableName": "sftpSession",
+    "variableType": "SftpSession",
+    "mockedClass": "SftpSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.sftp.session",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-sftp\\src\\test\\java\\org\\springframework\\integration\\sftp\\session\\SftpTestSessionFactory.java",
+      "className": "SftpTestSessionFactory"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SftpSession sftpSession = spy(new SftpSession(sftpClient));",
+        "line": 37,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSftpSession",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 17
+  }
+]

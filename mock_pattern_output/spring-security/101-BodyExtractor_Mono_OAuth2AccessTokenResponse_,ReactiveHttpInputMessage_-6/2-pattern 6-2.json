@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "bodyExtractor",
+    "variableType": "BodyExtractor<Mono<OAuth2AccessTokenResponse>,ReactiveHttpInputMessage>",
+    "mockedClass": "BodyExtractor<Mono<OAuth2AccessTokenResponse>,ReactiveHttpInputMessage>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\WebClientReactiveJwtBearerTokenResponseClientTests.java",
+      "className": "WebClientReactiveJwtBearerTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BodyExtractor<Mono<OAuth2AccessTokenResponse>, ReactiveHttpInputMessage> bodyExtractor = mock();",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenBodyExtractorSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(bodyExtractor.extract(any(), any())).willReturn(Mono.just(response));",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenBodyExtractorSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(bodyExtractor).extract(any(), any());",
+        "line": 314,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenBodyExtractorSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "bodyExtractor",
+    "variableType": "BodyExtractor<Mono<OAuth2AccessTokenResponse>,ReactiveHttpInputMessage>",
+    "mockedClass": "BodyExtractor<Mono<OAuth2AccessTokenResponse>,ReactiveHttpInputMessage>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\WebClientReactiveTokenExchangeTokenResponseClientTests.java",
+      "className": "WebClientReactiveTokenExchangeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BodyExtractor<Mono<OAuth2AccessTokenResponse>, ReactiveHttpInputMessage> bodyExtractor = mock();",
+        "line": 547,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenBodyExtractorSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(bodyExtractor.extract(any(ReactiveHttpInputMessage.class), any(BodyExtractor.Context.class))).willReturn(Mono.just(response));",
+        "line": 549,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenBodyExtractorSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(bodyExtractor).extract(any(ReactiveHttpInputMessage.class), any(BodyExtractor.Context.class));",
+        "line": 556,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenBodyExtractorSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

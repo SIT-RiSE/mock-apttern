@@ -1,0 +1,581 @@
+[
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DeployDestination dest = mock(DeployDestination.class);",
+        "line": 989,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getHost()).thenReturn(destHost);",
+        "line": 990,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getPod()).thenReturn(destPod);",
+        "line": 991,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getCluster()).thenReturn(mock(Cluster.class));",
+        "line": 992,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getCluster()).thenReturn(cluster);",
+        "line": 1005,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DeployDestination dest = mock(DeployDestination.class);",
+        "line": 1081,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getHost()).thenReturn(destHost);",
+        "line": 1082,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getPod()).thenReturn(destPod);",
+        "line": 1083,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getCluster()).thenReturn(mock(Cluster.class));",
+        "line": 1084,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getCluster()).thenReturn(cluster);",
+        "line": 1097,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DeployDestination dest = mock(DeployDestination.class);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DeployDestination dest = mock(DeployDestination.class);",
+        "line": 302,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DeployDestination dest = mock(DeployDestination.class);",
+        "line": 355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 358,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DeployDestination dest = mock(DeployDestination.class);",
+        "line": 407,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserveFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 410,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserveFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DeployDestination dest = mock(DeployDestination.class);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 276,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DeployDestination dest = mock(DeployDestination.class);",
+        "line": 330,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 333,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DeployDestination dest = mock(DeployDestination.class);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 390,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DeployDestination dest = mock(DeployDestination.class);",
+        "line": 445,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 448,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\vxlan\\src\\test\\java\\com\\cloud\\network\\guru\\VxlanGuestNetworkGuruTest.java",
+      "className": "VxlanGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DeployDestination dest = mock(DeployDestination.class);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\vxlan\\src\\test\\java\\com\\cloud\\network\\guru\\VxlanGuestNetworkGuruTest.java",
+      "className": "VxlanGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DeployDestination dest = mock(DeployDestination.class);",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dest",
+    "variableType": "DeployDestination",
+    "mockedClass": "DeployDestination",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\vxlan\\src\\test\\java\\com\\cloud\\network\\guru\\VxlanGuestNetworkGuruTest.java",
+      "className": "VxlanGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DeployDestination dest = mock(DeployDestination.class);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dest.getDataCenter()).thenReturn(dc);",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

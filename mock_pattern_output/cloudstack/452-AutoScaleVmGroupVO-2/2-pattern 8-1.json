@@ -1,0 +1,905 @@
+[
+  {
+    "variableName": "asVmGroupMock",
+    "variableType": "AutoScaleVmGroupVO",
+    "mockedClass": "AutoScaleVmGroupVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAutoScaleVmGroupVO asVmGroupMock;",
+        "line": 365,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getName()).thenReturn(vmGroupNameWithMaxLength);",
+        "line": 1037,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getInterval()).thenReturn(interval);",
+        "line": 1038,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getMaxMembers()).thenReturn(maxMembers);",
+        "line": 1039,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getMinMembers()).thenReturn(minMembers);",
+        "line": 1040,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.DISABLED);",
+        "line": 1041,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getProfileId()).thenReturn(vmProfileId);",
+        "line": 1042,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getLoadBalancerId()).thenReturn(loadBalancerId);",
+        "line": 1043,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asVmGroupMock).setName(vmGroupNameWithMaxLength);",
+        "line": 1077,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asVmGroupMock).setMinMembers(minMembers + 1);",
+        "line": 1078,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asVmGroupMock).setMaxMembers(maxMembers + 1);",
+        "line": 1079,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asVmGroupMock).setInterval(interval);",
+        "line": 1080,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getInterval()).thenReturn(interval);",
+        "line": 1094,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroupFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getMaxMembers()).thenReturn(maxMembers);",
+        "line": 1095,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroupFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getMinMembers()).thenReturn(minMembers);",
+        "line": 1096,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroupFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 1097,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroupFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getProfileId()).thenReturn(vmProfileId);",
+        "line": 1098,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroupFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getName()).thenReturn(newName);",
+        "line": 1110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroupFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getName()).thenReturn(newName);",
+        "line": 1124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroupFail3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 1134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableAutoScaleVmGroupInEnabledState",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getId()).thenReturn(vmGroupId);",
+        "line": 1144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableAutoScaleVmGroupInDisabledState",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.DISABLED);",
+        "line": 1145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableAutoScaleVmGroupInDisabledState",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.SCALING);",
+        "line": 1162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableAutoScaleVmGroupInOtherStates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.DISABLED);",
+        "line": 1170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisableAutoScaleVmGroupInDisableState",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 1180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisableAutoScaleVmGroupInEnabledState",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.NEW);",
+        "line": 1195,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisableAutoScaleVmGroupInOtherStates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getId()).thenReturn(vmGroupId);",
+        "line": 1203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAutoScaleVmGroupsByAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getUuid()).thenReturn(vmGroupUuid);",
+        "line": 1204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAutoScaleVmGroupsByAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 1206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAutoScaleVmGroupsByAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getProfileId()).thenReturn(vmProfileId);",
+        "line": 1254,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getLoadBalancerId()).thenReturn(loadBalancerId);",
+        "line": 1255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getNextVmSeq()).thenReturn(nextVmSeq);",
+        "line": 1256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getName()).thenReturn(vmGroupName);",
+        "line": 1257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asVmGroupMock).setNextVmSeq(nextVmSeq + 1);",
+        "line": 1297,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getProfileId()).thenReturn(vmProfileId);",
+        "line": 1302,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getLoadBalancerId()).thenReturn(loadBalancerId);",
+        "line": 1303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getNextVmSeq()).thenReturn(nextVmSeq + 1);",
+        "line": 1304,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getName()).thenReturn(vmGroupName);",
+        "line": 1305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asVmGroupMock).setNextVmSeq(nextVmSeq + 2);",
+        "line": 1346,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getProfileId()).thenReturn(vmProfileId);",
+        "line": 1351,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getLoadBalancerId()).thenReturn(loadBalancerId);",
+        "line": 1352,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getNextVmSeq()).thenReturn(nextVmSeq + 2);",
+        "line": 1353,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getName()).thenReturn(vmGroupNameWithMaxLength);",
+        "line": 1354,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asVmGroupMock).setNextVmSeq(nextVmSeq + 3);",
+        "line": 1395,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getId()).thenReturn(vmGroupId);",
+        "line": 1512,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleUp",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getMaxMembers()).thenReturn(maxMembers);",
+        "line": 1513,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleUp",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 1515,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleUp",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getLoadBalancerId()).thenReturn(loadBalancerId);",
+        "line": 1523,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleUp",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getId()).thenReturn(vmGroupId);",
+        "line": 1541,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleDown",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getMinMembers()).thenReturn(minMembers);",
+        "line": 1543,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleDown",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 1545,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleDown",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getLoadBalancerId()).thenReturn(loadBalancerId);",
+        "line": 1550,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleDown",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getProfileId()).thenReturn(vmProfileId);",
+        "line": 1556,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleDown",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 1586,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkAutoScaleVmGroup1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getLoadBalancerId()).thenReturn(loadBalancerId);",
+        "line": 1587,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkAutoScaleVmGroup1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 1600,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkAutoScaleVmGroup2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getLoadBalancerId()).thenReturn(loadBalancerId);",
+        "line": 1601,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkAutoScaleVmGroup2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 1614,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkAutoScaleVmGroup3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getLoadBalancerId()).thenReturn(loadBalancerId);",
+        "line": 1615,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkAutoScaleVmGroup3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getId()).thenReturn(vmGroupId);",
+        "line": 1946,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkNetScalerAsGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getMinMembers()).thenReturn(minMembers);",
+        "line": 1952,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkNetScalerAsGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getMaxMembers()).thenReturn(maxMembers);",
+        "line": 1953,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkNetScalerAsGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getId()).thenReturn(vmGroupId);",
+        "line": 2001,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkVirtualRouterAsGroupAndScaleUp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getId()).thenReturn(vmGroupId);",
+        "line": 2017,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkVirtualRouterAsGroupAndScaleDown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getId()).thenReturn(vmGroupId);",
+        "line": 2233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "monitorVirtualRouterAsGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getMinMembers()).thenReturn(minMembers);",
+        "line": 2234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "monitorVirtualRouterAsGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getMaxMembers()).thenReturn(maxMembers);",
+        "line": 2235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "monitorVirtualRouterAsGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 2455,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleMonitorTasks",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getId()).thenReturn(vmGroupId);",
+        "line": 2456,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleMonitorTasks",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getInterval()).thenReturn(interval);",
+        "line": 2457,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleMonitorTasks",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.DISABLED);",
+        "line": 2491,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfVmActionAllowed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asVmGroupMock).getState();",
+        "line": 2495,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfVmActionAllowed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asVmGroupMock.getState()).thenReturn(AutoScaleVmGroup.State.ENABLED);",
+        "line": 2503,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfVmActionAllowedFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

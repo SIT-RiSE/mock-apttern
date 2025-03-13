@@ -1,0 +1,47 @@
+[
+  {
+    "variableName": "credential",
+    "variableType": "SspCredentialVO",
+    "mockedClass": "SspCredentialVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\stratosphere-ssp\\src\\test\\java\\org\\apache\\cloudstack\\network\\element\\SspElementTest.java",
+      "className": "SspElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "SspCredentialVO credential = mock(SspCredentialVO.class);",
+        "line": 78,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// and zone api server, credentail is configured\r\nwhen(credential.getUsername()).thenReturn(\"foo\");",
+        "line": 94,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "fullyConfigured",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(credential.getPassword()).thenReturn(\"bar\");",
+        "line": 95,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "fullyConfigured",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

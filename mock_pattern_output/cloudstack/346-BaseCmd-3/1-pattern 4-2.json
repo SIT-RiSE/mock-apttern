@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "baseCmdMock",
+    "variableType": "BaseCmd",
+    "mockedClass": "BaseCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.api.dispatch",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\dispatch\\ParamProcessWorkerTest.java",
+      "className": "ParamProcessWorkerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nBaseCmd baseCmdMock;",
+        "line": 73,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(baseCmdMock.getEntityOwnerIds()).thenReturn(List.of(1L, 2L));",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getEntityOwnersTestReturnsAccountsWhenCmdHasMultipleEntityOwners",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(baseCmdMock.getEntityOwnerId()).thenReturn(1L);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getEntityOwnersTestReturnsAccountWhenCmdHasOneEntityOwner",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(baseCmdMock.getEntityOwnerIds()).thenReturn(null);",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getEntityOwnersTestReturnsAccountWhenCmdHasOneEntityOwner",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "baseCmdMock",
+    "variableType": "BaseCmd",
+    "mockedClass": "BaseCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.api.dispatch",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\dispatch\\ParamProcessWorkerTest.java",
+      "className": "ParamProcessWorkerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nBaseCmd baseCmdMock;",
+        "line": 73,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(baseCmdMock.getEntityOwnerIds()).thenReturn(List.of(1L, 2L));",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getEntityOwnersTestReturnsAccountsWhenCmdHasMultipleEntityOwners",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(baseCmdMock.getEntityOwnerId()).thenReturn(1L);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getEntityOwnersTestReturnsAccountWhenCmdHasOneEntityOwner",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(baseCmdMock.getEntityOwnerIds()).thenReturn(null);",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getEntityOwnersTestReturnsAccountWhenCmdHasOneEntityOwner",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

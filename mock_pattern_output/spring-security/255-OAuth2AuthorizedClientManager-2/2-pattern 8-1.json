@@ -1,0 +1,629 @@
+[
+  {
+    "variableName": "authorizedClientManager",
+    "variableType": "OAuth2AuthorizedClientManager",
+    "mockedClass": "OAuth2AuthorizedClientManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\client\\OAuth2ClientHttpRequestInterceptorTests.java",
+      "className": "OAuth2ClientHttpRequestInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate OAuth2AuthorizedClientManager authorizedClientManager;",
+        "line": 103,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.authorizedClientManager, this.authorizationFailureHandler);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousThenAuthorizationHeaderNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousAndAuthorizedThenAuthorizationHeaderSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(this.authorizeRequestCaptor.capture());",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousAndAuthorizedThenAuthorizationHeaderSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager);",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousAndAuthorizedThenAuthorizationHeaderSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(null);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousAndNotAuthorizedThenAuthorizationHeaderNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(this.authorizeRequestCaptor.capture());",
+        "line": 249,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousAndNotAuthorizedThenAuthorizationHeaderNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager);",
+        "line": 250,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousAndNotAuthorizedThenAuthorizationHeaderNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticatedAndAuthorizedThenAuthorizationHeaderSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(this.authorizeRequestCaptor.capture());",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticatedAndAuthorizedThenAuthorizationHeaderSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticatedAndAuthorizedThenAuthorizationHeaderSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(null);",
+        "line": 283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticatedAndNotAuthorizedThenAuthorizationHeaderNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(this.authorizeRequestCaptor.capture());",
+        "line": 294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticatedAndNotAuthorizedThenAuthorizationHeaderNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager);",
+        "line": 295,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticatedAndNotAuthorizedThenAuthorizationHeaderNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.authorizedClientManager, this.authorizationFailureHandler);",
+        "line": 313,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousAndUnauthorizedThenDoesNotCallAuthorizationFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 319,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(any(OAuth2AuthorizeRequest.class));",
+        "line": 331,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.authorizationFailureHandler);",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAnonymousAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 346,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticatedAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(any(OAuth2AuthorizeRequest.class));",
+        "line": 361,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticatedAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.authorizationFailureHandler);",
+        "line": 364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticatedAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 376,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(any(OAuth2AuthorizeRequest.class));",
+        "line": 393,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.authorizationFailureHandler);",
+        "line": 396,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 408,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenForbiddenAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(any(OAuth2AuthorizeRequest.class));",
+        "line": 425,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenForbiddenAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.authorizationFailureHandler);",
+        "line": 428,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenForbiddenAndOAuth2ErrorInWwwAuthenticateHeaderThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 440,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedThenCallsAuthorizationFailureHandlerWithInvalidTokenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(any(OAuth2AuthorizeRequest.class));",
+        "line": 457,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedThenCallsAuthorizationFailureHandlerWithInvalidTokenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.authorizationFailureHandler);",
+        "line": 460,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedThenCallsAuthorizationFailureHandlerWithInvalidTokenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 471,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenForbiddenThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(any(OAuth2AuthorizeRequest.class));",
+        "line": 488,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenForbiddenThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.authorizationFailureHandler);",
+        "line": 491,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenForbiddenThenCallsAuthorizationFailureHandlerWithInsufficientScopeError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 502,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenInternalServerErrorThenDoesNotCallAuthorizationFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(any(OAuth2AuthorizeRequest.class));",
+        "line": 513,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenInternalServerErrorThenDoesNotCallAuthorizationFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager);",
+        "line": 514,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenInternalServerErrorThenDoesNotCallAuthorizationFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 521,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthorizationExceptionThenCallsAuthorizationFailureHandlerWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(any(OAuth2AuthorizeRequest.class));",
+        "line": 540,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthorizationExceptionThenCallsAuthorizationFailureHandlerWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.authorizationFailureHandler);",
+        "line": 543,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthorizationExceptionThenCallsAuthorizationFailureHandlerWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 554,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedAndAuthorizationFailureHandlerSetWithAuthorizedClientRepositoryThenAuthorizedClientRemoved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(any(OAuth2AuthorizeRequest.class));",
+        "line": 571,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedAndAuthorizationFailureHandlerSetWithAuthorizedClientRepositoryThenAuthorizedClientRemoved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.authorizedClientRepository);",
+        "line": 574,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedAndAuthorizationFailureHandlerSetWithAuthorizedClientRepositoryThenAuthorizedClientRemoved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 581,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedAndAuthorizationFailureHandlerSetWithAuthorizedClientServiceThenAuthorizedClientRemoved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(any(OAuth2AuthorizeRequest.class));",
+        "line": 598,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedAndAuthorizationFailureHandlerSetWithAuthorizedClientServiceThenAuthorizedClientRemoved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.authorizedClientService);",
+        "line": 601,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenUnauthorizedAndAuthorizationFailureHandlerSetWithAuthorizedClientServiceThenAuthorizedClientRemoved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 608,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenCustomClientRegistrationIdResolverSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(this.authorizeRequestCaptor.capture());",
+        "line": 623,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenCustomClientRegistrationIdResolverSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.clientRegistrationIdResolver);",
+        "line": 625,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenCustomClientRegistrationIdResolverSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientManager.authorize(any(OAuth2AuthorizeRequest.class))).willReturn(this.authorizedClient);",
+        "line": 635,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenCustomPrincipalResolverSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientManager).authorize(this.authorizeRequestCaptor.capture());",
+        "line": 645,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenCustomPrincipalResolverSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authorizedClientManager, this.principalResolver);",
+        "line": 647,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenCustomPrincipalResolverSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

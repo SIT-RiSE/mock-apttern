@@ -1,0 +1,107 @@
+[
+  {
+    "variableName": "moveNetworkAclItemCmdMock",
+    "variableType": "MoveNetworkAclItemCmd",
+    "mockedClass": "MoveNetworkAclItemCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\u2014 Helper Method\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MoveNetworkAclItemCmd moveNetworkAclItemCmdMock;",
+        "line": 110,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(moveNetworkAclItemCmdMock.getUuidRuleBeingMoved()).thenReturn(uuidAclRuleBeingMoved);",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "befoteTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(moveNetworkAclItemCmdMock.getNextAclRuleUuid()).thenReturn(nextAclRuleUuid);",
+        "line": 921,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureNextAndPreviousAclRuleUuidsForMoveAclRuleCommand",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(moveNetworkAclItemCmdMock.getPreviousAclRuleUuid()).thenReturn(previousAclRuleUuid);",
+        "line": 922,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureNextAndPreviousAclRuleUuidsForMoveAclRuleCommand",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(moveNetworkAclItemCmdMock, Mockito.times(0)).getAclConsistencyHash();",
+        "line": 1330,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclConsistencyTestRuleListEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(moveNetworkAclItemCmdMock, Mockito.times(0)).getAclConsistencyHash();",
+        "line": 1337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclConsistencyTestRuleListNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(moveNetworkAclItemCmdMock, Mockito.times(1)).getAclConsistencyHash();",
+        "line": 1367,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclConsistencyTestAclConsistencyHashBlank",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(moveNetworkAclItemCmdMock, Mockito.times(1)).getAclConsistencyHash();",
+        "line": 1392,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclConsistencyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 51
+  }
+]

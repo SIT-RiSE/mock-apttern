@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "client",
+    "variableType": "MqttAsyncClient",
+    "mockedClass": "MqttAsyncClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mqtt",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mqtt\\src\\test\\java\\org\\springframework\\integration\\mqtt\\MqttAdapterTests.java",
+      "className": "MqttAdapterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final MqttAsyncClient client = mock(MqttAsyncClient.class);",
+        "line": 482,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDifferentQos",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(client.isConnected()).willReturn(true);",
+        "line": 484,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDifferentQos",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).disconnectForcibly(5_000L);",
+        "line": 517,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDifferentQos",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

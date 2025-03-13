@@ -1,0 +1,743 @@
+[
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveAuthenticationManager authenticationManager;",
+        "line": 114,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basic",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithGlobalWebSessionServerSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 361,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithAnonymous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverifyNoMoreInteractions(this.authenticationManager);",
+        "line": 451,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithCustomAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverifyNoMoreInteractions(this.authenticationManager);",
+        "line": 480,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenBasicWithAuthenticationManagerInLambdaThenAuthenticationManagerUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveAuthenticationManager authenticationManager;",
+        "line": 114,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basic",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithGlobalWebSessionServerSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 361,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithAnonymous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverifyNoMoreInteractions(this.authenticationManager);",
+        "line": 451,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithCustomAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverifyNoMoreInteractions(this.authenticationManager);",
+        "line": 480,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenBasicWithAuthenticationManagerInLambdaThenAuthenticationManagerUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveAuthenticationManager authenticationManager;",
+        "line": 114,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basic",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithGlobalWebSessionServerSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 361,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithAnonymous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverifyNoMoreInteractions(this.authenticationManager);",
+        "line": 451,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithCustomAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverifyNoMoreInteractions(this.authenticationManager);",
+        "line": 480,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenBasicWithAuthenticationManagerInLambdaThenAuthenticationManagerUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveAuthenticationManager authenticationManager;",
+        "line": 114,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basic",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithGlobalWebSessionServerSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 361,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithAnonymous",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverifyNoMoreInteractions(this.authenticationManager);",
+        "line": 451,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithCustomAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverifyNoMoreInteractions(this.authenticationManager);",
+        "line": 480,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenBasicWithAuthenticationManagerInLambdaThenAuthenticationManagerUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\server\\OAuth2AuthorizationCodeGrantWebFilterTests.java",
+      "className": "OAuth2AuthorizationCodeGrantWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveAuthenticationManager authenticationManager;",
+        "line": 71,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.authenticationManager);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenNotMatchThenAuthenticationManagerNotCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(TestOAuth2AuthorizationCodeAuthenticationTokens.authenticated()));",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenMatchThenAuthorizedClientSaved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(TestOAuth2AuthorizationCodeAuthenticationTokens.authenticated()));",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationRequestRedirectUriParametersMatchThenProcessed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationManager, times(1)).authenticate(any());",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationRequestRedirectUriParametersMatchThenProcessed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationManager, times(2)).authenticate(any());",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationRequestRedirectUriParametersMatchThenProcessed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.authenticationManager);",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationRequestRedirectUriParametersNotMatchThenNotProcessed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.authenticationManager);",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationRequestRedirectUriParametersNotMatchThenNotProcessed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.authenticationManager);",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationRequestRedirectUriParametersNotMatchThenNotProcessed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(TestOAuth2AuthorizationCodeAuthenticationTokens.authenticated()));",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationSucceedsAndRequestCacheConfiguredThenRequestCacheUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.authenticationManager);",
+        "line": 274,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthenticationConverterThrowsOAuth2AuthorizationExceptionThenMappedToOAuth2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.error(new OAuth2AuthorizationException(new OAuth2Error(\"authorization_error\"))));",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthenticationManagerThrowsOAuth2AuthorizationExceptionThenMappedToOAuth2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\authentication\\AuthenticationPayloadInterceptorTests.java",
+      "className": "AuthenticationPayloadInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nReactiveAuthenticationManager authenticationManager;",
+        "line": 71,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(expectedAuthentication));",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenBasicCredentialsThenAuthenticates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationManager).authenticate(this.authenticationArg.capture());",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenBasicCredentialsThenAuthenticates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(expectedAuthentication));",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticationSuccessThenChainSubscribedOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\AuthenticationWebFilterTests.java",
+      "className": "AuthenticationWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveAuthenticationManager authenticationManager;",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationManager);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndNoAuthenticationThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"test\", \"this\", \"ROLE\")));",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndAuthenticationSuccessThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"test\", \"this\", \"ROLE\")));",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthenticationManagerResolverDefaultsAndAuthenticationSuccessThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.error(new BadCredentialsException(\"failed\")));",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndAuthenticationFailThenUnauthorized",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.error(new BadCredentialsException(\"failed\")));",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthenticationManagerResolverDefaultsAndAuthenticationFailThenUnauthorized",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationManager, this.successHandler, this.failureHandler);",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertEmptyThenOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationManager, this.successHandler, this.failureHandler);",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertErrorThenServerError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(authentication);",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationSuccessThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.empty());",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationEmptyThenServerError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationConverter, this.authenticationManager, this.successHandler);",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenNotMatchAndConvertAndAuthenticationSuccessThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.error(new BadCredentialsException(\"Failed\")));",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationFailThenEntryPoint",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(Mono.error(new RuntimeException(\"Failed\")));",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationExceptionThenServerError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

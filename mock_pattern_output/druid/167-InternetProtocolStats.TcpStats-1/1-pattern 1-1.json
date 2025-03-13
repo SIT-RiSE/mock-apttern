@@ -1,0 +1,245 @@
+[
+  {
+    "variableName": "tcpv4",
+    "variableType": "InternetProtocolStats.TcpStats",
+    "mockedClass": "InternetProtocolStats.TcpStats",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\OshiSysMonitorTest.java",
+      "className": "OshiSysMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InternetProtocolStats.TcpStats tcpv4 = Mockito.mock(InternetProtocolStats.TcpStats.class);",
+        "line": 556,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getConnectionsActive()).thenReturn(10L);",
+        "line": 558,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getConnectionsPassive()).thenReturn(20L);",
+        "line": 559,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getConnectionFailures()).thenReturn(5L);",
+        "line": 560,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getConnectionsReset()).thenReturn(7L);",
+        "line": 561,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getSegmentsReceived()).thenReturn(200L);",
+        "line": 562,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getInErrors()).thenReturn(3L);",
+        "line": 563,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getSegmentsSent()).thenReturn(300L);",
+        "line": 564,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getOutResets()).thenReturn(4L);",
+        "line": 565,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getSegmentsRetransmitted()).thenReturn(8L);",
+        "line": 566,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getConnectionsActive()).thenReturn(20L);",
+        "line": 575,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getConnectionsPassive()).thenReturn(25L);",
+        "line": 576,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getConnectionFailures()).thenReturn(8L);",
+        "line": 577,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getConnectionsReset()).thenReturn(14L);",
+        "line": 578,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getSegmentsReceived()).thenReturn(350L);",
+        "line": 579,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getInErrors()).thenReturn(4L);",
+        "line": 580,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getSegmentsSent()).thenReturn(500L);",
+        "line": 581,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getOutResets()).thenReturn(7L);",
+        "line": 582,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tcpv4.getSegmentsRetransmitted()).thenReturn(8L);",
+        "line": 583,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

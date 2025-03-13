@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "vpcService",
+    "variableType": "VpcService",
+    "mockedClass": "VpcService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.privategw",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\privategw\\AclOnPrivateGwTest.java",
+      "className": "AclOnPrivateGwTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VpcService vpcService = Mockito.mock(VpcService.class);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcService.applyVpcPrivateGateway(Matchers.anyLong(), Matchers.anyBoolean())).thenReturn(null);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

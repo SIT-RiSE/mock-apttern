@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "networkDetailsDao",
+    "variableType": "NetworkDetailsDao",
+    "mockedClass": "NetworkDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNetworkDetailsDao networkDetailsDao;",
+        "line": 256,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(networkDetailsDao.persist(any(NetworkDetailVO.class))).thenReturn(networkDetailVO);",
+        "line": 512,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createPublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(networkDetailsDao.persist(any(NetworkDetailVO.class))).thenReturn(networkDetailVO);",
+        "line": 1611,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSharedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

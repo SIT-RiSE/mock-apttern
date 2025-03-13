@@ -1,0 +1,47 @@
+[
+  {
+    "variableName": "bf",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory bf = mock(BeanFactory.class);",
+        "line": 991,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpScheduler",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(bf.containsBean(\"taskScheduler\")).willReturn(true);",
+        "line": 992,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpScheduler",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(bf.getBean(\"taskScheduler\", TaskScheduler.class)).willReturn(taskScheduler);",
+        "line": 993,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpScheduler",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

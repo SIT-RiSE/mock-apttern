@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "dataStoreHelper",
+    "variableType": "PrimaryDataStoreHelper",
+    "mockedClass": "PrimaryDataStoreHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.lifecycle",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\lifecycle\\ScaleIOPrimaryDataStoreLifeCycleTest.java",
+      "className": "ScaleIOPrimaryDataStoreLifeCycleTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PrimaryDataStoreHelper dataStoreHelper;",
+        "line": 92,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataStoreHelper.attachZone(Mockito.any(DataStore.class))).thenReturn(null);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataStoreHelper.maintain(any(DataStore.class))).thenReturn(true);",
+        "line": 195,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMaintain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataStoreHelper.cancelMaintain(any(DataStore.class))).thenReturn(true);",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCancelMaintain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataStoreHelper.enable(any(DataStore.class))).thenReturn(true);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableStoragePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataStoreHelper.disable(any(DataStore.class))).thenReturn(true);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisableStoragePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataStoreHelper.deletePrimaryDataStore(any(DataStore.class))).thenReturn(true);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDataStoreWithStoragePoolNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataStoreHelper.deletePrimaryDataStore(any(DataStore.class))).thenReturn(true);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDataStore",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "imageStoreVoMock",
+    "variableType": "ImageStoreVO",
+    "mockedClass": "ImageStoreVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota.activationrule.presetvariables",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\activationrule\\presetvariables\\PresetVariableHelperTest.java",
+      "className": "PresetVariableHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ImageStoreVO imageStoreVoMock = Mockito.mock(ImageStoreVO.class);",
+        "line": 781,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getSecondaryStorageForSnapshotTestRecordIsSnapshotAndBackupSnapshotSetFieldsAndReturnObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "mockRegionStore",
+    "variableType": "ImageStoreVO",
+    "mockedClass": "ImageStoreVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\TemplateManagerImplTest.java",
+      "className": "TemplateManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ImageStoreVO mockRegionStore = mock(ImageStoreVO.class);",
+        "line": 501,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateRecordForRegionStore",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

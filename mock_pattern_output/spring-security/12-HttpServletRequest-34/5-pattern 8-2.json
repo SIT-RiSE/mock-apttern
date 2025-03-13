@@ -1,0 +1,309 @@
+[
+  {
+    "variableName": "request",
+    "variableType": "HttpServletRequest",
+    "mockedClass": "HttpServletRequest",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\context\\SecurityContextHolderFilterTests.java",
+      "className": "SecurityContextHolderFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HttpServletRequest request;",
+        "line": 64,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.request.getAttribute(FILTER_APPLIED)).willReturn(true);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterAppliedThenDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request, times(1)).getAttribute(FILTER_APPLIED);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterAppliedThenDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(this.request).setAttribute(FILTER_APPLIED, true);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenNotAppliedThenSetsAndRemovesAttribute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(this.request).removeAttribute(FILTER_APPLIED);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenNotAppliedThenSetsAndRemovesAttribute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(this.request.getDispatcherType()).thenReturn(dispatcherType);",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenAnyDispatcherTypeThenFilter",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@EnumSource"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "request",
+    "variableType": "HttpServletRequest",
+    "mockedClass": "HttpServletRequest",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.servletapi",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\servletapi\\SecurityContextHolderAwareRequestFilterTests.java",
+      "className": "SecurityContextHolderAwareRequestFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HttpServletRequest request;",
+        "line": 90,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request, times(0)).authenticate(any(HttpServletResponse.class));",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request, times(0)).authenticate(any(HttpServletResponse.class));",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request).authenticate(this.response);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateNullEntryPointFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.request.authenticate(this.response)).willReturn(true);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateNullEntryPointTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request).authenticate(this.response);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateNullEntryPointTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request, times(0)).login(anyString(), anyString());",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "login",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request, times(0)).login(anyString(), anyString());",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWithExistingUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request, times(0)).login(anyString(), anyString());",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request).login(username, password);",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginNullAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.request.getRemoteAddr()).willReturn(ipAddress);",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenHttpServletRequestHasAuthenticationDetailsThenAuthenticationRequestHasDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.request.getSession(anyBoolean())).willReturn(new MockHttpSession(null, sessionId));",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenHttpServletRequestHasAuthenticationDetailsThenAuthenticationRequestHasDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request, times(0)).logout();",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request).logout();",
+        "line": 260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullLogoutHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.request.getAsyncContext()).willReturn(asyncContext);",
+        "line": 278,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getAsyncContextStart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.request.startAsync()).willReturn(asyncContext);",
+        "line": 298,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "startAsyncStart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.request.startAsync(this.request, this.response)).willReturn(asyncContext);",
+        "line": 318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "startAsyncWithRequestResponseStart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

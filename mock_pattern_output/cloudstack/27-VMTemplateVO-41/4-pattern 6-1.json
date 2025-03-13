@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "vmTemplateVOMock",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.discoverer",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\discoverer\\XcpServerDiscovererTest.java",
+      "className": "XcpServerDiscovererTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO vmTemplateVOMock = Mockito.mock(VMTemplateVO.class);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestEntryAlreadyExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTemplateVOMock.getId()).thenReturn(1L);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestEntryAlreadyExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(vmTemplateVOMock).setTemplateType(TemplateType.PERHOST);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestEntryAlreadyExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(vmTemplateVOMock).setUrl(null);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestEntryAlreadyExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(vmTemplateVOMock).setDisplayText(\"XenServer Tools Installer ISO (xen-pv-drv-iso)\");",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestEntryAlreadyExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

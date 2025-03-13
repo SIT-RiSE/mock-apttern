@@ -1,0 +1,213 @@
+[
+  {
+    "variableName": "volumeVO",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeVO volumeVO = Mockito.mock(VolumeVO.class);",
+        "line": 259,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "fillSrcVolumeDetails",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 22
+  },
+  {
+    "variableName": "volumeVO",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeVO volumeVO = Mockito.mock(VolumeVO.class);",
+        "line": 278,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "fillDestVolumeDetails",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 22
+  },
+  {
+    "variableName": "volumeVoMock",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VolumeVO volumeVoMock;",
+        "line": 212,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volumeVoMock.getPoolId()).thenReturn(storagePoolMockId);",
+        "line": 265,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeVoMock, times(0)).getVolumeType();",
+        "line": 681,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestNoNewDiskOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(volumeVoMock.getVolumeType()).thenReturn(Type.ROOT);",
+        "line": 686,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestRootVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(volumeVoMock.getVolumeType()).thenReturn(Type.ROOT);",
+        "line": 700,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestRootVolumeWithDiskOfferingStrictnessTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(volumeVoMock.getVolumeType()).thenReturn(Type.DATADISK);",
+        "line": 714,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestTargetPoolSharedDiskOfferingLocal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(volumeVoMock.getVolumeType()).thenReturn(Type.DATADISK);",
+        "line": 723,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestTargetPoolLocalDiskOfferingShared",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(volumeVoMock.getVolumeType()).thenReturn(Type.DATADISK);",
+        "line": 732,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestTagsDoNotMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(volumeVoMock.getVolumeType()).thenReturn(Type.DATADISK);",
+        "line": 749,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestEverythingWorking",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(volumeVoMock).getSize();",
+        "line": 770,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestEverythingWorking",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeVoMock).setAccountId(newAccountMock.getAccountId());",
+        "line": 1418,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAccountTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeVoMock).setDomainId(newAccountMock.getDomainId());",
+        "line": 1419,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAccountTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 21
+  }
+]

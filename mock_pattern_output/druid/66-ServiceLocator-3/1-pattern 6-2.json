@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "controllerLocatorMock",
+    "variableType": "ServiceLocator",
+    "mockedClass": "ServiceLocator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.msq.indexing",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-core\\multi-stage-query\\src\\test\\java\\org\\apache\\druid\\msq\\indexing\\IndexerWorkerContextTest.java",
+      "className": "IndexerWorkerContextTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ServiceLocator controllerLocatorMock = Mockito.mock(ServiceLocator.class);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testControllerCheckerRunnableExitsWhenEmptyStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(controllerLocatorMock.locate()).thenReturn(Futures.immediateFuture(ServiceLocations.forLocations(Collections.emptySet())));",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testControllerCheckerRunnableExitsWhenEmptyStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(controllerLocatorMock, Mockito.times(1)).locate();",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testControllerCheckerRunnableExitsWhenEmptyStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "controllerLocatorMock",
+    "variableType": "ServiceLocator",
+    "mockedClass": "ServiceLocator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.msq.indexing",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-core\\multi-stage-query\\src\\test\\java\\org\\apache\\druid\\msq\\indexing\\IndexerWorkerContextTest.java",
+      "className": "IndexerWorkerContextTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ServiceLocator controllerLocatorMock = Mockito.mock(ServiceLocator.class);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testControllerCheckerRunnableExitsOnlyWhenClosedStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(controllerLocatorMock.locate()).thenReturn(Futures.immediateFuture(ServiceLocations.forLocation(new ServiceLocation(\"h\", 1, -1, \"/\")))).// Done to check the behavior of the runnable, the situation of exiting after success might not occur actually\r\nthenReturn(Futures.immediateFuture(ServiceLocations.forLocation(new ServiceLocation(\"h\", 1, -1, \"/\")))).thenReturn(Futures.immediateFuture(ServiceLocations.closed()));",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testControllerCheckerRunnableExitsOnlyWhenClosedStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(controllerLocatorMock, Mockito.times(3)).locate();",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testControllerCheckerRunnableExitsOnlyWhenClosedStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

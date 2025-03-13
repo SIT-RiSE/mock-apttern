@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "dataSource",
+    "variableType": "DataSource",
+    "mockedClass": "DataSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config.spring.status",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-spring\\src\\test\\java\\org\\apache\\dubbo\\config\\spring\\status\\DataSourceStatusCheckerTest.java",
+      "className": "DataSourceStatusCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataSource dataSource = mock(DataSource.class);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithDatasourceHasNextResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(dataSource.getConnection()).willReturn(connection);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithDatasourceHasNextResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "dataSource",
+    "variableType": "DataSource",
+    "mockedClass": "DataSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config.spring.status",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-spring\\src\\test\\java\\org\\apache\\dubbo\\config\\spring\\status\\DataSourceStatusCheckerTest.java",
+      "className": "DataSourceStatusCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataSource dataSource = mock(DataSource.class);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithDatasourceNotHasNextResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(dataSource.getConnection()).willReturn(connection);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithDatasourceNotHasNextResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

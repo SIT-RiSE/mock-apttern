@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "strategy",
+    "variableType": "AllowFromStrategy",
+    "mockedClass": "AllowFromStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.header.writers.frameoptions",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\header\\writers\\frameoptions\\FrameOptionsHeaderWriterTests.java",
+      "className": "FrameOptionsHeaderWriterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AllowFromStrategy strategy;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.strategy.getAllowFromValue(this.request)).willReturn(allowFromValue);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeHeadersAllowFrom",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

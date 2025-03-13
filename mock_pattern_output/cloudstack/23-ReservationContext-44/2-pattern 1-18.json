@@ -1,0 +1,896 @@
+[
+  {
+    "variableName": "ctx",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReservationContext ctx = mock(ReservationContext.class);",
+        "line": 957,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ctx.getJournal()).thenReturn(Mockito.mock(Journal.class));",
+        "line": 981,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "ctx",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReservationContext ctx = mock(ReservationContext.class);",
+        "line": 1049,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ctx.getJournal()).thenReturn(Mockito.mock(Journal.class));",
+        "line": 1073,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext res = mock(ReservationContext.class);",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 266,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext res = mock(ReservationContext.class);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext res = mock(ReservationContext.class);",
+        "line": 378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 380,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext res = mock(ReservationContext.class);",
+        "line": 430,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserveFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 431,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserveFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 432,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserveFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "context",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\cisco-vnmc\\src\\test\\java\\com\\cloud\\network\\element\\CiscoVnmcElementTest.java",
+      "className": "CiscoVnmcElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReservationContext context = mock(ReservationContext.class);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getDomain()).thenReturn(dom);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getAccount()).thenReturn(acc);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "context",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext context = mock(ReservationContext.class);",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementIsolatedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getDomain()).thenReturn(dom);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementIsolatedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getAccount()).thenReturn(acc);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementIsolatedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "context",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext context = mock(ReservationContext.class);",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkUuidVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getDomain()).thenReturn(dom);",
+        "line": 302,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkUuidVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getAccount()).thenReturn(acc);",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkUuidVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "context",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext context = mock(ReservationContext.class);",
+        "line": 354,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getDomain()).thenReturn(dom);",
+        "line": 355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getAccount()).thenReturn(acc);",
+        "line": 356,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "context",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext context = mock(ReservationContext.class);",
+        "line": 406,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdWithoutL2GatewayService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getDomain()).thenReturn(dom);",
+        "line": 407,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdWithoutL2GatewayService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getAccount()).thenReturn(acc);",
+        "line": 408,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdWithoutL2GatewayService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext res = mock(ReservationContext.class);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 290,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext res = mock(ReservationContext.class);",
+        "line": 346,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 347,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 348,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext res = mock(ReservationContext.class);",
+        "line": 403,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 404,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 405,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ReservationContext res = mock(ReservationContext.class);",
+        "line": 461,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 462,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 463,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\vxlan\\src\\test\\java\\com\\cloud\\network\\guru\\VxlanGuestNetworkGuruTest.java",
+      "className": "VxlanGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReservationContext res = mock(ReservationContext.class);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\vxlan\\src\\test\\java\\com\\cloud\\network\\guru\\VxlanGuestNetworkGuruTest.java",
+      "className": "VxlanGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReservationContext res = mock(ReservationContext.class);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "res",
+    "variableType": "ReservationContext",
+    "mockedClass": "ReservationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\vxlan\\src\\test\\java\\com\\cloud\\network\\guru\\VxlanGuestNetworkGuruTest.java",
+      "className": "VxlanGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReservationContext res = mock(ReservationContext.class);",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getDomain()).thenReturn(dom);",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(res.getAccount()).thenReturn(acc);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

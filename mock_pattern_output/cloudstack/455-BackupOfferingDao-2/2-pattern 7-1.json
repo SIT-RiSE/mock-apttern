@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "backupOfferingDao",
+    "variableType": "BackupOfferingDao",
+    "mockedClass": "BackupOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.backup",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\backup\\BackupManagerTest.java",
+      "className": "BackupManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nBackupOfferingDao backupOfferingDao;",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(backupOfferingDao.findById(null)).thenReturn(null);",
+        "line": 53,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(backupOfferingDao.findById(123l)).thenReturn(null);",
+        "line": 54,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(backupOfferingDao.findById(1234l)).thenReturn(offering);",
+        "line": 67,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(backupOfferingDao.createForUpdate(1234l)).thenReturn(offeringUpdate);",
+        "line": 68,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(backupOfferingDao.update(1234l, offeringUpdate)).thenAnswer(answer -> {\r\n    offering.setName(\"New name\");\r\n    offering.setDescription(\"New description\");\r\n    offering.setUserDrivenBackupAllowed(true);\r\n    return true;\r\n});",
+        "line": 69,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  }
+]

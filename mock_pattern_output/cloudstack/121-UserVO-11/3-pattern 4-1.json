@@ -1,0 +1,173 @@
+[
+  {
+    "variableName": "userMock",
+    "variableType": "UserVO",
+    "mockedClass": "UserVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserVO userMock;",
+        "line": 379,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getAccountId()).thenReturn(accountId);",
+        "line": 870,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserSucceed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getApiKey()).thenReturn(autoScaleUserApiKey);",
+        "line": 871,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserSucceed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getSecretKey()).thenReturn(autoScaleUserSecretKey);",
+        "line": 872,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserSucceed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getAccountId()).thenReturn(accountId);",
+        "line": 884,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserFail1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getApiKey()).thenReturn(autoScaleUserApiKey);",
+        "line": 885,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserFail1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getSecretKey()).thenReturn(null);",
+        "line": 886,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserFail1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getAccountId()).thenReturn(accountId);",
+        "line": 894,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getApiKey()).thenReturn(null);",
+        "line": 895,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getAccountId()).thenReturn(accountId + 1L);",
+        "line": 903,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserFail3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getAccountId()).thenReturn(accountId);",
+        "line": 918,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserFail5",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getApiKey()).thenReturn(autoScaleUserApiKey);",
+        "line": 919,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserFail5",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userMock.getSecretKey()).thenReturn(autoScaleUserSecretKey);",
+        "line": 920,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAutoScaleUserFail5",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

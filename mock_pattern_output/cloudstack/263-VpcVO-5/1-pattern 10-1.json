@@ -1,0 +1,87 @@
+[
+  {
+    "variableName": "vpcVO",
+    "variableType": "VpcVO",
+    "mockedClass": "VpcVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.orchestration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\org\\apache\\cloudstack\\engine\\orchestration\\NetworkOrchestratorTest.java",
+      "className": "NetworkOrchestratorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VpcVO vpcVO = Mockito.mock(VpcVO.class);",
+        "line": 625,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcVO.getIp4Dns1()).thenReturn(ip4AltDns[0]);",
+        "line": 627,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcVO.getIp4Dns2()).thenReturn(ip4AltDns[1]);",
+        "line": 628,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcVO.getIp6Dns1()).thenReturn(ip6AltDns[0]);",
+        "line": 629,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcVO.getIp6Dns2()).thenReturn(ip6AltDns[1]);",
+        "line": 630,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcVO.getIp4Dns1()).thenReturn(null);",
+        "line": 632,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vpcVO.getIp6Dns1()).thenReturn(null);",
+        "line": 633,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

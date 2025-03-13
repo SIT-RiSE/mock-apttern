@@ -1,0 +1,434 @@
+[
+  {
+    "variableName": "matcher",
+    "variableType": "MessageMatcher<Object>",
+    "mockedClass": "MessageMatcher<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.messaging",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\messaging\\MessageSecurityMetadataSourceRegistryTests.java",
+      "className": "MessageSecurityMetadataSourceRegistryTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageMatcher<Object> matcher;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(this.message)).willReturn(true);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchersTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "matcher2",
+    "variableType": "MessageMatcher<Object>",
+    "mockedClass": "MessageMatcher<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\access\\expression\\ExpressionBasedMessageSecurityMetadataSourceFactoryTests.java",
+      "className": "ExpressionBasedMessageSecurityMetadataSourceFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nMessageMatcher<Object> matcher2;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher2.matches(this.message)).willReturn(true);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createExpressionMessageMetadataSourceMatchSecond",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "matcher1",
+    "variableType": "MessageMatcher<Object>",
+    "mockedClass": "MessageMatcher<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\access\\expression\\ExpressionBasedMessageSecurityMetadataSourceFactoryTests.java",
+      "className": "ExpressionBasedMessageSecurityMetadataSourceFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nMessageMatcher<Object> matcher1;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.message)).willReturn(true);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createExpressionMessageMetadataSourceMatchFirst",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "matcher1",
+    "variableType": "MessageMatcher<Object>",
+    "mockedClass": "MessageMatcher<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.access.intercept",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\access\\intercept\\DefaultMessageSecurityMetadataSourceTests.java",
+      "className": "DefaultMessageSecurityMetadataSourceTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nMessageMatcher<Object> matcher1;",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.message)).willReturn(true);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getAttributesFirst",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.message)).willReturn(true);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getAttributesSecond",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "MessageMatcher<Object>",
+    "mockedClass": "MessageMatcher<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\util\\matcher\\AndMessageMatcherTests.java",
+      "className": "AndMessageMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageMatcher<Object> delegate;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.message)).willReturn(true);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesSingleTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.message)).willReturn(true);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.message)).willReturn(false);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesSingleFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.message)).willReturn(false);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiBothFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.message)).willReturn(true);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiSingleFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "delegate2",
+    "variableType": "MessageMatcher<Object>",
+    "mockedClass": "MessageMatcher<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\util\\matcher\\AndMessageMatcherTests.java",
+      "className": "AndMessageMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageMatcher<Object> delegate2;",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate2.matches(this.message)).willReturn(true);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate2.matches(this.message)).willReturn(false);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiSingleFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "MessageMatcher<Object>",
+    "mockedClass": "MessageMatcher<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\util\\matcher\\OrMessageMatcherTests.java",
+      "className": "OrMessageMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageMatcher<Object> delegate;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.message)).willReturn(true);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesSingleTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.message)).willReturn(true);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.message)).willReturn(false);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesSingleFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.message)).willReturn(false);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiBothFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.message)).willReturn(true);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiSingleFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "delegate2",
+    "variableType": "MessageMatcher<Object>",
+    "mockedClass": "MessageMatcher<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\util\\matcher\\OrMessageMatcherTests.java",
+      "className": "OrMessageMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageMatcher<Object> delegate2;",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate2.matches(this.message)).willReturn(false);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiBothFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

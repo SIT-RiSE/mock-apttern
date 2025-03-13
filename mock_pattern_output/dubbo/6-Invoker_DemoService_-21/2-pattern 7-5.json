@@ -1,0 +1,316 @@
+[
+  {
+    "variableName": "mockInvoker",
+    "variableType": "Invoker<DemoService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\ChangeTelnetTest.java",
+      "className": "ChangeTelnetTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private Invoker<DemoService> mockInvoker;",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockInvoker = mock(Invoker.class);",
+        "line": 67,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "beforeEach",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockInvoker.getInterface()).willReturn(DemoService.class);",
+        "line": 73,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "beforeEach",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockInvoker.getUrl()).willReturn(URL.valueOf(\"dubbo://127.0.0.1:20884/demo?group=g&version=1.0.0\"));",
+        "line": 74,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "beforeEach",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "mockInvoker",
+    "variableType": "Invoker<DemoService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\CountTelnetTest.java",
+      "className": "CountTelnetTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private Invoker<DemoService> mockInvoker;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockInvoker = mock(Invoker.class);",
+        "line": 61,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockInvoker.getInterface()).willReturn(DemoService.class);",
+        "line": 65,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockInvoker.getUrl()).willReturn(url);",
+        "line": 66,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "mockInvoker",
+    "variableType": "Invoker<DemoService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\PortTelnetTest.java",
+      "className": "PortTelnetTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private Invoker<DemoService> mockInvoker;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockInvoker = mock(Invoker.class);",
+        "line": 56,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "before",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockInvoker.getInterface()).willReturn(DemoService.class);",
+        "line": 57,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "before",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockInvoker.getUrl()).willReturn(URL.valueOf(\"dubbo://127.0.0.1:\" + availablePort + \"/demo\"));",
+        "line": 58,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "before",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "mockInvoker",
+    "variableType": "Invoker<DemoService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.legacy",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\legacy\\ChangeTelnetHandlerTest.java",
+      "className": "ChangeTelnetHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private Invoker<DemoService> mockInvoker;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockInvoker = mock(Invoker.class);",
+        "line": 56,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockInvoker.getInterface()).willReturn(DemoService.class);",
+        "line": 67,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockInvoker.getUrl()).willReturn(URL.valueOf(\"dubbo://127.0.0.1:20884/demo\"));",
+        "line": 68,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "mockInvoker",
+    "variableType": "Invoker<DemoService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.legacy",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\legacy\\TraceTelnetHandlerTest.java",
+      "className": "TraceTelnetHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private Invoker<DemoService> mockInvoker;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockInvoker = mock(Invoker.class);",
+        "line": 54,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockInvoker.getInterface()).willReturn(DemoService.class);",
+        "line": 55,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockInvoker.getUrl()).willReturn(url);",
+        "line": 56,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  }
+]

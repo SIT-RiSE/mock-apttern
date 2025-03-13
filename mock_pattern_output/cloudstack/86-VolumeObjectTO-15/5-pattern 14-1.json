@@ -1,0 +1,49 @@
+[
+  {
+    "variableName": "srcTO",
+    "variableType": "VolumeObjectTO",
+    "mockedClass": "VolumeObjectTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\storpool\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\StorPoolPrimaryDataStoreDriverTest.java",
+      "className": "StorPoolPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "VolumeObjectTO srcTO;",
+        "line": 85,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "srcTO = mock(VolumeObjectTO.class);",
+        "line": 103,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcTO.getPath()).thenReturn(\"/dev/storpool-byid/t.t.t\");",
+        "line": 234,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "setReturnsWhenSourceAndDestinationAreVolumes",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  }
+]

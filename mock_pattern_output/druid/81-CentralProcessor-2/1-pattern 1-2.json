@@ -1,0 +1,92 @@
+[
+  {
+    "variableName": "processor",
+    "variableType": "CentralProcessor",
+    "mockedClass": "CentralProcessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\OshiSysMonitorTest.java",
+      "className": "OshiSysMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CentralProcessor processor = Mockito.mock(CentralProcessor.class);",
+        "line": 431,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCpuStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(processor.getProcessorCpuLoadTicks()).thenReturn(procTicks);",
+        "line": 436,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCpuStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(processor.getProcessorCpuLoadTicks()).thenReturn(procTicks2);",
+        "line": 448,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCpuStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "processor",
+    "variableType": "CentralProcessor",
+    "mockedClass": "CentralProcessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\OshiSysMonitorTest.java",
+      "className": "OshiSysMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CentralProcessor processor = Mockito.mock(CentralProcessor.class);",
+        "line": 531,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSysStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(processor.getSystemLoadAverage(3)).thenReturn(la);",
+        "line": 533,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSysStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

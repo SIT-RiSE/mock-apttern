@@ -1,0 +1,72 @@
+[
+  {
+    "variableName": "spec",
+    "variableType": "WebClient.RequestHeadersUriSpec",
+    "mockedClass": "WebClient.RequestHeadersUriSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.userinfo",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\userinfo\\DefaultReactiveOAuth2UserServiceTests.java",
+      "className": "DefaultReactiveOAuth2UserServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebClient.RequestHeadersUriSpec spec = spy(real.post());",
+        "line": 343,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "withMockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(spec.retrieve()).willReturn(clientResponse);",
+        "line": 347,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "withMockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "spec",
+    "variableType": "WebClient.RequestHeadersUriSpec",
+    "mockedClass": "WebClient.RequestHeadersUriSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusReactiveJwtDecoderTests.java",
+      "className": "NimbusReactiveJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebClient.RequestHeadersUriSpec spec = spy(real.get());",
+        "line": 686,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockJwkSetResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(spec.retrieve()).willReturn(responseSpec);",
+        "line": 691,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockJwkSetResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

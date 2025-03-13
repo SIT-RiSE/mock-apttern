@@ -1,0 +1,212 @@
+[
+  {
+    "variableName": "invoker3",
+    "variableType": "Invoker<ForkingClusterInvokerTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\ForkingClusterInvokerTest.java",
+      "className": "ForkingClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<ForkingClusterInvokerTest> invoker3 = mock(Invoker.class);",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.invoke(invocation)).willThrow(new RuntimeException());",
+        "line": 83,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.getUrl()).willReturn(url);",
+        "line": 84,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.isAvailable()).willReturn(true);",
+        "line": 85,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.getInterface()).willReturn(ForkingClusterInvokerTest.class);",
+        "line": 86,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.invoke(invocation)).willReturn(result);",
+        "line": 100,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToNoException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.getUrl()).willReturn(url);",
+        "line": 101,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToNoException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.isAvailable()).willReturn(true);",
+        "line": 102,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToNoException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.getInterface()).willReturn(ForkingClusterInvokerTest.class);",
+        "line": 103,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToNoException",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker<ForkingClusterInvokerTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\ForkingClusterInvokerTest.java",
+      "className": "ForkingClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<ForkingClusterInvokerTest> invoker2 = mock(Invoker.class);",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willThrow(new RuntimeException());",
+        "line": 78,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 79,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 80,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(ForkingClusterInvokerTest.class);",
+        "line": 81,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willReturn(result);",
+        "line": 95,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToNoException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 96,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToNoException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 97,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToNoException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(ForkingClusterInvokerTest.class);",
+        "line": 98,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "resetInvokerToNoException",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

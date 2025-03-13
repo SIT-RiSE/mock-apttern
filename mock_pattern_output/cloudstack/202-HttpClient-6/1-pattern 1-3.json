@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "client",
+    "variableType": "HttpClient",
+    "mockedClass": "HttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\stratosphere-ssp\\src\\test\\java\\org\\apache\\cloudstack\\network\\element\\SspClientTest.java",
+      "className": "SspClientTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HttpClient client = mock(HttpClient.class);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(any(HttpUriRequest.class), any(BasicResponseHandler.class))).thenReturn(\"\");",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "client",
+    "variableType": "HttpClient",
+    "mockedClass": "HttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\stratosphere-ssp\\src\\test\\java\\org\\apache\\cloudstack\\network\\element\\SspClientTest.java",
+      "className": "SspClientTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HttpClient client = mock(HttpClient.class);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(any(HttpUriRequest.class), any(BasicResponseHandler.class))).thenReturn(body);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "client",
+    "variableType": "HttpClient",
+    "mockedClass": "HttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\stratosphere-ssp\\src\\test\\java\\org\\apache\\cloudstack\\network\\element\\SspClientTest.java",
+      "className": "SspClientTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HttpClient client = mock(HttpClient.class);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(any(HttpUriRequest.class), any(BasicResponseHandler.class))).thenReturn(\"\");",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

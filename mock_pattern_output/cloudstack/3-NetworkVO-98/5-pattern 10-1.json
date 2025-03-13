@@ -1,0 +1,87 @@
+[
+  {
+    "variableName": "routerNetworkVO",
+    "variableType": "NetworkVO",
+    "mockedClass": "NetworkVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.orchestration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\org\\apache\\cloudstack\\engine\\orchestration\\NetworkOrchestratorTest.java",
+      "className": "NetworkOrchestratorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkVO routerNetworkVO = Mockito.mock(NetworkVO.class);",
+        "line": 639,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(routerNetworkVO.getDns1()).thenReturn(ip4AltDns[0]);",
+        "line": 641,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(routerNetworkVO.getDns2()).thenReturn(ip4AltDns[1]);",
+        "line": 642,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(routerNetworkVO.getIp6Dns1()).thenReturn(ip6AltDns[0]);",
+        "line": 643,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(routerNetworkVO.getIp6Dns2()).thenReturn(ip6AltDns[1]);",
+        "line": 644,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(routerNetworkVO.getDns1()).thenReturn(null);",
+        "line": 646,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(routerNetworkVO.getIp6Dns1()).thenReturn(null);",
+        "line": 647,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "variableName": "loadBalancerVMMapMock",
+    "variableType": "LoadBalancerVMMapVO",
+    "mockedClass": "LoadBalancerVMMapVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLoadBalancerVMMapVO loadBalancerVMMapMock;",
+        "line": 391,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerVMMapMock.getInstanceId()).thenReturn(virtualMachineId + 1);",
+        "line": 1525,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleUp",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerVMMapMock.getInstanceId()).thenReturn(virtualMachineId);",
+        "line": 1552,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleDown",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

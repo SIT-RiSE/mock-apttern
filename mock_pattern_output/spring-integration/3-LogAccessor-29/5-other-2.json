@@ -1,0 +1,110 @@
+[
+  {
+    "variableName": "logger",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 Other Methods",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\P2pChannelTests.java",
+      "className": "P2pChannelTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LogAccessor logger = mock(LogAccessor.class);",
+        "line": 57,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "verifySubscriptions",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isInfoEnabled()).thenReturn(true);",
+        "line": 58,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "verifySubscriptions",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger, times(4)).info(Mockito.anyString());",
+        "line": 92,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "verifySubscriptions",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 43
+  },
+  {
+    "variableName": "adapterLogger",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\config\\SourcePollingChannelAdapterFactoryBeanTests.java",
+      "className": "SourcePollingChannelAdapterFactoryBeanTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogAccessor adapterLogger = TestUtils.getPropertyValue(pollingChannelAdapter, \"logger\", LogAccessor.class);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterrupted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "adapterLogger = spy(adapterLogger);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterrupted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(adapterLogger.isDebugEnabled()).thenReturn(true);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterrupted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(adapterLogger).debug(ArgumentMatchers.<Supplier<String>>argThat(logMessage -> logMessage.get().contains(\"Poll interrupted - during stop()?\")));",
+        "line": 195,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterrupted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 55
+  }
+]

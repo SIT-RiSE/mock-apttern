@@ -1,0 +1,47 @@
+[
+  {
+    "variableName": "virtualMachineProfile",
+    "variableType": "VirtualMachineProfile",
+    "mockedClass": "VirtualMachineProfile",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.orchestration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\org\\apache\\cloudstack\\engine\\orchestration\\NetworkOrchestratorTest.java",
+      "className": "NetworkOrchestratorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineProfile virtualMachineProfile = Mockito.mock(VirtualMachineProfile.class);",
+        "line": 607,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(virtualMachineProfile.getType()).thenReturn(vmType);",
+        "line": 608,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(virtualMachineProfile.getId()).thenReturn(vmId);",
+        "line": 609,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareMocksAndRunPrepareNic",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

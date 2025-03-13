@@ -1,0 +1,155 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "HttpSession",
+    "mockedClass": "HttpSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\user-authenticators\\saml2\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\SAML2LogoutAPIAuthenticatorCmdTest.java",
+      "className": "SAML2LogoutAPIAuthenticatorCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHttpSession session;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getAttribute(Mockito.anyString())).thenReturn(null);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthenticate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(session, Mockito.atLeastOnce()).getAttribute(Mockito.anyString());",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthenticate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "session",
+    "variableType": "HttpSession",
+    "mockedClass": "HttpSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.api",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\ApiServletTest.java",
+      "className": "ApiServletTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHttpSession session;",
+        "line": 90,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getAttribute(\"userid\")).thenReturn(1l);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processRequestInContextLogout",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getAttribute(\"accountobj\")).thenReturn(account);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processRequestInContextLogout",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(session).invalidate();",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processRequestInContextLogout",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getAttribute(\"userid\")).thenReturn(1L);",
+        "line": 331,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSkip2FAcheckForUserWhenAlreadyVerified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getAttribute(ApiConstants.IS_2FA_VERIFIED)).thenReturn(true);",
+        "line": 332,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSkip2FAcheckForUserWhenAlreadyVerified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getAttribute(\"userid\")).thenReturn(1L);",
+        "line": 425,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVerify2FAWhenExpectedCommandIsNotCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

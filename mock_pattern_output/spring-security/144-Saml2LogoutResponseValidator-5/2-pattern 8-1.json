@@ -1,0 +1,123 @@
+[
+  {
+    "variableName": "logoutResponseValidator",
+    "variableType": "Saml2LogoutResponseValidator",
+    "mockedClass": "Saml2LogoutResponseValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\Saml2LogoutResponseFilterTests.java",
+      "className": "Saml2LogoutResponseFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "Saml2LogoutResponseValidator logoutResponseValidator = mock(Saml2LogoutResponseValidator.class);",
+        "line": 56,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutResponseValidator.validate(any())).willReturn(Saml2LogoutValidatorResult.success());",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlResponsePostThenLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logoutResponseValidator).validate(any());",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlResponsePostThenLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutResponseValidator.validate(any())).willReturn(Saml2LogoutValidatorResult.success());",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlResponseRedirectThenLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logoutResponseValidator).validate(any());",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlResponseRedirectThenLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.logoutResponseValidator, this.logoutSuccessHandler);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenRequestMismatchesThenNoLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.logoutResponseValidator, this.logoutSuccessHandler);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenNoSamlRequestOrResponseThenNoLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutResponseValidator.validate(any())).willReturn(Saml2LogoutValidatorResult.withErrors(new Saml2Error(\"error\", \"description\")).build());",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenValidatorFailsThenStops",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logoutResponseValidator).validate(any());",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenValidatorFailsThenStops",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

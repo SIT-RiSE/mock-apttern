@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "txAdvice",
+    "variableType": "MethodInterceptor",
+    "mockedClass": "MethodInterceptor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\config\\SourcePollingChannelAdapterFactoryBeanTests.java",
+      "className": "SourcePollingChannelAdapterFactoryBeanTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final MethodInterceptor txAdvice = mock(MethodInterceptor.class);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionalAdviceChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(txAdvice.invoke(any(MethodInvocation.class))).thenAnswer(invocation -> {\r\n    count.incrementAndGet();\r\n    return ((MethodInvocation) invocation.getArgument(0)).proceed();\r\n});",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionalAdviceChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "customJwsAlgorithmResolver",
+    "variableType": "Function<ClientRegistration,JwsAlgorithm>",
+    "mockedClass": "Function",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\authentication\\OidcIdTokenDecoderFactoryTests.java",
+      "className": "OidcIdTokenDecoderFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Function<ClientRegistration, JwsAlgorithm> customJwsAlgorithmResolver = mock(Function.class);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwsAlgorithmResolverSetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customJwsAlgorithmResolver.apply(same(clientRegistration))).willReturn(MacAlgorithm.HS256);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwsAlgorithmResolverSetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customJwsAlgorithmResolver).apply(same(clientRegistration));",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwsAlgorithmResolverSetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "customJwsAlgorithmResolver",
+    "variableType": "Function<ClientRegistration,JwsAlgorithm>",
+    "mockedClass": "Function",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\authentication\\ReactiveOidcIdTokenDecoderFactoryTests.java",
+      "className": "ReactiveOidcIdTokenDecoderFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Function<ClientRegistration, JwsAlgorithm> customJwsAlgorithmResolver = mock(Function.class);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwsAlgorithmResolverSetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customJwsAlgorithmResolver.apply(same(clientRegistration))).willReturn(MacAlgorithm.HS256);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwsAlgorithmResolverSetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customJwsAlgorithmResolver).apply(same(clientRegistration));",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwsAlgorithmResolverSetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

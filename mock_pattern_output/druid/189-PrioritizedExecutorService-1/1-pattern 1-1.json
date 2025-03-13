@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "service",
+    "variableType": "PrioritizedExecutorService",
+    "mockedClass": "PrioritizedExecutorService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.query",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\query\\MetricsEmittingQueryProcessingPoolTest.java",
+      "className": "MetricsEmittingQueryProcessingPoolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PrioritizedExecutorService service = Mockito.mock(PrioritizedExecutorService.class);",
+        "line": 40,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrioritizedExecutorDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(service.getQueueSize()).thenReturn(10);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrioritizedExecutorDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(service.getActiveTasks()).thenReturn(2);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrioritizedExecutorDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

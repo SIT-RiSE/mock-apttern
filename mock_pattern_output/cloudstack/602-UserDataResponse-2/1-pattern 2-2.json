@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "userDataResponse",
+    "variableType": "UserDataResponse",
+    "mockedClass": "UserDataResponse",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.user.userdata",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\user\\userdata\\ListUserDataCmdTest.java",
+      "className": "ListUserDataCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataResponse userDataResponse = Mockito.mock(UserDataResponse.class);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "response",
+    "variableType": "UserDataResponse",
+    "mockedClass": "UserDataResponse",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.user.userdata",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\user\\userdata\\RegisterUserDataCmdTest.java",
+      "className": "RegisterUserDataCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataResponse response = Mockito.mock(UserDataResponse.class);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidUserDataExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

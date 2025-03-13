@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "networkMgr",
+    "variableType": "NetworkOrchestrationService",
+    "mockedClass": "NetworkOrchestrationService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\VpcManagerImplTest.java",
+      "className": "VpcManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNetworkOrchestrationService networkMgr;",
+        "line": 113,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkMgr, times(1)).createGuestNetwork(1L, \"vpcNet1\", \"vpc tier 1\", null, \"10.10.10.0/24\", null, false, \"cs1cloud.internal\", accountMock, null, physicalNetwork, zoneId, null, null, 1L, null, null, true, null, null, null, null, null, null, null, null, null, new Pair<>(1000, 1000));",
+        "line": 349,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVpcNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

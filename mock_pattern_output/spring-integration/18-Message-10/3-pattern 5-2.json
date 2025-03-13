@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "msg2",
+    "variableType": "Message",
+    "mockedClass": "MimeMessage",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Message msg2 = mock(MimeMessage.class);",
+        "line": 381,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDebugIsDisabledNotLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(msg2, never()).isExpunged();",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDebugIsDisabledNotLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(msg2, never()).getSubject();",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDebugIsDisabledNotLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "msg1",
+    "variableType": "Message",
+    "mockedClass": "MimeMessage",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Message msg1 = mock(MimeMessage.class);",
+        "line": 380,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDebugIsDisabledNotLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(msg1, never()).isExpunged();",
+        "line": 386,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDebugIsDisabledNotLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(msg1, never()).getSubject();",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDebugIsDisabledNotLogFiltered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

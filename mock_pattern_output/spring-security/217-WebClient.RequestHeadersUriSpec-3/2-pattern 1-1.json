@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "spec",
+    "variableType": "WebClient.RequestHeadersUriSpec",
+    "mockedClass": "WebClient.RequestHeadersUriSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusReactiveJwtDecoderTests.java",
+      "className": "NimbusReactiveJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebClient.RequestHeadersUriSpec spec = spy(real.get());",
+        "line": 608,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenIssuerLocationThenOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(spec.retrieve()).willReturn(responseSpec);",
+        "line": 615,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenIssuerLocationThenOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

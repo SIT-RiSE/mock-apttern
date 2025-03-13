@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "sender",
+    "variableType": "JavaMailSender",
+    "mockedClass": "JavaMailSender",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\config\\MessageWithContentTypeTests.java",
+      "className": "MessageWithContentTypeTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JavaMailSender sender = mock(JavaMailSender.class);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageConversionWithHtmlAndContentType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// MOCKS\r\nwhen(sender.createMimeMessage()).thenReturn(mMessage);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageConversionWithHtmlAndContentType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(sender, times(1)).send(Mockito.any(MimeMessage.class));",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageConversionWithHtmlAndContentType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

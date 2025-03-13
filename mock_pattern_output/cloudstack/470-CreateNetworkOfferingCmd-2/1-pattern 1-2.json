@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "cmd",
+    "variableType": "CreateNetworkOfferingCmd",
+    "mockedClass": "CreateNetworkOfferingCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateNetworkOfferingCmd cmd = Mockito.mock(CreateNetworkOfferingCmd.class);",
+        "line": 1214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvalidNetworkTypeCreateIpv6NetworkOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getTraffictype()).thenReturn(Networks.TrafficType.Guest.toString());",
+        "line": 1215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvalidNetworkTypeCreateIpv6NetworkOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getGuestIpType()).thenReturn(Network.GuestType.L2.toString());",
+        "line": 1216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvalidNetworkTypeCreateIpv6NetworkOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getInternetProtocol()).thenReturn(NetUtils.InternetProtocol.DualStack.toString());",
+        "line": 1217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvalidNetworkTypeCreateIpv6NetworkOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "CreateNetworkOfferingCmd",
+    "mockedClass": "CreateNetworkOfferingCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateNetworkOfferingCmd cmd = Mockito.mock(CreateNetworkOfferingCmd.class);",
+        "line": 1223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisabledConfigCreateIpv6NetworkOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getTraffictype()).thenReturn(Networks.TrafficType.Guest.toString());",
+        "line": 1224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisabledConfigCreateIpv6NetworkOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getGuestIpType()).thenReturn(Network.GuestType.Isolated.toString());",
+        "line": 1225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisabledConfigCreateIpv6NetworkOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getInternetProtocol()).thenReturn(NetUtils.InternetProtocol.DualStack.toString());",
+        "line": 1226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisabledConfigCreateIpv6NetworkOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

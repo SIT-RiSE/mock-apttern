@@ -1,0 +1,1135 @@
+[
+  {
+    "variableName": "template",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO template = Mockito.mock(VMTemplateVO.class);",
+        "line": 902,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfTemplateNeededForCreatingVmVolumesTemplateAvailable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getId()).thenReturn(templateId);",
+        "line": 903,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfTemplateNeededForCreatingVmVolumesTemplateAvailable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.image",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\image\\src\\test\\java\\org\\apache\\cloudstack\\storage\\image\\TemplateServiceImplTest.java",
+      "className": "TemplateServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadPublicTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateVO.isPublicTemplate()).thenReturn(true);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadPublicTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.image",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\image\\src\\test\\java\\org\\apache\\cloudstack\\storage\\image\\TemplateServiceImplTest.java",
+      "className": "TemplateServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadFeaturedTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateVO.isFeatured()).thenReturn(true);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadFeaturedTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.image",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\image\\src\\test\\java\\org\\apache\\cloudstack\\storage\\image\\TemplateServiceImplTest.java",
+      "className": "TemplateServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadSystemTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateVO.getTemplateType()).thenReturn(Storage.TemplateType.SYSTEM);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadSystemTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.image",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\image\\src\\test\\java\\org\\apache\\cloudstack\\storage\\image\\TemplateServiceImplTest.java",
+      "className": "TemplateServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadPrivateNoRefTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateVO.getId()).thenReturn(id);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadPrivateNoRefTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.image",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\image\\src\\test\\java\\org\\apache\\cloudstack\\storage\\image\\TemplateServiceImplTest.java",
+      "className": "TemplateServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadPrivateExistingTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateVO.getId()).thenReturn(id);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadPrivateExistingTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.version",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\version\\KubernetesVersionServiceTest.java",
+      "className": "KubernetesVersionServiceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionIsoUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateVO.getId()).thenReturn(1L);",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionIsoUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.api",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\ApiResponseHelperTest.java",
+      "className": "ApiResponseHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoScaleVmProfileResponse",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateVO.getUserDataOverridePolicy()).thenReturn(templatePolicy);",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoScaleVmProfileResponse",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO template = Mockito.mock(VMTemplateVO.class);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.isDeployAsIs()).thenReturn(false);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.resourceicon",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\resourceicon\\ResourceIconManagerImplTest.java",
+      "className": "ResourceIconManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO template = Mockito.mock(VMTemplateVO.class);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteIconActionEventResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getAccountId()).thenReturn(1L);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteIconActionEventResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO template = Mockito.mock(VMTemplateVO.class);",
+        "line": 1324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunTestOfIsNotPossibleToResize",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getFormat()).thenReturn(imageFormat);",
+        "line": 1325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunTestOfIsNotPossibleToResize",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\HypervisorTemplateAdapterTest.java",
+      "className": "HypervisorTemplateAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO template = mock(VMTemplateVO.class);",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getId()).thenReturn(1l);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getName()).thenReturn(\"Test Template\");",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getFormat()).thenReturn(ImageFormat.QCOW2);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getAccountId()).thenReturn(1l);",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//TODO possibly return this from method for comparison, if things work how i want\r\nwhen(template.getUuid()).thenReturn(\"Test UUID\");",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\HypervisorTemplateAdapterTest.java",
+      "className": "HypervisorTemplateAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckZoneImageStoresDirectDownloadTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateVO.isDirectDownload()).thenReturn(true);",
+        "line": 294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckZoneImageStoresDirectDownloadTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\HypervisorTemplateAdapterTest.java",
+      "className": "HypervisorTemplateAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 300,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckZoneImageStoresRegularTemplateWithStore",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateVO.isDirectDownload()).thenReturn(false);",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckZoneImageStoresRegularTemplateWithStore",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\HypervisorTemplateAdapterTest.java",
+      "className": "HypervisorTemplateAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckZoneImageStoresRegularTemplateNoStore",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateVO.isDirectDownload()).thenReturn(false);",
+        "line": 309,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckZoneImageStoresRegularTemplateNoStore",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\TemplateManagerImplTest.java",
+      "className": "TemplateManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO template = mock(VMTemplateVO.class);",
+        "line": 249,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForceDeleteTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getHypervisorType()).thenReturn(Hypervisor.HypervisorType.None);",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForceDeleteTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getFormat()).thenReturn(Storage.ImageFormat.VMDK);",
+        "line": 262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForceDeleteTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockTemplate",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\TemplateManagerImplTest.java",
+      "className": "TemplateManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO mockTemplate = mock(VMTemplateVO.class);",
+        "line": 290,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareTemplateIsSeeded",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockTemplate.getId()).thenReturn(202l);",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareTemplateIsSeeded",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockTemplate",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\TemplateManagerImplTest.java",
+      "className": "TemplateManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO mockTemplate = mock(VMTemplateVO.class);",
+        "line": 314,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareTemplateNotDownloaded",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockTemplate.getId()).thenReturn(202l);",
+        "line": 315,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareTemplateNotDownloaded",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockTemplate",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\TemplateManagerImplTest.java",
+      "className": "TemplateManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO mockTemplate = mock(VMTemplateVO.class);",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareTemplateNoHostConnectedToPool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockTemplate.getId()).thenReturn(202l);",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareTemplateNoHostConnectedToPool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockTemplate",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\TemplateManagerImplTest.java",
+      "className": "TemplateManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO mockTemplate = mock(VMTemplateVO.class);",
+        "line": 364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTemplateScheduledForDownloadInOnePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockTemplate.getId()).thenReturn(202l);",
+        "line": 373,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTemplateScheduledForDownloadInOnePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockTemplate",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\TemplateManagerImplTest.java",
+      "className": "TemplateManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO mockTemplate = mock(VMTemplateVO.class);",
+        "line": 393,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTemplateScheduledForDownloadInDisabledPool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockTemplate.getId()).thenReturn(202l);",
+        "line": 402,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTemplateScheduledForDownloadInDisabledPool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockTemplate",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\TemplateManagerImplTest.java",
+      "className": "TemplateManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO mockTemplate = mock(VMTemplateVO.class);",
+        "line": 422,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTemplateScheduledForDownloadInMultiplePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockTemplate.getId()).thenReturn(202l);",
+        "line": 444,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTemplateScheduledForDownloadInMultiplePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\TemplateManagerImplTest.java",
+      "className": "TemplateManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO template = Mockito.mock(VMTemplateVO.class);",
+        "line": 582,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnLinkUserDataToTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getId()).thenReturn(1L);",
+        "line": 583,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnLinkUserDataToTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO template = Mockito.mock(VMTemplateVO.class);",
+        "line": 531,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunConfigureCustomRootDiskSizeTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getId()).thenReturn(1l);",
+        "line": 532,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunConfigureCustomRootDiskSizeTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getSize()).thenReturn(99L * GiB_TO_BYTES);",
+        "line": 533,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunConfigureCustomRootDiskSizeTest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO template = Mockito.mock(VMTemplateVO.class);",
+        "line": 845,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataSuccessResetWithUserdata",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataId()).thenReturn(null);",
+        "line": 847,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataSuccessResetWithUserdata",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO template = Mockito.mock(VMTemplateVO.class);",
+        "line": 882,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataSuccessResetWithUserdataId",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataId()).thenReturn(null);",
+        "line": 884,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataSuccessResetWithUserdataId",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateVO",
+    "variableType": "VMTemplateVO",
+    "mockedClass": "VMTemplateVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerTest.java",
+      "className": "UserVmManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMTemplateVO templateVO = Mockito.mock(VMTemplateVO.class);",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateRootDiskResize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateVO.getSize()).thenReturn((rootDiskSize << 30) + 1);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateRootDiskResize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//Case 2: =\r\nwhen(templateVO.getSize()).thenReturn((rootDiskSize << 30));",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateRootDiskResize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateVO.getSize()).thenReturn((rootDiskSize << 30) - 1);",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateRootDiskResize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

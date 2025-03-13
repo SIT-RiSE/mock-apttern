@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "objectOpenFunction",
+    "variableType": "ObjectOpenFunction<File>",
+    "mockedClass": "ObjectOpenFunction<File>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.data.input.impl",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\data\\input\\impl\\RetryingInputStreamTest.java",
+      "className": "RetryingInputStreamTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final ObjectOpenFunction<File> objectOpenFunction = spy(new ObjectOpenFunction<File>() {\r\n\r\n    @Override\r\n    public InputStream open(File object) throws IOException {\r\n        return new TestInputStream(new FileInputStream(object));\r\n    }\r\n\r\n    @Override\r\n    public InputStream open(File object, long start) throws IOException {\r\n        final FileInputStream fis = new FileInputStream(object);\r\n        Preconditions.checkState(fis.skip(start) == start);\r\n        return new TestInputStream(fis);\r\n    }\r\n});",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(objectOpenFunction, times(3)).open(any(), anyLong());",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRetryOnExceptionWhenOpeningStream",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "objectOpenFunction",
+    "variableType": "ObjectOpenFunction<File>",
+    "mockedClass": "ObjectOpenFunction<File>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.data.input.impl",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\data\\input\\impl\\RetryingInputStreamTest.java",
+      "className": "RetryingInputStreamTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final ObjectOpenFunction<File> objectOpenFunction = spy(new ObjectOpenFunction<File>() {\r\n\r\n    @Override\r\n    public InputStream open(File object) throws IOException {\r\n        return new TestInputStream(new FileInputStream(object));\r\n    }\r\n\r\n    @Override\r\n    public InputStream open(File object, long start) throws IOException {\r\n        final FileInputStream fis = new FileInputStream(object);\r\n        Preconditions.checkState(fis.skip(start) == start);\r\n        return new TestInputStream(fis);\r\n    }\r\n});",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(objectOpenFunction, times(3)).open(any(), anyLong());",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRetryOnExceptionWhenOpeningStream",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "objectOpenFunction",
+    "variableType": "ObjectOpenFunction<File>",
+    "mockedClass": "ObjectOpenFunction<File>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.data.input.impl",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\data\\input\\impl\\RetryingInputStreamTest.java",
+      "className": "RetryingInputStreamTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final ObjectOpenFunction<File> objectOpenFunction = spy(new ObjectOpenFunction<File>() {\r\n\r\n    @Override\r\n    public InputStream open(File object) throws IOException {\r\n        return new TestInputStream(new FileInputStream(object));\r\n    }\r\n\r\n    @Override\r\n    public InputStream open(File object, long start) throws IOException {\r\n        final FileInputStream fis = new FileInputStream(object);\r\n        Preconditions.checkState(fis.skip(start) == start);\r\n        return new TestInputStream(fis);\r\n    }\r\n});",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(objectOpenFunction, times(3)).open(any(), anyLong());",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRetryOnExceptionWhenOpeningStream",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

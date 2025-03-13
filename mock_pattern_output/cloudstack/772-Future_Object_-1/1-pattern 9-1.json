@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "futureObjectMock",
+    "variableType": "Future<Object>",
+    "mockedClass": "Future<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.utils.jsinterpreter",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\org\\apache\\cloudstack\\utils\\jsinterpreter\\JsInterpreterTest.java",
+      "className": "JsInterpreterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nFuture<Object> futureObjectMock;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(futureObjectMock).cancel(true);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeScriptInThreadTestThreadThrowInterruptedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(futureObjectMock).cancel(true);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeScriptInThreadTestThreadThrowExecutionException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(futureObjectMock).cancel(true);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeScriptInThreadTestThreadThrowTimeoutException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(futureObjectMock).cancel(true);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeScriptInThreadTestReturnResultOfScriptExecution",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

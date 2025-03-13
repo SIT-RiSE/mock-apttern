@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "networkServiceMapDao",
+    "variableType": "NetworkServiceMapDao",
+    "mockedClass": "NetworkServiceMapDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNetworkServiceMapDao networkServiceMapDao;",
+        "line": 166,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(networkServiceMapDao, times(1)).deleteByNetworkId(anyLong());",
+        "line": 815,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shutdownProviderInstancesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

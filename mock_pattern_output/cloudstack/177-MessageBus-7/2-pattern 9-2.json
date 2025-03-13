@@ -1,0 +1,333 @@
+[
+  {
+    "variableName": "messageBus",
+    "variableType": "MessageBus",
+    "mockedClass": "MessageBus",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nMessageBus messageBus;",
+        "line": 224,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(IpAddressManager.MESSAGE_ASSIGN_IPADDR_EVENT), any(MessageSubscriber.class));",
+        "line": 632,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(IpAddressManager.MESSAGE_RELEASE_IPADDR_EVENT), any(MessageSubscriber.class));",
+        "line": 633,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(TungstenService.MESSAGE_APPLY_NETWORK_POLICY_EVENT), any(MessageSubscriber.class));",
+        "line": 634,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(ConfigurationManager.MESSAGE_CREATE_VLAN_IP_RANGE_EVENT), any(MessageSubscriber.class));",
+        "line": 635,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(ConfigurationManager.MESSAGE_DELETE_VLAN_IP_RANGE_EVENT), any(MessageSubscriber.class));",
+        "line": 636,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(ConfigurationManager.MESSAGE_CREATE_POD_IP_RANGE_EVENT), any(MessageSubscriber.class));",
+        "line": 637,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(ConfigurationManager.MESSAGE_DELETE_POD_IP_RANGE_EVENT), any(MessageSubscriber.class));",
+        "line": 638,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(DomainManager.MESSAGE_CREATE_TUNGSTEN_DOMAIN_EVENT), any(MessageSubscriber.class));",
+        "line": 639,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(DomainManager.MESSAGE_DELETE_TUNGSTEN_DOMAIN_EVENT), any(MessageSubscriber.class));",
+        "line": 640,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(ProjectManager.MESSAGE_CREATE_TUNGSTEN_PROJECT_EVENT), any(MessageSubscriber.class));",
+        "line": 641,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(ProjectManager.MESSAGE_DELETE_TUNGSTEN_PROJECT_EVENT), any(MessageSubscriber.class));",
+        "line": 642,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(TungstenService.MESSAGE_SYNC_TUNGSTEN_DB_WITH_DOMAINS_AND_PROJECTS_EVENT), any(MessageSubscriber.class));",
+        "line": 643,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(SecurityGroupService.MESSAGE_CREATE_TUNGSTEN_SECURITY_GROUP_EVENT), any(MessageSubscriber.class));",
+        "line": 644,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(SecurityGroupService.MESSAGE_DELETE_TUNGSTEN_SECURITY_GROUP_EVENT), any(MessageSubscriber.class));",
+        "line": 645,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(SecurityGroupService.MESSAGE_ADD_SECURITY_GROUP_RULE_EVENT), any(MessageSubscriber.class));",
+        "line": 646,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(SecurityGroupService.MESSAGE_REMOVE_SECURITY_GROUP_RULE_EVENT), any(MessageSubscriber.class));",
+        "line": 647,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(NetworkService.MESSAGE_ASSIGN_NIC_SECONDARY_IP_EVENT), any(MessageSubscriber.class));",
+        "line": 648,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageBus, times(1)).subscribe(eq(NetworkService.MESSAGE_RELEASE_NIC_SECONDARY_IP_EVENT), any(MessageSubscriber.class));",
+        "line": 649,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "subscribeTungstenEventTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "_messageBus",
+    "variableType": "MessageBus",
+    "mockedClass": "MessageBus",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\DomainManagerImplTest.java",
+      "className": "DomainManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nMessageBus _messageBus;",
+        "line": 106,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(_messageBus).publish(Mockito.anyString(), Matchers.eq(DomainManager.MESSAGE_PRE_REMOVE_DOMAIN_EVENT), Matchers.eq(PublishScope.LOCAL), Matchers.eq(domain));",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublishRemoveEventsAndRemoveDomainSuccessfulDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(_messageBus).publish(Mockito.anyString(), Matchers.eq(DomainManager.MESSAGE_REMOVE_DOMAIN_EVENT), Matchers.eq(PublishScope.LOCAL), Matchers.eq(domain));",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublishRemoveEventsAndRemoveDomainSuccessfulDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(_messageBus).publish(Mockito.anyString(), Matchers.eq(DomainManager.MESSAGE_PRE_REMOVE_DOMAIN_EVENT), Matchers.eq(PublishScope.LOCAL), Matchers.eq(domain));",
+        "line": 250,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublishRemoveEventsAndRemoveDomainExceptionDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(_messageBus, Mockito.never()).publish(Mockito.anyString(), Matchers.eq(DomainManager.MESSAGE_REMOVE_DOMAIN_EVENT), Matchers.eq(PublishScope.LOCAL), Matchers.eq(domain));",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublishRemoveEventsAndRemoveDomainExceptionDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(_messageBus).publish(\"DomainManagerImpl\", DomainManager.MESSAGE_ADD_DOMAIN_EVENT, PublishScope.LOCAL, domainVoMock.getId());",
+        "line": 410,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDomainTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

@@ -1,0 +1,977 @@
+[
+  {
+    "variableName": "resultSet",
+    "variableType": "ResultSet",
+    "mockedClass": "ResultSet",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils.db",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\db\\src\\test\\java\\com\\cloud\\utils\\db\\GenericDaoBaseTest.java",
+      "className": "GenericDaoBaseTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nResultSet resultSet;",
+        "line": 34,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getObject(1)).thenReturn(false);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getBoolean(1)).thenReturn(false);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getObject(1)).thenReturn((short) 1);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getShort(1)).thenReturn((short) 1);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getObject(1)).thenReturn(0.1f);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getFloat(1)).thenReturn(0.1f);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getObject(1)).thenReturn(0.1d);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getDouble(1)).thenReturn(0.1d);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getObject(1)).thenReturn(1l);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getLong(1)).thenReturn(1l);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(1);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getObject(1)).thenReturn((byte) 1);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getByte(1)).thenReturn((byte) 1);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareTests",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getBoolean(1);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectBoolean",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getBoolean(1);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectPrimitiveBoolean",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getShort(1);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectPrimitiveShort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getShort(1);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectShort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getFloat(1);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectFloat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getFloat(1);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectPrimitiveFloat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getDouble(1);",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectPrimitiveDouble",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getDouble(1);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectDouble",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getLong(1);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectLong",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getLong(1);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectPrimitiveLong",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getInt(1);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectPrimitiveInt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getInt(1);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectInteger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).getByte(1);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getObjectPrimitiveByte",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "resultSet",
+    "variableType": "ResultSet",
+    "mockedClass": "ResultSet",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\db\\src\\test\\java\\com\\cloud\\utils\\DbUtilTest.java",
+      "className": "DbUtilTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nResultSet resultSet;",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(1);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(0);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "closeResultSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "closeResultSetFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(1);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "resultSet",
+    "variableType": "ResultSet",
+    "mockedClass": "ResultSet",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\db\\src\\test\\java\\com\\cloud\\utils\\DbUtilTest.java",
+      "className": "DbUtilTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nResultSet resultSet;",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(1);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(0);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "closeResultSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "closeResultSetFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(1);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "resultSet",
+    "variableType": "ResultSet",
+    "mockedClass": "ResultSet",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\db\\src\\test\\java\\com\\cloud\\utils\\DbUtilTest.java",
+      "className": "DbUtilTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nResultSet resultSet;",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(1);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(0);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "closeResultSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "closeResultSetFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(1);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "resultSet",
+    "variableType": "ResultSet",
+    "mockedClass": "ResultSet",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\db\\src\\test\\java\\com\\cloud\\utils\\DbUtilTest.java",
+      "className": "DbUtilTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nResultSet resultSet;",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(1);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(0);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getGlobalLockTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "closeResultSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "closeResultSetFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.first()).thenReturn(true);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resultSet.getInt(1)).thenReturn(1);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resultSet).close();",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseGlobalLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

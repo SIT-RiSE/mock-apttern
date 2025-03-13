@@ -1,0 +1,51 @@
+[
+  {
+    "variableName": "hostDetailsDao",
+    "variableType": "HostDetailsDao",
+    "mockedClass": "HostDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\ManagementServerImplTest.java",
+      "className": "ManagementServerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostDetailsDao hostDetailsDao;",
+        "line": 132,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostDetailsDao.findByName(Host.HOST_UEFI_ENABLE)).thenReturn(new ArrayList<>(List.of(new DetailVO(1l, Host.HOST_UEFI_ENABLE, \"true\"), new DetailVO(2l, Host.HOST_UEFI_ENABLE, \"false\"))));",
+        "line": 564,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "mockFilterUefiHostsTestVm",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostDetailsDao.findByName(Host.HOST_UEFI_ENABLE)).thenReturn(new ArrayList<>());",
+        "line": 614,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFilterUefiHostsForMigrationUefiVMHostsUnavailable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

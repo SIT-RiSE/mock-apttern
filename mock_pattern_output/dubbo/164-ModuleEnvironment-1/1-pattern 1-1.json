@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "moduleEnvironment",
+    "variableType": "ModuleEnvironment",
+    "mockedClass": "ModuleEnvironment",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.config",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\config\\ConfigurationUtilsTest.java",
+      "className": "ConfigurationUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ModuleEnvironment moduleEnvironment = Mockito.spy(originModuleEnvironment);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCachedProperties",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(moduleEnvironment.getDynamicGlobalConfiguration()).thenReturn(configuration);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCachedProperties",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

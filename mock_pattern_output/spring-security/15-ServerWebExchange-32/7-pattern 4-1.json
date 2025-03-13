@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "exchange",
+    "variableType": "ServerWebExchange",
+    "mockedClass": "ServerWebExchange",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ExceptionTranslationWebFilterTests.java",
+      "className": "ExceptionTranslationWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerWebExchange exchange;",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getPrincipal()).willReturn(Mono.empty());",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAccessDeniedExceptionAndNotAuthenticatedThenHandled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getResponse()).willReturn(new MockServerHttpResponse());",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndAccessDeniedExceptionAndAuthenticatedThenForbidden",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getPrincipal()).willReturn(Mono.just(this.principal));",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndAccessDeniedExceptionAndAuthenticatedThenForbidden",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getResponse()).willReturn(new MockServerHttpResponse());",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndAccessDeniedExceptionAndNotAuthenticatedThenUnauthorized",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getPrincipal()).willReturn(Mono.empty());",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndAccessDeniedExceptionAndNotAuthenticatedThenUnauthorized",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getPrincipal()).willReturn(Mono.just(this.principal));",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAccessDeniedExceptionAndAuthenticatedThenHandled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getPrincipal()).willReturn(Mono.just(this.anonymousPrincipal));",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAccessDeniedExceptionAndAnonymousAuthenticatedThenHandled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

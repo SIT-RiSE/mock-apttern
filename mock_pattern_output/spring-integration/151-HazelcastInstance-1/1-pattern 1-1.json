@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "hazelcastInstance",
+    "variableType": "HazelcastInstance",
+    "mockedClass": "HazelcastInstance",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.hazelcast.leader",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-hazelcast\\src\\test\\java\\org\\springframework\\integration\\hazelcast\\leader\\LeaderInitiatorTests.java",
+      "className": "LeaderInitiatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Initialize mocks and objects needed for the revoke leadership when fenced lock is no longer acquired\r\nHazelcastInstance hazelcastInstance = mock();",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(hazelcastInstance.getCPSubsystem()).willReturn(cpSubsystem);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevokeLeadershipCalledWhenLockNotAcquiredButStillLeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

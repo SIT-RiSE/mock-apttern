@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "handler",
+    "variableType": "InvokerInvocationHandler",
+    "mockedClass": "InvokerInvocationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.proxy.bytebuddy",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\proxy\\bytebuddy\\ByteBuddyProxyTest.java",
+      "className": "ByteBuddyProxyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InvokerInvocationHandler handler = Mockito.mock(InvokerInvocationHandler.class);",
+        "line": 35,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(handler, Mockito.times(2)).invoke(any(), any(), any());",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNewInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

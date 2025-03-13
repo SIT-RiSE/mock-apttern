@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "UpdateUserCmdMock",
+    "variableType": "UpdateUserCmd",
+    "mockedClass": "UpdateUserCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UpdateUserCmd UpdateUserCmdMock;",
+        "line": 83,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(UpdateUserCmdMock.getEmail()).thenReturn(\"email\");",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateUserTestTimeZoneAndEmailNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(UpdateUserCmdMock.getTimezone()).thenReturn(\"timezone\");",
+        "line": 309,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateUserTestTimeZoneAndEmailNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

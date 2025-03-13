@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "managerMock",
+    "variableType": "MockedStatic<DubboCertManager>",
+    "mockedClass": "MockedStatic<DubboCertManager>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.security.cert",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-security\\src\\test\\java\\org\\apache\\dubbo\\security\\cert\\DubboCertManagerTest.java",
+      "className": "DubboCertManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "try (MockedStatic<DubboCertManager> managerMock = Mockito.mockStatic(DubboCertManager.class, CALLS_REAL_METHODS)) {\r\n    FrameworkModel frameworkModel = new FrameworkModel();\r\n    DubboCertManager certManager = new DubboCertManager(frameworkModel);\r\n    managerMock.when(DubboCertManager::signWithEcdsa).thenReturn(null);\r\n    managerMock.when(DubboCertManager::signWithRsa).thenReturn(null);\r\n    Assertions.assertNull(certManager.refreshCert());\r\n    managerMock.when(DubboCertManager::signWithEcdsa).thenCallRealMethod();\r\n    certManager.channel = Mockito.mock(Channel.class);\r\n    try (MockedStatic<DubboCertificateServiceGrpc> mockGrpc = Mockito.mockStatic(DubboCertificateServiceGrpc.class, CALLS_REAL_METHODS)) {\r\n        DubboCertificateServiceGrpc.DubboCertificateServiceBlockingStub stub = Mockito.mock(DubboCertificateServiceGrpc.DubboCertificateServiceBlockingStub.class);\r\n        mockGrpc.when(() -> DubboCertificateServiceGrpc.newBlockingStub(Mockito.any(Channel.class))).thenReturn(stub);\r\n        Mockito.when(stub.createCertificate(Mockito.any())).thenReturn(DubboCertificateResponse.newBuilder().setSuccess(false).build());\r\n        certManager.certConfig = new CertConfig(null, null, null, null);\r\n        Assertions.assertNull(certManager.refreshCert());\r\n        String file = this.getClass().getClassLoader().getResource(\"certs/token\").getFile();\r\n        Mockito.when(stub.withInterceptors(Mockito.any())).thenReturn(stub);\r\n        certManager.certConfig = new CertConfig(null, null, null, file);\r\n        Assertions.assertNull(certManager.refreshCert());\r\n        Mockito.verify(stub, Mockito.times(1)).withInterceptors(Mockito.any());\r\n        Mockito.when(stub.createCertificate(Mockito.any())).thenReturn(DubboCertificateResponse.newBuilder().setSuccess(true).setCertPem(\"certPem\").addTrustCerts(\"trustCerts\").setExpireTime(123456).build());\r\n        CertPair certPair = certManager.refreshCert();\r\n        Assertions.assertNotNull(certPair);\r\n        Assertions.assertEquals(\"certPem\", certPair.getCertificate());\r\n        Assertions.assertEquals(\"trustCerts\", certPair.getTrustCerts());\r\n        Assertions.assertEquals(123456, certPair.getExpireTime());\r\n        Mockito.when(stub.createCertificate(Mockito.any())).thenReturn(null);\r\n        Assertions.assertNull(certManager.refreshCert());\r\n    }\r\n    frameworkModel.destroy();\r\n}",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRefreshCert",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

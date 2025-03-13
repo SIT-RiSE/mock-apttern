@@ -1,0 +1,185 @@
+[
+  {
+    "variableName": "loadBalancerMock",
+    "variableType": "LoadBalancerVO",
+    "mockedClass": "LoadBalancerVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLoadBalancerVO loadBalancerMock;",
+        "line": 381,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getAccountId()).thenReturn(accountId);",
+        "line": 943,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getDomainId()).thenReturn(domainId);",
+        "line": 944,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getDefaultPortStart()).thenReturn(memberPort);",
+        "line": 945,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getSourceIpAddressId()).thenReturn(ipAddressId);",
+        "line": 947,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getNetworkId()).thenReturn(networkId);",
+        "line": 948,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getId()).thenReturn(loadBalancerId);",
+        "line": 951,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getNetworkId()).thenReturn(networkId);",
+        "line": 972,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getNetworkId()).thenReturn(networkId);",
+        "line": 1063,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getNetworkId()).thenReturn(networkId);",
+        "line": 1891,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getNetworkId()).thenReturn(networkId);",
+        "line": 1909,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getNetworkFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getSourceIpAddressId()).thenReturn(ipAddressId);",
+        "line": 1918,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getPublicIpAndPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getSourcePortStart()).thenReturn(memberPort);",
+        "line": 1921,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getPublicIpAndPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancerMock.getSourceIpAddressId()).thenReturn(ipAddressId);",
+        "line": 1938,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getPublicIpAndPortFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

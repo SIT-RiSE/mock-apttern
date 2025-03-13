@@ -1,0 +1,297 @@
+[
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker<?>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\filter\\AbstractObservationFilterTest.java",
+      "className": "AbstractObservationFilterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "Invoker<?> invoker = mock(Invoker.class);",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.invoke(invocation)).willReturn(new AppResponse(\"success\"));",
+        "line": 73,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupConfig",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker<?>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.cache.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-filter\\dubbo-filter-cache\\src\\test\\java\\org\\apache\\dubbo\\cache\\filter\\CacheFilterTest.java",
+      "className": "CacheFilterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<?> invoker1 = mock(Invoker.class);",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willReturn(AsyncRpcResult.newDefaultAsyncResult(\"value1\", invocation));",
+        "line": 66,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url);",
+        "line": 67,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "invoker4",
+    "variableType": "Invoker<?>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.cache.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-filter\\dubbo-filter-cache\\src\\test\\java\\org\\apache\\dubbo\\cache\\filter\\CacheFilterTest.java",
+      "className": "CacheFilterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<?> invoker4 = mock(Invoker.class);",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker4.invoke(invocation)).willReturn(AsyncRpcResult.newDefaultAsyncResult(invocation));",
+        "line": 76,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker4.getUrl()).willReturn(url);",
+        "line": 77,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "invoker3",
+    "variableType": "Invoker<?>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.cache.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-filter\\dubbo-filter-cache\\src\\test\\java\\org\\apache\\dubbo\\cache\\filter\\CacheFilterTest.java",
+      "className": "CacheFilterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<?> invoker3 = mock(Invoker.class);",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.invoke(invocation)).willReturn(AsyncRpcResult.newDefaultAsyncResult(new RuntimeException(), invocation));",
+        "line": 72,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.getUrl()).willReturn(url);",
+        "line": 74,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker<?>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.cache.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-filter\\dubbo-filter-cache\\src\\test\\java\\org\\apache\\dubbo\\cache\\filter\\CacheFilterTest.java",
+      "className": "CacheFilterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<?> invoker2 = mock(Invoker.class);",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willReturn(AsyncRpcResult.newDefaultAsyncResult(\"value2\", invocation));",
+        "line": 69,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url);",
+        "line": 70,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker<?>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.cache.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-filter\\dubbo-filter-cache\\src\\test\\java\\org\\apache\\dubbo\\cache\\filter\\CacheFilterTest.java",
+      "className": "CacheFilterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<?> invoker = mock(Invoker.class);",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.invoke(invocation)).willReturn(AsyncRpcResult.newDefaultAsyncResult(\"value\", invocation));",
+        "line": 63,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.getUrl()).willReturn(url);",
+        "line": 64,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker<?>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metrics.observation",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metrics\\dubbo-metrics-default\\src\\test\\java\\org\\apache\\dubbo\\metrics\\observation\\AbstractObservationFilterTest.java",
+      "className": "AbstractObservationFilterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "Invoker<?> invoker = mock(Invoker.class);",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.invoke(invocation)).willReturn(new AppResponse(\"success\"));",
+        "line": 73,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupConfig",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

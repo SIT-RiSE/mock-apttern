@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "producer",
+    "variableType": "KafkaProducer<String,String>",
+    "mockedClass": "KafkaProducer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.emitter.kafka",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\kafka-emitter\\src\\test\\java\\org\\apache\\druid\\emitter\\kafka\\KafkaEmitterTest.java",
+      "className": "KafkaEmitterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KafkaProducer<String, String> producer = mock(KafkaProducer.class);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testKafkaEmitter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(producer.send(any(), any())).then((invocation) -> {\r\n    countDownSentEvents.countDown();\r\n    return null;\r\n});",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testKafkaEmitter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

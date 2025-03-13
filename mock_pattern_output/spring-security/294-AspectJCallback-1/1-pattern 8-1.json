@@ -1,0 +1,79 @@
+[
+  {
+    "variableName": "aspectJCallback",
+    "variableType": "AspectJCallback",
+    "mockedClass": "AspectJCallback",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.access.intercept.aspectj",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\intercept\\aspectj\\AspectJMethodSecurityInterceptorTests.java",
+      "className": "AspectJMethodSecurityInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AspectJCallback aspectJCallback;",
+        "line": 80,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.aspectJCallback).proceedWithObject();",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callbackIsInvokedWhenPermissionGranted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.aspectJCallback, never()).proceedWithObject();",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callbackIsNotInvokedWhenPermissionDenied",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.aspectJCallback.proceedWithObject()).willThrow(new RuntimeException());",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "afterInvocationManagerIsNotInvokedIfExceptionIsRaised",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.aspectJCallback.proceedWithObject()).willThrow(new RuntimeException());",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWithAspectJCallbackRunAsReplacementCleansAfterException",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

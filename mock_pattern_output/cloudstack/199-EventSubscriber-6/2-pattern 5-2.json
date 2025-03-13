@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "subscriber",
+    "variableType": "EventSubscriber",
+    "mockedClass": "EventSubscriber",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.mom.inmemory",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\event-bus\\inmemory\\src\\test\\java\\org\\apache\\cloudstack\\mom\\inmemory\\InMemoryEventBusTest.java",
+      "className": "InMemoryEventBusTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "EventSubscriber subscriber = mock(EventSubscriber.class);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublish",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(subscriber, times(1)).onEvent(event);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublish",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "subscriber",
+    "variableType": "EventSubscriber",
+    "mockedClass": "EventSubscriber",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.mom.inmemory",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\event-bus\\inmemory\\src\\test\\java\\org\\apache\\cloudstack\\mom\\inmemory\\InMemoryEventBusTest.java",
+      "className": "InMemoryEventBusTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "EventSubscriber subscriber = mock(EventSubscriber.class);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublishEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(subscriber, times(0)).onEvent(event);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublishEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

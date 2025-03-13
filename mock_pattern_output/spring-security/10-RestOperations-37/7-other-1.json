@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "restOperations",
+    "variableType": "RestOperations",
+    "mockedClass": "RestOperations",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RestOperations restOperations = mock(RestOperations.class);",
+        "line": 871,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "withSigning",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(restOperations.exchange(any(RequestEntity.class), eq(String.class))).willReturn(new ResponseEntity<>(jwkResponse, HttpStatus.OK));",
+        "line": 872,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "withSigning",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 20
+  }
+]

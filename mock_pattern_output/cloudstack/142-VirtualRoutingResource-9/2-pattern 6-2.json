@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "virtRouterResource",
+    "variableType": "VirtualRoutingResource",
+    "mockedClass": "VirtualRoutingResource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VirtualRoutingResource virtRouterResource = Mockito.mock(VirtualRoutingResource.class);",
+        "line": 2996,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckSshCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtRouterResource.connect(privateIp, cmdPort)).thenReturn(true);",
+        "line": 3002,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckSshCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(virtRouterResource, times(1)).connect(privateIp, cmdPort);",
+        "line": 3011,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckSshCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "virtRouterResource",
+    "variableType": "VirtualRoutingResource",
+    "mockedClass": "VirtualRoutingResource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VirtualRoutingResource virtRouterResource = Mockito.mock(VirtualRoutingResource.class);",
+        "line": 3022,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckSshCommandFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtRouterResource.connect(privateIp, cmdPort)).thenReturn(false);",
+        "line": 3028,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckSshCommandFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(virtRouterResource, times(1)).connect(privateIp, cmdPort);",
+        "line": 3037,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckSshCommandFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

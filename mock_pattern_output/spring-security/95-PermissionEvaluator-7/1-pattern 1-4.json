@@ -1,0 +1,170 @@
+[
+  {
+    "variableName": "pe",
+    "variableType": "PermissionEvaluator",
+    "mockedClass": "PermissionEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.expression.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\expression\\method\\MethodSecurityExpressionRootTests.java",
+      "className": "MethodSecurityExpressionRootTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final PermissionEvaluator pe = mock(PermissionEvaluator.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "hasPermissionOnDomainObjectReturnsFalseIfPermissionEvaluatorDoes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pe.hasPermission(this.user, dummyDomainObject, \"ignored\")).willReturn(false);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "hasPermissionOnDomainObjectReturnsFalseIfPermissionEvaluatorDoes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "pe",
+    "variableType": "PermissionEvaluator",
+    "mockedClass": "PermissionEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.expression.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\expression\\method\\MethodSecurityExpressionRootTests.java",
+      "className": "MethodSecurityExpressionRootTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final PermissionEvaluator pe = mock(PermissionEvaluator.class);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "hasPermissionOnDomainObjectReturnsTrueIfPermissionEvaluatorDoes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pe.hasPermission(this.user, dummyDomainObject, \"ignored\")).willReturn(true);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "hasPermissionOnDomainObjectReturnsTrueIfPermissionEvaluatorDoes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "pe",
+    "variableType": "PermissionEvaluator",
+    "mockedClass": "PermissionEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.expression.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\expression\\method\\MethodSecurityExpressionRootTests.java",
+      "className": "MethodSecurityExpressionRootTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final PermissionEvaluator pe = mock(PermissionEvaluator.class);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "hasPermissionOnDomainObjectWorksWithIntegerExpressions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pe.hasPermission(eq(this.user), eq(dummyDomainObject), any(Integer.class))).willReturn(true, true, false);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "hasPermissionOnDomainObjectWorksWithIntegerExpressions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "pe",
+    "variableType": "PermissionEvaluator",
+    "mockedClass": "PermissionEvaluator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.expression.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\expression\\method\\MethodSecurityExpressionRootTests.java",
+      "className": "MethodSecurityExpressionRootTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PermissionEvaluator pe = mock(PermissionEvaluator.class);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "hasPermissionWorksWithThisObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pe.hasPermission(this.user, targetObject, i)).willReturn(true, false);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "hasPermissionWorksWithThisObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pe.hasPermission(this.user, \"x\", i)).willReturn(true);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "hasPermissionWorksWithThisObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

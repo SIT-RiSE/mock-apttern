@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "runner",
+    "variableType": "PartialDimensionDistributionParallelIndexTaskRunner",
+    "mockedClass": "PartialDimensionDistributionParallelIndexTaskRunner",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.indexing.common.task.batch.parallel",
+      "filePath": "C:\\java tool\\Apache\\druid\\indexing-service\\src\\test\\java\\org\\apache\\druid\\indexing\\common\\task\\batch\\parallel\\RangePartitionTaskKillTest.java",
+      "className": "ParallelIndexSupervisorTaskTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final PartialDimensionDistributionParallelIndexTaskRunner runner = Mockito.mock(PartialDimensionDistributionParallelIndexTaskRunner.class);",
+        "line": 278,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockDistributionRunner",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(runner.getName()).thenReturn(phase);",
+        "line": 281,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockDistributionRunner",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(runner.run()).thenReturn(succeeds ? TaskState.SUCCESS : TaskState.FAILED);",
+        "line": 282,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockDistributionRunner",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(runner.getStopReason()).thenReturn(null);",
+        "line": 283,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockDistributionRunner",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(runner.getProgress()).thenReturn(null);",
+        "line": 284,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockDistributionRunner",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(runner.getIntervalToPartitionBoundaries(ArgumentMatchers.any())).thenReturn(INTERVAL_TO_PARTITIONS);",
+        "line": 285,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockDistributionRunner",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

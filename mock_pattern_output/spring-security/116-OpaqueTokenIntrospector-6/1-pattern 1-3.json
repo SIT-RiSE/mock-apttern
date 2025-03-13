@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "introspector",
+    "variableType": "OpaqueTokenIntrospector",
+    "mockedClass": "OpaqueTokenIntrospector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\OpaqueTokenAuthenticationProviderTests.java",
+      "className": "OpaqueTokenAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OpaqueTokenIntrospector introspector = mock(OpaqueTokenIntrospector.class);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenActiveTokenThenOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(introspector.introspect(any())).willReturn(principal);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenActiveTokenThenOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "introspector",
+    "variableType": "OpaqueTokenIntrospector",
+    "mockedClass": "OpaqueTokenIntrospector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\OpaqueTokenAuthenticationProviderTests.java",
+      "className": "OpaqueTokenAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OpaqueTokenIntrospector introspector = mock(OpaqueTokenIntrospector.class);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenMissingScopeAttributeThenNoAuthorities",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(introspector.introspect(any())).willReturn(principal);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenMissingScopeAttributeThenNoAuthorities",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "introspector",
+    "variableType": "OpaqueTokenIntrospector",
+    "mockedClass": "OpaqueTokenIntrospector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\OpaqueTokenAuthenticationProviderTests.java",
+      "className": "OpaqueTokenAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OpaqueTokenIntrospector introspector = mock(OpaqueTokenIntrospector.class);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenIntrospectionEndpointThrowsExceptionThenInvalidToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(introspector.introspect(any())).willThrow(new OAuth2IntrospectionException(\"with \\\"invalid\\\" chars\"));",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenIntrospectionEndpointThrowsExceptionThenInvalidToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

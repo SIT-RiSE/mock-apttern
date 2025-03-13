@@ -1,0 +1,920 @@
+[
+  {
+    "variableName": "tungstenFabricUtils",
+    "variableType": "TungstenFabricUtils",
+    "mockedClass": "TungstenFabricUtils",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenFabricUtils tungstenFabricUtils;",
+        "line": 132,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(AssignTungstenFloatingIpCommand.class), anyLong())).thenReturn(assignFloatingIpAnswer);",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyStaticNatsAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(AssignTungstenFloatingIpCommand.class), anyLong())).thenReturn(assignFloatingIpAnswer);",
+        "line": 280,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyStaticNatsAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(ReleaseTungstenFloatingIpCommand.class), anyLong())).thenReturn(releaseFloatingIpAnswer);",
+        "line": 302,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyStaticNatsRevokeRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(ReleaseTungstenFloatingIpCommand.class), anyLong())).thenReturn(releaseFloatingIpAnswer);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyStaticNatsRevokeRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenNetworkLoadbalancerCommand.class), anyLong())).thenReturn(createTungstenNetworkLoadbalancerAnswer);",
+        "line": 376,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(UpdateTungstenLoadBalancerPoolCommand.class), anyLong())).thenReturn(updateTungstenLoadBalancerPoolAnswer);",
+        "line": 377,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(UpdateTungstenLoadBalancerMemberCommand.class), anyLong())).thenReturn(updateTungstenLoadBalancerMemberAnswer);",
+        "line": 378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(UpdateTungstenLoadBalancerListenerCommand.class), anyLong())).thenReturn(updateTungstenLoadBalancerListenerAnswer);",
+        "line": 379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(UpdateTungstenLoadBalancerHealthMonitorCommand.class), anyLong())).thenReturn(updateTungstenHealthMonitorAnswer);",
+        "line": 390,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenNetworkLoadbalancerCommand.class), anyLong())).thenReturn(createTungstenNetworkLoadbalancerAnswer);",
+        "line": 433,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(UpdateTungstenLoadBalancerPoolCommand.class), anyLong())).thenReturn(updateTungstenLoadBalancerPoolAnswer);",
+        "line": 434,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(UpdateTungstenLoadBalancerMemberCommand.class), anyLong())).thenReturn(updateTungstenLoadBalancerMemberAnswer);",
+        "line": 435,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(UpdateTungstenLoadBalancerHealthMonitorCommand.class), anyLong())).thenReturn(updateTungstenHealthMonitorAnswer);",
+        "line": 444,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenLoadBalancerListenerCommand.class), anyLong())).thenReturn(deleteTungstenLoadBalancerListenerAnswer);",
+        "line": 469,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesRevokeRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenLoadBalancerCommand.class), anyLong())).thenReturn(deleteTungstenLoadBalancerCommand);",
+        "line": 470,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesRevokeRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenLoadBalancerListenerCommand.class), anyLong())).thenReturn(deleteTungstenLoadBalancerListenerAnswer);",
+        "line": 502,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesRevokeRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenLoadBalancerCommand.class), anyLong())).thenReturn(deleteTungstenLoadBalancerCommand);",
+        "line": 503,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesRevokeRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(ApplyTungstenPortForwardingCommand.class), anyLong())).thenReturn(applyTungstenPortForwardingAnswer);",
+        "line": 529,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(ApplyTungstenPortForwardingCommand.class), anyLong())).thenReturn(applyTungstenPortForwardingAnswer);",
+        "line": 551,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(ApplyTungstenPortForwardingCommand.class), anyLong())).thenReturn(applyTungstenPortForwardingAnswer);",
+        "line": 573,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesRevokeRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(ApplyTungstenPortForwardingCommand.class), anyLong())).thenReturn(applyTungstenPortForwardingAnswer);",
+        "line": 595,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesRevokeRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenVirtualMachineCommand.class), anyLong())).thenReturn(createTungstenVMAnswer);",
+        "line": 618,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preparePublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenNetworkPolicyCommand.class), anyLong())).thenReturn(createTungstenNetworkPolicyAnswer);",
+        "line": 620,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preparePublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenVirtualMachineCommand.class), anyLong())).thenReturn(createTungstenVMAnswer);",
+        "line": 647,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareManagementNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenVirtualMachineCommand.class), anyLong())).thenReturn(createTungstenVMAnswer);",
+        "line": 673,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareWithExceptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVRouterPortCommand.class), anyLong())).thenReturn(deleteTungstenVRouterPortAnswer);",
+        "line": 699,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releasePublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVmInterfaceCommand.class), anyLong())).thenReturn(deleteVmiAnswer);",
+        "line": 700,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releasePublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVmCommand.class), anyLong())).thenReturn(deleteVmAnswer);",
+        "line": 701,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releasePublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenNetworkPolicyCommand.class), anyLong())).thenReturn(deleteTungstenNetworkPolicyAnswer);",
+        "line": 702,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releasePublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVRouterPortCommand.class), anyLong())).thenReturn(deleteTungstenVRouterPortAnswer);",
+        "line": 728,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseManagementNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVmInterfaceCommand.class), anyLong())).thenReturn(deleteVmiAnswer);",
+        "line": 729,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseManagementNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVmCommand.class), anyLong())).thenReturn(deleteVmAnswer);",
+        "line": 730,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseManagementNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVRouterPortCommand.class), anyLong())).thenReturn(deleteTungstenVRouterPortAnswer);",
+        "line": 754,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseWithExceptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVmInterfaceCommand.class), anyLong())).thenReturn(deleteVmiAnswer);",
+        "line": 755,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseWithExceptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVmCommand.class), anyLong())).thenThrow(IllegalArgumentException.class);",
+        "line": 756,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseWithExceptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenFloatingIpCommand.class), anyLong())).thenReturn(tungstenDeleteFIPAnswer);",
+        "line": 774,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "destroyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenNetworkPolicyCommand.class), anyLong())).thenReturn(tungstenDeleteNPAnswer);",
+        "line": 775,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "destroyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenNetworkPolicyCommand.class), anyLong())).thenReturn(createNetworkPolicyAnswer);",
+        "line": 928,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyFWRulesWithAddEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(ApplyTungstenNetworkPolicyCommand.class), anyLong())).thenReturn(applyNetworkPolicyAnswer);",
+        "line": 929,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyFWRulesWithAddEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenNetworkPolicyCommand.class), anyLong())).thenReturn(createNetworkPolicyAnswer);",
+        "line": 954,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyFWRulesWithAddIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(ApplyTungstenNetworkPolicyCommand.class), anyLong())).thenReturn(applyNetworkPolicyAnswer);",
+        "line": 955,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyFWRulesWithAddIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenNetworkPolicyCommand.class), anyLong())).thenReturn(deleteNetworkPolicyAnswer);",
+        "line": 973,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyFWRulesWithRevokeRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenVirtualMachineCommand.class), anyLong())).thenReturn(tungstenAnswer);",
+        "line": 1020,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareMigrationTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenVRouterPortCommand.class), anyLong());",
+        "line": 1041,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rollbackMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenVRouterPortCommand.class), anyLong());",
+        "line": 1059,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "commitMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "tungstenFabricUtils",
+    "variableType": "TungstenFabricUtils",
+    "mockedClass": "TungstenFabricUtils",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenGuestNetworkGuruTest.java",
+      "className": "TungstenGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenFabricUtils tungstenFabricUtils;",
+        "line": 127,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenVmCommand.class), anyLong());",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenVmInterfaceCommand.class), anyLong());",
+        "line": 253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVmCommand.class), anyLong())).thenThrow(new IllegalArgumentException());",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocateWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenNetworkCommand.class), anyLong())).thenReturn(new TungstenAnswer(new TungstenCommand(), true, \"\"));",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementGuestNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenLogicalRouterCommand.class), anyLong())).thenReturn(new TungstenAnswer(new TungstenCommand(), new LogicalRouter(), true, \"\"));",
+        "line": 294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementGuestNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(GetTungstenNatIpCommand.class), anyLong())).thenReturn(new TungstenAnswer(new TungstenCommand(), true, \"192.168.1.100\"));",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementGuestNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(CreateTungstenNetworkCommand.class), anyLong());",
+        "line": 312,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementGuestNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(CreateTungstenLogicalRouterCommand.class), anyLong());",
+        "line": 313,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementGuestNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(GetTungstenNatIpCommand.class), anyLong());",
+        "line": 315,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementGuestNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(SetTungstenNetworkGatewayCommand.class), anyLong());",
+        "line": 316,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementGuestNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenNetworkCommand.class), anyLong())).thenReturn(new TungstenAnswer(new TungstenCommand(), new IOException()));",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(CreateTungstenVirtualMachineCommand.class), anyLong());",
+        "line": 392,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(ReleaseTungstenFloatingIpCommand.class), anyLong())).thenReturn(new TungstenAnswer(new TungstenCommand(), true, \"\"));",
+        "line": 408,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRelease",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(DeleteTungstenVRouterPortCommand.class), anyLong())).thenReturn(new TungstenAnswer(new TungstenCommand(), true, \"\"));",
+        "line": 411,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRelease",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenVRouterPortCommand.class), anyLong());",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRelease",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenFloatingIpCommand.class), anyLong());",
+        "line": 433,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(2)).sendTungstenCommand(any(DeleteTungstenNetworkPolicyCommand.class), anyLong());",
+        "line": 435,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenNetworkPolicyCommand.class), anyLong());",
+        "line": 444,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrash",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(ClearTungstenNetworkGatewayCommand.class), anyLong());",
+        "line": 446,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrash",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenNetworkCommand.class), anyLong());",
+        "line": 448,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrash",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenNetworkPolicyCommand.class), anyLong());",
+        "line": 465,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(ClearTungstenNetworkGatewayCommand.class), anyLong());",
+        "line": 467,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenNetworkCommand.class), anyLong());",
+        "line": 469,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenFabricUtils.sendTungstenCommand(any(CreateTungstenVirtualMachineCommand.class), anyLong())).thenReturn(new TungstenAnswer(new TungstenCommand(), true, \"\"));",
+        "line": 489,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(CreateTungstenVirtualMachineCommand.class), anyLong());",
+        "line": 493,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenVRouterPortCommand.class), anyLong());",
+        "line": 511,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRollbackMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(tungstenFabricUtils, times(1)).sendTungstenCommand(any(DeleteTungstenVRouterPortCommand.class), anyLong());",
+        "line": 529,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCommitMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

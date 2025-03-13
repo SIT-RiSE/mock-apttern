@@ -1,0 +1,2102 @@
+[
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\AddTungstenFabricNetworkGatewayToLogicalRouterCmdTest.java",
+      "className": "AddTungstenFabricNetworkGatewayToLogicalRouterCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listConnectedNetworkFromLogicalRouter(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(networkList);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.addNetworkGatewayToLogicalRouter(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponse);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\AddTungstenFabricPolicyRuleCmdTest.java",
+      "className": "AddTungstenFabricPolicyRuleCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.addTungstenPolicyRule(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyInt())).thenReturn(tungstenFabricRuleResponse);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ApplyTungstenFabricPolicyCmdTest.java",
+      "className": "ApplyTungstenFabricPolicyCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.applyTungstenPolicy(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyInt())).thenReturn(tungstenFabricPolicyResponse);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ApplyTungstenFabricTagCmdTest.java",
+      "className": "ApplyTungstenFabricTagCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.applyTungstenTag(ArgumentMatchers.anyLong(), ArgumentMatchers.anyList(), ArgumentMatchers.anyList(), ArgumentMatchers.anyList(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(tungstenFabricTagResponse);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricAddressGroupCmdTest.java",
+      "className": "CreateTungstenFabricAddressGroupCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createTungstenAddressGroup(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyInt())).thenReturn(tungstenFabricAddressGroupResponse);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricApplicationPolicySetCmdTest.java",
+      "className": "CreateTungstenFabricApplicationPolicySetCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createTungstenApplicationPolicySet(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(tungstenFabricApplicationPolicySetResponse);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricFirewallPolicyCmdTest.java",
+      "className": "CreateTungstenFabricFirewallPolicyCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createTungstenFirewallPolicy(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyInt())).thenReturn(tungstenFabricFirewallPolicyResponse);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricFirewallRuleCmdTest.java",
+      "className": "CreateTungstenFabricFirewallRuleCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createTungstenFirewallRule(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyInt())).thenReturn(tungstenFabricFirewallRuleResponse);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricLogicalRouterCmdTest.java",
+      "className": "CreateTungstenFabricLogicalRouterCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createRoutingLogicalRouter(ArgumentMatchers.anyLong(), ArgumentMatchers.any(), ArgumentMatchers.anyString())).thenReturn(baseResponse);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricManagementNetworkCmdTest.java",
+      "className": "CreateTungstenFabricManagementNetworkCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createManagementNetwork(ArgumentMatchers.anyLong())).thenReturn(true);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.addManagementNetworkSubnet(ArgumentMatchers.any())).thenReturn(true);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricPolicyCmdTest.java",
+      "className": "CreateTungstenFabricPolicyCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createTungstenPolicy(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(tungstenFabricPolicyResponse);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricPublicNetworkCmdTest.java",
+      "className": "CreateTungstenFabricPublicNetworkCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createPublicNetwork(ArgumentMatchers.anyLong())).thenReturn(true);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.addPublicNetworkSubnet(ArgumentMatchers.any())).thenReturn(true);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricServiceGroupCmdTest.java",
+      "className": "CreateTungstenFabricServiceGroupCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createTungstenServiceGroup(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyInt())).thenReturn(tungstenFabricServiceGroupResponse);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricTagCmdTest.java",
+      "className": "CreateTungstenFabricTagCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createTungstenTag(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(tungstenFabricTagResponse);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricTagTypeCmdTest.java",
+      "className": "CreateTungstenFabricTagTypeCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.createTungstenTagType(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(tungstenFabricTagTypeResponse);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\DeleteTungstenFabricAddressGroupCmdTest.java",
+      "className": "DeleteTungstenFabricAddressGroupCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.deleteTungstenAddressGroup(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(true);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\DeleteTungstenFabricApplicationPolicySetCmdTest.java",
+      "className": "DeleteTungstenFabricApplicationPolicySetCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.deleteTungstenApplicationPolicySet(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(true);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\DeleteTungstenFabricFirewallPolicyCmdTest.java",
+      "className": "DeleteTungstenFabricFirewallPolicyCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.deleteTungstenFirewallPolicy(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(true);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\DeleteTungstenFabricFirewallRuleCmdTest.java",
+      "className": "DeleteTungstenFabricFirewallRuleCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.deleteTungstenFirewallRule(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(true);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\DeleteTungstenFabricLogicalRouterCmdTest.java",
+      "className": "DeleteTungstenFabricLogicalRouterCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listConnectedNetworkFromLogicalRouter(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(networkList);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.deleteLogicalRouter(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(true);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\DeleteTungstenFabricPolicyCmdTest.java",
+      "className": "DeleteTungstenFabricPolicyCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.deleteTungstenPolicy(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(true);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\DeleteTungstenFabricServiceGroupCmdTest.java",
+      "className": "DeleteTungstenFabricServiceGroupCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.deleteTungstenServiceGroup(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(true);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\DeleteTungstenFabricTagCmdTest.java",
+      "className": "DeleteTungstenFabricTagCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.deleteTungstenTag(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(true);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\DeleteTungstenFabricTagTypeCmdTest.java",
+      "className": "DeleteTungstenFabricTagTypeCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.deleteTungstenTagType(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(true);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricAddressGroupCmdTest.java",
+      "className": "ListTungstenFabricAddressGroupCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenAddressGroup(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenAddressGroup(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricApplictionPolicySetCmdTest.java",
+      "className": "ListTungstenFabricApplictionPolicySetCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenApplicationPolicySet(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenApplicationPolicySet(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricFirewallPolicyCmdTest.java",
+      "className": "ListTungstenFabricFirewallPolicyCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenFirewallPolicy(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenFirewallPolicy(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricFirewallRuleCmdTest.java",
+      "className": "ListTungstenFabricFirewallRuleCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenFirewallRule(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenFirewallRule(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricLBHealthMonitorCmdTest.java",
+      "className": "ListTungstenFabricLBHealthMonitorCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenFabricLBHealthMonitor(ArgumentMatchers.anyLong())).thenReturn(baseResponseList);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricLogicalRouterCmdTest.java",
+      "className": "ListTungstenFabricLogicalRouterCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listRoutingLogicalRouter(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listRoutingLogicalRouter(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricNetworkCmdTest.java",
+      "className": "ListTungstenFabricNetworkCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenNetwork(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyBoolean())).thenReturn(baseResponseList);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenNetwork(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyBoolean())).thenReturn(baseResponseList);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricNicCmdTest.java",
+      "className": "ListTungstenFabricNicCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenNic(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenNic(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricPolicyCmdTest.java",
+      "className": "ListTungstenFabricPolicyCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenPolicy(ArgumentMatchers.anyLong(), ArgumentMatchers.anyLong(), ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenPolicy(ArgumentMatchers.anyLong(), ArgumentMatchers.anyLong(), ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricPolicyRuleCmdTest.java",
+      "className": "ListTungstenFabricPolicyRuleCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenPolicyRule(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenPolicyRule(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricServiceGroupCmdTest.java",
+      "className": "ListTungstenFabricServiceGroupCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenServiceGroup(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenServiceGroup(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricTagCmdTest.java",
+      "className": "ListTungstenFabricTagCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenTags(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenTags(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricTagTypeCmdTest.java",
+      "className": "ListTungstenFabricTagTypeCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenTagTypes(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenTagTypes(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\ListTungstenFabricVmCmdTest.java",
+      "className": "ListTungstenFabricVmCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenVm(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.getTungstenProviders()).thenReturn(tungstenProviderVOList);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listTungstenVm(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(baseResponseList);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeAllZoneTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\RemoveTungstenFabricNetworkGatewayFromLogicalRouterCmdTest.java",
+      "className": "RemoveTungstenFabricNetworkGatewayFromLogicalRouterCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.listConnectedNetworkFromLogicalRouter(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString())).thenReturn(networkList);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.removeNetworkGatewayFromLogicalRouter(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(baseResponse);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\RemoveTungstenFabricPolicyCmdTest.java",
+      "className": "RemoveTungstenFabricPolicyCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.removeTungstenPolicy(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(tungstenFabricPolicyResponse);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\RemoveTungstenFabricPolicyRuleCmdTest.java",
+      "className": "RemoveTungstenFabricPolicyRuleCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.removeTungstenPolicyRule(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(tungstenFabricPolicyResponse);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\RemoveTungstenFabricTagCmdTest.java",
+      "className": "RemoveTungstenFabricTagCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.removeTungstenTag(ArgumentMatchers.anyLong(), ArgumentMatchers.anyList(), ArgumentMatchers.anyList(), ArgumentMatchers.anyList(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(tungstenFabricTagResponse);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\SynchronizeTungstenFabricDataCmdTest.java",
+      "className": "SynchronizeTungstenFabricDataCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.synchronizeTungstenData(ArgumentMatchers.anyLong())).thenReturn(true);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "tungstenService",
+    "variableType": "TungstenService",
+    "mockedClass": "TungstenService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\UpdateTungstenFabricLBHealthMonitorCmdTest.java",
+      "className": "UpdateTungstenFabricLBHealthMonitorCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenService tungstenService;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.updateTungstenFabricLBHealthMonitor(ArgumentMatchers.anyLong(), ArgumentMatchers.anyString(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString(), ArgumentMatchers.anyString())).thenReturn(tungstenFabricLBHealthMonitorVO);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tungstenService.applyLBHealthMonitor(ArgumentMatchers.anyLong())).thenReturn(true);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

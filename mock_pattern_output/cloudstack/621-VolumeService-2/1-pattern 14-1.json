@@ -1,0 +1,49 @@
+[
+  {
+    "variableName": "volumeService",
+    "variableType": "VolumeService",
+    "mockedClass": "VolumeService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVolumeService volumeService;",
+        "line": 87,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeService.getChapInfo(srcData, srcStore)).thenReturn(null);",
+        "line": 263,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "fillSrcVolumeDetails",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeService.getChapInfo(srcData, srcStore)).thenReturn(null);",
+        "line": 282,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "fillDestVolumeDetails",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  }
+]

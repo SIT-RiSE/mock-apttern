@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "mockVpcDao",
+    "variableType": "VpcDao",
+    "mockedClass": "VpcDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.router.deployment",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\network\\router\\deployment\\VpcRouterDeploymentDefinitionTest.java",
+      "className": "VpcRouterDeploymentDefinitionTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprotected VpcDao mockVpcDao;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Prepare\r\nwhen(mockVpcDao.acquireInLockTable(VPC_ID)).thenReturn(mockVpc);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Assert\r\nverify(mockVpcDao, times(1)).acquireInLockTable(VPC_ID);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Prepare\r\nwhen(mockVpcDao.acquireInLockTable(VPC_ID)).thenReturn(null);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLockFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Assert\r\nverify(mockVpcDao, times(1)).acquireInLockTable(VPC_ID);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLockFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Assert\r\nverify(mockVpcDao, times(1)).releaseFromLockTable(VPC_ID);",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnlock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Assert\r\nverify(mockVpcDao, times(0)).releaseFromLockTable(anyLong());",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnlockWithoutLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

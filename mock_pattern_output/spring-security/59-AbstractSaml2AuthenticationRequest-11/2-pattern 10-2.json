@@ -1,0 +1,72 @@
+[
+  {
+    "variableName": "mockAuthenticationRequest",
+    "variableType": "AbstractSaml2AuthenticationRequest",
+    "mockedClass": "AbstractSaml2AuthenticationRequest",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\authentication\\OpenSaml4AuthenticationProviderTests.java",
+      "className": "OpenSaml4AuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractSaml2AuthenticationRequest mockAuthenticationRequest = mock(AbstractSaml2AuthenticationRequest.class);",
+        "line": 923,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockedStoredAuthenticationRequest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockAuthenticationRequest.getId()).willReturn(requestId);",
+        "line": 924,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockedStoredAuthenticationRequest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "mockAuthenticationRequest",
+    "variableType": "AbstractSaml2AuthenticationRequest",
+    "mockedClass": "AbstractSaml2AuthenticationRequest",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml5Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\authentication\\OpenSaml5AuthenticationProviderTests.java",
+      "className": "OpenSaml5AuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractSaml2AuthenticationRequest mockAuthenticationRequest = mock(AbstractSaml2AuthenticationRequest.class);",
+        "line": 923,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockedStoredAuthenticationRequest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockAuthenticationRequest.getId()).willReturn(requestId);",
+        "line": 924,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockedStoredAuthenticationRequest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

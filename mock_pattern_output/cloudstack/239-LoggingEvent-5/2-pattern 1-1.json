@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "event",
+    "variableType": "LoggingEvent",
+    "mockedClass": "LoggingEvent",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.alert.snmp",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\alert-handlers\\snmp-alerts\\src\\test\\java\\org\\apache\\cloudstack\\alert\\snmp\\SnmpEnhancedPatternLayoutTest.java",
+      "className": "SnmpEnhancedPatternLayoutTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LoggingEvent event = mock(LoggingEvent.class);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "parseRandomTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(event.getRenderedMessage()).thenReturn(\"Problem clearing email alert\");",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "parseRandomTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

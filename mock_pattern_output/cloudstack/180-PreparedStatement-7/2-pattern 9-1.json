@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "preparedStatementMock",
+    "variableType": "PreparedStatement",
+    "mockedClass": "PreparedStatement",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.usage.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\usage\\dao\\UsageStorageDaoImplTest.java",
+      "className": "UsageStorageDaoImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PreparedStatement preparedStatementMock;",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).setString(1, DateUtil.getDateDisplayString(TimeZone.getTimeZone(\"GMT\"), deleted));",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).setLong(2, accountId);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).setLong(3, id);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).setInt(4, storageType);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).setLong(5, zoneId);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(preparedStatementMock, times(1)).executeUpdate();",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

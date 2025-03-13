@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "service",
+    "variableType": "AclService",
+    "mockedClass": "AclService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.acls",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\AclPermissionCacheOptimizerTests.java",
+      "className": "AclPermissionCacheOptimizerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AclService service = mock(AclService.class);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "eagerlyLoadsRequiredAcls",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// AclService should be invoked with the list of required Oids\r\nverify(service).readAclsById(eq(Arrays.asList(oids)), any(List.class));",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "eagerlyLoadsRequiredAcls",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "service",
+    "variableType": "AclService",
+    "mockedClass": "AclService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.acls",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\AclPermissionCacheOptimizerTests.java",
+      "className": "AclPermissionCacheOptimizerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AclService service = mock(AclService.class);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ignoresEmptyCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(service, sids, oids);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ignoresEmptyCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "service",
+    "variableType": "AclService",
+    "mockedClass": "AclService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.afterinvocation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\afterinvocation\\AclEntryAfterInvocationCollectionFilteringProviderTests.java",
+      "className": "AclEntryAfterInvocationCollectionFilteringProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AclService service = mock(AclService.class);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "nullReturnObjectIsIgnored",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(service, never()).readAclById(any(ObjectIdentity.class), any(List.class));",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "nullReturnObjectIsIgnored",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "service",
+    "variableType": "AclService",
+    "mockedClass": "AclService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.afterinvocation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\afterinvocation\\AclEntryAfterInvocationProviderTests.java",
+      "className": "AclEntryAfterInvocationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AclService service = mock(AclService.class);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "nullReturnObjectIsIgnored",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(service, never()).readAclById(any(ObjectIdentity.class), any(List.class));",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "nullReturnObjectIsIgnored",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

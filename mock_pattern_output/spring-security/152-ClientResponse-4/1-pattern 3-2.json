@@ -1,0 +1,52 @@
+[
+  {
+    "variableName": "response",
+    "variableType": "ClientResponse",
+    "mockedClass": "ClientResponse",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\MockExchangeFunction.java",
+      "className": "MockExchangeFunction"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private ClientResponse response = mock(ClientResponse.class);",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 3
+  },
+  {
+    "variableName": "response",
+    "variableType": "ClientResponse",
+    "mockedClass": "ClientResponse",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\web\\MockExchangeFunction.java",
+      "className": "MockExchangeFunction"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private ClientResponse response = mock(ClientResponse.class);",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

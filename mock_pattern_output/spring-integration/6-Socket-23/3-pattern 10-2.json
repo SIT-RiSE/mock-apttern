@@ -1,0 +1,86 @@
+[
+  {
+    "variableName": "socket",
+    "variableType": "Socket",
+    "mockedClass": "Socket",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Socket socket = mock(Socket.class);",
+        "line": 378,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockedTcpNetConnection",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// closed when next retrieved\r\nwhen(socket.isClosed()).thenReturn(true);",
+        "line": 379,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockedTcpNetConnection",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(socket.getOutputStream()).thenReturn(stream);",
+        "line": 382,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockedTcpNetConnection",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "mock",
+    "variableType": "Socket",
+    "mockedClass": "Socket",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Socket mock = mock(Socket.class);",
+        "line": 784,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSocket",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mock.getInputStream()).thenReturn(new ByteArrayInputStream(\"foo\\r\\n\".getBytes()));",
+        "line": 785,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSocket",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

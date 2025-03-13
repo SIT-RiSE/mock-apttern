@@ -1,0 +1,140 @@
+[
+  {
+    "variableName": "successLogger",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.logger.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\logger\\support\\FailsafeErrorTypeAwareLoggerTest.java",
+      "className": "FailsafeErrorTypeAwareLoggerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Logger successLogger = mock(Logger.class);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(successLogger).error(anyString());",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(successLogger).warn(anyString());",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "successLogger",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.logger.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\logger\\support\\FailsafeLoggerTest.java",
+      "className": "FailsafeLoggerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Logger successLogger = mock(Logger.class);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(successLogger).error(anyString());",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(successLogger).warn(anyString());",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(successLogger).info(anyString());",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(successLogger).debug(anyString());",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(successLogger).trace(anyString());",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

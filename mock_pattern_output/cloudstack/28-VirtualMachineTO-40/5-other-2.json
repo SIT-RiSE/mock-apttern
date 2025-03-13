@@ -1,0 +1,206 @@
+[
+  {
+    "variableName": "vmTo",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 Other Methods",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTO vmTo = Mockito.mock(VirtualMachineTO.class);",
+        "line": 5764,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateGetCurrentMemAccordingToMemBallooningWithoutMemBalooning",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTo.getType()).thenReturn(Type.User);",
+        "line": 5765,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateGetCurrentMemAccordingToMemBallooningWithoutMemBalooning",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmTo, Mockito.times(0)).getMinRam();",
+        "line": 5772,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateGetCurrentMemAccordingToMemBallooningWithoutMemBalooning",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 43
+  },
+  {
+    "variableName": "vmTO",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\KVMGuruTest.java",
+      "className": "KVMGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVirtualMachineTO vmTO;",
+        "line": 68,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getLimitCpuUse()).thenReturn(true);",
+        "line": 117,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getMaxSpeed()).thenReturn(500);",
+        "line": 123,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmTO).setCpuQuotaPercentage(Mockito.anyDouble());",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetVmQuotaPercentage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmTO, Mockito.never()).setCpuQuotaPercentage(Mockito.anyDouble());",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetVmQuotaPercentageZeroDivision",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getLimitCpuUse()).thenReturn(false);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetVmQuotaPercentageNotCPULimit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmTO, Mockito.never()).setCpuQuotaPercentage(Mockito.anyDouble());",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetVmQuotaPercentageNotCPULimit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getMaxSpeed()).thenReturn(3000);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetVmQuotaPercentageOverProvision",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmTO).setCpuQuotaPercentage(1d);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetVmQuotaPercentageOverProvision",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getType()).thenReturn(VirtualMachine.Type.User);",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateEnableDpdkIfNeededNicSetDpdkEnabledTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getExtraConfig()).thenReturn(map);",
+        "line": 370,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateEnableDpdkIfNeededNicSetDpdkEnabledTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTO.getNics()).thenReturn(nics);",
+        "line": 371,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateEnableDpdkIfNeededNicSetDpdkEnabledTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 21
+  }
+]

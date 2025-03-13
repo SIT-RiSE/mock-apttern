@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "scheduledFuture",
+    "variableType": "ScheduledFuture",
+    "mockedClass": "ScheduledFuture",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.security.cert",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-security\\src\\test\\java\\org\\apache\\dubbo\\security\\cert\\DubboCertManagerTest.java",
+      "className": "DubboCertManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ScheduledFuture scheduledFuture = Mockito.mock(ScheduledFuture.class);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisconnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(scheduledFuture, Mockito.times(1)).cancel(true);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisconnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

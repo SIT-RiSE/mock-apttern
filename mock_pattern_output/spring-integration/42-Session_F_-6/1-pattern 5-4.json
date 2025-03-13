@@ -1,0 +1,179 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "Session<F>",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.handler",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\handler\\FileTransferringMessageHandlerTests.java",
+      "className": "FileTransferringMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session<F> session = mock(Session.class);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoteDirWithEmptyString",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session, times(1)).write(Mockito.any(InputStream.class), Mockito.anyString());",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoteDirWithEmptyString",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session<F>",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.handler",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\handler\\FileTransferringMessageHandlerTests.java",
+      "className": "FileTransferringMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session<F> session = mock(Session.class);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTemporaryRemoteDir",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session, times(1)).write(Mockito.any(InputStream.class), Mockito.anyString());",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTemporaryRemoteDir",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session<F>",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.handler",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\handler\\FileTransferringMessageHandlerTests.java",
+      "className": "FileTransferringMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session<F> session = mock(Session.class);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoteDirWithNull",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session, times(1)).write(Mockito.any(InputStream.class), Mockito.anyString());",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoteDirWithNull",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session<F>",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.handler",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\handler\\FileTransferringMessageHandlerTests.java",
+      "className": "FileTransferringMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session<F> session = mock(Session.class);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUseTemporaryFileNameFalse",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session, times(1)).write(Mockito.any(InputStream.class), Mockito.anyString());",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUseTemporaryFileNameFalse",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(session, times(0)).rename(Mockito.anyString(), Mockito.anyString());",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUseTemporaryFileNameFalse",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "variableName": "fw",
+    "variableType": "HttpFirewall",
+    "mockedClass": "HttpFirewall",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HttpFirewall fw = mock(HttpFirewall.class);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "wrapperIsResetWhenNoMatchingFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(fw.getFirewalledRequest(this.request)).willReturn(fwr);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "wrapperIsResetWhenNoMatchingFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "fw",
+    "variableType": "HttpFirewall",
+    "mockedClass": "HttpFirewall",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HttpFirewall fw = mock(HttpFirewall.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "bothWrappersAreResetWithNestedFcps",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(fw.getFirewalledRequest(this.request)).willReturn(firstFwr);",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "bothWrappersAreResetWithNestedFcps",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(fw.getFirewalledRequest(firstFwr)).willReturn(fwr);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "bothWrappersAreResetWithNestedFcps",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "fw",
+    "variableType": "HttpFirewall",
+    "mockedClass": "HttpFirewall",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HttpFirewall fw = mock(HttpFirewall.class);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestRejectedHandlerIsCalledIfFirewallThrowsRequestRejectedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(fw.getFirewalledRequest(this.request)).willThrow(requestRejectedException);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestRejectedHandlerIsCalledIfFirewallThrowsRequestRejectedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "fw",
+    "variableType": "HttpFirewall",
+    "mockedClass": "HttpFirewall",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HttpFirewall fw = mock(HttpFirewall.class);",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestRejectedHandlerIsCalledIfFirewallThrowsWrappedRequestRejectedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(fw.getFirewalledRequest(this.request)).willReturn(new MockFirewalledRequest(this.request));",
+        "line": 283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestRejectedHandlerIsCalledIfFirewallThrowsWrappedRequestRejectedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "variableName": "moduleDeployer",
+    "variableType": "ModuleDeployer",
+    "mockedClass": "ModuleDeployer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\ReadyTest.java",
+      "className": "ReadyTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ModuleDeployer moduleDeployer;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "moduleDeployer = Mockito.mock(ModuleDeployer.class);",
+        "line": 58,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(moduleDeployer.isStarted()).thenReturn(true);",
+        "line": 66,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(moduleDeployer.isStarted()).thenReturn(false);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  },
+  {
+    "variableName": "moduleDeployer",
+    "variableType": "ModuleDeployer",
+    "mockedClass": "ModuleDeployer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\StartupTest.java",
+      "className": "StartupTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ModuleDeployer moduleDeployer;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "moduleDeployer = Mockito.mock(ModuleDeployer.class);",
+        "line": 52,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(moduleDeployer.isRunning()).thenReturn(true);",
+        "line": 58,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(moduleDeployer.isRunning()).thenReturn(false);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  }
+]

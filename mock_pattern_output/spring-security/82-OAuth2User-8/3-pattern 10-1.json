@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "user",
+    "variableType": "OAuth2User",
+    "mockedClass": "OAuth2User",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\OAuth2LoginAuthenticationFilterTests.java",
+      "className": "OAuth2LoginAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2User user = mock(OAuth2User.class);",
+        "line": 493,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(user.getName()).willReturn(this.principalName1);",
+        "line": 494,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setUpAuthenticationResult",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

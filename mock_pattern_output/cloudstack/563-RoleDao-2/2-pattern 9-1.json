@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "roleDaoMock",
+    "variableType": "RoleDao",
+    "mockedClass": "RoleDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.acl",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\acl\\RoleManagerImplTest.java",
+      "className": "RoleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate RoleDao roleDaoMock;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(roleDaoMock, Mockito.times(0)).findAllByRoleType(Mockito.any(RoleType.class));",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findRolesByTypeTestAdminRoleNonRootAdminUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(roleDaoMock).listAll();",
+        "line": 286,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listRolesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

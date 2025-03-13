@@ -1,0 +1,176 @@
+[
+  {
+    "variableName": "authorizedClientRepository",
+    "variableType": "ServerOAuth2AuthorizedClientRepository",
+    "mockedClass": "ServerOAuth2AuthorizedClientRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.result.method.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\result\\method\\annotation\\OAuth2AuthorizedClientArgumentResolverTests.java",
+      "className": "OAuth2AuthorizedClientArgumentResolverTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerOAuth2AuthorizedClientRepository authorizedClientRepository;",
+        "line": 68,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(anyString(), any(), any())).willReturn(Mono.just(this.authorizedClient));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenRegistrationIdEmptyAndOAuth2AuthenticationThenResolves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(anyString(), any(), any())).willReturn(Mono.just(this.authorizedClient));",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenParameterTypeOAuth2AuthorizedClientAndCurrentAuthenticationNullThenResolves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(anyString(), any(), any())).willReturn(Mono.just(this.authorizedClient));",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenOAuth2AuthorizedClientFoundThenResolves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(anyString(), any(), any())).willReturn(Mono.just(this.authorizedClient));",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenOAuth2AuthorizedClientFoundThenResolves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(anyString(), any(), any())).willReturn(Mono.empty());",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenOAuth2AuthorizedClientNotFoundThenThrowClientAuthorizationRequiredException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "authorizedClientRepository",
+    "variableType": "ServerOAuth2AuthorizedClientRepository",
+    "mockedClass": "ServerOAuth2AuthorizedClientRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.result.method.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\result\\method\\annotation\\OAuth2AuthorizedClientArgumentResolverTests.java",
+      "className": "OAuth2AuthorizedClientArgumentResolverTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerOAuth2AuthorizedClientRepository authorizedClientRepository;",
+        "line": 68,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(anyString(), any(), any())).willReturn(Mono.just(this.authorizedClient));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenRegistrationIdEmptyAndOAuth2AuthenticationThenResolves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(anyString(), any(), any())).willReturn(Mono.just(this.authorizedClient));",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenParameterTypeOAuth2AuthorizedClientAndCurrentAuthenticationNullThenResolves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(anyString(), any(), any())).willReturn(Mono.just(this.authorizedClient));",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenOAuth2AuthorizedClientFoundThenResolves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(anyString(), any(), any())).willReturn(Mono.just(this.authorizedClient));",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenOAuth2AuthorizedClientFoundThenResolves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(anyString(), any(), any())).willReturn(Mono.empty());",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveArgumentWhenOAuth2AuthorizedClientNotFoundThenThrowClientAuthorizationRequiredException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

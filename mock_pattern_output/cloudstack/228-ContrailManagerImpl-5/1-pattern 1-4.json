@@ -1,0 +1,230 @@
+[
+  {
+    "variableName": "contrailMgr",
+    "variableType": "ContrailManagerImpl",
+    "mockedClass": "ContrailManagerImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.contrail.model",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\juniper-contrail\\src\\test\\java\\org\\apache\\cloudstack\\network\\contrail\\model\\InstanceIpModelTest.java",
+      "className": "InstanceIpModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ContrailManagerImpl contrailMgr = mock(ContrailManagerImpl.class);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateInstanceIp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(contrailMgr.getCanonicalName(network)).thenReturn(\"testnetwork\");",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateInstanceIp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(contrailMgr.getProjectId(network.getDomainId(), network.getAccountId())).thenReturn(\"testProjectId\");",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateInstanceIp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(contrailMgr.getVifNameByVmName(anyString(), anyInt())).thenReturn(\"testVM1-100\");",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateInstanceIp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "contrailMgr",
+    "variableType": "ContrailManagerImpl",
+    "mockedClass": "ContrailManagerImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.contrail.model",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\juniper-contrail\\src\\test\\java\\org\\apache\\cloudstack\\network\\contrail\\model\\VirtualMachineModelTest.java",
+      "className": "VirtualMachineModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ContrailManagerImpl contrailMgr = mock(ContrailManagerImpl.class);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualMachine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(contrailMgr.getCanonicalName(network)).thenReturn(\"testnetwork\");",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualMachine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(contrailMgr.getProjectId(network.getDomainId(), network.getAccountId())).thenReturn(\"testProjectId\");",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualMachine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "contrailMgr",
+    "variableType": "ContrailManagerImpl",
+    "mockedClass": "ContrailManagerImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.contrail.model",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\juniper-contrail\\src\\test\\java\\org\\apache\\cloudstack\\network\\contrail\\model\\VirtualNetworkModelTest.java",
+      "className": "VirtualNetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ContrailManagerImpl contrailMgr = mock(ContrailManagerImpl.class);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(contrailMgr.getCanonicalName(network)).thenReturn(\"testnetwork\");",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(contrailMgr.getProjectId(network.getDomainId(), network.getAccountId())).thenReturn(\"testProjectId\");",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "contrailMgr",
+    "variableType": "ContrailManagerImpl",
+    "mockedClass": "ContrailManagerImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.contrail.model",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\juniper-contrail\\src\\test\\java\\org\\apache\\cloudstack\\network\\contrail\\model\\VMInterfaceModelTest.java",
+      "className": "VMInterfaceModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ContrailManagerImpl contrailMgr = mock(ContrailManagerImpl.class);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVMInterface",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(contrailMgr.getCanonicalName(network)).thenReturn(\"testnetwork\");",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVMInterface",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(contrailMgr.getProjectId(network.getDomainId(), network.getAccountId())).thenReturn(\"testProjectId\");",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVMInterface",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(contrailMgr.getVifNameByVmName(anyString(), anyInt())).thenReturn(\"testVM1-100\");",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVMInterface",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

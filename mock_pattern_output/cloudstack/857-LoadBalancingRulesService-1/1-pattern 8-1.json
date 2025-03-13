@@ -1,0 +1,81 @@
+[
+  {
+    "variableName": "loadBalancingRulesService",
+    "variableType": "LoadBalancingRulesService",
+    "mockedClass": "LoadBalancingRulesService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLoadBalancingRulesService loadBalancingRulesService;",
+        "line": 254,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancingRulesService.assignToLoadBalancer(anyLong(), any(), any(), eq(true))).thenReturn(true);",
+        "line": 1527,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleUp",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(loadBalancingRulesService).assignToLoadBalancer(anyLong(), any(), any(), eq(true));",
+        "line": 1532,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleUp",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadBalancingRulesService.removeFromLoadBalancer(anyLong(), any(), any(), eq(true))).thenReturn(true);",
+        "line": 1554,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleDown",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(loadBalancingRulesService).removeFromLoadBalancer(anyLong(), any(), any(), eq(true));",
+        "line": 1562,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleDown",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

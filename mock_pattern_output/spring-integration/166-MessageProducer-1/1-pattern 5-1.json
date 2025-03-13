@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "producer",
+    "variableType": "MessageProducer",
+    "mockedClass": "MessageProducer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.ws.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ws\\src\\test\\java\\org\\springframework\\integration\\ws\\config\\UriVariableTests.java",
+      "className": "UriVariableTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageProducer producer = Mockito.mock(MessageProducer.class);",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt2720JmsUriVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(producer).setDeliveryMode(DeliveryMode.NON_PERSISTENT);",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt2720JmsUriVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(producer).setPriority(5);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt2720JmsUriVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

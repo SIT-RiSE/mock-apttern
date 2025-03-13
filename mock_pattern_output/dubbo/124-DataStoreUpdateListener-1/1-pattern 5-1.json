@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "listener",
+    "variableType": "DataStoreUpdateListener",
+    "mockedClass": "DataStoreUpdateListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.store.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\store\\support\\SimpleDataStoreTest.java",
+      "className": "SimpleDataStoreTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStoreUpdateListener listener = Mockito.mock(DataStoreUpdateListener.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNotify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(listener).onUpdate(componentNameCaptor.capture(), keyCaptor.capture(), valueCaptor.capture());",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNotify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(listener, Mockito.times(2)).onUpdate(componentNameCaptor.capture(), keyCaptor.capture(), valueCaptor.capture());",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNotify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(listener, Mockito.times(0)).onUpdate(\"name2\", \"key\", null);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNotify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

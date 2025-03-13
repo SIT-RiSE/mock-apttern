@@ -1,0 +1,758 @@
+[
+  {
+    "variableName": "requestMatcher",
+    "variableType": "RequestMatcher",
+    "mockedClass": "RequestMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\AuthenticationFilterTests.java",
+      "className": "AuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate RequestMatcher requestMatcher;",
+        "line": 80,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(any())).willReturn(false);",
+        "line": 259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenNotMatchAndConvertAndAuthenticationSuccessThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "matcher",
+    "variableType": "RequestMatcher",
+    "mockedClass": "RequestMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\logout\\DelegatingLogoutSuccessHandlerTests.java",
+      "className": "DelegatingLogoutSuccessHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nRequestMatcher matcher;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(this.request)).willReturn(true);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessFirstMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "requestMatcher",
+    "variableType": "RequestMatcher",
+    "mockedClass": "RequestMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.csrf",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\csrf\\CsrfFilterTests.java",
+      "className": "CsrfFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate RequestMatcher requestMatcher;",
+        "line": 62,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(false);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterDoesNotSaveCsrfTokenUntilAccessed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterAccessDeniedNoTokenPresent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterAccessDeniedIncorrectTokenPresent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterAccessDeniedIncorrectTokenPresentHeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterAccessDeniedIncorrectTokenPresentHeaderPreferredOverParameter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(false);",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterNotCsrfRequestExistingToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(false);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterNotCsrfRequestGenerateToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterIsCsrfRequestExistingTokenHeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterIsCsrfRequestExistingTokenHeaderPreferredOverInvalidParam",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterIsCsrfRequestExistingToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterIsCsrfRequestGenerateToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 344,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterDefaultAccessDenied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 376,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenTokenIsNullThenNoNullPointer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(false);",
+        "line": 399,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenXorCsrfTokenRequestAttributeHandlerAndValidTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 415,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenXorCsrfTokenRequestAttributeHandlerAndValidTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.requestMatcher.matches(this.request)).willReturn(true);",
+        "line": 423,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenXorCsrfTokenRequestAttributeHandlerAndRawTokenThenAccessDeniedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "matcher",
+    "variableType": "RequestMatcher",
+    "mockedClass": "RequestMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.header.writers",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\header\\writers\\DelegatingRequestMatcherHeaderWriterTests.java",
+      "className": "DelegatingRequestMatcherHeaderWriterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate RequestMatcher matcher;",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(this.request)).willReturn(true);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeHeadersOnMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(this.request)).willReturn(false);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeHeadersOnNoMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "RequestMatcher",
+    "mockedClass": "RequestMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\util\\matcher\\AndRequestMatcherTests.java",
+      "className": "AndRequestMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate RequestMatcher delegate;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(true);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesSingleTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(true);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(false);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesSingleFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(false);",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiBothFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(true);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiSingleFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matcher(this.request)).willReturn(MatchResult.match(Map.of(\"param\", \"value\")));",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matcher(this.request)).willReturn(MatchResult.match());",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matcher(this.request)).willReturn(MatchResult.match(Map.of(\"param\", \"value\")));",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matcher(this.request)).willReturn(MatchResult.match(Map.of(\"otherparam\", \"value\")));",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "delegate2",
+    "variableType": "RequestMatcher",
+    "mockedClass": "RequestMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\util\\matcher\\AndRequestMatcherTests.java",
+      "className": "AndRequestMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate RequestMatcher delegate2;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate2.matches(this.request)).willReturn(true);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate2.matches(this.request)).willReturn(false);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiSingleFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate2.matcher(this.request)).willReturn(MatchResult.match(Map.of(\"param\", \"othervalue\")));",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate2.matcher(this.request)).willReturn(MatchResult.match(Map.of(\"param\", \"value\")));",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate2.matcher(this.request)).willReturn(MatchResult.notMatch());",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate2.matcher(this.request)).willReturn(MatchResult.match(Map.of(\"param\", \"value\")));",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "RequestMatcher",
+    "mockedClass": "RequestMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\util\\matcher\\NegatedRequestMatcherTests.java",
+      "className": "NegatedRequestMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate RequestMatcher delegate;",
+        "line": 36,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(false);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesDelegateFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(true);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesDelegateTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "RequestMatcher",
+    "mockedClass": "RequestMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\util\\matcher\\OrRequestMatcherTests.java",
+      "className": "OrRequestMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate RequestMatcher delegate;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(true);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesSingleTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(true);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(false);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesSingleFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(false);",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiBothFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matches(this.request)).willReturn(true);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesMultiSingleFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matcher(this.request)).willReturn(MatchResult.match(Map.of(\"param\", \"value\")));",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesFirstMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matcher(this.request)).willReturn(MatchResult.match());",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesFirstMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.matcher(this.request)).willReturn(MatchResult.notMatch());",
+        "line": 145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matcherWhenMatchersHavePlaceholdersThenPropagatesFirstMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

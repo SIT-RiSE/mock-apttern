@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "parametersConsumer",
+    "variableType": "Consumer<LogoutResponseParameters>",
+    "mockedClass": "Consumer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\OpenSaml4LogoutResponseResolverTests.java",
+      "className": "OpenSaml4LogoutResponseResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Consumer<LogoutResponseParameters> parametersConsumer = mock(Consumer.class);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomParametersConsumerThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(parametersConsumer).accept(any());",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomParametersConsumerThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "parametersConsumer",
+    "variableType": "Consumer<LogoutResponseParameters>",
+    "mockedClass": "Consumer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml5Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\OpenSaml5LogoutResponseResolverTests.java",
+      "className": "OpenSaml5LogoutResponseResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Consumer<LogoutResponseParameters> parametersConsumer = mock(Consumer.class);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomParametersConsumerThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(parametersConsumer).accept(any());",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomParametersConsumerThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

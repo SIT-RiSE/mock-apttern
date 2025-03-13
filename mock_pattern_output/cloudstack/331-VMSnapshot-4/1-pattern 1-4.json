@@ -1,0 +1,170 @@
+[
+  {
+    "variableName": "vmSnapshot",
+    "variableType": "VMSnapshot",
+    "mockedClass": "VMSnapshot",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMSnapshot vmSnapshot = Mockito.mock(VMSnapshot.class);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateDiskSnapshotBasedOnStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmSnapshot.getUuid()).thenReturn(vmUuid);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateDiskSnapshotBasedOnStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vmSnapshot",
+    "variableType": "VMSnapshot",
+    "mockedClass": "VMSnapshot",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMSnapshot vmSnapshot = Mockito.mock(VMSnapshot.class);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertDiskSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmSnapshot.getUuid()).thenReturn(vmUuid);",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertDiskSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vmSnapshot",
+    "variableType": "VMSnapshot",
+    "mockedClass": "VMSnapshot",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMSnapshot vmSnapshot = Mockito.mock(VMSnapshot.class);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDiskSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmSnapshot.getUuid()).thenReturn(vmUuid);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDiskSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vmSnapshot",
+    "variableType": "VMSnapshot",
+    "mockedClass": "VMSnapshot",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.event",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\event\\ActionEventUtilsTest.java",
+      "className": "ActionEventUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMSnapshot vmSnapshot = Mockito.mock(VMSnapshot.class);",
+        "line": 395,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVmSnapshotEventResource",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmSnapshot.getUuid()).thenReturn(vmSnapshotResourceUuid);",
+        "line": 396,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVmSnapshotEventResource",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmSnapshot.getVmId()).thenReturn(resourceId);",
+        "line": 397,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVmSnapshotEventResource",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

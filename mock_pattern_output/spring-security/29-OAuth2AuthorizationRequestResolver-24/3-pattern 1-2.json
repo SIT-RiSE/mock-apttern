@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "resolver",
+    "variableType": "OAuth2AuthorizationRequestResolver",
+    "mockedClass": "OAuth2AuthorizationRequestResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\OAuth2AuthorizationRequestRedirectFilterTests.java",
+      "className": "OAuth2AuthorizationRequestRedirectFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2AuthorizationRequestResolver resolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenAuthorizationRequestAndAdditionalParametersProvidedThenAuthorizationRequestIncludesAdditionalParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(resolver.resolve(any())).willReturn(result);",
+        "line": 282,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenAuthorizationRequestAndAdditionalParametersProvidedThenAuthorizationRequestIncludesAdditionalParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "resolver",
+    "variableType": "OAuth2AuthorizationRequestResolver",
+    "mockedClass": "OAuth2AuthorizationRequestResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\OAuth2AuthorizationRequestRedirectFilterTests.java",
+      "className": "OAuth2AuthorizationRequestRedirectFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2AuthorizationRequestResolver resolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenAuthorizationRequestAndCustomAuthorizationRequestUriSetThenCustomAuthorizationRequestUriUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(resolver.resolve(any())).willReturn(result);",
+        "line": 323,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenAuthorizationRequestAndCustomAuthorizationRequestUriSetThenCustomAuthorizationRequestUriUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "loggerMock",
+    "variableType": "ErrorTypeAwareLogger",
+    "mockedClass": "ErrorTypeAwareLogger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-api\\src\\test\\java\\org\\apache\\dubbo\\config\\utils\\ConfigValidationUtilsTest.java",
+      "className": "ConfigValidationUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ErrorTypeAwareLogger loggerMock = Mockito.mock(ErrorTypeAwareLogger.class);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckQosInApplicationConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock, never()).warn(any(), any());",
+        "line": 145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckQosInApplicationConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(loggerMock).warn(eq(COMMON_CLASS_NOT_FOUND), eq(\"\"), eq(\"\"), eq(\"No QosProtocolWrapper class was found. Please check the dependency of dubbo-qos whether was imported correctly.\"), any());",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckQosInApplicationConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

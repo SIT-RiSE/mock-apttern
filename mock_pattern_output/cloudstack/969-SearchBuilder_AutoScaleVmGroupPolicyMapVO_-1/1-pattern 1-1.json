@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "searchBuilderMock1",
+    "variableType": "SearchBuilder<AutoScaleVmGroupPolicyMapVO>",
+    "mockedClass": "SearchBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SearchBuilder<AutoScaleVmGroupPolicyMapVO> searchBuilderMock1 = Mockito.mock(SearchBuilder.class);",
+        "line": 629,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateConditionWithPolicies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(searchBuilderMock1.entity()).thenReturn(autoScaleVmGroupPolicyMapVOMock);",
+        "line": 631,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateConditionWithPolicies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

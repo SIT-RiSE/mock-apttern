@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "replier",
+    "variableType": "Replier",
+    "mockedClass": "Replier",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.exchange.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-api\\src\\test\\java\\org\\apache\\dubbo\\remoting\\exchange\\support\\ExchangeHandlerDispatcherTest.java",
+      "className": "ExchangeHandlerDispatcherTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Replier replier = Mockito.mock(Replier.class);",
+        "line": 36,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(replier, Mockito.times(1)).reply(exchangeChannel, obj);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

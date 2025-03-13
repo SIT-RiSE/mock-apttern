@@ -1,0 +1,575 @@
+[
+  {
+    "variableName": "beanFactory",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel.registry",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\registry\\HeaderChannelRegistryTests.java",
+      "className": "HeaderChannelRegistryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory beanFactory = mock(BeanFactory.class);",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBFCRWithRegistry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(IntegrationContextUtils.INTEGRATION_HEADER_CHANNEL_REGISTRY_BEAN_NAME, HeaderChannelRegistry.class)).thenReturn(mock(HeaderChannelRegistry.class));",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBFCRWithRegistry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "bf",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\ConnectionFactoryTests.java",
+      "className": "ConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory bf = mock(BeanFactory.class);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testObtainConnectionIds",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(bf.containsBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME)).thenReturn(true);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testObtainConnectionIds",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(bf.getBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME, TaskScheduler.class)).thenReturn(scheduler);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testObtainConnectionIds",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mock",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\TcpConnectionEventListenerTests.java",
+      "className": "TcpConnectionEventListenerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory mock = mock(BeanFactory.class);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mock.getBean(AbstractApplicationContext.APPLICATION_EVENT_MULTICASTER_BEAN_NAME, ApplicationEventMulticaster.class)).willReturn(mock(ApplicationEventMulticaster.class));",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mock",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\TcpConnectionEventListenerTests.java",
+      "className": "TcpConnectionEventListenerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory mock = mock(BeanFactory.class);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mock.getBean(AbstractApplicationContext.APPLICATION_EVENT_MULTICASTER_BEAN_NAME, ApplicationEventMulticaster.class)).willReturn(mock(ApplicationEventMulticaster.class));",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "beanFactory",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\OutboundGatewayConnectionTests.java",
+      "className": "OutboundGatewayConnectionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory beanFactory = mock(BeanFactory.class);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestBrokenConnection",
+          "methodAnnotations": [
+            "@Test",
+            "@Disabled"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.containsBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME)).thenReturn(true);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestBrokenConnection",
+          "methodAnnotations": [
+            "@Test",
+            "@Disabled"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME, TaskScheduler.class)).thenReturn(scheduler);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestBrokenConnection",
+          "methodAnnotations": [
+            "@Test",
+            "@Disabled"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "beanFactory",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\OutboundGatewayFunctionTests.java",
+      "className": "OutboundGatewayFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory beanFactory = mock(BeanFactory.class);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.containsBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME)).thenReturn(true);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME, TaskScheduler.class)).thenReturn(scheduler);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "beanFactory",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\OutboundGatewayFunctionTests.java",
+      "className": "OutboundGatewayFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory beanFactory = mock(BeanFactory.class);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestNoCorrelation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.containsBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME)).thenReturn(true);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestNoCorrelation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME, TaskScheduler.class)).thenReturn(scheduler);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestNoCorrelation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "beanFactory",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\OutboundGatewayFunctionTests.java",
+      "className": "OutboundGatewayFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory beanFactory = mock(BeanFactory.class);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.containsBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME)).thenReturn(true);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME, TaskScheduler.class)).thenReturn(scheduler);",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "beanFactory",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\OutboundGatewayFunctionTests.java",
+      "className": "OutboundGatewayFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory beanFactory = mock(BeanFactory.class);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestNameNoCorrelation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.containsBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME)).thenReturn(true);",
+        "line": 216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestNameNoCorrelation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME, TaskScheduler.class)).thenReturn(scheduler);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithDestNameNoCorrelation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "beanFactory",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\OutboundGatewayFunctionTests.java",
+      "className": "OutboundGatewayFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory beanFactory = mock(BeanFactory.class);",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithTemporary",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.containsBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME)).thenReturn(true);",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithTemporary",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME, TaskScheduler.class)).thenReturn(scheduler);",
+        "line": 267,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithTemporary",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "beanFactory",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\OutboundGatewayFunctionTests.java",
+      "className": "OutboundGatewayFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory beanFactory = mock(BeanFactory.class);",
+        "line": 309,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithTemporaryNoCorrelation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.containsBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME)).thenReturn(true);",
+        "line": 310,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithTemporaryNoCorrelation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME, TaskScheduler.class)).thenReturn(scheduler);",
+        "line": 313,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testContainerWithTemporaryNoCorrelation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "beanFactory",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\OutboundGatewayFunctionTests.java",
+      "className": "OutboundGatewayFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory beanFactory = mock(BeanFactory.class);",
+        "line": 356,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLazyContainerWithDest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.containsBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME)).thenReturn(true);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLazyContainerWithDest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(IntegrationContextUtils.TASK_SCHEDULER_BEAN_NAME, TaskScheduler.class)).thenReturn(scheduler);",
+        "line": 360,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLazyContainerWithDest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

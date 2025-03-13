@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "customAuthenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\FormLoginTests.java",
+      "className": "FormLoginTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveAuthenticationManager customAuthenticationManager = mock(ReactiveAuthenticationManager.class);",
+        "line": 271,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "customAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customAuthenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"user\", \"password\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 274,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "customAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveAuthenticationManager authenticationManager = mock(ReactiveAuthenticationManager.class);",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWhenCustomAuthenticationFailureHandlerThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authenticationManager.authenticate(any())).willReturn(Mono.error(() -> new BadCredentialsException(\"bad\")));",
+        "line": 234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWhenCustomAuthenticationFailureHandlerThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "customAuthenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveAuthenticationManager customAuthenticationManager = mock(ReactiveAuthenticationManager.class);",
+        "line": 428,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithCustomAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customAuthenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 429,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWithCustomAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

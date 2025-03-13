@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "exception",
+    "variableType": "Exception",
+    "mockedClass": "Exception",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.transport.netty4",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-netty4\\src\\test\\java\\org\\apache\\dubbo\\remoting\\transport\\netty4\\NettyChannelTest.java",
+      "className": "NettyChannelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Exception exception = Mockito.mock(Exception.class);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(exception.getMessage()).thenReturn(\"future cause\");",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

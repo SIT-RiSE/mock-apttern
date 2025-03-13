@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "source",
+    "variableType": "MessageSource<String>",
+    "mockedClass": "MessageSource<String>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\endpoint\\PollingLifecycleTests.java",
+      "className": "PollingLifecycleTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "//Has to be an explicit implementation - Mockito cannot mock/spy lambdas\r\nMessageSource<String> source = spy(new MessageSource<String>() {\r\n\r\n    @Override\r\n    public Message<String> receive() {\r\n        return new GenericMessage<>(\"hello\");\r\n    }\r\n});",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ensurePollerTaskStopsForAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(source, times(1)).receive();",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ensurePollerTaskStopsForAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

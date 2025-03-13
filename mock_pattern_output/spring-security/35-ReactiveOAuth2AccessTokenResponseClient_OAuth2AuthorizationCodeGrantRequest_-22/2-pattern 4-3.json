@@ -1,0 +1,251 @@
+[
+  {
+    "variableName": "accessTokenResponseClient",
+    "variableType": "ReactiveOAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest>",
+    "mockedClass": "ReactiveOAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\authentication\\OAuth2AuthorizationCodeReactiveAuthenticationManagerTests.java",
+      "className": "OAuth2AuthorizationCodeReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveOAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest> accessTokenResponseClient;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(this.tokenResponse.build()));",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenValidThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.empty());",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenEmptyThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.error(() -> new OAuth2AuthorizationException(new OAuth2Error(\"error\"))));",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenOAuth2AuthorizationExceptionThenOAuth2AuthorizationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "accessTokenResponseClient",
+    "variableType": "ReactiveOAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest>",
+    "mockedClass": "ReactiveOAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\authentication\\OAuth2LoginReactiveAuthenticationManagerTests.java",
+      "className": "OAuth2LoginReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveOAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest> accessTokenResponseClient;",
+        "line": 72,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationWhenOAuth2UserNotFoundThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationWhenOAuth2UserFoundThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenTokenSuccessResponseThenAdditionalParametersAddedToUserRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAuthoritiesMapperSetThenReturnMappedAuthorities",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "accessTokenResponseClient",
+    "variableType": "ReactiveOAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest>",
+    "mockedClass": "ReactiveOAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\authentication\\OidcAuthorizationCodeReactiveAuthenticationManagerTests.java",
+      "className": "OidcAuthorizationCodeReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveOAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest> accessTokenResponseClient;",
+        "line": 87,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenIdTokenValidationErrorThenOAuth2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 208,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenIdTokenInvalidNonceThenOAuth2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationWhenOAuth2UserNotFoundThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationWhenOAuth2UserFoundThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 287,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationWhenRefreshTokenThenRefreshTokenInAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 323,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenTokenSuccessResponseThenAdditionalParametersAddedToUserRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.accessTokenResponseClient.getTokenResponse(any())).willReturn(Mono.just(accessTokenResponse));",
+        "line": 351,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAuthoritiesMapperSetThenReturnMappedAuthorities",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

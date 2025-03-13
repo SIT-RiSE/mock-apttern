@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "accountService",
+    "variableType": "AccountService",
+    "mockedClass": "AccountService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.admin.account",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\admin\\account\\CreateAccountCmdTest.java",
+      "className": "CreateAccountCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AccountService accountService;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(accountService, Mockito.times(1)).createUserAccount(createAccountCmd);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteWithNotBlankPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(accountService, Mockito.never()).createUserAccount(createAccountCmd);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteWithNullPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(accountService, Mockito.never()).createUserAccount(createAccountCmd);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteWithEmptyPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "accountService",
+    "variableType": "AccountService",
+    "mockedClass": "AccountService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.admin.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\admin\\user\\CreateUserCmdTest.java",
+      "className": "CreateUserCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AccountService accountService;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(accountService, Mockito.times(1)).createUser(null, \"Test\", null, null, null, null, null, null, null);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteWithNotBlankPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(accountService, Mockito.never()).createUser(null, null, null, null, null, null, null, null, null);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteWithNullPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(accountService, Mockito.never()).createUser(null, null, null, null, null, null, null, null, null);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteWithEmptyPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

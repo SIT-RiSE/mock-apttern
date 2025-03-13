@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "writeSelector",
+    "variableType": "ColumnValueSelector",
+    "mockedClass": "ColumnValueSelector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.frame.field",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\frame\\field\\DoubleArrayFieldReaderTest.java",
+      "className": "DoubleArrayFieldReaderTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\npublic ColumnValueSelector writeSelector;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(writeSelector.getObject()).thenReturn(value);",
+        "line": 223,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "writeToMemory",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  },
+  {
+    "variableName": "writeSelector",
+    "variableType": "ColumnValueSelector",
+    "mockedClass": "ColumnValueSelector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.frame.field",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\frame\\field\\FloatArrayFieldReaderTest.java",
+      "className": "FloatArrayFieldReaderTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\npublic ColumnValueSelector writeSelector;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(writeSelector.getObject()).thenReturn(value);",
+        "line": 213,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "writeToMemory",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  },
+  {
+    "variableName": "writeSelector",
+    "variableType": "ColumnValueSelector",
+    "mockedClass": "ColumnValueSelector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.frame.field",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\frame\\field\\LongArrayFieldReaderTest.java",
+      "className": "LongArrayFieldReaderTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\npublic ColumnValueSelector writeSelector;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(writeSelector.getObject()).thenReturn(value);",
+        "line": 189,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "writeToMemory",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  }
+]

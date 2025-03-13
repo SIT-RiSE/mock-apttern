@@ -1,0 +1,51 @@
+[
+  {
+    "variableName": "guestGuru",
+    "variableType": "GuestNetworkGuru",
+    "mockedClass": "GuestNetworkGuru",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "GuestNetworkGuru guestGuru = mock(GuestNetworkGuru.class);",
+        "line": 96,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(guestGuru.implement(network, offering, dest, res)).thenReturn(network);",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(guestGuru.implement(network, offering, dest, res)).thenReturn(network);",
+        "line": 328,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "remotingServer",
+    "variableType": "RemotingServer",
+    "mockedClass": "RemotingServer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.protocol.dubbo.status",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-dubbo\\src\\test\\java\\org\\apache\\dubbo\\rpc\\protocol\\dubbo\\status\\ServerStatusCheckerTest.java",
+      "className": "ServerStatusCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RemotingServer remotingServer = Mockito.mock(RemotingServer.class);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(remotingServer.isBound()).thenReturn(true);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(remotingServer.getLocalAddress()).thenReturn(InetSocketAddress.createUnresolved(\"127.0.0.1\", 9999));",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(remotingServer.getChannels()).thenReturn(Arrays.asList(new MockChannel()));",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(remotingServer.isBound()).thenReturn(false);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

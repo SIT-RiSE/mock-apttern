@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "trasformFunction",
+    "variableType": "Function<String,String>",
+    "mockedClass": "Function<String,String>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.security",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\security\\ForbiddenExceptionTest.java",
+      "className": "ForbiddenExceptionTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Function<String, String> trasformFunction;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(trasformFunction.apply(ArgumentMatchers.eq(ERROR_MESSAGE_ORIGINAL))).thenReturn(null);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSanitizeWithTransformFunctionReturningNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(trasformFunction).apply(ArgumentMatchers.eq(ERROR_MESSAGE_ORIGINAL));",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSanitizeWithTransformFunctionReturningNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(trasformFunction);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSanitizeWithTransformFunctionReturningNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(trasformFunction.apply(ArgumentMatchers.eq(ERROR_MESSAGE_ORIGINAL))).thenReturn(ERROR_MESSAGE_TRANSFORMED);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSanitizeWithTransformFunctionReturningNewString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(trasformFunction).apply(ArgumentMatchers.eq(ERROR_MESSAGE_ORIGINAL));",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSanitizeWithTransformFunctionReturningNewString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(trasformFunction);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSanitizeWithTransformFunctionReturningNewString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

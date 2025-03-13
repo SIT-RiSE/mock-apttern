@@ -1,0 +1,51 @@
+[
+  {
+    "variableName": "sc",
+    "variableType": "ServletConfig",
+    "mockedClass": "ServletConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.protocol.rest.integration.swagger",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-rest\\src\\test\\java\\org\\apache\\dubbo\\rpc\\protocol\\rest\\integration\\swagger\\DubboSwaggerApiListingResourceTest.java",
+      "className": "DubboSwaggerApiListingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ServletConfig sc;",
+        "line": 39,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "sc = mock(ServletConfig.class);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sc.getServletContext()).thenReturn(mock(ServletContext.class));",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 23
+  }
+]

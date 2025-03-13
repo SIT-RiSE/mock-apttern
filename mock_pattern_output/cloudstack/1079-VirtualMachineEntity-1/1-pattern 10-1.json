@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "vmEntity",
+    "variableType": "VirtualMachineEntity",
+    "mockedClass": "VirtualMachineEntity",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplVolumeDeleteEventTest.java",
+      "className": "AccountManagerImplVolumeDeleteEventTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineEntity vmEntity = mock(VirtualMachineEntity.class);",
+        "line": 125,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "defineMocksBehavior",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmEntity.destroy(nullable(Boolean.class))).thenReturn(true);",
+        "line": 128,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "defineMocksBehavior",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

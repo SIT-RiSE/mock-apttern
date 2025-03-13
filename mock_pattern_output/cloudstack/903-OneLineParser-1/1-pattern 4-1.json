@@ -1,0 +1,66 @@
+[
+  {
+    "variableName": "statsParserMock",
+    "variableType": "OneLineParser",
+    "mockedClass": "OneLineParser",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "final OneLineParser statsParserMock = Mockito.mock(OneLineParser.class);",
+        "line": 275,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(statsParserMock.getLine()).thenReturn(\"result\");",
+        "line": 6048,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHaproxyStatsMethod",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(statsParserMock.getLine()).thenReturn(\"result\");",
+        "line": 6102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod1",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(statsParserMock.getLine()).thenReturn(\"result\");",
+        "line": 6124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod2",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

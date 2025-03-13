@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "authenticationManagerResolver",
+    "variableType": "ReactiveAuthenticationManagerResolver<ServerWebExchange>",
+    "mockedClass": "ReactiveAuthenticationManagerResolver<ServerWebExchange>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\AuthenticationWebFilterTests.java",
+      "className": "AuthenticationWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveAuthenticationManagerResolver<ServerWebExchange> authenticationManagerResolver;",
+        "line": 70,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationManagerResolver);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthenticationManagerResolverDefaultsAndNoAuthenticationThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManagerResolver.resolve(any())).willReturn(Mono.just(this.authenticationManager));",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthenticationManagerResolverDefaultsAndAuthenticationSuccessThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManagerResolver.resolve(any())).willReturn(Mono.just(this.authenticationManager));",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthenticationManagerResolverDefaultsAndAuthenticationFailThenUnauthorized",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

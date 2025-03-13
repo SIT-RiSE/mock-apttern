@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "conversionService",
+    "variableType": "ConversionService",
+    "mockedClass": "ConversionService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.jdbc",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\jdbc\\AclClassIdUtilsTests.java",
+      "className": "AclClassIdUtilsTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ConversionService conversionService;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.conversionService.canConvert(String.class, Long.class)).willReturn(false);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldReturnLongEvenIfCustomConversionServiceDoesNotSupportLongConversion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

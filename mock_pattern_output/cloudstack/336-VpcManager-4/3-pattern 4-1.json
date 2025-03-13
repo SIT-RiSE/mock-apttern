@@ -1,0 +1,51 @@
+[
+  {
+    "variableName": "vpcMgr",
+    "variableType": "VpcManager",
+    "mockedClass": "VpcManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.router.deployment",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\network\\router\\deployment\\VpcRouterDeploymentDefinitionTest.java",
+      "className": "VpcRouterDeploymentDefinitionTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprotected VpcManager vpcMgr;",
+        "line": 74,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Prepare\r\nwhen(vpcMgr.isSrcNatIpRequired(mockVpc.getVpcOfferingId())).thenReturn(isPublicNw);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "driveTestPrepareDeployment",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vpcMgr.assignSourceNatIpAddressToVpc(mockOwner, mockVpc)).thenReturn(publicIp);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindSourceNatIP",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

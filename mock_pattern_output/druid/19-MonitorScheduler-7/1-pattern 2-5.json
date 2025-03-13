@@ -1,0 +1,137 @@
+[
+  {
+    "variableName": "scheduler",
+    "variableType": "MonitorScheduler",
+    "mockedClass": "MonitorScheduler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\ClockDriftSafeMonitorSchedulerTest.java",
+      "className": "ClockDriftSafeMonitorSchedulerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final MonitorScheduler scheduler = new ClockDriftSafeMonitorScheduler(Mockito.mock(DruidMonitorSchedulerConfig.class), Mockito.mock(ServiceEmitter.class), ImmutableList.of(monitor1, monitor2), CronScheduler.newBuilder(Duration.ofSeconds(1L)).setThreadName(\"monitor-scheduler-test\").build(), executor);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMonitor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "scheduler",
+    "variableType": "MonitorScheduler",
+    "mockedClass": "MonitorScheduler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\ClockDriftSafeMonitorSchedulerTest.java",
+      "className": "ClockDriftSafeMonitorSchedulerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final MonitorScheduler scheduler = new ClockDriftSafeMonitorScheduler(config, Mockito.mock(ServiceEmitter.class), ImmutableList.of(monitor), cronScheduler, executor);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_RepeatScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "scheduler",
+    "variableType": "MonitorScheduler",
+    "mockedClass": "MonitorScheduler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\ClockDriftSafeMonitorSchedulerTest.java",
+      "className": "ClockDriftSafeMonitorSchedulerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final MonitorScheduler scheduler = new ClockDriftSafeMonitorScheduler(config, Mockito.mock(ServiceEmitter.class), ImmutableList.of(monitor), cronScheduler, executor);",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_RepeatAndStopScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "scheduler",
+    "variableType": "MonitorScheduler",
+    "mockedClass": "MonitorScheduler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\ClockDriftSafeMonitorSchedulerTest.java",
+      "className": "ClockDriftSafeMonitorSchedulerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final MonitorScheduler scheduler = new ClockDriftSafeMonitorScheduler(config, Mockito.mock(ServiceEmitter.class), ImmutableList.of(monitor), cronScheduler, executor);",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileMonitoring",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "scheduler",
+    "variableType": "MonitorScheduler",
+    "mockedClass": "MonitorScheduler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\ClockDriftSafeMonitorSchedulerTest.java",
+      "className": "ClockDriftSafeMonitorSchedulerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final MonitorScheduler scheduler = new ClockDriftSafeMonitorScheduler(config, Mockito.mock(ServiceEmitter.class), ImmutableList.of(monitor), cronScheduler, executor);",
+        "line": 339,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

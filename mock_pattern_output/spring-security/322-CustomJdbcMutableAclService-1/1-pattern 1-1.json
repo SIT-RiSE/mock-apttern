@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "customJdbcMutableAclService",
+    "variableType": "CustomJdbcMutableAclService",
+    "mockedClass": "CustomJdbcMutableAclService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.jdbc",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\jdbc\\JdbcMutableAclServiceTests.java",
+      "className": "JdbcMutableAclServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CustomJdbcMutableAclService customJdbcMutableAclService = spy(new CustomJdbcMutableAclService(this.dataSource, this.lookupStrategy, this.aclCache));",
+        "line": 452,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessingCustomSid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customJdbcMutableAclService.createOrRetrieveSidPrimaryKey(\"Custom sid\", false, false)).willReturn(1L);",
+        "line": 455,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessingCustomSid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

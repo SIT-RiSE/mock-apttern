@@ -1,0 +1,476 @@
+[
+  {
+    "variableName": "logger",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\LogHelperTest.java",
+      "className": "LogHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Logger logger = Mockito.mock(Logger.class);",
+        "line": 31,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrace",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isTraceEnabled()).thenReturn(true);",
+        "line": 32,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrace",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).trace(\"trace\");",
+        "line": 34,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrace",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).trace(t);",
+        "line": 37,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrace",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).trace(\"trace\", t);",
+        "line": 39,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrace",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\LogHelperTest.java",
+      "className": "LogHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Logger logger = Mockito.mock(Logger.class);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDebug",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isDebugEnabled()).thenReturn(true);",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDebug",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).debug(\"debug\");",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDebug",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).debug(t);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDebug",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).debug(\"debug\", t);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDebug",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\LogHelperTest.java",
+      "className": "LogHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Logger logger = Mockito.mock(Logger.class);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInfo",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isInfoEnabled()).thenReturn(true);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInfo",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).info(\"info\");",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInfo",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).info(t);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInfo",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).info(\"info\", t);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInfo",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\LogHelperTest.java",
+      "className": "LogHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Logger logger = Mockito.mock(Logger.class);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWarn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isWarnEnabled()).thenReturn(true);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWarn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).warn(\"warn\");",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWarn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).warn(t);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWarn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).warn(\"warn\", t);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWarn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\LogHelperTest.java",
+      "className": "LogHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Logger logger = Mockito.mock(Logger.class);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isErrorEnabled()).thenReturn(true);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).error(\"error\");",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).error(t);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).error(\"error\", t);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "successLogger",
+    "variableType": "Logger",
+    "mockedClass": "Logger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.http.jetty",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-http\\src\\test\\java\\org\\apache\\dubbo\\remoting\\http\\jetty\\JettyLoggerAdapterTest.java",
+      "className": "JettyLoggerAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Logger successLogger = mock(Logger.class);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(successLogger.isDebugEnabled()).thenReturn(true);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(successLogger.isWarnEnabled()).thenReturn(true);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(successLogger.isInfoEnabled()).thenReturn(true);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(successLogger).warn(anyString());",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(successLogger).info(anyString());",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(successLogger).debug(anyString());",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

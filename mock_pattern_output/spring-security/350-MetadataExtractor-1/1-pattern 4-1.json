@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "metadataExtractor",
+    "variableType": "MetadataExtractor",
+    "mockedClass": "MetadataExtractor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\util\\matcher\\RoutePayloadExchangeMatcherTests.java",
+      "className": "RoutePayloadExchangeMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MetadataExtractor metadataExtractor;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.metadataExtractor.extract(any(), any())).willReturn(Collections.emptyMap());",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNoRouteThenNotMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.metadataExtractor.extract(any(), any())).willReturn(Collections.singletonMap(MetadataExtractor.ROUTE_KEY, route));",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNotMatchThenNotMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.metadataExtractor.extract(any(), any())).willReturn(Collections.singletonMap(MetadataExtractor.ROUTE_KEY, route));",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenMatchAndNoVariablesThenMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.metadataExtractor.extract(any(), any())).willReturn(Collections.singletonMap(MetadataExtractor.ROUTE_KEY, route));",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenMatchAndVariablesThenMatchAndVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "counterMock",
+    "variableType": "CounterVO",
+    "mockedClass": "CounterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nCounterVO counterMock;",
+        "line": 361,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(counterMock.getSource()).thenReturn(Counter.Source.MEMORY);",
+        "line": 2142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMapWithInstantDataForMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(counterMock.getSource()).thenReturn(Counter.Source.CPU);",
+        "line": 2173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMapWithInstantDataForCPU",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

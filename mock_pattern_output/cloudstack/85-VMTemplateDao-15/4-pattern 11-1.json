@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "_templateDao",
+    "variableType": "VMTemplateDao",
+    "mockedClass": "VMTemplateDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\element\\VirtualRouterElementTest.java",
+      "className": "VirtualRouterElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VMTemplateDao _templateDao;",
+        "line": 156,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(_templateDao.findRoutingTemplate(HypervisorType.XenServer, \"SystemVM Template (XenServer)\")).thenReturn(new VMTemplateVO());",
+        "line": 439,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockDAOs",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

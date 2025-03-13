@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "authorizedClientRowMapper",
+    "variableType": "JdbcOAuth2AuthorizedClientService.OAuth2AuthorizedClientRowMapper",
+    "mockedClass": "JdbcOAuth2AuthorizedClientService.OAuth2AuthorizedClientRowMapper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\JdbcOAuth2AuthorizedClientServiceTests.java",
+      "className": "JdbcOAuth2AuthorizedClientServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JdbcOAuth2AuthorizedClientService.OAuth2AuthorizedClientRowMapper authorizedClientRowMapper = spy(new JdbcOAuth2AuthorizedClientService.OAuth2AuthorizedClientRowMapper(this.clientRegistrationRepository));",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saveLoadAuthorizedClientWhenCustomStrategiesSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authorizedClientRowMapper).mapRow(any(), anyInt());",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saveLoadAuthorizedClientWhenCustomStrategiesSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

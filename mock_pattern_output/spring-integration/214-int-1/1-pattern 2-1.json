@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "i",
+    "variableType": "int",
+    "mockedClass": "int",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "for (int i = 0; i < 100; i++) {\r\n    final ImapMailReceiver receiver = new ImapMailReceiver(\"imap://foo\");\r\n    Store store = mock(Store.class);\r\n    Folder folder = mock(Folder.class);\r\n    given(folder.exists()).willReturn(true);\r\n    given(folder.isOpen()).willReturn(true);\r\n    given(folder.search(Mockito.any())).willReturn(new Message[] {});\r\n    given(store.getFolder(Mockito.any(URLName.class))).willReturn(folder);\r\n    given(folder.getPermanentFlags()).willReturn(new Flags(Flags.Flag.USER));\r\n    DirectFieldAccessor df = new DirectFieldAccessor(receiver);\r\n    df.setPropertyValue(\"store\", store);\r\n    receiver.setBeanFactory(mock(BeanFactory.class));\r\n    receiver.afterPropertiesSet();\r\n    new Thread(() -> {\r\n        try {\r\n            receiver.receive();\r\n        } catch (jakarta.mail.MessagingException e) {\r\n            if (e.getCause() instanceof NullPointerException) {\r\n                failed.getAndIncrement();\r\n            }\r\n        }\r\n    }).start();\r\n    new Thread(() -> {\r\n        try {\r\n            receiver.destroy();\r\n        } catch (Exception ignore) {\r\n            // ignore\r\n        }\r\n    }).start();\r\n}",
+        "line": 807,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImapLifecycleForRaceCondition",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

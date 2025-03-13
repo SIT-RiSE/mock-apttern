@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "pane",
+    "variableType": "Pane<LongAdder>",
+    "mockedClass": "Pane",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metrics.aggregate",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metrics\\dubbo-metrics-api\\src\\test\\java\\org\\apache\\dubbo\\metrics\\aggregate\\PaneTest.java",
+      "className": "PaneTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Pane<LongAdder> pane = mock(Pane.class);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValue",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(pane.getValue()).thenReturn(count);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValue",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(pane.getValue()).thenReturn(null);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValue",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

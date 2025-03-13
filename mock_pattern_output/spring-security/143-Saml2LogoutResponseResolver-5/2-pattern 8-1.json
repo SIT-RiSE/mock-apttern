@@ -1,0 +1,75 @@
+[
+  {
+    "variableName": "logoutResponseResolver",
+    "variableType": "Saml2LogoutResponseResolver",
+    "mockedClass": "Saml2LogoutResponseResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\Saml2LogoutRequestFilterTests.java",
+      "className": "Saml2LogoutRequestFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "Saml2LogoutResponseResolver logoutResponseResolver = mock(Saml2LogoutResponseResolver.class);",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutResponseResolver.resolve(any(), any())).willReturn(logoutResponse);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlRequestThenRedirects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logoutResponseResolver).resolve(any(), any());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlRequestThenRedirects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutResponseResolver.resolve(any(), any())).willReturn(logoutResponse);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlRequestThenPosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logoutResponseResolver).resolve(any(), any());",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlRequestThenPosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

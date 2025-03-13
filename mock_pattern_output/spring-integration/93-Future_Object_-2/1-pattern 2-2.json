@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "future",
+    "variableType": "Future<Object>",
+    "mockedClass": "Future<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\TcpNioConnectionTests.java",
+      "className": "TcpNioConnectionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Future<Object> future = exec.submit(() -> {\r\n    SocketChannel channel = mock(SocketChannel.class);\r\n    Socket socket = mock(Socket.class);\r\n    Mockito.when(channel.socket()).thenReturn(socket);\r\n    doAnswer(invocation -> {\r\n        ByteBuffer buffer = invocation.getArgument(0);\r\n        buffer.position(1);\r\n        return 1;\r\n    }).when(channel).read(Mockito.any(ByteBuffer.class));\r\n    when(socket.getReceiveBufferSize()).thenReturn(1024);\r\n    final TcpNioConnection connection = new TcpNioConnection(channel, false, false, nullPublisher, null);\r\n    connection.setTaskExecutor(exec);\r\n    connection.setPipeTimeout(200);\r\n    Method method = TcpNioConnection.class.getDeclaredMethod(\"doRead\");\r\n    method.setAccessible(true);\r\n    // Nobody reading, should timeout on 6th write.\r\n    try {\r\n        for (int i = 0; i < 6; i++) {\r\n            method.invoke(connection);\r\n        }\r\n    } catch (Exception e) {\r\n        logger.debug(\"Expected timeout\", e);\r\n        throw (Exception) e.getCause();\r\n    } finally {\r\n        connection.setPipeTimeout(15);\r\n        connection.close();\r\n    }\r\n    return null;\r\n});",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInsufficientThreads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "future",
+    "variableType": "Future<Object>",
+    "mockedClass": "Future<Object>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\TcpNioConnectionTests.java",
+      "className": "TcpNioConnectionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Future<Object> future = exec.submit(() -> {\r\n    SocketChannel channel = mock(SocketChannel.class);\r\n    Socket socket = mock(Socket.class);\r\n    Mockito.when(channel.socket()).thenReturn(socket);\r\n    doAnswer(invocation -> {\r\n        ByteBuffer buffer = invocation.getArgument(0);\r\n        buffer.position(1025);\r\n        buffer.put((byte) '\\r');\r\n        buffer.put((byte) '\\n');\r\n        return 1027;\r\n    }).when(channel).read(Mockito.any(ByteBuffer.class));\r\n    final TcpNioConnection connection = new TcpNioConnection(channel, false, false, null, null);\r\n    connection.setTaskExecutor(exec);\r\n    connection.registerListener(message -> {\r\n        messageLatch.countDown();\r\n        return false;\r\n    });\r\n    connection.setMapper(new TcpMessageMapper());\r\n    connection.setDeserializer(new ByteArrayCrLfSerializer());\r\n    Method method = TcpNioConnection.class.getDeclaredMethod(\"doRead\");\r\n    method.setAccessible(true);\r\n    try {\r\n        for (int i = 0; i < 20; i++) {\r\n            method.invoke(connection);\r\n        }\r\n    } catch (Exception e) {\r\n        e.printStackTrace();\r\n        throw (Exception) e.getCause();\r\n    }\r\n    return null;\r\n});",
+        "line": 355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSufficientThreads",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

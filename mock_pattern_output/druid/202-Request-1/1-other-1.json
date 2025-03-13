@@ -1,0 +1,27 @@
+[
+  {
+    "variableName": "proxyRequestMock",
+    "variableType": "Request",
+    "mockedClass": "Request",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server",
+      "filePath": "C:\\java tool\\Apache\\druid\\services\\src\\test\\java\\org\\apache\\druid\\server\\AsyncQueryForwardingServletTest.java",
+      "className": "AsyncQueryForwardingServletTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Request proxyRequestMock = Mockito.spy(Request.class);",
+        "line": 593,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "verifyServletCallsForQuery",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 22
+  }
+]

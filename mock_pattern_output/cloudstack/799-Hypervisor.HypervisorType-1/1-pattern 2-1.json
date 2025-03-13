@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "hypervisorType",
+    "variableType": "Hypervisor.HypervisorType",
+    "mockedClass": "Hypervisor.HypervisorType",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.secondarystorage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\secondary-storage\\controller\\src\\test\\java\\org\\apache\\cloudstack\\secondarystorage\\SecondaryStorageManagerTest.java",
+      "className": "SecondaryStorageManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "for (Hypervisor.HypervisorType hypervisorType : hypervisorTypesArray) {\r\n    VirtualMachineProfile virtualMachineProfileMock = Mockito.mock(VirtualMachineProfile.class);\r\n    NicProfile controlNic = Mockito.mock(NicProfile.class);\r\n    NicProfile managementNic = Mockito.mock(NicProfile.class);\r\n    Mockito.doReturn(hypervisorType).when(virtualMachineProfileMock).getHypervisorType();\r\n    NicProfile expectedResult = controlNic;\r\n    if (hypervisorTypesThatMustReturnManagementNic.contains(hypervisorType)) {\r\n        expectedResult = managementNic;\r\n    }\r\n    NicProfile result = _ssMgr.verifySshAccessOnManagementNicForSystemVm(virtualMachineProfileMock, controlNic, managementNic);\r\n    Assert.assertEquals(expectedResult, result);\r\n}",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateVerifySshAccessOnManagementNicForSystemVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

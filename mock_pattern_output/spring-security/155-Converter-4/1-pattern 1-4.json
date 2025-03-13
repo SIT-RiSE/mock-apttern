@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "tokenResponseConverter",
+    "variableType": "Converter",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core.http.converter",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\http\\converter\\OAuth2AccessTokenResponseHttpMessageConverterTests.java",
+      "className": "OAuth2AccessTokenResponseHttpMessageConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter tokenResponseConverter = mock(Converter.class);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "readInternalWhenConversionFailsThenThrowHttpMessageNotReadableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(tokenResponseConverter.convert(any())).willThrow(RuntimeException.class);",
+        "line": 164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "readInternalWhenConversionFailsThenThrowHttpMessageNotReadableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "tokenResponseParametersConverter",
+    "variableType": "Converter",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core.http.converter",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\http\\converter\\OAuth2AccessTokenResponseHttpMessageConverterTests.java",
+      "className": "OAuth2AccessTokenResponseHttpMessageConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter tokenResponseParametersConverter = mock(Converter.class);",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeInternalWhenConversionFailsThenThrowHttpMessageNotWritableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(tokenResponseParametersConverter.convert(any())).willThrow(RuntimeException.class);",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeInternalWhenConversionFailsThenThrowHttpMessageNotWritableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "errorConverter",
+    "variableType": "Converter",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core.http.converter",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\http\\converter\\OAuth2ErrorHttpMessageConverterTests.java",
+      "className": "OAuth2ErrorHttpMessageConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter errorConverter = mock(Converter.class);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "readInternalWhenConversionFailsThenThrowHttpMessageNotReadableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(errorConverter.convert(any())).willThrow(RuntimeException.class);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "readInternalWhenConversionFailsThenThrowHttpMessageNotReadableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "errorParametersConverter",
+    "variableType": "Converter",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core.http.converter",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\http\\converter\\OAuth2ErrorHttpMessageConverterTests.java",
+      "className": "OAuth2ErrorHttpMessageConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter errorParametersConverter = mock(Converter.class);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeInternalWhenConversionFailsThenThrowHttpMessageNotWritableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(errorParametersConverter.convert(any())).willThrow(RuntimeException.class);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeInternalWhenConversionFailsThenThrowHttpMessageNotWritableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,687 @@
+[
+  {
+    "variableName": "nvpApi",
+    "variableType": "NiciraNvpApi",
+    "mockedClass": "NiciraNvpApi",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "NiciraNvpApi nvpApi = mock(NiciraNvpApi.class);",
+        "line": 90,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.getControlClusterStatus()).thenReturn(ccs);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.getControlClusterStatus()).thenReturn(ccs);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.getControlClusterStatus()).thenThrow(new NiciraNvpApiException());",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalSwitch((LogicalSwitch) any())).thenThrow(new NiciraNvpApiException()).thenThrow(new NiciraNvpApiException()).thenReturn(ls);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRetries",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalSwitch((LogicalSwitch) any())).thenReturn(ls);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalSwitch((LogicalSwitch) any())).thenThrow(new NiciraNvpApiException());",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalSwitchPort(eq(\"cccc\"), (LogicalSwitchPort) any())).thenReturn(lsp);",
+        "line": 237,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalSwitchPort(eq(\"cccc\"), (LogicalSwitchPort) any())).thenThrow(new NiciraNvpApiException());",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchPortApiExceptionInCreate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalSwitchPort(eq(\"cccc\"), (LogicalSwitchPort) any())).thenReturn(lsp);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchPortApiExceptionInModify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeastOnce()).deleteLogicalSwitchPort((String) any(), (String) any());",
+        "line": 271,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchPortApiExceptionInModify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findLogicalSwitchPortsByUuid(\"aaaa\", \"bbbb\")).thenReturn(lspl);",
+        "line": 298,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindLogicalSwitchPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findLogicalSwitchPortsByUuid(\"aaaa\", \"bbbb\")).thenReturn(lspl);",
+        "line": 310,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindLogicalSwitchPortNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findLogicalSwitchPortsByUuid(\"aaaa\", \"bbbb\")).thenThrow(new NiciraNvpApiException());",
+        "line": 320,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindLogicalSwitchPortApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouter((LogicalRouter) any())).thenReturn(lrc);",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterPort(eq(\"ccccc\"), (LogicalRouterPort) any())).thenReturn(lrp);",
+        "line": 337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalSwitchPort(eq(\"bbbbb\"), (LogicalSwitchPort) any())).thenReturn(lsp);",
+        "line": 338,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeast(1)).createLogicalRouterNatRule((String) any(), (NatRule) any());",
+        "line": 344,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouter((LogicalRouter) any())).thenThrow(new NiciraNvpApiException());",
+        "line": 351,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouter((LogicalRouter) any())).thenReturn(lrc);",
+        "line": 364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterPort(eq(\"ccccc\"), (LogicalRouterPort) any())).thenThrow(new NiciraNvpApiException());",
+        "line": 365,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeast(1)).deleteLogicalRouter(eq(\"ccccc\"));",
+        "line": 370,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouter((LogicalRouter) any())).thenReturn(lrc);",
+        "line": 383,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouterAndSwitchPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterPort(eq(\"ccccc\"), (LogicalRouterPort) any())).thenReturn(lrp);",
+        "line": 384,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouterAndSwitchPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalSwitchPort(eq(\"bbbbb\"), (LogicalSwitchPort) any())).thenReturn(lsp);",
+        "line": 385,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouterAndSwitchPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterNatRule((String) any(), (NatRule) any())).thenThrow(new NiciraNvpApiException());",
+        "line": 386,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouterAndSwitchPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeast(1)).deleteLogicalRouter(eq(\"ccccc\"));",
+        "line": 391,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouterAndSwitchPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeast(1)).deleteLogicalSwitchPort(eq(\"bbbbb\"), eq(\"fffff\"));",
+        "line": 392,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouterAndSwitchPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findLogicalRouterPortByGatewayServiceUuid(\"aaaaa\", \"bbbbb\")).thenReturn(list);",
+        "line": 414,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePublicIpsOnLogicalRouterApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findLogicalRouterPortByGatewayServiceUuid(\"aaaaa\", \"bbbbb\")).thenThrow(new NiciraNvpApiException(\"retry 1\")).thenThrow(new NiciraNvpApiException(\"retry 2\"));",
+        "line": 430,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePublicIpsOnLogicalRouterRetry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findNatRulesByLogicalRouterUuid(\"aaaaa\")).thenReturn(storedRules);",
+        "line": 455,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterNatRule(eq(\"aaaaa\"), (NatRule) any())).thenReturn(rulepair[0]).thenReturn(rulepair[1]);",
+        "line": 461,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeast(2)).createLogicalRouterNatRule(eq(\"aaaaa\"), argThat(new ArgumentMatcher<NatRule>() {\r\n\r\n    @Override\r\n    public boolean matches(final NatRule argument) {\r\n        final NatRule rule = argument;\r\n        if (rule.getType().equals(\"DestinationNatRule\") && ((DestinationNatRule) rule).getToDestinationIpAddress().equals(\"10.10.10.10\")) {\r\n            return true;\r\n        }\r\n        if (rule.getType().equals(\"SourceNatRule\") && ((SourceNatRule) rule).getToSourceIpAddressMin().equals(\"11.11.11.11\")) {\r\n            return true;\r\n        }\r\n        return false;\r\n    }\r\n}));",
+        "line": 466,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterNatRule(eq(\"aaaaa\"), (NatRule) any())).thenReturn(rulepair[0]).thenReturn(rulepair[1]);",
+        "line": 500,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouterExistingRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findNatRulesByLogicalRouterUuid(\"aaaaa\")).thenReturn(storedRules);",
+        "line": 504,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouterExistingRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, never()).createLogicalRouterNatRule(eq(\"aaaaa\"), argThat(new ArgumentMatcher<NatRule>() {\r\n\r\n    @Override\r\n    public boolean matches(final NatRule argument) {\r\n        final NatRule rule = argument;\r\n        if (rule.getType().equals(\"DestinationNatRule\") && ((DestinationNatRule) rule).getToDestinationIpAddress().equals(\"10.10.10.10\")) {\r\n            return true;\r\n        }\r\n        if (rule.getType().equals(\"SourceNatRule\") && ((SourceNatRule) rule).getToSourceIpAddressMin().equals(\"11.11.11.11\")) {\r\n            return true;\r\n        }\r\n        return false;\r\n    }\r\n}));",
+        "line": 509,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouterExistingRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterNatRule(eq(\"aaaaa\"), (NatRule) any())).thenReturn(rulepair[0]).thenReturn(rulepair[1]);",
+        "line": 545,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouterRemoveRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findNatRulesByLogicalRouterUuid(\"aaaaa\")).thenReturn(storedRules);",
+        "line": 549,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouterRemoveRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeast(2)).deleteLogicalRouterNatRule(eq(\"aaaaa\"), argThat(new ArgumentMatcher<UUID>() {\r\n\r\n    @Override\r\n    public boolean matches(final UUID uuid) {\r\n        if (rule0Uuid.equals(uuid) || rule1Uuid.equals(uuid)) {\r\n            return true;\r\n        }\r\n        return false;\r\n    }\r\n}));",
+        "line": 554,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouterRemoveRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterNatRule(eq(\"aaaaa\"), (NatRule) any())).thenReturn(rulepair[0]).thenThrow(new NiciraNvpApiException());",
+        "line": 584,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouterRollback",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findNatRulesByLogicalRouterUuid(\"aaaaa\")).thenReturn(storedRules);",
+        "line": 589,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouterRollback",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeastOnce()).deleteLogicalRouterNatRule(eq(\"aaaaa\"), eq(rulepair[0].getUuid()));",
+        "line": 594,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureStaticNatRulesOnLogicalRouterRollback",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findNatRulesByLogicalRouterUuid(\"aaaaa\")).thenReturn(storedRules);",
+        "line": 615,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterNatRule(eq(\"aaaaa\"), (NatRule) any())).thenReturn(rulepair[0]).thenReturn(rulepair[1]);",
+        "line": 621,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeast(2)).createLogicalRouterNatRule(eq(\"aaaaa\"), argThat(new ArgumentMatcher<NatRule>() {\r\n\r\n    @Override\r\n    public boolean matches(final NatRule rule) {\r\n        if (rule.getType().equals(\"DestinationNatRule\") && ((DestinationNatRule) rule).getToDestinationIpAddress().equals(\"10.10.10.10\")) {\r\n            return true;\r\n        }\r\n        if (rule.getType().equals(\"SourceNatRule\") && ((SourceNatRule) rule).getToSourceIpAddressMin().equals(\"11.11.11.11\")) {\r\n            return true;\r\n        }\r\n        return false;\r\n    }\r\n}));",
+        "line": 626,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterNatRule(eq(\"aaaaa\"), (NatRule) any())).thenReturn(rulepair[0]).thenReturn(rulepair[1]);",
+        "line": 659,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterExistingRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findNatRulesByLogicalRouterUuid(\"aaaaa\")).thenReturn(storedRules);",
+        "line": 663,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterExistingRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, never()).createLogicalRouterNatRule(eq(\"aaaaa\"), argThat(new ArgumentMatcher<NatRule>() {\r\n\r\n    @Override\r\n    public boolean matches(final NatRule rule) {\r\n        if (rule.getType().equals(\"DestinationNatRule\") && ((DestinationNatRule) rule).getToDestinationIpAddress().equals(\"10.10.10.10\")) {\r\n            return true;\r\n        }\r\n        if (rule.getType().equals(\"SourceNatRule\") && ((SourceNatRule) rule).getToSourceIpAddressMin().equals(\"11.11.11.11\")) {\r\n            return true;\r\n        }\r\n        return false;\r\n    }\r\n}));",
+        "line": 668,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterExistingRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterNatRule(eq(\"aaaaa\"), (NatRule) any())).thenReturn(rulepair[0]).thenReturn(rulepair[1]);",
+        "line": 703,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRemoveRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findNatRulesByLogicalRouterUuid(\"aaaaa\")).thenReturn(storedRules);",
+        "line": 707,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRemoveRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeast(2)).deleteLogicalRouterNatRule(eq(\"aaaaa\"), argThat(new ArgumentMatcher<UUID>() {\r\n\r\n    @Override\r\n    public boolean matches(final UUID uuid) {\r\n        if (rule0Uuid.equals(uuid) || rule1Uuid.equals(uuid)) {\r\n            return true;\r\n        }\r\n        return false;\r\n    }\r\n}));",
+        "line": 712,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRemoveRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterNatRule(eq(\"aaaaa\"), (NatRule) any())).thenReturn(rulepair[0]).thenThrow(new NiciraNvpApiException());",
+        "line": 742,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRollback",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findNatRulesByLogicalRouterUuid(\"aaaaa\")).thenReturn(storedRules);",
+        "line": 747,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRollback",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nvpApi, atLeastOnce()).deleteLogicalRouterNatRule(eq(\"aaaaa\"), eq(rulepair[0].getUuid()));",
+        "line": 752,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRollback",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.findNatRulesByLogicalRouterUuid(\"aaaaa\")).thenReturn(storedRules);",
+        "line": 773,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterPortRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpApi.createLogicalRouterNatRule(eq(\"aaaaa\"), (NatRule) any())).thenReturn(rulepair[0]).thenReturn(rulepair[1]);",
+        "line": 779,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterPortRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

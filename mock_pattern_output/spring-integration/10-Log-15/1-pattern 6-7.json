@@ -1,0 +1,398 @@
+[
+  {
+    "variableName": "log",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\RoundRobinDispatcherTests.java",
+      "className": "RoundRobinDispatcherTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log log = (Log) spy(directFieldAccessor.getPropertyType(\"logger\"));",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailOverAndLogging",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(log.isDebugEnabled()).willReturn(true);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailOverAndLogging",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(log).debug(startsWith(\"An exception was thrown by '\"), eq(testException));",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailOverAndLogging",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log logger = spy(TestUtils.getPropertyValue(cachedConn1, \"logger\", Log.class));",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isDebugEnabled()).thenReturn(true);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).debug(captor.capture());",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\ConnectionFactoryTests.java",
+      "className": "ConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log logger = spy(logAccessor.getLog());",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEarlyClose",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isInfoEnabled()).thenReturn(true);",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEarlyClose",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logger.isDebugEnabled()).thenReturn(true);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEarlyClose",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger, atLeast(1)).debug(captor.capture());",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEarlyClose",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.jdbc.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jdbc\\src\\test\\java\\org\\springframework\\integration\\jdbc\\config\\JdbcOutboundGatewayParserTests.java",
+      "className": "JdbcOutboundGatewayParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log logger = spy(TestUtils.getPropertyValue(handlerJdbcTemplate, \"logger\", Log.class));",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testKeyGeneration",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(logger.isDebugEnabled()).willReturn(true);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testKeyGeneration",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).debug(\"Executing prepared SQL statement [insert into bars (status, name) values (0, ?)]\");",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testKeyGeneration",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "logger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.jdbc.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jdbc\\src\\test\\java\\org\\springframework\\integration\\jdbc\\config\\JdbcOutboundGatewayParserTests.java",
+      "className": "JdbcOutboundGatewayParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log logger = spy(TestUtils.getPropertyValue(pollerJdbcTemplate, \"logger\", Log.class));",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithPoller",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(logger.isDebugEnabled()).willReturn(true);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithPoller",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).debug(\"Executing prepared SQL statement [select * from bazz where id=?]\");",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithPoller",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "log2",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\inbound\\MessageSourceTests.java",
+      "className": "MessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log log2 = spy(KafkaTestUtils.getPropertyValue(ack2, \"logger.log\", Log.class));",
+        "line": 579,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(log2.isWarnEnabled()).willReturn(true);",
+        "line": 581,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(log2).isWarnEnabled();",
+        "line": 606,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(log2).warn(captor.capture());",
+        "line": 608,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "log1",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\inbound\\MessageSourceTests.java",
+      "className": "MessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log log1 = spy(KafkaTestUtils.getPropertyValue(ack1, \"logger.log\", Log.class));",
+        "line": 572,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(log1.isWarnEnabled()).willReturn(true);",
+        "line": 574,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(log1).isWarnEnabled();",
+        "line": 600,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(log1).warn(captor.capture());",
+        "line": 602,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

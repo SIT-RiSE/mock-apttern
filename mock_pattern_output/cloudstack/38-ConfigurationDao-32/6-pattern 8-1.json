@@ -1,0 +1,125 @@
+[
+  {
+    "variableName": "_configDao",
+    "variableType": "ConfigurationDao",
+    "mockedClass": "ConfigurationDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.framework.config.impl",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\config\\src\\test\\java\\org\\apache\\cloudstack\\framework\\config\\impl\\ConfigDepotAdminTest.java",
+      "className": "ConfigDepotAdminTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nConfigurationDao _configDao;",
+        "line": 65,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_configDao.findById(StaticIntCK.key())).thenReturn(null);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoPopulation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_configDao.findById(DynamicIntCK.key())).thenReturn(dynamicIntCV);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoPopulation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_configDao.findById(TestCK.key())).thenReturn(testCV);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoPopulation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_configDao.persist(any(ConfigurationVO.class))).thenReturn(dynamicIntCV);",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoPopulation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// This is once because DynamicIntCK is returned.\r\nverify(_configDao, times(1)).persist(any(ConfigurationVO.class));",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoPopulation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_configDao.findById(DynamicIntCK.key())).thenReturn(dynamicIntCV);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoPopulation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_configDao.findById(TestCK.key())).thenReturn(null);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoPopulation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// This is three because DynamicIntCK, TestCK also returns null.\r\nverify(_configDao, times(3)).persist(any(ConfigurationVO.class));",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoPopulation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

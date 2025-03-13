@@ -1,0 +1,780 @@
+[
+  {
+    "variableName": "account",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.implicitplanner",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\deployment-planners\\implicit-dedication\\src\\test\\java\\org\\apache\\cloudstack\\implicitplanner\\ImplicitPlannerTest.java",
+      "className": "ImplicitPlannerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO account = mock(AccountVO.class);",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initializeForTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(account.getId()).thenReturn(accountId);",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initializeForTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(account.getAccountId()).thenReturn(accountId);",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initializeForTest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "owner",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.acl",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\acl\\DomainCheckerTest.java",
+      "className": "DomainCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO owner = Mockito.mock(AccountVO.class);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDomainAdminHasAccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(owner.getDomainId()).thenReturn(101L);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDomainAdminHasAccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "owner",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO owner = Mockito.mock(AccountVO.class);",
+        "line": 410,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndVerifyAvoidDisabledResourcesTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(owner.getRoleId()).thenReturn(roleId);",
+        "line": 411,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndVerifyAvoidDisabledResourcesTest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "caller",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkModelTest.java",
+      "className": "NetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO caller = mock(AccountVO.class);",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getId()).thenReturn(accountId);",
+        "line": 302,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getType()).thenReturn(Account.Type.NORMAL);",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "caller",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkModelTest.java",
+      "className": "NetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO caller = mock(AccountVO.class);",
+        "line": 316,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsForAdmin",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getId()).thenReturn(accountId);",
+        "line": 317,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsForAdmin",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getType()).thenReturn(Account.Type.ADMIN);",
+        "line": 318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsForAdmin",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "caller",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkModelTest.java",
+      "className": "NetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO caller = mock(AccountVO.class);",
+        "line": 338,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsNoOwner",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getId()).thenReturn(accountId);",
+        "line": 339,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsNoOwner",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getType()).thenReturn(Account.Type.NORMAL);",
+        "line": 340,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsNoOwner",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "caller",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkModelTest.java",
+      "className": "NetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO caller = mock(AccountVO.class);",
+        "line": 351,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsNoPermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getId()).thenReturn(accountId);",
+        "line": 352,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsNoPermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getType()).thenReturn(Account.Type.NORMAL);",
+        "line": 353,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsNoPermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "caller",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkModelTest.java",
+      "className": "NetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO caller = mock(AccountVO.class);",
+        "line": 367,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getId()).thenReturn(id);",
+        "line": 368,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getDomainId()).thenReturn(id);",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getType()).thenReturn(Account.Type.NORMAL);",
+        "line": 370,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getDomainId()).thenReturn(subDomainId);",
+        "line": 379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "caller",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkModelTest.java",
+      "className": "NetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO caller = mock(AccountVO.class);",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetworkNoSubDomainAccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getId()).thenReturn(id);",
+        "line": 390,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetworkNoSubDomainAccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getDomainId()).thenReturn(subDomainId);",
+        "line": 391,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetworkNoSubDomainAccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getType()).thenReturn(Account.Type.NORMAL);",
+        "line": 392,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetworkNoSubDomainAccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "caller",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkModelTest.java",
+      "className": "NetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO caller = mock(AccountVO.class);",
+        "line": 409,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetworkNotSubDomain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getId()).thenReturn(id);",
+        "line": 410,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetworkNotSubDomain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getDomainId()).thenReturn(subDomainId);",
+        "line": 411,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetworkNotSubDomain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(caller.getType()).thenReturn(Account.Type.NORMAL);",
+        "line": 412,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsSharedNetworkNotSubDomain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "acct",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\HypervisorTemplateAdapterTest.java",
+      "className": "HypervisorTemplateAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO acct = mock(AccountVO.class);",
+        "line": 259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(acct.getId()).thenReturn(1l);",
+        "line": 260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(acct.getDomainId()).thenReturn(1l);",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "adminAccountMock",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Queried account - admin account\r\nAccountVO adminAccountMock = Mockito.mock(AccountVO.class);",
+        "line": 254,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetUserKeysCmdDomainAdminRootAdminUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(adminAccountMock.getAccountId()).thenReturn(2L);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetUserKeysCmdDomainAdminRootAdminUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "account",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO account = Mockito.mock(AccountVO.class);",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPreventRootDomainAdminAccessToRootAdminKeysNormalUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(account.getType()).thenReturn(Account.Type.NORMAL);",
+        "line": 280,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPreventRootDomainAdminAccessToRootAdminKeysNormalUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "account",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO account = Mockito.mock(AccountVO.class);",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPreventRootDomainAdminAccessToRootAdminKeysRootDomainAdminUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(account.getType()).thenReturn(Account.Type.DOMAIN_ADMIN);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPreventRootDomainAdminAccessToRootAdminKeysRootDomainAdminUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(account.getDomainId()).thenReturn(Domain.ROOT_DOMAIN);",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPreventRootDomainAdminAccessToRootAdminKeysRootDomainAdminUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "account",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\FirstFitPlannerTest.java",
+      "className": "FirstFitPlannerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO account = mock(AccountVO.class);",
+        "line": 267,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initializeForTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(account.getId()).thenReturn(accountId);",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initializeForTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(account.getAccountId()).thenReturn(accountId);",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initializeForTest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockOwner",
+    "variableType": "AccountVO",
+    "mockedClass": "AccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.affinity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\affinity\\AffinityGroupServiceImplTest.java",
+      "className": "AffinityGroupServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountVO mockOwner = Mockito.mock(AccountVO.class);",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "mockOwnerForTestGetDomainIdBasedOnDomainLevel",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockOwner.getDomainId()).thenReturn(0l);",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "mockOwnerForTestGetDomainIdBasedOnDomainLevel",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

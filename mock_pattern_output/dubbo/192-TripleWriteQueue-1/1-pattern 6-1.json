@@ -1,0 +1,149 @@
+[
+  {
+    "variableName": "writeQueue",
+    "variableType": "TripleWriteQueue",
+    "mockedClass": "TripleWriteQueue",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.protocol.tri.stream",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-triple\\src\\test\\java\\org\\apache\\dubbo\\rpc\\protocol\\tri\\stream\\TripleClientStreamTest.java",
+      "className": "TripleClientStreamTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TripleWriteQueue writeQueue = mock(TripleWriteQueue.class);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(writeQueue.enqueueFuture(any(QueuedCommand.class), any(Executor.class))).thenReturn(channel.newPromise());",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writeQueue).enqueue(any(CreateStreamQueueCommand.class));",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writeQueue).enqueueFuture(any(HeaderQueueCommand.class), any(Executor.class));",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// no other commands\r\nverify(writeQueue).enqueue(any(QueuedCommand.class));",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writeQueue).enqueueFuture(any(DataQueueCommand.class), any(Executor.class));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writeQueue, times(2)).enqueueFuture(any(QueuedCommand.class), any(Executor.class));",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writeQueue).enqueueFuture(any(EndStreamQueueCommand.class), any(Executor.class));",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writeQueue, times(3)).enqueueFuture(any(QueuedCommand.class), any(Executor.class));",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writeQueue, times(1)).enqueue(any(CancelQueueCommand.class));",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writeQueue, times(3)).enqueueFuture(any(QueuedCommand.class), any(Executor.class));",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "progress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

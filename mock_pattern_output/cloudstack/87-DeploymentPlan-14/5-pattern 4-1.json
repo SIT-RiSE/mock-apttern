@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "plan",
+    "variableType": "DeploymentPlan",
+    "mockedClass": "DeploymentPlan",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\guru\\DirectNetworkGuruTest.java",
+      "className": "DirectNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDeploymentPlan plan;",
+        "line": 79,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(plan.getDataCenterId()).thenReturn(1l);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCanDesign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(plan.getPhysicalNetworkId()).thenReturn(1l);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCanDesign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(plan.getDataCenterId()).thenReturn(1l);",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignDns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(plan.getPhysicalNetworkId()).thenReturn(1l);",
+        "line": 145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignDns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

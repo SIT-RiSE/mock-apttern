@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "customServerCsrfTokenRepository",
+    "variableType": "ServerCsrfTokenRepository",
+    "mockedClass": "ServerCsrfTokenRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerCsrfTokenRepository customServerCsrfTokenRepository = mock(ServerCsrfTokenRepository.class);",
+        "line": 532,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postWhenCustomCsrfTokenRepositoryThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customServerCsrfTokenRepository.loadToken(any(ServerWebExchange.class))).willReturn(Mono.empty());",
+        "line": 533,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postWhenCustomCsrfTokenRepositoryThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customServerCsrfTokenRepository).loadToken(any());",
+        "line": 540,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postWhenCustomCsrfTokenRepositoryThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

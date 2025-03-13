@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "queue",
+    "variableType": "Queue<Message<?>>",
+    "mockedClass": "Queue<Message<?>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\QueueChannelTests.java",
+      "className": "QueueChannelTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Queue<Message<?>> queue = spy(new ArrayDeque<>());",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBlockingReceiveWithTimeoutEmptyThenSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "queue",
+    "variableType": "Queue<Message<?>>",
+    "mockedClass": "Queue<Message<?>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\QueueChannelTests.java",
+      "className": "QueueChannelTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Queue<Message<?>> queue = spy(new ArrayDeque<>());",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBlockingReceiveNoTimeoutEmptyThenSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

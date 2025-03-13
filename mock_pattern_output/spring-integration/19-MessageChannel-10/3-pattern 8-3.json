@@ -1,0 +1,221 @@
+[
+  {
+    "variableName": "requestChannel",
+    "variableType": "MessageChannel",
+    "mockedClass": "MessageChannel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\MessagingGatewayTests.java",
+      "className": "MessagingGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageChannel requestChannel = Mockito.mock(MessageChannel.class);",
+        "line": 62,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(requestChannel.send(messageMock, 30000L)).thenReturn(true);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(requestChannel).send(messageMock, 30000L);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(requestChannel.send(messageMock, 1000L)).thenReturn(false);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendMessage_failure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(requestChannel).send(Mockito.any(Message.class), Mockito.eq(30000L));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "requestChannel",
+    "variableType": "MessageChannel",
+    "mockedClass": "MessageChannel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\MessagingGatewayTests.java",
+      "className": "MessagingGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageChannel requestChannel = Mockito.mock(MessageChannel.class);",
+        "line": 62,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(requestChannel.send(messageMock, 30000L)).thenReturn(true);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(requestChannel).send(messageMock, 30000L);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(requestChannel.send(messageMock, 1000L)).thenReturn(false);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendMessage_failure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(requestChannel).send(Mockito.any(Message.class), Mockito.eq(30000L));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "requestChannel",
+    "variableType": "MessageChannel",
+    "mockedClass": "MessageChannel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\MessagingGatewayTests.java",
+      "className": "MessagingGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageChannel requestChannel = Mockito.mock(MessageChannel.class);",
+        "line": 62,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(requestChannel.send(messageMock, 30000L)).thenReturn(true);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(requestChannel).send(messageMock, 30000L);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(requestChannel.send(messageMock, 1000L)).thenReturn(false);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendMessage_failure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(requestChannel).send(Mockito.any(Message.class), Mockito.eq(30000L));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

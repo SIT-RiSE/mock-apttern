@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "eventDao",
+    "variableType": "EventDao",
+    "mockedClass": "EventDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.event",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\event\\ActionEventInterceptorTest.java",
+      "className": "ActionEventInterceptorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "//Mock fields. These are injected into ActionEventUtils by the setup() method.\r\n@Mock\r\nprotected EventDao eventDao;",
+        "line": 81,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//Needed for persist to actually set an ID that can be returned from the ActionEventUtils\r\n//methods.\r\nMockito.when(eventDao.persist(Mockito.any(EventVO.class))).thenAnswer(new Answer<EventVO>() {\r\n\r\n    @Override\r\n    public EventVO answer(InvocationOnMock invocation) throws Throwable {\r\n        EventVO event = (EventVO) invocation.getArguments()[0];\r\n        Field id = event.getClass().getDeclaredField(\"id\");\r\n        id.setAccessible(true);\r\n        id.set(event, EVENT_ID);\r\n        persistedEvents.add(event);\r\n        return event;\r\n    }\r\n});",
+        "line": 160,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupCommonMocks",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "eventDao",
+    "variableType": "EventDao",
+    "mockedClass": "EventDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.event",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\event\\ActionEventInterceptorTest.java",
+      "className": "ActionEventInterceptorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "//Mock fields. These are injected into ActionEventUtils by the setup() method.\r\n@Mock\r\nprotected EventDao eventDao;",
+        "line": 81,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//Needed for persist to actually set an ID that can be returned from the ActionEventUtils\r\n//methods.\r\nMockito.when(eventDao.persist(Mockito.any(EventVO.class))).thenAnswer(new Answer<EventVO>() {\r\n\r\n    @Override\r\n    public EventVO answer(InvocationOnMock invocation) throws Throwable {\r\n        EventVO event = (EventVO) invocation.getArguments()[0];\r\n        Field id = event.getClass().getDeclaredField(\"id\");\r\n        id.setAccessible(true);\r\n        id.set(event, EVENT_ID);\r\n        persistedEvents.add(event);\r\n        return event;\r\n    }\r\n});",
+        "line": 160,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupCommonMocks",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "eventDao",
+    "variableType": "EventDao",
+    "mockedClass": "EventDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.event",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\event\\ActionEventUtilsTest.java",
+      "className": "ActionEventUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "//Mock fields. These are injected into ActionEventUtils by the setup() method.\r\n@Mock\r\nprotected EventDao eventDao;",
+        "line": 84,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//Needed for persist to actually set an ID that can be returned from the ActionEventUtils\r\n//methods.\r\nMockito.when(eventDao.persist(Mockito.any(EventVO.class))).thenAnswer(new Answer<EventVO>() {\r\n\r\n    @Override\r\n    public EventVO answer(InvocationOnMock invocation) throws Throwable {\r\n        EventVO event = (EventVO) invocation.getArguments()[0];\r\n        Field id = event.getClass().getDeclaredField(\"id\");\r\n        id.setAccessible(true);\r\n        id.set(event, EVENT_ID);\r\n        persistedEvents.add(event);\r\n        return event;\r\n    }\r\n});",
+        "line": 157,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupCommonMocks",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

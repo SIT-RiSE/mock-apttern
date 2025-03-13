@@ -1,0 +1,221 @@
+[
+  {
+    "variableName": "applicationModel",
+    "variableType": "ApplicationModel",
+    "mockedClass": "ApplicationModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metrics.collector",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metrics\\dubbo-metrics-default\\src\\test\\java\\org\\apache\\dubbo\\metrics\\collector\\AggregateMetricsCollectorTest.java",
+      "className": "AggregateMetricsCollectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationModel applicationModel = mock(ApplicationModel.class);",
+        "line": 208,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationModel.getApplicationConfigManager()).thenReturn(configManager);",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationModel.getBeanFactory()).thenReturn(beanFactory);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockedApplicationModel",
+    "variableType": "ApplicationModel",
+    "mockedClass": "ApplicationModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.metadata",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\metadata\\MetadataServiceNameMappingTest.java",
+      "className": "MetadataServiceNameMappingTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationModel mockedApplicationModel = spy(applicationModel);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedApplicationModel.getApplicationConfigManager()).thenReturn(configManager);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedApplicationModel.getCurrentConfig()).thenReturn(new ApplicationConfig(\"test\"));",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "applicationModel",
+    "variableType": "ApplicationModel",
+    "mockedClass": "ApplicationModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.metadata",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\metadata\\ServiceInstanceHostPortCustomizerTest.java",
+      "className": "ServiceInstanceHostPortCustomizerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationModel applicationModel = spy(ApplicationModel.defaultModel());",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "customizePreferredProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationModel.getBeanFactory()).thenReturn(beanFactory);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "customizePreferredProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "defaultModel",
+    "variableType": "ApplicationModel",
+    "mockedClass": "ApplicationModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration.model",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\model\\MigrationRuleTest.java",
+      "className": "MigrationRuleTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationModel defaultModel = Mockito.spy(ApplicationModel.defaultModel());",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_parse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(defaultModel.getDefaultExtension(ServiceNameMapping.class)).thenReturn(mapping);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_parse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "applicationModel",
+    "variableType": "ApplicationModel",
+    "mockedClass": "ApplicationModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\ServiceDiscoveryRegistryTest.java",
+      "className": "ServiceDiscoveryRegistryTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationModel applicationModel = spy(ApplicationModel.defaultModel());",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationModel.getDefaultExtension(ServiceNameMapping.class)).thenReturn(mapping);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

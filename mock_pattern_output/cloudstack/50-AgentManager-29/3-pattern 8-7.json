@@ -1,0 +1,767 @@
+[
+  {
+    "variableName": "agentmgr",
+    "variableType": "AgentManager",
+    "mockedClass": "AgentManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "AgentManager agentmgr = mock(AgentManager.class);",
+        "line": 90,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(1)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 332,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(0)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 385,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(1)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 437,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserveFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(0)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 440,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserveFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 473,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(1)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 476,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 509,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocateFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(0)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 512,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocateFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 548,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrash",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(1)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 554,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrash",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(0)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 591,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "agentManager",
+    "variableType": "AgentManager",
+    "mockedClass": "AgentManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "AgentManager agentManager = mock(AgentManager.class);",
+        "line": 97,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentManager.easySend(eq(NICIRA_NVP_HOST_ID), (Command) any())).thenReturn(answer);",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementIsolatedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentManager.easySend(eq(NETWORK_ID), any(ConfigurePublicIpsOnLogicalRouterCommand.class))).thenReturn(answer);",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyIpTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentManager, atLeast(1)).easySend(eq(NETWORK_ID), argThat(new ArgumentMatcher<ConfigurePublicIpsOnLogicalRouterCommand>() {\r\n\r\n    @Override\r\n    public boolean matches(final ConfigurePublicIpsOnLogicalRouterCommand command) {\r\n        return command.getPublicCidrs().size() == 1;\r\n    }\r\n}));",
+        "line": 260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyIpTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentManager.easySend(eq(NICIRA_NVP_HOST_ID), (Command) any())).thenReturn(answer);",
+        "line": 316,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkUuidVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentManager.easySend(eq(NICIRA_NVP_HOST_ID), (Command) any())).thenReturn(answer);",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "agentmgr",
+    "variableType": "AgentManager",
+    "mockedClass": "AgentManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "AgentManager agentmgr = mock(AgentManager.class);",
+        "line": 81,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(1)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 300,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 353,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(1)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 359,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//when(answer.getLogicalSwitchUuid()).thenReturn(\"aaaaa\");\r\nwhen(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 410,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(1)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 414,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentmgr.easySend(eq(NETWORK_ID), (Command) any())).thenReturn(answer);",
+        "line": 467,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentmgr, times(1)).easySend(eq(NETWORK_ID), (Command) any());",
+        "line": 475,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "agentMgr",
+    "variableType": "AgentManager",
+    "mockedClass": "AgentManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAgentManager agentMgr;",
+        "line": 250,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentMgr.send(eq(hostId), any(PerformanceMonitorCommand.class))).thenReturn(answer);",
+        "line": 1964,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkNetScalerAsGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentMgr.easySend(eq(hostId), any(GetAutoScaleMetricsCommand.class))).thenReturn(answer);",
+        "line": 2365,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getNetworkStatsFromVirtualRouterWithOneRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(agentMgr).easySend(eq(hostId), any());",
+        "line": 2370,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getNetworkStatsFromVirtualRouterWithOneRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "agentManager",
+    "variableType": "AgentManager",
+    "mockedClass": "AgentManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\element\\ConfigDriveNetworkElementTest.java",
+      "className": "ConfigDriveNetworkElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AgentManager agentManager;",
+        "line": 156,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentManager.easySend(anyLong(), any(HandleConfigDriveIsoCommand.class))).thenReturn(answer);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExpunge",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentManager, times(1)).easySend(anyLong(), commandCaptor.capture());",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExpunge",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentManager.easySend(anyLong(), any(HandleConfigDriveIsoCommand.class))).thenReturn(answer);",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRelease",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(agentManager.easySend(anyLong(), any(HandleConfigDriveIsoCommand.class))).thenReturn(answer);",
+        "line": 281,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddPasswordAndUserData",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(agentManager, times(1)).easySend(anyLong(), commandCaptor.capture());",
+        "line": 304,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddPasswordAndUserData",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "agentManager",
+    "variableType": "AgentManager",
+    "mockedClass": "AgentManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.router",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\router\\NetworkHelperImplTest.java",
+      "className": "NetworkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprotected AgentManager agentManager;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Assert\r\nverify(this.agentManager, times(0)).send((Long) Matchers.anyObject(), (Command) Matchers.anyObject());",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWrongRouterVersion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.agentManager.send(HOST_ID, commands)).thenReturn(answers);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Assert\r\nverify(this.agentManager, times(1)).send(HOST_ID, commands);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.agentManager.send(HOST_ID, commands)).thenReturn(answers);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Assert\r\nverify(this.agentManager, times(1)).send(HOST_ID, commands);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.agentManager.send(HOST_ID, commands)).thenReturn(answers);",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithNoAnswers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Assert\r\nverify(this.agentManager, times(1)).send(HOST_ID, commands);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithNoAnswers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "agentManager",
+    "variableType": "AgentManager",
+    "mockedClass": "AgentManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.ca",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\ca\\CAManagerImplTest.java",
+      "className": "CAManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AgentManager agentManager;",
+        "line": 62,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(agentManager.send(anyLong(), any(SetupCertificateCommand.class))).thenReturn(new SetupCertificateAnswer(true));",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProvisionCertificate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(agentManager.send(anyLong(), any(SetupKeyStoreCommand.class))).thenReturn(new SetupKeystoreAnswer(\"someCsr\"));",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProvisionCertificate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(agentManager, Mockito.times(1)).send(Mockito.anyLong(), any(SetupKeyStoreCommand.class));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProvisionCertificate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(agentManager, Mockito.times(1)).send(Mockito.anyLong(), any(SetupCertificateCommand.class));",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProvisionCertificate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(agentManager, Mockito.times(1)).reconnect(Mockito.anyLong());",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProvisionCertificate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

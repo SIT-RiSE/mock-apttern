@@ -1,0 +1,287 @@
+[
+  {
+    "variableName": "scriptMock",
+    "variableType": "Script",
+    "mockedClass": "Script",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "final Script scriptMock = Mockito.mock(Script.class);",
+        "line": 274,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(scriptMock.execute()).thenReturn(null);",
+        "line": 6044,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHaproxyStatsMethod",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(scriptMock.execute(Mockito.any())).thenReturn(null);",
+        "line": 6045,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHaproxyStatsMethod",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock, times(4)).add(anyString());",
+        "line": 6053,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHaproxyStatsMethod",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(\"get_haproxy_stats.sh\");",
+        "line": 6054,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHaproxyStatsMethod",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(privateIp);",
+        "line": 6055,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHaproxyStatsMethod",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(publicIp);",
+        "line": 6056,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHaproxyStatsMethod",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(String.valueOf(port));",
+        "line": 6057,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHaproxyStatsMethod",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(scriptMock.execute()).thenReturn(null);",
+        "line": 6098,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod1",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(scriptMock.execute(Mockito.any())).thenReturn(null);",
+        "line": 6099,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod1",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock, times(3)).add(anyString());",
+        "line": 6107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod1",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(\"netusage.sh\");",
+        "line": 6108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod1",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(privateIp);",
+        "line": 6109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod1",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(\"-g\");",
+        "line": 6110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod1",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(\"-l\", publicIp);",
+        "line": 6112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod1",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(scriptMock.execute()).thenReturn(null);",
+        "line": 6120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod2",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(scriptMock.execute(Mockito.any())).thenReturn(null);",
+        "line": 6121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod2",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock, times(3)).add(anyString());",
+        "line": 6129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod2",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(\"netusage.sh\");",
+        "line": 6130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod2",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(privateIp);",
+        "line": 6131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod2",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scriptMock).add(\"-g\");",
+        "line": 6132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageMethod2",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

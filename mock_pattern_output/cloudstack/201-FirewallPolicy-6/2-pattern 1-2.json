@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "firewallPolicy",
+    "variableType": "FirewallPolicy",
+    "mockedClass": "FirewallPolicy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FirewallPolicy firewallPolicy = mock(FirewallPolicy.class);",
+        "line": 1394,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenFirewallPolicyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallPolicy.getFirewallRule()).thenReturn(List.of(firewallSequenceObjectReference));",
+        "line": 1402,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenFirewallPolicyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "firewallPolicy",
+    "variableType": "FirewallPolicy",
+    "mockedClass": "FirewallPolicy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FirewallPolicy firewallPolicy = mock(FirewallPolicy.class);",
+        "line": 1451,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenFirewallPolicyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallPolicy.getFirewallRule()).thenReturn(List.of(firewallSequenceObjectReference));",
+        "line": 1459,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenFirewallPolicyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,1688 @@
+[
+  {
+    "variableName": "hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.agent.manager",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\agent\\manager\\AgentManagerImplTest.java",
+      "className": "AgentManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private HostDao hostDao;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "hostDao = Mockito.mock(HostDao.class);",
+        "line": 52,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostDao.findById(Mockito.anyLong())).thenReturn(host);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNotifyMonitorsOfConnectionNormal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostDao.findById(Mockito.anyLong())).thenReturn(host);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNotifyMonitorsOfConnectionWhenStoragePoolConnectionHostFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\guru\\VMwareGuruTest.java",
+      "className": "VMwareGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostDao _hostDao;",
+        "line": 72,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findById(2L)).thenReturn(hostVO);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "finalizeMigrateForLocalStorageToHaveTargetHostGuid",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostDaoMock",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\XenServerGuruTest.java",
+      "className": "XenServerGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HostDao hostDaoMock;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostDaoMock.findById(defaultHostId)).thenReturn(defaultHost);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(hostDaoMock.findById(changedHostId)).thenReturn(changedHost);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostDaoMock.findHostInZoneToExecuteCommand(zoneId, HypervisorType.XenServer)).thenReturn(changedHost);",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateButHypervisorVersionIsBlank",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostDaoMock.findHostInZoneToExecuteCommand(zoneId, HypervisorType.XenServer)).thenReturn(changedHost);",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateButHypervisorVersionIsXenServer610",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostDaoMock.findHostInZoneToExecuteCommand(zoneId, HypervisorType.XenServer)).thenReturn(changedHost);",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateAndHypervisorVersionIsXenServer620WithoutHotfixOfSnapshots",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostDaoMock.findHostInZoneToExecuteCommand(zoneId, HypervisorType.XenServer)).thenReturn(changedHost);",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateAndHypervisorVersionIsXenServer620WithHotfixOfSnapshots",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostDaoMock.findHostInZoneToExecuteCommand(zoneId, HypervisorType.XenServer)).thenReturn(changedHost);",
+        "line": 254,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateAndHypervisorVersionIsXenServer650",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostdao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "HostDao hostdao = mock(HostDao.class);",
+        "line": 94,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(brocadeHost);",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(brocadeHost);",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(brocadeHost);",
+        "line": 362,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(brocadeHost);",
+        "line": 414,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserveFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(brocadeHost);",
+        "line": 459,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(brocadeHost);",
+        "line": 495,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocateFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(brocadeHost);",
+        "line": 530,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrash",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(brocadeHost);",
+        "line": 572,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\cisco-vnmc\\src\\test\\java\\com\\cloud\\network\\element\\CiscoVnmcElementTest.java",
+      "className": "CiscoVnmcElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "HostDao _hostDao = mock(HostDao.class);",
+        "line": 97,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shutdownTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyFWRulesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 339,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPRulesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyStaticNatsTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "HostDao hostDao = mock(HostDao.class);",
+        "line": 98,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(NICIRA_NVP_HOST_ID)).thenReturn(niciraNvpHost);",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementIsolatedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(NETWORK_ID)).thenReturn(hvo);",
+        "line": 250,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyIpTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(NICIRA_NVP_HOST_ID)).thenReturn(niciraNvpHost);",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkUuidVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(NICIRA_NVP_HOST_ID)).thenReturn(niciraNvpHost);",
+        "line": 341,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(NICIRA_NVP_HOST_ID)).thenReturn(niciraNvpHost);",
+        "line": 393,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdWithoutL2GatewayService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostdao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "HostDao hostdao = mock(HostDao.class);",
+        "line": 85,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(niciraHost);",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(niciraHost);",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(niciraHost);",
+        "line": 393,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostdao.findById(anyLong())).thenReturn(niciraHost);",
+        "line": 451,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostDao hostDao;",
+        "line": 152,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(host);",
+        "line": 617,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preparePublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(host);",
+        "line": 646,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareManagementNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(host);",
+        "line": 672,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareWithExceptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(host);",
+        "line": 696,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releasePublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(host);",
+        "line": 726,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseManagementNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(host);",
+        "line": 752,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseWithExceptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 888,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processHostAboutToBeRemovedWithSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 907,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processHostAboutToBeRemovedWithoutSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 1019,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareMigrationTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 1038,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rollbackMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 1056,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "commitMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenGuestNetworkGuruTest.java",
+      "className": "TungstenGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostDao hostDao;",
+        "line": 141,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(host);",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(host);",
+        "line": 405,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRelease",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findByPublicIp(any())).thenReturn(hostVO);",
+        "line": 462,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashSharedNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 488,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 508,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRollbackMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(anyLong())).thenReturn(hostVO);",
+        "line": 526,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCommitMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostDao hostDao;",
+        "line": 254,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.listAllHostsByZoneAndHypervisorType(anyLong(), eq(Hypervisor.HypervisorType.KVM))).thenReturn(List.of(hostVO));",
+        "line": 699,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateLoadBalancerTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findByPublicIp(anyString())).thenReturn(hostVO);",
+        "line": 1613,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSharedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.lifecycle",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\lifecycle\\ScaleIOPrimaryDataStoreLifeCycleTest.java",
+      "className": "ScaleIOPrimaryDataStoreLifeCycleTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HostDao hostDao;",
+        "line": 98,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(1L)).thenReturn(host1);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(2L)).thenReturn(host2);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostDao _hostDao;",
+        "line": 181,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 640,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 655,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 673,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(arrayList);",
+        "line": 691,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 709,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 727,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnClusterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 736,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(arrayList);",
+        "line": 754,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 772,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPodTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 786,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 800,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPublicIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 818,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 836,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 854,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPhysicalNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostDao _hostDao;",
+        "line": 181,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 640,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 655,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 673,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(arrayList);",
+        "line": 691,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 709,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 727,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnClusterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 736,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(arrayList);",
+        "line": 754,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 772,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPodTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 786,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 800,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPublicIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 818,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 836,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 854,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPhysicalNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostDao _hostDao;",
+        "line": 181,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 640,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 655,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 673,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(arrayList);",
+        "line": 691,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 709,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findByPodId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 727,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnClusterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 736,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(arrayList);",
+        "line": 754,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 772,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPodTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 786,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 800,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPublicIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 818,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 836,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostVO>());",
+        "line": 854,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPhysicalNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.ha",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\ha\\HighAvailabilityManagerImplTest.java",
+      "className": "HighAvailabilityManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostDao _hostDao;",
+        "line": 82,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findById(Mockito.anyLong())).thenReturn(hostVO);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "investigateHostStatusSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_hostDao.findById(Mockito.anyLong())).thenReturn(hostVO);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "investigateHostStatusFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostDao hostDao;",
+        "line": 246,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostDao.findById(hostId)).thenReturn(hostMock);",
+        "line": 2293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmStatsByIdFromHost2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.router",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\router\\VirtualNetworkApplianceManagerImplTest.java",
+      "className": "VirtualNetworkApplianceManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HostDao _hostDao;",
+        "line": 110,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_hostDao.findById(router.getHostId())).thenReturn(hostVo);",
+        "line": 294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateSite2SiteVpnConnectionState",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_hostDao",
+    "variableType": "HostDao",
+    "mockedClass": "HostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HostDao _hostDao;",
+        "line": 186,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_hostDao.listOrderedHostsHypervisorVersionsInDatacenter(anyLong(), any(HypervisorType.class))).thenReturn(hwVersions);",
+        "line": 1530,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBaseListOrderedHostsHypervisorVersionInDc",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

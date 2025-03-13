@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "httpClient",
+    "variableType": "HttpClient",
+    "mockedClass": "HttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.rpc",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\rpc\\ServiceClientImplTest.java",
+      "className": "ServiceClientImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HttpClient httpClient;",
+        "line": 81,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "return Mockito.when(httpClient.go(ArgumentMatchers.argThat(request -> request != null && expectedRequest.getMethod().equals(request.getMethod()) && expectedRequest.getUrl().equals(request.getUrl())), ArgumentMatchers.any(ObjectOrErrorResponseHandler.class), ArgumentMatchers.eq(RequestBuilder.DEFAULT_TIMEOUT)));",
+        "line": 712,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "expectHttpCall",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "factory",
+    "variableType": "ExpressionEvaluatingParameterSourceFactory",
+    "mockedClass": "ExpressionEvaluatingParameterSourceFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jpa.core",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jpa\\src\\test\\java\\org\\springframework\\integration\\jpa\\core\\JpaExecutorTests.java",
+      "className": "JpaExecutorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ExpressionEvaluatingParameterSourceFactory factory = new ExpressionEvaluatingParameterSourceFactory(mock(BeanFactory.class));",
+        "line": 163,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "getJpaExecutorForMessageAsParamSource",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 22
+  },
+  {
+    "variableName": "factory",
+    "variableType": "ExpressionEvaluatingParameterSourceFactory",
+    "mockedClass": "ExpressionEvaluatingParameterSourceFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jpa.core",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jpa\\src\\test\\java\\org\\springframework\\integration\\jpa\\core\\JpaExecutorTests.java",
+      "className": "JpaExecutorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ExpressionEvaluatingParameterSourceFactory factory = new ExpressionEvaluatingParameterSourceFactory(mock(BeanFactory.class));",
+        "line": 178,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "getJpaExecutorForPayloadAsParamSource",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 22
+  },
+  {
+    "variableName": "factory",
+    "variableType": "ExpressionEvaluatingParameterSourceFactory",
+    "mockedClass": "ExpressionEvaluatingParameterSourceFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jpa.support.parametersource",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jpa\\src\\test\\java\\org\\springframework\\integration\\jpa\\support\\parametersource\\ExpressionEvaluatingParameterSourceFactoryTests.java",
+      "className": "ExpressionEvaluatingParameterSourceFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private final ExpressionEvaluatingParameterSourceFactory factory = new ExpressionEvaluatingParameterSourceFactory(mock(BeanFactory.class));",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 39
+  }
+]

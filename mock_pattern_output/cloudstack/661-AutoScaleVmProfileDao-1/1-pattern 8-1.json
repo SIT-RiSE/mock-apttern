@@ -1,0 +1,248 @@
+[
+  {
+    "variableName": "autoScaleVmProfileDao",
+    "variableType": "AutoScaleVmProfileDao",
+    "mockedClass": "AutoScaleVmProfileDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAutoScaleVmProfileDao autoScaleVmProfileDao;",
+        "line": 213,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.persist(any())).thenReturn(asVmProfileMock);",
+        "line": 750,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(autoScaleVmProfileDao).persist(Mockito.any());",
+        "line": 767,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.findById(vmProfileId)).thenReturn(asVmProfileMock);",
+        "line": 806,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.persist(any())).thenReturn(asVmProfileMock);",
+        "line": 809,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(autoScaleVmProfileDao).persist(Mockito.any());",
+        "line": 831,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.findById(vmProfileId)).thenReturn(asVmProfileMock);",
+        "line": 839,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.remove(vmProfileId)).thenReturn(true);",
+        "line": 841,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.findById(vmProfileId)).thenReturn(asVmProfileMock);",
+        "line": 850,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAutoScaleVmProfileInUse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.findById(vmProfileId)).thenReturn(asVmProfileMock);",
+        "line": 858,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAutoScaleVmProfileFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.remove(vmProfileId)).thenReturn(false);",
+        "line": 860,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAutoScaleVmProfileFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.findById(vmProfileId)).thenReturn(asVmProfileMock);",
+        "line": 969,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.findById(vmProfileId)).thenReturn(asVmProfileMock);",
+        "line": 1060,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.removeByAccountId(accountId)).thenReturn(1);",
+        "line": 1230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCleanUpAutoScaleResources",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(autoScaleVmProfileDao).removeByAccountId(accountId);",
+        "line": 1236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCleanUpAutoScaleResources",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.findById(vmProfileId)).thenReturn(asVmProfileMock);",
+        "line": 1259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.findById(vmProfileId)).thenReturn(asVmProfileMock);",
+        "line": 1307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.findById(vmProfileId)).thenReturn(asVmProfileMock);",
+        "line": 1356,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(autoScaleVmProfileDao.findById(vmProfileId)).thenReturn(asVmProfileMock);",
+        "line": 1557,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleDown",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

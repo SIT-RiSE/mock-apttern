@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "resourceHandler",
+    "variableType": "BasicAuthorizerResourceHandler",
+    "mockedClass": "BasicAuthorizerResourceHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.security.basic.authorization.endpoint",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-core\\druid-basic-security\\src\\test\\java\\org\\apache\\druid\\security\\basic\\authorization\\endpoint\\BasicAuthorizerResourceTest.java",
+      "className": "BasicAuthorizerResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock(answer = Answers.RETURNS_MOCKS)\r\nprivate BasicAuthorizerResourceHandler resourceHandler;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "variableName": "mockedSQLException",
+    "variableType": "SQLException",
+    "mockedClass": "SQLException",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.utils.db",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\db\\src\\test\\java\\com\\cloud\\utils\\db\\GenericDaoBaseTest.java",
+      "className": "GenericDaoBaseTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSQLException mockedSQLException;",
+        "line": 36,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSQLException.getErrorCode()).thenReturn(123);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleEntityExistsExceptionTestNoMatchForEntityExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSQLException.getSQLState()).thenReturn(\"123\");",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleEntityExistsExceptionTestNoMatchForEntityExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSQLException.getErrorCode()).thenReturn(123);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleEntityExistsExceptionTestIntegrityConstraint",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSQLException.getSQLState()).thenReturn(INTEGRITY_CONSTRAINT_VIOLATION);",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleEntityExistsExceptionTestIntegrityConstraint",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSQLException.getErrorCode()).thenReturn(123);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleEntityExistsExceptionTestIntegrityConstraintNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSQLException.getSQLState()).thenReturn(null);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleEntityExistsExceptionTestIntegrityConstraintNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSQLException.getErrorCode()).thenReturn(DUPLICATE_ENTRY_ERRO_CODE);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleEntityExistsExceptionTestDuplicateEntryErrorCode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSQLException.getSQLState()).thenReturn(\"123\");",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleEntityExistsExceptionTestDuplicateEntryErrorCode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSQLException.getErrorCode()).thenReturn(DUPLICATE_ENTRY_ERRO_CODE);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleEntityExistsExceptionTestExpectEntityExistsException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSQLException.getSQLState()).thenReturn(INTEGRITY_CONSTRAINT_VIOLATION);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleEntityExistsExceptionTestExpectEntityExistsException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

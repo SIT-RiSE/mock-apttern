@@ -1,0 +1,92 @@
+[
+  {
+    "variableName": "profile",
+    "variableType": "VirtualMachineProfile",
+    "mockedClass": "VirtualMachineProfile",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.affinity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\affinity-group-processors\\host-affinity\\src\\test\\java\\org\\apache\\cloudstack\\affinity\\HostAffinityProcessorTest.java",
+      "className": "HostAffinityProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVirtualMachineProfile profile;",
+        "line": 98,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(profile.getVirtualMachine()).thenReturn(vm);",
+        "line": 122,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "vmProfile",
+    "variableType": "VirtualMachineProfile",
+    "mockedClass": "VirtualMachineProfile",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.dpdk",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\dpdk\\DpdkHelperImplTest.java",
+      "className": "DpdkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVirtualMachineProfile vmProfile;",
+        "line": 65,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmProfile.getServiceOffering()).thenReturn(serviceOffering);",
+        "line": 120,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmProfile.getServiceOffering()).thenReturn(serviceOffering);",
+        "line": 122,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "lrc",
+    "variableType": "LogicalRouter",
+    "mockedClass": "LogicalRouter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LogicalRouter lrc = mock(LogicalRouter.class);",
+        "line": 330,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lrc.getUuid()).thenReturn(\"ccccc\");",
+        "line": 333,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "lrc",
+    "variableType": "LogicalRouter",
+    "mockedClass": "LogicalRouter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LogicalRouter lrc = mock(LogicalRouter.class);",
+        "line": 362,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lrc.getUuid()).thenReturn(\"ccccc\");",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "lrc",
+    "variableType": "LogicalRouter",
+    "mockedClass": "LogicalRouter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LogicalRouter lrc = mock(LogicalRouter.class);",
+        "line": 377,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouterAndSwitchPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lrc.getUuid()).thenReturn(\"ccccc\");",
+        "line": 380,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalRouterApiExceptionRollbackRouterAndSwitchPort",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "logicalRouter",
+    "variableType": "LogicalRouter",
+    "mockedClass": "LogicalRouter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\resource\\TungstenResourceTest.java",
+      "className": "TungstenResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogicalRouter logicalRouter = mock(LogicalRouter.class);",
+        "line": 1443,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestDeleteTungstenRoutingLogicalRouterCommandFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(logicalRouter.getVirtualMachineInterface()).thenReturn(List.of(objectReference));",
+        "line": 1448,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestDeleteTungstenRoutingLogicalRouterCommandFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "outputstream",
+    "variableType": "ServletOutputStream",
+    "mockedClass": "ServletOutputStream",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\context\\HttpSessionSecurityContextRepositoryTests.java",
+      "className": "HttpSessionSecurityContextRepositoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServletOutputStream outputstream = mock(ServletOutputStream.class);",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "outputStreamCloseDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(outputstream).close();",
+        "line": 423,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "outputStreamCloseDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "outputstream",
+    "variableType": "ServletOutputStream",
+    "mockedClass": "ServletOutputStream",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\context\\HttpSessionSecurityContextRepositoryTests.java",
+      "className": "HttpSessionSecurityContextRepositoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServletOutputStream outputstream = mock(ServletOutputStream.class);",
+        "line": 433,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "outputStreamFlushesDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(outputstream).flush();",
+        "line": 439,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "outputStreamFlushesDelegate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

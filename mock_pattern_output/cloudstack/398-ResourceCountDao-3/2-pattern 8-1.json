@@ -1,0 +1,54 @@
+[
+  {
+    "variableName": "_resourceCountDao",
+    "variableType": "ResourceCountDao",
+    "mockedClass": "ResourceCountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\DomainManagerImplTest.java",
+      "className": "DomainManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nResourceCountDao _resourceCountDao;",
+        "line": 80,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_resourceCountDao.removeEntriesByOwner(Mockito.anyLong(), Mockito.eq(ResourceOwnerType.Domain))).thenReturn(1l);",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteDomainCleanup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(_resourceCountDao).createResourceCounts(domainVoMock.getId(), ResourceLimit.ResourceOwnerType.Domain);",
+        "line": 406,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDomainTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "router",
+    "variableType": "AppScriptStateRouter<String>",
+    "mockedClass": "AppScriptStateRouter<String>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.router.script.config",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\router\\script\\config\\AppScriptStateRouterTest.java",
+      "className": "AppScriptStateRouterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AppScriptStateRouter<String> router = new AppScriptStateRouter<>(url);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigScriptRoute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "router = Mockito.spy(router);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigScriptRoute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(router.getRuleRepository()).thenReturn(ruleRepository);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigScriptRoute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 29
+  }
+]

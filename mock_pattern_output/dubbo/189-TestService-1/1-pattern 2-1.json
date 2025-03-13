@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "service",
+    "variableType": "TestService",
+    "mockedClass": "TestService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config.spring",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-spring\\src\\test\\java\\org\\apache\\dubbo\\config\\spring\\ServiceBeanTest.java",
+      "className": "ServiceBeanTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TestService service = mock(TestService.class);",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

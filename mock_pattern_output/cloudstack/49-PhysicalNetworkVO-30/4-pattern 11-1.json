@@ -1,0 +1,47 @@
+[
+  {
+    "variableName": "psvo",
+    "variableType": "PhysicalNetworkVO",
+    "mockedClass": "PhysicalNetworkVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\stratosphere-ssp\\src\\test\\java\\org\\apache\\cloudstack\\network\\element\\SspElementTest.java",
+      "className": "SspElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "PhysicalNetworkVO psvo = mock(PhysicalNetworkVO.class);",
+        "line": 76,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// when physicalNetworkServiceProvider is configured\r\nwhen(psvo.getId()).thenReturn(physicalNetworkId);",
+        "line": 83,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "fullyConfigured",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(psvo.getDataCenterId()).thenReturn(dataCenterId);",
+        "line": 84,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "fullyConfigured",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

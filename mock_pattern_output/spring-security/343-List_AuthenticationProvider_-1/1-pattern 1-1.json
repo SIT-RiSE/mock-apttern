@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "providers",
+    "variableType": "List<AuthenticationProvider>",
+    "mockedClass": "ArrayList",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ProviderManagerTests.java",
+      "className": "ProviderManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "List<AuthenticationProvider> providers = spy(ArrayList.class);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorWhenUsingListOfThenNoException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// List.of(null) in JDK 9 throws a NullPointerException\r\ngiven(providers.contains(eq(null))).willThrow(NullPointerException.class);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorWhenUsingListOfThenNoException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

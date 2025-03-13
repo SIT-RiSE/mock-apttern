@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "migrationInvoker",
+    "variableType": "MigrationInvoker<?>",
+    "mockedClass": "MigrationInvoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.util",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\util\\ServiceCheckUtilsTest.java",
+      "className": "ServiceCheckUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MigrationInvoker<?> migrationInvoker = Mockito.mock(MigrationInvoker.class);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationInvoker.getMigrationStep()).thenReturn(MigrationStep.FORCE_APPLICATION);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationInvoker.getServiceDiscoveryInvoker()).thenReturn(serviceDiscoveryInvoker);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationInvoker.getMigrationStep()).thenReturn(MigrationStep.APPLICATION_FIRST);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationInvoker.getServiceDiscoveryInvoker()).thenReturn(serviceDiscoveryInvoker);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationInvoker.getInvoker()).thenReturn(invoker);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationInvoker.getMigrationStep()).thenReturn(MigrationStep.FORCE_INTERFACE);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationInvoker.getInvoker()).thenReturn(invoker);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

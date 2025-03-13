@@ -1,0 +1,353 @@
+[
+  {
+    "variableName": "cmd",
+    "variableType": "AddKubernetesSupportedVersionCmd",
+    "mockedClass": "AddKubernetesSupportedVersionCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.version",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\version\\KubernetesVersionServiceTest.java",
+      "className": "KubernetesVersionServiceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AddKubernetesSupportedVersionCmd cmd = Mockito.mock(AddKubernetesSupportedVersionCmd.class);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionLowerUnsupportedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getMinimumCpu()).thenReturn(KubernetesClusterService.MIN_KUBERNETES_CLUSTER_NODE_CPU);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionLowerUnsupportedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getMinimumRamSize()).thenReturn(KubernetesClusterService.MIN_KUBERNETES_CLUSTER_NODE_RAM_SIZE);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionLowerUnsupportedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getSemanticVersion()).thenReturn(\"1.1.1\");",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionLowerUnsupportedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "AddKubernetesSupportedVersionCmd",
+    "mockedClass": "AddKubernetesSupportedVersionCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.version",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\version\\KubernetesVersionServiceTest.java",
+      "className": "KubernetesVersionServiceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AddKubernetesSupportedVersionCmd cmd = Mockito.mock(AddKubernetesSupportedVersionCmd.class);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionInvalidCpuTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getMinimumCpu()).thenReturn(KubernetesClusterService.MIN_KUBERNETES_CLUSTER_NODE_CPU - 1);",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionInvalidCpuTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getMinimumRamSize()).thenReturn(KubernetesClusterService.MIN_KUBERNETES_CLUSTER_NODE_RAM_SIZE);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionInvalidCpuTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getSemanticVersion()).thenReturn(KubernetesVersionService.MIN_KUBERNETES_VERSION);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionInvalidCpuTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "AddKubernetesSupportedVersionCmd",
+    "mockedClass": "AddKubernetesSupportedVersionCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.version",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\version\\KubernetesVersionServiceTest.java",
+      "className": "KubernetesVersionServiceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AddKubernetesSupportedVersionCmd cmd = Mockito.mock(AddKubernetesSupportedVersionCmd.class);",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionInvalidRamSizeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getMinimumCpu()).thenReturn(KubernetesClusterService.MIN_KUBERNETES_CLUSTER_NODE_CPU);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionInvalidRamSizeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getMinimumRamSize()).thenReturn(KubernetesClusterService.MIN_KUBERNETES_CLUSTER_NODE_RAM_SIZE - 10);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionInvalidRamSizeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getSemanticVersion()).thenReturn(KubernetesVersionService.MIN_KUBERNETES_VERSION);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionInvalidRamSizeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "AddKubernetesSupportedVersionCmd",
+    "mockedClass": "AddKubernetesSupportedVersionCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.version",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\version\\KubernetesVersionServiceTest.java",
+      "className": "KubernetesVersionServiceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AddKubernetesSupportedVersionCmd cmd = Mockito.mock(AddKubernetesSupportedVersionCmd.class);",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionEmptyUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getMinimumCpu()).thenReturn(KubernetesClusterService.MIN_KUBERNETES_CLUSTER_NODE_CPU);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionEmptyUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getMinimumRamSize()).thenReturn(KubernetesClusterService.MIN_KUBERNETES_CLUSTER_NODE_RAM_SIZE);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionEmptyUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getSemanticVersion()).thenReturn(KubernetesVersionService.MIN_KUBERNETES_VERSION);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionEmptyUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getUrl()).thenReturn(\"\");",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionEmptyUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "AddKubernetesSupportedVersionCmd",
+    "mockedClass": "AddKubernetesSupportedVersionCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.version",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\version\\KubernetesVersionServiceTest.java",
+      "className": "KubernetesVersionServiceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AddKubernetesSupportedVersionCmd cmd = Mockito.mock(AddKubernetesSupportedVersionCmd.class);",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionIsoUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getSemanticVersion()).thenReturn(KubernetesVersionService.MIN_KUBERNETES_VERSION);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionIsoUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getUrl()).thenReturn(\"https://download.cloudstack.com\");",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionIsoUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getChecksum()).thenReturn(null);",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionIsoUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getMinimumCpu()).thenReturn(KubernetesClusterService.MIN_KUBERNETES_CLUSTER_NODE_CPU);",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionIsoUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getMinimumRamSize()).thenReturn(KubernetesClusterService.MIN_KUBERNETES_CLUSTER_NODE_RAM_SIZE);",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionIsoUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

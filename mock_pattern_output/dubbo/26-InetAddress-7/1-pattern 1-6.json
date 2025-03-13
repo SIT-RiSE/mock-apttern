@@ -1,0 +1,296 @@
+[
+  {
+    "variableName": "mockSelectedAddr",
+    "variableType": "InetAddress",
+    "mockedClass": "InetAddress",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\NetUtilsInterfaceDisplayNameHasMetaCharactersTest.java",
+      "className": "NetUtilsInterfaceDisplayNameHasMetaCharactersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InetAddress mockSelectedAddr = Mockito.mock(InetAddress.class);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockSelectedAddr.isLoopbackAddress()).thenReturn(false);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockSelectedAddr.getHostAddress()).thenReturn(SELECTED_HOST_ADDR);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockSelectedAddr.isReachable(Mockito.anyInt())).thenReturn(true);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "address",
+    "variableType": "InetAddress",
+    "mockedClass": "InetAddress",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\NetUtilsTest.java",
+      "className": "NetUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InetAddress address = mock(InetAddress.class);",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testToAddressString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(address.getHostAddress()).thenReturn(\"dubbo\");",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testToAddressString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "addr",
+    "variableType": "InetAddress",
+    "mockedClass": "InetAddress",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\ForeignHostPermitHandlerTest.java",
+      "className": "ForeignHostPermitHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InetAddress addr = mock(InetAddress.class);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndEmptyWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(addr.isLoopbackAddress()).thenReturn(false);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndEmptyWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "addr",
+    "variableType": "InetAddress",
+    "mockedClass": "InetAddress",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\ForeignHostPermitHandlerTest.java",
+      "className": "ForeignHostPermitHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InetAddress addr = mock(InetAddress.class);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndNotMatchWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(addr.isLoopbackAddress()).thenReturn(false);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndNotMatchWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(addr.getHostAddress()).thenReturn(\"179.23.44.1\");",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndNotMatchWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "addr",
+    "variableType": "InetAddress",
+    "mockedClass": "InetAddress",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\ForeignHostPermitHandlerTest.java",
+      "className": "ForeignHostPermitHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InetAddress addr = mock(InetAddress.class);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndMatchWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(addr.isLoopbackAddress()).thenReturn(false);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndMatchWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(addr.getHostAddress()).thenReturn(\"175.23.44.1\");",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndMatchWhiteList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "addr",
+    "variableType": "InetAddress",
+    "mockedClass": "InetAddress",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\ForeignHostPermitHandlerTest.java",
+      "className": "ForeignHostPermitHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InetAddress addr = mock(InetAddress.class);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndMatchWhiteListRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(addr.isLoopbackAddress()).thenReturn(false);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndMatchWhiteListRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(addr.getHostAddress()).thenReturn(\"192.168.1.199\");",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldNotShowIpNotPermittedMsg_GivenAcceptForeignIpFalseAndMatchWhiteListRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

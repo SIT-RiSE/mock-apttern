@@ -1,0 +1,100 @@
+[
+  {
+    "variableName": "answer",
+    "variableType": "HandleConfigDriveIsoAnswer",
+    "mockedClass": "HandleConfigDriveIsoAnswer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\element\\ConfigDriveNetworkElementTest.java",
+      "className": "ConfigDriveNetworkElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final HandleConfigDriveIsoAnswer answer = mock(HandleConfigDriveIsoAnswer.class);",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExpunge",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(answer.getResult()).thenReturn(true);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExpunge",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "answer",
+    "variableType": "HandleConfigDriveIsoAnswer",
+    "mockedClass": "HandleConfigDriveIsoAnswer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\element\\ConfigDriveNetworkElementTest.java",
+      "className": "ConfigDriveNetworkElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final HandleConfigDriveIsoAnswer answer = mock(HandleConfigDriveIsoAnswer.class);",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddPasswordAndUserData",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(answer.getResult()).thenReturn(true);",
+        "line": 282,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddPasswordAndUserData",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(answer.getConfigDriveLocation()).thenReturn(NetworkElement.Location.PRIMARY);",
+        "line": 283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddPasswordAndUserData",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

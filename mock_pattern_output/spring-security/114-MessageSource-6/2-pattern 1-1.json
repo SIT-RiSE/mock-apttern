@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "source",
+    "variableType": "MessageSource",
+    "mockedClass": "MessageSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\ObservationAuthorizationManagerTests.java",
+      "className": "ObservationAuthorizationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageSource source = mock(MessageSource.class);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "verifyWhenErrorsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(source.getMessage(eq(\"AbstractAccessDecisionManager.accessDenied\"), any(), any(), any())).willReturn(\"accessDenied\");",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "verifyWhenErrorsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "TestApplicationContext",
+    "mockedClass": "TestApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\config\\ServiceActivatorAnnotationPostProcessorTests.java",
+      "className": "ServiceActivatorAnnotationPostProcessorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "try (TestApplicationContext context = TestUtils.createTestApplicationContext()) {\r\n    new IntegrationRegistrar().registerBeanDefinitions(mock(), context.getDefaultListableBeanFactory());\r\n    context.registerBeanDefinition(\"testChannel\", new RootBeanDefinition(DirectChannel.class));\r\n    RootBeanDefinition beanDefinition = new RootBeanDefinition(SimpleServiceActivatorAnnotationTestBean.class);\r\n    beanDefinition.getConstructorArgumentValues().addGenericArgumentValue(latch);\r\n    context.registerBeanDefinition(\"testBean\", beanDefinition);\r\n    context.refresh();\r\n    SimpleServiceActivatorAnnotationTestBean testBean = context.getBean(\"testBean\", SimpleServiceActivatorAnnotationTestBean.class);\r\n    assertThat(latch.getCount()).isEqualTo(1);\r\n    assertThat(testBean.getMessageText()).isNull();\r\n    MessageChannel testChannel = (MessageChannel) context.getBean(\"testChannel\");\r\n    testChannel.send(new GenericMessage<>(\"test-123\"));\r\n    assertThat(latch.await(1000, TimeUnit.MILLISECONDS)).isTrue();\r\n    assertThat(testBean.getMessageText()).isEqualTo(\"test-123\");\r\n}",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAnnotatedMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "applicationPolicySet",
+    "variableType": "ApplicationPolicySet",
+    "mockedClass": "ApplicationPolicySet",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationPolicySet applicationPolicySet = mock(ApplicationPolicySet.class);",
+        "line": 1411,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenApplicationPolicySetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationPolicySet.getTag()).thenReturn(List.of(objectReference));",
+        "line": 1420,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenApplicationPolicySetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationPolicySet.getFirewallPolicy()).thenReturn(List.of(firewallSequenceObjectReference));",
+        "line": 1422,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenApplicationPolicySetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "applicationPolicySet",
+    "variableType": "ApplicationPolicySet",
+    "mockedClass": "ApplicationPolicySet",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationPolicySet applicationPolicySet = mock(ApplicationPolicySet.class);",
+        "line": 1431,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenApplicationPolicySetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationPolicySet.getTag()).thenReturn(List.of(objectReference));",
+        "line": 1440,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenApplicationPolicySetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationPolicySet.getFirewallPolicy()).thenReturn(List.of(firewallSequenceObjectReference));",
+        "line": 1442,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenApplicationPolicySetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

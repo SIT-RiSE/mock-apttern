@@ -1,0 +1,329 @@
+[
+  {
+    "variableName": "v1",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.orchestration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\org\\apache\\cloudstack\\engine\\orchestration\\VolumeOrchestratorTest.java",
+      "className": "VolumeOrchestratorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeVO v1 = Mockito.mock(VolumeVO.class);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runCheckAndUpdateVolumeAccountResourceCountTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(v1.getSize()).thenReturn(originalSize);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runCheckAndUpdateVolumeAccountResourceCountTest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "v2",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.orchestration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\org\\apache\\cloudstack\\engine\\orchestration\\VolumeOrchestratorTest.java",
+      "className": "VolumeOrchestratorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeVO v2 = Mockito.mock(VolumeVO.class);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runCheckAndUpdateVolumeAccountResourceCountTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(v2.getSize()).thenReturn(newSize);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runCheckAndUpdateVolumeAccountResourceCountTest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "volumeVO",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\StorageManagerImplTest.java",
+      "className": "StorageManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeVO volumeVO = Mockito.mock(VolumeVO.class);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVolumeSuspectedDestroyDuplicateTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volumeVO.getPoolId()).thenReturn(poolId);",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVolumeSuspectedDestroyDuplicateTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volumeVO.getPath()).thenReturn(path);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVolumeSuspectedDestroyDuplicateTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "volume",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeVO volume = Mockito.mock(VolumeVO.class);",
+        "line": 1314,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunTestOfIsNotPossibleToResize",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volume.getVolumeType()).thenReturn(volumeType);",
+        "line": 1315,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunTestOfIsNotPossibleToResize",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volume.getTemplateId()).thenReturn(1l);",
+        "line": 1317,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunTestOfIsNotPossibleToResize",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vol",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeVO vol = Mockito.mock(VolumeVO.class);",
+        "line": 1603,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStoragePoolCompatibilityAndAllowEncryptedVolumeMigrationForPowerFlexStorage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol.getState()).thenReturn(Volume.State.Ready);",
+        "line": 1606,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStoragePoolCompatibilityAndAllowEncryptedVolumeMigrationForPowerFlexStorage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol.getPoolId()).thenReturn(1L);",
+        "line": 1607,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStoragePoolCompatibilityAndAllowEncryptedVolumeMigrationForPowerFlexStorage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol.getInstanceId()).thenReturn(null);",
+        "line": 1608,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStoragePoolCompatibilityAndAllowEncryptedVolumeMigrationForPowerFlexStorage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol.getDiskOfferingId()).thenReturn(1L);",
+        "line": 1609,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStoragePoolCompatibilityAndAllowEncryptedVolumeMigrationForPowerFlexStorage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol.getPassphraseId()).thenReturn(1L);",
+        "line": 1617,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStoragePoolCompatibilityAndAllowEncryptedVolumeMigrationForPowerFlexStorage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "rootVolumeOfVm",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeVO rootVolumeOfVm = Mockito.mock(VolumeVO.class);",
+        "line": 643,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunResizeVolumeTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(rootVolumeOfVm.getId()).thenReturn(rootVolumeId);",
+        "line": 644,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunResizeVolumeTest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "volume",
+    "variableType": "VolumeVO",
+    "mockedClass": "VolumeVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.annotation",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\annotation\\AnnotationManagerImplTest.java",
+      "className": "AnnotationManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeVO volume = Mockito.mock(VolumeVO.class);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddAnnotationResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volume.getId()).thenReturn(ENTITY_ID);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddAnnotationResourceDetailsUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

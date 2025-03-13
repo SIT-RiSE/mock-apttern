@@ -1,0 +1,176 @@
+[
+  {
+    "variableName": "log",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\LogUtilTest.java",
+      "className": "LogUtilTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log log = mock(Log.class);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindLevelWithThreadName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "log = mock(Log.class);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindLevelWithThreadName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(log.getLogLevel()).thenReturn(Level.ERROR);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindLevelWithThreadName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(log.getLogThread()).thenReturn(\"thread-1\");",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindLevelWithThreadName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(log.getLogLevel()).thenReturn(Level.ERROR);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindLevelWithThreadName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(log.getLogThread()).thenReturn(\"thread-2\");",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindLevelWithThreadName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 29
+  },
+  {
+    "variableName": "log",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\LogUtilTest.java",
+      "className": "LogUtilTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log log = mock(Log.class);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMessage2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "log = mock(Log.class);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMessage2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(log.getLogMessage()).thenReturn(\"message\");",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMessage2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(log.getLogLevel()).thenReturn(Level.ERROR);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMessage2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(log.getLogMessage()).thenReturn(\"message\");",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMessage2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(log.getLogLevel()).thenReturn(Level.INFO);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMessage2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 29
+  }
+]

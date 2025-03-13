@@ -1,0 +1,197 @@
+[
+  {
+    "variableName": "authorizedClientProvider1",
+    "variableType": "ReactiveOAuth2AuthorizedClientProvider",
+    "mockedClass": "ReactiveOAuth2AuthorizedClientProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\DelegatingReactiveOAuth2AuthorizedClientProviderTests.java",
+      "className": "DelegatingReactiveOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOAuth2AuthorizedClientProvider authorizedClientProvider1 = mock(ReactiveOAuth2AuthorizedClientProvider.class);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCanAuthorizeThenReturnAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClientProvider1.authorize(any())).willReturn(Mono.empty());",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCanAuthorizeThenReturnAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "authorizedClientProvider2",
+    "variableType": "ReactiveOAuth2AuthorizedClientProvider",
+    "mockedClass": "ReactiveOAuth2AuthorizedClientProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\DelegatingReactiveOAuth2AuthorizedClientProviderTests.java",
+      "className": "DelegatingReactiveOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOAuth2AuthorizedClientProvider authorizedClientProvider2 = mock(ReactiveOAuth2AuthorizedClientProvider.class);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCanAuthorizeThenReturnAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClientProvider2.authorize(any())).willReturn(Mono.empty());",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCanAuthorizeThenReturnAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "authorizedClientProvider3",
+    "variableType": "ReactiveOAuth2AuthorizedClientProvider",
+    "mockedClass": "ReactiveOAuth2AuthorizedClientProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\DelegatingReactiveOAuth2AuthorizedClientProviderTests.java",
+      "className": "DelegatingReactiveOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOAuth2AuthorizedClientProvider authorizedClientProvider3 = mock(ReactiveOAuth2AuthorizedClientProvider.class);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCanAuthorizeThenReturnAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClientProvider3.authorize(any())).willReturn(Mono.just(authorizedClient));",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCanAuthorizeThenReturnAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "authorizedClientProvider1",
+    "variableType": "ReactiveOAuth2AuthorizedClientProvider",
+    "mockedClass": "ReactiveOAuth2AuthorizedClientProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\DelegatingReactiveOAuth2AuthorizedClientProviderTests.java",
+      "className": "DelegatingReactiveOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOAuth2AuthorizedClientProvider authorizedClientProvider1 = mock(ReactiveOAuth2AuthorizedClientProvider.class);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCantAuthorizeThenReturnNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClientProvider1.authorize(any())).willReturn(Mono.empty());",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCantAuthorizeThenReturnNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "authorizedClientProvider2",
+    "variableType": "ReactiveOAuth2AuthorizedClientProvider",
+    "mockedClass": "ReactiveOAuth2AuthorizedClientProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\DelegatingReactiveOAuth2AuthorizedClientProviderTests.java",
+      "className": "DelegatingReactiveOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOAuth2AuthorizedClientProvider authorizedClientProvider2 = mock(ReactiveOAuth2AuthorizedClientProvider.class);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCantAuthorizeThenReturnNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClientProvider2.authorize(any())).willReturn(Mono.empty());",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCantAuthorizeThenReturnNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "customJwtValidatorFactory",
+    "variableType": "Function<ClientRegistration,OAuth2TokenValidator<Jwt>>",
+    "mockedClass": "Function",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\authentication\\OidcIdTokenDecoderFactoryTests.java",
+      "className": "OidcIdTokenDecoderFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Function<ClientRegistration, OAuth2TokenValidator<Jwt>> customJwtValidatorFactory = mock(Function.class);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwtValidatorFactorySetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customJwtValidatorFactory.apply(same(clientRegistration))).willReturn(new OidcIdTokenValidator(clientRegistration));",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwtValidatorFactorySetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customJwtValidatorFactory).apply(same(clientRegistration));",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwtValidatorFactorySetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "customJwtValidatorFactory",
+    "variableType": "Function<ClientRegistration,OAuth2TokenValidator<Jwt>>",
+    "mockedClass": "Function",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\authentication\\ReactiveOidcIdTokenDecoderFactoryTests.java",
+      "className": "ReactiveOidcIdTokenDecoderFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Function<ClientRegistration, OAuth2TokenValidator<Jwt>> customJwtValidatorFactory = mock(Function.class);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwtValidatorFactorySetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customJwtValidatorFactory.apply(same(clientRegistration))).willReturn(new OidcIdTokenValidator(clientRegistration));",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwtValidatorFactorySetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customJwtValidatorFactory).apply(same(clientRegistration));",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDecoderWhenCustomJwtValidatorFactorySetThenApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

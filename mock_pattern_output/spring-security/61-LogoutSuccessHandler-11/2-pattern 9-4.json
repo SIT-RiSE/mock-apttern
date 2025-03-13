@@ -1,0 +1,324 @@
+[
+  {
+    "variableName": "logoutSuccessHandler",
+    "variableType": "LogoutSuccessHandler",
+    "mockedClass": "LogoutSuccessHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\Saml2LogoutResponseFilterTests.java",
+      "className": "Saml2LogoutResponseFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "LogoutSuccessHandler logoutSuccessHandler = mock(LogoutSuccessHandler.class);",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logoutSuccessHandler).onLogoutSuccess(any(), any(), any());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlResponsePostThenLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logoutSuccessHandler).onLogoutSuccess(any(), any(), any());",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlResponseRedirectThenLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.logoutResponseValidator, this.logoutSuccessHandler);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenRequestMismatchesThenNoLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.logoutResponseValidator, this.logoutSuccessHandler);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenNoSamlRequestOrResponseThenNoLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.logoutSuccessHandler);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenValidatorFailsThenStops",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.logoutSuccessHandler);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenNoRelyingPartyLogoutThen401",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "handler",
+    "variableType": "LogoutSuccessHandler",
+    "mockedClass": "LogoutSuccessHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\logout\\DelegatingLogoutSuccessHandlerTests.java",
+      "className": "DelegatingLogoutSuccessHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLogoutSuccessHandler handler;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.handler).onLogoutSuccess(this.request, this.response, this.authentication);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessFirstMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.handler, this.defaultHandler);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessSecondMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.handler, this.handler2);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.handler, this.handler2, this.defaultHandler);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessNoMatchDefaultNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "defaultHandler",
+    "variableType": "LogoutSuccessHandler",
+    "mockedClass": "LogoutSuccessHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\logout\\DelegatingLogoutSuccessHandlerTests.java",
+      "className": "DelegatingLogoutSuccessHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLogoutSuccessHandler defaultHandler;",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.matcher2, this.handler2, this.defaultHandler);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessFirstMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.handler, this.defaultHandler);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessSecondMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.defaultHandler).onLogoutSuccess(this.request, this.response, this.authentication);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.handler, this.handler2, this.defaultHandler);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessNoMatchDefaultNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "handler2",
+    "variableType": "LogoutSuccessHandler",
+    "mockedClass": "LogoutSuccessHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\logout\\DelegatingLogoutSuccessHandlerTests.java",
+      "className": "DelegatingLogoutSuccessHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLogoutSuccessHandler handler2;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.matcher2, this.handler2, this.defaultHandler);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessFirstMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.handler2).onLogoutSuccess(this.request, this.response, this.authentication);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessSecondMatches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.handler, this.handler2);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.handler, this.handler2, this.defaultHandler);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessNoMatchDefaultNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

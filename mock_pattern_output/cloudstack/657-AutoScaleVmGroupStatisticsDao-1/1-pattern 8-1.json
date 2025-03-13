@@ -1,0 +1,209 @@
+[
+  {
+    "variableName": "asGroupStatisticsDao",
+    "variableType": "AutoScaleVmGroupStatisticsDao",
+    "mockedClass": "AutoScaleVmGroupStatisticsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAutoScaleVmGroupStatisticsDao asGroupStatisticsDao;",
+        "line": 226,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asGroupStatisticsDao).createInactiveDummyRecord(anyLong());",
+        "line": 985,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asGroupStatisticsDao).createInactiveDummyRecord(anyLong());",
+        "line": 1155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableAutoScaleVmGroupInDisabledState",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asGroupStatisticsDao.removeByGroupId(vmGroupId)).thenReturn(true);",
+        "line": 1216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAutoScaleVmGroupsByAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asGroupStatisticsDao.listDummyRecordsByVmGroup(eq(vmGroupId), any())).thenReturn(new ArrayList<>()).thenReturn(new ArrayList<>());",
+        "line": 2060,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMap1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asGroupStatisticsDao.listByVmGroupAndPolicyAndCounter(eq(vmGroupId), eq(scaleUpPolicyId), eq(scaleUpCounterId), any())).thenReturn(stats);",
+        "line": 2073,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMap1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asGroupStatisticsDao.listByVmGroupAndPolicyAndCounter(eq(vmGroupId), eq(scaleDownPolicyId), eq(scaleDownCounterId), any())).thenReturn(stats);",
+        "line": 2074,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMap1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asGroupStatisticsDao.listDummyRecordsByVmGroup(eq(vmGroupId), any())).thenReturn(new ArrayList<>()).thenReturn(new ArrayList<>());",
+        "line": 2106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMap2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asGroupStatisticsDao.listInactiveByVmGroupAndPolicy(eq(vmGroupId), eq(scaleUpPolicyId), any())).thenReturn(new ArrayList<>());",
+        "line": 2109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMap2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asGroupStatisticsDao.listInactiveByVmGroupAndPolicy(eq(vmGroupId), eq(scaleDownPolicyId), any())).thenReturn(new ArrayList<>());",
+        "line": 2111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMap2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asGroupStatisticsDao.listByVmGroupAndPolicyAndCounter(eq(vmGroupId), eq(scaleUpPolicyId), eq(scaleUpCounterId), any())).thenReturn(stats);",
+        "line": 2123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMap2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(asGroupStatisticsDao.persist(any())).thenReturn(Mockito.mock(AutoScaleVmGroupStatisticsVO.class));",
+        "line": 2325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processVmStatsByIdFromHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asGroupStatisticsDao, times(2)).persist(any());",
+        "line": 2328,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processVmStatsByIdFromHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asGroupStatisticsDao, times(2)).persist(any());",
+        "line": 2434,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processGetAutoScaleMetricsAnswer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asGroupStatisticsDao).removeByGroupAndPolicy(eq(vmGroupId), eq(scaleUpPolicyId), any());",
+        "line": 2447,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "cleanupAsVmGroupStatistics",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(asGroupStatisticsDao).removeByGroupId(eq(vmGroupId), any());",
+        "line": 2448,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "cleanupAsVmGroupStatistics",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

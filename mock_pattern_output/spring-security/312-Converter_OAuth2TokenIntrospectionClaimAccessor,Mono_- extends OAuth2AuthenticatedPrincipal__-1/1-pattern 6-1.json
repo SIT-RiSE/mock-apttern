@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "authenticationConverter",
+    "variableType": "Converter<OAuth2TokenIntrospectionClaimAccessor,Mono<? extends OAuth2AuthenticatedPrincipal>>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\SpringReactiveOpaqueTokenIntrospectorTests.java",
+      "className": "SpringReactiveOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2TokenIntrospectionClaimAccessor, Mono<? extends OAuth2AuthenticatedPrincipal>> authenticationConverter = mock(Converter.class);",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setAuthenticationConverterWhenNonNullConverterGivenThenConverterUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authenticationConverter.convert(any())).willReturn((Mono) Mono.just(oAuth2AuthenticatedPrincipal));",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setAuthenticationConverterWhenNonNullConverterGivenThenConverterUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authenticationConverter).convert(any());",
+        "line": 237,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setAuthenticationConverterWhenNonNullConverterGivenThenConverterUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

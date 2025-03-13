@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "mapping",
+    "variableType": "BrocadeVcsNetworkVlanMappingVO",
+    "mockedClass": "BrocadeVcsNetworkVlanMappingVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final BrocadeVcsNetworkVlanMappingVO mapping = mock(BrocadeVcsNetworkVlanMappingVO.class);",
+        "line": 535,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrash",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mapping.getVlanId()).thenReturn(14);",
+        "line": 536,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrash",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mapping",
+    "variableType": "BrocadeVcsNetworkVlanMappingVO",
+    "mockedClass": "BrocadeVcsNetworkVlanMappingVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final BrocadeVcsNetworkVlanMappingVO mapping = mock(BrocadeVcsNetworkVlanMappingVO.class);",
+        "line": 577,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mapping.getVlanId()).thenReturn(14);",
+        "line": 578,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

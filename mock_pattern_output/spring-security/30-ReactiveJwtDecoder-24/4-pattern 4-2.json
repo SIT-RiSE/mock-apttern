@@ -1,0 +1,212 @@
+[
+  {
+    "variableName": "jwtDecoder",
+    "variableType": "ReactiveJwtDecoder",
+    "mockedClass": "ReactiveJwtDecoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\authentication\\OidcAuthorizationCodeReactiveAuthenticationManagerTests.java",
+      "className": "OidcAuthorizationCodeReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveJwtDecoder jwtDecoder;",
+        "line": 90,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(any())).willThrow(new JwtException(\"ID Token Validation Error\"));",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenIdTokenValidationErrorThenOAuth2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(any())).willReturn(Mono.just(idToken));",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenIdTokenInvalidNonceThenOAuth2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(any())).willReturn(Mono.just(idToken));",
+        "line": 234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationWhenOAuth2UserNotFoundThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(any())).willReturn(Mono.just(idToken));",
+        "line": 259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationWhenOAuth2UserFoundThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(any())).willReturn(Mono.just(idToken));",
+        "line": 290,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticationWhenRefreshTokenThenRefreshTokenInAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(any())).willReturn(Mono.just(idToken));",
+        "line": 327,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenTokenSuccessResponseThenAdditionalParametersAddedToUserRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(any())).willReturn(Mono.just(idToken));",
+        "line": 359,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAuthoritiesMapperSetThenReturnMappedAuthorities",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "jwtDecoder",
+    "variableType": "ReactiveJwtDecoder",
+    "mockedClass": "ReactiveJwtDecoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\JwtReactiveAuthenticationManagerTests.java",
+      "className": "JwtReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveJwtDecoder jwtDecoder;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(token.getToken())).willReturn(Mono.empty());",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenEmptyJwtThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(any())).willReturn(Mono.error(new BadJwtException(\"Oops\")));",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenJwtExceptionThenOAuth2AuthenticationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(token.getToken())).willThrow(new BadJwtException(\"with \\\"invalid\\\" chars\"));",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenDecoderThrowsIncompatibleErrorMessageThenWrapsWithGenericOne",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(token.getToken())).willThrow(new JwtException(\"no jwk set\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenDecoderFailsGenericallyThenThrowsGenericException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(any())).willReturn(Mono.error(new RuntimeException(\"Oops\")));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenNotJwtExceptionThenPropagates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtDecoder.decode(token.getToken())).willReturn(Mono.just(this.jwt));",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenJwtThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

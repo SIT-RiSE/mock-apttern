@@ -1,0 +1,179 @@
+[
+  {
+    "variableName": "_domainApi",
+    "variableType": "DomainAPI",
+    "mockedClass": "DomainAPI",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.globo.globodns.cloudstack.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\globodns\\src\\test\\java\\com\\globo\\globodns\\cloudstack\\resource\\GloboDnsResourceTest.java",
+      "className": "GloboDnsResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private DomainAPI _domainApi;",
+        "line": 62,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "_domainApi = mock(DomainAPI.class);",
+        "line": 88,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_domainApi.listReverseByQuery(eq(domainName))).thenReturn(domainList);",
+        "line": 113,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "generateFakeDomain",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_domainApi.listByQuery(eq(domainName))).thenReturn(domainList);",
+        "line": 115,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "generateFakeDomain",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_domainApi.createDomain(eq(domain.getName()), eq(TEMPLATE_ID), eq(\"M\"))).thenReturn(domain);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateDomainWithSuccessWhenDomainDoesntExistAndOverrideIsTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_domainApi.listByQuery(domainName)).thenReturn(new ArrayList<Domain>());",
+        "line": 250,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateRecordAndReverseWhenDomainDoesNotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_domainApi.createDomain(eq(domainName), eq(TEMPLATE_ID), eq(\"M\"))).thenReturn(domain);",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateRecordAndReverseWhenDomainDoesNotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_domainApi.createReverseDomain(eq(reverseDomainName), eq(TEMPLATE_ID), eq(\"M\"))).thenReturn(reverseDomain);",
+        "line": 253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateRecordAndReverseWhenDomainDoesNotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_domainApi.listByQuery(domainName)).thenReturn(new ArrayList<Domain>());",
+        "line": 278,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateRecordAndReverseWhenDomainDoesNotExistAndOverrideIsFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_domainApi.createDomain(eq(domainName), eq(TEMPLATE_ID), eq(\"M\"))).thenReturn(domain);",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateRecordAndReverseWhenDomainDoesNotExistAndOverrideIsFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_domainApi.createReverseDomain(eq(reverseDomainName), eq(TEMPLATE_ID), eq(\"M\"))).thenReturn(reverseDomain);",
+        "line": 281,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateRecordAndReverseWhenDomainDoesNotExistAndOverrideIsFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_domainApi, never()).removeDomain(any(Long.class));",
+        "line": 408,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveDomainWithSuccessButDomainKeptWhenDomainExistsAndThereAreRecordsAndOverrideIsFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_domainApi, times(1)).removeDomain(eq(domain.getId()));",
+        "line": 430,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveDomainWithSuccessWhenDomainExistsAndThereAreOnlyNSRecordsAndOverrideIsFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_domainApi, times(1)).removeDomain(eq(domain.getId()));",
+        "line": 452,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveDomainWithSuccessWhenDomainExistsAndThereAreRecordsAndOverrideIsTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 42
+  }
+]

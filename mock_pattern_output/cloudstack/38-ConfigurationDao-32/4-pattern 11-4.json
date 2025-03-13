@@ -1,0 +1,150 @@
+[
+  {
+    "variableName": "configDao",
+    "variableType": "ConfigurationDao",
+    "mockedClass": "ConfigurationDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.event",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\event\\ActionEventInterceptorTest.java",
+      "className": "ActionEventInterceptorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprotected ConfigurationDao configDao;",
+        "line": 96,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//Some basic mocks.\r\nMockito.when(configDao.getValue(Config.PublishActionEvent.key())).thenReturn(\"true\");",
+        "line": 154,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupCommonMocks",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "configDao",
+    "variableType": "ConfigurationDao",
+    "mockedClass": "ConfigurationDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.event",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\event\\ActionEventInterceptorTest.java",
+      "className": "ActionEventInterceptorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprotected ConfigurationDao configDao;",
+        "line": 96,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//Some basic mocks.\r\nMockito.when(configDao.getValue(Config.PublishActionEvent.key())).thenReturn(\"true\");",
+        "line": 154,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupCommonMocks",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "configDao",
+    "variableType": "ConfigurationDao",
+    "mockedClass": "ConfigurationDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.event",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\event\\ActionEventUtilsTest.java",
+      "className": "ActionEventUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprotected ConfigurationDao configDao;",
+        "line": 99,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//Some basic mocks.\r\nMockito.when(configDao.getValue(Config.PublishActionEvent.key())).thenReturn(\"true\");",
+        "line": 151,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupCommonMocks",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "_configDao",
+    "variableType": "ConfigurationDao",
+    "mockedClass": "ConfigurationDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\HypervisorTemplateAdapterTest.java",
+      "className": "HypervisorTemplateAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nConfigurationDao _configDao;",
+        "line": 120,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_configDao.getValue(eq(\"publish.usage.events\"))).thenReturn(\"true\");",
+        "line": 139,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupUsageUtils",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

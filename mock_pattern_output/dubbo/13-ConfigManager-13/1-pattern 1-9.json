@@ -1,0 +1,349 @@
+[
+  {
+    "variableName": "configManager",
+    "variableType": "ConfigManager",
+    "mockedClass": "ConfigManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metrics.collector",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metrics\\dubbo-metrics-default\\src\\test\\java\\org\\apache\\dubbo\\metrics\\collector\\AggregateMetricsCollectorTest.java",
+      "className": "AggregateMetricsCollectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigManager configManager = mock(ConfigManager.class);",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(configManager.getMetrics()).thenReturn(Optional.of(metricsConfig));",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "configManager",
+    "variableType": "ConfigManager",
+    "mockedClass": "ConfigManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metrics.registry.metrics.collector",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metrics\\dubbo-metrics-registry\\src\\test\\java\\org\\apache\\dubbo\\metrics\\registry\\metrics\\collector\\RegistryMetricsTest.java",
+      "className": "RegistryMetricsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigManager configManager = spy(new ConfigManager(applicationModel));",
+        "line": 333,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTestCollector",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(configManager.getApplication()).thenReturn(Optional.of(applicationConfig));",
+        "line": 342,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTestCollector",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "configManager",
+    "variableType": "ConfigManager",
+    "mockedClass": "ConfigManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.integration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\integration\\RegistryProtocolTest.java",
+      "className": "RegistryProtocolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigManager configManager = mock(ConfigManager.class);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumerUrlWithoutProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(configManager.getApplicationOrElseThrow()).thenReturn(applicationConfig);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumerUrlWithoutProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "configManager",
+    "variableType": "ConfigManager",
+    "mockedClass": "ConfigManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.integration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\integration\\RegistryProtocolTest.java",
+      "className": "RegistryProtocolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigManager configManager = mock(ConfigManager.class);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumerUrlWithProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(configManager.getApplicationOrElseThrow()).thenReturn(applicationConfig);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumerUrlWithProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "configManager",
+    "variableType": "ConfigManager",
+    "mockedClass": "ConfigManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.integration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\integration\\RegistryProtocolTest.java",
+      "className": "RegistryProtocolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigManager configManager = mock(ConfigManager.class);",
+        "line": 222,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReferWithoutGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(configManager.getApplicationOrElseThrow()).thenReturn(applicationConfig);",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReferWithoutGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "configManager",
+    "variableType": "ConfigManager",
+    "mockedClass": "ConfigManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.integration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\integration\\RegistryProtocolTest.java",
+      "className": "RegistryProtocolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigManager configManager = mock(ConfigManager.class);",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReferWithGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(configManager.getApplicationOrElseThrow()).thenReturn(applicationConfig);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReferWithGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "configManager",
+    "variableType": "ConfigManager",
+    "mockedClass": "ConfigManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.integration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\integration\\RegistryProtocolTest.java",
+      "className": "RegistryProtocolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigManager configManager = mock(ConfigManager.class);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterceptInvokerForMigrationRuleListener",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(configManager.getApplicationOrElseThrow()).thenReturn(applicationConfig);",
+        "line": 358,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterceptInvokerForMigrationRuleListener",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "configManager",
+    "variableType": "ConfigManager",
+    "mockedClass": "ConfigManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.integration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\integration\\RegistryProtocolTest.java",
+      "className": "RegistryProtocolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigManager configManager = mock(ConfigManager.class);",
+        "line": 423,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterceptInvokerForCustomRegistryProtocolListener",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(configManager.getApplicationOrElseThrow()).thenReturn(applicationConfig);",
+        "line": 424,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterceptInvokerForCustomRegistryProtocolListener",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "configManager",
+    "variableType": "ConfigManager",
+    "mockedClass": "ConfigManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.integration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\integration\\RegistryProtocolTest.java",
+      "className": "RegistryProtocolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigManager configManager = mock(ConfigManager.class);",
+        "line": 489,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegisterConsumerUrl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(configManager.getApplicationOrElseThrow()).thenReturn(applicationConfig);",
+        "line": 490,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegisterConsumerUrl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

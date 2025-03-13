@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "virtualNetwork",
+    "variableType": "VirtualNetwork",
+    "mockedClass": "VirtualNetwork",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\resource\\TungstenResourceTest.java",
+      "className": "TungstenResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualNetwork virtualNetwork = mock(VirtualNetwork.class);",
+        "line": 632,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestCreateTungstenNetworkLoadbalancerCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualNetwork.getUuid()).thenReturn(\"ac617be6-bf80-4086-9d6a-c05ff78e2264\");",
+        "line": 643,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestCreateTungstenNetworkLoadbalancerCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "virtualNetwork2",
+    "variableType": "VirtualNetwork",
+    "mockedClass": "VirtualNetwork",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\resource\\TungstenResourceTest.java",
+      "className": "TungstenResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualNetwork virtualNetwork2 = mock(VirtualNetwork.class);",
+        "line": 1384,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestAddTungstenNetworkGatewayToLogicalRouterCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualNetwork2.getUuid()).thenReturn(\"efffa88c-1145-11ec-82a8-0242ac130003\");",
+        "line": 1387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestAddTungstenNetworkGatewayToLogicalRouterCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "virtualNetwork1",
+    "variableType": "VirtualNetwork",
+    "mockedClass": "VirtualNetwork",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\resource\\TungstenResourceTest.java",
+      "className": "TungstenResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualNetwork virtualNetwork1 = mock(VirtualNetwork.class);",
+        "line": 1383,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestAddTungstenNetworkGatewayToLogicalRouterCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualNetwork1.getUuid()).thenReturn(\"fe79e06a-1142-11ec-82a8-0242ac130003\");",
+        "line": 1386,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestAddTungstenNetworkGatewayToLogicalRouterCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "virtualNetwork",
+    "variableType": "VirtualNetwork",
+    "mockedClass": "VirtualNetwork",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualNetwork virtualNetwork = mock(VirtualNetwork.class);",
+        "line": 493,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createPublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualNetwork.getQualifiedName()).thenReturn(Arrays.asList(\"default-domain\", \"default-project\", \"publicNetwork\"));",
+        "line": 513,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createPublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

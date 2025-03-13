@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "responseSpec",
+    "variableType": "WebClient.ResponseSpec",
+    "mockedClass": "WebClient.ResponseSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusReactiveJwtDecoderTests.java",
+      "className": "NimbusReactiveJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebClient.ResponseSpec responseSpec = mock(WebClient.ResponseSpec.class);",
+        "line": 611,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenIssuerLocationThenOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(responseSpec.bodyToMono(String.class)).willReturn(Mono.just(this.jwkSet));",
+        "line": 612,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenIssuerLocationThenOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(responseSpec.bodyToMono(any(ParameterizedTypeReference.class))).willReturn(Mono.just(Map.of(\"issuer\", issuer, \"jwks_uri\", issuer + \"/jwks\")));",
+        "line": 613,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenIssuerLocationThenOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

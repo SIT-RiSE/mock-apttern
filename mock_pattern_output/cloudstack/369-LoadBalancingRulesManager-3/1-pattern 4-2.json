@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "loadBalancingRulesManager",
+    "variableType": "LoadBalancingRulesManager",
+    "mockedClass": "LoadBalancingRulesManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\GetLoadBalancerSslCertificateCmdTest.java",
+      "className": "GetLoadBalancerSslCertificateCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLoadBalancingRulesManager loadBalancingRulesManager;",
+        "line": 39,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(loadBalancingRulesManager.getLbSslCert(ArgumentMatchers.anyLong())).thenReturn(lbSslCert);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "lbRulesMgr",
+    "variableType": "LoadBalancingRulesManager",
+    "mockedClass": "LoadBalancingRulesManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLoadBalancingRulesManager lbRulesMgr;",
+        "line": 244,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbRulesMgr.toAutoScaleVmGroupTO(asVmGroupMock)).thenReturn(groupTO);",
+        "line": 1948,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkNetScalerAsGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbRulesMgr.toAutoScaleVmGroupTO(asVmGroupMock)).thenReturn(groupTO);",
+        "line": 2003,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkVirtualRouterAsGroupAndScaleUp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbRulesMgr.toAutoScaleVmGroupTO(asVmGroupMock)).thenReturn(groupTO);",
+        "line": 2019,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkVirtualRouterAsGroupAndScaleDown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lbRulesMgr.toAutoScaleVmGroupTO(asVmGroupMock)).thenReturn(groupTO);",
+        "line": 2237,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "monitorVirtualRouterAsGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

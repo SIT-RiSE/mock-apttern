@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "router",
+    "variableType": "TagStateRouter",
+    "mockedClass": "TagStateRouter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.router.tag",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\router\\tag\\TagStateRouterTest.java",
+      "className": "TagStateRouterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TagStateRouter router = (TagStateRouter) new TagStateRouterFactory().getRouter(TagRouterRule.class, url);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTagRouteWithDynamicRuleV3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "router = Mockito.spy(router);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTagRouteWithDynamicRuleV3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(router.getInvokers()).thenReturn(invokers);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTagRouteWithDynamicRuleV3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 29
+  }
+]

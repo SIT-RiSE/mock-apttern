@@ -1,0 +1,246 @@
+[
+  {
+    "variableName": "serviceDiscovery",
+    "variableType": "ServiceDiscovery",
+    "mockedClass": "ServiceDiscovery",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerTest.java",
+      "className": "ServiceInstancesChangedListenerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "static ServiceDiscovery serviceDiscovery;",
+        "line": 133,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "serviceDiscovery = Mockito.mock(ServiceDiscovery.class);",
+        "line": 183,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getUrl()).thenReturn(registryURL);",
+        "line": 184,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"111\"), anyList())).thenReturn(metadataInfo_111);",
+        "line": 186,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"222\"), anyList())).thenReturn(metadataInfo_222);",
+        "line": 187,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"333\"), anyList())).thenReturn(metadataInfo_333);",
+        "line": 188,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"444\"), anyList())).thenReturn(MetadataInfo.EMPTY);",
+        "line": 189,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"555\"), anyList())).thenReturn(metadataInfo_555_tri);",
+        "line": 190,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"222\"), anyList())).thenAnswer(new Answer<MetadataInfo>() {\r\n\r\n    @Override\r\n    public MetadataInfo answer(InvocationOnMock invocationOnMock) throws Throwable {\r\n        if (Thread.currentThread().getName().contains(\"Dubbo-framework-metadata-retry\")) {\r\n            return metadataInfo_222;\r\n        }\r\n        return MetadataInfo.EMPTY;\r\n    }\r\n});",
+        "line": 646,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevisionFailureOnNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  },
+  {
+    "variableName": "serviceDiscovery",
+    "variableType": "ServiceDiscovery",
+    "mockedClass": "ServiceDiscovery",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerWithoutEmptyProtectTest.java",
+      "className": "ServiceInstancesChangedListenerWithoutEmptyProtectTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "static ServiceDiscovery serviceDiscovery;",
+        "line": 132,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "serviceDiscovery = Mockito.mock(ServiceDiscovery.class);",
+        "line": 182,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getUrl()).thenReturn(registryURL);",
+        "line": 183,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"111\"), anyList())).thenReturn(metadataInfo_111);",
+        "line": 185,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"222\"), anyList())).thenReturn(metadataInfo_222);",
+        "line": 186,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"333\"), anyList())).thenReturn(metadataInfo_333);",
+        "line": 187,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"444\"), anyList())).thenReturn(MetadataInfo.EMPTY);",
+        "line": 188,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"555\"), anyList())).thenReturn(metadataInfo_555_tri);",
+        "line": 189,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeAll"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceDiscovery.getRemoteMetadata(eq(\"222\"), anyList())).thenAnswer(new Answer<MetadataInfo>() {\r\n\r\n    @Override\r\n    public MetadataInfo answer(InvocationOnMock invocationOnMock) throws Throwable {\r\n        if (Thread.currentThread().getName().contains(\"Dubbo-framework-metadata-retry\")) {\r\n            return metadataInfo_222;\r\n        }\r\n        return MetadataInfo.EMPTY;\r\n    }\r\n});",
+        "line": 645,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevisionFailureOnNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  }
+]

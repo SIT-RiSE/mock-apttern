@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "mockMonitorFactory",
+    "variableType": "MonitorFactory",
+    "mockedClass": "MonitorFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-api\\src\\test\\java\\org\\apache\\dubbo\\monitor\\support\\MonitorFilterTest.java",
+      "className": "MonitorFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MonitorFactory mockMonitorFactory = mock(MonitorFactory.class);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSafeFailForMonitorCollectFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMonitorFactory.getMonitor(any(URL.class))).willReturn(mockMonitor);",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSafeFailForMonitorCollectFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMonitorFactory",
+    "variableType": "MonitorFactory",
+    "mockedClass": "MonitorFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-api\\src\\test\\java\\org\\apache\\dubbo\\monitor\\support\\MonitorFilterTest.java",
+      "className": "MonitorFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MonitorFactory mockMonitorFactory = mock(MonitorFactory.class);",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOnResponseWithoutStartTime",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMonitorFactory.getMonitor(any(URL.class))).willReturn(mockMonitor);",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOnResponseWithoutStartTime",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockMonitorFactory",
+    "variableType": "MonitorFactory",
+    "mockedClass": "MonitorFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-api\\src\\test\\java\\org\\apache\\dubbo\\monitor\\support\\MonitorFilterTest.java",
+      "className": "MonitorFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MonitorFactory mockMonitorFactory = mock(MonitorFactory.class);",
+        "line": 233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOnErrorWithoutStartTime",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockMonitorFactory.getMonitor(any(URL.class))).willReturn(mockMonitor);",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOnErrorWithoutStartTime",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

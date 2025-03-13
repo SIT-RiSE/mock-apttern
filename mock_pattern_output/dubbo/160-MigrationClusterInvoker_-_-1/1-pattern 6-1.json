@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "invoker",
+    "variableType": "MigrationClusterInvoker<?>",
+    "mockedClass": "MigrationClusterInvoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\MigrationRuleHandlerTest.java",
+      "className": "MigrationRuleHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MigrationClusterInvoker<?> invoker = Mockito.mock(MigrationClusterInvoker.class);",
+        "line": 31,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(invoker.migrateToForceApplicationInvoker(Mockito.any())).thenReturn(true);",
+        "line": 38,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(invoker.migrateToForceInterfaceInvoker(Mockito.any())).thenReturn(true);",
+        "line": 39,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(invoker, Mockito.times(1)).migrateToApplicationFirstInvoker(initRule);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(invoker, Mockito.times(1)).migrateToForceApplicationInvoker(rule);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(invoker, Mockito.times(1)).migrateToApplicationFirstInvoker(rule);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(invoker, Mockito.times(1)).migrateToForceInterfaceInvoker(rule);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

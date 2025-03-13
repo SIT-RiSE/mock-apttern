@@ -1,0 +1,208 @@
+[
+  {
+    "variableName": "niciraNvpDao",
+    "variableType": "NiciraNvpDao",
+    "mockedClass": "NiciraNvpDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\element\\NiciraNvpElementTest.java",
+      "className": "NiciraNvpElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "NiciraNvpDao niciraNvpDao = mock(NiciraNvpDao.class);",
+        "line": 99,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(niciraNvpDao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Arrays.asList(new NiciraNvpDeviceVO[] { device }));",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementIsolatedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(niciraNvpDao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(deviceList);",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyIpTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(niciraNvpDao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Arrays.asList(new NiciraNvpDeviceVO[] { device }));",
+        "line": 282,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkUuidVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(niciraNvpDao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Arrays.asList(new NiciraNvpDeviceVO[] { device }));",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(niciraNvpDao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Arrays.asList(new NiciraNvpDeviceVO[] { device }));",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementSharedNetworkNumericalVlanIdWithoutL2GatewayService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "nvpdao",
+    "variableType": "NiciraNvpDao",
+    "mockedClass": "NiciraNvpDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\guru\\NiciraNvpGuestNetworkGuruTest.java",
+      "className": "NiciraNvpGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "NiciraNvpDao nvpdao = mock(NiciraNvpDao.class);",
+        "line": 78,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpdao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Arrays.asList(new NiciraNvpDeviceVO[] { device }));",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpdao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Collections.<NiciraNvpDeviceVO>emptyList());",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignNoElementOnPhysicalNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpdao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Collections.<NiciraNvpDeviceVO>emptyList());",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignNoIsolationMethodSTT",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpdao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Arrays.asList(new NiciraNvpDeviceVO[] { device }));",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignNoConnectivityInOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpdao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Arrays.asList(new NiciraNvpDeviceVO[] { device }));",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpdao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Arrays.asList(new NiciraNvpDeviceVO[] { device }));",
+        "line": 311,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementWithCidr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpdao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Arrays.asList(new NiciraNvpDeviceVO[] { device }));",
+        "line": 370,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementURIException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nvpdao.listByPhysicalNetwork(NETWORK_ID)).thenReturn(Arrays.asList(new NiciraNvpDeviceVO[] { device }));",
+        "line": 425,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

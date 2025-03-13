@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "networkPolicy",
+    "variableType": "NetworkPolicy",
+    "mockedClass": "NetworkPolicy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\resource\\TungstenResourceTest.java",
+      "className": "TungstenResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkPolicy networkPolicy = mock(NetworkPolicy.class);",
+        "line": 542,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestApplyTungstenNetworkPolicyCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(networkPolicy.getUuid()).thenReturn(\"ac617be6-bf80-4086-9d6a-c05ff78e2264\");",
+        "line": 550,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestApplyTungstenNetworkPolicyCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "networkPolicy",
+    "variableType": "NetworkPolicy",
+    "mockedClass": "NetworkPolicy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkPolicy networkPolicy = mock(NetworkPolicy.class);",
+        "line": 950,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenPolicyRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(networkPolicy.getEntries()).thenReturn(policyEntriesType);",
+        "line": 963,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenPolicyRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "networkPolicy",
+    "variableType": "NetworkPolicy",
+    "mockedClass": "NetworkPolicy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkPolicy networkPolicy = mock(NetworkPolicy.class);",
+        "line": 1058,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenPolicyRuleWithRuleUuidTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(networkPolicy.getEntries()).thenReturn(policyEntriesType);",
+        "line": 1071,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenPolicyRuleWithRuleUuidTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "networkPolicy",
+    "variableType": "NetworkPolicy",
+    "mockedClass": "NetworkPolicy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkPolicy networkPolicy = mock(NetworkPolicy.class);",
+        "line": 1088,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenPolicyRuleWithAllRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(networkPolicy.getEntries()).thenReturn(policyEntriesType);",
+        "line": 1101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenPolicyRuleWithAllRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

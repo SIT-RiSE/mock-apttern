@@ -1,0 +1,555 @@
+[
+  {
+    "variableName": "repository",
+    "variableType": "ReactiveUserDetailsService",
+    "mockedClass": "ReactiveUserDetailsService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ReactiveUserDetailsServiceAuthenticationManagerTests.java",
+      "className": "ReactiveUserDetailsServiceAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nReactiveUserDetailsService repository;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.repository.findByUsername(this.username)).willReturn(Mono.empty());",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenUserNotFoundThenBadCredentials",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.repository.findByUsername(user.getUsername())).willReturn(Mono.just(user));",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordNotEqualThenBadCredentials",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.repository.findByUsername(user.getUsername())).willReturn(Mono.just(user));",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenSuccessThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.repository.findByUsername(user.getUsername())).willReturn(Mono.just(user));",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordEncoderAndSuccessThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.repository.findByUsername(user.getUsername())).willReturn(Mono.just(user));",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordEncoderAndFailThenFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "userDetailsService",
+    "variableType": "ReactiveUserDetailsService",
+    "mockedClass": "ReactiveUserDetailsService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\UserDetailsRepositoryReactiveAuthenticationManagerTests.java",
+      "className": "UserDetailsRepositoryReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveUserDetailsService userDetailsService;",
+        "line": 60,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomSchedulerThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndBadCredentialsThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndUpgradeFalseThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPostAuthenticationChecksFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPostAuthenticationChecksNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(expiredUser));",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAccountExpiredThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(lockedUser));",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAccountLockedThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(disabledUser));",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAccountDisabledThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(user));",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordCompromisedThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(user));",
+        "line": 253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordNotCompromisedThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "userDetailsService",
+    "variableType": "ReactiveUserDetailsService",
+    "mockedClass": "ReactiveUserDetailsService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\UserDetailsRepositoryReactiveAuthenticationManagerTests.java",
+      "className": "UserDetailsRepositoryReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveUserDetailsService userDetailsService;",
+        "line": 60,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomSchedulerThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndBadCredentialsThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndUpgradeFalseThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPostAuthenticationChecksFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(this.user));",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPostAuthenticationChecksNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(expiredUser));",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAccountExpiredThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(lockedUser));",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAccountLockedThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(disabledUser));",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenAccountDisabledThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(user));",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordCompromisedThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.userDetailsService.findByUsername(any())).willReturn(Mono.just(user));",
+        "line": 253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordNotCompromisedThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "reactiveUserDetailsService",
+    "variableType": "ReactiveUserDetailsService",
+    "mockedClass": "ReactiveUserDetailsService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithUserDetailsSecurityContextFactoryTests.java",
+      "className": "WithUserDetailsSecurityContextFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveUserDetailsService reactiveUserDetailsService;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.reactiveUserDetailsService.findByUsername(username)).willReturn(Mono.just(this.userDetails));",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithReactiveUserDetailsService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.reactiveUserDetailsService.findByUsername(username)).willReturn(Mono.just(this.userDetails));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithReactiveUserDetailsServiceAndBeanName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "mockUserDetailsService",
+    "variableType": "ReactiveUserDetailsService",
+    "mockedClass": "ReactiveUserDetailsService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\ReactivePreAuthenticatedAuthenticationManagerTests.java",
+      "className": "ReactivePreAuthenticatedAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private ReactiveUserDetailsService mockUserDetailsService = mock(ReactiveUserDetailsService.class);",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.mockUserDetailsService.findByUsername(anyString())).willReturn(Mono.just(this.validAccount));",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "returnsAuthenticatedTokenForValidAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.mockUserDetailsService.findByUsername(anyString())).willReturn(Mono.empty());",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "returnsNullForNonExistingAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.mockUserDetailsService.findByUsername(anyString())).willReturn(Mono.just(this.lockedAccount));",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsExceptionForLockedAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.mockUserDetailsService.findByUsername(anyString())).willReturn(Mono.just(this.disabledAccount));",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsExceptionForDisabledAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.mockUserDetailsService.findByUsername(anyString())).willReturn(Mono.just(this.expiredAccount));",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsExceptionForExpiredAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.mockUserDetailsService.findByUsername(anyString())).willReturn(Mono.just(this.accountWithExpiredCredentials));",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsExceptionForAccountWithExpiredCredentials",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

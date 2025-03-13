@@ -1,0 +1,57 @@
+[
+  {
+    "variableName": "relDataType",
+    "variableType": "RelDataType",
+    "mockedClass": "RelDataType",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.sql.calcite.expression",
+      "filePath": "C:\\java tool\\Apache\\druid\\sql\\src\\test\\java\\org\\apache\\druid\\sql\\calcite\\expression\\OperatorConversionsTest.java",
+      "className": "DefaultOperandTypeCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelDataType relDataType = Mockito.mock(RelDataType.class);",
+        "line": 475,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(relDataType.isNullable()).thenReturn(true);",
+        "line": 478,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(relDataType.isNullable()).thenReturn(false);",
+        "line": 480,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(relDataType.getSqlTypeName()).thenReturn(operand.type);",
+        "line": 484,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

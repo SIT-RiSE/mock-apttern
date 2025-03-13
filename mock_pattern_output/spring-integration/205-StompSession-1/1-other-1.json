@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "stompSession",
+    "variableType": "StompSession",
+    "mockedClass": "StompSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.stomp",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-stomp\\src\\test\\java\\org\\springframework\\integration\\stomp\\StompSessionManagerTests.java",
+      "className": "StompSessionManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StompSession stompSession = mock(StompSession.class);",
+        "line": 58,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "doConnect",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 37
+  }
+]

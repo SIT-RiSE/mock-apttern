@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "ClassPathXmlApplicationContext",
+    "mockedClass": "ClassPathXmlApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\config\\MailToStringTransformerParserTests.java",
+      "className": "MailToStringTransformerParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(\"mailToStringTransformerParserTests.xml\", getClass())) {\r\n    MessageChannel input = new BeanFactoryChannelResolver(context).resolveDestination(\"input\");\r\n    PollableChannel output = (PollableChannel) new BeanFactoryChannelResolver(context).resolveDestination(\"output\");\r\n    MimeMessage mimeMessage = Mockito.mock(MimeMessage.class);\r\n    Mockito.when(mimeMessage.getContent()).thenReturn(\"hello\");\r\n    input.send(new GenericMessage<jakarta.mail.Message>(mimeMessage));\r\n    Message<?> result = output.receive(10_000);\r\n    assertThat(result).isNotNull();\r\n    assertThat(result.getPayload()).isEqualTo(\"hello\");\r\n    Mockito.verify(mimeMessage).getContent();\r\n}",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "topLevelTransformer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "context",
+    "variableType": "ClassPathXmlApplicationContext",
+    "mockedClass": "ClassPathXmlApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\config\\MailToStringTransformerParserTests.java",
+      "className": "MailToStringTransformerParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(\"mailToStringTransformerWithinChain.xml\", getClass())) {\r\n    MessageChannel input = new BeanFactoryChannelResolver(context).resolveDestination(\"input\");\r\n    PollableChannel output = (PollableChannel) new BeanFactoryChannelResolver(context).resolveDestination(\"output\");\r\n    MimeMessage mimeMessage = Mockito.mock(MimeMessage.class);\r\n    Mockito.when(mimeMessage.getContent()).thenReturn(\"foo\");\r\n    input.send(new GenericMessage<jakarta.mail.Message>(mimeMessage));\r\n    Message<?> result = output.receive(0);\r\n    assertThat(result).isNotNull();\r\n    assertThat(result.getPayload()).isEqualTo(\"FOO!!!\");\r\n    Mockito.verify(mimeMessage).getContent();\r\n}",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transformerWithinChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

@@ -1,0 +1,665 @@
+[
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(4)).onStart(captor.capture());",
+        "line": 304,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(4)).onStop(any());",
+        "line": 305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 315,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMultipleFiltersThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 316,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMultipleFiltersThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(4)).onStart(captor.capture());",
+        "line": 331,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMultipleFiltersThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(4)).onStop(any());",
+        "line": 332,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMultipleFiltersThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 342,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMismatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 343,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMismatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onStart(captor.capture());",
+        "line": 354,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMismatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onStop(any());",
+        "line": 355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMismatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onStart(captor.capture());",
+        "line": 378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onStop(any());",
+        "line": 379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, atLeastOnce()).onError(any());",
+        "line": 380,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenExceptionWithMultipleFiltersThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenExceptionWithMultipleFiltersThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onStart(captor.capture());",
+        "line": 406,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenExceptionWithMultipleFiltersThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onStop(any());",
+        "line": 407,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenExceptionWithMultipleFiltersThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 415,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenOneFilterDoesNotProceedThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 416,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenOneFilterDoesNotProceedThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(3)).onStart(captor.capture());",
+        "line": 431,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenOneFilterDoesNotProceedThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(3)).onStop(any());",
+        "line": 432,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenOneFilterDoesNotProceedThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\ObservationFilterChainDecoratorTests.java",
+      "className": "ObservationFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenCompletesThenHasSpringSecurityReachedFilterNameTag",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenCompletesThenHasSpringSecurityReachedFilterNameTag",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(3)).onScopeClosed(context.capture());",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenCompletesThenHasSpringSecurityReachedFilterNameTag",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\ObservationWebFilterChainDecoratorTests.java",
+      "className": "ObservationWebFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenCompletesThenHasSpringSecurityReachedFilterNameTag",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenCompletesThenHasSpringSecurityReachedFilterNameTag",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(3)).onStop(context.capture());",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenCompletesThenHasSpringSecurityReachedFilterNameTag",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\WebFilterChainProxyTests.java",
+      "className": "WebFilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(4)).onStart(captor.capture());",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\WebFilterChainProxyTests.java",
+      "className": "WebFilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMismatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMismatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onStart(captor.capture());",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMismatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\WebFilterChainProxyTests.java",
+      "className": "WebFilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onStart(captor.capture());",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, atLeastOnce()).onError(any());",
+        "line": 145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

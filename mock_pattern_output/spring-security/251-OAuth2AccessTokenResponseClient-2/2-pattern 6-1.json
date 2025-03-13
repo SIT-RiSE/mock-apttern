@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "accessTokenResponseClient",
+    "variableType": "OAuth2AccessTokenResponseClient",
+    "mockedClass": "OAuth2AccessTokenResponseClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configuration",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configuration\\OAuth2ClientConfigurationTests.java",
+      "className": "OAuth2ClientConfigurationTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2AccessTokenResponseClient accessTokenResponseClient = mock(OAuth2AccessTokenResponseClient.class);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientNotFoundAndClientCredentialsThenTokenResponseClientIsUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(accessTokenResponseClient.getTokenResponse(any(OAuth2ClientCredentialsGrantRequest.class))).willReturn(accessTokenResponse);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientNotFoundAndClientCredentialsThenTokenResponseClientIsUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(accessTokenResponseClient, times(1)).getTokenResponse(any(OAuth2ClientCredentialsGrantRequest.class));",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientNotFoundAndClientCredentialsThenTokenResponseClientIsUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

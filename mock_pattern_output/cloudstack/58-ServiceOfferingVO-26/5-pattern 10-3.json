@@ -1,0 +1,147 @@
+[
+  {
+    "variableName": "offering",
+    "variableType": "ServiceOfferingVO",
+    "mockedClass": "ServiceOfferingVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplVolumeDeleteEventTest.java",
+      "className": "AccountManagerImplVolumeDeleteEventTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServiceOfferingVO offering = mock(ServiceOfferingVO.class);",
+        "line": 146,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "defineMocksBehavior",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(offering.getCpu()).thenReturn(500);",
+        "line": 147,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "defineMocksBehavior",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(offering.getId()).thenReturn(1l);",
+        "line": 148,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "defineMocksBehavior",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(offering.getCpu()).thenReturn(500);",
+        "line": 149,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "defineMocksBehavior",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(offering.getRamSize()).thenReturn(500);",
+        "line": 150,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "defineMocksBehavior",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "currentServiceOffering",
+    "variableType": "ServiceOfferingVO",
+    "mockedClass": "ServiceOfferingVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServiceOfferingVO currentServiceOffering = Mockito.mock(ServiceOfferingVO.class);",
+        "line": 362,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareAndExecuteMethodDealingWithDetails",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(currentServiceOffering.getCpu()).thenReturn(1);",
+        "line": 363,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareAndExecuteMethodDealingWithDetails",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(currentServiceOffering.getRamSize()).thenReturn(512);",
+        "line": 364,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareAndExecuteMethodDealingWithDetails",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "svcOffering",
+    "variableType": "ServiceOfferingVO",
+    "mockedClass": "ServiceOfferingVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServiceOfferingVO svcOffering = Mockito.mock(ServiceOfferingVO.class);",
+        "line": 665,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareOfferingsForEncryptionValidation",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(svcOffering.getDiskOfferingId()).thenReturn(diskOfferingId);",
+        "line": 668,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareOfferingsForEncryptionValidation",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

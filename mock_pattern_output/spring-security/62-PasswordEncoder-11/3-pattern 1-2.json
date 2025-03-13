@@ -1,0 +1,92 @@
+[
+  {
+    "variableName": "encoder",
+    "variableType": "PasswordEncoder",
+    "mockedClass": "PasswordEncoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.dao",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\dao\\DaoAuthenticationProviderTests.java",
+      "className": "DaoAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PasswordEncoder encoder = mock(PasswordEncoder.class);",
+        "line": 298,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenBadCredentialsAndPasswordManagerThenNoUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(encoder.matches(any(), any())).willReturn(false);",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenBadCredentialsAndPasswordManagerThenNoUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "encoder",
+    "variableType": "PasswordEncoder",
+    "mockedClass": "PasswordEncoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.dao",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\dao\\DaoAuthenticationProviderTests.java",
+      "className": "DaoAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PasswordEncoder encoder = mock(PasswordEncoder.class);",
+        "line": 316,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenNotUpgradeAndPasswordManagerThenNoUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(encoder.matches(any(), any())).willReturn(true);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenNotUpgradeAndPasswordManagerThenNoUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(encoder.upgradeEncoding(any())).willReturn(false);",
+        "line": 325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenNotUpgradeAndPasswordManagerThenNoUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

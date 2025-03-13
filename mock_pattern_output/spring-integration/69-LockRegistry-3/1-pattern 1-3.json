@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "secondRegistry",
+    "variableType": "LockRegistry",
+    "mockedClass": "LockRegistry",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.support.leader",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\support\\leader\\LockRegistryLeaderInitiatorTests.java",
+      "className": "LockRegistryLeaderInitiatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// set up second registry instance - this one will NOT be able to obtain lock initially\r\nLockRegistry secondRegistry = mock(LockRegistry.class);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "competingWithLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(secondRegistry.obtain(anyString())).willReturn(secondLock);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "competingWithLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "firstRegistry",
+    "variableType": "LockRegistry",
+    "mockedClass": "LockRegistry",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.support.leader",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\support\\leader\\LockRegistryLeaderInitiatorTests.java",
+      "className": "LockRegistryLeaderInitiatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// set up first registry instance - this one will be able to obtain lock initially\r\nLockRegistry firstRegistry = mock(LockRegistry.class);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "competingWithLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(firstRegistry.obtain(anyString())).willReturn(firstLock);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "competingWithLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "registry",
+    "variableType": "LockRegistry",
+    "mockedClass": "LockRegistry",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.support.leader",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\support\\leader\\LockRegistryLeaderInitiatorTests.java",
+      "className": "LockRegistryLeaderInitiatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LockRegistry registry = mock(LockRegistry.class);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulLeaderSelectorExit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(registry.obtain(anyString())).willReturn(lock);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulLeaderSelectorExit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

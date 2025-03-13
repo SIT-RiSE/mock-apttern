@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "assertion",
+    "variableType": "Assertion",
+    "mockedClass": "Assertion",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.cas.userdetails",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\cas\\src\\test\\java\\org\\springframework\\security\\cas\\userdetails\\GrantedAuthorityFromAssertionAttributesUserDetailsServiceTests.java",
+      "className": "GrantedAuthorityFromAssertionAttributesUserDetailsServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Assertion assertion = mock(Assertion.class);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "correctlyExtractsNamedAttributesFromAssertionAndConvertsThemToAuthorities",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(assertion.getPrincipal()).willReturn(principal);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "correctlyExtractsNamedAttributesFromAssertionAndConvertsThemToAuthorities",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

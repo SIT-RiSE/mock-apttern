@@ -1,0 +1,926 @@
+[
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> invoker1;",
+        "line": 88,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker1 = mock(Invoker.class);",
+        "line": 120,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 129,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(IHelloService.class);",
+        "line": 130,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(turl.setPort(1).addParameter(\"name\", \"invoker1\"));",
+        "line": 131,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "invoker5",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> invoker5;",
+        "line": 92,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker5 = mock(Invoker.class);",
+        "line": 124,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker5.isAvailable()).willReturn(false);",
+        "line": 145,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker5.getInterface()).willReturn(IHelloService.class);",
+        "line": 146,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker5.getUrl()).willReturn(turl.setPort(5).addParameter(\"name\", \"invoker5\"));",
+        "line": 147,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "invoker4",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> invoker4;",
+        "line": 91,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker4 = mock(Invoker.class);",
+        "line": 123,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker4.isAvailable()).willReturn(true);",
+        "line": 141,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker4.getInterface()).willReturn(IHelloService.class);",
+        "line": 142,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker4.getUrl()).willReturn(turl.setPort(4).addParameter(\"name\", \"invoker4\"));",
+        "line": 143,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "invoker3",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> invoker3;",
+        "line": 90,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker3 = mock(Invoker.class);",
+        "line": 122,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.isAvailable()).willReturn(false);",
+        "line": 137,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.getInterface()).willReturn(IHelloService.class);",
+        "line": 138,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.getUrl()).willReturn(turl.setPort(3).addParameter(\"name\", \"invoker3\"));",
+        "line": 139,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "mockedInvoker1",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> mockedInvoker1;",
+        "line": 93,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockedInvoker1 = mock(Invoker.class);",
+        "line": 125,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockedInvoker1.isAvailable()).willReturn(false);",
+        "line": 149,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockedInvoker1.getInterface()).willReturn(IHelloService.class);",
+        "line": 150,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockedInvoker1.getUrl()).willReturn(turl.setPort(999).setProtocol(\"mock\"));",
+        "line": 151,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> invoker2;",
+        "line": 89,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker2 = mock(Invoker.class);",
+        "line": 121,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 133,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(IHelloService.class);",
+        "line": 134,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(turl.setPort(2).addParameter(\"name\", \"invoker2\"));",
+        "line": 135,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> invoker1;",
+        "line": 88,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker1 = mock(Invoker.class);",
+        "line": 120,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(false);",
+        "line": 129,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(IHelloService.class);",
+        "line": 130,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(turl.setPort(1).addParameter(\"name\", \"invoker1\"));",
+        "line": 131,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "invoker5",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> invoker5;",
+        "line": 92,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker5 = mock(Invoker.class);",
+        "line": 124,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker5.isAvailable()).willReturn(false);",
+        "line": 145,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker5.getInterface()).willReturn(IHelloService.class);",
+        "line": 146,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker5.getUrl()).willReturn(turl.setPort(5).addParameter(\"name\", \"invoker5\"));",
+        "line": 147,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "invoker4",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> invoker4;",
+        "line": 91,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker4 = mock(Invoker.class);",
+        "line": 123,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker4.isAvailable()).willReturn(true);",
+        "line": 141,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker4.getInterface()).willReturn(IHelloService.class);",
+        "line": 142,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker4.getUrl()).willReturn(turl.setPort(4).addParameter(\"name\", \"invoker4\"));",
+        "line": 143,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "invoker3",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> invoker3;",
+        "line": 90,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker3 = mock(Invoker.class);",
+        "line": 122,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.isAvailable()).willReturn(false);",
+        "line": 137,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.getInterface()).willReturn(IHelloService.class);",
+        "line": 138,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker3.getUrl()).willReturn(turl.setPort(3).addParameter(\"name\", \"invoker3\"));",
+        "line": 139,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "mockedInvoker1",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> mockedInvoker1;",
+        "line": 93,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockedInvoker1 = mock(Invoker.class);",
+        "line": 125,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockedInvoker1.isAvailable()).willReturn(false);",
+        "line": 149,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockedInvoker1.getInterface()).willReturn(IHelloService.class);",
+        "line": 150,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockedInvoker1.getUrl()).willReturn(turl.setPort(999).setProtocol(\"mock\"));",
+        "line": 151,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker<IHelloService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<IHelloService> invoker2;",
+        "line": 89,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker2 = mock(Invoker.class);",
+        "line": 121,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 133,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(IHelloService.class);",
+        "line": 134,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(turl.setPort(2).addParameter(\"name\", \"invoker2\"));",
+        "line": 135,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  }
+]

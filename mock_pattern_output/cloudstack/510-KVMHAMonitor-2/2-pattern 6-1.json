@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "monitor",
+    "variableType": "KVMHAMonitor",
+    "mockedClass": "KVMHAMonitor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMHAMonitor monitor = Mockito.mock(KVMHAMonitor.class);",
+        "line": 3392,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFenceCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(monitor.getStoragePools()).thenReturn(pools);",
+        "line": 3399,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFenceCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(monitor, times(1)).getStoragePools();",
+        "line": 3408,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFenceCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "searchBuilderMock",
+    "variableType": "GenericSearchBuilder<AutoScalePolicyConditionMapVO,Long>",
+    "mockedClass": "GenericSearchBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "GenericSearchBuilder<AutoScalePolicyConditionMapVO, Long> searchBuilderMock = Mockito.mock(GenericSearchBuilder.class);",
+        "line": 571,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateCondition",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(searchBuilderMock.entity()).thenReturn(autoScalePolicyConditionMapVOMock);",
+        "line": 575,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateCondition",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "genericSearchBuilderMock",
+    "variableType": "GenericSearchBuilder<AutoScalePolicyConditionMapVO,Long>",
+    "mockedClass": "GenericSearchBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "GenericSearchBuilder<AutoScalePolicyConditionMapVO, Long> genericSearchBuilderMock = Mockito.mock(GenericSearchBuilder.class);",
+        "line": 621,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateConditionWithPolicies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(genericSearchBuilderMock.entity()).thenReturn(autoScalePolicyConditionMapVOMock);",
+        "line": 625,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateConditionWithPolicies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

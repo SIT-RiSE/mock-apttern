@@ -1,0 +1,467 @@
+[
+  {
+    "variableName": "responseBuilder",
+    "variableType": "QuotaResponseBuilder",
+    "mockedClass": "QuotaResponseBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\QuotaBalanceCmdTest.java",
+      "className": "QuotaBalanceCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nQuotaResponseBuilder responseBuilder;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.getQuotaBalance(Mockito.any(cmd.getClass()))).thenReturn(quotaBalanceVOList);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaBalanceCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.createQuotaLastBalanceResponse(Mockito.eq(quotaBalanceVOList), Mockito.any(Date.class))).thenReturn(new QuotaBalanceResponse());",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaBalanceCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.createQuotaBalanceResponse(Mockito.eq(quotaBalanceVOList), Mockito.any(Date.class), Mockito.any(Date.class))).thenReturn(new QuotaBalanceResponse());",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaBalanceCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(responseBuilder.startOfNextDay(Mockito.any(Date.class))).thenReturn(new Date());",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaBalanceCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseBuilder, Mockito.times(1)).createQuotaLastBalanceResponse(Mockito.eq(quotaBalanceVOList), Mockito.any(Date.class));",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaBalanceCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseBuilder, Mockito.times(0)).createQuotaBalanceResponse(Mockito.eq(quotaBalanceVOList), Mockito.any(Date.class), Mockito.any(Date.class));",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaBalanceCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseBuilder, Mockito.times(1)).createQuotaBalanceResponse(Mockito.eq(quotaBalanceVOList), Mockito.any(Date.class), Mockito.any(Date.class));",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaBalanceCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "responseBuilder",
+    "variableType": "QuotaResponseBuilder",
+    "mockedClass": "QuotaResponseBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\QuotaCreditsCmdTest.java",
+      "className": "QuotaCreditsCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nQuotaResponseBuilder responseBuilder;",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.addQuotaCredits(nullable(Long.class), nullable(Long.class), nullable(Double.class), nullable(Long.class), nullable(Boolean.class))).thenReturn(new QuotaCreditsResponse());",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaCreditsCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseBuilder, Mockito.times(1)).addQuotaCredits(nullable(Long.class), nullable(Long.class), nullable(Double.class), nullable(Long.class), nullable(Boolean.class));",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaCreditsCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "responseBuilder",
+    "variableType": "QuotaResponseBuilder",
+    "mockedClass": "QuotaResponseBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\QuotaEmailTemplateListCmdTest.java",
+      "className": "QuotaEmailTemplateListCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nQuotaResponseBuilder responseBuilder;",
+        "line": 35,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.listQuotaEmailTemplates(Mockito.eq(cmd))).thenReturn(responses);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaEmailTemplateListCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseBuilder, Mockito.times(1)).listQuotaEmailTemplates(cmd);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaEmailTemplateListCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "responseBuilder",
+    "variableType": "QuotaResponseBuilder",
+    "mockedClass": "QuotaResponseBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\QuotaEmailTemplateUpdateCmdTest.java",
+      "className": "QuotaEmailTemplateUpdateCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nQuotaResponseBuilder responseBuilder;",
+        "line": 34,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.updateQuotaEmailTemplate(Mockito.eq(cmd))).thenReturn(true);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaEmailTemplateUpdateCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseBuilder, Mockito.times(1)).updateQuotaEmailTemplate(Mockito.eq(cmd));",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaEmailTemplateUpdateCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "responseBuilder",
+    "variableType": "QuotaResponseBuilder",
+    "mockedClass": "QuotaResponseBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\QuotaStatementCmdTest.java",
+      "className": "QuotaStatementCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nQuotaResponseBuilder responseBuilder;",
+        "line": 35,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.getQuotaUsage(Mockito.eq(cmd))).thenReturn(quotaUsageVOList);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaStatementCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.createQuotaStatementResponse(Mockito.eq(quotaUsageVOList))).thenReturn(new QuotaStatementResponse());",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaStatementCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseBuilder, Mockito.times(1)).getQuotaUsage(Mockito.eq(cmd));",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaStatementCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "responseBuilder",
+    "variableType": "QuotaResponseBuilder",
+    "mockedClass": "QuotaResponseBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\QuotaTariffListCmdTest.java",
+      "className": "QuotaTariffListCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nQuotaResponseBuilder responseBuilder;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.listQuotaTariffPlans(Mockito.eq(cmd))).thenReturn(new Pair<>(quotaTariffVOList, quotaTariffVOList.size()));",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaTariffListCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.createQuotaTariffResponse(Mockito.any(QuotaTariffVO.class))).thenReturn(new QuotaTariffResponse());",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaTariffListCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseBuilder, Mockito.times(1)).createQuotaTariffResponse(Mockito.any(QuotaTariffVO.class));",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaTariffListCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "responseBuilder",
+    "variableType": "QuotaResponseBuilder",
+    "mockedClass": "QuotaResponseBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\QuotaTariffUpdateCmdTest.java",
+      "className": "QuotaTariffUpdateCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nQuotaResponseBuilder responseBuilder;",
+        "line": 39,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.updateQuotaTariffPlan(Mockito.eq(cmd))).thenReturn(null);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaTariffUpdateCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.updateQuotaTariffPlan(Mockito.eq(cmd))).thenReturn(tariff);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaTariffUpdateCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseBuilder.createQuotaTariffResponse(Mockito.eq(tariff))).thenReturn(new QuotaTariffResponse());",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaTariffUpdateCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseBuilder, Mockito.times(1)).createQuotaTariffResponse(Mockito.eq(tariff));",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaTariffUpdateCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

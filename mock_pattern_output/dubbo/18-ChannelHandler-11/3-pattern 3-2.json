@@ -1,0 +1,52 @@
+[
+  {
+    "variableName": "channel",
+    "variableType": "ChannelHandler",
+    "mockedClass": "ChannelHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-api\\src\\test\\java\\org\\apache\\dubbo\\remoting\\TransportersTest.java",
+      "className": "TransportersTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private ChannelHandler channel = Mockito.mock(ChannelHandler.class);",
+        "line": 27,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 3
+  },
+  {
+    "variableName": "channelHandler",
+    "variableType": "ChannelHandler",
+    "mockedClass": "ChannelHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.transport.netty4",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-netty4\\src\\test\\java\\org\\apache\\dubbo\\remoting\\transport\\netty4\\NettyChannelTest.java",
+      "className": "NettyChannelTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private ChannelHandler channelHandler = Mockito.mock(ChannelHandler.class);",
+        "line": 39,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

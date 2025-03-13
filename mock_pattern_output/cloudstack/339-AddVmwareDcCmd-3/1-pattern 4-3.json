@@ -1,0 +1,413 @@
+[
+  {
+    "variableName": "addCmd",
+    "variableType": "AddVmwareDcCmd",
+    "mockedClass": "AddVmwareDcCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\VmwareDatacenterApiUnitTest.java",
+      "className": "VmwareDatacenterApiUnitTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate static AddVmwareDcCmd addCmd;",
+        "line": 164,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getZoneId()).thenReturn(1L);",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getVcenter()).thenReturn(vCenterHost);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getUsername()).thenReturn(user);",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getPassword()).thenReturn(password);",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getName()).thenReturn(vmwareDcName);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getZoneId()).thenReturn(2L);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcToInvalidZone",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getUsername()).thenReturn(null);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullUser",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getPassword()).thenReturn(null);",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullPassword",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getVcenter()).thenReturn(null);",
+        "line": 285,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullUrl",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getName()).thenReturn(null);",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullDcName",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "addCmd",
+    "variableType": "AddVmwareDcCmd",
+    "mockedClass": "AddVmwareDcCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\VmwareDatacenterApiUnitTest.java",
+      "className": "VmwareDatacenterApiUnitTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate static AddVmwareDcCmd addCmd;",
+        "line": 164,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getZoneId()).thenReturn(1L);",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getVcenter()).thenReturn(vCenterHost);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getUsername()).thenReturn(user);",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getPassword()).thenReturn(password);",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getName()).thenReturn(vmwareDcName);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getZoneId()).thenReturn(2L);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcToInvalidZone",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getUsername()).thenReturn(null);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullUser",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getPassword()).thenReturn(null);",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullPassword",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getVcenter()).thenReturn(null);",
+        "line": 285,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullUrl",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getName()).thenReturn(null);",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullDcName",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "addCmd",
+    "variableType": "AddVmwareDcCmd",
+    "mockedClass": "AddVmwareDcCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\VmwareDatacenterApiUnitTest.java",
+      "className": "VmwareDatacenterApiUnitTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate static AddVmwareDcCmd addCmd;",
+        "line": 164,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getZoneId()).thenReturn(1L);",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getVcenter()).thenReturn(vCenterHost);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getUsername()).thenReturn(user);",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getPassword()).thenReturn(password);",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getName()).thenReturn(vmwareDcName);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getZoneId()).thenReturn(2L);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcToInvalidZone",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getUsername()).thenReturn(null);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullUser",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getPassword()).thenReturn(null);",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullPassword",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getVcenter()).thenReturn(null);",
+        "line": 285,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullUrl",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(addCmd.getName()).thenReturn(null);",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddVmwareDcWithNullDcName",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

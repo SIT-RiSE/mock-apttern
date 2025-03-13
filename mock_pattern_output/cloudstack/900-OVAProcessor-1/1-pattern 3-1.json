@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "processor",
+    "variableType": "OVAProcessor",
+    "mockedClass": "OVAProcessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\core\\src\\test\\java\\com\\cloud\\storage\\template\\OVAProcessorTest.java",
+      "className": "OVAProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "OVAProcessor processor;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "processor = PowerMockito.spy(new OVAProcessor());",
+        "line": 52,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

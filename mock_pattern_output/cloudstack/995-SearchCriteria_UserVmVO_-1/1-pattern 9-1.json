@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "scMock",
+    "variableType": "SearchCriteria<UserVmVO>",
+    "mockedClass": "SearchCriteria<UserVmVO>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.metrics",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\metrics\\src\\test\\java\\org\\apache\\cloudstack\\metrics\\MetricsServiceImplTest.java",
+      "className": "MetricsServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSearchCriteria<UserVmVO> scMock;",
+        "line": 69,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(scMock).setParameters(stringCaptor1.capture(), objectArrayCaptor.capture());",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "searchForUserVmsInternalTestWithOnlyOneId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(scMock).setParameters(stringCaptor1.capture(), objectArrayCaptor.capture());",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "searchForUserVmsInternalTestWithAListOfIds",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(scMock).setParameters(stringCaptor1.capture(), objectArrayCaptor.capture());",
+        "line": 164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "searchForUserVmsInternalTestWithName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(scMock, Mockito.times(2)).addOr(stringCaptor1.capture(), opCaptor.capture(), objectArrayCaptor.capture());",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "searchForUserVmsInternalTestWithKeyword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

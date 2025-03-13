@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "vpcMockVO",
+    "variableType": "VpcVO",
+    "mockedClass": "VpcVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\VpcManagerImplTest.java",
+      "className": "VpcManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VpcVO vpcMockVO = Mockito.mock(VpcVO.class);",
+        "line": 318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVpcNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

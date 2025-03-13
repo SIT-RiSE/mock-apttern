@@ -1,0 +1,87 @@
+[
+  {
+    "variableName": "urlConnection",
+    "variableType": "URLConnection",
+    "mockedClass": "URLConnection",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.data.input.impl",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\data\\input\\impl\\HttpEntityTest.java",
+      "className": "HttpEntityTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private URLConnection urlConnection;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "urlConnection = Mockito.mock(URLConnection.class);",
+        "line": 58,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(urlConnection.getInputStream()).thenReturn(inputStreamMock);",
+        "line": 62,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(urlConnection.getHeaderField(HttpHeaders.CONTENT_RANGE)).thenReturn(contentRange);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServerSupportingRanges",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(urlConnection.getHeaderField(HttpHeaders.CONTENT_RANGE)).thenReturn(null);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServerNotSupportingRanges",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(urlConnection.getHeaderField(HttpHeaders.CONTENT_RANGE)).thenReturn(\"token 2-12/12\");",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServerNotSupportingBytesRanges",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  }
+]

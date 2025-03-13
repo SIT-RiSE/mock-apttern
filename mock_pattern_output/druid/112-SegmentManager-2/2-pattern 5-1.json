@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "segmentManager",
+    "variableType": "SegmentManager",
+    "mockedClass": "SegmentManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordination",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordination\\SegmentLoadDropHandlerTest.java",
+      "className": "SegmentLoadDropHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SegmentManager segmentManager = Mockito.mock(SegmentManager.class);",
+        "line": 564,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchLoadDropLoadSequenceForSameSegment",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// check invocations after a load-drop sequence\r\nMockito.verify(segmentManager, Mockito.times(1)).loadSegment(ArgumentMatchers.any(), ArgumentMatchers.anyBoolean(), ArgumentMatchers.any(), ArgumentMatchers.any());",
+        "line": 610,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchLoadDropLoadSequenceForSameSegment",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(segmentManager, Mockito.times(1)).dropSegment(ArgumentMatchers.any());",
+        "line": 616,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchLoadDropLoadSequenceForSameSegment",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// check invocations - 1 more load has happened\r\nMockito.verify(segmentManager, Mockito.times(2)).loadSegment(ArgumentMatchers.any(), ArgumentMatchers.anyBoolean(), ArgumentMatchers.any(), ArgumentMatchers.any());",
+        "line": 630,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchLoadDropLoadSequenceForSameSegment",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(segmentManager, Mockito.times(1)).dropSegment(ArgumentMatchers.any());",
+        "line": 636,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchLoadDropLoadSequenceForSameSegment",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// check invocations - the load segment counter should bump up\r\nMockito.verify(segmentManager, Mockito.times(3)).loadSegment(ArgumentMatchers.any(), ArgumentMatchers.anyBoolean(), ArgumentMatchers.any(), ArgumentMatchers.any());",
+        "line": 650,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchLoadDropLoadSequenceForSameSegment",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(segmentManager, Mockito.times(1)).dropSegment(ArgumentMatchers.any());",
+        "line": 656,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchLoadDropLoadSequenceForSameSegment",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

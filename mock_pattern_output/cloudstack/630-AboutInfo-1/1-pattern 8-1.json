@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "aboutInfo",
+    "variableType": "AboutInfo",
+    "mockedClass": "AboutInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.mo",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\vmware-base\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\mo\\HypervisorHostHelperTest.java",
+      "className": "HypervisorHostHelperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAboutInfo aboutInfo;",
+        "line": 69,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(aboutInfo.getApiVersion()).thenReturn(\"5.5\");",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVcenterApiVersion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(aboutInfo).getApiVersion();",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVcenterApiVersion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(aboutInfo.getApiVersion()).thenReturn(\"5.0\");",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsFeatureSupportedInVcenterApiVersionUnSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(aboutInfo).getApiVersion();",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsFeatureSupportedInVcenterApiVersionUnSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(aboutInfo.getApiVersion()).thenReturn(\"5.5\");",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsFeatureSupportedInVcenterApiVersionSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(aboutInfo).getApiVersion();",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsFeatureSupportedInVcenterApiVersionSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "variableName": "templateDataStoreDao",
+    "variableType": "TemplateDataStoreDao",
+    "mockedClass": "TemplateDataStoreDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.image",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\image\\src\\test\\java\\org\\apache\\cloudstack\\storage\\image\\TemplateServiceImplTest.java",
+      "className": "TemplateServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTemplateDataStoreDao templateDataStoreDao;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateDataStoreDao.findByTemplateZone(id, id, DataStoreRole.Image)).thenReturn(null);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadPrivateNoRefTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateDataStoreDao.findByTemplateZone(id, id, DataStoreRole.Image)).thenReturn(Mockito.mock(TemplateDataStoreVO.class));",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSkipTemplateStoreDownloadPrivateExistingTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_templateStoreDao",
+    "variableType": "TemplateDataStoreDao",
+    "mockedClass": "TemplateDataStoreDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\HypervisorTemplateAdapterTest.java",
+      "className": "HypervisorTemplateAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTemplateDataStoreDao _templateStoreDao;",
+        "line": 102,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_templateStoreDao.listByTemplateStore(anyLong(), anyLong())).thenReturn(Collections.singletonList(dataStoreVO));",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

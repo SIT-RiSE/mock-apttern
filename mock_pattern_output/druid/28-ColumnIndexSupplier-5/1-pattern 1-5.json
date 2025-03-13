@@ -1,0 +1,209 @@
+[
+  {
+    "variableName": "indexSupplier",
+    "variableType": "ColumnIndexSupplier",
+    "mockedClass": "ColumnIndexSupplier",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.query.filter",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\query\\filter\\InDimFilterTest.java",
+      "className": "InDimFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ColumnIndexSupplier indexSupplier = Mockito.mock(ColumnIndexSupplier.class);",
+        "line": 262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUsesUtf8SetIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(indexSupplier.as(Utf8ValueSetIndexes.class)).thenReturn(valueIndexes);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUsesUtf8SetIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "indexSupplier",
+    "variableType": "ColumnIndexSupplier",
+    "mockedClass": "ColumnIndexSupplier",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.query.filter",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\query\\filter\\InDimFilterTest.java",
+      "className": "InDimFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ColumnIndexSupplier indexSupplier = Mockito.mock(ColumnIndexSupplier.class);",
+        "line": 286,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUsesStringSetIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Will check for UTF-8 first.\r\nMockito.when(indexSupplier.as(Utf8ValueSetIndexes.class)).thenReturn(null);",
+        "line": 294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUsesStringSetIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(indexSupplier.as(StringValueSetIndexes.class)).thenReturn(valueIndex);",
+        "line": 295,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUsesStringSetIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "indexSupplier",
+    "variableType": "ColumnIndexSupplier",
+    "mockedClass": "ColumnIndexSupplier",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.query.filter",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\query\\filter\\LikeDimFilterTest.java",
+      "className": "LikeDimFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ColumnIndexSupplier indexSupplier = Mockito.mock(ColumnIndexSupplier.class);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrefixMatchUsesRangeIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(indexSupplier.as(LexicographicalRangeIndexes.class)).thenReturn(rangeIndex);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrefixMatchUsesRangeIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "indexSupplier",
+    "variableType": "ColumnIndexSupplier",
+    "mockedClass": "ColumnIndexSupplier",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.query.filter",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\query\\filter\\LikeDimFilterTest.java",
+      "className": "LikeDimFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ColumnIndexSupplier indexSupplier = Mockito.mock(ColumnIndexSupplier.class);",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExactMatchUsesValueIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(indexSupplier.as(StringValueSetIndexes.class)).thenReturn(valueIndex);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExactMatchUsesValueIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "indexSupplier",
+    "variableType": "ColumnIndexSupplier",
+    "mockedClass": "ColumnIndexSupplier",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.cli",
+      "filePath": "C:\\java tool\\Apache\\druid\\services\\src\\test\\java\\org\\apache\\druid\\cli\\DumpSegmentTest.java",
+      "className": "DumpSegmentTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ColumnIndexSupplier indexSupplier = Mockito.mock(ColumnIndexSupplier.class);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDumpBitmap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(indexSupplier.as(DictionaryEncodedStringValueIndex.class)).thenReturn(valueIndex);",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDumpBitmap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

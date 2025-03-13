@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "headers",
+    "variableType": "ClientResponse.Headers",
+    "mockedClass": "ClientResponse.Headers",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServerOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServerOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientResponse.Headers headers = mock(ClientResponse.Headers.class);",
+        "line": 644,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenWWWAuthenticateHeaderIncludesErrorThenInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(headers.header(eq(HttpHeaders.WWW_AUTHENTICATE))).willReturn(Collections.singletonList(wwwAuthenticateHeader));",
+        "line": 645,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenWWWAuthenticateHeaderIncludesErrorThenInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "headers",
+    "variableType": "ClientResponse.Headers",
+    "mockedClass": "ClientResponse.Headers",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServletOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServletOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientResponse.Headers headers = mock(ClientResponse.Headers.class);",
+        "line": 729,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenWWWAuthenticateHeaderIncludesErrorThenInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(headers.header(eq(HttpHeaders.WWW_AUTHENTICATE))).willReturn(Collections.singletonList(wwwAuthenticateHeader));",
+        "line": 730,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenWWWAuthenticateHeaderIncludesErrorThenInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

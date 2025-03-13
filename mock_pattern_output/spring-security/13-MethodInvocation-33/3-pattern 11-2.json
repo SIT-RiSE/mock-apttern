@@ -1,0 +1,96 @@
+[
+  {
+    "variableName": "methodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.expression.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\expression\\method\\DefaultMethodSecurityExpressionHandlerTests.java",
+      "className": "DefaultMethodSecurityExpressionHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MethodInvocation methodInvocation;",
+        "line": 60,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.methodInvocation.getThis()).willReturn(new Foo());",
+        "line": 72,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMocks",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.methodInvocation.getMethod()).willReturn(Foo.class.getMethods()[0]);",
+        "line": 73,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMocks",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "methodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.expression.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\expression\\method\\DefaultMethodSecurityExpressionHandlerTests.java",
+      "className": "DefaultMethodSecurityExpressionHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MethodInvocation methodInvocation;",
+        "line": 60,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.methodInvocation.getThis()).willReturn(new Foo());",
+        "line": 72,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMocks",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.methodInvocation.getMethod()).willReturn(Foo.class.getMethods()[0]);",
+        "line": 73,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMocks",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

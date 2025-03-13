@@ -1,0 +1,377 @@
+[
+  {
+    "variableName": "csrfTokenRepository",
+    "variableType": "CsrfTokenRepository",
+    "mockedClass": "CsrfTokenRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\CsrfConfigurerTests.java",
+      "className": "CsrfConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CsrfTokenRepository csrfTokenRepository = mock(CsrfTokenRepository.class);",
+        "line": 458,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getLoginWhenCsrfTokenRequestAttributeHandlerSetThenRespondsWithNormalCsrfToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(csrfTokenRepository.loadDeferredToken(any(HttpServletRequest.class), any(HttpServletResponse.class))).willReturn(new TestDeferredCsrfToken(csrfToken));",
+        "line": 460,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getLoginWhenCsrfTokenRequestAttributeHandlerSetThenRespondsWithNormalCsrfToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(csrfTokenRepository).loadDeferredToken(any(HttpServletRequest.class), any(HttpServletResponse.class));",
+        "line": 468,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getLoginWhenCsrfTokenRequestAttributeHandlerSetThenRespondsWithNormalCsrfToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(csrfTokenRepository);",
+        "line": 469,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getLoginWhenCsrfTokenRequestAttributeHandlerSetThenRespondsWithNormalCsrfToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "csrfTokenRepository",
+    "variableType": "CsrfTokenRepository",
+    "mockedClass": "CsrfTokenRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\CsrfConfigurerTests.java",
+      "className": "CsrfConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CsrfTokenRepository csrfTokenRepository = mock(CsrfTokenRepository.class);",
+        "line": 475,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenCsrfTokenRequestAttributeHandlerSetAndNormalCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(csrfTokenRepository.loadToken(any(HttpServletRequest.class))).willReturn(csrfToken);",
+        "line": 476,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenCsrfTokenRequestAttributeHandlerSetAndNormalCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(csrfTokenRepository.loadDeferredToken(any(HttpServletRequest.class), any(HttpServletResponse.class))).willReturn(new TestDeferredCsrfToken(csrfToken));",
+        "line": 477,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenCsrfTokenRequestAttributeHandlerSetAndNormalCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(csrfTokenRepository).loadToken(any(HttpServletRequest.class));",
+        "line": 490,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenCsrfTokenRequestAttributeHandlerSetAndNormalCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(csrfTokenRepository).saveToken(isNull(), any(HttpServletRequest.class), any(HttpServletResponse.class));",
+        "line": 491,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenCsrfTokenRequestAttributeHandlerSetAndNormalCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(csrfTokenRepository, times(2)).loadDeferredToken(any(HttpServletRequest.class), any(HttpServletResponse.class));",
+        "line": 492,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenCsrfTokenRequestAttributeHandlerSetAndNormalCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(csrfTokenRepository);",
+        "line": 494,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenCsrfTokenRequestAttributeHandlerSetAndNormalCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "csrfTokenRepository",
+    "variableType": "CsrfTokenRepository",
+    "mockedClass": "CsrfTokenRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\CsrfConfigurerTests.java",
+      "className": "CsrfConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CsrfTokenRepository csrfTokenRepository = mock(CsrfTokenRepository.class);",
+        "line": 499,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getLoginWhenXorCsrfTokenRequestAttributeHandlerSetThenRespondsWithMaskedCsrfToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(csrfTokenRepository.loadDeferredToken(any(HttpServletRequest.class), any(HttpServletResponse.class))).willReturn(new TestDeferredCsrfToken(csrfToken));",
+        "line": 501,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getLoginWhenXorCsrfTokenRequestAttributeHandlerSetThenRespondsWithMaskedCsrfToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(csrfTokenRepository).loadDeferredToken(any(HttpServletRequest.class), any(HttpServletResponse.class));",
+        "line": 509,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getLoginWhenXorCsrfTokenRequestAttributeHandlerSetThenRespondsWithMaskedCsrfToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(csrfTokenRepository);",
+        "line": 510,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getLoginWhenXorCsrfTokenRequestAttributeHandlerSetThenRespondsWithMaskedCsrfToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "csrfTokenRepository",
+    "variableType": "CsrfTokenRepository",
+    "mockedClass": "CsrfTokenRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\CsrfConfigurerTests.java",
+      "className": "CsrfConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CsrfTokenRepository csrfTokenRepository = mock(CsrfTokenRepository.class);",
+        "line": 516,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenXorCsrfTokenRequestAttributeHandlerSetAndMaskedCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(csrfTokenRepository.loadToken(any(HttpServletRequest.class))).willReturn(csrfToken);",
+        "line": 517,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenXorCsrfTokenRequestAttributeHandlerSetAndMaskedCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(csrfTokenRepository.loadDeferredToken(any(HttpServletRequest.class), any(HttpServletResponse.class))).willReturn(new TestDeferredCsrfToken(csrfToken));",
+        "line": 518,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenXorCsrfTokenRequestAttributeHandlerSetAndMaskedCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(csrfTokenRepository).loadToken(any(HttpServletRequest.class));",
+        "line": 534,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenXorCsrfTokenRequestAttributeHandlerSetAndMaskedCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(csrfTokenRepository).saveToken(isNull(), any(HttpServletRequest.class), any(HttpServletResponse.class));",
+        "line": 535,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenXorCsrfTokenRequestAttributeHandlerSetAndMaskedCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(csrfTokenRepository, times(3)).loadDeferredToken(any(HttpServletRequest.class), any(HttpServletResponse.class));",
+        "line": 536,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenXorCsrfTokenRequestAttributeHandlerSetAndMaskedCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(csrfTokenRepository);",
+        "line": 538,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenXorCsrfTokenRequestAttributeHandlerSetAndMaskedCsrfTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "repository",
+    "variableType": "CsrfTokenRepository",
+    "mockedClass": "CsrfTokenRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.csrf",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\csrf\\CsrfFilterTests.java",
+      "className": "CsrfFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CsrfTokenRepository repository = mock(CsrfTokenRepository.class);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSkipRequestInvokedThenSkips",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(repository.loadToken(any(HttpServletRequest.class))).thenReturn(this.token);",
+        "line": 359,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSkipRequestInvokedThenSkips",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(repository);",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSkipRequestInvokedThenSkips",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

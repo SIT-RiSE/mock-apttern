@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "resourceService",
+    "variableType": "ResourceService",
+    "mockedClass": "ResourceService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\AddClusterCmdTest.java",
+      "className": "AddClusterCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResourceService resourceService;",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "resourceService = Mockito.mock(ResourceService.class);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteForResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 34
+  }
+]

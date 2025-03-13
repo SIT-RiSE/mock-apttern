@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "accountService",
+    "variableType": "AccountService",
+    "mockedClass": "AccountService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\AddVpnUserCmdTest.java",
+      "className": "AddVpnUserCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountService accountService = Mockito.mock(AccountService.class);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(accountService.getAccount(nullable(Long.class))).thenReturn(account);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "accountService",
+    "variableType": "AccountService",
+    "mockedClass": "AccountService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\AddVpnUserCmdTest.java",
+      "className": "AddVpnUserCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountService accountService = Mockito.mock(AccountService.class);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(accountService.getAccount(nullable(Long.class))).thenReturn(account);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "accountService",
+    "variableType": "AccountService",
+    "mockedClass": "AccountService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\CreateSnapshotCmdTest.java",
+      "className": "CreateSnapshotCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountService accountService = Mockito.mock(AccountService.class);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(accountService.getAccount(anyLong())).thenReturn(account);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "accountService",
+    "variableType": "AccountService",
+    "mockedClass": "AccountService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\CreateSnapshotCmdTest.java",
+      "className": "CreateSnapshotCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AccountService accountService = Mockito.mock(AccountService.class);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(accountService.getAccount(anyLong())).thenReturn(account);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

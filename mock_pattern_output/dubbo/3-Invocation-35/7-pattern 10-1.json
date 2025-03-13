@@ -1,0 +1,57 @@
+[
+  {
+    "variableName": "invocation",
+    "variableType": "Invocation",
+    "mockedClass": "RpcInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\EchoFilterTest.java",
+      "className": "EchoFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invocation invocation = mock(RpcInvocation.class);",
+        "line": 61,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockRpcInvocation",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getParameterTypes()).willReturn(new Class<?>[] { Enum.class });",
+        "line": 62,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockRpcInvocation",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getArguments()).willReturn(new Object[] { \"hello\" });",
+        "line": 63,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockRpcInvocation",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getObjectAttachments()).willReturn(null);",
+        "line": 64,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockRpcInvocation",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

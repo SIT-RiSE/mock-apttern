@@ -1,0 +1,137 @@
+[
+  {
+    "variableName": "searchCriteriaAutoScaleVmGroupVmMapVOMock",
+    "variableType": "SearchCriteria<AutoScaleVmGroupVmMapVO>",
+    "mockedClass": "SearchCriteria<AutoScaleVmGroupVmMapVO>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\network\\as\\dao\\AutoScaleVmGroupVmMapDaoImplTest.java",
+      "className": "AutoScaleVmGroupVmMapDaoImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSearchCriteria<AutoScaleVmGroupVmMapVO> searchCriteriaAutoScaleVmGroupVmMapVOMock;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaAutoScaleVmGroupVmMapVOMock).setParameters(\"vmGroupId\", groupId);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCountByGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaAutoScaleVmGroupVmMapVOMock).setParameters(\"vmGroupId\", groupId);",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListByGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaAutoScaleVmGroupVmMapVOMock).setParameters(\"instanceId\", vmId);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListByVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaAutoScaleVmGroupVmMapVOMock).setParameters(\"instanceId\", vmId);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveByVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaAutoScaleVmGroupVmMapVOMock).setParameters(\"vmGroupId\", groupId);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveByGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaAutoScaleVmGroupVmMapVOMock).setParameters(\"vmGroupId\", groupId);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveByGroupAndVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaAutoScaleVmGroupVmMapVOMock).setParameters(\"instanceId\", vmId);",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveByGroupAndVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaAutoScaleVmGroupVmMapVOMock).setParameters(\"instanceId\", vmId);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveByVmFailed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchCriteriaAutoScaleVmGroupVmMapVOMock).setParameters(\"vmGroupId\", groupId);",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoveByGroupFailed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

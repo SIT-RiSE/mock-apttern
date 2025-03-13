@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "task",
+    "variableType": "Future<Boolean>",
+    "mockedClass": "Future<Boolean>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\integration-test\\src\\test\\java\\org\\apache\\cloudstack\\storage\\test\\SnapshotTestWithFakeData.java",
+      "className": "SnapshotTestWithFakeData"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Future<Boolean> task = pool.submit(new Callable<Boolean>() {\r\n\r\n    @Override\r\n    public Boolean call() throws Exception {\r\n        boolean r = true;\r\n        try {\r\n            SnapshotVO snapshotVO = createSnapshotInDb(vol.getId());\r\n            VolumeObject volumeObject = (VolumeObject) vol;\r\n            Account account = mock(Account.class);\r\n            when(account.getId()).thenReturn(1L);\r\n            CreateSnapshotPayload createSnapshotPayload = mock(CreateSnapshotPayload.class);\r\n            when(createSnapshotPayload.getAccount()).thenReturn(account);\r\n            when(createSnapshotPayload.getSnapshotId()).thenReturn(snapshotVO.getId());\r\n            when(createSnapshotPayload.getSnapshotPolicyId()).thenReturn(0L);\r\n            volumeObject.addPayload(createSnapshotPayload);\r\n            if (cnt > 8) {\r\n                mockStorageMotionStrategy.makeBackupSnapshotSucceed(false);\r\n            }\r\n            SnapshotInfo newSnapshot = volumeService.takeSnapshot(vol);\r\n            if (newSnapshot == null) {\r\n                r = false;\r\n            }\r\n        } catch (Exception e) {\r\n            r = false;\r\n        }\r\n        return r;\r\n    }\r\n});",
+        "line": 328,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConcurrentSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

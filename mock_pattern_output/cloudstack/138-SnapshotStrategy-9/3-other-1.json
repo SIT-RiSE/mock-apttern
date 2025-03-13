@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "strategy",
+    "variableType": "SnapshotStrategy",
+    "mockedClass": "SnapshotStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.subsystem.api.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\src\\test\\java\\org\\apache\\cloudstack\\engine\\subsystem\\api\\storage\\StrategyPriorityTest.java",
+      "className": "StrategyPriorityTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotStrategy strategy = null;",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSortSnapshotStrategies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "strategy = factory.getSnapshotStrategy(mock(Snapshot.class), SnapshotOperation.TAKE);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSortSnapshotStrategies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "strategy = factory.getSnapshotStrategy(mock(Snapshot.class), SnapshotOperation.TAKE);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSortSnapshotStrategies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "strategy = factory.getSnapshotStrategy(mock(Snapshot.class), SnapshotOperation.TAKE);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSortSnapshotStrategies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "strategy = factory.getSnapshotStrategy(mock(Snapshot.class), SnapshotOperation.TAKE);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSortSnapshotStrategies",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  }
+]

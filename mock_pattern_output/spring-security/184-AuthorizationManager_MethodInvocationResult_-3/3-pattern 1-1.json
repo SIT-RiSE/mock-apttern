@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "manager",
+    "variableType": "AuthorizationManager<MethodInvocationResult>",
+    "mockedClass": "AuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthorizationManager<MethodInvocationResult> manager = mock(AuthorizationManager.class);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenCustomAuthorizationDeniedExceptionThenThrows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(manager.check(any(), any())).willThrow(new MyAuthzDeniedException(\"denied\", new AuthorizationDecision(false)));",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenCustomAuthorizationDeniedExceptionThenThrows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(manager.authorize(any(), any())).willCallRealMethod();",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenCustomAuthorizationDeniedExceptionThenThrows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

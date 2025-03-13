@@ -1,0 +1,809 @@
+[
+  {
+    "variableName": "encoder",
+    "variableType": "PasswordEncoder",
+    "mockedClass": "PasswordEncoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\UserDetailsRepositoryReactiveAuthenticationManagerTests.java",
+      "className": "UserDetailsRepositoryReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PasswordEncoder encoder;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(true);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomSchedulerThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(true);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.upgradeEncoding(any())).willReturn(true);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.encode(any())).willReturn(encodedPassword);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.encoder).encode(this.user.getPassword());",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(false);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndBadCredentialsThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(true);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndUpgradeFalseThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.upgradeEncoding(any())).willReturn(false);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndUpgradeFalseThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(true);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPostAuthenticationChecksFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(true);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPostAuthenticationChecksNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "encoder",
+    "variableType": "PasswordEncoder",
+    "mockedClass": "PasswordEncoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\UserDetailsRepositoryReactiveAuthenticationManagerTests.java",
+      "className": "UserDetailsRepositoryReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PasswordEncoder encoder;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(true);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomSchedulerThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(true);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.upgradeEncoding(any())).willReturn(true);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.encode(any())).willReturn(encodedPassword);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.encoder).encode(this.user.getPassword());",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(false);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndBadCredentialsThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(true);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndUpgradeFalseThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.upgradeEncoding(any())).willReturn(false);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndUpgradeFalseThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(true);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPostAuthenticationChecksFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.encoder.matches(any(), any())).willReturn(true);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPostAuthenticationChecksNotSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "invalidId",
+    "variableType": "PasswordEncoder",
+    "mockedClass": "PasswordEncoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.crypto.password",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\crypto\\src\\test\\java\\org\\springframework\\security\\crypto\\password\\DelegatingPasswordEncoderTests.java",
+      "className": "DelegatingPasswordEncoderTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PasswordEncoder invalidId;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.invalidId).matches(this.rawPassword, encodedPassword);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenCustomDefaultPasswordEncoderForMatchesThenDelegates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.invalidId.matches(this.rawPassword, this.encodedPassword)).willReturn(true);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNullIdThenDelegatesToInvalidId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.invalidId).matches(this.rawPassword, this.encodedPassword);",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNullIdThenDelegatesToInvalidId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "bcrypt",
+    "variableType": "PasswordEncoder",
+    "mockedClass": "PasswordEncoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.crypto.password",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\crypto\\src\\test\\java\\org\\springframework\\security\\crypto\\password\\DelegatingPasswordEncoderTests.java",
+      "className": "DelegatingPasswordEncoderTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PasswordEncoder bcrypt;",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenCustomDefaultPasswordEncoderForMatchesThenDelegates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.bcrypt.encode(this.rawPassword)).willReturn(this.encodedPassword);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "encodeWhenValidThenUsesIdForEncode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.bcrypt.encode(this.rawPassword)).willReturn(this.encodedPassword);",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "encodeWhenValidBySpecifyDelegatingPasswordEncoderThenUsesIdForEncode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.bcrypt.matches(this.rawPassword, this.encodedPassword)).willReturn(true);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenBCryptThenDelegatesToBCrypt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.bcrypt).matches(this.rawPassword, this.encodedPassword);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenBCryptThenDelegatesToBCrypt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.bcrypt.matches(this.rawPassword, this.encodedPassword)).willReturn(true);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenBCryptBySpecifyDelegatingPasswordEncoderThenDelegatesToBCrypt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.bcrypt).matches(this.rawPassword, this.encodedPassword);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenBCryptBySpecifyDelegatingPasswordEncoderThenDelegatesToBCrypt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt);",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNoopThenDelegatesToNoop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenUnMappedThenIllegalArgumentException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNoClosingPrefixStringThenIllegalArgumentException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNoStartingPrefixStringThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNoIdStringThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenPrefixInMiddleThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenIdIsNullThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNullIdThenDelegatesToInvalidId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.bcrypt).upgradeEncoding(this.encodedPassword);",
+        "line": 284,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "upgradeEncodingWhenSameIdAndEncoderFalseThenEncoderDecidesFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.bcrypt.upgradeEncoding(any())).willReturn(true);",
+        "line": 289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "upgradeEncodingWhenSameIdAndEncoderTrueThenEncoderDecidesTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.bcrypt).upgradeEncoding(this.encodedPassword);",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "upgradeEncodingWhenSameIdAndEncoderTrueThenEncoderDecidesTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt);",
+        "line": 297,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "upgradeEncodingWhenDifferentIdThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesShouldThrowIllegalArgumentExceptionWhenNoPasswordEncoderIsMappedForTheId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "noop",
+    "variableType": "PasswordEncoder",
+    "mockedClass": "PasswordEncoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.crypto.password",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\crypto\\src\\test\\java\\org\\springframework\\security\\crypto\\password\\DelegatingPasswordEncoderTests.java",
+      "className": "DelegatingPasswordEncoderTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PasswordEncoder noop;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenCustomDefaultPasswordEncoderForMatchesThenDelegates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.noop);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenBCryptThenDelegatesToBCrypt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.noop);",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenBCryptBySpecifyDelegatingPasswordEncoderThenDelegatesToBCrypt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.noop.matches(this.rawPassword, this.encodedPassword)).willReturn(true);",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNoopThenDelegatesToNoop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.noop).matches(this.rawPassword, this.encodedPassword);",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNoopThenDelegatesToNoop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenUnMappedThenIllegalArgumentException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNoClosingPrefixStringThenIllegalArgumentException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNoStartingPrefixStringThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNoIdStringThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenPrefixInMiddleThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenIdIsNullThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenNullIdThenDelegatesToInvalidId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.bcrypt, this.noop);",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesShouldThrowIllegalArgumentExceptionWhenNoPasswordEncoderIsMappedForTheId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

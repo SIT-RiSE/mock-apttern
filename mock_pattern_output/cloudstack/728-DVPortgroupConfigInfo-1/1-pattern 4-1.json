@@ -1,0 +1,281 @@
+[
+  {
+    "variableName": "currentDvPortgroupInfo",
+    "variableType": "DVPortgroupConfigInfo",
+    "mockedClass": "DVPortgroupConfigInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.mo",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\vmware-base\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\mo\\HypervisorHostHelperTest.java",
+      "className": "HypervisorHostHelperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDVPortgroupConfigInfo currentDvPortgroupInfo;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getNumPorts()).thenReturn(currentNumPorts);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.isAutoExpand()).thenReturn(currentAutoExpand);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getDefaultPortConfig()).thenReturn(currentVmwareDvsPortSetting);",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getNumPorts()).thenReturn(currentNumPorts);",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithHighBandwidthShapingPolicy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.isAutoExpand()).thenReturn(currentAutoExpand);",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithHighBandwidthShapingPolicy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getDefaultPortConfig()).thenReturn(currentVmwareDvsPortSetting);",
+        "line": 249,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithHighBandwidthShapingPolicy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getNumPorts()).thenReturn(currentNumPorts);",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithMoreDvPortsAndAutoExpandEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.isAutoExpand()).thenReturn(currentAutoExpand);",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithMoreDvPortsAndAutoExpandEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getDefaultPortConfig()).thenReturn(currentVmwareDvsPortSetting);",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithMoreDvPortsAndAutoExpandEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getNumPorts()).thenReturn(currentNumPorts);",
+        "line": 365,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithMoreDvPortsAndAutoExpandDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.isAutoExpand()).thenReturn(currentAutoExpand);",
+        "line": 366,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithMoreDvPortsAndAutoExpandDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getDefaultPortConfig()).thenReturn(currentVmwareDvsPortSetting);",
+        "line": 367,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithMoreDvPortsAndAutoExpandDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getNumPorts()).thenReturn(currentNumPorts);",
+        "line": 424,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithAutoExpandUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.isAutoExpand()).thenReturn(currentAutoExpand);",
+        "line": 425,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithAutoExpandUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getDefaultPortConfig()).thenReturn(currentVmwareDvsPortSetting);",
+        "line": 426,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithAutoExpandUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getNumPorts()).thenReturn(currentNumPorts);",
+        "line": 474,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithCurrentShapingPolicyDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.isAutoExpand()).thenReturn(currentAutoExpand);",
+        "line": 475,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithCurrentShapingPolicyDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getDefaultPortConfig()).thenReturn(currentVmwareDvsPortSetting);",
+        "line": 476,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithCurrentShapingPolicyDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getNumPorts()).thenReturn(currentNumPorts);",
+        "line": 523,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithCurrentShapingPolicyAndNewShapingPolicyDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.isAutoExpand()).thenReturn(currentAutoExpand);",
+        "line": 524,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithCurrentShapingPolicyAndNewShapingPolicyDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(currentDvPortgroupInfo.getDefaultPortConfig()).thenReturn(currentVmwareDvsPortSetting);",
+        "line": 525,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsSpecMatchConfigSpecWithCurrentShapingPolicyAndNewShapingPolicyDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "overlordClient",
+    "variableType": "OverlordClient",
+    "mockedClass": "OverlordClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.rpc.indexing",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\rpc\\indexing\\SpecificTaskServiceLocatorTest.java",
+      "className": "SpecificTaskServiceLocatorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate OverlordClient overlordClient;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(overlordClient.taskStatus(TASK_ID)).thenReturn(makeResponse(TaskState.RUNNING, TaskLocation.unknown()));",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_noLocationYet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(overlordClient.taskStatus(TASK_ID)).thenReturn(makeResponse(TaskState.RUNNING, TASK_LOCATION1));",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_taskRunning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(overlordClient.taskStatus(TASK_ID)).thenReturn(Futures.immediateFuture(new TaskStatusResponse(TASK_ID, null)));",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_taskNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(overlordClient.taskStatus(TASK_ID)).thenReturn(makeResponse(TaskState.SUCCESS, TaskLocation.unknown()));",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_taskSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(overlordClient.taskStatus(TASK_ID)).thenReturn(makeResponse(TaskState.FAILED, TaskLocation.unknown()));",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_taskFailed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(overlordClient.taskStatus(TASK_ID)).thenReturn(Futures.immediateFailedFuture(new ISE(\"oh no\")));",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_overlordError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(overlordClient.taskStatus(TASK_ID)).thenReturn(overlordFuture);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_afterClose",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

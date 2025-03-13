@@ -1,0 +1,111 @@
+[
+  {
+    "variableName": "_networkAsa1000vMapDao",
+    "variableType": "NetworkAsa1000vMapDao",
+    "mockedClass": "NetworkAsa1000vMapDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\cisco-vnmc\\src\\test\\java\\com\\cloud\\network\\element\\CiscoVnmcElementTest.java",
+      "className": "CiscoVnmcElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "NetworkAsa1000vMapDao _networkAsa1000vMapDao = mock(NetworkAsa1000vMapDao.class);",
+        "line": 102,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_networkAsa1000vMapDao.findByNetworkId(network.getId())).thenReturn(mock(NetworkAsa1000vMapVO.class));",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_networkAsa1000vMapDao.findByAsa1000vId(anyLong())).thenReturn(null);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_networkAsa1000vMapDao.persist(any(NetworkAsa1000vMapVO.class))).thenReturn(mock(NetworkAsa1000vMapVO.class));",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "implementTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_networkAsa1000vMapDao.findByNetworkId(network.getId())).thenReturn(mock(NetworkAsa1000vMapVO.class));",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shutdownTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_networkAsa1000vMapDao.findByNetworkId(network.getId())).thenReturn(mock(NetworkAsa1000vMapVO.class));",
+        "line": 290,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyFWRulesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_networkAsa1000vMapDao.findByNetworkId(network.getId())).thenReturn(mock(NetworkAsa1000vMapVO.class));",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPRulesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_networkAsa1000vMapDao.findByNetworkId(network.getId())).thenReturn(mock(NetworkAsa1000vMapVO.class));",
+        "line": 385,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyStaticNatsTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

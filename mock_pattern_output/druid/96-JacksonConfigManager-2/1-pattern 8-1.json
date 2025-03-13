@@ -1,0 +1,197 @@
+[
+  {
+    "variableName": "mockJacksonConfigManager",
+    "variableType": "JacksonConfigManager",
+    "mockedClass": "JacksonConfigManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\KillCompactionConfigTest.java",
+      "className": "KillCompactionConfigTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate JacksonConfigManager mockJacksonConfigManager;",
+        "line": 60,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(mockJacksonConfigManager);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunSkipIfLastRunLessThanPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockJacksonConfigManager.convertByteToConfig(ArgumentMatchers.eq(null), ArgumentMatchers.eq(CoordinatorCompactionConfig.class), ArgumentMatchers.eq(CoordinatorCompactionConfig.empty()))).thenReturn(CoordinatorCompactionConfig.empty());",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunDoNothingIfCurrentConfigIsEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockJacksonConfigManager).convertByteToConfig(ArgumentMatchers.eq(null), ArgumentMatchers.eq(CoordinatorCompactionConfig.class), ArgumentMatchers.eq(CoordinatorCompactionConfig.empty()));",
+        "line": 164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunDoNothingIfCurrentConfigIsEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mockJacksonConfigManager);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunDoNothingIfCurrentConfigIsEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockJacksonConfigManager.convertByteToConfig(ArgumentMatchers.eq(originalCurrentConfigBytes), ArgumentMatchers.eq(CoordinatorCompactionConfig.class), ArgumentMatchers.eq(CoordinatorCompactionConfig.empty()))).thenReturn(originalCurrentConfig);",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRemoveInactiveDatasourceCompactionConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockJacksonConfigManager.set(ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY), oldConfigCaptor.capture(), newConfigCaptor.capture(), ArgumentMatchers.any())).thenReturn(ConfigManager.SetResult.ok());",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRemoveInactiveDatasourceCompactionConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockJacksonConfigManager).convertByteToConfig(ArgumentMatchers.eq(originalCurrentConfigBytes), ArgumentMatchers.eq(CoordinatorCompactionConfig.class), ArgumentMatchers.eq(CoordinatorCompactionConfig.empty()));",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRemoveInactiveDatasourceCompactionConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockJacksonConfigManager).set(ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY), ArgumentMatchers.any(byte[].class), ArgumentMatchers.any(CoordinatorCompactionConfig.class), ArgumentMatchers.any());",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRemoveInactiveDatasourceCompactionConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mockJacksonConfigManager);",
+        "line": 275,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRemoveInactiveDatasourceCompactionConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockJacksonConfigManager.convertByteToConfig(ArgumentMatchers.eq(originalCurrentConfigBytes), ArgumentMatchers.eq(CoordinatorCompactionConfig.class), ArgumentMatchers.eq(CoordinatorCompactionConfig.empty()))).thenReturn(originalCurrentConfig);",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRetryForRetryableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockJacksonConfigManager.set(ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY), ArgumentMatchers.any(byte[].class), ArgumentMatchers.any(CoordinatorCompactionConfig.class), ArgumentMatchers.any())).thenReturn(// Return fail result with RetryableException the first three calls to updated set\r\nConfigManager.SetResult.retryableFailure(new Exception()), ConfigManager.SetResult.retryableFailure(new Exception()), ConfigManager.SetResult.retryableFailure(new Exception()), // Return success ok on the fourth call to set updated config\r\nConfigManager.SetResult.ok());",
+        "line": 313,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRetryForRetryableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Should call convertByteToConfig and lookup (to refresh current compaction config) four times due to RetryableException when failed\r\nMockito.verify(mockJacksonConfigManager, Mockito.times(4)).convertByteToConfig(ArgumentMatchers.eq(originalCurrentConfigBytes), ArgumentMatchers.eq(CoordinatorCompactionConfig.class), ArgumentMatchers.eq(CoordinatorCompactionConfig.empty()));",
+        "line": 344,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRetryForRetryableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// Should call set (to try set new updated compaction config) four times due to RetryableException when failed\r\nMockito.verify(mockJacksonConfigManager, Mockito.times(4)).set(ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY), ArgumentMatchers.any(byte[].class), ArgumentMatchers.any(CoordinatorCompactionConfig.class), ArgumentMatchers.any());",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRetryForRetryableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoMoreInteractions(mockJacksonConfigManager);",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRetryForRetryableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

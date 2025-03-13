@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "mg",
+    "variableType": "MessageGroup",
+    "mockedClass": "MessageGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jdbc",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jdbc\\src\\test\\java\\org\\springframework\\integration\\jdbc\\MessageGroupQueueTests.java",
+      "className": "MessageGroupQueueTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageGroup mg = Mockito.mock(MessageGroup.class);",
+        "line": 271,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMgqInterruptionStoreLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mg.size()).thenReturn(0);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMgqInterruptionStoreLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "methodInvocation",
+    "variableType": "MethodInvocation",
+    "mockedClass": "MethodInvocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.handler.advice",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\handler\\advice\\AdvisedMessageHandlerTests.java",
+      "className": "AdvisedMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MethodInvocation methodInvocation = mock(MethodInvocation.class);",
+        "line": 831,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwableProperlyPropagated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(methodInvocation.getMethod()).thenReturn(method);",
+        "line": 835,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwableProperlyPropagated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(methodInvocation.getArguments()).thenReturn(new Object[] { new GenericMessage<>(\"foo\") });",
+        "line": 836,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwableProperlyPropagated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

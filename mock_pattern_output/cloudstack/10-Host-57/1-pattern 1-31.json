@@ -1,0 +1,1235 @@
+[
+  {
+    "variableName": "vmHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host vmHost = mock(Host.class);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testaddHostIpToCertDetailsIfConfigAllows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmHost.getDataCenterId()).thenReturn(dataCenterId);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testaddHostIpToCertDetailsIfConfigAllows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmHost.getPrivateIpAddress()).thenReturn(hostIp);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testaddHostIpToCertDetailsIfConfigAllows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vmHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host vmHost = mock(Host.class);",
+        "line": 254,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testaddHostIpToCertDetailsIfConfigAllowsWhenConfigFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmHost.getDataCenterId()).thenReturn(dataCenterId);",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testaddHostIpToCertDetailsIfConfigAllowsWhenConfigFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host destHost = mock(Host.class);",
+        "line": 987,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destHost.getId()).thenReturn(1L);",
+        "line": 993,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host destHost = mock(Host.class);",
+        "line": 1079,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destHost.getId()).thenReturn(1L);",
+        "line": 1085,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host srcHost = mock(Host.class);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStrategyHandlesVmwareHosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcHost.getHypervisorType()).thenReturn(HypervisorType.VMware);",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStrategyHandlesVmwareHosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host destHost = mock(Host.class);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStrategyHandlesVmwareHosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destHost.getHypervisorType()).thenReturn(HypervisorType.VMware);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStrategyHandlesVmwareHosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host srcHost = mock(Host.class);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStrategyDoesnotHandlesNonVmwareHosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcHost.getHypervisorType()).thenReturn(HypervisorType.XenServer);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStrategyDoesnotHandlesNonVmwareHosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host destHost = mock(Host.class);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStrategyDoesnotHandlesNonVmwareHosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destHost.getHypervisorType()).thenReturn(HypervisorType.XenServer);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStrategyDoesnotHandlesNonVmwareHosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host srcHost = mock(Host.class);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithinClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcHost.getClusterId()).thenReturn(1L);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithinClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host destHost = mock(Host.class);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithinClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destHost.getClusterId()).thenReturn(1L);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithinClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host srcHost = mock(Host.class);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithinClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcHost.getClusterId()).thenReturn(1L);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithinClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host destHost = mock(Host.class);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithinClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destHost.getClusterId()).thenReturn(1L);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithinClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host srcHost = mock(Host.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateAcrossClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcHost.getClusterId()).thenReturn(1L);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateAcrossClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host destHost = mock(Host.class);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateAcrossClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destHost.getClusterId()).thenReturn(2L);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateAcrossClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host srcHost = mock(Host.class);",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateAcrossClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcHost.getClusterId()).thenReturn(1L);",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateAcrossClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destHost",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\VmwareStorageMotionStrategyTest.java",
+      "className": "VmwareStorageMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host destHost = mock(Host.class);",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateAcrossClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destHost.getClusterId()).thenReturn(2L);",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateAcrossClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "hostMock",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\CitrixResourceBaseTest.java",
+      "className": "CitrixResourceBaseTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host hostMock = Mockito.mock(Host.class);",
+        "line": 216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getAllLocalSrForTypeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostMock.getUuid(connectionMock)).thenReturn(mockHostUuid);",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getAllLocalSrForTypeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostMock.toWireString()).thenReturn(mockHostUuid);",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getAllLocalSrForTypeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "hostMock",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\CitrixResourceBaseTest.java",
+      "className": "CitrixResourceBaseTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host hostMock = Mockito.mock(Host.class);",
+        "line": 281,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createStoragePoolInfoTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostMock.getAddress(connectionMock)).thenReturn(hostAddress);",
+        "line": 285,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createStoragePoolInfoTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "master",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource.wrapper.xenbase",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\wrapper\\xenbase\\CitrixRequestWrapperTest.java",
+      "className": "CitrixRequestWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Host master = Mockito.mock(Host.class);",
+        "line": 1474,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClusterVMMetaDataSyncCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(poolr.master.getRecord(conn)).thenReturn(hostr);",
+        "line": 1490,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClusterVMMetaDataSyncCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host = Mockito.mock(Host.class);",
+        "line": 440,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getId()).thenReturn(1L);",
+        "line": 441,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host = Mockito.mock(Host.class);",
+        "line": 467,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioWhenNoSDCisFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getId()).thenReturn(1L);",
+        "line": 468,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioWhenNoSDCisFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host5",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host5 = Mockito.mock(Host.class);",
+        "line": 1156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host5.getId()).thenReturn(5L);",
+        "line": 1157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host4",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host4 = Mockito.mock(Host.class);",
+        "line": 1154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host4.getId()).thenReturn(4L);",
+        "line": 1155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host7",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host7 = Mockito.mock(Host.class);",
+        "line": 1160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host7.getId()).thenReturn(7L);",
+        "line": 1161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host6",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host6 = Mockito.mock(Host.class);",
+        "line": 1158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host6.getId()).thenReturn(6L);",
+        "line": 1159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host1",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host1 = Mockito.mock(Host.class);",
+        "line": 1148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host1.getId()).thenReturn(1L);",
+        "line": 1149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host3",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host3 = Mockito.mock(Host.class);",
+        "line": 1152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host3.getId()).thenReturn(3L);",
+        "line": 1153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host2",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host2 = Mockito.mock(Host.class);",
+        "line": 1150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host2.getId()).thenReturn(2L);",
+        "line": 1151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host9",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host9 = Mockito.mock(Host.class);",
+        "line": 1164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host9.getId()).thenReturn(9L);",
+        "line": 1165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host8",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Host host8 = Mockito.mock(Host.class);",
+        "line": 1162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host8.getId()).thenReturn(8L);",
+        "line": 1163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReorderHostsByPriority",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "host",
+    "variableType": "Host",
+    "mockedClass": "Host",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.ca",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\ca\\CAManagerImplTest.java",
+      "className": "CAManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Host host = Mockito.mock(Host.class);",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProvisionCertificate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host.getPrivateIpAddress()).thenReturn(\"1.2.3.4\");",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProvisionCertificate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

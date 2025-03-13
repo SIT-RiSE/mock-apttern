@@ -1,0 +1,282 @@
+[
+  {
+    "variableName": "serviceOfferingDaoMock",
+    "variableType": "ServiceOfferingDao",
+    "mockedClass": "ServiceOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServiceOfferingDao serviceOfferingDaoMock;",
+        "line": 128,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceOfferingDaoMock.findByIdIncludingRemoved(anyLong(), anyLong())).thenReturn(mockCurrentServiceOffering);",
+        "line": 360,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckIfCanUpgrade",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceOfferingDaoMock.findById(vmInstance.getId(), vmInstance.getServiceOfferingId())).thenReturn(serviceOffering);",
+        "line": 983,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceOfferingDaoMock.findById(vmInstance.getId(), vmInstance.getServiceOfferingId())).thenReturn(serviceOffering);",
+        "line": 1075,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "SOfferingDao",
+    "variableType": "ServiceOfferingDao",
+    "mockedClass": "ServiceOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.capacity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\capacity\\CapacityManagerTest.java",
+      "className": "CapacityManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "ServiceOfferingDao SOfferingDao = mock(ServiceOfferingDao.class);",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(SOfferingDao.findById(anyLong(), anyLong())).thenReturn(svo);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateCapacityTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_serviceOfferingDao",
+    "variableType": "ServiceOfferingDao",
+    "mockedClass": "ServiceOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.ha",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\ha\\HighAvailabilityManagerImplTest.java",
+      "className": "HighAvailabilityManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nServiceOfferingDao _serviceOfferingDao;",
+        "line": 90,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_serviceOfferingDao.findById(vm1.getServiceOfferingId())).thenReturn(Mockito.mock(ServiceOfferingVO.class));",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNonEmptyVMList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "serviceOfferingDao",
+    "variableType": "ServiceOfferingDao",
+    "mockedClass": "ServiceOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nServiceOfferingDao serviceOfferingDao;",
+        "line": 232,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceOfferingDao.findByUuidIncludingRemoved(serviceOfferingUuid)).thenReturn(serviceOfferingMock);",
+        "line": 2146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMapWithInstantDataForMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "serviceOfferingDao",
+    "variableType": "ServiceOfferingDao",
+    "mockedClass": "ServiceOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServiceOfferingDao serviceOfferingDao;",
+        "line": 194,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceOfferingDao.findById(anyLong())).thenReturn(serviceOfferingVO);",
+        "line": 693,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestRootVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(serviceOfferingDao.findById(anyLong())).thenReturn(serviceOfferingVO);",
+        "line": 706,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestRootVolumeWithDiskOfferingStrictnessTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_offeringDao",
+    "variableType": "ServiceOfferingDao",
+    "mockedClass": "ServiceOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerTest.java",
+      "className": "UserVmManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServiceOfferingDao _offeringDao;",
+        "line": 179,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(_offeringDao.findById(anyLong())).thenReturn((ServiceOfferingVO) so1);",
+        "line": 339,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testScaleVMF2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(_offeringDao.findByIdIncludingRemoved(anyLong(), anyLong())).thenReturn((ServiceOfferingVO) so1);",
+        "line": 340,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testScaleVMF2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

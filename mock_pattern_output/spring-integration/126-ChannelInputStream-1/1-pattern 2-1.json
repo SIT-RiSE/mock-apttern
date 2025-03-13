@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "cis",
+    "variableType": "ChannelInputStream",
+    "mockedClass": "ChannelInputStream",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\TcpNioConnectionTests.java",
+      "className": "TcpNioConnectionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ChannelInputStream cis = spy(TestUtils.getPropertyValue(connection, \"channelInputStream\", ChannelInputStream.class));",
+        "line": 759,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "int3453RaceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

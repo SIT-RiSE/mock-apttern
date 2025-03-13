@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "mockX509ExtendedTrustManager",
+    "variableType": "X509ExtendedTrustManager",
+    "mockedClass": "X509ExtendedTrustManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.initialization",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\initialization\\JettyTest.java",
+      "className": "JettyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "X509ExtendedTrustManager mockX509ExtendedTrustManager = Mockito.mock(X509ExtendedTrustManager.class);",
+        "line": 535,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCustomCheckX509TrustManagerSetEndpointIdentificationAlgorithmToNullWithValidateServerHostnamesSetToFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

@@ -1,0 +1,545 @@
+[
+  {
+    "variableName": "mockChannel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\InvokeTelnetTest.java",
+      "className": "InvokeTelnetTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private Channel mockChannel;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockChannel = mock(Channel.class);",
+        "line": 58,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeDefaultService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_KEY));",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeDefaultService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithSpecifyService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_KEY));",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithSpecifyService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeByPassingNullValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_KEY));",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeByPassingNullValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeByPassingEnumValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_KEY));",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeByPassingEnumValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOverriddenMethodWithSpecifyParamType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_KEY));",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOverriddenMethodWithSpecifyParamType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeOverriddenMethodBySelect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_KEY));",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeOverriddenMethodBySelect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_METHOD_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_METHOD_KEY));",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeOverriddenMethodBySelect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(InvokeTelnet.INVOKE_METHOD_PROVIDER_KEY)).willReturn(defaultAttributeMap.attr(InvokeTelnet.INVOKE_METHOD_PROVIDER_KEY));",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeOverriddenMethodBySelect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(InvokeTelnet.INVOKE_METHOD_LIST_KEY)).willReturn(defaultAttributeMap.attr(InvokeTelnet.INVOKE_METHOD_LIST_KEY));",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeOverriddenMethodBySelect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(InvokeTelnet.INVOKE_MESSAGE_KEY)).willReturn(defaultAttributeMap.attr(InvokeTelnet.INVOKE_MESSAGE_KEY));",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeOverriddenMethodBySelect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeMethodWithMapParameter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_KEY));",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeMethodWithMapParameter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeMultiJsonParamMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_KEY));",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeMultiJsonParamMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 249,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_KEY));",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 267,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvalidMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(SelectTelnet.SELECT_KEY)).willReturn(defaultAttributeMap.attr(SelectTelnet.SELECT_KEY));",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvalidMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "mockChannel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\SelectTelnetTest.java",
+      "className": "SelectTelnetTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private Channel mockChannel;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mockChannel = mock(Channel.class);",
+        "line": 69,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithoutMethodList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(InvokeTelnet.INVOKE_METHOD_LIST_KEY)).willReturn(defaultAttributeMap.attr(InvokeTelnet.INVOKE_METHOD_LIST_KEY));",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithoutMethodList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithIllegalMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(InvokeTelnet.INVOKE_METHOD_LIST_KEY)).willReturn(defaultAttributeMap.attr(InvokeTelnet.INVOKE_METHOD_LIST_KEY));",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithIllegalMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(ChangeTelnet.SERVICE_KEY)).willReturn(defaultAttributeMap.attr(ChangeTelnet.SERVICE_KEY));",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChannel.attr(InvokeTelnet.INVOKE_METHOD_LIST_KEY)).willReturn(defaultAttributeMap.attr(InvokeTelnet.INVOKE_METHOD_LIST_KEY));",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.transport.netty4",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-netty4\\src\\test\\java\\org\\apache\\dubbo\\remoting\\transport\\netty4\\NettyChannelTest.java",
+      "className": "NettyChannelTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Channel channel = Mockito.mock(Channel.class);",
+        "line": 37,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.localAddress()).thenReturn(localAddress);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.remoteAddress()).thenReturn(remoteAddress);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddress",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.eventLoop()).thenReturn(Mockito.mock(EventLoop.class));",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.alloc()).thenReturn(PooledByteBufAllocator.DEFAULT);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.writeAndFlush(Mockito.any())).thenReturn(future);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.newPromise()).thenReturn(future);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channel.newPromise()).thenReturn(channelPromise);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

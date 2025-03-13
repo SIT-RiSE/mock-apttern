@@ -1,0 +1,752 @@
+[
+  {
+    "variableName": "podDao",
+    "variableType": "HostPodDao",
+    "mockedClass": "HostPodDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\api\\command\\CreateTungstenFabricManagementNetworkCmdTest.java",
+      "className": "CreateTungstenFabricManagementNetworkCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostPodDao podDao;",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(podDao.findById(ArgumentMatchers.anyLong())).thenReturn(pod);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostPodDao",
+    "variableType": "HostPodDao",
+    "mockedClass": "HostPodDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostPodDao hostPodDao;",
+        "line": 168,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostPodDao.listByDataCenterId(anyLong())).thenReturn(hostPodVOList);",
+        "line": 812,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shutdownProviderInstancesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_podDao",
+    "variableType": "HostPodDao",
+    "mockedClass": "HostPodDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostPodDao _podDao;",
+        "line": 187,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 636,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 651,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 666,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 684,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 702,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 720,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnClusterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 737,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 755,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(arrayList);",
+        "line": 773,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPodTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 787,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 801,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPublicIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 819,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 837,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 855,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPhysicalNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.persist(Mockito.any(HostPodVO.class))).thenAnswer((Answer<HostPodVO>) invocation -> {\r\n    HostPodVO pod = (HostPodVO) invocation.getArguments()[0];\r\n    ReflectionTestUtils.setField(pod, \"uuid\", UUID.randomUUID().toString());\r\n    ReflectionTestUtils.setField(pod, \"id\", 1L);\r\n    return pod;\r\n});",
+        "line": 1323,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEdgeZoneCreatePod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_podDao",
+    "variableType": "HostPodDao",
+    "mockedClass": "HostPodDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostPodDao _podDao;",
+        "line": 187,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 636,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 651,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 666,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 684,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 702,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 720,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnClusterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 737,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 755,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(arrayList);",
+        "line": 773,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPodTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 787,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 801,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPublicIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 819,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 837,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 855,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPhysicalNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.persist(Mockito.any(HostPodVO.class))).thenAnswer((Answer<HostPodVO>) invocation -> {\r\n    HostPodVO pod = (HostPodVO) invocation.getArguments()[0];\r\n    ReflectionTestUtils.setField(pod, \"uuid\", UUID.randomUUID().toString());\r\n    ReflectionTestUtils.setField(pod, \"id\", 1L);\r\n    return pod;\r\n});",
+        "line": 1323,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEdgeZoneCreatePod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_podDao",
+    "variableType": "HostPodDao",
+    "mockedClass": "HostPodDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostPodDao _podDao;",
+        "line": 187,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 636,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 651,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 666,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 684,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 702,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(anyLong())).thenReturn(hostPodVO);",
+        "line": 720,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnClusterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 737,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 755,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(arrayList);",
+        "line": 773,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPodTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 787,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 801,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPublicIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 819,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 837,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.listByDataCenterId(anyLong())).thenReturn(new ArrayList<HostPodVO>());",
+        "line": 855,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPhysicalNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.persist(Mockito.any(HostPodVO.class))).thenAnswer((Answer<HostPodVO>) invocation -> {\r\n    HostPodVO pod = (HostPodVO) invocation.getArguments()[0];\r\n    ReflectionTestUtils.setField(pod, \"uuid\", UUID.randomUUID().toString());\r\n    ReflectionTestUtils.setField(pod, \"id\", 1L);\r\n    return pod;\r\n});",
+        "line": 1323,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEdgeZoneCreatePod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_podDao",
+    "variableType": "HostPodDao",
+    "mockedClass": "HostPodDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.ha",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\ha\\HighAvailabilityManagerImplTest.java",
+      "className": "HighAvailabilityManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostPodDao _podDao;",
+        "line": 86,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(Mockito.anyLong())).thenReturn(Mockito.mock(HostPodVO.class));",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_podDao.findById(Mockito.anyLong())).thenReturn(Mockito.mock(HostPodVO.class));",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNonEmptyVMList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

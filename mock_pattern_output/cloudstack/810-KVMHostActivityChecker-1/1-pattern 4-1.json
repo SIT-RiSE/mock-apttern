@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "kvmHostActivityChecker",
+    "variableType": "KVMHostActivityChecker",
+    "mockedClass": "KVMHostActivityChecker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.kvm.ha",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\org\\apache\\cloudstack\\kvm\\ha\\KVMHostHATest.java",
+      "className": "KVMHostHATest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate KVMHostActivityChecker kvmHostActivityChecker;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(kvmHostActivityChecker.isHealthy(host)).thenReturn(true);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHostActivityForHealthyHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(kvmHostActivityChecker.isHealthy(host)).thenReturn(false);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHostActivityForUnHealthyHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(kvmHostActivityChecker.isActive(host, dt)).thenReturn(true);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHostActivityForActiveHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(kvmHostActivityChecker.isActive(host, dt)).thenReturn(false);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHostActivityForDownHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

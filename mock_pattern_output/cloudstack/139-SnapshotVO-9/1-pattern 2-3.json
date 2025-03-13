@@ -1,0 +1,84 @@
+[
+  {
+    "variableName": "snapshotVoMock",
+    "variableType": "SnapshotVO",
+    "mockedClass": "SnapshotVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\snapshot\\SnapshotDataFactoryImplTest.java",
+      "className": "SnapshotDataFactoryImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotVO snapshotVoMock = Mockito.mock(SnapshotVO.class);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getSnapshotsByVolumeAndDataStoreTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "snap",
+    "variableType": "SnapshotVO",
+    "mockedClass": "SnapshotVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotVO snap = Mockito.mock(SnapshotVO.class);",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindSnapshotByName",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "snapshotVoMock",
+    "variableType": "SnapshotVO",
+    "mockedClass": "SnapshotVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota.activationrule.presetvariables",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\activationrule\\presetvariables\\PresetVariableHelperTest.java",
+      "className": "PresetVariableHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SnapshotVO snapshotVoMock = Mockito.mock(SnapshotVO.class);",
+        "line": 857,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForSnapshotTestRecordIsSnapshotSetFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

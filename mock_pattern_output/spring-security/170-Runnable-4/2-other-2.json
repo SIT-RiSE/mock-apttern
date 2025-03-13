@@ -1,0 +1,76 @@
+[
+  {
+    "variableName": "delegate",
+    "variableType": "Runnable",
+    "mockedClass": "Runnable",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Other Methods",
+    "classContext": {
+      "packageName": "org.springframework.security.concurrent",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\concurrent\\DelegatingSecurityContextRunnableTests.java",
+      "className": "DelegatingSecurityContextRunnableTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Runnable delegate;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).run();",
+        "line": 194,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "assertWrapped",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 31
+  },
+  {
+    "variableName": "runnable",
+    "variableType": "Runnable",
+    "mockedClass": "Runnable",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Other Methods",
+    "classContext": {
+      "packageName": "org.springframework.security.scheduling",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\scheduling\\DelegatingSecurityContextTaskSchedulerTests.java",
+      "className": "DelegatingSecurityContextTaskSchedulerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Runnable runnable;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.runnable).run();",
+        "line": 113,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "assertWrapped",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 31
+  }
+]

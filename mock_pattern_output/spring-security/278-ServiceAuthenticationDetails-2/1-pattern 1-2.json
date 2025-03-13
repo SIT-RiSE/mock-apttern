@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "details",
+    "variableType": "ServiceAuthenticationDetails",
+    "mockedClass": "ServiceAuthenticationDetails",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.cas.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\cas\\src\\test\\java\\org\\springframework\\security\\cas\\authentication\\CasAuthenticationProviderTests.java",
+      "className": "CasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServiceAuthenticationDetails details = mock(ServiceAuthenticationDetails.class);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateAllNullService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(details.getServiceUrl()).willReturn(serviceUrl);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateAllNullService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "details",
+    "variableType": "ServiceAuthenticationDetails",
+    "mockedClass": "ServiceAuthenticationDetails",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.cas.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\cas\\src\\test\\java\\org\\springframework\\security\\cas\\authentication\\CasAuthenticationProviderTests.java",
+      "className": "CasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServiceAuthenticationDetails details = mock(ServiceAuthenticationDetails.class);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateAllAuthenticationIsSuccessful",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(details.getServiceUrl()).willReturn(serviceUrl);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateAllAuthenticationIsSuccessful",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

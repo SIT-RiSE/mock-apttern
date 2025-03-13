@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "nwElement1",
+    "variableType": "NetworkElement",
+    "mockedClass": "NetworkElement",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\VpcManagerImplTest.java",
+      "className": "VpcManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NetworkElement nwElement1 = mock(NetworkElement.class);",
+        "line": 301,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareVpcManagerForCheckingCapabilityPerService",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nwElement1.getCapabilities()).thenReturn(capabilitiesService1);",
+        "line": 306,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareVpcManagerForCheckingCapabilityPerService",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

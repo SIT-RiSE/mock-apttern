@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "nicSecIpDao",
+    "variableType": "NicSecondaryIpDao",
+    "mockedClass": "NicSecondaryIpDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNicSecondaryIpDao nicSecIpDao;",
+        "line": 270,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nicSecIpDao.getSecondaryIpAddressesForNic(anyLong())).thenReturn(List.of(\"192.168.100.200\"));",
+        "line": 790,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nicSecIpDao.getSecondaryIpAddressesForNic(anyLong())).thenReturn(List.of(\"192.168.100.200\"));",
+        "line": 847,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nicSecIpDao.getSecondaryIpAddressesForNic(anyLong())).thenReturn(List.of(\"192.168.100.200\"));",
+        "line": 1661,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenVmSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nicSecIpDao.getSecondaryIpAddressesForNic(anyLong())).thenReturn(List.of(\"192.168.100.200\"));",
+        "line": 1692,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenVmSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

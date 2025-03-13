@@ -1,0 +1,416 @@
+[
+  {
+    "variableName": "smbSession",
+    "variableType": "SmbSession",
+    "mockedClass": "SmbSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\inbound\\SmbInboundRemoteFileSystemSynchronizerTests.java",
+      "className": "SmbInboundRemoteFileSystemSynchronizerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private SmbSession smbSession;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "smbSession = mock(SmbSession.class);",
+        "line": 57,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "prepare",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.list(testRemoteDir)).thenReturn(smbFiles.toArray(new SmbFile[] {}));",
+        "line": 120,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.remove(Mockito.anyString())).thenReturn(true);",
+        "line": 121,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "smbSession",
+    "variableType": "SmbSession",
+    "mockedClass": "SmbSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\inbound\\SmbInboundRemoteFileSystemSynchronizerTests.java",
+      "className": "SmbInboundRemoteFileSystemSynchronizerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private SmbSession smbSession;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "smbSession = mock(SmbSession.class);",
+        "line": 57,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "prepare",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.list(testRemoteDir)).thenReturn(smbFiles.toArray(new SmbFile[] {}));",
+        "line": 120,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.remove(Mockito.anyString())).thenReturn(true);",
+        "line": 121,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "smbSession",
+    "variableType": "SmbSession",
+    "mockedClass": "SmbSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\outbound\\SmbSendingMessageHandlerTests.java",
+      "className": "SmbSendingMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private SmbSession smbSession;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "smbSession = mock(SmbSession.class);",
+        "line": 56,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "prepare",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.remove(Mockito.anyString())).thenReturn(true);",
+        "line": 117,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.list(Mockito.anyString())).thenReturn(new SmbFile[0]);",
+        "line": 118,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.isOpen()).thenReturn(true);",
+        "line": 153,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "smbSession",
+    "variableType": "SmbSession",
+    "mockedClass": "SmbSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\outbound\\SmbSendingMessageHandlerTests.java",
+      "className": "SmbSendingMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private SmbSession smbSession;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "smbSession = mock(SmbSession.class);",
+        "line": 56,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "prepare",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.remove(Mockito.anyString())).thenReturn(true);",
+        "line": 117,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.list(Mockito.anyString())).thenReturn(new SmbFile[0]);",
+        "line": 118,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.isOpen()).thenReturn(true);",
+        "line": 153,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "smbSession",
+    "variableType": "SmbSession",
+    "mockedClass": "SmbSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.session",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\session\\SmbSessionFactoryWithCIFSContextTests.java",
+      "className": "SmbSessionFactoryWithCIFSContextTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private SmbSession smbSession;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "smbSession = mock(SmbSession.class);",
+        "line": 57,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "prepare",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// the rest has been copied from SmbSendingMessageHandlerTests\r\nwhen(smbSession.remove(Mockito.anyString())).thenReturn(true);",
+        "line": 106,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.list(Mockito.anyString())).thenReturn(new SmbFile[0]);",
+        "line": 107,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.isOpen()).thenReturn(true);",
+        "line": 138,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "smbSession",
+    "variableType": "SmbSession",
+    "mockedClass": "SmbSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.session",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\session\\SmbSessionFactoryWithCIFSContextTests.java",
+      "className": "SmbSessionFactoryWithCIFSContextTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private SmbSession smbSession;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "smbSession = mock(SmbSession.class);",
+        "line": 57,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "prepare",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// the rest has been copied from SmbSendingMessageHandlerTests\r\nwhen(smbSession.remove(Mockito.anyString())).thenReturn(true);",
+        "line": 106,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.list(Mockito.anyString())).thenReturn(new SmbFile[0]);",
+        "line": 107,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbSession.isOpen()).thenReturn(true);",
+        "line": 138,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

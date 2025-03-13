@@ -1,0 +1,326 @@
+[
+  {
+    "variableName": "defaultHost",
+    "variableType": "HostVO",
+    "mockedClass": "HostVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\XenServerGuruTest.java",
+      "className": "XenServerGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HostVO defaultHost;",
+        "line": 68,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(defaultHost.getId()).thenReturn(defaultHostId);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(defaultHost.getDataCenterId()).thenReturn(zoneId);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "changedHost",
+    "variableType": "HostVO",
+    "mockedClass": "HostVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\XenServerGuruTest.java",
+      "className": "XenServerGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HostVO changedHost;",
+        "line": 71,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(changedHost.getId()).thenReturn(changedHostId);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(changedHost.getHypervisorVersion()).thenReturn(StringUtils.EMPTY);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateButHypervisorVersionIsBlank",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(changedHost.getHypervisorVersion()).thenReturn(\"6.1.0\");",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateButHypervisorVersionIsXenServer610",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(changedHost.getHypervisorVersion()).thenReturn(\"6.2.0\");",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateAndHypervisorVersionIsXenServer620WithoutHotfixOfSnapshots",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(changedHost.getHypervisorVersion()).thenReturn(\"6.2.0\");",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateAndHypervisorVersionIsXenServer620WithHotfixOfSnapshots",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(changedHost.getDetail(XenserverConfigs.XS620HotFix)).thenReturn(XenserverConfigs.XSHotFix62ESP1004);",
+        "line": 237,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateAndHypervisorVersionIsXenServer620WithHotfixOfSnapshots",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(changedHost.getHypervisorVersion()).thenReturn(\"6.5.0\");",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsCopyCommandAndSourceDataHypervisorIsXenServerAndSourceAndDestinationAreNfsObjectsAndSourceIsSnapshotAndDestinationIsTemplateAndHypervisorVersionIsXenServer650",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostVO",
+    "variableType": "HostVO",
+    "mockedClass": "HostVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.ha",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\ha\\HighAvailabilityManagerImplTest.java",
+      "className": "HighAvailabilityManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostVO hostVO;",
+        "line": 120,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getType()).thenReturn(Host.Type.Routing);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getHypervisorType()).thenReturn(HypervisorType.KVM);",
+        "line": 164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getType()).thenReturn(Host.Type.Routing);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNotSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getHypervisorType()).thenReturn(HypervisorType.VMware);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNotSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getId()).thenReturn(1l);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNonEmptyVMList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getType()).thenReturn(Host.Type.Routing);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNonEmptyVMList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getHypervisorType()).thenReturn(HypervisorType.XenServer);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNonEmptyVMList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "hostMock",
+    "variableType": "HostVO",
+    "mockedClass": "HostVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostVO hostMock;",
+        "line": 387,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostMock.getId()).thenReturn(hostId);",
+        "line": 2294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmStatsByIdFromHost2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hostMock.getName()).thenReturn(hostName);",
+        "line": 2295,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmStatsByIdFromHost2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

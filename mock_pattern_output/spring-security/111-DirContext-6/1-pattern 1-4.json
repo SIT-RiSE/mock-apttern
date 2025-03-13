@@ -1,0 +1,182 @@
+[
+  {
+    "variableName": "dirCtx",
+    "variableType": "DirContext",
+    "mockedClass": "DirContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.ldap.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\ldap\\src\\test\\java\\org\\springframework\\security\\ldap\\authentication\\PasswordComparisonAuthenticatorMockTests.java",
+      "className": "PasswordComparisonAuthenticatorMockTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DirContext dirCtx = mock(DirContext.class);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ldapCompareOperationIsUsedWhenPasswordIsNotRetrieved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(dirCtx.getAttributes(eq(\"cn=Bob,ou=people\"), any(String[].class))).willReturn(attrs);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ldapCompareOperationIsUsedWhenPasswordIsNotRetrieved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(dirCtx.getNameInNamespace()).willReturn(\"dc=springframework,dc=org\");",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ldapCompareOperationIsUsedWhenPasswordIsNotRetrieved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(dirCtx.search(eq(\"cn=Bob,ou=people\"), eq(\"(userPassword={0})\"), any(Object[].class), any(SearchControls.class))).willReturn(searchResults);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ldapCompareOperationIsUsedWhenPasswordIsNotRetrieved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockCtx",
+    "variableType": "DirContext",
+    "mockedClass": "DirContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.ldap",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\ldap\\src\\test\\java\\org\\springframework\\security\\ldap\\LdapUtilsTests.java",
+      "className": "LdapUtilsTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DirContext mockCtx = mock(DirContext.class);",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRelativeNameReturnsEmptyStringForDnEqualToBaseName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockCtx.getNameInNamespace()).willReturn(\"dc=springframework,dc=org\");",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRelativeNameReturnsEmptyStringForDnEqualToBaseName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockCtx",
+    "variableType": "DirContext",
+    "mockedClass": "DirContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.ldap",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\ldap\\src\\test\\java\\org\\springframework\\security\\ldap\\LdapUtilsTests.java",
+      "className": "LdapUtilsTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DirContext mockCtx = mock(DirContext.class);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRelativeNameReturnsFullDnWithEmptyBaseName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockCtx.getNameInNamespace()).willReturn(\"\");",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRelativeNameReturnsFullDnWithEmptyBaseName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockCtx",
+    "variableType": "DirContext",
+    "mockedClass": "DirContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.ldap",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\ldap\\src\\test\\java\\org\\springframework\\security\\ldap\\LdapUtilsTests.java",
+      "className": "LdapUtilsTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final DirContext mockCtx = mock(DirContext.class);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRelativeNameWorksWithArbitrarySpaces",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockCtx.getNameInNamespace()).willReturn(\"dc=springsecurity,dc = org\");",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRelativeNameWorksWithArbitrarySpaces",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "ApplicationContext",
+    "mockedClass": "ApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers.oauth2.server.resource",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\oauth2\\server\\resource\\OAuth2ResourceServerConfigurerTests.java",
+      "className": "OAuth2ResourceServerConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationContext context = mock(ApplicationContext.class);",
+        "line": 837,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getJwtDecoderWhenConflictingJwtDecodersThenTheDslWiredOneTakesPrecedence",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(context.getBean(JwtDecoder.class)).willReturn(decoderBean);",
+        "line": 838,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getJwtDecoderWhenConflictingJwtDecodersThenTheDslWiredOneTakesPrecedence",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "context",
+    "variableType": "ApplicationContext",
+    "mockedClass": "ApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers.oauth2.server.resource",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\oauth2\\server\\resource\\OAuth2ResourceServerConfigurerTests.java",
+      "className": "OAuth2ResourceServerConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationContext context = mock(ApplicationContext.class);",
+        "line": 847,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getJwtDecoderWhenContextHasBeanAndUserConfiguresJwkSetUriThenJwkSetUriTakesPrecedence",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(context.getBean(JwtDecoder.class)).willReturn(decoder);",
+        "line": 848,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getJwtDecoderWhenContextHasBeanAndUserConfiguresJwkSetUriThenJwkSetUriTakesPrecedence",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

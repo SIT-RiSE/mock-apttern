@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "passwordManager",
+    "variableType": "UserDetailsPasswordService",
+    "mockedClass": "UserDetailsPasswordService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.dao",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\dao\\DaoAuthenticationProviderTests.java",
+      "className": "DaoAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDetailsPasswordService passwordManager = mock(UserDetailsPasswordService.class);",
+        "line": 278,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenSuccessAndPasswordManagerThenUpdates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(passwordManager.updatePassword(any(), any())).willReturn(user);",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenSuccessAndPasswordManagerThenUpdates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(passwordManager).updatePassword(eq(user), eq(encodedPassword));",
+        "line": 291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenSuccessAndPasswordManagerThenUpdates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

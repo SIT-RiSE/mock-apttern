@@ -1,0 +1,63 @@
+[
+  {
+    "variableName": "CDao",
+    "variableType": "CapacityDao",
+    "mockedClass": "CapacityDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.capacity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\capacity\\CapacityManagerTest.java",
+      "className": "CapacityManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "CapacityDao CDao = mock(CapacityDao.class);",
+        "line": 37,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(CDao.findByHostIdType(anyLong(), eq(Capacity.CAPACITY_TYPE_CPU))).thenReturn(cvoCpu);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateCapacityTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(CDao.findByHostIdType(anyLong(), eq(Capacity.CAPACITY_TYPE_MEMORY))).thenReturn(cvoRam);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateCapacityTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(CDao.update(anyLong(), isA(CapacityVO.class))).thenReturn(true);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateCapacityTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

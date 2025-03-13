@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "jwtValidator",
+    "variableType": "OAuth2TokenValidator<Jwt>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<Jwt> jwtValidator = mock(OAuth2TokenValidator.class);",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenJwtFailsValidationThenReturnsCorrespondingErrorMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwtValidator.validate(any(Jwt.class))).willReturn(OAuth2TokenValidatorResult.failure(failure));",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenJwtFailsValidationThenReturnsCorrespondingErrorMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "jwtValidator",
+    "variableType": "OAuth2TokenValidator<Jwt>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<Jwt> jwtValidator = mock(OAuth2TokenValidator.class);",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenJwtValidationHasTwoErrorsThenJwtExceptionMessageShowsFirstError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwtValidator.validate(any(Jwt.class))).willReturn(result);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenJwtValidationHasTwoErrorsThenJwtExceptionMessageShowsFirstError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "jwtValidator",
+    "variableType": "OAuth2TokenValidator<Jwt>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<Jwt> jwtValidator = mock(OAuth2TokenValidator.class);",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenReadingErrorPickTheFirstErrorMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwtValidator.validate(any(Jwt.class))).willReturn(result);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenReadingErrorPickTheFirstErrorMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "jwtValidator",
+    "variableType": "OAuth2TokenValidator<Jwt>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusReactiveJwtDecoderTests.java",
+      "className": "NimbusReactiveJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<Jwt> jwtValidator = mock(OAuth2TokenValidator.class);",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenReadingErrorPickTheFirstErrorMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwtValidator.validate(any(Jwt.class))).willReturn(result);",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenReadingErrorPickTheFirstErrorMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

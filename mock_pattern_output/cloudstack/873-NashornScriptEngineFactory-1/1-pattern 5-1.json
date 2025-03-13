@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "nashornScriptEngineFactoryMock",
+    "variableType": "NashornScriptEngineFactory",
+    "mockedClass": "NashornScriptEngineFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.utils.jsinterpreter",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\org\\apache\\cloudstack\\utils\\jsinterpreter\\JsInterpreterTest.java",
+      "className": "JsInterpreterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NashornScriptEngineFactory nashornScriptEngineFactoryMock = Mockito.mock(NashornScriptEngineFactory.class);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setScriptEngineDisablingJavaLanguageTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(nashornScriptEngineFactoryMock).getScriptEngine(\"--no-java\");",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setScriptEngineDisablingJavaLanguageTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

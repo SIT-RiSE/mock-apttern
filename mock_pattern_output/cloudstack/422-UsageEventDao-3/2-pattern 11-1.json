@@ -1,0 +1,49 @@
+[
+  {
+    "variableName": "_usageEventDao",
+    "variableType": "UsageEventDao",
+    "mockedClass": "UsageEventDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\HypervisorTemplateAdapterTest.java",
+      "className": "HypervisorTemplateAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUsageEventDao _usageEventDao;",
+        "line": 105,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_usageEventDao.persist(Mockito.any(UsageEventVO.class))).then(new Answer<Void>() {\r\n\r\n    @Override\r\n    public Void answer(InvocationOnMock invocation) throws Throwable {\r\n        UsageEventVO vo = (UsageEventVO) invocation.getArguments()[0];\r\n        usageEvents.add(vo);\r\n        return null;\r\n    }\r\n});",
+        "line": 140,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupUsageUtils",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_usageEventDao.listAll()).thenReturn(usageEvents);",
+        "line": 148,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupUsageUtils",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "variableName": "connectMock",
+    "variableType": "Connect",
+    "mockedClass": "Connect",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\storage\\KVMStorageProcessorTest.java",
+      "className": "KVMStorageProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nConnect connectMock;",
+        "line": 94,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(connectMock.domainLookupByName(Mockito.anyString())).thenThrow(LibvirtException.class);",
+        "line": 422,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "attachOrDetachDeviceTestThrowLibvirtException",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(connectMock.domainLookupByName(\"vmName\")).thenReturn(domainMock);",
+        "line": 428,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "attachOrDetachDeviceTestAttachSuccess",
+          "methodAnnotations": [
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(connectMock.domainLookupByName(\"vmName\")).thenReturn(domainMock);",
+        "line": 436,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "attachOrDetachDeviceTestAttachThrowLibvirtException",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(connectMock.domainLookupByName(\"vmName\")).thenReturn(domainMock);",
+        "line": 446,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "attachOrDetachDeviceTestDetachThrowLibvirtException",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(connectMock.domainLookupByName(\"vmName\")).thenReturn(domainMock);",
+        "line": 454,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "attachOrDetachDeviceTestDetachSuccess",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(connectMock.domainLookupByName(\"vmName\")).thenReturn(domainMock);",
+        "line": 465,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "attachOrDetachDeviceTestDetachThrowInternalErrorException",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

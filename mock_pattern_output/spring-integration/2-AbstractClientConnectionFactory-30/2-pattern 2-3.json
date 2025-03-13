@@ -1,0 +1,83 @@
+[
+  {
+    "variableName": "factory",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final AbstractClientConnectionFactory factory = new TcpNetClientConnectionFactory(\"\", 0) {\r\n\r\n    @Override\r\n    protected Socket createSocket(String host, int port) throws IOException {\r\n        Socket mock = mock(Socket.class);\r\n        when(mock.getInputStream()).thenReturn(new ByteArrayInputStream(\"foo\\r\\n\".getBytes()));\r\n        return mock;\r\n    }\r\n\r\n    @Override\r\n    public boolean isActive() {\r\n        return true;\r\n    }\r\n};",
+        "line": 780,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEarlyReceive",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "cf2",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory cf2 = mock(AbstractClientConnectionFactory.class);",
+        "line": 222,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverAllDeadAfterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "ccf",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\TcpOutboundGatewayTests.java",
+      "className": "TcpOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory ccf = mock(AbstractClientConnectionFactory.class);",
+        "line": 1092,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "semaphoreIsReleasedOnAsyncSendFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

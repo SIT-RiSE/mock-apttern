@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "addressGroup",
+    "variableType": "AddressGroup",
+    "mockedClass": "AddressGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AddressGroup addressGroup = mock(AddressGroup.class);",
+        "line": 1325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenAddressGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(addressGroup.getPrefix()).thenReturn(subnetListType);",
+        "line": 1334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenAddressGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "addressGroup",
+    "variableType": "AddressGroup",
+    "mockedClass": "AddressGroup",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AddressGroup addressGroup = mock(AddressGroup.class);",
+        "line": 1498,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenAddressGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(addressGroup.getPrefix()).thenReturn(subnetListType);",
+        "line": 1507,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenAddressGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

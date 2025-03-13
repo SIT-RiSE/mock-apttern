@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "WebSocketSession",
+    "mockedClass": "WebSocketSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.websocket.support",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-websocket\\src\\test\\java\\org\\springframework\\integration\\websocket\\support\\SubProtocolHandlerRegistryTests.java",
+      "className": "SubProtocolHandlerRegistryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebSocketSession session = mock(WebSocketSession.class);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProtocolHandlers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.getAcceptedProtocol()).thenReturn(\"v10.stomp\", (String) null);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProtocolHandlers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "WebSocketSession",
+    "mockedClass": "WebSocketSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.websocket.support",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-websocket\\src\\test\\java\\org\\springframework\\integration\\websocket\\support\\SubProtocolHandlerRegistryTests.java",
+      "className": "SubProtocolHandlerRegistryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebSocketSession session = mock(WebSocketSession.class);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSingleHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.getAcceptedProtocol()).thenReturn(\"foo\", (String) null);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSingleHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "WebSocketSession",
+    "mockedClass": "WebSocketSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.websocket.support",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-websocket\\src\\test\\java\\org\\springframework\\integration\\websocket\\support\\SubProtocolHandlerRegistryTests.java",
+      "className": "SubProtocolHandlerRegistryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebSocketSession session = mock(WebSocketSession.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHandlerSelection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.getAcceptedProtocol()).thenReturn(\"foo\", \"\", null);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHandlerSelection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "variableName": "AutoScaleVmGroupStatisticsDaoImplSpy",
+    "variableType": "AutoScaleVmGroupStatisticsDaoImpl",
+    "mockedClass": "AutoScaleVmGroupStatisticsDaoImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\network\\as\\dao\\AutoScaleVmGroupStatisticsDaoImplTest.java",
+      "className": "AutoScaleVmGroupStatisticsDaoImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "AutoScaleVmGroupStatisticsDaoImpl AutoScaleVmGroupStatisticsDaoImplSpy = PowerMockito.spy(new AutoScaleVmGroupStatisticsDaoImpl());",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(AutoScaleVmGroupStatisticsDaoImplSpy).update(autoScaleVmGroupStatisticsVO, searchCriteriaAutoScaleVmGroupStatisticsVOMock);",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateStateByGroup1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(AutoScaleVmGroupStatisticsDaoImplSpy).update(autoScaleVmGroupStatisticsVO, searchCriteriaAutoScaleVmGroupStatisticsVOMock);",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateStateByGroup2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 59
+  }
+]

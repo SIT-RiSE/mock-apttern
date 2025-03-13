@@ -1,0 +1,110 @@
+[
+  {
+    "variableName": "parent",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\authentication\\AuthenticationManagerBuilderTests.java",
+      "className": "AuthenticationManagerBuilderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager parent = mock(AuthenticationManager.class);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "buildWhenParentThenIsConfigured",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers.oauth2.server.resource",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\oauth2\\server\\resource\\OAuth2ResourceServerConfigurerTests.java",
+      "className": "OAuth2ResourceServerConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager authenticationManager = mock(AuthenticationManager.class);",
+        "line": 1272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getAuthenticationManagerWhenConfiguredAuthenticationManagerThenTakesPrecedence",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "parent",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ProviderManagerTests.java",
+      "className": "ProviderManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager parent = mock(AuthenticationManager.class);",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "statusExceptionIsPublished",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "am",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.preauth",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\preauth\\AbstractPreAuthenticatedProcessingFilterTests.java",
+      "className": "AbstractPreAuthenticatedProcessingFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationManager am = mock(AuthenticationManager.class);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAfterPropertiesSetInvokesSuper",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

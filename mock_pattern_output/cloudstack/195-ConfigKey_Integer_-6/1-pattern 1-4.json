@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "vmServiceOfferingMaxRAMSize",
+    "variableType": "ConfigKey<Integer>",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\KVMGuruTest.java",
+      "className": "KVMGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey<Integer> vmServiceOfferingMaxRAMSize = Mockito.mock(ConfigKey.class);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetVmMaxMemoryReturnVmServiceOfferingMaxRAMSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmServiceOfferingMaxRAMSize.value()).thenReturn(maxMemoryConfig);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetVmMaxMemoryReturnVmServiceOfferingMaxRAMSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vmServiceOfferingMaxRAMSize",
+    "variableType": "ConfigKey<Integer>",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\KVMGuruTest.java",
+      "className": "KVMGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey<Integer> vmServiceOfferingMaxRAMSize = Mockito.mock(ConfigKey.class);",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetVmMaxMemoryReturnMaxHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmServiceOfferingMaxRAMSize.value()).thenReturn(0);",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetVmMaxMemoryReturnMaxHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vmServiceOfferingMaxCPUCores",
+    "variableType": "ConfigKey<Integer>",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\KVMGuruTest.java",
+      "className": "KVMGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey<Integer> vmServiceOfferingMaxCPUCores = Mockito.mock(ConfigKey.class);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetVmMaxCpuCoresVmServiceOfferingMaxCPUCores",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmServiceOfferingMaxCPUCores.value()).thenReturn(maxCpuCoresConfig);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetVmMaxCpuCoresVmServiceOfferingMaxCPUCores",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vmServiceOfferingMaxCPUCores",
+    "variableType": "ConfigKey<Integer>",
+    "mockedClass": "ConfigKey",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\KVMGuruTest.java",
+      "className": "KVMGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigKey<Integer> vmServiceOfferingMaxCPUCores = Mockito.mock(ConfigKey.class);",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetVmMaxCpuCoresReturnMaxHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmServiceOfferingMaxCPUCores.value()).thenReturn(0);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetVmMaxCpuCoresReturnMaxHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

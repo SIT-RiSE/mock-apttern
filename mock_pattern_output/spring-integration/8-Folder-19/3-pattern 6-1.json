@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "folder",
+    "variableType": "Folder",
+    "mockedClass": "Folder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\MailReceiverTests.java",
+      "className": "MailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Folder folder = mock(Folder.class);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStoreConnectAndFolderCloseWhenNoMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(folder.exists()).thenReturn(true);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStoreConnectAndFolderCloseWhenNoMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(folder.isOpen()).thenReturn(false, true);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStoreConnectAndFolderCloseWhenNoMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(folder).close(anyBoolean());",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStoreConnectAndFolderCloseWhenNoMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

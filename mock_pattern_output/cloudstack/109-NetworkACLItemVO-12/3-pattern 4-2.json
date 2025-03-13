@@ -1,0 +1,248 @@
+[
+  {
+    "variableName": "previousAclRuleMock",
+    "variableType": "NetworkACLItemVO",
+    "mockedClass": "NetworkACLItemVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate NetworkACLItemVO previousAclRuleMock;",
+        "line": 116,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(previousAclRuleMock.getUuid()).thenReturn(previousAclRuleUuid);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "befoteTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(previousAclRuleMock.getAclId()).thenReturn(99L);",
+        "line": 1060,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMoveAclRulesDataTestPreviousRuleWithDifferentAclId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(previousAclRuleMock.getAclId()).thenReturn(networkAclMockId);",
+        "line": 1101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMoveAclRulesDataTestSuccesfullExecution",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(previousAclRuleMock.getNumber()).thenReturn(10);",
+        "line": 1189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleBetweenAclRulesTestThereIsSpaceBetweenPreviousRuleAndNextRuleToAccomodateTheNewRuleWithOtherruleColliding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(previousAclRuleMock.getNumber()).thenReturn(10);",
+        "line": 1205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleBetweenAclRulesTestThereIsSpaceBetweenPreviousRuleAndNextRuleToAccomodateTheNewRule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(previousAclRuleMock.getNumber()).thenReturn(10);",
+        "line": 1241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleBetweenAclRulesTestThereIsNoSpaceBetweenPreviousRuleAndNextRuleToAccomodateTheNewRule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(previousAclRuleMock.getNumber()).thenReturn(10);",
+        "line": 1268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateAclRuleToNewPositionAndExecuteShiftIfNecessaryTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(previousAclRuleMock.getId()).thenReturn(50l);",
+        "line": 1269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateAclRuleToNewPositionAndExecuteShiftIfNecessaryTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "nextAclRuleMock",
+    "variableType": "NetworkACLItemVO",
+    "mockedClass": "NetworkACLItemVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate NetworkACLItemVO nextAclRuleMock;",
+        "line": 120,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(nextAclRuleMock.getUuid()).thenReturn(nextAclRuleUuid);",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "befoteTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(nextAclRuleMock.getAclId()).thenReturn(99L);",
+        "line": 1067,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMoveAclRulesDataTestNextRuleWithDifferentAclId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(nextAclRuleMock.getAclId()).thenReturn(networkAclMockId);",
+        "line": 1100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMoveAclRulesDataTestSuccesfullExecution",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(nextAclRuleMock.getNumber()).thenReturn(15);",
+        "line": 1190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleBetweenAclRulesTestThereIsSpaceBetweenPreviousRuleAndNextRuleToAccomodateTheNewRuleWithOtherruleColliding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(nextAclRuleMock.getNumber()).thenReturn(11);",
+        "line": 1206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleBetweenAclRulesTestThereIsSpaceBetweenPreviousRuleAndNextRuleToAccomodateTheNewRule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(nextAclRuleMock.getNumber()).thenReturn(15);",
+        "line": 1242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleBetweenAclRulesTestThereIsNoSpaceBetweenPreviousRuleAndNextRuleToAccomodateTheNewRule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(nextAclRuleMock.getNumber()).thenReturn(11);",
+        "line": 1272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateAclRuleToNewPositionAndExecuteShiftIfNecessaryTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(nextAclRuleMock.getId()).thenReturn(50l);",
+        "line": 1273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateAclRuleToNewPositionAndExecuteShiftIfNecessaryTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "queryScheduler",
+    "variableType": "QueryScheduler",
+    "mockedClass": "QueryScheduler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.client",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\client\\CachingClusteredClientPerfTest.java",
+      "className": "CachingClusteredClientPerfTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "QueryScheduler queryScheduler = Mockito.mock(QueryScheduler.class);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetQueryRunnerForSegments_singleIntervalLargeSegments",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// mock scheduler to return same sequence as argument\r\nMockito.when(queryScheduler.run(any(), any())).thenAnswer(i -> i.getArgument(1));",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetQueryRunnerForSegments_singleIntervalLargeSegments",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(queryScheduler.prioritizeAndLaneQuery(any(), any())).thenAnswer(i -> ((QueryPlus) i.getArgument(0)).getQuery());",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetQueryRunnerForSegments_singleIntervalLargeSegments",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

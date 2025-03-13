@@ -1,0 +1,73 @@
+[
+  {
+    "variableName": "locker",
+    "variableType": "FileLocker",
+    "mockedClass": "FileLocker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\FileReadingMessageSourceTests.java",
+      "className": "FileReadingMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final FileLocker locker = mock();",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(locker.lock(isA(File.class))).thenReturn(true);",
+        "line": 57,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "prepResource",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(locker).lock(fileMock);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "lockIsAcquired",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(locker.lock(fileMock)).thenReturn(false);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "lockedFilesAreIgnored",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(locker).lock(fileMock);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "lockedFilesAreIgnored",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 42
+  }
+]

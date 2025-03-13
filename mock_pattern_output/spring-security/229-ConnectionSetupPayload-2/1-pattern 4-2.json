@@ -1,0 +1,152 @@
+[
+  {
+    "variableName": "setupPayload",
+    "variableType": "ConnectionSetupPayload",
+    "mockedClass": "ConnectionSetupPayload",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\core\\PayloadSocketAcceptorInterceptorTests.java",
+      "className": "PayloadSocketAcceptorInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ConnectionSetupPayload setupPayload;",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.setupPayload.dataMimeType()).willReturn(MediaType.APPLICATION_JSON_VALUE);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyWhenDefaultMetadataMimeTypeThenDefaulted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.setupPayload.dataMimeType()).willReturn(MediaType.APPLICATION_JSON_VALUE);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "acceptWhenDefaultMetadataMimeTypeOverrideThenDefaulted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "setupPayload",
+    "variableType": "ConnectionSetupPayload",
+    "mockedClass": "ConnectionSetupPayload",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\core\\PayloadSocketAcceptorTests.java",
+      "className": "PayloadSocketAcceptorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ConnectionSetupPayload setupPayload;",
+        "line": 68,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.setupPayload.dataMimeType()).willReturn(MediaType.APPLICATION_JSON_VALUE);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "acceptWhenDefaultMetadataMimeTypeThenDefaulted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.setupPayload.dataMimeType()).willReturn(MediaType.APPLICATION_JSON_VALUE);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "acceptWhenDefaultMetadataMimeTypeOverrideThenDefaulted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.setupPayload.metadataMimeType()).willReturn(MediaType.TEXT_PLAIN_VALUE);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "acceptWhenExplicitMimeTypeThenThenOverrideDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.setupPayload.dataMimeType()).willReturn(MediaType.APPLICATION_JSON_VALUE);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "acceptWhenExplicitMimeTypeThenThenOverrideDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.setupPayload.metadataMimeType()).willReturn(MediaType.TEXT_PLAIN_VALUE);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "acceptWhenDelegateAcceptRequiresReactiveSecurityContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.setupPayload.dataMimeType()).willReturn(MediaType.APPLICATION_JSON_VALUE);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "acceptWhenDelegateAcceptRequiresReactiveSecurityContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

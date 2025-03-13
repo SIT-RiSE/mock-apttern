@@ -1,0 +1,85 @@
+[
+  {
+    "variableName": "expected",
+    "variableType": "Message<?>",
+    "mockedClass": "Message",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\ExecutorChannelTests.java",
+      "className": "ExecutorChannelTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Message<?> expected = mock(Message.class);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptorWithModifiedMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "m1",
+    "variableType": "Message<?>",
+    "mockedClass": "Message",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.store",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\store\\SimpleMessageGroupTests.java",
+      "className": "SimpleMessageGroupTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Message<?> m1 = mock(Message.class);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldIgnoreNullValuesWhenInitializedWithCollectionContainingNulls",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "m2",
+    "variableType": "Message<?>",
+    "mockedClass": "Message",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.store",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\store\\SimpleMessageGroupTests.java",
+      "className": "SimpleMessageGroupTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Message<?> m2 = mock(Message.class);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldIgnoreNullValuesWhenInitializedWithCollectionContainingNulls",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

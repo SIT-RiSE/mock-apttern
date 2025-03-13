@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "ClientSession",
+    "mockedClass": "ClientSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.sftp.session",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-sftp\\src\\test\\java\\org\\springframework\\integration\\sftp\\session\\ResourceKnownHostsServerKeyVerifierTests.java",
+      "className": "ResourceKnownHostsServerKeyVerifierTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientSession session = Mockito.mock(ClientSession.class);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServerKeys",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getFactoryManager()).thenReturn(manager);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServerKeys",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(session.getConnectAddress()).thenReturn(key);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServerKeys",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

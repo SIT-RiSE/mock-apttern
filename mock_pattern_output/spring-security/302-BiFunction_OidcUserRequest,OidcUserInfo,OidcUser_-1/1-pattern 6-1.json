@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "customOidcUserMapper",
+    "variableType": "BiFunction<OidcUserRequest,OidcUserInfo,OidcUser>",
+    "mockedClass": "BiFunction",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.oidc.userinfo",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\oidc\\userinfo\\OidcUserServiceTests.java",
+      "className": "OidcUserServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BiFunction<OidcUserRequest, OidcUserInfo, OidcUser> customOidcUserMapper = mock(BiFunction.class);",
+        "line": 287,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadUserWhenCustomOidcUserMapperSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customOidcUserMapper.apply(any(OidcUserRequest.class), any(OidcUserInfo.class))).willReturn(actualUser);",
+        "line": 290,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadUserWhenCustomOidcUserMapperSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customOidcUserMapper).apply(eq(userRequest), userInfoCaptor.capture());",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadUserWhenCustomOidcUserMapperSetThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

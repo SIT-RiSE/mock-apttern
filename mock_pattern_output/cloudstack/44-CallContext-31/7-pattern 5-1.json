@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "callContextMock",
+    "variableType": "CallContext",
+    "mockedClass": "CallContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\DomainManagerImplTest.java",
+      "className": "DomainManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CallContext callContextMock = Mockito.mock(CallContext.class);",
+        "line": 397,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDomainTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(callContextMock).putContextParameter(Domain.class, domainVoMock.getUuid());",
+        "line": 409,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDomainTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

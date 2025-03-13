@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "handler",
+    "variableType": "ServerExchangeRejectedHandler",
+    "mockedClass": "ServerExchangeRejectedHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\WebFilterChainProxyTests.java",
+      "className": "WebFilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerExchangeRejectedHandler handler = mock(ServerExchangeRejectedHandler.class);",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomFirewallThenInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(handler);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomFirewallThenInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ServerExchangeRejectedHandler",
+    "mockedClass": "ServerExchangeRejectedHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\WebFilterChainProxyTests.java",
+      "className": "WebFilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerExchangeRejectedHandler handler = mock(ServerExchangeRejectedHandler.class);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomExchangeRejectedHandlerThenInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler).handle(any(), any());",
+        "line": 195,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomExchangeRejectedHandlerThenInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ServerExchangeRejectedHandler",
+    "mockedClass": "ServerExchangeRejectedHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\WebFilterChainProxyTests.java",
+      "className": "WebFilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerExchangeRejectedHandler handler = mock(ServerExchangeRejectedHandler.class);",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenDelayedServerExchangeRejectedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(handler).handle(any(), any());",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenDelayedServerExchangeRejectedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

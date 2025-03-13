@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "cmd",
+    "variableType": "UpdateIpv6FirewallRuleCmd",
+    "mockedClass": "UpdateIpv6FirewallRuleCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\Ipv6ServiceImplTest.java",
+      "className": "Ipv6ServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UpdateIpv6FirewallRuleCmd cmd = Mockito.mock(UpdateIpv6FirewallRuleCmd.class);",
+        "line": 634,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateIpv6FirewallRule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getId()).thenReturn(firewallRuleId);",
+        "line": 635,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateIpv6FirewallRule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

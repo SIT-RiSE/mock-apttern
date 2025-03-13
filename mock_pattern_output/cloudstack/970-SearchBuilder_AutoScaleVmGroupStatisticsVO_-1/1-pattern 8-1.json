@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "searchBuilderAutoScaleVmGroupStatisticsVOMock",
+    "variableType": "SearchBuilder<AutoScaleVmGroupStatisticsVO>",
+    "mockedClass": "SearchBuilder<AutoScaleVmGroupStatisticsVO>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\network\\as\\dao\\AutoScaleVmGroupStatisticsDaoImplTest.java",
+      "className": "AutoScaleVmGroupStatisticsDaoImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSearchBuilder<AutoScaleVmGroupStatisticsVO> searchBuilderAutoScaleVmGroupStatisticsVOMock;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(searchBuilderAutoScaleVmGroupStatisticsVOMock.entity()).thenReturn(autoScaleVmGroupStatisticsVO);",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchBuilderAutoScaleVmGroupStatisticsVOMock, Mockito.times(4)).and(Mockito.anyString(), Mockito.any(), Mockito.eq(SearchCriteria.Op.EQ));",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchBuilderAutoScaleVmGroupStatisticsVOMock, Mockito.times(1)).and(Mockito.anyString(), Mockito.any(), Mockito.eq(SearchCriteria.Op.LT));",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(searchBuilderAutoScaleVmGroupStatisticsVOMock, Mockito.times(1)).and(Mockito.anyString(), Mockito.any(), Mockito.eq(SearchCriteria.Op.GT));",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

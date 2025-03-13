@@ -1,0 +1,356 @@
+[
+  {
+    "variableName": "restOperations",
+    "variableType": "RestOperations",
+    "mockedClass": "RestOperations",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\DefaultTokenExchangeTokenResponseClientTests.java",
+      "className": "DefaultTokenExchangeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RestOperations restOperations = mock(RestOperations.class);",
+        "line": 473,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenCustomRestOperationsSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(restOperations.exchange(any(RequestEntity.class), eq(OAuth2AccessTokenResponse.class))).willReturn(new ResponseEntity<>(HttpStatus.OK));",
+        "line": 474,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenCustomRestOperationsSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(restOperations).exchange(any(RequestEntity.class), eq(OAuth2AccessTokenResponse.class));",
+        "line": 480,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenCustomRestOperationsSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "restOperations",
+    "variableType": "RestOperations",
+    "mockedClass": "RestOperations",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RestOperations restOperations = mock(RestOperations.class);",
+        "line": 638,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenJwkSetRequestedThenAcceptHeaderJsonAndJwkSetJson",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(restOperations.exchange(any(RequestEntity.class), eq(String.class))).willReturn(new ResponseEntity<>(JWK_SET, HttpStatus.OK));",
+        "line": 639,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenJwkSetRequestedThenAcceptHeaderJsonAndJwkSetJson",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(restOperations).exchange(requestEntityCaptor.capture(), eq(String.class));",
+        "line": 649,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenJwkSetRequestedThenAcceptHeaderJsonAndJwkSetJson",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "restOperations",
+    "variableType": "RestOperations",
+    "mockedClass": "RestOperations",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RestOperations restOperations = mock(RestOperations.class);",
+        "line": 657,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheThenStoreRetrievedJwkSetToCache",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(restOperations.exchange(any(RequestEntity.class), eq(String.class))).willReturn(new ResponseEntity<>(JWK_SET, HttpStatus.OK));",
+        "line": 658,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheThenStoreRetrievedJwkSetToCache",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(restOperations).exchange(requestEntityCaptor.capture(), eq(String.class));",
+        "line": 669,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheThenStoreRetrievedJwkSetToCache",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(restOperations);",
+        "line": 670,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheThenStoreRetrievedJwkSetToCache",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "restOperations",
+    "variableType": "RestOperations",
+    "mockedClass": "RestOperations",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RestOperations restOperations = mock(RestOperations.class);",
+        "line": 678,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheStoredThenAbleToRetrieveJwkSetFromCache",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(restOperations.exchange(any(RequestEntity.class), eq(String.class))).willReturn(new ResponseEntity<>(JWK_SET, HttpStatus.OK));",
+        "line": 679,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheStoredThenAbleToRetrieveJwkSetFromCache",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(restOperations).exchange(any(RequestEntity.class), eq(String.class));",
+        "line": 689,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheStoredThenAbleToRetrieveJwkSetFromCache",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(restOperations);",
+        "line": 698,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheStoredThenAbleToRetrieveJwkSetFromCache",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "restOperations",
+    "variableType": "RestOperations",
+    "mockedClass": "RestOperations",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RestOperations restOperations = mock(RestOperations.class);",
+        "line": 724,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(restOperations.exchange(any(RequestEntity.class), eq(String.class))).willReturn(new ResponseEntity<>(NEW_KID_JWK_SET, HttpStatus.OK));",
+        "line": 728,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(restOperations).exchange(requestEntityCaptor.capture(), eq(String.class));",
+        "line": 742,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(restOperations);",
+        "line": 743,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenCacheAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "restOperations",
+    "variableType": "RestOperations",
+    "mockedClass": "RestOperations",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RestOperations restOperations = mock(RestOperations.class);",
+        "line": 751,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWithoutCacheSpecifiedAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(restOperations.exchange(any(RequestEntity.class), eq(String.class))).willReturn(new ResponseEntity<>(JWK_SET, HttpStatus.OK), new ResponseEntity<>(NEW_KID_JWK_SET, HttpStatus.OK));",
+        "line": 752,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWithoutCacheSpecifiedAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(restOperations, times(2)).exchange(requestEntityCaptor.capture(), eq(String.class));",
+        "line": 766,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWithoutCacheSpecifiedAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(restOperations);",
+        "line": 767,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWithoutCacheSpecifiedAndUnknownKidShouldTriggerFetchOfJwkSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

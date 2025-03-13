@@ -1,0 +1,1157 @@
+[
+  {
+    "variableName": "srcVolumeInfo",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\KvmNonManagedStorageSystemDataMotionTest.java",
+      "className": "KvmNonManagedStorageSystemDataMotionTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo srcVolumeInfo = Mockito.mock(VolumeInfo.class);",
+        "line": 356,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureAndTestcopyTemplateToTargetStorageIfNeeded",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srcVolumeInfo.getTemplateId()).thenReturn(0l);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureAndTestcopyTemplateToTargetStorageIfNeeded",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srcVolumeInfo.getVolumeType()).thenReturn(Volume.Type.ROOT);",
+        "line": 358,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureAndTestcopyTemplateToTargetStorageIfNeeded",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "volumeInfo",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\StorageSystemDataMotionStrategyTest.java",
+      "className": "StorageSystemDataMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo volumeInfo = Mockito.mock(VolumeInfo.class);",
+        "line": 312,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formatEntryOfVolumesAndStoragesAsJsonToDisplayOnLogValidateFormat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volumeInfo.getId()).thenReturn(volume);",
+        "line": 315,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formatEntryOfVolumesAndStoragesAsJsonToDisplayOnLogValidateFormat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volumeInfo.getPoolId()).thenReturn(from);",
+        "line": 316,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formatEntryOfVolumesAndStoragesAsJsonToDisplayOnLogValidateFormat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "volumeInfo",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\snapshot\\CephSnapshotStrategyTest.java",
+      "className": "CephSnapshotStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo volumeInfo = Mockito.mock(VolumeInfo.class);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertSnapshotTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volumeInfo.getFormat()).thenReturn(imageFormatValues[i]);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertSnapshotTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "volumeInfo",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\snapshot\\SnapshotServiceImplTest.java",
+      "className": "SnapshotServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo volumeInfo = Mockito.mock(VolumeInfo.class);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotWithNoPrimaryStorageEntry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volumeInfo.getDataStore()).thenReturn(store);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotWithNoPrimaryStorageEntry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vol",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo vol = Mockito.mock(VolumeInfo.class);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateDiskSnapshotBasedOnStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vol.getUuid()).thenReturn(volUuid);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateDiskSnapshotBasedOnStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vol.getDataStore()).thenReturn(dataStore);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateDiskSnapshotBasedOnStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vol",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo vol = Mockito.mock(VolumeInfo.class);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertDiskSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vol.getUuid()).thenReturn(volUuid);",
+        "line": 234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertDiskSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vol.getDataStore()).thenReturn(dataStore);",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertDiskSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vol",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo vol = Mockito.mock(VolumeInfo.class);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDiskSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vol.getUuid()).thenReturn(volUuid);",
+        "line": 254,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDiskSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo srcData = Mockito.mock(VolumeInfo.class);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateVolumeWithinSameScaleIOClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getDataStore()).thenReturn(srcStore);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateVolumeWithinSameScaleIOClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo destData = Mockito.mock(VolumeInfo.class);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateVolumeWithinSameScaleIOClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getDataStore()).thenReturn(destStore);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateVolumeWithinSameScaleIOClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getTO()).thenReturn(destVolTO);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateVolumeWithinSameScaleIOClusterSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo srcData = Mockito.mock(VolumeInfo.class);",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateVolumeWithinSameScaleIOClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getDataStore()).thenReturn(srcStore);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateVolumeWithinSameScaleIOClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo destData = Mockito.mock(VolumeInfo.class);",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateVolumeWithinSameScaleIOClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getDataStore()).thenReturn(destStore);",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateVolumeWithinSameScaleIOClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getTO()).thenReturn(destVolTO);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateVolumeWithinSameScaleIOClusterFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo srcData = Mockito.mock(VolumeInfo.class);",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAfterCopyVolumeLiveMigrate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getId()).thenReturn(1L);",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAfterCopyVolumeLiveMigrate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo destData = Mockito.mock(VolumeInfo.class);",
+        "line": 304,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAfterCopyVolumeLiveMigrate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getId()).thenReturn(1L);",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAfterCopyVolumeLiveMigrate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo srcData = Mockito.mock(VolumeInfo.class);",
+        "line": 321,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAfterCopyVolumeOffline",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getId()).thenReturn(1L);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAfterCopyVolumeOffline",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo destData = Mockito.mock(VolumeInfo.class);",
+        "line": 322,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAfterCopyVolumeOffline",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getId()).thenReturn(2L);",
+        "line": 325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAfterCopyVolumeOffline",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "//Either destination volume delete success or failure, DB operations should get revert\r\nVolumeInfo srcData = Mockito.mock(VolumeInfo.class);",
+        "line": 342,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getId()).thenReturn(1L);",
+        "line": 347,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getPoolId()).thenReturn(1L);",
+        "line": 348,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getPath()).thenReturn(\"bec0ba7700000007:vol-11-6aef-10ee\");",
+        "line": 351,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getFolder()).thenReturn(\"921c364500000007\");",
+        "line": 352,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo destData = Mockito.mock(VolumeInfo.class);",
+        "line": 343,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getId()).thenReturn(1L);",
+        "line": 349,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getDataStore()).thenReturn(destStore);",
+        "line": 355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "//Either destination volume delete success or failure, DB operations should get revert\r\nVolumeInfo srcData = Mockito.mock(VolumeInfo.class);",
+        "line": 379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getId()).thenReturn(1L);",
+        "line": 385,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getPoolId()).thenReturn(1L);",
+        "line": 386,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getPath()).thenReturn(srcVolumePath);",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getFolder()).thenReturn(\"921c364500000007\");",
+        "line": 390,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo destData = Mockito.mock(VolumeInfo.class);",
+        "line": 380,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getId()).thenReturn(1L);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destData.getDataStore()).thenReturn(destStore);",
+        "line": 393,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Either Volume deletion success or failure method should complete\r\nVolumeInfo srcData = Mockito.mock(VolumeInfo.class);",
+        "line": 416,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeSuccessScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getDataStore()).thenReturn(srcStore);",
+        "line": 422,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeSuccessScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getTO()).thenReturn(volumeTO);",
+        "line": 423,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeSuccessScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Either Volume deletion success or failure method should complete\r\nVolumeInfo srcData = Mockito.mock(VolumeInfo.class);",
+        "line": 439,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getDataStore()).thenReturn(srcStore);",
+        "line": 447,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getTO()).thenReturn(volumeTO);",
+        "line": 448,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srcData",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Either Volume deletion success or failure method should complete\r\nVolumeInfo srcData = Mockito.mock(VolumeInfo.class);",
+        "line": 466,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioWhenNoSDCisFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getDataStore()).thenReturn(srcStore);",
+        "line": 474,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioWhenNoSDCisFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(srcData.getTO()).thenReturn(volumeTO);",
+        "line": 475,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioWhenNoSDCisFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "volumeToAttach",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo volumeToAttach = Mockito.mock(VolumeInfo.class);",
+        "line": 619,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResourceLimitCheckForUploadedVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(volumeToAttach.getId()).thenReturn(9L);",
+        "line": 620,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResourceLimitCheckForUploadedVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeToAttach.getDataCenterId()).thenReturn(34L);",
+        "line": 621,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResourceLimitCheckForUploadedVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeToAttach.getVolumeType()).thenReturn(Volume.Type.DATADISK);",
+        "line": 622,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResourceLimitCheckForUploadedVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeToAttach.getInstanceId()).thenReturn(null);",
+        "line": 623,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResourceLimitCheckForUploadedVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeToAttach.getAccountId()).thenReturn(3L);",
+        "line": 624,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResourceLimitCheckForUploadedVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeToAttach.getState()).thenReturn(Volume.State.Uploaded);",
+        "line": 634,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResourceLimitCheckForUploadedVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "channel",
+    "variableType": "ExecutorChannel",
+    "mockedClass": "ExecutorChannel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\ExecutorChannelTests.java",
+      "className": "ExecutorChannelTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ExecutorChannel channel = new ExecutorChannel(mock(Executor.class));",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEarlySubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "channel",
+    "variableType": "ExecutorChannel",
+    "mockedClass": "ExecutorChannel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\P2pChannelTests.java",
+      "className": "P2pChannelTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ExecutorChannel channel = new ExecutorChannel(mock(Executor.class));",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecutorChannelLoggingWithMoreThenOneSubscriber",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

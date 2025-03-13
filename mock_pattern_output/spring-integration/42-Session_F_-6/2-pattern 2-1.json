@@ -1,0 +1,30 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "Session<F>",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.handler",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\handler\\FileTransferringMessageHandlerTests.java",
+      "className": "FileTransferringMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session<F> session = mock(Session.class);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmptyTemporaryFileSuffixCannotBeNull",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

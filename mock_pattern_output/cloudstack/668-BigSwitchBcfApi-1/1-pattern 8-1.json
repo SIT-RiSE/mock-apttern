@@ -1,0 +1,363 @@
+[
+  {
+    "variableName": "_bigswitchBcfApi",
+    "variableType": "BigSwitchBcfApi",
+    "mockedClass": "BigSwitchBcfApi",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\bigswitch\\src\\test\\java\\com\\cloud\\network\\resource\\BigSwitchBcfResourceTest.java",
+      "className": "BigSwitchBcfResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "BigSwitchBcfApi _bigswitchBcfApi = mock(BigSwitchBcfApi.class);",
+        "line": 66,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi).setControllerAddress(bcfAddress);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resourceConfigure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi).setControllerUsername(bcfUserName);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resourceConfigure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi).setControllerPassword(bcfPassword);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resourceConfigure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.getControlClusterStatus()).thenReturn(ccs);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.getCapabilities()).thenReturn(cap);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.getControlClusterStatus()).thenReturn(ccs);",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.getControlClusterStatus()).thenThrow(new BigSwitchBcfApiException());",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.createNetwork((NetworkData) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi, times(3)).createNetwork((NetworkData) any());",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.deleteNetwork((String) any(), (String) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteNetworkRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi, times(3)).deleteNetwork((String) any(), (String) any());",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteNetworkApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.createAttachment((String) any(), (String) any(), (AttachmentData) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAttachmentRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi, times(3)).createAttachment((String) any(), (String) any(), (AttachmentData) any());",
+        "line": 253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAttachmentApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.deleteAttachment((String) any(), (String) any(), (String) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAttachmentRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi, times(3)).deleteAttachment((String) any(), (String) any(), (String) any());",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteAttachmentException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.modifyAttachment((String) any(), (String) any(), (AttachmentData) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 280,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAttachmentRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi, times(3)).modifyAttachment((String) any(), (String) any(), (AttachmentData) any());",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAttachmentException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.createFloatingIp((String) any(), (FloatingIpData) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 300,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateStaticNatRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi, times(3)).createFloatingIp((String) any(), (FloatingIpData) any());",
+        "line": 319,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateStaticNatApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.deleteFloatingIp((String) any(), (String) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteStaticNatRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi, times(3)).deleteFloatingIp((String) any(), (String) any());",
+        "line": 345,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteStaticNatApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.createRouter((String) any(), (RouterData) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 352,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateRouterRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi, times(3)).createRouter((String) any(), (RouterData) any());",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateRouterApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.modifyRouter((String) any(), (RouterData) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 376,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSourceNatRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi, times(3)).modifyRouter((String) any(), (RouterData) any());",
+        "line": 393,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSourceNatApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.modifyRouter((String) any(), (RouterData) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 400,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteSourceNatRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_bigswitchBcfApi, times(3)).modifyRouter((String) any(), (RouterData) any());",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteSourceNatApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_bigswitchBcfApi.syncTopology((TopologyData) any())).thenThrow(new BigSwitchBcfApiException()).thenReturn(UUID.randomUUID().toString());",
+        "line": 425,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSyncTopologyRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

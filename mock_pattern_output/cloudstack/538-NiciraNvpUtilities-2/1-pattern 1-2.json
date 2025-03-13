@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "niciraNvpUtilities",
+    "variableType": "NiciraNvpUtilities",
+    "mockedClass": "NiciraNvpUtilities",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpRequestWrapperTest.java",
+      "className": "NiciraNvpRequestWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpUtilities niciraNvpUtilities = Mockito.mock(NiciraNvpUtilities.class);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchCommandWrapper",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(niciraNvpUtilities.createLogicalSwitch()).thenReturn(logicalSwitch);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLogicalSwitchCommandWrapper",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "niciraNvpUtilities",
+    "variableType": "NiciraNvpUtilities",
+    "mockedClass": "NiciraNvpUtilities",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpRequestWrapperTest.java",
+      "className": "NiciraNvpRequestWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NiciraNvpUtilities niciraNvpUtilities = Mockito.mock(NiciraNvpUtilities.class);",
+        "line": 222,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateLogicalSwitchPortCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(niciraNvpUtilities.createVifAttachment(attachmentUuid)).thenReturn(vifAttachment);",
+        "line": 237,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateLogicalSwitchPortCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

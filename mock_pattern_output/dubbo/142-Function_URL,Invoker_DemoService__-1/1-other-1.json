@@ -1,0 +1,27 @@
+[
+  {
+    "variableName": "invokerFunction",
+    "variableType": "Function<URL,Invoker<DemoService>>",
+    "mockedClass": "Function<URL,Invoker<DemoService>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.dubbo",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-default\\src\\test\\java\\org\\apache\\dubbo\\monitor\\dubbo\\MetricsFilterTest.java",
+      "className": "MetricsFilterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private final Function<URL, Invoker<DemoService>> invokerFunction = (url) -> {\r\n    Invoker<DemoService> serviceInvoker = mock(Invoker.class);\r\n    given(serviceInvoker.isAvailable()).willReturn(false);\r\n    given(serviceInvoker.getInterface()).willReturn(DemoService.class);\r\n    given(serviceInvoker.getUrl()).willReturn(url);\r\n    given(serviceInvoker.invoke(Mockito.any(Invocation.class))).willReturn(null);\r\n    doNothing().when(serviceInvoker).destroy();\r\n    return serviceInvoker;\r\n};",
+        "line": 72,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 39
+  }
+]

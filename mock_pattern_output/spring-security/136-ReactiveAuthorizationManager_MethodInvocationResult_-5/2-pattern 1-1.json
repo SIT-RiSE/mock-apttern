@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "manager",
+    "variableType": "ReactiveAuthorizationManager<MethodInvocationResult>",
+    "mockedClass": "ReactiveAuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterReactiveMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterReactiveMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveAuthorizationManager<MethodInvocationResult> manager = mock(ReactiveAuthorizationManager.class);",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenCustomAuthorizationDeniedExceptionThenThrows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(manager.check(any(), any())).willReturn(Mono.error(new MyAuthzDeniedException(\"denied\", new AuthorizationDecision(false))));",
+        "line": 259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenCustomAuthorizationDeniedExceptionThenThrows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(manager.authorize(any(), any())).willCallRealMethod();",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenCustomAuthorizationDeniedExceptionThenThrows",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

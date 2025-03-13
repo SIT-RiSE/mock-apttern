@@ -1,0 +1,92 @@
+[
+  {
+    "variableName": "provider",
+    "variableType": "AuthenticationProvider",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ProviderManagerTests.java",
+      "className": "ProviderManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationProvider provider = mock(AuthenticationProvider.class);",
+        "line": 289,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createProviderWhichThrows",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(provider.supports(any(Class.class))).willReturn(true);",
+        "line": 290,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createProviderWhichThrows",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(provider.authenticate(any(Authentication.class))).willThrow(ex);",
+        "line": 291,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createProviderWhichThrows",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "provider",
+    "variableType": "AuthenticationProvider",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ProviderManagerTests.java",
+      "className": "ProviderManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationProvider provider = mock(AuthenticationProvider.class);",
+        "line": 296,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createProviderWhichReturns",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(provider.supports(any(Class.class))).willReturn(true);",
+        "line": 297,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createProviderWhichReturns",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(provider.authenticate(any(Authentication.class))).willReturn(a);",
+        "line": 298,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createProviderWhichReturns",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

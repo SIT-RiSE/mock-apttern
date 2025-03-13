@@ -1,0 +1,580 @@
+[
+  {
+    "variableName": "accountDao",
+    "variableType": "AccountDao",
+    "mockedClass": "AccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\QuotaAlertManagerImplTest.java",
+      "className": "QuotaAlertManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AccountDao accountDao;",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(accountDao.findById(Mockito.anyLong())).thenReturn(accountVO);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAndSendQuotaAlertEmails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(accountDao.findById(Mockito.anyLong())).thenReturn(accountVO);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLockAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(accountDao.createForUpdate()).thenReturn(accountVO);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLockAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(accountDao.update(Mockito.eq(accountVO.getId()), Mockito.eq(accountVO))).thenReturn(true);",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLockAccount",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "accountDao",
+    "variableType": "AccountDao",
+    "mockedClass": "AccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\QuotaStatementTest.java",
+      "className": "QuotaStatementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAccountDao accountDao;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(accountDao.findById(Mockito.anyLong())).thenReturn(accountVO);",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendStatement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "accountDaoMock",
+    "variableType": "AccountDao",
+    "mockedClass": "AccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.response",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\response\\QuotaResponseBuilderImplTest.java",
+      "className": "QuotaResponseBuilderImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAccountDao accountDaoMock;",
+        "line": 89,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(accountDaoMock.findById(Mockito.anyLong())).thenReturn(account);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddQuotaCredits",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "accountDao",
+    "variableType": "AccountDao",
+    "mockedClass": "AccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAccountDao accountDao;",
+        "line": 228,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(accountDao.findById(anyLong())).thenReturn(accountVO);",
+        "line": 714,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateLoadBalancerTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(accountDao.findById(anyLong())).thenReturn(accountVO);",
+        "line": 1599,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSharedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_accountDao",
+    "variableType": "AccountDao",
+    "mockedClass": "AccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.acl",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\acl\\DomainCheckerTest.java",
+      "className": "DomainCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAccountDao _accountDao;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_accountDao.findById(entity.getAccountId())).thenReturn(null);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOwnerNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_accountDao.findById(entity.getAccountId())).thenReturn(owner);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDomainAdminHasAccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_accountDao.findById(entity.getAccountId())).thenReturn(projectAccount);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProjectOwnerCanModify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_accountDao.findById(entity.getAccountId())).thenReturn(projectAccount);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProjectOwnerCannotModify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_accountDao.findById(entity.getAccountId())).thenReturn(projectAccount);",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProjectOwnerCanAccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_accountDao.findById(entity.getAccountId())).thenReturn(projectAccount);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProjectOwnerCannotAccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "accountDao",
+    "variableType": "AccountDao",
+    "mockedClass": "AccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkModelTest.java",
+      "className": "NetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AccountDao accountDao;",
+        "line": 104,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(accountDao.findById(accountId)).thenReturn(caller);",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(accountDao.findById(accountId)).thenReturn(caller);",
+        "line": 322,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsForAdmin",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(accountDao.findById(accountId)).thenReturn(null);",
+        "line": 344,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsNoOwner",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(accountDao.findById(accountId)).thenReturn(caller);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkPermissionsNoPermission",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_accountDao",
+    "variableType": "AccountDao",
+    "mockedClass": "AccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AccountDao _accountDao;",
+        "line": 184,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_accountDao.findById(anyLong())).thenReturn(acc);",
+        "line": 625,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResourceLimitCheckForUploadedVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_accountDao",
+    "variableType": "AccountDao",
+    "mockedClass": "AccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\HypervisorTemplateAdapterTest.java",
+      "className": "HypervisorTemplateAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAccountDao _accountDao;",
+        "line": 114,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_accountDao.findById(anyLong())).thenReturn(acct);",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_accountDao.findByIdIncludingRemoved(anyLong())).thenReturn(acct);",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "accountDao",
+    "variableType": "AccountDao",
+    "mockedClass": "AccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AccountDao accountDao;",
+        "line": 172,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(accountDao.findById(Mockito.anyLong())).thenReturn(callerAccount);",
+        "line": 342,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVirtualMachineTestCleanUpFalseAndDetailsEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_accountDao",
+    "variableType": "AccountDao",
+    "mockedClass": "AccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerTest.java",
+      "className": "UserVmManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AccountDao _accountDao;",
+        "line": 143,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_accountDao.findByIdIncludingRemoved(anyLong())).thenReturn(_accountMock);",
+        "line": 566,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVmNicIpSuccess1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_accountDao.findByIdIncludingRemoved(anyLong())).thenReturn(_accountMock);",
+        "line": 613,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVmNicIpSuccess2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_accountDao.findByIdIncludingRemoved(anyLong())).thenReturn(_accountMock);",
+        "line": 709,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVmNicIpFailure2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_accountDao.findByIdIncludingRemoved(anyLong())).thenReturn(_accountMock);",
+        "line": 756,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVmNicIpFailure3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "variableName": "authorizedClientRepository",
+    "variableType": "ServerOAuth2AuthorizedClientRepository",
+    "mockedClass": "ServerOAuth2AuthorizedClientRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServerOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServerOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerOAuth2AuthorizedClientRepository authorizedClientRepository;",
+        "line": 126,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.saveAuthorizedClient(any(), any(), any())).willReturn(Mono.empty());",
+        "line": 200,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMockSaveAuthorizedClient",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(any(), eq(authentication), any());",
+        "line": 280,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientCredentialsTokenExpiredThenGetNewToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(this.authorizedClientCaptor.capture(), eq(authentication), any());",
+        "line": 344,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenRefreshRequiredThenRefresh",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(any(), any(), any());",
+        "line": 383,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenRefreshRequiredAndEmptyReactiveSecurityContextThenSaved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(eq(registration.getRegistrationId()), eq(jwtAuthentication), any())).willReturn(Mono.empty());",
+        "line": 415,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenJwtBearerClientNotAuthorizedThenExchangeToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).loadAuthorizedClient(eq(registration.getRegistrationId()), eq(jwtAuthentication), any());",
+        "line": 428,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenJwtBearerClientNotAuthorizedThenExchangeToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(any(), eq(jwtAuthentication), any());",
+        "line": 430,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenJwtBearerClientNotAuthorizedThenExchangeToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(eq(registration.getRegistrationId()), eq(authentication), any())).willReturn(Mono.empty());",
+        "line": 721,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenPasswordClientNotAuthorizedThenGetNewToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(any(), eq(authentication), any());",
+        "line": 752,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenPasswordClientNotAuthorizedThenGetNewToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(any(), any(), any())).willReturn(Mono.just(authorizedClient));",
+        "line": 767,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientRegistrationIdThenAuthorizedClientResolved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(any(), any(), any())).willReturn(Mono.just(authorizedClient));",
+        "line": 789,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultClientRegistrationIdThenAuthorizedClientResolved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(any(), any(), any())).willReturn(Mono.just(authorizedClient));",
+        "line": 808,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientRegistrationIdFromAuthenticationThenAuthorizedClientResolved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.clientRegistrationRepository, this.authorizedClientRepository);",
+        "line": 842,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultOAuth2AuthorizedClientFalseThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(any(), any(), any())).willReturn(Mono.just(authorizedClient));",
+        "line": 850,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientRegistrationIdAndServerWebExchangeFromContextThenServerWebExchangeFromContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(this.authorizedClientRepository).loadAuthorizedClient(eq(this.registration.getRegistrationId()), any(), eq(this.serverWebExchange));",
+        "line": 860,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientRegistrationIdAndServerWebExchangeFromContextThenServerWebExchangeFromContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 57
+  }
+]

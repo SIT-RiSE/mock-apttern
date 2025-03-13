@@ -1,0 +1,4942 @@
+[
+  {
+    "variableName": "libvirtComputingResourceMock",
+    "variableType": "LibvirtComputingResource",
+    "mockedClass": "LibvirtComputingResource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate LibvirtComputingResource libvirtComputingResourceMock;",
+        "line": 234,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1032,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopCommandNoCheck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1046,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopCommandNoCheck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1066,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopCommandCheckVmNOTRunning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1084,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopCommandCheckVmNOTRunning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopCommandCheckException1",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopCommandCheckException1",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopCommandCheckVmRunning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopCommandCheckVmRunning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVmStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVmStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVmDiskStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVmDiskStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVmDiskStatsCommandException",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVmDiskStatsCommandException",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1276,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1289,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootCommandException1",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootCommandException1",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootCommandError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.rebootVM(conn, command.getVmName())).thenReturn(\"error\");",
+        "line": 1337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootCommandError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1348,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootCommandError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1365,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootCommandException2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.rebootVM(conn, command.getVmName())).thenThrow(LibvirtException.class);",
+        "line": 1368,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootCommandException2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootCommandException2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVirtRouterResource()).thenReturn(routingResource);",
+        "line": 1396,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootRouterCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1397,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootRouterCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getVirtRouterResource();",
+        "line": 1410,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootRouterCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1412,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootRouterCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVirtRouterResource()).thenReturn(routingResource);",
+        "line": 1429,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootRouterCommandConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1430,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootRouterCommandConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getVirtRouterResource();",
+        "line": 1444,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootRouterCommandConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1445,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRebootRouterCommandConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getCPUStat()).thenReturn(cpuStat);",
+        "line": 1463,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getMemStat()).thenReturn(memStat);",
+        "line": 1464,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getNicStats(nullable(String.class))).thenReturn(new Pair<Double, Double>(1.0d, 1.0d));",
+        "line": 1465,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getCPUStat();",
+        "line": 1476,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getMemStat();",
+        "line": 1477,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1507,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVifDriver(nicTO.getType(), nicTO.getName())).thenReturn(vifDriver);",
+        "line": 1520,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolManager);",
+        "line": 1521,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1529,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 1536,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1555,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVifDriver(nicTO.getType(), nicTO.getName())).thenReturn(vifDriver);",
+        "line": 1568,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolManager);",
+        "line": 1569,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1578,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 1585,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1603,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVifDriver(nicTO.getType())).thenReturn(vifDriver);",
+        "line": 1613,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolManager);",
+        "line": 1614,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1622,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 1629,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1647,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVifDriver(nicTO.getType(), nicTO.getName())).thenReturn(vifDriver);",
+        "line": 1660,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolManager);",
+        "line": 1661,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVolumePath(conn, volume)).thenThrow(URISyntaxException.class);",
+        "line": 1663,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1676,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 1683,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1702,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "BDDMockito.given(libvirtComputingResourceMock.getVifDriver(nicTO.getType(), nicTO.getName())).willAnswer(invocationOnMock -> {\r\n    throw new InternalErrorException(\"Exception Occurred\");\r\n});",
+        "line": 1712,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolManager);",
+        "line": 1713,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVolumePath(conn, volume)).thenReturn(\"/path\");",
+        "line": 1715,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1728,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 1735,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1753,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getInterfaces(conn, vmName)).thenReturn(ifaces);",
+        "line": 1767,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getDisks(conn, vmName)).thenReturn(disks);",
+        "line": 1773,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getPrivateIp()).thenReturn(\"127.0.0.1\");",
+        "line": 1778,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1798,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getInterfaces(conn, vmName);",
+        "line": 1806,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getDisks(conn, vmName);",
+        "line": 1807,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1867,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckVirtualMachineCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVmState(conn, command.getVmName())).thenReturn(PowerState.PowerOn);",
+        "line": 1874,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckVirtualMachineCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1882,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckVirtualMachineCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1899,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExceptionCheckVirtualMachineCommand",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVmState(conn, command.getVmName())).thenReturn(PowerState.PowerOn);",
+        "line": 1906,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExceptionCheckVirtualMachineCommand",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1914,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExceptionCheckVirtualMachineCommand",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1941,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachIsoCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1954,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachIsoCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1970,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachIsoCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 1983,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachIsoCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 1999,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachIsoCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 2012,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachIsoCommandURISyntaxException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 2028,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachIsoCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 2041,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachIsoCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 2089,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVncPortCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 2102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVncPortCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 2117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVncPortCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 2130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVncPortCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 2143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifySshKeysCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getTimeout()).thenReturn(Duration.ZERO);",
+        "line": 2149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifySshKeysCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getTimeout();",
+        "line": 2157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifySshKeysCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(poolManager);",
+        "line": 2183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCommandNoTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCommandNoTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(poolManager);",
+        "line": 2211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.templateToPrimaryDownload(command.getTemplateUrl(), primary, diskCharacteristics.getPath())).thenReturn(vol);",
+        "line": 2215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(poolManager);",
+        "line": 2241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCommandCLVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateCommandCLVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(poolManager);",
+        "line": 2270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDestroyCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDestroyCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(poolManager);",
+        "line": 2297,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDestroyCommandError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDestroyCommandError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 2337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateDisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2349,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateDisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 2374,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNODisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2386,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNODisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 2412,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNOQcow2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2426,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNOQcow2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 2449,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandTemplateNoDisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2461,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandTemplateNoDisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 2473,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetStorageStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2482,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetStorageStatsCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenThrow(CloudRuntimeException.class);",
+        "line": 2492,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetStorageStatsCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2500,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetStorageStatsCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 2534,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteStoragePoolCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2543,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteStoragePoolCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 2556,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteStoragePoolCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2565,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteStoragePoolCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.findOrCreateTunnelNetwork(command.getBridgeName())).thenReturn(true);",
+        "line": 2577,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.configureTunnelNetwork(command.getNetworkId(), command.getHostId(), command.getBridgeName())).thenReturn(true);",
+        "line": 2578,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).findOrCreateTunnelNetwork(command.getBridgeName());",
+        "line": 2588,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).configureTunnelNetwork(command.getNetworkId(), command.getHostId(), command.getBridgeName());",
+        "line": 2589,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.findOrCreateTunnelNetwork(command.getBridgeName())).thenReturn(true);",
+        "line": 2601,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommandFailure1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.configureTunnelNetwork(command.getNetworkId(), command.getHostId(), command.getBridgeName())).thenReturn(false);",
+        "line": 2602,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommandFailure1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).findOrCreateTunnelNetwork(command.getBridgeName());",
+        "line": 2612,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommandFailure1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).configureTunnelNetwork(command.getNetworkId(), command.getHostId(), command.getBridgeName());",
+        "line": 2613,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommandFailure1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.findOrCreateTunnelNetwork(command.getBridgeName())).thenReturn(false);",
+        "line": 2625,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommandFailure2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.configureTunnelNetwork(command.getNetworkId(), command.getHostId(), command.getBridgeName())).thenReturn(true);",
+        "line": 2626,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommandFailure2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).findOrCreateTunnelNetwork(command.getBridgeName());",
+        "line": 2636,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommandFailure2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).configureTunnelNetwork(command.getNetworkId(), command.getHostId(), command.getBridgeName());",
+        "line": 2637,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsSetupBridgeCommandFailure2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.destroyTunnelNetwork(command.getBridgeName())).thenReturn(true);",
+        "line": 2649,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsDestroyBridgeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).destroyTunnelNetwork(command.getBridgeName());",
+        "line": 2658,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsDestroyBridgeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.destroyTunnelNetwork(command.getBridgeName())).thenReturn(false);",
+        "line": 2669,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsDestroyBridgeCommandFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).destroyTunnelNetwork(command.getBridgeName());",
+        "line": 2678,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsDestroyBridgeCommandFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getOvsTunnelPath()).thenReturn(\"/path\");",
+        "line": 2703,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcPhysicalTopologyConfigCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getTimeout()).thenReturn(Duration.ZERO);",
+        "line": 2704,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcPhysicalTopologyConfigCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getOvsTunnelPath();",
+        "line": 2713,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcPhysicalTopologyConfigCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getTimeout();",
+        "line": 2714,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcPhysicalTopologyConfigCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getOvsTunnelPath()).thenThrow(Exception.class);",
+        "line": 2727,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcPhysicalTopologyConfigCommandFailure",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getOvsTunnelPath();",
+        "line": 2735,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcPhysicalTopologyConfigCommandFailure",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getOvsTunnelPath()).thenReturn(\"/path\");",
+        "line": 2747,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcRoutingPolicyConfigCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getTimeout()).thenReturn(Duration.ZERO);",
+        "line": 2748,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcRoutingPolicyConfigCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getOvsTunnelPath();",
+        "line": 2757,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcRoutingPolicyConfigCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getTimeout();",
+        "line": 2758,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcRoutingPolicyConfigCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getOvsTunnelPath()).thenThrow(Exception.class);",
+        "line": 2771,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcRoutingPolicyConfigCommandFailure",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getOvsTunnelPath();",
+        "line": 2779,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsVpcRoutingPolicyConfigCommandFailure",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 2803,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifyStoragePoolCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2814,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifyStoragePoolCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 2826,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifyStoragePoolCommandFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 2837,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifyStoragePoolCommandFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.cleanupRules()).thenReturn(true);",
+        "line": 2846,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCleanupNetworkRulesCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).cleanupRules();",
+        "line": 2854,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCleanupNetworkRulesCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 2869,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesVmSecondaryIpCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.configureNetworkRulesVMSecondaryIP(conn, command.getVmName(), command.getVmMac(), command.getVmSecIp(), command.getAction())).thenReturn(true);",
+        "line": 2875,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesVmSecondaryIpCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 2888,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesVmSecondaryIpCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).configureNetworkRulesVMSecondaryIP(conn, command.getVmName(), command.getVmMac(), command.getVmSecIp(), command.getAction());",
+        "line": 2889,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesVmSecondaryIpCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 2904,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesVmSecondaryIpCommandFailure",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 2921,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesVmSecondaryIpCommandFailure",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 2934,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesSystemVmCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.configureDefaultNetworkRulesForSystemVm(conn, command.getVmName())).thenReturn(true);",
+        "line": 2940,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesSystemVmCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 2953,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesSystemVmCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).configureDefaultNetworkRulesForSystemVm(conn, command.getVmName());",
+        "line": 2954,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesSystemVmCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 2967,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesSystemVmCommandFailure",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 2985,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkRulesSystemVmCommandFailure",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVirtRouterResource()).thenReturn(virtRouterResource);",
+        "line": 3001,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckSshCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getVirtRouterResource();",
+        "line": 3010,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckSshCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVirtRouterResource()).thenReturn(virtRouterResource);",
+        "line": 3027,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckSshCommandFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getVirtRouterResource();",
+        "line": 3036,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckSshCommandFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.checkNetwork(TrafficType.Guest, nic.getGuestNetworkName())).thenReturn(true);",
+        "line": 3049,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.checkNetwork(TrafficType.Management, nic.getPrivateNetworkName())).thenReturn(true);",
+        "line": 3050,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.checkNetwork(TrafficType.Public, nic.getPublicNetworkName())).thenReturn(true);",
+        "line": 3051,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).checkNetwork(TrafficType.Guest, nic.getGuestNetworkName());",
+        "line": 3059,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).checkNetwork(TrafficType.Management, nic.getPrivateNetworkName());",
+        "line": 3060,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).checkNetwork(TrafficType.Public, nic.getPublicNetworkName());",
+        "line": 3061,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.checkNetwork(TrafficType.Guest, networkSetupInfo.getGuestNetworkName())).thenReturn(false);",
+        "line": 3073,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).checkNetwork(TrafficType.Guest, networkSetupInfo.getGuestNetworkName());",
+        "line": 3081,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.checkNetwork(TrafficType.Guest, networkSetupInfo.getGuestNetworkName())).thenReturn(true);",
+        "line": 3093,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.checkNetwork(TrafficType.Management, networkSetupInfo.getPrivateNetworkName())).thenReturn(false);",
+        "line": 3094,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).checkNetwork(TrafficType.Guest, networkSetupInfo.getGuestNetworkName());",
+        "line": 3102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).checkNetwork(TrafficType.Management, networkSetupInfo.getPrivateNetworkName());",
+        "line": 3103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.checkNetwork(TrafficType.Guest, networkSetupInfo.getGuestNetworkName())).thenReturn(true);",
+        "line": 3115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.checkNetwork(TrafficType.Management, networkSetupInfo.getPrivateNetworkName())).thenReturn(true);",
+        "line": 3116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.checkNetwork(TrafficType.Public, networkSetupInfo.getPublicNetworkName())).thenReturn(false);",
+        "line": 3117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).checkNetwork(TrafficType.Guest, networkSetupInfo.getGuestNetworkName());",
+        "line": 3125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).checkNetwork(TrafficType.Management, networkSetupInfo.getPrivateNetworkName());",
+        "line": 3126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckNetworkCommandFail3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.findOrCreateTunnelNetwork(command.getBridgeName())).thenReturn(true);",
+        "line": 3137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsDestroyTunnelCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).findOrCreateTunnelNetwork(command.getBridgeName());",
+        "line": 3145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsDestroyTunnelCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.findOrCreateTunnelNetwork(command.getBridgeName())).thenReturn(false);",
+        "line": 3156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsDestroyTunnelCommandFailure1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).findOrCreateTunnelNetwork(command.getBridgeName());",
+        "line": 3164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsDestroyTunnelCommandFailure1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.findOrCreateTunnelNetwork(command.getBridgeName())).thenThrow(Exception.class);",
+        "line": 3176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsDestroyTunnelCommandFailure2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).findOrCreateTunnelNetwork(command.getBridgeName());",
+        "line": 3184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsDestroyTunnelCommandFailure2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getMonitor()).thenReturn(monitor);",
+        "line": 3195,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckOnHostCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getMonitor();",
+        "line": 3203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckOnHostCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.findOrCreateTunnelNetwork(bridge)).thenReturn(true);",
+        "line": 3221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.configureTunnelNetwork(command.getNetworkId(), command.getFrom(), command.getNetworkName())).thenReturn(true);",
+        "line": 3222,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getTimeout()).thenReturn(Duration.ZERO);",
+        "line": 3224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).findOrCreateTunnelNetwork(bridge);",
+        "line": 3232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).configureTunnelNetwork(command.getNetworkId(), command.getFrom(), command.getNetworkName());",
+        "line": 3233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.findOrCreateTunnelNetwork(bridge)).thenReturn(false);",
+        "line": 3252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommandFailure1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.configureTunnelNetwork(command.getNetworkId(), command.getFrom(), command.getNetworkName())).thenReturn(true);",
+        "line": 3253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommandFailure1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).findOrCreateTunnelNetwork(bridge);",
+        "line": 3262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommandFailure1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(0)).configureTunnelNetwork(command.getNetworkId(), command.getFrom(), command.getNetworkName());",
+        "line": 3263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommandFailure1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.findOrCreateTunnelNetwork(bridge)).thenReturn(true);",
+        "line": 3283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommandFailure2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.configureTunnelNetwork(command.getNetworkId(), command.getFrom(), command.getNetworkName())).thenThrow(Exception.class);",
+        "line": 3284,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommandFailure2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).findOrCreateTunnelNetwork(bridge);",
+        "line": 3293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommandFailure2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).configureTunnelNetwork(command.getNetworkId(), command.getFrom(), command.getNetworkName());",
+        "line": 3294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOvsCreateTunnelCommandFailure2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 3324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVolumeFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 3337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVolumeFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 3368,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVolumeFromSnapshotCommandCloudException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 3379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVolumeFromSnapshotCommandCloudException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getMonitor()).thenReturn(monitor);",
+        "line": 3398,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFenceCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getMonitor();",
+        "line": 3407,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFenceCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 3435,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getInterfaces(conn, command.getVmName())).thenReturn(nics);",
+        "line": 3436,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 3459,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 3493,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getInterfaces(conn, command.getVmName())).thenReturn(nics);",
+        "line": 3494,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.applyDefaultNetworkRules(conn, vm, true)).thenReturn(true);",
+        "line": 3517,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.addNetworkRules(command.getVmName(), Long.toString(command.getVmId()), command.getGuestIp(), command.getGuestIp6(), command.getSignature(), Long.toString(command.getSeqNum()), command.getGuestMac(), command.stringifyRules(), vif, brname, command.getSecIpsString())).thenReturn(true);",
+        "line": 3518,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 3527,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 3558,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getInterfaces(conn, command.getVmName())).thenReturn(nics);",
+        "line": 3559,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 3572,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 3596,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getInterfaces(conn, command.getVmName())).thenReturn(nics);",
+        "line": 3597,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getDomain(conn, instanceName)).thenReturn(vm);",
+        "line": 3607,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 3618,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getDomain(conn, instanceName);",
+        "line": 3621,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 3645,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getInterfaces(conn, command.getVmName())).thenReturn(nics);",
+        "line": 3646,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getDomain(conn, instanceName)).thenReturn(vm);",
+        "line": 3657,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVifDriver(nic.getType(), nic.getName())).thenReturn(vifDriver);",
+        "line": 3659,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 3679,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getDomain(conn, instanceName);",
+        "line": 3682,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getVifDriver(nic.getType(), nic.getName());",
+        "line": 3683,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 3703,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 3717,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 3743,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getInterfaces(conn, command.getVmName())).thenReturn(nics);",
+        "line": 3744,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getDomain(conn, instanceName)).thenReturn(vm);",
+        "line": 3754,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVifDriver(nic.getType(), nic.getName())).thenReturn(vifDriver);",
+        "line": 3756,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 3772,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getDomain(conn, instanceName);",
+        "line": 3775,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getVifDriver(nic.getType(), nic.getName());",
+        "line": 3776,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 3805,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getInterfaces(conn, command.getVmName())).thenReturn(nics);",
+        "line": 3806,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getDomain(conn, instanceName)).thenReturn(vm);",
+        "line": 3816,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getAllVifDrivers()).thenReturn(drivers);",
+        "line": 3823,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 3837,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getDomain(conn, instanceName);",
+        "line": 3840,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getAllVifDrivers();",
+        "line": 3841,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 3864,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandNoNics",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getInterfaces(conn, command.getVmName())).thenReturn(nics);",
+        "line": 3865,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandNoNics",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getDomain(conn, instanceName)).thenReturn(vm);",
+        "line": 3869,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandNoNics",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 3880,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandNoNics",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getDomain(conn, instanceName);",
+        "line": 3883,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandNoNics",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 3899,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 3913,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getNetworkStats(command.getPrivateIP())).thenReturn(new long[] { 10l, 10l });",
+        "line": 3932,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandNonVpc",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "//Being called twice, although I did not find the second place yet.\r\nverify(libvirtComputingResourceMock, times(2)).getNetworkStats(command.getPrivateIP());",
+        "line": 3941,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandNonVpc",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.networkUsage(command.getPrivateIP(), \"create\", null)).thenReturn(\"SUCCESS\");",
+        "line": 3954,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandNonVpcCreate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).networkUsage(command.getPrivateIP(), \"create\", null);",
+        "line": 3962,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandNonVpcCreate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.configureVPCNetworkUsage(command.getPrivateIP(), command.getGatewayIP(), \"create\", command.getVpcCIDR())).thenReturn(\"SUCCESS\");",
+        "line": 3977,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandVpcCreate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).configureVPCNetworkUsage(command.getPrivateIP(), command.getGatewayIP(), \"create\", command.getVpcCIDR());",
+        "line": 3985,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandVpcCreate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVPCNetworkStats(command.getPrivateIP(), command.getGatewayIP(), command.getOption())).thenReturn(new long[] { 10l, 10l });",
+        "line": 3999,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandVpcGet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getVPCNetworkStats(command.getPrivateIP(), command.getGatewayIP(), command.getOption());",
+        "line": 4007,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandVpcGet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVPCNetworkStats(command.getPrivateIP(), command.getGatewayIP(), command.getOption())).thenReturn(new long[] { 10l, 10l });",
+        "line": 4021,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandVpcVpn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getVPCNetworkStats(command.getPrivateIP(), command.getGatewayIP(), command.getOption());",
+        "line": 4029,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandVpcVpn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.configureVPCNetworkUsage(command.getPrivateIP(), command.getGatewayIP(), command.getOption(), command.getVpcCIDR())).thenReturn(\"FAILURE\");",
+        "line": 4043,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandVpcNoOption",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).configureVPCNetworkUsage(command.getPrivateIP(), command.getGatewayIP(), command.getOption(), command.getVpcCIDR());",
+        "line": 4051,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandVpcNoOption",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//final KVMStoragePool primary = Mockito.mock(KVMStoragePool.class);\r\nwhen(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4075,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4085,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//final Connect conn = Mockito.mock(Connect.class);\r\nwhen(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testManageSnapshotCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 4123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testManageSnapshotCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testManageSnapshotCommandLibvirt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getDomain(conn, command.getVmName())).thenReturn(vm);",
+        "line": 4158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testManageSnapshotCommandLibvirt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testManageSnapshotCommandLibvirt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testManageSnapshotCommandLibvirt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 4182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testManageSnapshotCommandLibvirt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//final Connect conn = Mockito.mock(Connect.class);\r\nwhen(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBackupSnapshotCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 4233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBackupSnapshotCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4271,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStorage()).thenReturn(storage);",
+        "line": 4281,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createTmplPath()).thenReturn(templatePath);",
+        "line": 4283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getCmdsTimeout()).thenReturn(1);",
+        "line": 4284,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4290,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4309,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4345,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandConfigurationException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStorage()).thenReturn(storage);",
+        "line": 4355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandConfigurationException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createTmplPath()).thenReturn(templatePath);",
+        "line": 4357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandConfigurationException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getCmdsTimeout()).thenReturn(1);",
+        "line": 4358,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandConfigurationException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandConfigurationException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4383,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandConfigurationException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4418,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStorage()).thenReturn(storage);",
+        "line": 4428,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createTmplPath()).thenReturn(templatePath);",
+        "line": 4430,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getCmdsTimeout()).thenReturn(1);",
+        "line": 4431,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4437,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4456,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4492,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandIOException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStorage()).thenReturn(storage);",
+        "line": 4502,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandIOException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createTmplPath()).thenReturn(templatePath);",
+        "line": 4504,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandIOException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getCmdsTimeout()).thenReturn(1);",
+        "line": 4505,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandIOException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4511,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandIOException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4535,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandIOException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4564,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4570,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4583,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4612,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4615,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4632,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4659,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandToSecFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4661,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandToSecFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4675,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandToSecFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4702,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4704,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4717,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4736,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4745,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4772,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandPrimaryNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4778,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandPrimaryNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4792,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandPrimaryNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getGuestBridgeName()).thenReturn(guestBridgeName);",
+        "line": 4807,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPvlanSetupCommandDhcpAdd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getTimeout()).thenReturn(Duration.ZERO);",
+        "line": 4808,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPvlanSetupCommandDhcpAdd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getOvsPvlanDhcpHostPath()).thenReturn(ovsPvlanDhcpHostPath);",
+        "line": 4811,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPvlanSetupCommandDhcpAdd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getGuestBridgeName()).thenReturn(guestBridgeName);",
+        "line": 4830,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPvlanSetupCommandVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getTimeout()).thenReturn(Duration.ZERO);",
+        "line": 4831,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPvlanSetupCommandVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getOvsPvlanVmPath()).thenReturn(ovsPvlanVmPath);",
+        "line": 4834,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPvlanSetupCommandVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getGuestBridgeName()).thenReturn(guestBridgeName);",
+        "line": 4855,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPvlanSetupCommandDhcpDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getTimeout()).thenReturn(Duration.ZERO);",
+        "line": 4856,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPvlanSetupCommandDhcpDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getOvsPvlanDhcpHostPath()).thenReturn(ovsPvlanDhcpHostPath);",
+        "line": 4859,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPvlanSetupCommandDhcpDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4891,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getResizeScriptType(storagePool, vol)).thenReturn(\"FILE\");",
+        "line": 4895,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4899,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4918,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(2)).getLibvirtUtilitiesHelper();",
+        "line": 4919,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 4951,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandLinstorNotifyOnly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 4958,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandLinstorNotifyOnly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 4973,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandLinstorNotifyOnly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(0)).getResizeScriptType(storagePool, vol);",
+        "line": 4974,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandLinstorNotifyOnly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 4976,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandLinstorNotifyOnly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 5019,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandShrink",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getResizeScriptType(storagePool, vol)).thenReturn(\"QCOW2\");",
+        "line": 5023,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandShrink",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 5050,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getResizeScriptType(storagePool, vol)).thenReturn(\"FILE\");",
+        "line": 5054,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 5058,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 5071,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 5073,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 5097,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 5107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVirtRouterResource()).thenReturn(virtRouterResource);",
+        "line": 5115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkElementCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStorageHandler()).thenReturn(handler);",
+        "line": 5133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStorageSubSystemCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 5162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandFailedConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createVMFromSpec(vmSpec)).thenReturn(vmDef);",
+        "line": 5166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandFailedConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 5168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandFailedConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 5188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandFailedConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 5189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandFailedConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 5215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createVMFromSpec(vmSpec)).thenReturn(vmDef);",
+        "line": 5219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 5221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 5234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 5235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandLibvirtException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 5261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandInternalError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createVMFromSpec(vmSpec)).thenReturn(vmDef);",
+        "line": 5265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandInternalError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 5267,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandInternalError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 5285,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandInternalError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 5286,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandInternalError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 5312,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandUriException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createVMFromSpec(vmSpec)).thenReturn(vmDef);",
+        "line": 5316,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandUriException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 5318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandUriException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 5336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandUriException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 5337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandUriException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 5368,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createVMFromSpec(vmSpec)).thenReturn(vmDef);",
+        "line": 5372,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 5374,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.startVM(conn, vmName, vmDef.toString())).thenReturn(\"SUCCESS\");",
+        "line": 5391,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.passCmdLine(vmName, vmSpec.getBootArgs())).thenReturn(true);",
+        "line": 5394,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVirtRouterResource()).thenReturn(virtRouterResource);",
+        "line": 5398,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 5413,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 5414,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 5445,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandIsolationEc2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createVMFromSpec(vmSpec)).thenReturn(vmDef);",
+        "line": 5449,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandIsolationEc2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 5451,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandIsolationEc2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.startVM(conn, vmName, vmDef.toString())).thenReturn(\"SUCCESS\");",
+        "line": 5468,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandIsolationEc2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.passCmdLine(vmName, vmSpec.getBootArgs())).thenReturn(true);",
+        "line": 5475,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandIsolationEc2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getVirtRouterResource()).thenReturn(virtRouterResource);",
+        "line": 5479,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandIsolationEc2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getStoragePoolMgr();",
+        "line": 5496,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandIsolationEc2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(libvirtComputingResourceMock, times(1)).getLibvirtUtilitiesHelper();",
+        "line": 5497,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandIsolationEc2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getStoragePoolMgr()).thenReturn(storagePoolMgr);",
+        "line": 5526,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.createVMFromSpec(vmSpec)).thenReturn(vmDef);",
+        "line": 5531,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 5533,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 5570,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getUpdateHostPasswdPath()).thenReturn(\"/tmp\");",
+        "line": 5571,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getLibvirtUtilitiesHelper()).thenReturn(libvirtUtilitiesHelper);",
+        "line": 5595,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommandFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtComputingResourceMock.getUpdateHostPasswdPath()).thenReturn(\"/tmp\");",
+        "line": 5596,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommandFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "libvirtComputingResourceMock = new LibvirtComputingResource();",
+        "line": 5722,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnknownCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "libvirtComputingResourceMock = new LibvirtComputingResource();",
+        "line": 5734,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testKnownCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "libvirtComputingResourceMock = new LibvirtComputingResource();",
+        "line": 5747,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddExtraConfigComponentEmptyExtraConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "libvirtComputingResourceMock = new LibvirtComputingResource();",
+        "line": 5754,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddExtraConfigComponentNotEmptyExtraConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 62
+  }
+]

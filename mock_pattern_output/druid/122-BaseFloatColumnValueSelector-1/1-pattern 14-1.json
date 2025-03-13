@@ -1,0 +1,49 @@
+[
+  {
+    "variableName": "writeSelector",
+    "variableType": "BaseFloatColumnValueSelector",
+    "mockedClass": "BaseFloatColumnValueSelector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.frame.field",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\frame\\field\\FloatFieldReaderTest.java",
+      "className": "FloatFieldReaderTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\npublic BaseFloatColumnValueSelector writeSelector;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(writeSelector.isNull()).thenReturn(value == null);",
+        "line": 208,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "writeToMemory",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(writeSelector.getFloat()).thenReturn(value);",
+        "line": 211,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "writeToMemory",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  }
+]

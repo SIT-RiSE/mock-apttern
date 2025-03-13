@@ -1,0 +1,324 @@
+[
+  {
+    "variableName": "responseGeneratorMock",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.admin.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\admin\\vm\\MigrateVirtualMachineWithVolumeCmdTest.java",
+      "className": "MigrateVirtualMachineWithVolumeCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nResponseGenerator responseGeneratorMock;",
+        "line": 60,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGeneratorMock.createSystemVmResponse(virtualMachineMock)).thenReturn(systemVmResponse);",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestSystemVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseGeneratorMock, Mockito.times(1)).createSystemVmResponse(virtualMachineMock);",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestSystemVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGeneratorMock.createUserVmResponse(ResponseObject.ResponseView.Full, \"virtualmachine\", userVmMock)).thenReturn(List.of(userVmResponse));",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestUserVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseGeneratorMock, Mockito.times(1)).createUserVmResponse(ResponseObject.ResponseView.Full, \"virtualmachine\", userVmMock);",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestUserVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\AddHostCmdTest.java",
+      "className": "AddHostCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 54,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createHostResponse(host)).thenReturn(responseHost);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteForResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseGenerator).createHostResponse(host);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteForResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\ListCfgCmdTest.java",
+      "className": "ListCfgCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 47,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createConfigurationResponse(cfg)).thenReturn(cfgResponse);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseGenerator).createConfigurationResponse(cfg);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\UpdateCfgCmdTest.java",
+      "className": "UpdateCfgCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 45,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createConfigurationResponse(cfg)).thenReturn(response);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseGenerator).createConfigurationResponse(cfg);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\UpdateConditionCmdTest.java",
+      "className": "UpdateConditionCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ResponseGenerator responseGenerator;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "responseGenerator = Mockito.spy(ResponseGenerator.class);",
+        "line": 62,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createConditionResponse(condition)).thenReturn(conditionResponse);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(responseGenerator).createConditionResponse(condition);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

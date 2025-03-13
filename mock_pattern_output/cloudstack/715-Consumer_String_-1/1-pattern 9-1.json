@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "consumerStringMock",
+    "variableType": "Consumer<String>",
+    "mockedClass": "Consumer<String>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.response",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\response\\QuotaResponseBuilderImplTest.java",
+      "className": "QuotaResponseBuilderImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nConsumer<String> consumerStringMock;",
+        "line": 92,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(consumerStringMock, Mockito.never()).accept(Mockito.anyString());",
+        "line": 259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateStringsOnCreatingNewQuotaTariffTestNullValueDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(consumerStringMock).accept(null);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateStringsOnCreatingNewQuotaTariffTestEmptyValueCallMethodWithNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(consumerStringMock).accept(value);",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateStringsOnCreatingNewQuotaTariffTestValueCallMethodWithValue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "literal",
+    "variableType": "RexLiteral",
+    "mockedClass": "RexLiteral",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.sql.calcite.rule",
+      "filePath": "C:\\java tool\\Apache\\druid\\sql\\src\\test\\java\\org\\apache\\druid\\sql\\calcite\\rule\\DruidLogicalValuesRuleTest.java",
+      "className": "GetValueFromLiteralSimpleTypesTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RexLiteral literal = Mockito.spy(makeLiteral(val, sqlTypeName, javaType));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetValueFromLiteral",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(literal, Mockito.times(1)).getType();",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetValueFromLiteral",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

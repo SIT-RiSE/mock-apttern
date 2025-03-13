@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "quotaService",
+    "variableType": "QuotaService",
+    "mockedClass": "QuotaService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\QuotaCreditsCmdTest.java",
+      "className": "QuotaCreditsCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nQuotaService quotaService;",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(quotaService, Mockito.times(0)).setLockAccount(anyLong(), anyBoolean());",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaCreditsCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(quotaService, Mockito.times(1)).setMinBalance(anyLong(), anyDouble());",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQuotaCreditsCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

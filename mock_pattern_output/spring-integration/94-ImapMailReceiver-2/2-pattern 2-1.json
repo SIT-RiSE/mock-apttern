@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "receiver",
+    "variableType": "ImapMailReceiver",
+    "mockedClass": "ImapMailReceiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ImapMailReceiver receiver = spy(new ImapMailReceiver(\"imap:foo\"));",
+        "line": 954,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIdleReconnects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

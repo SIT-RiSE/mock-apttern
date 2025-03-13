@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "errorHandlerLogger",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\config\\SourcePollingChannelAdapterFactoryBeanTests.java",
+      "className": "SourcePollingChannelAdapterFactoryBeanTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log errorHandlerLogger = TestUtils.getPropertyValue(errorHandler, \"logger\", Log.class);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterrupted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "errorHandlerLogger = spy(errorHandlerLogger);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterrupted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(errorHandlerLogger);",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterrupted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "log",
+    "variableType": "Log",
+    "mockedClass": "Log",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.handler",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\handler\\AsyncHandlerTests.java",
+      "className": "AsyncHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Log log = spy(logAccessor.getLog());",
+        "line": 106,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 18
+  }
+]

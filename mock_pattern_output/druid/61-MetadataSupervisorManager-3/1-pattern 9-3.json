@@ -1,0 +1,131 @@
+[
+  {
+    "variableName": "mockMetadataSupervisorManager",
+    "variableType": "MetadataSupervisorManager",
+    "mockedClass": "MetadataSupervisorManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\KillDatasourceMetadataTest.java",
+      "className": "KillDatasourceMetadataTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MetadataSupervisorManager mockMetadataSupervisorManager;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(mockMetadataSupervisorManager);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunSkipIfLastRunLessThanPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "mockMetadataSupervisorManager",
+    "variableType": "MetadataSupervisorManager",
+    "mockedClass": "MetadataSupervisorManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\KillSupervisorsCustomDutyTest.java",
+      "className": "KillSupervisorsCustomDutyTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MetadataSupervisorManager mockMetadataSupervisorManager;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockMetadataSupervisorManager).removeTerminatedSupervisorsOlderThan(ArgumentMatchers.anyLong());",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRun",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "mockMetadataSupervisorManager",
+    "variableType": "MetadataSupervisorManager",
+    "mockedClass": "MetadataSupervisorManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\KillSupervisorsTest.java",
+      "className": "KillSupervisorsTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MetadataSupervisorManager mockMetadataSupervisorManager;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(mockMetadataSupervisorManager);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunSkipIfLastRunLessThanPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockMetadataSupervisorManager).removeTerminatedSupervisorsOlderThan(ArgumentMatchers.anyLong());",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunNotSkipIfLastRunMoreThanPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

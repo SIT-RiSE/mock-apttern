@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "prefix",
+    "variableType": "DataCenterGuestIpv6PrefixVO",
+    "mockedClass": "DataCenterGuestIpv6PrefixVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenterGuestIpv6PrefixVO prefix = Mockito.mock(DataCenterGuestIpv6PrefixVO.class);",
+        "line": 1117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConflictingCreateDataCenterGuestIpv6Prefix",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(prefix.getPrefix()).thenReturn(\"fd17:5:8a43:e2a4::/62\");",
+        "line": 1118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConflictingCreateDataCenterGuestIpv6Prefix",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "prefixVO",
+    "variableType": "DataCenterGuestIpv6PrefixVO",
+    "mockedClass": "DataCenterGuestIpv6PrefixVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenterGuestIpv6PrefixVO prefixVO = Mockito.mock(DataCenterGuestIpv6PrefixVO.class);",
+        "line": 1185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUsedDeleteDataCenterGuestIpv6Prefix",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(prefixVO.getId()).thenReturn(prefixId);",
+        "line": 1186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUsedDeleteDataCenterGuestIpv6Prefix",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "prefixVO",
+    "variableType": "DataCenterGuestIpv6PrefixVO",
+    "mockedClass": "DataCenterGuestIpv6PrefixVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataCenterGuestIpv6PrefixVO prefixVO = Mockito.mock(DataCenterGuestIpv6PrefixVO.class);",
+        "line": 1198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDataCenterGuestIpv6Prefix",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(prefixVO.getId()).thenReturn(prefixId);",
+        "line": 1199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDataCenterGuestIpv6Prefix",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

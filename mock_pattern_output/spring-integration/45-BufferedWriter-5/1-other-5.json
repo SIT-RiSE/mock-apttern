@@ -1,0 +1,269 @@
+[
+  {
+    "variableName": "bufferedWriter",
+    "variableType": "BufferedWriter",
+    "mockedClass": "BufferedWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.stream.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-stream\\src\\test\\java\\org\\springframework\\integration\\stream\\config\\ConsoleOutboundChannelAdapterParserTests.java",
+      "className": "ConsoleOutboundChannelAdapterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BufferedWriter bufferedWriter = TestUtils.getPropertyValue(this.stdoutAdapterWithDefaultCharsetHandler, \"writer\", BufferedWriter.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutAdapterWithDefaultCharset",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "bufferedWriter = Mockito.spy(bufferedWriter);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutAdapterWithDefaultCharset",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(bufferedWriter, times(1)).write(eq(\"foo\"));",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutAdapterWithDefaultCharset",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "bufferedWriter",
+    "variableType": "BufferedWriter",
+    "mockedClass": "BufferedWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.stream.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-stream\\src\\test\\java\\org\\springframework\\integration\\stream\\config\\ConsoleOutboundChannelAdapterParserTests.java",
+      "className": "ConsoleOutboundChannelAdapterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BufferedWriter bufferedWriter = TestUtils.getPropertyValue(this.stdoutAdapterWithProvidedCharsetHandler, \"writer\", BufferedWriter.class);",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutAdapterWithProvidedCharset",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "bufferedWriter = Mockito.spy(bufferedWriter);",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutAdapterWithProvidedCharset",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(bufferedWriter, times(1)).write(eq(\"bar\"));",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutAdapterWithProvidedCharset",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "bufferedWriter",
+    "variableType": "BufferedWriter",
+    "mockedClass": "BufferedWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.stream.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-stream\\src\\test\\java\\org\\springframework\\integration\\stream\\config\\ConsoleOutboundChannelAdapterParserTests.java",
+      "className": "ConsoleOutboundChannelAdapterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BufferedWriter bufferedWriter = TestUtils.getPropertyValue(this.stderrAdapterHandler, \"writer\", BufferedWriter.class);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stderrAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "bufferedWriter = Mockito.spy(bufferedWriter);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stderrAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(bufferedWriter, times(1)).write(eq(\"bar\"));",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stderrAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "bufferedWriter",
+    "variableType": "BufferedWriter",
+    "mockedClass": "BufferedWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.stream.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-stream\\src\\test\\java\\org\\springframework\\integration\\stream\\config\\ConsoleOutboundChannelAdapterParserTests.java",
+      "className": "ConsoleOutboundChannelAdapterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BufferedWriter bufferedWriter = TestUtils.getPropertyValue(this.newlineAdapterHandler, \"writer\", BufferedWriter.class);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutAdatperWithAppendNewLine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "bufferedWriter = Mockito.spy(bufferedWriter);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutAdatperWithAppendNewLine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(bufferedWriter, times(1)).write(eq(\"bar\"));",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutAdatperWithAppendNewLine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(bufferedWriter, times(1)).newLine();",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutAdatperWithAppendNewLine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "bufferedWriter",
+    "variableType": "BufferedWriter",
+    "mockedClass": "BufferedWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.stream.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-stream\\src\\test\\java\\org\\springframework\\integration\\stream\\config\\ConsoleOutboundChannelAdapterParserTests.java",
+      "className": "ConsoleOutboundChannelAdapterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BufferedWriter bufferedWriter = TestUtils.getPropertyValue(stdoutHandler, \"writer\", BufferedWriter.class);",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutInsideNestedChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "bufferedWriter = Mockito.spy(bufferedWriter);",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutInsideNestedChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(bufferedWriter, times(1)).write(eq(\"foobar\"));",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "stdoutInsideNestedChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "snapshotServiceMock",
+    "variableType": "SnapshotService",
+    "mockedClass": "SnapshotService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\snapshot\\SnapshotHelperTest.java",
+      "className": "SnapshotHelperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSnapshotService snapshotServiceMock;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(snapshotServiceMock, snapshotDataStoreDaoMock);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateExpungeTemporarySnapshotNotAKvmSnapshotOnPrimaryStorageDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(snapshotServiceMock).deleteSnapshot(Mockito.any());",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateExpungeTemporarySnapshotKvmSnapshotOnPrimaryStorageExpungesSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

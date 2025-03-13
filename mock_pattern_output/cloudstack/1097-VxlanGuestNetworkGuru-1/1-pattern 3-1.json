@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "guru",
+    "variableType": "VxlanGuestNetworkGuru",
+    "mockedClass": "VxlanGuestNetworkGuru",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\vxlan\\src\\test\\java\\com\\cloud\\network\\guru\\VxlanGuestNetworkGuruTest.java",
+      "className": "VxlanGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "VxlanGuestNetworkGuru guru;",
+        "line": 74,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "guru = spy(new VxlanGuestNetworkGuru());",
+        "line": 78,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

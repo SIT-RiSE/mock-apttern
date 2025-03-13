@@ -1,0 +1,140 @@
+[
+  {
+    "variableName": "resourceManager",
+    "variableType": "ResourceManager",
+    "mockedClass": "ResourceManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.lifecycle",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\lifecycle\\ScaleIOPrimaryDataStoreLifeCycleTest.java",
+      "className": "ScaleIOPrimaryDataStoreLifeCycleTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ResourceManager resourceManager;",
+        "line": 94,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(resourceManager.listAllUpAndEnabledHostsInOneZoneByHypervisor(Hypervisor.HypervisorType.KVM, 1L)).thenReturn(hostList);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "resourceManager",
+    "variableType": "ResourceManager",
+    "mockedClass": "ResourceManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.ha",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\ha\\KVMFencerTest.java",
+      "className": "KVMFencerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nResourceManager resourceManager;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resourceManager.listAllHostsInCluster(1l)).thenReturn(Collections.singletonList(host));",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithSingleHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resourceManager.listAllHostsInCluster(1l)).thenReturn(Collections.singletonList(host));",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithSingleHostDown",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resourceManager.listAllHostsInCluster(1l)).thenReturn(Arrays.asList(host, secondHost));",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithHosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resourceManager.listAllHostsInCluster(1l)).thenReturn(Arrays.asList(host, secondHost));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithFailingFence",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(resourceManager.listAllHostsInCluster(1l)).thenReturn(Arrays.asList(host, secondHost));",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithTimeoutingFence",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(resourceManager.listAllHostsInCluster(1l)).thenReturn(Collections.singletonList(host));",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithSingleNotKVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

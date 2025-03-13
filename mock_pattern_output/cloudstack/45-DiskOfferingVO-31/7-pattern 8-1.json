@@ -1,0 +1,161 @@
+[
+  {
+    "variableName": "newDiskOfferingMock",
+    "variableType": "DiskOfferingVO",
+    "mockedClass": "DiskOfferingVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate DiskOfferingVO newDiskOfferingMock;",
+        "line": 209,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(newDiskOfferingMock.isUseLocalStorage()).thenReturn(true);",
+        "line": 715,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestTargetPoolSharedDiskOfferingLocal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(newDiskOfferingMock.isShared()).thenReturn(true);",
+        "line": 724,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestTargetPoolLocalDiskOfferingShared",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(newDiskOfferingMock.isUseLocalStorage()).thenReturn(false);",
+        "line": 734,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestTagsDoNotMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(newDiskOfferingMock.isShared()).thenReturn(true);",
+        "line": 737,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestTagsDoNotMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(newDiskOfferingMock.getTags()).thenReturn(\"tag1\");",
+        "line": 740,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestTagsDoNotMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(newDiskOfferingMock.isUseLocalStorage()).thenReturn(false);",
+        "line": 751,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestEverythingWorking",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(newDiskOfferingMock.isShared()).thenReturn(true);",
+        "line": 754,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestEverythingWorking",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(newDiskOfferingMock.getTags()).thenReturn(\"tag1\");",
+        "line": 757,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestEverythingWorking",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(newDiskOfferingMock).isUseLocalStorage();",
+        "line": 765,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestEverythingWorking",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(newDiskOfferingMock, times(0)).isShared();",
+        "line": 767,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestEverythingWorking",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(newDiskOfferingMock).getDiskSize();",
+        "line": 771,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConditionsToReplaceDiskOfferingOfVolumeTestEverythingWorking",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

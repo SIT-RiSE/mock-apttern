@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "oauth2",
+    "variableType": "OAuth2ResourceServerBeanDefinitionParser",
+    "mockedClass": "OAuth2ResourceServerBeanDefinitionParser",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2ResourceServerBeanDefinitionParser oauth2 = new OAuth2ResourceServerBeanDefinitionParser(mock(BeanReference.class), mock(List.class), mock(Map.class), mock(Map.class), mock(List.class), mock(BeanMetadataElement.class));",
+        "line": 526,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getBearerTokenResolverWhenNoResolverSpecifiedThenTheDefaultIsUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

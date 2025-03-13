@@ -1,0 +1,599 @@
+[
+  {
+    "variableName": "match2",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\DelegatingReactiveAuthorizationManagerTests.java",
+      "className": "DelegatingReactiveAuthorizationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nServerWebExchangeMatcher match2;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.match2, this.delegate2);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenFirstMatchesThenNoMoreMatchersAndNoMoreDelegatesInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.match2.matches(any())).willReturn(ServerWebExchangeMatcher.MatchResult.match());",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenSecondMatchesThenNoMoreMatchersAndNoMoreDelegatesInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "matcher",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.header",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\header\\ServerWebExchangeDelegatingServerHttpHeadersWriterTests.java",
+      "className": "ServerWebExchangeDelegatingServerHttpHeadersWriterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerWebExchangeMatcher matcher;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.match(Collections.emptyMap()));",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeHeadersWhenMatchThenDelegateWriteHttpHeaders",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.notMatch());",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeHeadersWhenNoMatchThenDelegateNotCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher).matches(this.exchange);",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeHeadersWhenNoMatchThenDelegateNotCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "matcher2",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\util\\matcher\\AndServerWebExchangeMatcherTests.java",
+      "className": "AndServerWebExchangeMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nServerWebExchangeMatcher matcher2;",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher2.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.match(params2));",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueTrueThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher2).matches(this.exchange);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueTrueThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher2, never()).matches(this.exchange);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseFalseThenFalseAndMatcher2NotInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher2.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.notMatch());",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueFalseThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher2).matches(this.exchange);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueFalseThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher2, never()).matches(this.exchange);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseTrueThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "matcher1",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\util\\matcher\\AndServerWebExchangeMatcherTests.java",
+      "className": "AndServerWebExchangeMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nServerWebExchangeMatcher matcher1;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.match(params1));",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueTrueThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher1).matches(this.exchange);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueTrueThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.notMatch());",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseFalseThenFalseAndMatcher2NotInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher1).matches(this.exchange);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseFalseThenFalseAndMatcher2NotInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.match(params));",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueFalseThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher1).matches(this.exchange);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueFalseThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.notMatch());",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseTrueThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher1).matches(this.exchange);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseTrueThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "matcher1",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\util\\matcher\\NegatedServerWebExchangeMatcherTests.java",
+      "className": "NegatedServerWebExchangeMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nServerWebExchangeMatcher matcher1;",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.notMatch());",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher1).matches(this.exchange);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.match());",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher1).matches(this.exchange);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "matcher2",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\util\\matcher\\OrServerWebExchangeMatcherTests.java",
+      "className": "OrServerWebExchangeMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nServerWebExchangeMatcher matcher2;",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher2.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.notMatch());",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseFalseThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher2).matches(this.exchange);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseFalseThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher2, never()).matches(this.exchange);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueFalseThenTrueAndMatcher2NotInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher2.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.match(params));",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseTrueThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher2).matches(this.exchange);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseTrueThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "matcher1",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\util\\matcher\\OrServerWebExchangeMatcherTests.java",
+      "className": "OrServerWebExchangeMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nServerWebExchangeMatcher matcher1;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.notMatch());",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseFalseThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher1).matches(this.exchange);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseFalseThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.match(params));",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueFalseThenTrueAndMatcher2NotInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher1).matches(this.exchange);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenTrueFalseThenTrueAndMatcher2NotInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher1.matches(this.exchange)).willReturn(ServerWebExchangeMatcher.MatchResult.notMatch());",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseTrueThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.matcher1).matches(this.exchange);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenFalseTrueThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

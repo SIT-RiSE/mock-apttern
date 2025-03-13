@@ -1,0 +1,27 @@
+[
+  {
+    "variableName": "callBinding",
+    "variableType": "SqlCallBinding",
+    "mockedClass": "SqlCallBinding",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.sql.calcite.expression",
+      "filePath": "C:\\java tool\\Apache\\druid\\sql\\src\\test\\java\\org\\apache\\druid\\sql\\calcite\\expression\\OperatorConversionsTest.java",
+      "className": "DefaultOperandTypeCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SqlCallBinding callBinding = new SqlCallBinding(validator, Mockito.mock(SqlValidatorScope.class), function.createCall(pos, operands));",
+        "line": 493,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 17
+  }
+]

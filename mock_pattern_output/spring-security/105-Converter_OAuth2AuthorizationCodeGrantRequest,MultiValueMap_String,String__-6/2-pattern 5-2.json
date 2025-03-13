@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "parametersConverter1",
+    "variableType": "Converter<OAuth2AuthorizationCodeGrantRequest,MultiValueMap<String,String>>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\OAuth2AuthorizationCodeGrantRequestEntityConverterTests.java",
+      "className": "OAuth2AuthorizationCodeGrantRequestEntityConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2AuthorizationCodeGrantRequest, MultiValueMap<String, String>> parametersConverter1 = mock(Converter.class);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenParametersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(parametersConverter1).convert(any(OAuth2AuthorizationCodeGrantRequest.class));",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenParametersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "parametersConverter2",
+    "variableType": "Converter<OAuth2AuthorizationCodeGrantRequest,MultiValueMap<String,String>>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\OAuth2AuthorizationCodeGrantRequestEntityConverterTests.java",
+      "className": "OAuth2AuthorizationCodeGrantRequestEntityConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2AuthorizationCodeGrantRequest, MultiValueMap<String, String>> parametersConverter2 = mock(Converter.class);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenParametersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(parametersConverter2).convert(any(OAuth2AuthorizationCodeGrantRequest.class));",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenParametersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

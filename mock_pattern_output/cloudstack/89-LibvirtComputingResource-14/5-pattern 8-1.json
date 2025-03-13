@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "libvirtComputingResourceMock",
+    "variableType": "LibvirtComputingResource",
+    "mockedClass": "LibvirtComputingResource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource.wrapper",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\wrapper\\LibvirtGetAutoScaleMetricsCommandWrapperTest.java",
+      "className": "LibvirtGetAutoScaleMetricsCommandWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nLibvirtComputingResource libvirtComputingResourceMock;",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "PowerMockito.when(libvirtComputingResourceMock.getVPCNetworkStats(Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(vpcStats);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateVpcStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "PowerMockito.when(libvirtComputingResourceMock.getNetworkLbStats(Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(lbStats);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateVpcStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(libvirtComputingResourceMock, Mockito.never()).getNetworkStats(Mockito.any(), Mockito.any());",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateVpcStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "PowerMockito.when(libvirtComputingResourceMock.getNetworkStats(Mockito.any(), Mockito.any())).thenReturn(networkStats);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateNetworkStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "PowerMockito.when(libvirtComputingResourceMock.getNetworkLbStats(Mockito.any(), Mockito.any(), Mockito.any())).thenReturn(lbStats);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateNetworkStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(libvirtComputingResourceMock, Mockito.never()).getVPCNetworkStats(Mockito.any(), Mockito.any(), Mockito.any());",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateNetworkStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

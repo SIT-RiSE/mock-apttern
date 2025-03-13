@@ -1,0 +1,137 @@
+[
+  {
+    "variableName": "vmTemplateDao",
+    "variableType": "VMTemplateDao",
+    "mockedClass": "VMTemplateDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.discoverer",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\discoverer\\XcpServerDiscovererTest.java",
+      "className": "XcpServerDiscovererTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VMTemplateDao vmTemplateDao;",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTemplateDao.findByTemplateName(TemplateManager.XS_TOOLS_ISO)).thenReturn(null);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestNoEntryFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTemplateDao.getNextInSequence(Long.class, \"id\")).thenReturn(1L);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestNoEntryFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(vmTemplateDao).findByTemplateName(TemplateManager.XS_TOOLS_ISO);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestNoEntryFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(vmTemplateDao).getNextInSequence(Long.class, \"id\");",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestNoEntryFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(vmTemplateDao).persist(Mockito.any(VMTemplateVO.class));",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestNoEntryFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmTemplateDao.findByTemplateName(TemplateManager.XS_TOOLS_ISO)).thenReturn(vmTemplateVOMock);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestEntryAlreadyExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(vmTemplateDao).findByTemplateName(TemplateManager.XS_TOOLS_ISO);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestEntryAlreadyExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(vmTemplateDao, Mockito.times(0)).getNextInSequence(Long.class, \"id\");",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestEntryAlreadyExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(vmTemplateDao).update(1L, vmTemplateVOMock);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createXenServerToolsIsoEntryInDatabaseTestEntryAlreadyExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

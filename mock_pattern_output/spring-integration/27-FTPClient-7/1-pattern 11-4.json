@@ -1,0 +1,534 @@
+[
+  {
+    "variableName": "ftpClient",
+    "variableType": "FTPClient",
+    "mockedClass": "FTPClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\inbound\\FtpInboundRemoteFileSystemSynchronizerTests.java",
+      "className": "FtpInboundRemoteFileSystemSynchronizerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private static FTPClient ftpClient = mock(FTPClient.class);",
+        "line": 72,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.getReplyCode()).thenReturn(250);",
+        "line": 244,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.login(\"kermit\", \"frog\")).thenReturn(true);",
+        "line": 245,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.changeWorkingDirectory(Mockito.anyString())).thenReturn(true);",
+        "line": 246,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.retrieveFile(Mockito.eq(\"remote-test-dir/\" + fileName), Mockito.any(OutputStream.class))).thenReturn(true);",
+        "line": 250,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.listFiles(\"remote-test-dir\")).thenReturn(ftpFiles.toArray(new FTPFile[0]));",
+        "line": 253,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.deleteFile(Mockito.anyString())).thenReturn(true);",
+        "line": 255,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.getRemoteAddress()).thenReturn(InetAddress.getByName(\"localhost\"));",
+        "line": 256,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.getRemotePort()).thenReturn(-1);",
+        "line": 257,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "ftpClient",
+    "variableType": "FTPClient",
+    "mockedClass": "FTPClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\inbound\\FtpInboundRemoteFileSystemSynchronizerTests.java",
+      "className": "FtpInboundRemoteFileSystemSynchronizerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private static FTPClient ftpClient = mock(FTPClient.class);",
+        "line": 72,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.getReplyCode()).thenReturn(250);",
+        "line": 244,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.login(\"kermit\", \"frog\")).thenReturn(true);",
+        "line": 245,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.changeWorkingDirectory(Mockito.anyString())).thenReturn(true);",
+        "line": 246,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.retrieveFile(Mockito.eq(\"remote-test-dir/\" + fileName), Mockito.any(OutputStream.class))).thenReturn(true);",
+        "line": 250,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.listFiles(\"remote-test-dir\")).thenReturn(ftpFiles.toArray(new FTPFile[0]));",
+        "line": 253,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.deleteFile(Mockito.anyString())).thenReturn(true);",
+        "line": 255,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.getRemoteAddress()).thenReturn(InetAddress.getByName(\"localhost\"));",
+        "line": 256,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.getRemotePort()).thenReturn(-1);",
+        "line": 257,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "ftpClient",
+    "variableType": "FTPClient",
+    "mockedClass": "FTPClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\outbound\\FtpOutboundTests.java",
+      "className": "FtpOutboundTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private static FTPClient ftpClient;",
+        "line": 71,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "ftpClient = mock(FTPClient.class);",
+        "line": 77,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "prepare",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.getReplyCode()).thenReturn(250);",
+        "line": 224,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.login(\"kermit\", \"frog\")).thenReturn(true);",
+        "line": 225,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.changeWorkingDirectory(Mockito.anyString())).thenReturn(true);",
+        "line": 226,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.printWorkingDirectory()).thenReturn(\"remote-target-dir\");",
+        "line": 227,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.storeFile(Mockito.anyString(), any(InputStream.class))).thenAnswer(invocation -> {\r\n    String fileName = invocation.getArgument(0);\r\n    InputStream fis = invocation.getArgument(1);\r\n    FileCopyUtils.copy(fis, new FileOutputStream(fileName));\r\n    return true;\r\n});",
+        "line": 228,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.rename(Mockito.anyString(), Mockito.anyString())).thenAnswer(invocation -> {\r\n    File file = new File((String) invocation.getArgument(0));\r\n    File renameToFile = new File((String) invocation.getArgument(1));\r\n    file.renameTo(renameToFile);\r\n    return true;\r\n});",
+        "line": 234,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.retrieveFile(Mockito.eq(\"remote-test-dir/\" + fileName), any(OutputStream.class))).thenReturn(true);",
+        "line": 248,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.listFiles(\"remote-test-dir/\")).thenReturn(ftpFiles.toArray(new FTPFile[0]));",
+        "line": 251,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.getRemoteAddress()).thenReturn(InetAddress.getByName(\"127.0.0.1\"));",
+        "line": 253,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 11
+  },
+  {
+    "variableName": "ftpClient",
+    "variableType": "FTPClient",
+    "mockedClass": "FTPClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\outbound\\FtpOutboundTests.java",
+      "className": "FtpOutboundTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private static FTPClient ftpClient;",
+        "line": 71,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "ftpClient = mock(FTPClient.class);",
+        "line": 77,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "prepare",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.getReplyCode()).thenReturn(250);",
+        "line": 224,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.login(\"kermit\", \"frog\")).thenReturn(true);",
+        "line": 225,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.changeWorkingDirectory(Mockito.anyString())).thenReturn(true);",
+        "line": 226,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.printWorkingDirectory()).thenReturn(\"remote-target-dir\");",
+        "line": 227,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.storeFile(Mockito.anyString(), any(InputStream.class))).thenAnswer(invocation -> {\r\n    String fileName = invocation.getArgument(0);\r\n    InputStream fis = invocation.getArgument(1);\r\n    FileCopyUtils.copy(fis, new FileOutputStream(fileName));\r\n    return true;\r\n});",
+        "line": 228,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.rename(Mockito.anyString(), Mockito.anyString())).thenAnswer(invocation -> {\r\n    File file = new File((String) invocation.getArgument(0));\r\n    File renameToFile = new File((String) invocation.getArgument(1));\r\n    file.renameTo(renameToFile);\r\n    return true;\r\n});",
+        "line": 234,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.retrieveFile(Mockito.eq(\"remote-test-dir/\" + fileName), any(OutputStream.class))).thenReturn(true);",
+        "line": 248,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.listFiles(\"remote-test-dir/\")).thenReturn(ftpFiles.toArray(new FTPFile[0]));",
+        "line": 251,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ftpClient.getRemoteAddress()).thenReturn(InetAddress.getByName(\"127.0.0.1\"));",
+        "line": 253,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createClientInstance",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

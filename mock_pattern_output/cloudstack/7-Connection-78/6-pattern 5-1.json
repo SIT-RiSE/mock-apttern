@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "conn",
+    "variableType": "Connection",
+    "mockedClass": "Connection",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils.ssh",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\com\\cloud\\utils\\ssh\\SshHelperTest.java",
+      "className": "SshHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Connection conn = Mockito.mock(Connection.class);",
+        "line": 145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openConnectionSessionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(conn).openSession();",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openConnectionSessionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

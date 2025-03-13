@@ -1,0 +1,519 @@
+[
+  {
+    "variableName": "client",
+    "variableType": "NexentaNmsClient",
+    "mockedClass": "NexentaNmsClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.util",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\nexenta\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\util\\NexentaStorApplianceTest.java",
+      "className": "NexentaStorApplianceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private NexentaNmsClient client;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "//client = new NexentaNmsClient(parameters.getNmsUrl());\r\nclient = mock(NexentaNmsClient.class);",
+        "line": 64,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "init",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfIscsiTargetsNmsResponse.class, \"stmf\", \"list_targets\")).thenReturn(null);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIscsiTargetExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfIscsiTargetsNmsResponse.class, \"stmf\", \"list_targets\")).thenReturn(new ListOfIscsiTargetsNmsResponse());",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIscsiTargetExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfIscsiTargetsNmsResponse.class, \"stmf\", \"list_targets\")).thenReturn(new ListOfIscsiTargetsNmsResponse(result));",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIscsiTargetExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfIscsiTargetsNmsResponse.class, \"stmf\", \"list_targets\")).thenReturn(new ListOfIscsiTargetsNmsResponse(result));",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIscsiTargetExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).execute(NmsResponse.class, \"iscsitarget\", \"create_target\", p);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateIscsiTarget",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(NmsResponse.class, \"iscsitarget\", \"create_target\", p)).thenThrow(new CloudRuntimeException(error));",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateIscsiTarget",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(NmsResponse.class, \"iscsitarget\", \"create_target\", p)).thenThrow(new CloudRuntimeException(\"any exception\"));",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateIscsiTargetFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfStringsNmsResponse.class, \"stmf\", \"list_targetgroups\")).thenReturn(null);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIscsiTargetGroupExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfIscsiTargetsNmsResponse.class, \"stmf\", \"list_targetgroups\")).thenReturn(new ListOfIscsiTargetsNmsResponse());",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIscsiTargetGroupExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfStringsNmsResponse.class, \"stmf\", \"list_targetgroups\")).thenReturn(new ListOfStringsNmsResponse(result));",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIscsiTargetGroupExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfStringsNmsResponse.class, \"stmf\", \"list_targetgroups\")).thenReturn(new ListOfStringsNmsResponse(result));",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsIscsiTargetGroupExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).execute(NmsResponse.class, \"stmf\", \"create_targetgroup\", targetGroupName);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateIscsiTargetGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(NmsResponse.class, \"stmf\", \"create_targetgroup\", targetGroupName)).thenThrow(new CloudRuntimeException(error));",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateIscsiTargetGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(NmsResponse.class, \"stmf\", \"create_targetgroup\", targetGroupName)).thenThrow(new CloudRuntimeException(\"any exception\"));",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateIscsiTargetGroupFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfStringsNmsResponse.class, \"stmf\", \"list_targetgroup_members\", targetGroupName)).thenReturn(null);",
+        "line": 164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsMemberOfTargetGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfStringsNmsResponse.class, \"stmf\", \"list_targetgroup_members\", targetGroupName)).thenReturn(new ListOfStringsNmsResponse());",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsMemberOfTargetGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfStringsNmsResponse.class, \"stmf\", \"list_targetgroup_members\", targetGroupName)).thenReturn(new ListOfStringsNmsResponse(result));",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsMemberOfTargetGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(ListOfStringsNmsResponse.class, \"stmf\", \"list_targetgroup_members\", targetGroupName)).thenReturn(new ListOfStringsNmsResponse(result));",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsMemberOfTargetGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).execute(NmsResponse.class, \"stmf\", \"add_targetgroup_member\", targetGroupName, targetName);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddTargetGroupMember",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(NmsResponse.class, \"stmf\", \"add_targetgroup_member\", targetGroupName, targetName)).thenThrow(new CloudRuntimeException(error));",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddTargetGroupMember",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(NmsResponse.class, \"stmf\", \"add_targetgroup_member\", targetGroupName, targetName)).thenThrow(new CloudRuntimeException(\"any exception\"));",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddTargetGroupMemberFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(IntegerNmsResponse.class, \"scsidisk\", \"lu_exists\", volumeName)).thenReturn(null);",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsLuExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(IntegerNmsResponse.class, \"scsidisk\", \"lu_exists\", volumeName)).thenReturn(new IntegerNmsResponse(0));",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsLuExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(IntegerNmsResponse.class, \"scsidisk\", \"lu_exists\", volumeName)).thenReturn(new IntegerNmsResponse(1));",
+        "line": 216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsLuExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(IntegerNmsResponse.class, \"scsidisk\", \"lu_exists\", volumeName)).thenThrow(new CloudRuntimeException(\"does not exist\"));",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsLuExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(IntegerNmsResponse.class, \"scsidisk\", \"lu_exists\", volumeName)).thenThrow(new CloudRuntimeException(\"any exception\"));",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsLuExistsFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).execute(NmsResponse.class, \"scsidisk\", \"create_lu\", luName, p);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLu",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(NmsResponse.class, \"scsidisk\", \"create_lu\", luName, p)).thenThrow(new CloudRuntimeException(error));",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLu",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(NmsResponse.class, \"scsidisk\", \"create_lu\", luName, new LuParams())).thenThrow(new CloudRuntimeException(\"any exception\"));",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateLuFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(IntegerNmsResponse.class, \"scsidisk\", \"lu_shared\", luName)).thenReturn(null);",
+        "line": 262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsLuShared",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(IntegerNmsResponse.class, \"scsidisk\", \"lu_shared\", luName)).thenReturn(new IntegerNmsResponse(0));",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsLuShared",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(IntegerNmsResponse.class, \"scsidisk\", \"lu_shared\", luName)).thenReturn(new IntegerNmsResponse(1));",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsLuShared",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(IntegerNmsResponse.class, \"scsidisk\", \"lu_shared\", luName)).thenThrow(new CloudRuntimeException(error));",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsLuShared",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(IntegerNmsResponse.class, \"scsidisk\", \"lu_shared\", luName)).thenThrow(new CloudRuntimeException(\"any exception\"));",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsLuSharedFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).execute(AddMappingEntryNmsResponse.class, \"scsidisk\", \"add_lun_mapping_entry\", luName, mappingEntry);",
+        "line": 294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddLuMappingEntry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(AddMappingEntryNmsResponse.class, \"scsidisk\", \"add_lun_mapping_entry\", luName, mappingEntry)).thenThrow(new CloudRuntimeException(error));",
+        "line": 297,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddLuMappingEntry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(AddMappingEntryNmsResponse.class, \"scsidisk\", \"add_lun_mapping_entry\", luName, mappingEntry)).thenThrow(new CloudRuntimeException(\"any exception\"));",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddLuMappingEntryTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).execute(NmsResponse.class, \"zvol\", \"destroy\", volumeName, \"\");",
+        "line": 323,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteIscsiVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(NmsResponse.class, \"zvol\", \"destroy\", volumeName, \"\")).thenThrow(new CloudRuntimeException(String.format(\"Zvol '%s' does not exist\", volumeName)));",
+        "line": 325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteIscsiVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.execute(NmsResponse.class, \"zvol\", \"destroy\", volumeName, \"\")).thenThrow(new CloudRuntimeException(\"any exception\"));",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteIscsiVolumeFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

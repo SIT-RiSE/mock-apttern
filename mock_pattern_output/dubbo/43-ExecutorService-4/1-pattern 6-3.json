@@ -1,0 +1,239 @@
+[
+  {
+    "variableName": "executor",
+    "variableType": "ExecutorService",
+    "mockedClass": "ExecutorService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\ExecutorUtilTest.java",
+      "className": "ExecutorUtilTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ExecutorService executor = Mockito.mock(ExecutorService.class);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(executor.isTerminated()).thenReturn(false, true);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(executor.awaitTermination(20, TimeUnit.MILLISECONDS)).thenReturn(false);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(executor).shutdown();",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(executor).shutdownNow();",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "executor",
+    "variableType": "ExecutorService",
+    "mockedClass": "ExecutorService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\ExecutorUtilTest.java",
+      "className": "ExecutorUtilTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ExecutorService executor = Mockito.mock(ExecutorService.class);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(executor.isTerminated()).thenReturn(false, false, false);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(executor.awaitTermination(20, TimeUnit.MILLISECONDS)).thenReturn(false);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(executor.awaitTermination(10, TimeUnit.MILLISECONDS)).thenReturn(false, true);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(executor, times(2)).awaitTermination(10, TimeUnit.MILLISECONDS);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(executor, times(1)).shutdown();",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(executor, times(3)).shutdownNow();",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGracefulShutdown2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "executor",
+    "variableType": "ExecutorService",
+    "mockedClass": "ExecutorService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\ExecutorUtilTest.java",
+      "className": "ExecutorUtilTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ExecutorService executor = Mockito.mock(ExecutorService.class);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdownNow",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(executor.isTerminated()).thenReturn(false, true);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdownNow",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(executor).shutdownNow();",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdownNow",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(executor).awaitTermination(20, TimeUnit.MILLISECONDS);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testShutdownNow",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

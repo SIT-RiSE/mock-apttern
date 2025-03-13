@@ -1,0 +1,121 @@
+[
+  {
+    "variableName": "storagePoolDetailsDao",
+    "variableType": "StoragePoolDetailsDao",
+    "mockedClass": "StoragePoolDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nStoragePoolDetailsDao storagePoolDetailsDao;",
+        "line": 79,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolDetailsDao.findDetail(1L, ScaleIOGatewayClient.STORAGE_POOL_SYSTEM_ID)).thenReturn(srcPoolSystemIdDetail);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSameScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolDetailsDao.findDetail(2L, ScaleIOGatewayClient.STORAGE_POOL_SYSTEM_ID)).thenReturn(destPoolSystemIdDetail);",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSameScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolDetailsDao.findDetail(1L, ScaleIOGatewayClient.STORAGE_POOL_SYSTEM_ID)).thenReturn(srcPoolSystemIdDetail);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDifferentScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolDetailsDao.findDetail(2L, ScaleIOGatewayClient.STORAGE_POOL_SYSTEM_ID)).thenReturn(destPoolSystemIdDetail);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDifferentScaleIOStorageInstance",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolDetailsDao.findDetail(1L, ScaleIOGatewayClient.STORAGE_POOL_SYSTEM_ID)).thenReturn(srcPoolSystemIdDetail);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckVolumeOnDifferentScaleIOStorageInstanceSystemIdShouldNotBeNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolDetailsDao.findDetail(2L, ScaleIOGatewayClient.STORAGE_POOL_SYSTEM_ID)).thenReturn(destPoolSystemIdDetail);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckVolumeOnDifferentScaleIOStorageInstanceSystemIdShouldNotBeNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolDetailsDao.findDetail(1L, ScaleIOGatewayClient.STORAGE_POOL_SYSTEM_ID)).thenReturn(srcStoragePoolDetail);",
+        "line": 267,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "fillSrcVolumeDetails",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolDetailsDao.findDetail(2L, ScaleIOGatewayClient.STORAGE_POOL_SYSTEM_ID)).thenReturn(srcStoragePoolDetail);",
+        "line": 286,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "fillDestVolumeDetails",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 25
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "variableName": "delegate",
+    "variableType": "DelegatingOAuth2AuthorizedClientProvider",
+    "mockedClass": "DelegatingOAuth2AuthorizedClientProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\DelegatingOAuth2AuthorizedClientProviderTests.java",
+      "className": "DelegatingOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DelegatingOAuth2AuthorizedClientProvider delegate = new DelegatingOAuth2AuthorizedClientProvider(mock(OAuth2AuthorizedClientProvider.class));",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenContextIsNullThenThrowIllegalArgumentException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "DelegatingOAuth2AuthorizedClientProvider",
+    "mockedClass": "DelegatingOAuth2AuthorizedClientProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\DelegatingOAuth2AuthorizedClientProviderTests.java",
+      "className": "DelegatingOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DelegatingOAuth2AuthorizedClientProvider delegate = new DelegatingOAuth2AuthorizedClientProvider(mock(OAuth2AuthorizedClientProvider.class), mock(OAuth2AuthorizedClientProvider.class), authorizedClientProvider);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCanAuthorizeThenReturnAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "DelegatingOAuth2AuthorizedClientProvider",
+    "mockedClass": "DelegatingOAuth2AuthorizedClientProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\DelegatingOAuth2AuthorizedClientProviderTests.java",
+      "className": "DelegatingOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DelegatingOAuth2AuthorizedClientProvider delegate = new DelegatingOAuth2AuthorizedClientProvider(mock(OAuth2AuthorizedClientProvider.class), mock(OAuth2AuthorizedClientProvider.class));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCantAuthorizeThenReturnNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

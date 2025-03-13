@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "requestCache",
+    "variableType": "ServerRequestCache",
+    "mockedClass": "ServerRequestCache",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerRequestCache requestCache = spy(new WebSessionServerRequestCache());",
+        "line": 600,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureRequestCacheForOAuth2LoginAuthenticationEntryPointAndSuccessHandler",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(requestCache).saveRequest(captor.capture());",
+        "line": 615,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureRequestCacheForOAuth2LoginAuthenticationEntryPointAndSuccessHandler",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

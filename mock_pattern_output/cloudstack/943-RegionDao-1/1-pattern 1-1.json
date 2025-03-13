@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "regionDao",
+    "variableType": "RegionDao",
+    "mockedClass": "RegionDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.region",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\region\\RegionManagerTest.java",
+      "className": "RegionManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RegionDao regionDao = Mockito.mock(RegionDao.class);",
+        "line": 39,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUniqueName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(regionDao.findByName(Matchers.anyString())).thenReturn(region);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUniqueName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

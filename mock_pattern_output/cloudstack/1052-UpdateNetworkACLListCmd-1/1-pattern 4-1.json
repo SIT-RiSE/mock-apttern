@@ -1,0 +1,159 @@
+[
+  {
+    "variableName": "updateNetworkACLListCmdMock",
+    "variableType": "UpdateNetworkACLListCmd",
+    "mockedClass": "UpdateNetworkACLListCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UpdateNetworkACLListCmd updateNetworkACLListCmdMock;",
+        "line": 102,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLListCmdMock.getName()).thenReturn(name);",
+        "line": 875,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLListCmdMock.getDescription()).thenReturn(description);",
+        "line": 876,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLListCmdMock.getCustomId()).thenReturn(customId);",
+        "line": 877,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLListCmdMock.getId()).thenReturn(networkAclListId);",
+        "line": 878,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLListCmdMock.getDisplay()).thenReturn(false);",
+        "line": 879,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLListCmdMock.getName()).thenReturn(null);",
+        "line": 1075,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLListCmdMock.getDescription()).thenReturn(null);",
+        "line": 1076,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLListCmdMock.getCustomId()).thenReturn(null);",
+        "line": 1077,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLListCmdMock.getId()).thenReturn(networkAclListId);",
+        "line": 1078,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLListCmdMock.getDisplay()).thenReturn(null);",
+        "line": 1079,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

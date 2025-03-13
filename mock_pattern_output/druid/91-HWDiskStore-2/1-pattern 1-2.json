@@ -1,0 +1,368 @@
+[
+  {
+    "variableName": "disk1",
+    "variableType": "HWDiskStore",
+    "mockedClass": "HWDiskStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\OshiSysMonitorTest.java",
+      "className": "OshiSysMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HWDiskStore disk1 = Mockito.mock(HWDiskStore.class);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getReadBytes()).thenReturn(300L);",
+        "line": 234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getReads()).thenReturn(200L);",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getWriteBytes()).thenReturn(400L);",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getWrites()).thenReturn(500L);",
+        "line": 237,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getCurrentQueueLength()).thenReturn(100L);",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getTransferTime()).thenReturn(150L);",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getName()).thenReturn(\"disk1\");",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getReadBytes()).thenReturn(400L);",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getReads()).thenReturn(220L);",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getWriteBytes()).thenReturn(600L);",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getWrites()).thenReturn(580L);",
+        "line": 259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getCurrentQueueLength()).thenReturn(300L);",
+        "line": 260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk1.getTransferTime()).thenReturn(250L);",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "disk2",
+    "variableType": "HWDiskStore",
+    "mockedClass": "HWDiskStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\OshiSysMonitorTest.java",
+      "className": "OshiSysMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "HWDiskStore disk2 = Mockito.mock(HWDiskStore.class);",
+        "line": 233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getReadBytes()).thenReturn(2000L);",
+        "line": 241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getReads()).thenReturn(3000L);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getWriteBytes()).thenReturn(1000L);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getWrites()).thenReturn(4000L);",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getCurrentQueueLength()).thenReturn(750L);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getTransferTime()).thenReturn(800L);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getName()).thenReturn(\"disk2\");",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getReadBytes()).thenReturn(4500L);",
+        "line": 262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getReads()).thenReturn(3500L);",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getWriteBytes()).thenReturn(2300L);",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getWrites()).thenReturn(5000L);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getCurrentQueueLength()).thenReturn(900L);",
+        "line": 266,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(disk2.getTransferTime()).thenReturn(1100L);",
+        "line": 267,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDiskStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

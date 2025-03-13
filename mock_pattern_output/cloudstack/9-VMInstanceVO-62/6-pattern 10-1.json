@@ -1,0 +1,47 @@
+[
+  {
+    "variableName": "instance",
+    "variableType": "VMInstanceVO",
+    "mockedClass": "VMInstanceVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMInstanceVO instance = Mockito.mock(VMInstanceVO.class);",
+        "line": 290,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareEndpointForVolumeOperation",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(instance.getHostId()).thenReturn(4L);",
+        "line": 293,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareEndpointForVolumeOperation",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(instance.getState()).thenReturn(VirtualMachine.State.Running);",
+        "line": 294,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareEndpointForVolumeOperation",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

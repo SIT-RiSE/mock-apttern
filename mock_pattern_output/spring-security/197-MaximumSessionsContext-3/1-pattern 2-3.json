@@ -1,0 +1,83 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "MaximumSessionsContext",
+    "mockedClass": "MaximumSessionsContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication.session",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\session\\InvalidateLeastUsedServerMaximumSessionsExceededHandlerTests.java",
+      "className": "InvalidateLeastUsedServerMaximumSessionsExceededHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MaximumSessionsContext context = new MaximumSessionsContext(mock(Authentication.class), List.of(session1, session2), 2, createWebSession());",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenInvokedThenInvalidatesLeastRecentlyUsedSessions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "context",
+    "variableType": "MaximumSessionsContext",
+    "mockedClass": "MaximumSessionsContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication.session",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\session\\InvalidateLeastUsedServerMaximumSessionsExceededHandlerTests.java",
+      "className": "InvalidateLeastUsedServerMaximumSessionsExceededHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MaximumSessionsContext context = new MaximumSessionsContext(mock(Authentication.class), List.of(session1, session2, session3), 2, createWebSession());",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenMoreThanOneSessionToInvalidateThenInvalidatesAllOfThem",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "context",
+    "variableType": "MaximumSessionsContext",
+    "mockedClass": "MaximumSessionsContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication.session",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\session\\InvalidateLeastUsedServerMaximumSessionsExceededHandlerTests.java",
+      "className": "InvalidateLeastUsedServerMaximumSessionsExceededHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MaximumSessionsContext context = new MaximumSessionsContext(mock(Authentication.class), List.of(session1, session2), 1, currentSession);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenCurrentSessionIsRegisteredThenDoNotInvalidateCurrentSession",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

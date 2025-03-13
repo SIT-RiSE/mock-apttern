@@ -1,0 +1,293 @@
+[
+  {
+    "variableName": "diskOfferingDaoMock",
+    "variableType": "DiskOfferingDao",
+    "mockedClass": "DiskOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate DiskOfferingDao diskOfferingDaoMock;",
+        "line": 169,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(diskOfferingDaoMock.findByIdIncludingRemoved(anyLong())).thenReturn(mockCurrentDiskOffering);",
+        "line": 361,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckIfCanUpgrade",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(diskOfferingDaoMock.findById(anyLong())).thenReturn(diskOfferingMock);",
+        "line": 362,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckIfCanUpgrade",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "diskOfferingDao",
+    "variableType": "DiskOfferingDao",
+    "mockedClass": "DiskOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDiskOfferingDao diskOfferingDao;",
+        "line": 201,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(diskOfferingDao.findById(anyLong())).thenReturn(diskOfferingVOMock);",
+        "line": 1056,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateDiskOfferingTagsWithPrimaryStorageTagsEqualNullTestThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(diskOfferingDao.findById(anyLong())).thenReturn(diskOfferingVOMock);",
+        "line": 1071,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateDiskOfferingTagsWithPrimaryStorageMissingTagsTestThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(diskOfferingDao.findById(anyLong())).thenReturn(diskOfferingVOMock);",
+        "line": 1086,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateDiskOfferingTagsWithPrimaryStorageWithCorrectTagsTestSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "diskOfferingDao",
+    "variableType": "DiskOfferingDao",
+    "mockedClass": "DiskOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDiskOfferingDao diskOfferingDao;",
+        "line": 201,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(diskOfferingDao.findById(anyLong())).thenReturn(diskOfferingVOMock);",
+        "line": 1056,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateDiskOfferingTagsWithPrimaryStorageTagsEqualNullTestThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(diskOfferingDao.findById(anyLong())).thenReturn(diskOfferingVOMock);",
+        "line": 1071,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateDiskOfferingTagsWithPrimaryStorageMissingTagsTestThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(diskOfferingDao.findById(anyLong())).thenReturn(diskOfferingVOMock);",
+        "line": 1086,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateDiskOfferingTagsWithPrimaryStorageWithCorrectTagsTestSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "diskOfferingDao",
+    "variableType": "DiskOfferingDao",
+    "mockedClass": "DiskOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDiskOfferingDao diskOfferingDao;",
+        "line": 201,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(diskOfferingDao.findById(anyLong())).thenReturn(diskOfferingVOMock);",
+        "line": 1056,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateDiskOfferingTagsWithPrimaryStorageTagsEqualNullTestThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(diskOfferingDao.findById(anyLong())).thenReturn(diskOfferingVOMock);",
+        "line": 1071,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateDiskOfferingTagsWithPrimaryStorageMissingTagsTestThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(diskOfferingDao.findById(anyLong())).thenReturn(diskOfferingVOMock);",
+        "line": 1086,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateDiskOfferingTagsWithPrimaryStorageWithCorrectTagsTestSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "diskOfferingDao",
+    "variableType": "DiskOfferingDao",
+    "mockedClass": "DiskOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDiskOfferingDao diskOfferingDao;",
+        "line": 234,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(diskOfferingDao.findByUuid(overrideDiskOfferingUuid)).thenReturn(diskOfferingMock);",
+        "line": 1427,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmOverrideDiskOfferingId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(diskOfferingDao.findByUuid(diskOfferingUuid)).thenReturn(diskOfferingMock);",
+        "line": 1441,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmDiskOfferingId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

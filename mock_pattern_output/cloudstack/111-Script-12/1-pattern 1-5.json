@@ -1,0 +1,197 @@
+[
+  {
+    "variableName": "mockScript",
+    "variableType": "Script",
+    "mockedClass": "Script",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\core\\src\\test\\java\\com\\cloud\\storage\\template\\OVAProcessorTest.java",
+      "className": "OVAProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Script mockScript = Mockito.mock(Script.class);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWhenUntarFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "PowerMockito.when(mockScript.execute()).thenReturn(\"error while untaring the file\");",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWhenUntarFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockScript",
+    "variableType": "Script",
+    "mockedClass": "Script",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\core\\src\\test\\java\\com\\cloud\\storage\\template\\OVAProcessorTest.java",
+      "className": "OVAProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Script mockScript = Mockito.mock(Script.class);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWhenVirtualSizeThrowsException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "PowerMockito.when(mockScript.execute()).thenReturn(null);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWhenVirtualSizeThrowsException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockScript",
+    "variableType": "Script",
+    "mockedClass": "Script",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\core\\src\\test\\java\\com\\cloud\\storage\\template\\OVAProcessorTest.java",
+      "className": "OVAProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Script mockScript = Mockito.mock(Script.class);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "PowerMockito.when(mockScript.execute()).thenReturn(null);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "script",
+    "variableType": "Script",
+    "mockedClass": "Script",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Script script = Mockito.mock(Script.class);",
+        "line": 5562,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(script.execute()).thenReturn(null);",
+        "line": 5574,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "script",
+    "variableType": "Script",
+    "mockedClass": "Script",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Script script = Mockito.mock(Script.class);",
+        "line": 5587,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommandFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(script.execute()).thenReturn(\"#FAIL\");",
+        "line": 5599,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommandFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

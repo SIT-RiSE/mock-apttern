@@ -1,0 +1,1491 @@
+[
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.loadbalance",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\loadbalance\\AbstractLoadBalanceTest.java",
+      "className": "AbstractLoadBalanceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker1 = mock(Invoker.class, Mockito.withSettings().stubOnly());",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetWeight",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url1);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetWeight",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.loadbalance",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\loadbalance\\AbstractLoadBalanceTest.java",
+      "className": "AbstractLoadBalanceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker2 = mock(Invoker.class, Mockito.withSettings().stubOnly());",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetWeight",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url2);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetWeight",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.loadbalance",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\loadbalance\\AbstractLoadBalanceTest.java",
+      "className": "AbstractLoadBalanceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker1 = mock(Invoker.class, Mockito.withSettings().stubOnly());",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRegistryWeight",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url1);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRegistryWeight",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-compatible\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\GenericImplFilterTest.java",
+      "className": "GenericImplFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(AsyncRpcResult.newDefaultAsyncResult(mockRpcResult, invocation));",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getInterface()).thenReturn(DemoService.class);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-api\\src\\test\\java\\org\\apache\\dubbo\\monitor\\support\\MonitorFilterTest.java",
+      "className": "MonitorFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSkipMonitorIfNotHasKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.getUrl()).willReturn(URL.valueOf(\"dubbo://\" + NetUtils.getLocalHost() + \":20880?\" + APPLICATION_KEY + \"=abc&\" + SIDE_KEY + \"=\" + CONSUMER_SIDE));",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSkipMonitorIfNotHasKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.dubbo",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-default\\src\\test\\java\\org\\apache\\dubbo\\monitor\\dubbo\\DubboMonitorTest.java",
+      "className": "DubboMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.getUrl()).willReturn(URL.valueOf(\"dubbo://127.0.0.1:7070?interval=20\"));",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.dubbo",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-default\\src\\test\\java\\org\\apache\\dubbo\\monitor\\dubbo\\DubboMonitorTest.java",
+      "className": "DubboMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLookUp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.getUrl()).willReturn(queryUrl);",
+        "line": 276,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLookUp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.auth.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-auth\\src\\test\\java\\org\\apache\\dubbo\\auth\\filter\\ConsumerSignFilterTest.java",
+      "className": "ConsumerSignFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.auth.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-auth\\src\\test\\java\\org\\apache\\dubbo\\auth\\filter\\ConsumerSignFilterTest.java",
+      "className": "ConsumerSignFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.auth.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-auth\\src\\test\\java\\org\\apache\\dubbo\\auth\\filter\\ProviderAuthFilterTest.java",
+      "className": "ProviderAuthFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.auth.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-auth\\src\\test\\java\\org\\apache\\dubbo\\auth\\filter\\ProviderAuthFilterTest.java",
+      "className": "ProviderAuthFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.auth.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-auth\\src\\test\\java\\org\\apache\\dubbo\\auth\\filter\\ProviderAuthFilterTest.java",
+      "className": "ProviderAuthFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthFailed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthFailed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.auth.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-auth\\src\\test\\java\\org\\apache\\dubbo\\auth\\filter\\ProviderAuthFilterTest.java",
+      "className": "ProviderAuthFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthFailedWhenNoSignature",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthFailedWhenNoSignature",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.auth.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-auth\\src\\test\\java\\org\\apache\\dubbo\\auth\\filter\\ProviderAuthFilterTest.java",
+      "className": "ProviderAuthFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthFailedWhenNoAccessKeyPair",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthFailedWhenNoAccessKeyPair",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.auth.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-auth\\src\\test\\java\\org\\apache\\dubbo\\auth\\filter\\ProviderAuthFilterTest.java",
+      "className": "ProviderAuthFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthFailedWhenParameterError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthFailedWhenParameterError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.auth.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-auth\\src\\test\\java\\org\\apache\\dubbo\\auth\\filter\\ProviderAuthFilterTest.java",
+      "className": "ProviderAuthFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = mock(Invoker.class);",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthSuccessfully",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthSuccessfully",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\ExecuteLimitFilterTest.java",
+      "className": "ExecuteLimitFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoExecuteLimitInvoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(new AppResponse(\"result\"));",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoExecuteLimitInvoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(URL.valueOf(\"test://test:11/test?accesslog=true&group=dubbo&version=1.1\"));",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoExecuteLimitInvoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\ExecuteLimitFilterTest.java",
+      "className": "ExecuteLimitFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteLimitInvoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(new AppResponse(\"result\"));",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteLimitInvoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(URL.valueOf(\"test://test:11/test?accesslog=true&group=dubbo&version=1.1&executes=10\"));",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteLimitInvoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\ExecuteLimitFilterTest.java",
+      "className": "ExecuteLimitFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteLimitInvokeWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteLimitInvokeWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\GenericFilterTest.java",
+      "className": "GenericFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(AsyncRpcResult.newDefaultAsyncResult(new Person(\"person\", 10), invocation));",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getInterface()).thenReturn(DemoService.class);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\GenericFilterTest.java",
+      "className": "GenericFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithJavaException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(new AppResponse(new Person(\"person\", 10)));",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithJavaException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithJavaException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getInterface()).thenReturn(DemoService.class);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithJavaException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\GenericFilterTest.java",
+      "className": "GenericFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithMethodNamtNot$Invoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(new AppResponse(new Person(\"person\", 10)));",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithMethodNamtNot$Invoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithMethodNamtNot$Invoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getInterface()).thenReturn(DemoService.class);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithMethodNamtNot$Invoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\GenericFilterTest.java",
+      "className": "GenericFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithMethodArgumentSizeIsNot3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(new AppResponse(new Person(\"person\", 10)));",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithMethodArgumentSizeIsNot3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithMethodArgumentSizeIsNot3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getInterface()).thenReturn(DemoService.class);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithMethodArgumentSizeIsNot3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\GenericImplFilterTest.java",
+      "className": "GenericImplFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(AsyncRpcResult.newDefaultAsyncResult(mockRpcResult, invocation));",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getInterface()).thenReturn(DemoService.class);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\GenericImplFilterTest.java",
+      "className": "GenericImplFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException1",
+          "methodAnnotations": [
+            "@Test",
+            "@Disabled"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(AsyncRpcResult.newDefaultAsyncResult(mockRpcResult, invocation));",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException1",
+          "methodAnnotations": [
+            "@Test",
+            "@Disabled"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException1",
+          "methodAnnotations": [
+            "@Test",
+            "@Disabled"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getInterface()).thenReturn(DemoService.class);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException1",
+          "methodAnnotations": [
+            "@Test",
+            "@Disabled"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\GenericImplFilterTest.java",
+      "className": "GenericImplFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(AsyncRpcResult.newDefaultAsyncResult(mockRpcResult, invocation));",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getInterface()).thenReturn(DemoService.class);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithException2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\GenericImplFilterTest.java",
+      "className": "GenericImplFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWith$Invoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(new AppResponse(new Person(\"person\", 10)));",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWith$Invoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWith$Invoke",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\TimeoutFilterTest.java",
+      "className": "TimeoutFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithoutTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(new AppResponse(\"result\"));",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithoutTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(URL.valueOf(\"test://test:11/test?accesslog=true&group=dubbo&version=1.1&timeout=\" + timeout));",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithoutTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\TokenFilterTest.java",
+      "className": "TokenFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(new AppResponse(\"result\"));",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\TokenFilterTest.java",
+      "className": "TokenFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithWrongToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithWrongToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(new AppResponse(\"result\"));",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithWrongToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\TokenFilterTest.java",
+      "className": "TokenFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Invoker invoker = Mockito.mock(Invoker.class);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithoutToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.getUrl()).thenReturn(url);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithoutToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(invoker.invoke(any(Invocation.class))).thenReturn(new AppResponse(\"result\"));",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInvokeWithoutToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

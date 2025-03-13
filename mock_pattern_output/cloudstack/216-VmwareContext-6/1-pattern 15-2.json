@@ -1,0 +1,152 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "VmwareContext",
+    "mockedClass": "VmwareContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\resource\\VmwareResourceTest.java",
+      "className": "VmwareResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVmwareContext context;",
+        "line": 121,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getVimClient()).thenReturn(client);",
+        "line": 208,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getService()).thenReturn(vimService);",
+        "line": 211,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(context, times(2)).getVimClient();",
+        "line": 439,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigNestedHVSupportFlagTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(context).getService();",
+        "line": 442,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigNestedHVSupportFlagTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 15
+  },
+  {
+    "variableName": "context",
+    "variableType": "VmwareContext",
+    "mockedClass": "VmwareContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.mo",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\vmware-base\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\mo\\HypervisorHostHelperTest.java",
+      "className": "HypervisorHostHelperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVmwareContext context;",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(context.getServiceContent()).thenReturn(serviceContent);",
+        "line": 91,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(context).getServiceContent();",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVcenterApiVersion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(context).getServiceContent();",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsFeatureSupportedInVcenterApiVersionUnSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(context).getServiceContent();",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsFeatureSupportedInVcenterApiVersionSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 15
+  }
+]

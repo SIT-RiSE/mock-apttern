@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "authorizationRedirectStrategy",
+    "variableType": "ServerRedirectStrategy",
+    "mockedClass": "ServerRedirectStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerRedirectStrategy authorizationRedirectStrategy = mock(ServerRedirectStrategy.class);",
+        "line": 670,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureAuthorizationRedirectStrategyForOAuth2Login",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRedirectStrategy.sendRedirect(any(), any())).willReturn(Mono.empty());",
+        "line": 675,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureAuthorizationRedirectStrategyForOAuth2Login",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authorizationRedirectStrategy).sendRedirect(any(), any());",
+        "line": 685,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureAuthorizationRedirectStrategyForOAuth2Login",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "authorizationRedirectStrategy",
+    "variableType": "ServerRedirectStrategy",
+    "mockedClass": "ServerRedirectStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerRedirectStrategy authorizationRedirectStrategy = mock(ServerRedirectStrategy.class);",
+        "line": 718,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureAuthorizationRedirectStrategyForOAuth2Client",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRedirectStrategy.sendRedirect(any(), any())).willReturn(Mono.empty());",
+        "line": 723,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureAuthorizationRedirectStrategyForOAuth2Client",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authorizationRedirectStrategy).sendRedirect(any(), any());",
+        "line": 733,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shouldConfigureAuthorizationRedirectStrategyForOAuth2Client",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

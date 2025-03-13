@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "Session<String>",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 @Override\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\StreamingInboundTests.java",
+      "className": "StringSessionFactory"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session<String> session = mock(Session.class);",
+        "line": 351,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getSession",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(session.finalizeRaw()).willReturn(true);",
+        "line": 368,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getSession",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 24
+  }
+]

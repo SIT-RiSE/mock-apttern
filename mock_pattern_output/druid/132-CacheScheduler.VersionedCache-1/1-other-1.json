@@ -1,0 +1,255 @@
+[
+  {
+    "variableName": "versionedCache",
+    "variableType": "CacheScheduler.VersionedCache",
+    "mockedClass": "CacheScheduler.VersionedCache",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\u2014 Other Methods\n\nVerification:\n\u2014 Test Case\n\u2014 Other Methods",
+    "classContext": {
+      "packageName": "org.apache.druid.query.lookup",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-core\\lookups-cached-global\\src\\test\\java\\org\\apache\\druid\\query\\lookup\\NamespaceLookupExtractorFactoryTest.java",
+      "className": "NamespaceLookupExtractorFactoryTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final CacheScheduler.VersionedCache versionedCache = mock(CacheScheduler.VersionedCache.class);",
+        "line": 79,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSimpleStartStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartReturnsImmediately",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartReturnsImmediatelyAndFails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSimpleStartStopStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSimpleStartStart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(versionedCache.getCache()).thenReturn(new HashMap<>());",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSimpleStartGetStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(versionedCache.getVersion()).thenReturn(\"0\");",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSimpleStartGetStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(versionedCache).getVersion();",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSimpleStartGetStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(versionedCache, atLeastOnce()).getCache();",
+        "line": 259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSimpleStartGetStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSimpleStartGetStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 287,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSimpleStartRacyGetDuringDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartFailsToSchedule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 484,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExceptionalIntrospectionHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 497,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExceptionalIntrospectionHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 506,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateNotFound",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(versionedCache.getCache()).thenReturn(new HashMap<>());",
+        "line": 511,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateNotFound",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(versionedCache.getVersion()).thenThrow(new ISE(\"some exception\"));",
+        "line": 512,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateNotFound",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(versionedCache, atMostOnce()).getCache();",
+        "line": 519,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateNotFound",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(versionedCache).getVersion();",
+        "line": 520,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateNotFound",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(scheduler, entry, versionedCache);",
+        "line": 521,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateNotFound",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 46
+  }
+]

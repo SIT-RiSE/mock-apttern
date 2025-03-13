@@ -1,0 +1,155 @@
+[
+  {
+    "variableName": "srMock",
+    "variableType": "SR",
+    "mockedClass": "SR",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\CitrixResourceBaseTest.java",
+      "className": "CitrixResourceBaseTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SR srMock = Mockito.mock(SR.class);",
+        "line": 282,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createStoragePoolInfoTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srMock.getPhysicalSize(connectionMock)).thenReturn(srPhysicalSize);",
+        "line": 298,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createStoragePoolInfoTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srMock.getUuid(connectionMock)).thenReturn(srUuid);",
+        "line": 299,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createStoragePoolInfoTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srMock.getPhysicalUtilisation(connectionMock)).thenReturn(physicalUtilization);",
+        "line": 300,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createStoragePoolInfoTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srMock.getType(connectionMock)).thenReturn(srType);",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createStoragePoolInfoTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srMock1",
+    "variableType": "SR",
+    "mockedClass": "SR",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\CitrixResourceBaseTest.java",
+      "className": "CitrixResourceBaseTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SR srMock1 = Mockito.mock(SR.class);",
+        "line": 367,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initializeLocalSrTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srMock1.getPhysicalSize(connectionMock)).thenReturn(0l);",
+        "line": 370,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initializeLocalSrTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "srMock2",
+    "variableType": "SR",
+    "mockedClass": "SR",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\CitrixResourceBaseTest.java",
+      "className": "CitrixResourceBaseTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SR srMock2 = Mockito.mock(SR.class);",
+        "line": 368,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initializeLocalSrTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(srMock2.getPhysicalSize(connectionMock)).thenReturn(100l);",
+        "line": 371,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initializeLocalSrTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

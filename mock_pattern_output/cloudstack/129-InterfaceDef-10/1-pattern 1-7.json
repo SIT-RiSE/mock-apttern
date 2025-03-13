@@ -1,0 +1,387 @@
+[
+  {
+    "variableName": "interfaceDef",
+    "variableType": "InterfaceDef",
+    "mockedClass": "InterfaceDef",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final InterfaceDef interfaceDef = Mockito.mock(InterfaceDef.class);",
+        "line": 3490,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(interfaceDef.getDevName()).thenReturn(\"eth0\");",
+        "line": 3501,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(interfaceDef.getBrName()).thenReturn(\"br0\");",
+        "line": 3502,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityGroupRulesCmdTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "intDef",
+    "variableType": "InterfaceDef",
+    "mockedClass": "InterfaceDef",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final InterfaceDef intDef = Mockito.mock(InterfaceDef.class);",
+        "line": 3593,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getDevName()).thenReturn(\"eth0\");",
+        "line": 3599,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getBrName()).thenReturn(\"br0\");",
+        "line": 3600,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getMacAddress()).thenReturn(\"00:00:00:00\");",
+        "line": 3601,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "intDef",
+    "variableType": "InterfaceDef",
+    "mockedClass": "InterfaceDef",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final InterfaceDef intDef = Mockito.mock(InterfaceDef.class);",
+        "line": 3642,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getDevName()).thenReturn(\"eth0\");",
+        "line": 3648,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getBrName()).thenReturn(\"br0\");",
+        "line": 3649,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getMacAddress()).thenReturn(\"00:00:00:00\");",
+        "line": 3650,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "interfaceDef",
+    "variableType": "InterfaceDef",
+    "mockedClass": "InterfaceDef",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final InterfaceDef interfaceDef = Mockito.mock(InterfaceDef.class);",
+        "line": 3639,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(interfaceDef.toString()).thenReturn(\"Interface\");",
+        "line": 3662,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "intDef",
+    "variableType": "InterfaceDef",
+    "mockedClass": "InterfaceDef",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final InterfaceDef intDef = Mockito.mock(InterfaceDef.class);",
+        "line": 3740,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getDevName()).thenReturn(\"eth0\");",
+        "line": 3746,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getBrName()).thenReturn(\"br0\");",
+        "line": 3747,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getMacAddress()).thenReturn(\"00:00:00:00\");",
+        "line": 3748,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "intDef",
+    "variableType": "InterfaceDef",
+    "mockedClass": "InterfaceDef",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final InterfaceDef intDef = Mockito.mock(InterfaceDef.class);",
+        "line": 3798,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getDevName()).thenReturn(\"eth0\");",
+        "line": 3808,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getBrName()).thenReturn(\"br0\");",
+        "line": 3809,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(intDef.getMacAddress()).thenReturn(\"00:00:00:00\");",
+        "line": 3810,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "interfaceDef",
+    "variableType": "InterfaceDef",
+    "mockedClass": "InterfaceDef",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final InterfaceDef interfaceDef = Mockito.mock(InterfaceDef.class);",
+        "line": 3795,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(interfaceDef.toString()).thenReturn(\"Interface\");",
+        "line": 3818,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnPlugNicCommandMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

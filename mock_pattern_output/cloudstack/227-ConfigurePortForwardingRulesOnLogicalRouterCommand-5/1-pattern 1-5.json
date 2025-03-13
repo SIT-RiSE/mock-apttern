@@ -1,0 +1,257 @@
+[
+  {
+    "variableName": "cmd",
+    "variableType": "ConfigurePortForwardingRulesOnLogicalRouterCommand",
+    "mockedClass": "ConfigurePortForwardingRulesOnLogicalRouterCommand",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "/*\r\n         * StaticNat Outside IP: 11.11.11.11 Inside IP: 10.10.10.10\r\n         */\r\n// Mock the command\r\nfinal ConfigurePortForwardingRulesOnLogicalRouterCommand cmd = mock(ConfigurePortForwardingRulesOnLogicalRouterCommand.class);",
+        "line": 605,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getRules()).thenReturn(rules);",
+        "line": 609,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getLogicalRouterUuid()).thenReturn(\"aaaaa\");",
+        "line": 610,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "ConfigurePortForwardingRulesOnLogicalRouterCommand",
+    "mockedClass": "ConfigurePortForwardingRulesOnLogicalRouterCommand",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "/*\r\n         * StaticNat Outside IP: 11.11.11.11 Inside IP: 10.10.10.10\r\n         */\r\n// Mock the command\r\nfinal ConfigurePortForwardingRulesOnLogicalRouterCommand cmd = mock(ConfigurePortForwardingRulesOnLogicalRouterCommand.class);",
+        "line": 648,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterExistingRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getRules()).thenReturn(rules);",
+        "line": 652,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterExistingRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getLogicalRouterUuid()).thenReturn(\"aaaaa\");",
+        "line": 653,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterExistingRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "ConfigurePortForwardingRulesOnLogicalRouterCommand",
+    "mockedClass": "ConfigurePortForwardingRulesOnLogicalRouterCommand",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "/*\r\n         * StaticNat Outside IP: 11.11.11.11 Inside IP: 10.10.10.10\r\n         */\r\n// Mock the command\r\nfinal ConfigurePortForwardingRulesOnLogicalRouterCommand cmd = mock(ConfigurePortForwardingRulesOnLogicalRouterCommand.class);",
+        "line": 690,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRemoveRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getRules()).thenReturn(rules);",
+        "line": 694,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRemoveRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getLogicalRouterUuid()).thenReturn(\"aaaaa\");",
+        "line": 695,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRemoveRules",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "ConfigurePortForwardingRulesOnLogicalRouterCommand",
+    "mockedClass": "ConfigurePortForwardingRulesOnLogicalRouterCommand",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "/*\r\n         * StaticNat Outside IP: 11.11.11.11 Inside IP: 10.10.10.10\r\n         */\r\n// Mock the command\r\nfinal ConfigurePortForwardingRulesOnLogicalRouterCommand cmd = mock(ConfigurePortForwardingRulesOnLogicalRouterCommand.class);",
+        "line": 731,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRollback",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getRules()).thenReturn(rules);",
+        "line": 735,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRollback",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getLogicalRouterUuid()).thenReturn(\"aaaaa\");",
+        "line": 736,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterRollback",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "ConfigurePortForwardingRulesOnLogicalRouterCommand",
+    "mockedClass": "ConfigurePortForwardingRulesOnLogicalRouterCommand",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\NiciraNvpResourceTest.java",
+      "className": "NiciraNvpResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "/*\r\n         * StaticNat Outside IP: 11.11.11.11 Inside IP: 10.10.10.10\r\n         */\r\n// Mock the command\r\nfinal ConfigurePortForwardingRulesOnLogicalRouterCommand cmd = mock(ConfigurePortForwardingRulesOnLogicalRouterCommand.class);",
+        "line": 763,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterPortRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getRules()).thenReturn(rules);",
+        "line": 767,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterPortRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getLogicalRouterUuid()).thenReturn(\"aaaaa\");",
+        "line": 768,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigurePortForwardingRulesOnLogicalRouterPortRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

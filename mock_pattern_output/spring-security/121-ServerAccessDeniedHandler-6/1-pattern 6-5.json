@@ -1,0 +1,257 @@
+[
+  {
+    "variableName": "handler",
+    "variableType": "ServerAccessDeniedHandler",
+    "mockedClass": "ServerAccessDeniedHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ServerWebExchangeDelegatingServerAccessDeniedHandlerTests.java",
+      "className": "ServerWebExchangeDelegatingServerAccessDeniedHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerAccessDeniedHandler handler = mock(ServerAccessDeniedHandler.class);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenNothingMatchesThenOnlyDefaultHandlerInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.handle(this.exchange, null)).willReturn(Mono.empty());",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenNothingMatchesThenOnlyDefaultHandlerInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, never()).handle(this.exchange, null);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenNothingMatchesThenOnlyDefaultHandlerInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "firstHandler",
+    "variableType": "ServerAccessDeniedHandler",
+    "mockedClass": "ServerAccessDeniedHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ServerWebExchangeDelegatingServerAccessDeniedHandlerTests.java",
+      "className": "ServerWebExchangeDelegatingServerAccessDeniedHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerAccessDeniedHandler firstHandler = mock(ServerAccessDeniedHandler.class);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenFirstMatchesThenOnlyFirstInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(firstHandler.handle(this.exchange, null)).willReturn(Mono.empty());",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenFirstMatchesThenOnlyFirstInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(firstHandler).handle(this.exchange, null);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenFirstMatchesThenOnlyFirstInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "secondHandler",
+    "variableType": "ServerAccessDeniedHandler",
+    "mockedClass": "ServerAccessDeniedHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ServerWebExchangeDelegatingServerAccessDeniedHandlerTests.java",
+      "className": "ServerWebExchangeDelegatingServerAccessDeniedHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerAccessDeniedHandler secondHandler = mock(ServerAccessDeniedHandler.class);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenFirstMatchesThenOnlyFirstInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(secondHandler.handle(this.exchange, null)).willReturn(Mono.empty());",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenFirstMatchesThenOnlyFirstInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(secondHandler, never()).handle(this.exchange, null);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenFirstMatchesThenOnlyFirstInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "firstHandler",
+    "variableType": "ServerAccessDeniedHandler",
+    "mockedClass": "ServerAccessDeniedHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ServerWebExchangeDelegatingServerAccessDeniedHandlerTests.java",
+      "className": "ServerWebExchangeDelegatingServerAccessDeniedHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerAccessDeniedHandler firstHandler = mock(ServerAccessDeniedHandler.class);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenSecondMatchesThenOnlySecondInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(firstHandler.handle(this.exchange, null)).willReturn(Mono.empty());",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenSecondMatchesThenOnlySecondInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(firstHandler, never()).handle(this.exchange, null);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenSecondMatchesThenOnlySecondInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "secondHandler",
+    "variableType": "ServerAccessDeniedHandler",
+    "mockedClass": "ServerAccessDeniedHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ServerWebExchangeDelegatingServerAccessDeniedHandlerTests.java",
+      "className": "ServerWebExchangeDelegatingServerAccessDeniedHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerAccessDeniedHandler secondHandler = mock(ServerAccessDeniedHandler.class);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenSecondMatchesThenOnlySecondInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(secondHandler.handle(this.exchange, null)).willReturn(Mono.empty());",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenSecondMatchesThenOnlySecondInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(secondHandler).handle(this.exchange, null);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenSecondMatchesThenOnlySecondInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

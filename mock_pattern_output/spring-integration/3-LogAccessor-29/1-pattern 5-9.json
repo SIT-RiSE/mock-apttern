@@ -1,0 +1,367 @@
+[
+  {
+    "variableName": "logger",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\config\\AmqpOutboundChannelAdapterParserTests.java",
+      "className": "AmqpOutboundChannelAdapterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogAccessor logger = spy(TestUtils.getPropertyValue(handler, \"logger\", LogAccessor.class));",
+        "line": 326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt3430FailForNotLazyConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger, never()).error(any(RuntimeException.class), anyString());",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt3430FailForNotLazyConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).error(toBeThrown, \"Failed to eagerly establish the connection.\");",
+        "line": 338,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt3430FailForNotLazyConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "logger",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\BarrierMessageHandlerTests.java",
+      "className": "BarrierMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogAccessor logger = spy(TestUtils.getPropertyValue(handler, \"logger\", LogAccessor.class));",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLateReply",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).error(captor.capture());",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLateReply",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "logger",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\config\\SourcePollingChannelAdapterFactoryBeanTests.java",
+      "className": "SourcePollingChannelAdapterFactoryBeanTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogAccessor logger = spy(TestUtils.getPropertyValue(pollingChannelAdapter, \"logger\", LogAccessor.class));",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testZeroForMaxMessagesPerPoll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger, atLeastOnce()).info(\"Polling disabled while 'maxMessagesPerPoll == 0'\");",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testZeroForMaxMessagesPerPoll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "logger",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.json",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\json\\JsonToObjectTransformerParserTests.java",
+      "className": "JsonToObjectTransformerParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogAccessor logger = (LogAccessor) spy(dfa.getPropertyValue(\"logger\"));",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDefaultObjectMapper",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).debug(any(Exception.class), argumentCaptor.capture());",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDefaultObjectMapper",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "spied",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.transformer",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\transformer\\AvroTests.java",
+      "className": "AvroTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogAccessor spied = spy(TestUtils.getPropertyValue(config.in1(), \"logger\", LogAccessor.class));",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransformers",
+          "methodAnnotations": [
+            "@Test",
+            "@LogLevels"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(spied, atLeastOnce()).debug(captor.capture());",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransformers",
+          "methodAnnotations": [
+            "@Test",
+            "@LogLevels"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "logger",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\ConnectionEventTests.java",
+      "className": "ConnectionEventTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogAccessor logger = spy(TestUtils.getPropertyValue(factory, \"logger\", LogAccessor.class));",
+        "line": 285,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServerExceptionGuts",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).error(throwableCaptor.capture(), reasonCaptor.capture());",
+        "line": 298,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServerExceptionGuts",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "logger",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.jmx.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jmx\\src\\test\\java\\org\\springframework\\integration\\jmx\\config\\OperationInvokingChannelAdapterParserTests.java",
+      "className": "OperationInvokingChannelAdapterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogAccessor logger = spy(TestUtils.getPropertyValue(this.operationWithNonNullReturnHandler, \"logger\", LogAccessor.class));",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOutboundAdapterWithNonNullReturn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).warn(\"This component doesn't expect a reply. \" + \"The MBean operation 'testWithReturn' result '[test1]' for \" + \"'org.springframework.integration.jmx.config:type=TestBean,name=testBeanAdapter' is ignored.\");",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOutboundAdapterWithNonNullReturn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "logger",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.jmx.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jmx\\src\\test\\java\\org\\springframework\\integration\\jmx\\config\\OperationInvokingChannelAdapterParserTests.java",
+      "className": "OperationInvokingChannelAdapterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogAccessor logger = spy(TestUtils.getPropertyValue(this.operationWithinChainWithNonNullReturnHandler, \"logger\", LogAccessor.class));",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOperationWithinChainWithNonNullReturn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).warn(\"This component doesn't expect a reply. \" + \"The MBean operation 'testWithReturn' result '[test1]' for \" + \"'org.springframework.integration.jmx.config:type=TestBean,name=testBeanAdapter' is ignored.\");",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOperationWithinChainWithNonNullReturn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "logger",
+    "variableType": "LogAccessor",
+    "mockedClass": "LogAccessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mqtt",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mqtt\\src\\test\\java\\org\\springframework\\integration\\mqtt\\DownstreamExceptionTests.java",
+      "className": "DownstreamExceptionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogAccessor logger = spy(TestUtils.getPropertyValue(noErrorChannel, \"logger\", LogAccessor.class));",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoErrorChannel",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(logger).error(any(Throwable.class), ArgumentMatchers.<Supplier<String>>argThat(logMessage -> logMessage.get().startsWith(\"Unhandled exception for\")));",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoErrorChannel",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

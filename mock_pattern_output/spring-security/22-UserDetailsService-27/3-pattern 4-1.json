@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "userDetailsService",
+    "variableType": "UserDetailsService",
+    "mockedClass": "UserDetailsService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithUserDetailsSecurityContextFactoryTests.java",
+      "className": "WithUserDetailsSecurityContextFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UserDetailsService userDetailsService;",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.loadUserByUsername(username)).willReturn(this.userDetails);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithExistingUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsService.loadUserByUsername(username)).willReturn(this.userDetails);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithUserDetailsServiceName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "variableName": "guestOSHypervisorDao",
+    "variableType": "GuestOSHypervisorDao",
+    "mockedClass": "GuestOSHypervisorDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.upgrade",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\upgrade\\GuestOsMapperTest.java",
+      "className": "GuestOsMapperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nGuestOSHypervisorDao guestOSHypervisorDao;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(guestOSHypervisorDao.listByHypervisorTypeAndVersion(Mockito.anyString(), Mockito.anyString())).thenReturn(null);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyGuestOSHypervisorMappingsFailures",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(guestOSHypervisorDao.listByHypervisorTypeAndVersion(Mockito.anyString(), Mockito.anyString())).thenReturn(guestOSHypervisorVOS);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyGuestOSHypervisorMappingsSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(guestOSHypervisorDao.persist(guestOsMapping)).thenReturn(guestOsMapping);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyGuestOSHypervisorMappingsSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "guestOsHypervisorDao",
+    "variableType": "GuestOSHypervisorDao",
+    "mockedClass": "GuestOSHypervisorDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\guru\\VmwareVmImplementerTest.java",
+      "className": "VmwareVmImplementerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nGuestOSHypervisorDao guestOsHypervisorDao;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(guestOsHypervisorDao.findByOsIdAndHypervisor(200L, \"VMware\", \"8.0.1.0\")).thenReturn(guestOsMapping);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetGuestOsMapping1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(guestOsHypervisorDao.findByOsIdAndHypervisor(200L, \"VMware\", \"8.0.1.0\")).thenReturn(null);",
+        "line": 164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetGuestOsMapping2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(guestOsHypervisorDao.findByOsIdAndHypervisor(200L, \"VMware\", \"8.0.1\")).thenReturn(guestOsMapping);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetGuestOsMapping2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(guestOsHypervisorDao.findByOsIdAndHypervisor(200L, \"VMware\", \"8.0.1.0\")).thenReturn(null);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetGuestOsMapping3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(guestOsHypervisorDao.findByOsIdAndHypervisor(200L, \"VMware\", \"8.0.1\")).thenReturn(null);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetGuestOsMapping3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(guestOsHypervisorDao.findByOsIdAndHypervisor(200L, \"VMware\", \"8.0\")).thenReturn(null);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetGuestOsMapping4",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

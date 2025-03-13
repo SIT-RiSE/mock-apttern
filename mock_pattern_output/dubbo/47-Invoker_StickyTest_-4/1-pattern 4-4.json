@@ -1,0 +1,262 @@
+[
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker<StickyTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\StickyTest.java",
+      "className": "StickyTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<StickyTest> invoker1 = mock(Invoker.class);",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willReturn(result);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(true);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url.setPort(1));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(StickyTest.class);",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker<StickyTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\StickyTest.java",
+      "className": "StickyTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<StickyTest> invoker2 = mock(Invoker.class);",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willReturn(result);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url.setPort(2));",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(StickyTest.class);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "invoker1",
+    "variableType": "Invoker<StickyTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\StickyTest.java",
+      "className": "StickyTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<StickyTest> invoker1 = mock(Invoker.class);",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.invoke(invocation)).willReturn(result);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.isAvailable()).willReturn(true);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getUrl()).willReturn(url.setPort(1));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker1.getInterface()).willReturn(StickyTest.class);",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "invoker2",
+    "variableType": "Invoker<StickyTest>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\StickyTest.java",
+      "className": "StickyTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invoker<StickyTest> invoker2 = mock(Invoker.class);",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.invoke(invocation)).willReturn(result);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.isAvailable()).willReturn(true);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url.setPort(2));",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getInterface()).willReturn(StickyTest.class);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSticky",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

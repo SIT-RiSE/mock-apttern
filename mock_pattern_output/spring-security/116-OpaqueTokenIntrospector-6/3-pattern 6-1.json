@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "introspector",
+    "variableType": "OpaqueTokenIntrospector",
+    "mockedClass": "OpaqueTokenIntrospector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\OpaqueTokenAuthenticationProviderTests.java",
+      "className": "OpaqueTokenAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OpaqueTokenIntrospector introspector = mock(OpaqueTokenIntrospector.class);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAuthenticationConverterThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(introspector.introspect(any())).willReturn(principal);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAuthenticationConverterThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(introspector).introspect(\"token\");",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAuthenticationConverterThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(introspector, authenticationConverter);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAuthenticationConverterThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

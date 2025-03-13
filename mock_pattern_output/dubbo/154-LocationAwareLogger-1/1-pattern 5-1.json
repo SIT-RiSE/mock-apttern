@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "locationAwareLogger",
+    "variableType": "LocationAwareLogger",
+    "mockedClass": "LocationAwareLogger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.logger.slf4j",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\logger\\slf4j\\Slf4jLoggerTest.java",
+      "className": "Slf4jLoggerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LocationAwareLogger locationAwareLogger = mock(LocationAwareLogger.class);",
+        "line": 33,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLocationAwareLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(locationAwareLogger, times(5)).log(isNull(), anyString(), anyInt(), anyString(), isNull(), isNull());",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLocationAwareLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(locationAwareLogger, times(10)).log(isNull(), anyString(), anyInt(), anyString(), isNull(), any(Throwable.class));",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLocationAwareLogger",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

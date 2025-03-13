@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "scMock",
+    "variableType": "SearchCriteria",
+    "mockedClass": "SearchCriteria",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\DomainManagerImplTest.java",
+      "className": "DomainManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SearchCriteria scMock = Mockito.mock(SearchCriteria.class);",
+        "line": 351,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateUniqueDomainNameTestUniqueNameDoesNotThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(scMock).addAnd(\"name\", SearchCriteria.Op.EQ, \"testUnique\");",
+        "line": 358,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateUniqueDomainNameTestUniqueNameDoesNotThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(scMock).addAnd(\"parent\", SearchCriteria.Op.EQ, 1L);",
+        "line": 359,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateUniqueDomainNameTestUniqueNameDoesNotThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,2324 @@
+[
+  {
+    "variableName": "writer",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\MultiPartBodyTest.java",
+      "className": "MultiPartBodyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writer = mock(SerializationWriter.class);",
+        "line": 37,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requiresRequestAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "requestAdapter",
+    "variableType": "RequestAdapter",
+    "mockedClass": "RequestAdapter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\MultiPartBodyTest.java",
+      "className": "MultiPartBodyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RequestAdapter requestAdapter = mock(RequestAdapter.class);",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requiresPartsForSerialization",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "writer",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\MultiPartBodyTest.java",
+      "className": "MultiPartBodyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writer = mock(SerializationWriter.class);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requiresPartsForSerialization",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "requestAdapter",
+    "variableType": "RequestAdapter",
+    "mockedClass": "RequestAdapter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\MultiPartBodyTest.java",
+      "className": "MultiPartBodyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RequestAdapter requestAdapter = mock(RequestAdapter.class);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addsPart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "requestAdapter",
+    "variableType": "RequestAdapter",
+    "mockedClass": "RequestAdapter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\MultiPartBodyTest.java",
+      "className": "MultiPartBodyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RequestAdapter requestAdapter = mock(RequestAdapter.class);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removesPart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "writer",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\MultiPartBodyTest.java",
+      "className": "MultiPartBodyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writer = mock(SerializationWriter.class);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "notAddFilename",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writer).writeStringValue(\"Content-Disposition\", \"form-data; name=\\\"foo\\\"\");",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "notAddFilename",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "writer",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\MultiPartBodyTest.java",
+      "className": "MultiPartBodyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writer = mock(SerializationWriter.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addFilename",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writer).writeStringValue(\"Content-Disposition\", \"form-data; name=\\\"foo\\\"; filename=\\\"image.png\\\"\");",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addFilename",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "requestAdapterMock",
+    "variableType": "RequestAdapter",
+    "mockedClass": "RequestAdapter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RequestAdapter requestAdapterMock = mock(RequestAdapter.class);",
+        "line": 193,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(requestAdapterMock.getSerializationWriterFactory()).thenReturn(factoryMock);",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "writerMock",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writerMock = mock(SerializationWriter.class);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, times(1)).writeObjectValue(any(), any(TestEntity.class));",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, never()).writeCollectionOfObjectValues(anyString(), any(ArrayList.class));",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "factoryMock",
+    "variableType": "SerializationWriterFactory",
+    "mockedClass": "SerializationWriterFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriterFactory factoryMock = mock(SerializationWriterFactory.class);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factoryMock.getSerializationWriter(anyString())).thenReturn(writerMock);",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "requestAdapterMock",
+    "variableType": "RequestAdapter",
+    "mockedClass": "RequestAdapter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RequestAdapter requestAdapterMock = mock(RequestAdapter.class);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(requestAdapterMock.getSerializationWriterFactory()).thenReturn(factoryMock);",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "writerMock",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writerMock = mock(SerializationWriter.class);",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, never()).writeObjectValue(any(), any(TestEntity.class));",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, times(1)).writeCollectionOfObjectValues(any(), any(Iterable.class));",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "factoryMock",
+    "variableType": "SerializationWriterFactory",
+    "mockedClass": "SerializationWriterFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriterFactory factoryMock = mock(SerializationWriterFactory.class);",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factoryMock.getSerializationWriter(anyString())).thenReturn(writerMock);",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "requestAdapterMock",
+    "variableType": "RequestAdapter",
+    "mockedClass": "RequestAdapter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RequestAdapter requestAdapterMock = mock(RequestAdapter.class);",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(requestAdapterMock.getSerializationWriterFactory()).thenReturn(factoryMock);",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "writerMock",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writerMock = mock(SerializationWriter.class);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, never()).writeStringValue(any(), anyString());",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, times(1)).writeCollectionOfPrimitiveValues(any(), any(Iterable.class));",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "factoryMock",
+    "variableType": "SerializationWriterFactory",
+    "mockedClass": "SerializationWriterFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriterFactory factoryMock = mock(SerializationWriterFactory.class);",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factoryMock.getSerializationWriter(anyString())).thenReturn(writerMock);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "requestAdapterMock",
+    "variableType": "RequestAdapter",
+    "mockedClass": "RequestAdapter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RequestAdapter requestAdapterMock = mock(RequestAdapter.class);",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(requestAdapterMock.getSerializationWriterFactory()).thenReturn(factoryMock);",
+        "line": 249,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "writerMock",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writerMock = mock(SerializationWriter.class);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, times(1)).writeStringValue(any(), anyString());",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, never()).writeCollectionOfPrimitiveValues(any(), any(Iterable.class));",
+        "line": 253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "factoryMock",
+    "variableType": "SerializationWriterFactory",
+    "mockedClass": "SerializationWriterFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriterFactory factoryMock = mock(SerializationWriterFactory.class);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factoryMock.getSerializationWriter(anyString())).thenReturn(writerMock);",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "requestAdapterMock",
+    "variableType": "RequestAdapter",
+    "mockedClass": "RequestAdapter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RequestAdapter requestAdapterMock = mock(RequestAdapter.class);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsBoundaryOnMultipartBody",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(requestAdapterMock.getSerializationWriterFactory()).thenReturn(factoryMock);",
+        "line": 266,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsBoundaryOnMultipartBody",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "writerMock",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writerMock = mock(SerializationWriter.class);",
+        "line": 262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsBoundaryOnMultipartBody",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "factoryMock",
+    "variableType": "SerializationWriterFactory",
+    "mockedClass": "SerializationWriterFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriterFactory factoryMock = mock(SerializationWriterFactory.class);",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsBoundaryOnMultipartBody",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factoryMock.getSerializationWriter(anyString())).thenReturn(writerMock);",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsBoundaryOnMultipartBody",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockParseNodeFactory",
+    "variableType": "ParseNodeFactory",
+    "mockedClass": "ParseNodeFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\DeserializationHelpersTest.java",
+      "className": "DeserializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ParseNodeFactory mockParseNodeFactory = mock(ParseNodeFactory.class);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithoutReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNodeFactory.getParseNode(any(), any())).thenReturn(mockParseNode);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithoutReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockParseNode",
+    "variableType": "ParseNode",
+    "mockedClass": "ParseNode",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\DeserializationHelpersTest.java",
+      "className": "DeserializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ParseNode mockParseNode = mock(ParseNode.class);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithoutReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNode.getObjectValue(any())).thenReturn(new TestEntity() {\r\n\r\n    {\r\n        setId(\"123\");\r\n    }\r\n});",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithoutReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockParseNodeFactory",
+    "variableType": "ParseNodeFactory",
+    "mockedClass": "ParseNodeFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\DeserializationHelpersTest.java",
+      "className": "DeserializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ParseNodeFactory mockParseNodeFactory = mock(ParseNodeFactory.class);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNodeFactory.getParseNode(any(), any())).thenReturn(mockParseNode);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockParseNode",
+    "variableType": "ParseNode",
+    "mockedClass": "ParseNode",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\DeserializationHelpersTest.java",
+      "className": "DeserializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ParseNode mockParseNode = mock(ParseNode.class);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNode.getObjectValue(any())).thenReturn(new TestEntity() {\r\n\r\n    {\r\n        setId(\"123\");\r\n    }\r\n});",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesObjectWithReflection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockParseNodeFactory",
+    "variableType": "ParseNodeFactory",
+    "mockedClass": "ParseNodeFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\DeserializationHelpersTest.java",
+      "className": "DeserializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ParseNodeFactory mockParseNodeFactory = mock(ParseNodeFactory.class);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesCollectionOfObjects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNodeFactory.getParseNode(any(), any())).thenReturn(mockParseNode);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesCollectionOfObjects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockParseNode",
+    "variableType": "ParseNode",
+    "mockedClass": "ParseNode",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\DeserializationHelpersTest.java",
+      "className": "DeserializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final ParseNode mockParseNode = mock(ParseNode.class);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesCollectionOfObjects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNode.getCollectionOfObjectValues(any())).thenReturn(new ArrayList<Parsable>() {\r\n\r\n    {\r\n        add(new TestEntity() {\r\n\r\n            {\r\n                setId(\"123\");\r\n            }\r\n        });\r\n    }\r\n});",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deserializesCollectionOfObjects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockSerializationWriterFactory",
+    "variableType": "var",
+    "mockedClass": "SerializationWriterFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\SerializationHelpersTest.java",
+      "className": "SerializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockSerializationWriterFactory = mock(SerializationWriterFactory.class);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "serializesObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockSerializationWriterFactory.getSerializationWriter(_jsonContentType)).thenReturn(mockSerializationWriter);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "serializesObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockSerializationWriter",
+    "variableType": "var",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\SerializationHelpersTest.java",
+      "className": "SerializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockSerializationWriter = mock(SerializationWriter.class);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "serializesObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockSerializationWriter.getSerializedContent()).thenReturn(new ByteArrayInputStream(\"{'id':'123'}\".getBytes(_charset)));",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "serializesObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockSerializationWriter, times(1)).writeObjectValue(eq(\"\"), any(Parsable.class));",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "serializesObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockSerializationWriterFactory",
+    "variableType": "var",
+    "mockedClass": "SerializationWriterFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\SerializationHelpersTest.java",
+      "className": "SerializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockSerializationWriterFactory = mock(SerializationWriterFactory.class);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "serializesObjectCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockSerializationWriterFactory.getSerializationWriter(_jsonContentType)).thenReturn(mockSerializationWriter);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "serializesObjectCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockSerializationWriter",
+    "variableType": "var",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\SerializationHelpersTest.java",
+      "className": "SerializationHelpersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockSerializationWriter = mock(SerializationWriter.class);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "serializesObjectCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockSerializationWriter.getSerializedContent()).thenReturn(new ByteArrayInputStream(\"[{'id':'123'}]\".getBytes(_charset)));",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "serializesObjectCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockSerializationWriter, times(1)).writeCollectionOfObjectValues(eq(\"\"), any());",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "serializesObjectCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "tokenCredential",
+    "variableType": "var",
+    "mockedClass": "TokenCredential",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.authentication",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\authentication\\azure\\src\\test\\java\\com\\microsoft\\kiota\\authentication\\AzureIdentityAccessTokenProviderTest.java",
+      "className": "AzureIdentityAccessTokenProviderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "var tokenCredential = mock(TokenCredential.class);",
+        "line": 32,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLocalhostHttpUrlIsValid",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tokenCredential.getTokenSync(any(TokenRequestContext.class))).thenReturn(new AccessToken(\"token\", null));",
+        "line": 33,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLocalhostHttpUrlIsValid",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "tokenCredential",
+    "variableType": "var",
+    "mockedClass": "TokenCredential",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.authentication",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\authentication\\azure\\src\\test\\java\\com\\microsoft\\kiota\\authentication\\AzureIdentityAccessTokenProviderTest.java",
+      "className": "AzureIdentityAccessTokenProviderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "var tokenCredential = mock(TokenCredential.class);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNonLocalhostHttpUrlIsInvalid",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "tokenCredential",
+    "variableType": "var",
+    "mockedClass": "TokenCredential",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.authentication",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\authentication\\azure\\src\\test\\java\\com\\microsoft\\kiota\\authentication\\AzureIdentityAccessTokenProviderTest.java",
+      "className": "AzureIdentityAccessTokenProviderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "var tokenCredential = mock(TokenCredential.class);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testKeepUserProvidedScopes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "tokenCredential",
+    "variableType": "var",
+    "mockedClass": "TokenCredential",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.authentication",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\authentication\\azure\\src\\test\\java\\com\\microsoft\\kiota\\authentication\\AzureIdentityAccessTokenProviderTest.java",
+      "className": "AzureIdentityAccessTokenProviderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "var tokenCredential = mock(TokenCredential.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureDefaultScopeWhenScopesNotProvided",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "tokenCredential",
+    "variableType": "var",
+    "mockedClass": "TokenCredential",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.authentication",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\authentication\\azure\\src\\test\\java\\com\\microsoft\\kiota\\authentication\\AzureIdentityAccessTokenProviderTest.java",
+      "className": "AzureIdentityAccessTokenProviderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "var tokenCredential = mock(TokenCredential.class);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureDefaultScopeWhenScopesNullOrEmpty",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@NullAndEmptySource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "AuthenticationProvider",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Unexpected exception thrown: java.lang.IllegalArgumentException:\r\n// method POST must have a request body.\r\nfinal AuthenticationProvider authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postRequestsShouldHaveEmptyBody",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@EnumSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "var",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendStreamReturnsUsableStream",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "var",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendStreamReturnsNullOnNoContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "var",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsNullOnNoContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockEntity",
+    "variableType": "var",
+    "mockedClass": "Parsable",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockEntity = mock(Parsable.class);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsNullOnNoContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockEntity.getFieldDeserializers()).thenReturn(new HashMap<>());",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsNullOnNoContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockFactory",
+    "variableType": "var",
+    "mockedClass": "ParseNodeFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockFactory = mock(ParseNodeFactory.class);",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsObjectOnContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockFactory.getParseNode(any(String.class), any(InputStream.class))).thenReturn(mockParseNode);",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsObjectOnContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockFactory.getValidContentType()).thenReturn(\"application/json\");",
+        "line": 208,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsObjectOnContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockParseNode",
+    "variableType": "var",
+    "mockedClass": "ParseNode",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockParseNode = mock(ParseNode.class);",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsObjectOnContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNode.getObjectValue(any(ParsableFactory.class))).thenReturn(mockEntity);",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsObjectOnContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "var",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsObjectOnContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockEntity",
+    "variableType": "var",
+    "mockedClass": "Parsable",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockEntity = mock(Parsable.class);",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsObjectOnContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockEntity.getFieldDeserializers()).thenReturn(new HashMap<>());",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "sendReturnsObjectOnContent",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@ValueSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockParsableFactory",
+    "variableType": "var",
+    "mockedClass": "ParsableFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockParsableFactory = mock(ParsableFactory.class);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParsableFactory.create(any(ParseNode.class))).thenReturn(mockEntity);",
+        "line": 266,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockFactory",
+    "variableType": "var",
+    "mockedClass": "ParseNodeFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockFactory = mock(ParseNodeFactory.class);",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockFactory.getParseNode(any(String.class), any(InputStream.class))).thenReturn(mockParseNode);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockFactory.getValidContentType()).thenReturn(\"application/json\");",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockParseNode",
+    "variableType": "var",
+    "mockedClass": "ParseNode",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockParseNode = mock(ParseNode.class);",
+        "line": 267,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockParseNode.getObjectValue(any(ParsableFactory.class))).thenReturn(mockEntity);",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockParseNode, times(1)).getObjectValue(mockParsableFactory);",
+        "line": 290,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "var",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockEntity",
+    "variableType": "var",
+    "mockedClass": "Parsable",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var mockEntity = mock(Parsable.class);",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockEntity.getFieldDeserializers()).thenReturn(new HashMap<>());",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "throwsAPIException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "request",
+    "variableType": "var",
+    "mockedClass": "var",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var request = adapter.getRequestFromRequestInformation(requestInformation, mock(Span.class), mock(Span.class));",
+        "line": 310,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationHasCorrectContentLength_JsonPayload",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "var",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 297,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationHasCorrectContentLength_JsonPayload",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "request",
+    "variableType": "var",
+    "mockedClass": "var",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var request = adapter.getRequestFromRequestInformation(requestInformation, mock(Span.class), mock(Span.class));",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationIncludesContentLength_FilePayload",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "var",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 323,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationIncludesContentLength_FilePayload",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "content",
+    "variableType": "FileInputStream",
+    "mockedClass": "FileInputStream",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "try (FileInputStream content = new FileInputStream(testFile)) {\r\n    requestInformation.setStreamContent(content, \"application/octet-stream\");\r\n    final var adapter = new OkHttpRequestAdapter(authenticationProviderMock);\r\n    final var request = adapter.getRequestFromRequestInformation(requestInformation, mock(Span.class), mock(Span.class));\r\n    assertEquals(String.valueOf(contentLength), request.headers().get(\"Content-Length\"));\r\n    assertEquals(\"application/octet-stream\", request.headers().get(\"Content-Type\"));\r\n    assertNotNull(request.body());\r\n    assertEquals(request.body().contentLength(), contentLength);\r\n    assertEquals(request.body().contentType(), MediaType.parse(\"application/octet-stream\"));\r\n}",
+        "line": 331,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationIncludesContentLength_FilePayload",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "request",
+    "variableType": "var",
+    "mockedClass": "var",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var request = adapter.getRequestFromRequestInformation(requestInformation, mock(Span.class), mock(Span.class));",
+        "line": 360,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationWithoutContentLengthOverrideForStreamBody",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "var",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 350,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationWithoutContentLengthOverrideForStreamBody",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "content",
+    "variableType": "FileInputStream",
+    "mockedClass": "FileInputStream",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "try (FileInputStream content = new FileInputStream(testFile)) {\r\n    requestInformation.setStreamContent(content, \"application/octet-stream\");\r\n    final var adapter = new OkHttpRequestAdapter(authenticationProviderMock);\r\n    final var request = adapter.getRequestFromRequestInformation(requestInformation, mock(Span.class), mock(Span.class));\r\n    assertEquals(\"application/octet-stream\", request.headers().get(\"Content-Type\"));\r\n    assertNotNull(request.body());\r\n    assertEquals(-1L, request.body().contentLength());\r\n    assertEquals(request.body().contentType(), MediaType.parse(\"application/octet-stream\"));\r\n}",
+        "line": 356,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationWithoutContentLengthOverrideForStreamBody",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "request",
+    "variableType": "var",
+    "mockedClass": "var",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var request = adapter.getRequestFromRequestInformation(requestInformation, mock(Span.class), mock(Span.class));",
+        "line": 386,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationWithoutContentLengthOverrideForJsonPayload",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "var",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 374,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationWithoutContentLengthOverrideForJsonPayload",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "request",
+    "variableType": "var",
+    "mockedClass": "var",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var request = adapter.getRequestFromRequestInformation(requestInformation, mock(Span.class), mock(Span.class));",
+        "line": 407,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationWithoutContentLengthOverrideWithEmptyPayload",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "authenticationProviderMock",
+    "variableType": "var",
+    "mockedClass": "AuthenticationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— None\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final var authenticationProviderMock = mock(AuthenticationProvider.class);",
+        "line": 399,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getRequestFromRequestInformationWithoutContentLengthOverrideWithEmptyPayload",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "mockClient",
+    "variableType": "OkHttpClient",
+    "mockedClass": "OkHttpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Helper\n\nStubbing:\n— Helper Method\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final OkHttpClient mockClient = mock(OkHttpClient.class);",
+        "line": 416,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "getMockClient",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockClient.dispatcher()).thenReturn(dispatcher);",
+        "line": 429,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "getMockClient",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mockClient.newCall(any())).thenReturn(remoteCall);",
+        "line": 430,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "getMockClient",
+          "methodAnnotations": []
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "remoteCall",
+    "variableType": "Call",
+    "mockedClass": "Call",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Helper\n\nStubbing:\n— Helper Method\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.http",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\http\\okHttp\\src\\test\\java\\com\\microsoft\\kiota\\http\\OkHttpRequestAdapterTest.java",
+      "className": "OkHttpRequestAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Call remoteCall = mock(Call.class);",
+        "line": 417,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "getMockClient",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(remoteCall.execute()).thenReturn(response);",
+        "line": 419,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "getMockClient",
+          "methodAnnotations": []
+        }
+      }
+    ]
+  },
+  {
+    "variableName": "requestAdapter",
+    "variableType": "RequestAdapter",
+    "mockedClass": "RequestAdapter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n— Local Mock Creation in Test Case\n\nStubbing:\n— Test Case\n\nVerification:\n— None",
+    "classContext": {
+      "packageName": "com.microsoft.kiota.serialization",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\serialization\\multipart\\src\\test\\java\\com\\microsoft\\kiota\\serialization\\MultipartSerializationWriterTests.java",
+      "className": "MultipartSerializationWriterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RequestAdapter requestAdapter = mock(RequestAdapter.class);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writesAStructuredObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(requestAdapter.getSerializationWriterFactory()).thenReturn(new JsonSerializationWriterFactory());",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writesAStructuredObject",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ]
+  }
+]

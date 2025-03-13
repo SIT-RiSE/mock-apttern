@@ -1,0 +1,278 @@
+[
+  {
+    "variableName": "securityRule",
+    "variableType": "SecurityRule",
+    "mockedClass": "SecurityRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityRule securityRule = mock(SecurityRule.class);",
+        "line": 762,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getRuleType()).thenReturn(SecurityRule.SecurityRuleType.EgressRule);",
+        "line": 781,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getProtocol()).thenReturn(NetUtils.ALL_PROTO);",
+        "line": 783,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getEndPort()).thenReturn(NetUtils.PORT_RANGE_MIN);",
+        "line": 784,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getAllowedNetworkId()).thenReturn(1L);",
+        "line": 792,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "securityRule",
+    "variableType": "SecurityRule",
+    "mockedClass": "SecurityRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityRule securityRule = mock(SecurityRule.class);",
+        "line": 799,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getRuleType()).thenReturn(SecurityRule.SecurityRuleType.IngressRule);",
+        "line": 813,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getProtocol()).thenReturn(NetUtils.ALL_PROTO);",
+        "line": 814,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getEndPort()).thenReturn(NetUtils.PORT_RANGE_MIN);",
+        "line": 815,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getAllowedNetworkId()).thenReturn(null);",
+        "line": 816,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenSecurityGroupIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "securityRule",
+    "variableType": "SecurityRule",
+    "mockedClass": "SecurityRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityRule securityRule = mock(SecurityRule.class);",
+        "line": 823,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getRuleType()).thenReturn(SecurityRule.SecurityRuleType.EgressRule);",
+        "line": 833,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getType()).thenReturn(\"egress\");",
+        "line": 834,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getAllowedNetworkId()).thenReturn(1L);",
+        "line": 840,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupEgressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "securityRule",
+    "variableType": "SecurityRule",
+    "mockedClass": "SecurityRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityRule securityRule = mock(SecurityRule.class);",
+        "line": 855,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getRuleType()).thenReturn(SecurityRule.SecurityRuleType.IngressRule);",
+        "line": 862,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getType()).thenReturn(\"ingress\");",
+        "line": 863,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityRule.getAllowedNetworkId()).thenReturn(null);",
+        "line": 866,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenSecurityGroupIngressRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

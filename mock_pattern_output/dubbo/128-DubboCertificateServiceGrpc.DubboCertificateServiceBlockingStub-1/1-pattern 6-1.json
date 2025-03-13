@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "stub",
+    "variableType": "DubboCertificateServiceGrpc.DubboCertificateServiceBlockingStub",
+    "mockedClass": "DubboCertificateServiceGrpc.DubboCertificateServiceBlockingStub",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.security.cert",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-security\\src\\test\\java\\org\\apache\\dubbo\\security\\cert\\DubboCertManagerTest.java",
+      "className": "DubboCertManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DubboCertificateServiceGrpc.DubboCertificateServiceBlockingStub stub = Mockito.mock(DubboCertificateServiceGrpc.DubboCertificateServiceBlockingStub.class);",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRefreshCert",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(stub.createCertificate(Mockito.any())).thenReturn(DubboCertificateResponse.newBuilder().setSuccess(false).build());",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRefreshCert",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(stub.withInterceptors(Mockito.any())).thenReturn(stub);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRefreshCert",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(stub, Mockito.times(1)).withInterceptors(Mockito.any());",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRefreshCert",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(stub.createCertificate(Mockito.any())).thenReturn(DubboCertificateResponse.newBuilder().setSuccess(true).setCertPem(\"certPem\").addTrustCerts(\"trustCerts\").setExpireTime(123456).build());",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRefreshCert",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(stub.createCertificate(Mockito.any())).thenReturn(null);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRefreshCert",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

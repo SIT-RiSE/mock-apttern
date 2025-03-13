@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "mgr",
+    "variableType": "AgentManagerImpl",
+    "mockedClass": "AgentManagerImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.agent.manager",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\agent\\manager\\AgentManagerImplTest.java",
+      "className": "AgentManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private AgentManagerImpl mgr = Mockito.spy(new AgentManagerImpl());",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mgr, Mockito.times(1)).handleDisconnectWithoutInvestigation(Mockito.any(attache.getClass()), Mockito.eq(Status.Event.AgentDisconnected), Mockito.eq(true), Mockito.eq(true));",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNotifyMonitorsOfConnectionWhenStoragePoolConnectionHostFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "apiServer",
+    "variableType": "ApiServerService",
+    "mockedClass": "ApiServerService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\user-authenticators\\saml2\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\ListAndSwitchSAMLAccountCmdTest.java",
+      "className": "ListAndSwitchSAMLAccountCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nApiServerService apiServer;",
+        "line": 65,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(apiServer.verifyUser(Mockito.anyLong())).thenReturn(true);",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListAndSwitchSAMLAccountCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(apiServer.loginUser(nullable(HttpSession.class), nullable(String.class), nullable(String.class), nullable(Long.class), nullable(String.class), nullable(InetAddress.class), nullable(Map.class))).thenReturn(loginCmdResponse);",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListAndSwitchSAMLAccountCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

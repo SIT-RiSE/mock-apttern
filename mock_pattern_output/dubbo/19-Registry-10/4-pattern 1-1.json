@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "registry",
+    "variableType": "Registry",
+    "mockedClass": "Registry",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.util",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\util\\ServiceCheckUtilsTest.java",
+      "className": "ServiceCheckUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Registry registry = Mockito.mock(Registry.class);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(registry.getUrl()).thenReturn(URL.valueOf(registry1));",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(registry.getUrl()).thenReturn(URL.valueOf(registry2));",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(registry.getUrl()).thenReturn(URL.valueOf(registry3));",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "variableName": "chain",
+    "variableType": "FilterChain",
+    "mockedClass": "FilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\u2014 Local Assignment in Other Methods\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Other Methods",
+    "classContext": {
+      "packageName": "org.springframework.security.config",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\FilterChainProxyConfigTests.java",
+      "className": "FilterChainProxyConfigTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FilterChain chain = mock(FilterChain.class);",
+        "line": 149,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "doNormalOperation",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "chain = mock(FilterChain.class);",
+        "line": 153,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "doNormalOperation",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(chain).doFilter(any(HttpServletRequest.class), any(HttpServletResponse.class));",
+        "line": 151,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "doNormalOperation",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(chain).doFilter(any(HttpServletRequest.class), any(HttpServletResponse.class));",
+        "line": 155,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "doNormalOperation",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 70
+  },
+  {
+    "variableName": "fc",
+    "variableType": "FilterChain",
+    "mockedClass": "FilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\ExceptionTranslationFilterTests.java",
+      "className": "ExceptionTranslationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FilterChain fc = mock(FilterChain.class);",
+        "line": 297,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockFilterChainWithException",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 17
+  },
+  {
+    "variableName": "chain",
+    "variableType": "FilterChain",
+    "mockedClass": "FilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access.intercept",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\intercept\\FilterSecurityInterceptorTests.java",
+      "className": "FilterSecurityInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FilterChain chain = mock(FilterChain.class);",
+        "line": 193,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createinvocation",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 17
+  },
+  {
+    "variableName": "chain",
+    "variableType": "FilterChain",
+    "mockedClass": "FilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.switchuser",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\switchuser\\SwitchUserFilterTests.java",
+      "className": "SwitchUserFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Check it with no url set (should get a text response)\r\nFilterChain chain = mock(FilterChain.class);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "switchToLockedAccountCausesRedirectToSwitchFailureUrl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "chain = mock(FilterChain.class);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "switchToLockedAccountCausesRedirectToSwitchFailureUrl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(chain, never()).doFilter(request, response);",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "switchToLockedAccountCausesRedirectToSwitchFailureUrl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(chain, never()).doFilter(request, response);",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "switchToLockedAccountCausesRedirectToSwitchFailureUrl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "chain",
+    "variableType": "FilterChain",
+    "mockedClass": "FilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.www",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\www\\BasicAuthenticationFilterTests.java",
+      "className": "BasicAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FilterChain chain = mock(FilterChain.class);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLoginThenFailureLoginResultsInSessionLosingToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "chain = mock(FilterChain.class);",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLoginThenFailureLoginResultsInSessionLosingToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(chain).doFilter(any(ServletRequest.class), any(ServletResponse.class));",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLoginThenFailureLoginResultsInSessionLosingToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(chain, never()).doFilter(any(ServletRequest.class), any(ServletResponse.class));",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessLoginThenFailureLoginResultsInSessionLosingToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "chain",
+    "variableType": "FilterChain",
+    "mockedClass": "FilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Other Methods",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.www",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\www\\DigestAuthenticationFilterTests.java",
+      "className": "DigestAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final FilterChain chain = mock(FilterChain.class);",
+        "line": 100,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "executeFilterInContainerSimulator",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(chain, times(expectChainToProceed ? 1 : 0)).doFilter(request, response);",
+        "line": 102,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "executeFilterInContainerSimulator",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 76
+  },
+  {
+    "variableName": "filterChain",
+    "variableType": "FilterChain",
+    "mockedClass": "FilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case\n\u2014 Other Methods",
+    "classContext": {
+      "packageName": "org.springframework.security.web.servletapi",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\servletapi\\SecurityContextHolderAwareRequestFilterTests.java",
+      "className": "SecurityContextHolderAwareRequestFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate FilterChain filterChain;",
+        "line": 87,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain, times(2)).doFilter(any(SecurityContextHolderAwareRequestWrapper.class), any(HttpServletResponse.class));",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "expectedRequestWrapperClassIsUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.requestCaptor.capture(), any(HttpServletResponse.class));",
+        "line": 341,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "wrappedRequest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 54
+  }
+]

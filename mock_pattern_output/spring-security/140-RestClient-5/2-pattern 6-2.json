@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "customClient",
+    "variableType": "RestClient",
+    "mockedClass": "RestClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\RestClientJwtBearerTokenResponseClientTests.java",
+      "className": "RestClientJwtBearerTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RestClient customClient = mock();",
+        "line": 434,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenRestClientSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customClient.post()).willReturn(RestClient.builder().build().post());",
+        "line": 435,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenRestClientSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customClient).post();",
+        "line": 440,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenRestClientSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "customClient",
+    "variableType": "RestClient",
+    "mockedClass": "RestClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\RestClientTokenExchangeTokenResponseClientTests.java",
+      "className": "RestClientTokenExchangeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RestClient customClient = mock();",
+        "line": 565,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenRestClientSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customClient.post()).willReturn(RestClient.builder().build().post());",
+        "line": 566,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenRestClientSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customClient).post();",
+        "line": 572,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenRestClientSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "webSocketInboundChannelAdapter",
+    "variableType": "WebSocketInboundChannelAdapter",
+    "mockedClass": "WebSocketInboundChannelAdapter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.websocket.server",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-websocket\\src\\test\\java\\org\\springframework\\integration\\websocket\\server\\WebSocketServerTests.java",
+      "className": "WebSocketServerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebSocketInboundChannelAdapter webSocketInboundChannelAdapter = new WebSocketInboundChannelAdapter(Mockito.mock(ServerWebSocketContainer.class));",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBrokerIsNotPresented",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

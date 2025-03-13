@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "tungstenGuestNetworkIpAddressDao",
+    "variableType": "TungstenGuestNetworkIpAddressDao",
+    "mockedClass": "TungstenGuestNetworkIpAddressDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nTungstenGuestNetworkIpAddressDao tungstenGuestNetworkIpAddressDao;",
+        "line": 142,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenGuestNetworkIpAddressDao.findByNetworkIdAndPublicIp(anyLong(), anyString())).thenReturn(tungstenGuestNetworkIpAddressVO);",
+        "line": 374,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenGuestNetworkIpAddressDao.findByNetworkIdAndPublicIp(anyLong(), anyString())).thenReturn(tungstenGuestNetworkIpAddressVO);",
+        "line": 475,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesRevokeRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenGuestNetworkIpAddressDao.remove(anyLong())).thenReturn(false);",
+        "line": 476,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesRevokeRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(tungstenGuestNetworkIpAddressDao.findByNetworkIdAndPublicIp(anyLong(), anyString())).thenReturn(tungstenGuestNetworkIpAddressVO);",
+        "line": 508,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyLBRulesRevokeRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

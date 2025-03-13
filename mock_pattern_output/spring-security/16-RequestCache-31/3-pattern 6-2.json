@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "requestCache",
+    "variableType": "RequestCache",
+    "mockedClass": "RequestCache",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\OAuth2AuthorizationCodeGrantFilterTests.java",
+      "className": "OAuth2AuthorizationCodeGrantFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RequestCache requestCache = mock(RequestCache.class);",
+        "line": 355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenAuthorizationSucceedsAndRequestCacheConfiguredThenRequestCacheUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(requestCache.getRequest(any(), any())).willReturn(savedRequest);",
+        "line": 359,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenAuthorizationSucceedsAndRequestCacheConfiguredThenRequestCacheUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(requestCache).getRequest(any(HttpServletRequest.class), any(HttpServletResponse.class));",
+        "line": 364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenAuthorizationSucceedsAndRequestCacheConfiguredThenRequestCacheUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "requestCache",
+    "variableType": "RequestCache",
+    "mockedClass": "RequestCache",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.savedrequest",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\savedrequest\\RequestCacheAwareFilterTests.java",
+      "className": "RequestCacheAwareFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RequestCache requestCache = mock(RequestCache.class);",
+        "line": 39,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenHttpSessionRequestCacheConfiguredThenSavedRequestRemovedAfterMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(requestCache.getMatchingRequest(request, response)).willReturn(request);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenHttpSessionRequestCacheConfiguredThenSavedRequestRemovedAfterMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(requestCache).getMatchingRequest(request, response);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenHttpSessionRequestCacheConfiguredThenSavedRequestRemovedAfterMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

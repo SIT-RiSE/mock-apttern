@@ -1,0 +1,248 @@
+[
+  {
+    "variableName": "pc",
+    "variableType": "ParserContext",
+    "mockedClass": "ParserContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ParserContext pc = new ParserContext(mock(XmlReaderContext.class), mock(BeanDefinitionParserDelegate.class));",
+        "line": 846,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenMoreThanOneResourceServerModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(pc.getReaderContext()).error(anyString(), eq(element));",
+        "line": 848,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenMoreThanOneResourceServerModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(pc.getReaderContext()).error(anyString(), eq(element));",
+        "line": 851,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenMoreThanOneResourceServerModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "pc",
+    "variableType": "ParserContext",
+    "mockedClass": "ParserContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ParserContext pc = new ParserContext(mock(XmlReaderContext.class), mock(BeanDefinitionParserDelegate.class));",
+        "line": 861,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoResourceServerModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(pc.getReaderContext()).error(anyString(), eq(element));",
+        "line": 863,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoResourceServerModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "pc",
+    "variableType": "ParserContext",
+    "mockedClass": "ParserContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ParserContext pc = new ParserContext(mock(XmlReaderContext.class), mock(BeanDefinitionParserDelegate.class));",
+        "line": 872,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenBothJwtAttributesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(pc.getReaderContext()).error(anyString(), eq(element));",
+        "line": 874,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenBothJwtAttributesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "pc",
+    "variableType": "ParserContext",
+    "mockedClass": "ParserContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ParserContext pc = new ParserContext(mock(XmlReaderContext.class), mock(BeanDefinitionParserDelegate.class));",
+        "line": 883,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoJwtAttributesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(pc.getReaderContext()).error(anyString(), eq(element));",
+        "line": 885,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoJwtAttributesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "pc",
+    "variableType": "ParserContext",
+    "mockedClass": "ParserContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ParserContext pc = new ParserContext(mock(XmlReaderContext.class), mock(BeanDefinitionParserDelegate.class));",
+        "line": 894,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenBothOpaqueTokenModesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(pc.getReaderContext()).error(anyString(), eq(element));",
+        "line": 896,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenBothOpaqueTokenModesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "pc",
+    "variableType": "ParserContext",
+    "mockedClass": "ParserContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ParserContext pc = new ParserContext(mock(XmlReaderContext.class), mock(BeanDefinitionParserDelegate.class));",
+        "line": 905,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoOpaqueTokenModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(pc.getReaderContext()).error(anyString(), eq(element));",
+        "line": 907,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoOpaqueTokenModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

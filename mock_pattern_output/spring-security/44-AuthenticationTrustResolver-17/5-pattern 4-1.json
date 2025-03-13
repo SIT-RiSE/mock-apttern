@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "trustResolver",
+    "variableType": "AuthenticationTrustResolver",
+    "mockedClass": "AuthenticationTrustResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\access\\expression\\DefaultMessageSecurityExpressionHandlerTests.java",
+      "className": "DefaultMessageSecurityExpressionHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock(answer = Answers.CALLS_REAL_METHODS)\r\nAuthenticationTrustResolver trustResolver;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.trustResolver.isAnonymous(this.authentication)).willReturn(false);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "trustResolverCustom",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

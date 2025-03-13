@@ -1,0 +1,942 @@
+[
+  {
+    "variableName": "storagePoolManager",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolManager = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 1548,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolManager.connectPhysicalDisksViaVmSpec(vm)).thenReturn(true);",
+        "line": 1570,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareForMigrationCommandMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 2325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateDisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePoolByURI(mountpoint)).thenReturn(secondaryPool);",
+        "line": 2338,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateDisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(command.getPool().getType(), command.getPoolUuid())).thenReturn(primaryPool);",
+        "line": 2340,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateDisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.copyPhysicalDisk(tmplVol, UUID.randomUUID().toString(), primaryPool, 0)).thenReturn(primaryVol);",
+        "line": 2341,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateDisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 2365,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNODisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePoolByURI(mountpoint)).thenReturn(secondaryPool);",
+        "line": 2375,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNODisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(command.getPool().getType(), command.getPoolUuid())).thenReturn(primaryPool);",
+        "line": 2377,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNODisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.copyPhysicalDisk(tmplVol, UUID.randomUUID().toString(), primaryPool, 0)).thenReturn(primaryVol);",
+        "line": 2378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNODisk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 2403,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNOQcow2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePoolByURI(mountpoint)).thenReturn(secondaryPool);",
+        "line": 2413,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNOQcow2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(command.getPool().getType(), command.getPoolUuid())).thenReturn(primaryPool);",
+        "line": 2417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNOQcow2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.copyPhysicalDisk(tmplVol, UUID.randomUUID().toString(), primaryPool, 0)).thenReturn(primaryVol);",
+        "line": 2418,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrimaryStorageDownloadCommandNOTemplateNOQcow2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 4144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testManageSnapshotCommandLibvirt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenReturn(primaryPool);",
+        "line": 4165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testManageSnapshotCommandLibvirt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 4603,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenReturn(primary);",
+        "line": 4613,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePoolByURI(secondaryStoragePoolURL)).thenReturn(secondary);",
+        "line": 4618,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.deleteStoragePool(secondary.getType(), secondary.getUuid())).thenReturn(true);",
+        "line": 4622,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePoolByURI(secondaryStoragePoolURL + volumeDestPath)).thenReturn(secondary);",
+        "line": 4623,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.copyPhysicalDisk(disk, destVolumeName, secondary, 0)).thenReturn(disk);",
+        "line": 4624,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 4650,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandToSecFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenReturn(primary);",
+        "line": 4660,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandToSecFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePoolByURI(secondaryStoragePoolURL + volumeDestPath)).thenReturn(secondary);",
+        "line": 4665,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandToSecFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.copyPhysicalDisk(disk, destVolumeName, primary, 0)).thenReturn(disk);",
+        "line": 4667,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandToSecFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 4694,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenReturn(primary);",
+        "line": 4703,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePoolByURI(secondaryStoragePoolURL + volumeDestPath)).thenReturn(secondary);",
+        "line": 4708,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 4734,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenThrow(new CloudRuntimeException(\"error\"));",
+        "line": 4737,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 4763,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandPrimaryNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenThrow(new CloudRuntimeException(\"not found\"));",
+        "line": 4773,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandPrimaryNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.createStoragePool(pool.getUuid(), pool.getHost(), pool.getPort(), pool.getPath(), pool.getUserInfo(), pool.getType())).thenReturn(primary);",
+        "line": 4775,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandPrimaryNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePoolByURI(secondaryStoragePoolURL + volumeDestPath)).thenReturn(secondary);",
+        "line": 4782,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandPrimaryNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.copyPhysicalDisk(disk, destVolumeName, primary, 0)).thenReturn(disk);",
+        "line": 4784,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandPrimaryNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 4879,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenReturn(storagePool);",
+        "line": 4892,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 4940,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandLinstorNotifyOnly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenReturn(storagePool);",
+        "line": 4952,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandLinstorNotifyOnly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 5014,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandShrink",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenReturn(storagePool);",
+        "line": 5020,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandShrink",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 5044,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenReturn(storagePool);",
+        "line": 5051,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 5093,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.getStoragePool(pool.getType(), pool.getUuid())).thenReturn(storagePool);",
+        "line": 5098,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResizeVolumeCommandException2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 5152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandFailedConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.connectPhysicalDisksViaVmSpec(vmSpec)).thenReturn(false);",
+        "line": 5180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandFailedConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 5355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.connectPhysicalDisksViaVmSpec(vmSpec)).thenReturn(true);",
+        "line": 5387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 5432,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandIsolationEc2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.connectPhysicalDisksViaVmSpec(vmSpec)).thenReturn(true);",
+        "line": 5464,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandIsolationEc2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "storagePoolMgr",
+    "variableType": "KVMStoragePoolManager",
+    "mockedClass": "KVMStoragePoolManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final KVMStoragePoolManager storagePoolMgr = Mockito.mock(KVMStoragePoolManager.class);",
+        "line": 5513,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolMgr.connectPhysicalDisksViaVmSpec(vmSpec)).thenReturn(true);",
+        "line": 5549,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

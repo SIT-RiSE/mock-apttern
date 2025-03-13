@@ -1,0 +1,645 @@
+[
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 2142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifySshKeysCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.retrieveSshKeysPath()).thenReturn(\"/path/keys\");",
+        "line": 2145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifySshKeysCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.retrieveSshPubKeyPath()).thenReturn(\"/path/pub/keys\");",
+        "line": 2146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifySshKeysCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.retrieveSshPrvKeyPath()).thenReturn(\"/path/pvt/keys\");",
+        "line": 2147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testModifySshKeysCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 4266,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.buildTemplateLocation(storage, tmplPath)).thenReturn(location);",
+        "line": 4291,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.generateUUIDName()).thenReturn(tmplName);",
+        "line": 4292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.buildQCOW2Processor(storage)).thenReturn(qcow2Processor);",
+        "line": 4295,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 4340,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandConfigurationException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.buildTemplateLocation(storage, tmplPath)).thenReturn(location);",
+        "line": 4365,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandConfigurationException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.generateUUIDName()).thenReturn(tmplName);",
+        "line": 4366,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandConfigurationException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.buildQCOW2Processor(storage)).thenThrow(ConfigurationException.class);",
+        "line": 4369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandConfigurationException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 4414,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.buildTemplateLocation(storage, tmplPath)).thenReturn(location);",
+        "line": 4438,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.generateUUIDName()).thenReturn(tmplName);",
+        "line": 4439,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.buildQCOW2Processor(storage)).thenReturn(qcow2Processor);",
+        "line": 4442,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandInternalErrorException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 4487,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandIOException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.buildTemplateLocation(storage, tmplPath)).thenReturn(location);",
+        "line": 4512,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandIOException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.generateUUIDName()).thenReturn(tmplName);",
+        "line": 4513,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandIOException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.buildQCOW2Processor(storage)).thenReturn(qcow2Processor);",
+        "line": 4516,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandIOException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 4560,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.generateUUIDName()).thenReturn(tmplName);",
+        "line": 4571,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreatePrivateTemplateFromSnapshotCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 4608,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.generateUUIDName()).thenReturn(destVolumeName);",
+        "line": 4616,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 4655,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandToSecFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.generateUUIDName()).thenReturn(destVolumeName);",
+        "line": 4662,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandToSecFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 4698,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.generateUUIDName()).thenReturn(destVolumeName);",
+        "line": 4705,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandCloudRuntime",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 4768,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandPrimaryNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.generateUUIDName()).thenReturn(destVolumeName);",
+        "line": 4779,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCopyVolumeCommandPrimaryNotFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 5514,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.getConnectionByType(vmDef.getHvsType())).thenReturn(conn);",
+        "line": 5535,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartCommandHostMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 5561,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.buildScript(libvirtComputingResourceMock.getUpdateHostPasswdPath())).thenReturn(script);",
+        "line": 5572,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "libvirtUtilitiesHelper",
+    "variableType": "LibvirtUtilitiesHelper",
+    "mockedClass": "LibvirtUtilitiesHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LibvirtUtilitiesHelper libvirtUtilitiesHelper = Mockito.mock(LibvirtUtilitiesHelper.class);",
+        "line": 5586,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommandFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(libvirtUtilitiesHelper.buildScript(libvirtComputingResourceMock.getUpdateHostPasswdPath())).thenReturn(script);",
+        "line": 5597,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateHostPasswordCommandFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

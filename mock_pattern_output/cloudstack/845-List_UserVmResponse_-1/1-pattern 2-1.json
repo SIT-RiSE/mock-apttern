@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "list",
+    "variableType": "List<UserVmResponse>",
+    "mockedClass": "List<UserVmResponse>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\ScaleVMCmdTest.java",
+      "className": "ScaleVMCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "//List<UserVmResponse> list = Mockito.mock(UserVmResponse.class);\r\n//list.add(userVmResponse);\r\n//LinkedList<UserVmResponse> mockedList = Mockito.mock(LinkedList.class);\r\n//Mockito.when(mockedList.get(0)).thenReturn(userVmResponse);\r\nList<UserVmResponse> list = new LinkedList<UserVmResponse>();",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

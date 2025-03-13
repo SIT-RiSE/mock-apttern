@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "serverWebSocketContainer",
+    "variableType": "ServerWebSocketContainer",
+    "mockedClass": "ServerWebSocketContainer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.websocket.dsl",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-websocket\\src\\test\\java\\org\\springframework\\integration\\websocket\\dsl\\WebSocketDslTests.java",
+      "className": "WebSocketDslTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerWebSocketContainer serverWebSocketContainer = new ServerWebSocketContainer(\"/dynamic\").setHandshakeHandler(serverContext.getBean(HandshakeHandler.class)).setDecoratorFactories(handler -> {\r\n    WebSocketHandler spy = spy(handler);\r\n    decoratedHandler.set(spy);\r\n    return spy;\r\n}).withSockJs();",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDynamicServerEndpointRegistration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

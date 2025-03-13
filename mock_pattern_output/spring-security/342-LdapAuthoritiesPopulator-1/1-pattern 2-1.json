@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "populator",
+    "variableType": "LdapAuthoritiesPopulator",
+    "mockedClass": "LdapAuthoritiesPopulator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.authentication.configurers.ldap",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\authentication\\configurers\\ldap\\LdapAuthenticationProviderConfigurerTests.java",
+      "className": "LdapAuthenticationProviderConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LdapAuthoritiesPopulator populator = mock(LdapAuthoritiesPopulator.class);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenObjectPostProcessorThenAuthoritiesPopulatorIsPostProcessed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

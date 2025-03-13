@@ -1,0 +1,371 @@
+[
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<?>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\ObservationFilterChainDecoratorTests.java",
+      "className": "ObservationFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<?> handler = mock(ObservationHandler.class);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler).onStart(any());",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<?>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\ObservationFilterChainDecoratorTests.java",
+      "className": "ObservationFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<?> handler = mock(ObservationHandler.class);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenNoopThenDoesNotObserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenNoopThenDoesNotObserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(handler);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenNoopThenDoesNotObserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<?>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\ObservationFilterChainDecoratorTests.java",
+      "className": "ObservationFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<?> handler = mock(ObservationHandler.class);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onStart(any());",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onEvent(event.capture(), any());",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<?>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\ObservationFilterChainDecoratorTests.java",
+      "className": "ObservationFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<?> handler = mock(ObservationHandler.class);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenDefaultsThenUsesEventName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenDefaultsThenUsesEventName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(2)).onEvent(event.capture(), any());",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenDefaultsThenUsesEventName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<?>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\ObservationFilterChainDecoratorTests.java",
+      "className": "ObservationFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<?> handler = mock(ObservationHandler.class);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenErrorsThenClosesObservationOnlyOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenErrorsThenClosesObservationOnlyOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler).onScopeClosed(any());",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenErrorsThenClosesObservationOnlyOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<?>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\ObservationWebFilterChainDecoratorTests.java",
+      "className": "ObservationWebFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<?> handler = mock(ObservationHandler.class);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler).onStart(any());",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<?>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\ObservationWebFilterChainDecoratorTests.java",
+      "className": "ObservationWebFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObservationHandler<?> handler = mock(ObservationHandler.class);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenNoopThenDoesNotObserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(handler.supportsContext(any())).willReturn(true);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenNoopThenDoesNotObserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(handler);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenNoopThenDoesNotObserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "variableName": "offeringUpdate",
+    "variableType": "BackupOfferingVO",
+    "mockedClass": "BackupOfferingVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.backup",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\backup\\BackupManagerTest.java",
+      "className": "BackupManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BackupOfferingVO offeringUpdate = Mockito.spy(BackupOfferingVO.class);",
+        "line": 62,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(offeringUpdate.getId()).thenReturn(1234l);",
+        "line": 63,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(offeringUpdate.getName()).thenReturn(\"Old name\");",
+        "line": 64,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(offeringUpdate.getDescription()).thenReturn(\"Old description\");",
+        "line": 65,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "offering",
+    "variableType": "BackupOfferingVO",
+    "mockedClass": "BackupOfferingVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.backup",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\backup\\BackupManagerTest.java",
+      "className": "BackupManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BackupOfferingVO offering = Mockito.spy(BackupOfferingVO.class);",
+        "line": 56,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(offering.getId()).thenReturn(1234l);",
+        "line": 57,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(offering.getName()).thenCallRealMethod();",
+        "line": 58,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(offering.getDescription()).thenCallRealMethod();",
+        "line": 59,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(offering.isUserDrivenBackupAllowed()).thenCallRealMethod();",
+        "line": 60,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  }
+]

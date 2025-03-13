@@ -1,0 +1,64 @@
+[
+  {
+    "variableName": "niciraApi",
+    "variableType": "NiciraNvpApi",
+    "mockedClass": "NiciraNvpApi",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource.wrapper",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\nicira-nvp\\src\\test\\java\\com\\cloud\\network\\resource\\wrapper\\NiciraCheckHealthCommandWrapperTest.java",
+      "className": "NiciraCheckHealthCommandWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final NiciraNvpApi niciraApi = mock(NiciraNvpApi.class);",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(niciraApi.getControlClusterStatus()).thenReturn(new ControlClusterStatus());",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "tetsExecuteWhenClusterIsNotStable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(niciraApi.getControlClusterStatus()).thenThrow(NiciraNvpApiException.class);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "tetsExecuteWhenApiThrowsException",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(niciraApi.getControlClusterStatus()).thenReturn(statusValue);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "tetsExecuteWhenClusterIsStable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

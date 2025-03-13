@@ -1,0 +1,85 @@
+[
+  {
+    "variableName": "request",
+    "variableType": "HttpServletRequest",
+    "mockedClass": "HttpServletRequest",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.debug",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\debug\\DebugFilterTests.java",
+      "className": "DebugFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HttpServletRequest request;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.request.getHeaderNames()).willReturn(Collections.enumeration(Collections.<String>emptyList()));",
+        "line": 85,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMocks",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.request.getServletPath()).willReturn(\"/login\");",
+        "line": 86,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMocks",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request).setAttribute(this.requestAttr, Boolean.TRUE);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterProcessesRequests",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.request).removeAttribute(this.requestAttr);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterProcessesRequests",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.request.getAttribute(this.requestAttr)).willReturn(Boolean.TRUE);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterDoesNotWrapWithDebugRequestWrapperAgain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 57
+  }
+]

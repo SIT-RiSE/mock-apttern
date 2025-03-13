@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "mockedSession",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.utils.ssh",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\com\\cloud\\utils\\ssh\\SshHelperTest.java",
+      "className": "SshHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session mockedSession = Mockito.mock(Session.class);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "canEndTheSshConnectionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockedSession.waitForCondition(ChannelCondition.EXIT_STATUS, 1l)).thenReturn(0);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "canEndTheSshConnectionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockedSession).waitForCondition(ChannelCondition.EXIT_STATUS, 1l);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "canEndTheSshConnectionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

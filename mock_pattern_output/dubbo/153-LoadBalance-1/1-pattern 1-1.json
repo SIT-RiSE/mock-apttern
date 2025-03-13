@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "lb",
+    "variableType": "LoadBalance",
+    "mockedClass": "LoadBalance",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\AbstractClusterInvokerTest.java",
+      "className": "AbstractClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LoadBalance lb = mock(LoadBalance.class);",
+        "line": 276,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCloseAvailablecheck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(lb.select(same(invokers), eq(tmpUrl), same(invocation))).thenReturn(invoker1);",
+        "line": 280,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCloseAvailablecheck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "contextSource",
+    "variableType": "BaseLdapPathContextSource",
+    "mockedClass": "BaseLdapPathContextSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.ldap.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\ldap\\src\\integration-test\\java\\org\\springframework\\security\\ldap\\authentication\\BindAuthenticatorTests.java",
+      "className": "BindAuthenticatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BaseLdapPathContextSource contextSource = spy(this.contextSource);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setAlsoHandleJavaxNamingBindExceptionsWhenTrueThenHandles",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(contextSource.getContext(fullDn.toString(), (String) this.bob.getCredentials())).willReturn(dirContext);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setAlsoHandleJavaxNamingBindExceptionsWhenTrueThenHandles",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "source",
+    "variableType": "BaseLdapPathContextSource",
+    "mockedClass": "BaseLdapPathContextSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.ldap.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\ldap\\src\\test\\java\\org\\springframework\\security\\ldap\\authentication\\PasswordComparisonAuthenticatorMockTests.java",
+      "className": "PasswordComparisonAuthenticatorMockTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final BaseLdapPathContextSource source = mock(BaseLdapPathContextSource.class);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ldapCompareOperationIsUsedWhenPasswordIsNotRetrieved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Get the mock to return an empty attribute set\r\ngiven(source.getReadOnlyContext()).willReturn(dirCtx);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ldapCompareOperationIsUsedWhenPasswordIsNotRetrieved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

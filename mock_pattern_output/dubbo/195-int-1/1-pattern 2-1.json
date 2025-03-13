@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "i",
+    "variableType": "int",
+    "mockedClass": "int",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.loadbalance",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\loadbalance\\ConsistentHashLoadBalanceTest.java",
+      "className": "ConsistentHashLoadBalanceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "for (int i = 0; i < 1000; i++) {\r\n    Invocation invocation = mock(Invocation.class);\r\n    String methodName = \"method1\";\r\n    given(invocation.getMethodName()).willReturn(\"$invoke\");\r\n    String[] paraTypes = new String[] { String.class.getName(), String.class.getName(), String.class.getName() };\r\n    Object[] argsObject = new Object[] { \"arg\" + i, \"arg2\", \"arg3\" };\r\n    Object[] args = new Object[] { methodName, paraTypes, argsObject };\r\n    given(invocation.getArguments()).willReturn(args);\r\n    for (int j = 0; j < 5; j++) {\r\n        Invoker sinvoker = lb.select(invokers, url, invocation);\r\n        counter.get(sinvoker).incrementAndGet();\r\n    }\r\n}",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testArgumentMatchAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "consumerModel",
+    "variableType": "ConsumerModel",
+    "mockedClass": "ConsumerModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.util",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\util\\ServiceCheckUtilsTest.java",
+      "className": "ServiceCheckUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConsumerModel consumerModel = Mockito.mock(ConsumerModel.class);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(consumerModel.getServiceMetadata()).thenReturn(serviceMetadata);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

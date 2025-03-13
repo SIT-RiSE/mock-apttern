@@ -1,0 +1,149 @@
+[
+  {
+    "variableName": "caManager",
+    "variableType": "CAManager",
+    "mockedClass": "CAManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.ca",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\ca\\CABackgroundTaskTest.java",
+      "className": "CABackgroundTaskTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate CAManager caManager;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(caManager.getActiveCertificatesMap()).thenReturn(certMap);",
+        "line": 79,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(caManager, Mockito.times(1)).provisionCertificate(host, false, null);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoRenewalEnabledWithNoExceptionsOnProvisioning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(caManager, Mockito.times(0)).sendAlert(Mockito.any(Host.class), Mockito.anyString(), Mockito.anyString());",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoRenewalEnabledWithNoExceptionsOnProvisioning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(caManager.provisionCertificate(any(Host.class), anyBoolean(), nullable(String.class))).thenThrow(new CloudRuntimeException(\"some error\"));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoRenewalEnabledWithExceptionsOnProvisioning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(caManager, Mockito.times(1)).provisionCertificate(host, false, null);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoRenewalEnabledWithExceptionsOnProvisioning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(caManager, Mockito.times(1)).sendAlert(Mockito.any(Host.class), Mockito.anyString(), Mockito.anyString());",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoRenewalEnabledWithExceptionsOnProvisioning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(caManager, Mockito.times(0)).provisionCertificate(Mockito.any(Host.class), anyBoolean(), Mockito.anyString());",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoRenewalDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(caManager, Mockito.times(1)).sendAlert(Mockito.any(Host.class), Mockito.anyString(), Mockito.anyString());",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoRenewalDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(caManager, Mockito.times(0)).provisionCertificate(Mockito.any(Host.class), anyBoolean(), Mockito.anyString());",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoRenewalDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(caManager, Mockito.times(0)).sendAlert(Mockito.any(Host.class), Mockito.anyString(), Mockito.anyString());",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoRenewalDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 21
+  }
+]

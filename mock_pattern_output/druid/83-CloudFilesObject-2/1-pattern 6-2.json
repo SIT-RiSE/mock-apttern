@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "cloudFilesObject",
+    "variableType": "CloudFilesObject",
+    "mockedClass": "CloudFilesObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.storage.cloudfiles",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\cloudfiles-extensions\\src\\test\\java\\org\\apache\\druid\\storage\\cloudfiles\\CloudFilesByteSourceTest.java",
+      "className": "CloudFilesByteSourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CloudFilesObject cloudFilesObject = mock(CloudFilesObject.class);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cloudFilesObject.getPayload()).thenReturn(payload);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(cloudFilesObject).getPayload();",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "cloudFilesObject",
+    "variableType": "CloudFilesObject",
+    "mockedClass": "CloudFilesObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.storage.cloudfiles",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\cloudfiles-extensions\\src\\test\\java\\org\\apache\\druid\\storage\\cloudfiles\\CloudFilesByteSourceTest.java",
+      "className": "CloudFilesByteSourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CloudFilesObject cloudFilesObject = mock(CloudFilesObject.class);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamWithRecoverableErrorTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cloudFilesObject.getPayload()).thenReturn(payload);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamWithRecoverableErrorTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(cloudFilesObject).getPayload();",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamWithRecoverableErrorTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

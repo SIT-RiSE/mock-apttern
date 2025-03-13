@@ -1,0 +1,306 @@
+[
+  {
+    "variableName": "domainDaoMock",
+    "variableType": "DomainDao",
+    "mockedClass": "DomainDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\DomainManagerImplTest.java",
+      "className": "DomainManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDomainDao domainDaoMock;",
+        "line": 76,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.findById(DOMAIN_ID)).thenReturn(domain);",
+        "line": 141,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.remove(DOMAIN_ID)).thenReturn(true);",
+        "line": 144,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.findById(1L)).thenReturn(domain);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindDomainByIdOrPathNullOrEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.findDomainByPath(Mockito.eq(\"/someDomain/\"))).thenReturn(domain);",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindDomainByIdOrPathValidPathAndInvalidId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.findDomainByPath(Mockito.anyString())).thenReturn(null);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindDomainByIdOrPathInvalidPathAndInvalidId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.findById(1L)).thenReturn(domain);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindDomainByIdOrPathValidId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(domainDaoMock.findDomainByPath(Mockito.eq(\"/validDomain/\"))).thenReturn(new DomainVO());",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindDomainByIdOrPathValidId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.findById(DOMAIN_ID)).thenReturn(null);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDomainNullDomain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.findById(Domain.ROOT_DOMAIN)).thenReturn(domain);",
+        "line": 208,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDomainRootDomain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainDaoMock).remove(DOMAIN_ID);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublishRemoveEventsAndRemoveDomainSuccessfulDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.remove(DOMAIN_ID)).thenReturn(false);",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublishRemoveEventsAndRemoveDomainExceptionDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainDaoMock).remove(DOMAIN_ID);",
+        "line": 254,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPublishRemoveEventsAndRemoveDomainExceptionDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.findById(20l)).thenReturn(domain);",
+        "line": 271,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteDomain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.update(Mockito.eq(20l), Mockito.any(DomainVO.class))).thenReturn(true);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteDomain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.remove(Mockito.anyLong())).thenReturn(true);",
+        "line": 278,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteDomain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.findById(20l)).thenReturn(domain);",
+        "line": 297,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteDomainCleanup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.update(Mockito.eq(20l), Mockito.any(DomainVO.class))).thenReturn(true);",
+        "line": 299,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteDomainCleanup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.createSearchCriteria()).thenReturn(Mockito.mock(SearchCriteria.class));",
+        "line": 300,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteDomainCleanup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.search(Mockito.any(SearchCriteria.class), (Filter) org.mockito.Matchers.isNull())).thenReturn(new ArrayList<DomainVO>());",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteDomainCleanup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(domainDaoMock.remove(Mockito.anyLong())).thenReturn(true);",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteDomainCleanup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainDaoMock).createSearchCriteria();",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateUniqueDomainNameTestUniqueNameDoesNotThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainDaoMock).search(scMock, null);",
+        "line": 360,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateUniqueDomainNameTestUniqueNameDoesNotThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainDaoMock).create(domainVoMock);",
+        "line": 405,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createDomainTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 21
+  }
+]

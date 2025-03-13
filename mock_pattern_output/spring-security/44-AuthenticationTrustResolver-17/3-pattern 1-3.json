@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "atr",
+    "variableType": "AuthenticationTrustResolver",
+    "mockedClass": "AuthenticationTrustResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\expression\\SecurityExpressionRootTests.java",
+      "className": "SecurityExpressionRootTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationTrustResolver atr = mock(AuthenticationTrustResolver.class);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rememberMeIsCorrectlyDetected",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(atr.isRememberMe(JOE)).willReturn(true);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "rememberMeIsCorrectlyDetected",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "atr",
+    "variableType": "AuthenticationTrustResolver",
+    "mockedClass": "AuthenticationTrustResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\expression\\SecurityExpressionRootTests.java",
+      "className": "SecurityExpressionRootTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationTrustResolver atr = mock(AuthenticationTrustResolver.class);",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAuthenticatedWhenTrustResolverFalseThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(atr.isAuthenticated(JOE)).willReturn(false);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAuthenticatedWhenTrustResolverFalseThenFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "atr",
+    "variableType": "AuthenticationTrustResolver",
+    "mockedClass": "AuthenticationTrustResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\expression\\SecurityExpressionRootTests.java",
+      "className": "SecurityExpressionRootTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationTrustResolver atr = mock(AuthenticationTrustResolver.class);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAuthenticatedWhenTrustResolverTrueThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(atr.isAuthenticated(JOE)).willReturn(true);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "isAuthenticatedWhenTrustResolverTrueThenTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

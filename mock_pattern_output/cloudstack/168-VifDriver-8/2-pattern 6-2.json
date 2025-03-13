@@ -1,0 +1,107 @@
+[
+  {
+    "variableName": "vifDriver",
+    "variableType": "VifDriver",
+    "mockedClass": "VifDriver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VifDriver vifDriver = Mockito.mock(VifDriver.class);",
+        "line": 3638,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vifDriver.plug(nic, \"Other PV\", \"\", null)).thenReturn(interfaceDef);",
+        "line": 3661,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vifDriver, times(1)).plug(nic, \"Other PV\", \"\", null);",
+        "line": 3684,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandNoMatchMack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "vifDriver",
+    "variableType": "VifDriver",
+    "mockedClass": "VifDriver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\LibvirtComputingResourceTest.java",
+      "className": "LibvirtComputingResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VifDriver vifDriver = Mockito.mock(VifDriver.class);",
+        "line": 3737,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vifDriver.plug(nic, \"Other PV\", \"\", null)).thenThrow(InternalErrorException.class);",
+        "line": 3758,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(vifDriver, times(1)).plug(nic, \"Other PV\", \"\", null);",
+        "line": 3777,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPlugNicCommandInternalError",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

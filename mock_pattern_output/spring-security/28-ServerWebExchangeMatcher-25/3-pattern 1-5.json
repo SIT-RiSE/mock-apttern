@@ -1,0 +1,197 @@
+[
+  {
+    "variableName": "matcher",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ServerWebExchangeDelegatingServerAccessDeniedHandlerTests.java",
+      "className": "ServerWebExchangeDelegatingServerAccessDeniedHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerWebExchangeMatcher matcher = mock(ServerWebExchangeMatcher.class);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenNothingMatchesThenOnlyDefaultHandlerInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(matcher.matches(this.exchange)).willReturn(MatchResult.notMatch());",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenNothingMatchesThenOnlyDefaultHandlerInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "firstMatcher",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ServerWebExchangeDelegatingServerAccessDeniedHandlerTests.java",
+      "className": "ServerWebExchangeDelegatingServerAccessDeniedHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerWebExchangeMatcher firstMatcher = mock(ServerWebExchangeMatcher.class);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenFirstMatchesThenOnlyFirstInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(firstMatcher.matches(this.exchange)).willReturn(MatchResult.match());",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenFirstMatchesThenOnlyFirstInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "secondMatcher",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ServerWebExchangeDelegatingServerAccessDeniedHandlerTests.java",
+      "className": "ServerWebExchangeDelegatingServerAccessDeniedHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerWebExchangeMatcher secondMatcher = mock(ServerWebExchangeMatcher.class);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenSecondMatchesThenOnlySecondInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(secondMatcher.matches(this.exchange)).willReturn(MatchResult.match());",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenSecondMatchesThenOnlySecondInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "firstMatcher",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ServerWebExchangeDelegatingServerAccessDeniedHandlerTests.java",
+      "className": "ServerWebExchangeDelegatingServerAccessDeniedHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerWebExchangeMatcher firstMatcher = mock(ServerWebExchangeMatcher.class);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenSecondMatchesThenOnlySecondInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(firstMatcher.matches(this.exchange)).willReturn(MatchResult.notMatch());",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleWhenSecondMatchesThenOnlySecondInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "matcher",
+    "variableType": "ServerWebExchangeMatcher",
+    "mockedClass": "ServerWebExchangeMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.transport",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\transport\\HttpsRedirectWebFilterTests.java",
+      "className": "HttpsRedirectWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerWebExchangeMatcher matcher = mock(ServerWebExchangeMatcher.class);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenExchangeMismatchesThenNoRedirect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(matcher.matches(any(ServerWebExchange.class))).willReturn(ServerWebExchangeMatcher.MatchResult.notMatch());",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenExchangeMismatchesThenNoRedirect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

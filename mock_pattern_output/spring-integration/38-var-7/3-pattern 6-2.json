@@ -1,0 +1,212 @@
+[
+  {
+    "variableName": "client",
+    "variableType": "var",
+    "mockedClass": "MqttAsyncClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mqtt",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mqtt\\src\\test\\java\\org\\springframework\\integration\\mqtt\\MqttAdapterTests.java",
+      "className": "MqttAdapterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "var client = mock(MqttAsyncClient.class);",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(client.publish(anyString(), any(MqttMessage.class))).willReturn(deliveryToken);",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// then\r\nverify(client, never()).connect(any(MqttConnectOptions.class));",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).publish(anyString(), any(MqttMessage.class));",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client, never()).disconnect();",
+        "line": 222,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client, never()).disconnect(anyLong());",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client, never()).close();",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "client",
+    "variableType": "var",
+    "mockedClass": "MqttAsyncClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mqtt",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mqtt\\src\\test\\java\\org\\springframework\\integration\\mqtt\\MqttAdapterTests.java",
+      "className": "MqttAdapterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "var client = mock(MqttAsyncClient.class);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(client.subscribe(any(String[].class), any(int[].class), any())).willReturn(subscribeToken);",
+        "line": 237,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// then\r\nverify(client, never()).connect(any(MqttConnectOptions.class));",
+        "line": 250,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).subscribe(eq(new String[] { \"mqtt-foo\" }), any(int[].class), any());",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).unsubscribe(new String[] { \"mqtt-foo\" });",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client, never()).disconnect();",
+        "line": 253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client, never()).disconnect(anyLong());",
+        "line": 254,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client, never()).close();",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testClientManagerIsNotConnectedAndClosedInAdapter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

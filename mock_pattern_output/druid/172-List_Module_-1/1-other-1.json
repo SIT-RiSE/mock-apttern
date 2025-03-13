@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "modules",
+    "variableType": "List<Module>",
+    "mockedClass": "List<Module>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.msq.test",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-core\\multi-stage-query\\src\\test\\java\\org\\apache\\druid\\msq\\test\\MSQTestBase.java",
+      "className": "MSQTestBase"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "List<Module> modules = ImmutableList.of(binder -> {\r\n    DruidProcessingConfig druidProcessingConfig = new DruidProcessingConfig() {\r\n\r\n        @Override\r\n        public String getFormatString() {\r\n            return \"test\";\r\n        }\r\n    };\r\n    GroupByQueryConfig groupByQueryConfig = new GroupByQueryConfig();\r\n    GroupingEngine groupingEngine = GroupByQueryRunnerTest.makeQueryRunnerFactory(groupByQueryConfig, groupByBuffers).getGroupingEngine();\r\n    binder.bind(GroupingEngine.class).toInstance(groupingEngine);\r\n    binder.bind(DruidProcessingConfig.class).toInstance(druidProcessingConfig);\r\n    binder.bind(new TypeLiteral<Set<NodeRole>>() {\r\n    }).annotatedWith(Self.class).toInstance(ImmutableSet.of(NodeRole.PEON));\r\n    binder.bind(QueryProcessingPool.class).toInstance(new ForwardingQueryProcessingPool(Execs.singleThreaded(\"Test-runner-processing-pool\")));\r\n    binder.bind(DataSegmentProvider.class).toInstance((segmentId, channelCounters, isReindex) -> getSupplierForSegment(segmentId));\r\n    binder.bind(LoadedSegmentDataProviderFactory.class).toInstance(getTestLoadedSegmentDataProviderFactory());\r\n    binder.bind(IndexIO.class).toInstance(indexIO);\r\n    binder.bind(SpecificSegmentsQuerySegmentWalker.class).toInstance(qf.walker());\r\n    LocalDataSegmentPusherConfig config = new LocalDataSegmentPusherConfig();\r\n    try {\r\n        config.storageDirectory = tmpFolder.newFolder(\"localsegments\");\r\n    } catch (IOException e) {\r\n        throw new ISE(e, \"Unable to create folder\");\r\n    }\r\n    binder.bind(DataSegmentPusher.class).toInstance(new MSQTestDelegateDataSegmentPusher(new LocalDataSegmentPusher(config), segmentManager));\r\n    binder.bind(DataSegmentAnnouncer.class).toInstance(new NoopDataSegmentAnnouncer());\r\n    binder.bindConstant().annotatedWith(PruneLoadSpec.class).to(false);\r\n    // Client is not used in tests\r\n    binder.bind(Key.get(ServiceClientFactory.class, EscalatedGlobal.class)).toProvider(Providers.of(null));\r\n    // fault tolerance module\r\n    try {\r\n        JsonConfigProvider.bind(binder, MSQDurableStorageModule.MSQ_INTERMEDIATE_STORAGE_PREFIX, StorageConnectorProvider.class, MultiStageQuery.class);\r\n        localFileStorageDir = tmpFolder.newFolder(\"fault\");\r\n        localFileStorageConnector = Mockito.spy(new LocalFileStorageConnector(localFileStorageDir));\r\n        binder.bind(Key.get(StorageConnector.class, MultiStageQuery.class)).toProvider(() -> localFileStorageConnector);\r\n    } catch (IOException e) {\r\n        throw new ISE(e, \"Unable to create setup storage connector\");\r\n    }\r\n    binder.bind(DataSegment.PruneSpecsHolder.class).toInstance(DataSegment.PruneSpecsHolder.DEFAULT);\r\n}, // Requirement of WorkerMemoryParameters.createProductionInstanceForWorker(injector)\r\nbinder -> binder.bind(AppenderatorsManager.class).toProvider(() -> null), // Requirement of JoinableFactoryModule\r\nbinder -> binder.bind(SegmentManager.class).toInstance(EasyMock.createMock(SegmentManager.class)), new JoinableFactoryModule(), new IndexingServiceTuningConfigModule(), new MSQIndexingModule(), Modules.override(new MSQSqlModule()).with(binder -> {\r\n    // Our Guice configuration currently requires bindings to exist even if they aren't ever used, the\r\n    // following bindings are overriding other bindings that end up needing a lot more dependencies.\r\n    // We replace the bindings with something that returns null to make things more brittle in case they\r\n    // actually are used somewhere in the test.\r\n    binder.bind(SqlStatementFactory.class).annotatedWith(MSQ.class).toProvider(Providers.of(null));\r\n    binder.bind(SqlToolbox.class).toProvider(Providers.of(null));\r\n    binder.bind(MSQTaskSqlEngine.class).toProvider(Providers.of(null));\r\n}), new ExpressionModule(), new MSQExternalDataSourceModule(), new LookylooModule(), new SegmentWranglerModule(), new HllSketchModule(), binder -> binder.bind(BrokerClient.class).toInstance(brokerClient));",
+        "line": 404,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp2",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 18
+  }
+]

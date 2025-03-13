@@ -1,0 +1,209 @@
+[
+  {
+    "variableName": "rule",
+    "variableType": "PortForwardingRule",
+    "mockedClass": "PortForwardingRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\cisco-vnmc\\src\\test\\java\\com\\cloud\\network\\element\\CiscoVnmcElementTest.java",
+      "className": "CiscoVnmcElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PortForwardingRule rule = mock(PortForwardingRule.class);",
+        "line": 345,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPRulesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(rule.getSourceIpAddressId()).thenReturn(1L);",
+        "line": 346,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPRulesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(rule.getDestinationIpAddress()).thenReturn(ip);",
+        "line": 347,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPRulesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "portForwardingRule",
+    "variableType": "PortForwardingRule",
+    "mockedClass": "PortForwardingRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PortForwardingRule portForwardingRule = mock(PortForwardingRule.class);",
+        "line": 517,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(portForwardingRule.getState()).thenReturn(FirewallRule.State.Add);",
+        "line": 524,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "portForwardingRule",
+    "variableType": "PortForwardingRule",
+    "mockedClass": "PortForwardingRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PortForwardingRule portForwardingRule = mock(PortForwardingRule.class);",
+        "line": 539,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(portForwardingRule.getState()).thenReturn(FirewallRule.State.Add);",
+        "line": 546,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "portForwardingRule",
+    "variableType": "PortForwardingRule",
+    "mockedClass": "PortForwardingRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PortForwardingRule portForwardingRule = mock(PortForwardingRule.class);",
+        "line": 561,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesRevokeRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(portForwardingRule.getState()).thenReturn(FirewallRule.State.Revoke);",
+        "line": 568,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesRevokeRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "portForwardingRule",
+    "variableType": "PortForwardingRule",
+    "mockedClass": "PortForwardingRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PortForwardingRule portForwardingRule = mock(PortForwardingRule.class);",
+        "line": 583,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesRevokeRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(portForwardingRule.getState()).thenReturn(FirewallRule.State.Revoke);",
+        "line": 590,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyPFRulesRevokeRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "authoritiesAuthorizationManager",
+    "variableType": "AuthorizationManager<Collection<String>>",
+    "mockedClass": "AuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\SecuredAuthorizationManagerTests.java",
+      "className": "SecuredAuthorizationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthorizationManager<Collection<String>> authoritiesAuthorizationManager = mock(AuthorizationManager.class);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setAuthoritiesAuthorizationManagerWhenNotNullThenVerifyUsage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authoritiesAuthorizationManager).check(authentication, Set.of(\"ROLE_USER\", \"ROLE_ADMIN\"));",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setAuthoritiesAuthorizationManagerWhenNotNullThenVerifyUsage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

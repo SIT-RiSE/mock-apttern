@@ -1,0 +1,155 @@
+[
+  {
+    "variableName": "mgs",
+    "variableType": "MessageGroupStore",
+    "mockedClass": "MessageGroupStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\AbstractCorrelatingMessageHandlerTests.java",
+      "className": "AbstractCorrelatingMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageGroupStore mgs = TestUtils.getPropertyValue(handler, \"messageStore\", MessageGroupStore.class);",
+        "line": 266,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReapIfAlreadyComplete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mgs = spy(mgs);",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReapIfAlreadyComplete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mgs, never()).getMessageGroup(\"foo\");",
+        "line": 278,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReapIfAlreadyComplete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "mgs",
+    "variableType": "MessageGroupStore",
+    "mockedClass": "MessageGroupStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\AbstractCorrelatingMessageHandlerTests.java",
+      "className": "AbstractCorrelatingMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageGroupStore mgs = TestUtils.getPropertyValue(handler, \"messageStore\", MessageGroupStore.class);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReapIfAlreadyCompleteAfterRefetch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mgs = spy(mgs);",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReapIfAlreadyCompleteAfterRefetch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mgs).getMessageGroup(\"foo\");",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReapIfAlreadyCompleteAfterRefetch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "mgs",
+    "variableType": "MessageGroupStore",
+    "mockedClass": "MessageGroupStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.aggregator",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\aggregator\\AbstractCorrelatingMessageHandlerTests.java",
+      "className": "AbstractCorrelatingMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageGroupStore mgs = TestUtils.getPropertyValue(handler, \"messageStore\", MessageGroupStore.class);",
+        "line": 321,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReapIfNewGroupFoundDuringRefetch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "mgs = spy(mgs);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReapIfNewGroupFoundDuringRefetch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mgs).getMessageGroup(\"foo\");",
+        "line": 337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReapIfNewGroupFoundDuringRefetch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  }
+]

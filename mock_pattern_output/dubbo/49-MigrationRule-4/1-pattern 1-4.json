@@ -1,0 +1,383 @@
+[
+  {
+    "variableName": "rule",
+    "variableType": "MigrationRule",
+    "mockedClass": "MigrationRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\DefaultMigrationAddressComparatorTest.java",
+      "className": "DefaultMigrationAddressComparatorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MigrationRule rule = Mockito.mock(MigrationRule.class);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(rule.getThreshold(url)).thenReturn(0.5f);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "migrationRule",
+    "variableType": "MigrationRule",
+    "mockedClass": "MigrationRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\MigrationInvokerTest.java",
+      "className": "MigrationInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MigrationRule migrationRule = Mockito.mock(MigrationRule.class);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getForce(Mockito.any())).thenReturn(true);",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getThreshold(Mockito.any())).thenReturn(1.0f);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getThreshold(Mockito.any())).thenReturn(2.0f);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getForce(Mockito.any())).thenReturn(false);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getThreshold(Mockito.any())).thenReturn(1.0f);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getThreshold(Mockito.any())).thenReturn(2.0f);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getThreshold(Mockito.any())).thenReturn(1.0f);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getThreshold(Mockito.any())).thenReturn(2.0f);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getThreshold(Mockito.any())).thenReturn(2.0f);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getForce(Mockito.any())).thenReturn(true);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getForce(Mockito.any())).thenReturn(false);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getForce(Mockito.any())).thenReturn(true);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getForce(Mockito.any())).thenReturn(false);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getThreshold(Mockito.any())).thenReturn(1.0f);",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getProportion(Mockito.any())).thenReturn(50);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getDelay(Mockito.any())).thenReturn(1);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "migrationRule",
+    "variableType": "MigrationRule",
+    "mockedClass": "MigrationRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\MigrationInvokerTest.java",
+      "className": "MigrationInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MigrationRule migrationRule = Mockito.mock(MigrationRule.class);",
+        "line": 282,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDecide",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(migrationRule.getForce(Mockito.any())).thenReturn(true);",
+        "line": 283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDecide",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "rule",
+    "variableType": "MigrationRule",
+    "mockedClass": "MigrationRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\MigrationRuleHandlerTest.java",
+      "className": "MigrationRuleHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MigrationRule rule = Mockito.mock(MigrationRule.class);",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(rule.getStep(url)).thenReturn(MigrationStep.FORCE_APPLICATION);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(rule.getStep(url)).thenReturn(MigrationStep.APPLICATION_FIRST);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(rule.getStep(url)).thenReturn(MigrationStep.FORCE_INTERFACE);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

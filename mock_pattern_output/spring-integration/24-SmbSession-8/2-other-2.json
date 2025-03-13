@@ -1,0 +1,54 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "SmbSession",
+    "mockedClass": "SmbSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\config\\SmbInboundChannelAdapterParserTests.java",
+      "className": "TestSessionFactoryBean"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SmbSession session = mock(SmbSession.class);",
+        "line": 128,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "getObject",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 22
+  },
+  {
+    "variableName": "session",
+    "variableType": "SmbSession",
+    "mockedClass": "SmbSession",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\config\\SmbStreamingInboundChannelAdapterParserTests.java",
+      "className": "TestSessionFactoryBean"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SmbSession session = mock(SmbSession.class);",
+        "line": 105,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getObject",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 37
+  }
+]

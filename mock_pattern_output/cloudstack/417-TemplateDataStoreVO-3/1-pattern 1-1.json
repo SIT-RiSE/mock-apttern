@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "dataStoreVO",
+    "variableType": "TemplateDataStoreVO",
+    "mockedClass": "TemplateDataStoreVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\HypervisorTemplateAdapterTest.java",
+      "className": "HypervisorTemplateAdapterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TemplateDataStoreVO dataStoreVO = mock(TemplateDataStoreVO.class);",
+        "line": 234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataStoreVO.getDownloadState()).thenReturn(Status.DOWNLOADED);",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmitDeleteEventUuid",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

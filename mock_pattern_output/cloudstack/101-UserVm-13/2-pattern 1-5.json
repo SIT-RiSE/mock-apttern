@@ -1,0 +1,209 @@
+[
+  {
+    "variableName": "userVmMock",
+    "variableType": "UserVm",
+    "mockedClass": "UserVm",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.admin.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\admin\\vm\\MigrateVirtualMachineWithVolumeCmdTest.java",
+      "className": "MigrateVirtualMachineWithVolumeCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserVm userVmMock = Mockito.mock(UserVm.class);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestUserVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmMock.getState()).thenReturn(VirtualMachine.State.Stopped);",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestUserVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmMock.getType()).thenReturn(VirtualMachine.Type.User);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestUserVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vm",
+    "variableType": "UserVm",
+    "mockedClass": "UserVm",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\ResetVMUserDataCmdTest.java",
+      "className": "ResetVMUserDataCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserVm vm = Mockito.mock(UserVm.class);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateArgsCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vm.getAccountId()).thenReturn(200L);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateArgsCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userVm",
+    "variableType": "UserVm",
+    "mockedClass": "UserVm",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerTest.java",
+      "className": "UserVmManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserVm userVm = mock(UserVm.class);",
+        "line": 778,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyUserDataInNetworkWithoutUserDataSupport",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVm.getId()).thenReturn(1L);",
+        "line": 779,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyUserDataInNetworkWithoutUserDataSupport",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userVm",
+    "variableType": "UserVm",
+    "mockedClass": "UserVm",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerTest.java",
+      "className": "UserVmManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserVm userVm = mock(UserVm.class);",
+        "line": 791,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyUserDataInNetworkWithoutElement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(userVm.getId()).thenReturn(1L);",
+        "line": 792,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyUserDataInNetworkWithoutElement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userVm",
+    "variableType": "UserVm",
+    "mockedClass": "UserVm",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerTest.java",
+      "className": "UserVmManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserVm userVm = mock(UserVm.class);",
+        "line": 808,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyUserDataSuccessful",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(userVm.getId()).thenReturn(1L);",
+        "line": 809,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testApplyUserDataSuccessful",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

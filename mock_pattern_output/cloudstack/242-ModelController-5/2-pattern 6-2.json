@@ -1,0 +1,140 @@
+[
+  {
+    "variableName": "controller",
+    "variableType": "ModelController",
+    "mockedClass": "ModelController",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.contrail.model",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\juniper-contrail\\src\\test\\java\\org\\apache\\cloudstack\\network\\contrail\\model\\VirtualMachineModelTest.java",
+      "className": "VirtualMachineModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ModelController controller = mock(ModelController.class);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualMachine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(controller.getManager()).thenReturn(contrailMgr);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualMachine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(controller.getApiAccessor()).thenReturn(api);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualMachine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(controller.getVmDao()).thenReturn(VmDao);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualMachine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "//verify\r\nassertTrue(vmModel.verify(controller));",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualMachine",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "controller",
+    "variableType": "ModelController",
+    "mockedClass": "ModelController",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.contrail.model",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\juniper-contrail\\src\\test\\java\\org\\apache\\cloudstack\\network\\contrail\\model\\VirtualNetworkModelTest.java",
+      "className": "VirtualNetworkModelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ModelController controller = mock(ModelController.class);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(controller.getManager()).thenReturn(contrailMgr);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(controller.getApiAccessor()).thenReturn(api);",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "assertTrue(vnModel.verify(controller));",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateVirtualNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

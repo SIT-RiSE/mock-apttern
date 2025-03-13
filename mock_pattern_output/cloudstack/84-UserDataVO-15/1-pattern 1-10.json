@@ -1,0 +1,409 @@
+[
+  {
+    "variableName": "userDataVO",
+    "variableType": "UserDataVO",
+    "mockedClass": "UserDataVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.api",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\ApiResponseHelperTest.java",
+      "className": "ApiResponseHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataVO userDataVO = Mockito.mock(UserDataVO.class);",
+        "line": 338,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoScaleVmProfileResponse",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userDataVO.getUuid()).thenReturn(userDataUuid);",
+        "line": 342,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoScaleVmProfileResponse",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userDataVO.getName()).thenReturn(userDataName);",
+        "line": 343,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoScaleVmProfileResponse",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userData",
+    "variableType": "UserDataVO",
+    "mockedClass": "UserDataVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\ManagementServerImplTest.java",
+      "className": "ManagementServerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataVO userData = Mockito.mock(UserDataVO.class);",
+        "line": 378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessfulDeleteUserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userData.getId()).thenReturn(1L);",
+        "line": 380,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessfulDeleteUserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userData",
+    "variableType": "UserDataVO",
+    "mockedClass": "UserDataVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\ManagementServerImplTest.java",
+      "className": "ManagementServerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataVO userData = Mockito.mock(UserDataVO.class);",
+        "line": 407,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteUserdataLinkedToTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userData.getId()).thenReturn(1L);",
+        "line": 408,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteUserdataLinkedToTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userData",
+    "variableType": "UserDataVO",
+    "mockedClass": "UserDataVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\ManagementServerImplTest.java",
+      "className": "ManagementServerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataVO userData = Mockito.mock(UserDataVO.class);",
+        "line": 436,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteUserdataUsedByVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userData.getId()).thenReturn(1L);",
+        "line": 437,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteUserdataUsedByVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "apiUserDataVO",
+    "variableType": "UserDataVO",
+    "mockedClass": "UserDataVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataVO apiUserDataVO = Mockito.mock(UserDataVO.class);",
+        "line": 698,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverride",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(apiUserDataVO.getUserData()).thenReturn(templateUserData);",
+        "line": 700,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverride",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateUserDataVO",
+    "variableType": "UserDataVO",
+    "mockedClass": "UserDataVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataVO templateUserDataVO = Mockito.mock(UserDataVO.class);",
+        "line": 717,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAppend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateUserDataVO.getUserData()).thenReturn(templateUserData);",
+        "line": 719,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAppend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "apiUserDataVO",
+    "variableType": "UserDataVO",
+    "mockedClass": "UserDataVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataVO apiUserDataVO = Mockito.mock(UserDataVO.class);",
+        "line": 721,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAppend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(apiUserDataVO.getUserData()).thenReturn(userData);",
+        "line": 723,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAppend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "apiUserDataVO",
+    "variableType": "UserDataVO",
+    "mockedClass": "UserDataVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataVO apiUserDataVO = Mockito.mock(UserDataVO.class);",
+        "line": 735,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataWithoutTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(apiUserDataVO.getUserData()).thenReturn(userData);",
+        "line": 737,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataWithoutTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "templateUserDataVO",
+    "variableType": "UserDataVO",
+    "mockedClass": "UserDataVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataVO templateUserDataVO = Mockito.mock(UserDataVO.class);",
+        "line": 754,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverrideWithoutAPIuserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateUserDataVO.getUserData()).thenReturn(templateUserData);",
+        "line": 756,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverrideWithoutAPIuserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "apiUserDataVO",
+    "variableType": "UserDataVO",
+    "mockedClass": "UserDataVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserDataVO apiUserDataVO = Mockito.mock(UserDataVO.class);",
+        "line": 887,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataSuccessResetWithUserdataId",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(apiUserDataVO.getUserData()).thenReturn(\"testUserdata\");",
+        "line": 889,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataSuccessResetWithUserdataId",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

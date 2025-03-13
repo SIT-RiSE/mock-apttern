@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "dirContext",
+    "variableType": "LdapContext",
+    "mockedClass": "LdapContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.ldap.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\ldap\\src\\integration-test\\java\\org\\springframework\\security\\ldap\\authentication\\BindAuthenticatorTests.java",
+      "className": "BindAuthenticatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LdapContext dirContext = mock(LdapContext.class);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setAlsoHandleJavaxNamingBindExceptionsWhenTrueThenHandles",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(dirContext.getAttributes(any(Name.class), any())).willThrow(new javax.naming.AuthenticationException(\"exception\"));",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setAlsoHandleJavaxNamingBindExceptionsWhenTrueThenHandles",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

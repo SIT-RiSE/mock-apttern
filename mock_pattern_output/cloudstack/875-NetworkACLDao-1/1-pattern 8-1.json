@@ -1,0 +1,131 @@
+[
+  {
+    "variableName": "networkAclDaoMock",
+    "variableType": "NetworkACLDao",
+    "mockedClass": "NetworkACLDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate NetworkACLDao networkAclDaoMock;",
+        "line": 87,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(networkAclDaoMock.findById(networkAclListId)).thenReturn(networkACLVOMock);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "befoteTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkAclDaoMock).findById(networkAclListId);",
+        "line": 885,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkAclDaoMock).update(networkAclListId, networkACLVOMock);",
+        "line": 895,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkAclDaoMock).findById(networkAclListId);",
+        "line": 896,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersNotNull",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkAclDaoMock).findById(networkAclListId);",
+        "line": 1085,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkAclDaoMock).update(networkAclListId, networkACLVOMock);",
+        "line": 1094,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkAclDaoMock).findById(networkAclListId);",
+        "line": 1095,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateNetworkACLTestParametersWithNullValues",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclDaoMock).findById(networkAclMockId);",
+        "line": 1116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMoveAclRulesDataTestSuccesfullExecution",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

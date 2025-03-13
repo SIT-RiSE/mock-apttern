@@ -1,0 +1,67 @@
+[
+  {
+    "variableName": "node",
+    "variableType": "SqlNode",
+    "mockedClass": "SqlNode",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\u2014 Local Assignment in Helper Method\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.sql.calcite.expression",
+      "filePath": "C:\\java tool\\Apache\\druid\\sql\\src\\test\\java\\org\\apache\\druid\\sql\\calcite\\expression\\OperatorConversionsTest.java",
+      "className": "DefaultOperandTypeCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SqlNode node;",
+        "line": 464,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "node = Mockito.mock(SqlLiteral.class);",
+        "line": 466,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "node = Mockito.mock(SqlNode.class);",
+        "line": 469,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(node.getKind()).thenReturn(SqlKind.LITERAL);",
+        "line": 467,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Setting this as SqlUtil.isLiteral makes a call on\r\n// node.getKind() and without this change would\r\n// return a NPE\r\nMockito.when(node.getKind()).thenReturn(SqlKind.OTHER_FUNCTION);",
+        "line": 473,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 69
+  }
+]

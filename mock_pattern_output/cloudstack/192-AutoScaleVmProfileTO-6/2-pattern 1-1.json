@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "profileTO",
+    "variableType": "AutoScaleVmProfileTO",
+    "mockedClass": "AutoScaleVmProfileTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AutoScaleVmProfileTO profileTO = Mockito.mock(AutoScaleVmProfileTO.class);",
+        "line": 2139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMapWithInstantDataForMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(profileTO.getServiceOfferingId()).thenReturn(serviceOfferingUuid);",
+        "line": 2145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateCountersMapWithInstantDataForMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

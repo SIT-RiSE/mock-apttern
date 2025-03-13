@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "nic",
+    "variableType": "NicVO",
+    "mockedClass": "NicVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.engine.orchestration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\org\\apache\\cloudstack\\engine\\orchestration\\NetworkOrchestratorTest.java",
+      "className": "NetworkOrchestratorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NicVO nic = mock(NicVO.class);",
+        "line": 496,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReleaseNicWhenPreserveNicsSettingEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nic.getId()).thenReturn(nicId);",
+        "line": 504,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReleaseNicWhenPreserveNicsSettingEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(nic, never()).setState(Nic.State.Deallocating);",
+        "line": 509,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDontReleaseNicWhenPreserveNicsSettingEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

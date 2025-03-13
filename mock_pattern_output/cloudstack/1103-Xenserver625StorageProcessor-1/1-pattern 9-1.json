@@ -1,0 +1,294 @@
+[
+  {
+    "variableName": "xenserver625StorageProcessor",
+    "variableType": "Xenserver625StorageProcessor",
+    "mockedClass": "Xenserver625StorageProcessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\Xenserver625StorageProcessorTest.java",
+      "className": "Xenserver625StorageProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "@InjectMocks\r\nprivate Xenserver625StorageProcessor xenserver625StorageProcessor;",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@InjectMocks"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "xenserver625StorageProcessor = Mockito.spy(new Xenserver625StorageProcessor(citrixResourceBase));",
+        "line": 70,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "before",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(xenserver625StorageProcessor, times(1)).retrieveAlreadyConfiguredSrWithoutException(connectionMock, pathMock);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createFileSRTestSrAlreadyConfigured",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(xenserver625StorageProcessor, times(0)).createNewFileSr(connectionMock, pathMock);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createFileSRTestSrAlreadyConfigured",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(xenserver625StorageProcessor, times(1)).retrieveAlreadyConfiguredSrWithoutException(connectionMock, pathMock);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createFileSRTestSrNotConfiguredAlreadyCreatingSr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(xenserver625StorageProcessor, times(1)).createNewFileSr(connectionMock, pathMock);",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createFileSRTestSrNotConfiguredAlreadyCreatingSr",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor).retrieveAlreadyConfiguredSr(connectionMock, pathMock);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "retrieveAlreadyConfiguredSrWithoutExceptionMethodWorking",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor).forgetSr(connectionMock, srMock);",
+        "line": 234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureAndExecuteMethodRetrieveAlreadyConfiguredSrTestSrFailsSanityCheckForException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor, times(0)).forgetSr(connectionMock, srMock);",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "methodRetrieveAlreadyConfiguredSrTestSrScanSucceeds",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor, times(1)).unplugPbd(connectionMock, pbdMock);",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forgetSrTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor).removeSrAndPbdIfPossible(Mockito.eq(connectionMock), nullable(SR.class), nullable(PBD.class));",
+        "line": 341,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndExecuteTestcreateNewFileSrTestThrowingException",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor, times(0)).removeSrAndPbdIfPossible(Mockito.eq(connectionMock), Mockito.any(SR.class), Mockito.any(PBD.class));",
+        "line": 370,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createNewFileSrTestThrowingDbUniqueException",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor).retrieveAlreadyConfiguredSrWithoutException(connectionMock, pathMock);",
+        "line": 371,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createNewFileSrTestThrowingDbUniqueException",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor, times(0)).removeSrAndPbdIfPossible(Mockito.eq(connectionMock), Mockito.any(SR.class), Mockito.any(PBD.class));",
+        "line": 401,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createNewFileSrTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor, times(0)).retrieveAlreadyConfiguredSrWithoutException(connectionMock, pathMock);",
+        "line": 402,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createNewFileSrTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor).forgetSr(connectionMock, srMock);",
+        "line": 423,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeSrAndPbdIfPossibleBothPbdAndSrNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor).unplugPbd(connectionMock, pbdMock);",
+        "line": 424,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeSrAndPbdIfPossibleBothPbdAndSrNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor).forgetSr(connectionMock, srMock);",
+        "line": 435,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeSrAndPbdIfPossiblePbdNullAndSrNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor, times(0)).unplugPbd(Mockito.eq(connectionMock), Mockito.any(PBD.class));",
+        "line": 436,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeSrAndPbdIfPossiblePbdNullAndSrNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor, times(0)).forgetSr(Mockito.eq(connectionMock), Mockito.any(SR.class));",
+        "line": 447,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeSrAndPbdIfPossiblePbdNotNullButSrNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor).unplugPbd(connectionMock, pbdMock);",
+        "line": 448,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeSrAndPbdIfPossiblePbdNotNullButSrNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor, times(0)).forgetSr(Mockito.eq(connectionMock), Mockito.any(SR.class));",
+        "line": 456,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeSrAndPbdIfPossibleBothPbdAndSrNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(xenserver625StorageProcessor, times(0)).unplugPbd(Mockito.eq(connectionMock), Mockito.any(PBD.class));",
+        "line": 457,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeSrAndPbdIfPossibleBothPbdAndSrNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

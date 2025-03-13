@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "monitorService",
+    "variableType": "MonitorService",
+    "mockedClass": "MonitorService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.dubbo",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-default\\src\\test\\java\\org\\apache\\dubbo\\monitor\\dubbo\\DubboMonitorTest.java",
+      "className": "DubboMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MonitorService monitorService = mock(MonitorService.class);",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(monitorService, atLeastOnce()).collect(summaryCaptor.capture());",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "monitorService",
+    "variableType": "MonitorService",
+    "mockedClass": "MonitorService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.dubbo",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-default\\src\\test\\java\\org\\apache\\dubbo\\monitor\\dubbo\\DubboMonitorTest.java",
+      "className": "DubboMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MonitorService monitorService = mock(MonitorService.class);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLookUp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(monitorService).lookup(queryUrl);",
+        "line": 281,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLookUp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

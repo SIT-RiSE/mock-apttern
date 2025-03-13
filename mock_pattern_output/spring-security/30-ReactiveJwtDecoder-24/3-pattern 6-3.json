@@ -1,0 +1,155 @@
+[
+  {
+    "variableName": "jwtDecoder",
+    "variableType": "ReactiveJwtDecoder",
+    "mockedClass": "ReactiveJwtDecoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\SupplierReactiveJwtDecoderTests.java",
+      "className": "SupplierReactiveJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveJwtDecoder jwtDecoder = mock(ReactiveJwtDecoder.class);",
+        "line": 38,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenUninitializedThenSupplierInitializes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwtDecoder.decode(\"token\")).willReturn(Mono.empty());",
+        "line": 39,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenUninitializedThenSupplierInitializes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(jwtDecoder).decode(\"token\");",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenUninitializedThenSupplierInitializes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "jwtDecoder",
+    "variableType": "ReactiveJwtDecoder",
+    "mockedClass": "ReactiveJwtDecoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\SupplierReactiveJwtDecoderTests.java",
+      "className": "SupplierReactiveJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveJwtDecoder jwtDecoder = mock(ReactiveJwtDecoder.class);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenInitializedThenCaches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwtDecoder.decode(\"token\")).willReturn(Mono.empty());",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenInitializedThenCaches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(jwtDecoder, times(2)).decode(\"token\");",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenInitializedThenCaches",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "jwtDecoder",
+    "variableType": "ReactiveJwtDecoder",
+    "mockedClass": "ReactiveJwtDecoder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\SupplierReactiveJwtDecoderTests.java",
+      "className": "SupplierReactiveJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveJwtDecoder jwtDecoder = mock(ReactiveJwtDecoder.class);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenInitializationInitiallyFailsThenRecoverable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwtDecoder.decode(\"token\")).willReturn(Mono.empty());",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenInitializationInitiallyFailsThenRecoverable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(jwtDecoder).decode(\"token\");",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenInitializationInitiallyFailsThenRecoverable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

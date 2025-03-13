@@ -1,0 +1,51 @@
+[
+  {
+    "variableName": "parseExceptionHandler",
+    "variableType": "ParseExceptionHandler",
+    "mockedClass": "ParseExceptionHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.indexing.common.task",
+      "filePath": "C:\\java tool\\Apache\\druid\\indexing-service\\src\\test\\java\\org\\apache\\druid\\indexing\\common\\task\\FilteringCloseableInputRowIteratorTest.java",
+      "className": "FilteringCloseableInputRowIteratorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private ParseExceptionHandler parseExceptionHandler;",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "parseExceptionHandler = Mockito.spy(new ParseExceptionHandler(rowIngestionMeters, true, Integer.MAX_VALUE, // do not use Integer.MAX_VALUE since it will create an object array of this length\r\n1024));",
+        "line": 67,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(parseExceptionHandler, Mockito.times(6)).logParseExceptionHelper(exceptionArgumentCaptor.capture());",
+        "line": 341,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testParseExceptionSaveExceptionCause",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

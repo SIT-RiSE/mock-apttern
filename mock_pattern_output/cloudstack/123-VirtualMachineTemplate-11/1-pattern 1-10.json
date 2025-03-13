@@ -1,0 +1,496 @@
+[
+  {
+    "variableName": "template",
+    "variableType": "VirtualMachineTemplate",
+    "mockedClass": "VirtualMachineTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.agent.transport",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\core\\src\\test\\java\\com\\cloud\\agent\\transport\\RequestTest.java",
+      "className": "RequestTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTemplate template = Mockito.mock(VirtualMachineTemplate.class);",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownload",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getId()).thenReturn(1L);",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownload",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getFormat()).thenReturn(ImageFormat.QCOW2);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownload",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getName()).thenReturn(\"templatename\");",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownload",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getTemplateType()).thenReturn(TemplateType.USER);",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownload",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getDisplayText()).thenReturn(\"displayText\");",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownload",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getHypervisorType()).thenReturn(HypervisorType.KVM);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownload",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getUrl()).thenReturn(\"url\");",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownload",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VirtualMachineTemplate",
+    "mockedClass": "VirtualMachineTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTemplate template = mock(VirtualMachineTemplate.class);",
+        "line": 963,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.isDeployAsIs()).thenReturn(false);",
+        "line": 964,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VirtualMachineTemplate",
+    "mockedClass": "VirtualMachineTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTemplate template = mock(VirtualMachineTemplate.class);",
+        "line": 1055,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.isDeployAsIs()).thenReturn(false);",
+        "line": 1056,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vmt",
+    "variableType": "VirtualMachineTemplate",
+    "mockedClass": "VirtualMachineTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.deploy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\deploy\\DeploymentPlanningManagerImplTest.java",
+      "className": "DeploymentPlanningManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTemplate vmt = Mockito.mock(VirtualMachineTemplate.class);",
+        "line": 782,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findSuitablePoolsForVolumesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmt.getFormat()).thenReturn(Storage.ImageFormat.ISO);",
+        "line": 789,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findSuitablePoolsForVolumesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VirtualMachineTemplate",
+    "mockedClass": "VirtualMachineTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTemplate template = Mockito.mock(VirtualMachineTemplate.class);",
+        "line": 682,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataDenyOverride",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataId()).thenReturn(2L);",
+        "line": 683,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataDenyOverride",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataOverridePolicy()).thenReturn(UserData.UserDataOverridePolicy.DENYOVERRIDE);",
+        "line": 684,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataDenyOverride",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VirtualMachineTemplate",
+    "mockedClass": "VirtualMachineTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTemplate template = Mockito.mock(VirtualMachineTemplate.class);",
+        "line": 694,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverride",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataId()).thenReturn(2L);",
+        "line": 695,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverride",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataOverridePolicy()).thenReturn(UserData.UserDataOverridePolicy.ALLOWOVERRIDE);",
+        "line": 696,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverride",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VirtualMachineTemplate",
+    "mockedClass": "VirtualMachineTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTemplate template = Mockito.mock(VirtualMachineTemplate.class);",
+        "line": 713,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAppend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataId()).thenReturn(2L);",
+        "line": 714,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAppend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataOverridePolicy()).thenReturn(UserData.UserDataOverridePolicy.APPEND);",
+        "line": 715,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAppend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VirtualMachineTemplate",
+    "mockedClass": "VirtualMachineTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTemplate template = Mockito.mock(VirtualMachineTemplate.class);",
+        "line": 739,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataWithoutTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataId()).thenReturn(null);",
+        "line": 740,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataWithoutTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VirtualMachineTemplate",
+    "mockedClass": "VirtualMachineTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTemplate template = Mockito.mock(VirtualMachineTemplate.class);",
+        "line": 751,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverrideWithoutAPIuserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataId()).thenReturn(2L);",
+        "line": 752,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverrideWithoutAPIuserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataOverridePolicy()).thenReturn(UserData.UserDataOverridePolicy.ALLOWOVERRIDE);",
+        "line": 753,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverrideWithoutAPIuserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "VirtualMachineTemplate",
+    "mockedClass": "VirtualMachineTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineTemplate template = Mockito.mock(VirtualMachineTemplate.class);",
+        "line": 766,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverrideWithUserdataText",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(template.getUserDataId()).thenReturn(null);",
+        "line": 767,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUserDataAllowOverrideWithUserdataText",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

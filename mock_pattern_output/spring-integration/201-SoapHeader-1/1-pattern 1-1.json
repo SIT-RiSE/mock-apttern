@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "soapHeader",
+    "variableType": "SoapHeader",
+    "mockedClass": "SoapHeader",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ws",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ws\\src\\test\\java\\org\\springframework\\integration\\ws\\DefaultSoapHeaderMapperTests.java",
+      "className": "DefaultSoapHeaderMapperTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SoapHeader soapHeader = mock(SoapHeader.class);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCustomSoapHeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(soapHeader.getAllAttributes()).thenReturn(attrIterator);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCustomSoapHeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(soapHeader.getAttributeValue(attribute)).thenReturn(\"attrValue\");",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCustomSoapHeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(soapHeader.examineAllHeaderElements()).thenReturn(elementIterator);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCustomSoapHeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

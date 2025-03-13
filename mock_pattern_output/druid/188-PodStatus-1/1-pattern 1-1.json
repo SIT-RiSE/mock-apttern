@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "status",
+    "variableType": "PodStatus",
+    "mockedClass": "PodStatus",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.k8s.overlord.common",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\kubernetes-overlord-extensions\\src\\test\\java\\org\\apache\\druid\\k8s\\overlord\\common\\PeonPhaseTest.java",
+      "className": "PeonPhaseTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PodStatus status = mock(PodStatus.class);",
+        "line": 37,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetPhaseForToMakeCoverageHappy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(status.getPhase()).thenReturn(\"Succeeded\");",
+        "line": 38,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetPhaseForToMakeCoverageHappy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

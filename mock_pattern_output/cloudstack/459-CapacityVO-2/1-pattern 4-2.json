@@ -1,0 +1,124 @@
+[
+  {
+    "variableName": "cvoRam",
+    "variableType": "CapacityVO",
+    "mockedClass": "CapacityVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.capacity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\capacity\\CapacityManagerTest.java",
+      "className": "CapacityManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private CapacityVO cvoRam = mock(CapacityVO.class);",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cvoRam.getUsedCapacity()).thenReturn(3000l);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateCapacityTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cvoRam.getTotalCapacity()).thenReturn((long) 1024 * 1024 * 1024);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateCapacityTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cvoRam.getReservedCapacity()).thenReturn(0l);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateCapacityTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "cvoCpu",
+    "variableType": "CapacityVO",
+    "mockedClass": "CapacityVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.capacity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\capacity\\CapacityManagerTest.java",
+      "className": "CapacityManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private CapacityVO cvoCpu = mock(CapacityVO.class);",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cvoCpu.getUsedCapacity()).thenReturn(500l);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateCapacityTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cvoCpu.getTotalCapacity()).thenReturn(2000l);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateCapacityTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cvoCpu.getReservedCapacity()).thenReturn(0l);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "allocateCapacityTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "jwkSource",
+    "variableType": "JWKSource<SecurityContext>",
+    "mockedClass": "JWKSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\JwtDecoderProviderConfigurationUtilsTests.java",
+      "className": "JwtDecoderProviderConfigurationUtilsTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JWKSource<SecurityContext> jwkSource = mock(JWKSource.class);",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getSignatureAlgorithmsWhenJwkSetSpecifiesAlgorithmThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwkSource.get(any(JWKSelector.class), isNull())).willReturn(Collections.singletonList(key));",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getSignatureAlgorithmsWhenJwkSetSpecifiesAlgorithmThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "jwkSource",
+    "variableType": "JWKSource<SecurityContext>",
+    "mockedClass": "JWKSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\JwtDecoderProviderConfigurationUtilsTests.java",
+      "className": "JwtDecoderProviderConfigurationUtilsTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JWKSource<SecurityContext> jwkSource = mock(JWKSource.class);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getSignatureAlgorithmsWhenJwkSetIsEmptyThenIllegalArgumentException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwkSource.get(any(JWKSelector.class), isNull())).willReturn(Collections.emptyList());",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getSignatureAlgorithmsWhenJwkSetIsEmptyThenIllegalArgumentException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "jwkSource",
+    "variableType": "JWKSource<SecurityContext>",
+    "mockedClass": "JWKSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\JwtDecoderProviderConfigurationUtilsTests.java",
+      "className": "JwtDecoderProviderConfigurationUtilsTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JWKSource<SecurityContext> jwkSource = mock(JWKSource.class);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getSignatureAlgorithmsWhenJwkSetSpecifiesFamilyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwkSource.get(any(JWKSelector.class), isNull())).willReturn(Arrays.asList(ecKey, rsaKey));",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getSignatureAlgorithmsWhenJwkSetSpecifiesFamilyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "jwkSource",
+    "variableType": "JWKSource<SecurityContext>",
+    "mockedClass": "JWKSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\JwtDecoderProviderConfigurationUtilsTests.java",
+      "className": "JwtDecoderProviderConfigurationUtilsTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JWKSource<SecurityContext> jwkSource = mock(JWKSource.class);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getSignatureAlgorithmsWhenAlgorithmThenParses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(jwkSource.get(any(JWKSelector.class), isNull())).willReturn(Collections.singletonList(key));",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getSignatureAlgorithmsWhenAlgorithmThenParses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

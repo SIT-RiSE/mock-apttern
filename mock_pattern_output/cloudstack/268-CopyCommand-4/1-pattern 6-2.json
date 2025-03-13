@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "copyCommand",
+    "variableType": "CopyCommand",
+    "mockedClass": "CopyCommand",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\XenServerGuruTest.java",
+      "className": "XenServerGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CopyCommand copyCommand = Mockito.mock(CopyCommand.class);",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsStorageSubSystemCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(copyCommand.getSrcTO()).thenReturn(srcData);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsStorageSubSystemCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(copyCommand.getDestTO()).thenReturn(dstData);",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsStorageSubSystemCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(copyCommand).setExecuteInSequence(true);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsStorageSubSystemCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "copyCommand",
+    "variableType": "CopyCommand",
+    "mockedClass": "CopyCommand",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\XenServerGuruTest.java",
+      "className": "XenServerGuruTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CopyCommand copyCommand = Mockito.mock(CopyCommand.class);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsNotForXenHypervisor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(copyCommand.getSrcTO()).thenReturn(srcData);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsNotForXenHypervisor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(copyCommand, times(0)).setExecuteInSequence(true);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getCommandHostDelegationTestCommandIsNotForXenHypervisor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

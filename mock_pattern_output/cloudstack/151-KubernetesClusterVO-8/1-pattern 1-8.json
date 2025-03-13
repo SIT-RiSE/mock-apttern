@@ -1,0 +1,446 @@
+[
+  {
+    "variableName": "clusterVO",
+    "variableType": "KubernetesClusterVO",
+    "mockedClass": "KubernetesClusterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.cluster",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\cluster\\KubernetesClusterManagerImplTest.java",
+      "className": "KubernetesClusterManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "KubernetesClusterVO clusterVO = Mockito.mock(KubernetesClusterVO.class);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeSameNewSizeNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getNodeCount()).thenReturn(size);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeSameNewSizeNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "clusterVO",
+    "variableType": "KubernetesClusterVO",
+    "mockedClass": "KubernetesClusterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.cluster",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\cluster\\KubernetesClusterManagerImplTest.java",
+      "className": "KubernetesClusterManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "KubernetesClusterVO clusterVO = Mockito.mock(KubernetesClusterVO.class);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeStoppedCluster",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getNodeCount()).thenReturn(size);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeStoppedCluster",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getState()).thenReturn(KubernetesCluster.State.Stopped);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeStoppedCluster",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "clusterVO",
+    "variableType": "KubernetesClusterVO",
+    "mockedClass": "KubernetesClusterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.cluster",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\cluster\\KubernetesClusterManagerImplTest.java",
+      "className": "KubernetesClusterManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "KubernetesClusterVO clusterVO = Mockito.mock(KubernetesClusterVO.class);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeZeroNewSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getState()).thenReturn(KubernetesCluster.State.Running);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeZeroNewSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getNodeCount()).thenReturn(size);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeZeroNewSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "clusterVO",
+    "variableType": "KubernetesClusterVO",
+    "mockedClass": "KubernetesClusterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.cluster",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\cluster\\KubernetesClusterManagerImplTest.java",
+      "className": "KubernetesClusterManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "KubernetesClusterVO clusterVO = Mockito.mock(KubernetesClusterVO.class);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeOverMaxSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getState()).thenReturn(KubernetesCluster.State.Running);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeOverMaxSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getControlNodeCount()).thenReturn(1L);",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeOverMaxSize",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "clusterVO",
+    "variableType": "KubernetesClusterVO",
+    "mockedClass": "KubernetesClusterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.cluster",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\cluster\\KubernetesClusterManagerImplTest.java",
+      "className": "KubernetesClusterManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "KubernetesClusterVO clusterVO = Mockito.mock(KubernetesClusterVO.class);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeDownsacaleNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getState()).thenReturn(KubernetesCluster.State.Running);",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeDownsacaleNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getControlNodeCount()).thenReturn(1L);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeDownsacaleNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getNodeCount()).thenReturn(4L);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeDownsacaleNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "clusterVO",
+    "variableType": "KubernetesClusterVO",
+    "mockedClass": "KubernetesClusterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.cluster",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\cluster\\KubernetesClusterManagerImplTest.java",
+      "className": "KubernetesClusterManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "KubernetesClusterVO clusterVO = Mockito.mock(KubernetesClusterVO.class);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleDeletedTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getState()).thenReturn(KubernetesCluster.State.Running);",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleDeletedTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getControlNodeCount()).thenReturn(1L);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleDeletedTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getNodeCount()).thenReturn(2L);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleDeletedTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "clusterVO",
+    "variableType": "KubernetesClusterVO",
+    "mockedClass": "KubernetesClusterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.cluster",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\cluster\\KubernetesClusterManagerImplTest.java",
+      "className": "KubernetesClusterManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "KubernetesClusterVO clusterVO = Mockito.mock(KubernetesClusterVO.class);",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleNotInZoneTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getState()).thenReturn(KubernetesCluster.State.Running);",
+        "line": 195,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleNotInZoneTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getControlNodeCount()).thenReturn(1L);",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleNotInZoneTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getNodeCount()).thenReturn(2L);",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleNotInZoneTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "clusterVO",
+    "variableType": "KubernetesClusterVO",
+    "mockedClass": "KubernetesClusterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.cluster",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\cluster\\KubernetesClusterManagerImplTest.java",
+      "className": "KubernetesClusterManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "KubernetesClusterVO clusterVO = Mockito.mock(KubernetesClusterVO.class);",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getState()).thenReturn(KubernetesCluster.State.Running);",
+        "line": 206,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getControlNodeCount()).thenReturn(1L);",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(clusterVO.getNodeCount()).thenReturn(2L);",
+        "line": 208,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

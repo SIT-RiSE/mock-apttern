@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "rh",
+    "variableType": "RoleHierarchy",
+    "mockedClass": "RoleHierarchy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.sid",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\sid\\SidRetrievalStrategyTests.java",
+      "className": "SidRetrievalStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RoleHierarchy rh = mock(RoleHierarchy.class);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "roleHierarchyIsUsedWhenSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(rh.getReachableGrantedAuthorities(anyCollection())).willReturn(rhAuthorities);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "roleHierarchyIsUsedWhenSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

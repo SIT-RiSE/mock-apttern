@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "authenticationEntryPoint",
+    "variableType": "ServerAuthenticationEntryPoint",
+    "mockedClass": "ServerAuthenticationEntryPoint",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\ServerAuthenticationEntryPointFailureHandlerTests.java",
+      "className": "ServerAuthenticationEntryPointFailureHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerAuthenticationEntryPoint authenticationEntryPoint;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationEntryPoint.commence(this.exchange, e)).willReturn(result);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationFailureWhenInvokedThenDelegatesToEntryPoint",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationEntryPoint.commence(this.exchange, e)).willReturn(Mono.empty());",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationFailureWhenRethrownFalseThenAuthenticationServiceExceptionSwallowed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "entryPoint",
+    "variableType": "ServerAuthenticationEntryPoint",
+    "mockedClass": "ServerAuthenticationEntryPoint",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authorization\\ExceptionTranslationWebFilterTests.java",
+      "className": "ExceptionTranslationWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerAuthenticationEntryPoint entryPoint;",
+        "line": 66,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.entryPoint.commence(any(), any())).willReturn(this.entryPointPublisher.mono());",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAccessDeniedExceptionAndNotAuthenticatedThenHandled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.entryPoint.commence(any(), any())).willReturn(this.entryPointPublisher.mono());",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAccessDeniedExceptionAndAuthenticatedThenHandled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.entryPoint.commence(any(), any())).willReturn(this.entryPointPublisher.mono());",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAccessDeniedExceptionAndAnonymousAuthenticatedThenHandled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

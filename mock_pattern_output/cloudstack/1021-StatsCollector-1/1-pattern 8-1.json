@@ -1,0 +1,135 @@
+[
+  {
+    "variableName": "statsCollector",
+    "variableType": "StatsCollector",
+    "mockedClass": "StatsCollector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\StatsCollectorTest.java",
+      "className": "StatsCollectorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@InjectMocks\r\nprivate StatsCollector statsCollector = Mockito.spy(new StatsCollector());",
+        "line": 75,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(statsCollector).getLatestOrAccumulatedVmMetricsStats(Mockito.anyList(), booleanCaptor.capture());",
+        "line": 326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmStatsTestWithAccumulateNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(statsCollector).getLatestOrAccumulatedVmMetricsStats(Mockito.anyList(), booleanCaptor.capture());",
+        "line": 340,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmStatsTestWithNullAccumulate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(statsCollector).accumulateVmMetricsStats(Mockito.anyList());",
+        "line": 352,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getLatestOrAccumulatedVmMetricsStatsTestAccumulate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(statsCollector, Mockito.never()).accumulateVmMetricsStats(Mockito.anyList());",
+        "line": 359,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getLatestOrAccumulatedVmMetricsStatsTestLatest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(statsCollector.getDbProperties()).thenReturn(p);",
+        "line": 397,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsDbIpv6Local",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(statsCollector.getDbProperties()).thenReturn(p);",
+        "line": 405,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsDbIpv4Local",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(statsCollector.getDbProperties()).thenReturn(p);",
+        "line": 413,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsDbSymbolicLocal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(statsCollector.getDbProperties()).thenReturn(p);",
+        "line": 422,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsDbOnSameIp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(statsCollector.getDbProperties()).thenReturn(p);",
+        "line": 431,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsDbNotLocal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

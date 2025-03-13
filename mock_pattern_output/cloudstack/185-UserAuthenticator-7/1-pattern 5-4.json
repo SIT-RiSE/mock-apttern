@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "authenticatorMock1",
+    "variableType": "UserAuthenticator",
+    "mockedClass": "UserAuthenticator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserAuthenticator authenticatorMock1 = Mockito.mock(UserAuthenticator.class);",
+        "line": 781,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCurrentPasswordTestUserAuthenticatedWithProvidedCurrentPasswordViaFirstAuthenticator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(authenticatorMock1, Mockito.times(1)).authenticate(username, currentPassword, domainId, null);",
+        "line": 795,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCurrentPasswordTestUserAuthenticatedWithProvidedCurrentPasswordViaFirstAuthenticator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "authenticatorMock2",
+    "variableType": "UserAuthenticator",
+    "mockedClass": "UserAuthenticator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserAuthenticator authenticatorMock2 = Mockito.mock(UserAuthenticator.class);",
+        "line": 782,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCurrentPasswordTestUserAuthenticatedWithProvidedCurrentPasswordViaFirstAuthenticator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(authenticatorMock2, Mockito.times(0)).authenticate(username, currentPassword, domainId, null);",
+        "line": 796,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCurrentPasswordTestUserAuthenticatedWithProvidedCurrentPasswordViaFirstAuthenticator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "authenticatorMock1",
+    "variableType": "UserAuthenticator",
+    "mockedClass": "UserAuthenticator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserAuthenticator authenticatorMock1 = Mockito.mock(UserAuthenticator.class);",
+        "line": 810,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCurrentPasswordTestUserAuthenticatedWithProvidedCurrentPasswordViaSecondAuthenticator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(authenticatorMock1, Mockito.times(1)).authenticate(username, currentPassword, domainId, null);",
+        "line": 824,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCurrentPasswordTestUserAuthenticatedWithProvidedCurrentPasswordViaSecondAuthenticator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "authenticatorMock2",
+    "variableType": "UserAuthenticator",
+    "mockedClass": "UserAuthenticator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserAuthenticator authenticatorMock2 = Mockito.mock(UserAuthenticator.class);",
+        "line": 811,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCurrentPasswordTestUserAuthenticatedWithProvidedCurrentPasswordViaSecondAuthenticator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(authenticatorMock2, Mockito.times(1)).authenticate(username, currentPassword, domainId, null);",
+        "line": 825,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateCurrentPasswordTestUserAuthenticatedWithProvidedCurrentPasswordViaSecondAuthenticator",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "loadbalancerHealthmonitor",
+    "variableType": "LoadbalancerHealthmonitor",
+    "mockedClass": "LoadbalancerHealthmonitor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\resource\\TungstenResourceTest.java",
+      "className": "TungstenResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LoadbalancerHealthmonitor loadbalancerHealthmonitor = mock(LoadbalancerHealthmonitor.class);",
+        "line": 638,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestCreateTungstenNetworkLoadbalancerCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadbalancerHealthmonitor.getUuid()).thenReturn(\"f6517b1a-773c-46a2-ae50-e8b32d5023a1\");",
+        "line": 646,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestCreateTungstenNetworkLoadbalancerCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "variableName": "applicationModel",
+    "variableType": "ApplicationModel",
+    "mockedClass": "ApplicationModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metadata.report",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metadata\\dubbo-metadata-api\\src\\test\\java\\org\\apache\\dubbo\\metadata\\report\\MetadataReportInstanceTest.java",
+      "className": "MetadataReportInstanceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationModel applicationModel = spy(ApplicationModel.defaultModel());",
+        "line": 48,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationModel.getApplicationConfigManager()).thenReturn(configManager);",
+        "line": 62,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationModel.getApplicationConfigManager().getApplicationOrElseThrow()).thenReturn(new ApplicationConfig(\"test\"));",
+        "line": 63,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationModel.getCurrentConfig()).thenReturn(new ApplicationConfig(\"test\"));",
+        "line": 65,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "applicationModel",
+    "variableType": "ApplicationModel",
+    "mockedClass": "ApplicationModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metrics",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metrics\\dubbo-metrics-default\\src\\test\\java\\org\\apache\\dubbo\\metrics\\DefaultMetricsServiceTest.java",
+      "className": "DefaultMetricsServiceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationModel applicationModel = Mockito.mock(ApplicationModel.class);",
+        "line": 48,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationModel.getBeanFactory()).thenReturn(beanFactory);",
+        "line": 52,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "applicationModel",
+    "variableType": "ApplicationModel",
+    "mockedClass": "ApplicationModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\ReadyTest.java",
+      "className": "ReadyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationModel applicationModel = Mockito.mock(ApplicationModel.class);",
+        "line": 56,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(applicationModel.getModuleModels()).thenReturn(Arrays.asList(moduleModel));",
+        "line": 63,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(applicationModel.getApplicationConfigManager()).thenReturn(manager);",
+        "line": 64,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "applicationModel",
+    "variableType": "ApplicationModel",
+    "mockedClass": "ApplicationModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\StartupTest.java",
+      "className": "StartupTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationModel applicationModel = Mockito.mock(ApplicationModel.class);",
+        "line": 48,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(applicationModel.getModuleModels()).thenReturn(Arrays.asList(moduleModel));",
+        "line": 55,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(applicationModel.getApplicationConfigManager()).thenReturn(manager);",
+        "line": 56,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  },
+  {
+    "variableName": "applicationModel",
+    "variableType": "ApplicationModel",
+    "mockedClass": "ApplicationModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Before\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\ServiceDiscoveryRegistryTest.java",
+      "className": "ServiceDiscoveryRegistryTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationModel applicationModel = spy(ApplicationModel.defaultModel());",
+        "line": 109,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "init",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(applicationModel.getDefaultExtension(ServiceNameMapping.class)).thenReturn(mapping);",
+        "line": 110,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "init",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 13
+  }
+]

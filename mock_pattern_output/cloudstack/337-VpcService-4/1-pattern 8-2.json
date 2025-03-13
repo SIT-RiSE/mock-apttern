@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "_vpcService",
+    "variableType": "VpcService",
+    "mockedClass": "VpcService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.user.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\user\\vpc\\CreateVPCCmdTest.java",
+      "className": "CreateVPCCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\npublic VpcService _vpcService;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vpcService.createVpc(Mockito.any(CreateVPCCmd.class))).thenReturn(vpc);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreate",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(_vpcService, Mockito.times(1)).createVpc(Mockito.any(CreateVPCCmd.class));",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreate",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vpcService.startVpc(1L, true)).thenReturn(true);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(_vpcService, Mockito.times(1)).startVpc(Mockito.anyLong(), Mockito.anyBoolean());",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "_vpcService",
+    "variableType": "VpcService",
+    "mockedClass": "VpcService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.user.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\user\\vpc\\UpdateVPCCmdTest.java",
+      "className": "UpdateVPCCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVpcService _vpcService;",
+        "line": 37,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vpcService.updateVpc(Mockito.anyLong(), Mockito.anyString(), Mockito.anyString(), Mockito.anyString(), Mockito.anyBoolean(), Mockito.anyInt())).thenReturn(vpc);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(_vpcService, Mockito.times(0)).updateVpc(Mockito.anyLong(), Mockito.anyString(), Mockito.anyString(), Mockito.anyString(), Mockito.anyBoolean(), Mockito.anyInt());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

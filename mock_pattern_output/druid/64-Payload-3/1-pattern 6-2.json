@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "payload",
+    "variableType": "Payload",
+    "mockedClass": "Payload",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.storage.cloudfiles",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\cloudfiles-extensions\\src\\test\\java\\org\\apache\\druid\\storage\\cloudfiles\\CloudFilesByteSourceTest.java",
+      "className": "CloudFilesByteSourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Payload payload = mock(Payload.class);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(payload.openStream()).thenReturn(stream);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(payload).openStream();",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "payload",
+    "variableType": "Payload",
+    "mockedClass": "Payload",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.storage.cloudfiles",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\cloudfiles-extensions\\src\\test\\java\\org\\apache\\druid\\storage\\cloudfiles\\CloudFilesByteSourceTest.java",
+      "className": "CloudFilesByteSourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Payload payload = mock(Payload.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamWithRecoverableErrorTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(payload.openStream()).thenThrow(new IOException()).thenReturn(stream);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamWithRecoverableErrorTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(payload, times(2)).openStream();",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "openStreamWithRecoverableErrorTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

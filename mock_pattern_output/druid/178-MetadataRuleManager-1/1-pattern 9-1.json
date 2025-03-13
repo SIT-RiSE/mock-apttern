@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "mockRuleManager",
+    "variableType": "MetadataRuleManager",
+    "mockedClass": "MetadataRuleManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\KillRulesTest.java",
+      "className": "KillRulesTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MetadataRuleManager mockRuleManager;",
+        "line": 40,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(mockRuleManager);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunSkipIfLastRunLessThanPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockRuleManager).removeRulesForEmptyDatasourcesOlderThan(ArgumentMatchers.anyLong());",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunNotSkipIfLastRunMoreThanPeriod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

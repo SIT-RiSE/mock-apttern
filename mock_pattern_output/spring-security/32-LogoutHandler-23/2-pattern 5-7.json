@@ -1,0 +1,275 @@
+[
+  {
+    "variableName": "securityContextLogoutHandler",
+    "variableType": "LogoutHandler",
+    "mockedClass": "SecurityContextLogoutHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\logout\\CompositeLogoutHandlerTests.java",
+      "className": "CompositeLogoutHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogoutHandler securityContextLogoutHandler = mock(SecurityContextLogoutHandler.class);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersSuccessfullyWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(securityContextLogoutHandler, times(1)).logout(any(HttpServletRequest.class), any(HttpServletResponse.class), any(Authentication.class));",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersSuccessfullyWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "csrfLogoutHandler",
+    "variableType": "LogoutHandler",
+    "mockedClass": "SecurityContextLogoutHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\logout\\CompositeLogoutHandlerTests.java",
+      "className": "CompositeLogoutHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogoutHandler csrfLogoutHandler = mock(SecurityContextLogoutHandler.class);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersSuccessfullyWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(csrfLogoutHandler, times(1)).logout(any(HttpServletRequest.class), any(HttpServletResponse.class), any(Authentication.class));",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersSuccessfullyWithArray",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "securityContextLogoutHandler",
+    "variableType": "LogoutHandler",
+    "mockedClass": "SecurityContextLogoutHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\logout\\CompositeLogoutHandlerTests.java",
+      "className": "CompositeLogoutHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogoutHandler securityContextLogoutHandler = mock(SecurityContextLogoutHandler.class);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersSuccessfully",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(securityContextLogoutHandler, times(1)).logout(any(HttpServletRequest.class), any(HttpServletResponse.class), any(Authentication.class));",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersSuccessfully",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "csrfLogoutHandler",
+    "variableType": "LogoutHandler",
+    "mockedClass": "SecurityContextLogoutHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\logout\\CompositeLogoutHandlerTests.java",
+      "className": "CompositeLogoutHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogoutHandler csrfLogoutHandler = mock(SecurityContextLogoutHandler.class);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersSuccessfully",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(csrfLogoutHandler, times(1)).logout(any(HttpServletRequest.class), any(HttpServletResponse.class), any(Authentication.class));",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersSuccessfully",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "secondLogoutHandler",
+    "variableType": "LogoutHandler",
+    "mockedClass": "LogoutHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\logout\\CompositeLogoutHandlerTests.java",
+      "className": "CompositeLogoutHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogoutHandler secondLogoutHandler = mock(LogoutHandler.class);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "logoutHandlersInOrder.verify(secondLogoutHandler, never()).logout(any(HttpServletRequest.class), any(HttpServletResponse.class), any(Authentication.class));",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "firstLogoutHandler",
+    "variableType": "LogoutHandler",
+    "mockedClass": "LogoutHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\logout\\CompositeLogoutHandlerTests.java",
+      "className": "CompositeLogoutHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogoutHandler firstLogoutHandler = mock(LogoutHandler.class);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "logoutHandlersInOrder.verify(firstLogoutHandler, times(1)).logout(any(HttpServletRequest.class), any(HttpServletResponse.class), any(Authentication.class));",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callLogoutHandlersThrowException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "LogoutHandler",
+    "mockedClass": "LogoutHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.concurrent",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\concurrent\\ConcurrentSessionFilterTests.java",
+      "className": "ConcurrentSessionFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LogoutHandler handler = mock(LogoutHandler.class);",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomLogoutHandlersThenHandlersUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler).logout(eq(request), eq(response), any());",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomLogoutHandlersThenHandlersUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

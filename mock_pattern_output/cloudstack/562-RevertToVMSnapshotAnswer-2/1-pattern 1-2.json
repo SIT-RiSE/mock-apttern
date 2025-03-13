@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "answer",
+    "variableType": "RevertToVMSnapshotAnswer",
+    "mockedClass": "RevertToVMSnapshotAnswer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RevertToVMSnapshotAnswer answer = Mockito.mock(RevertToVMSnapshotAnswer.class);",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertVMsnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(answer.getResult()).thenReturn(Boolean.TRUE);",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertVMsnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "answer",
+    "variableType": "RevertToVMSnapshotAnswer",
+    "mockedClass": "RevertToVMSnapshotAnswer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyTest.java",
+      "className": "VMSnapshotStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RevertToVMSnapshotAnswer answer = Mockito.mock(RevertToVMSnapshotAnswer.class);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(answer.getResult()).thenReturn(Boolean.TRUE);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

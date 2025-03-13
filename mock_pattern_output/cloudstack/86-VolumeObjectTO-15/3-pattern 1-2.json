@@ -1,0 +1,152 @@
+[
+  {
+    "variableName": "vol2",
+    "variableType": "VolumeObjectTO",
+    "mockedClass": "VolumeObjectTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\DefaultVMSnapshotStrategyTest.java",
+      "className": "DefaultVMSnapshotStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeObjectTO vol2 = Mockito.mock(VolumeObjectTO.class);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVolumePath",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol2.getDataStoreUuid()).thenReturn(newDSUuid);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVolumePath",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol2.getPath()).thenReturn(newVolPath);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVolumePath",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol2.getChainInfo()).thenReturn(newVolChain);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVolumePath",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol2.getSize()).thenReturn(vmSnapshotChainSize);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVolumePath",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol2.getId()).thenReturn(volumeId);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVolumePath",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vol1",
+    "variableType": "VolumeObjectTO",
+    "mockedClass": "VolumeObjectTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\DefaultVMSnapshotStrategyTest.java",
+      "className": "DefaultVMSnapshotStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeObjectTO vol1 = Mockito.mock(VolumeObjectTO.class);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVolumePath",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol1.getDataStoreUuid()).thenReturn(null);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVolumePath",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol1.getPath()).thenReturn(null);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVolumePath",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vol1.getChainInfo()).thenReturn(null);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVolumePath",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

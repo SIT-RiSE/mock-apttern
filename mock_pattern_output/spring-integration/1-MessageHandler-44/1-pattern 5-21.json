@@ -1,0 +1,839 @@
+[
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\ExecutorChannelTests.java",
+      "className": "ExecutorChannelTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptorWithModifiedMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler).handleMessage(expected);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptorWithModifiedMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\ExecutorChannelTests.java",
+      "className": "ExecutorChannelTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptorWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler).handleMessage(message);",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptorWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.config.xml",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\config\\xml\\PublishingInterceptorParserTests.java",
+      "className": "PublishingInterceptorParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = Mockito.mock(MessageHandler.class);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateDefaultChannelPublishing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(1)).handleMessage(any(Message.class));",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateDefaultChannelPublishing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.config.xml",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\config\\xml\\PublishingInterceptorParserTests.java",
+      "className": "PublishingInterceptorParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = Mockito.mock(MessageHandler.class);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateEchoChannelPublishing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(1)).handleMessage(any(Message.class));",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateEchoChannelPublishing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\endpoint\\PollingLifecycleTests.java",
+      "className": "PollingLifecycleTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "//Has to be an explicit implementation - Mockito cannot mock/spy lambdas\r\nMessageHandler handler = Mockito.spy(new MessageHandler() {\r\n\r\n    @Override\r\n    public void handleMessage(Message<?> message) throws MessagingException {\r\n        latch.countDown();\r\n    }\r\n});",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ensurePollerTaskStops",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(handler, times(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ensurePollerTaskStops",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(handler, atMost(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ensurePollerTaskStops",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\GatewayInterfaceTests.java",
+      "className": "GatewayInterfaceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceAnnotatedMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceAnnotatedMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\GatewayInterfaceTests.java",
+      "className": "GatewayInterfaceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 282,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceCastAsSuperclassAnnotatedMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 286,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceCastAsSuperclassAnnotatedMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\GatewayInterfaceTests.java",
+      "className": "GatewayInterfaceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 295,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceCastAsSuperclassUnAnnotatedMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 299,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceCastAsSuperclassUnAnnotatedMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\GatewayInterfaceTests.java",
+      "className": "GatewayInterfaceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceHashcode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(0)).handleMessage(Mockito.any(Message.class));",
+        "line": 312,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceHashcode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\GatewayInterfaceTests.java",
+      "className": "GatewayInterfaceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 321,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceToString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(0)).handleMessage(Mockito.any(Message.class));",
+        "line": 325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceToString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\GatewayInterfaceTests.java",
+      "className": "GatewayInterfaceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceEquals",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(0)).handleMessage(Mockito.any(Message.class));",
+        "line": 346,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceEquals",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\GatewayInterfaceTests.java",
+      "className": "GatewayInterfaceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceGetClass",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(0)).handleMessage(Mockito.any(Message.class));",
+        "line": 359,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithServiceGetClass",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "messageHandler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\GatewayInterfaceTests.java",
+      "className": "GatewayInterfaceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler messageHandler = mock(MessageHandler.class);",
+        "line": 507,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoredHeader",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageHandler).handleMessage(messageArgumentCaptor.capture());",
+        "line": 514,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoredHeader",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "messageHandler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\GatewayInterfaceTests.java",
+      "className": "GatewayInterfaceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler messageHandler = mock(MessageHandler.class);",
+        "line": 550,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "primaryMarkerWins",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(messageHandler).handleMessage(messageArgumentCaptor.capture());",
+        "line": 558,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "primaryMarkerWins",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.history",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\history\\MessageHistoryIntegrationTests.java",
+      "className": "MessageHistoryIntegrationTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = Mockito.spy(new // Not a lambda: Mockito can't mock final classes\r\nMessageHandler() {\r\n\r\n    @Override\r\n    public void handleMessage(Message<?> message) {\r\n        Iterator<Properties> historyIterator = message.getHeaders().get(MessageHistory.HEADER_NAME, MessageHistory.class).iterator();\r\n        Properties event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"sampleGateway#echo(String)\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"gateway\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"bridgeInChannel\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"channel\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"testBridge\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"bridge\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"headerEnricherChannel\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"channel\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"testHeaderEnricher\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"header-enricher\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"chainChannel\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"channel\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"sampleChain\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"chain\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"sampleChain$child.service-activator-within-chain\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"service-activator\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"filterChannel\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"channel\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"testFilter\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"filter\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"splitterChannel\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"channel\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"testSplitter\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"splitter\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"aggregatorChannel\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"channel\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"testAggregator\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"aggregator\");\r\n        event = historyIterator.next();\r\n        assertThat(event.getProperty(MessageHistory.NAME_PROPERTY)).isEqualTo(\"endOfThePipeChannel\");\r\n        assertThat(event.getProperty(MessageHistory.TYPE_PROPERTY)).isEqualTo(\"channel\");\r\n        MessageChannel replyChannel = (MessageChannel) message.getHeaders().getReplyChannel();\r\n        replyChannel.send(message);\r\n    }\r\n});",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageHistoryWithHistoryWriter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(handler, Mockito.times(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageHistoryWithHistoryWriter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.history",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\history\\MessageHistoryIntegrationTests.java",
+      "className": "MessageHistoryIntegrationTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = Mockito.spy(new // Not a lambda: Mockito can't mock final classes\r\nMessageHandler() {\r\n\r\n    @Override\r\n    public void handleMessage(Message<?> message) {\r\n        assertThat(message.getHeaders().get(MessageHistory.HEADER_NAME, MessageHistory.class)).isNull();\r\n        MessageChannel replyChannel = (MessageChannel) message.getHeaders().getReplyChannel();\r\n        replyChannel.send(message);\r\n    }\r\n});",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageHistoryWithoutHistoryWriter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(handler, Mockito.times(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageHistoryWithoutHistoryWriter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.history",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\history\\MessageHistoryIntegrationTests.java",
+      "className": "MessageHistoryIntegrationTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = Mockito.spy(new // Not a lambda: Mockito can't mock final classes\r\nMessageHandler() {\r\n\r\n    @Override\r\n    public void handleMessage(Message<?> message) {\r\n        Iterator<Properties> historyIterator = message.getHeaders().get(MessageHistory.HEADER_NAME, MessageHistory.class).iterator();\r\n        assertThat(historyIterator.hasNext()).isTrue();\r\n        MessageChannel replyChannel = (MessageChannel) message.getHeaders().getReplyChannel();\r\n        replyChannel.send(message);\r\n    }\r\n});",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageHistoryParser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(handler, Mockito.times(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 193,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageHistoryParser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.history",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\history\\MessageHistoryIntegrationTests.java",
+      "className": "MessageHistoryIntegrationTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = Mockito.spy(new // Not a lambda: Mockito can't mock final classes\r\nMessageHandler() {\r\n\r\n    @Override\r\n    public void handleMessage(Message<?> message) {\r\n        Iterator<Properties> historyIterator = message.getHeaders().get(MessageHistory.HEADER_NAME, MessageHistory.class).iterator();\r\n        assertThat(historyIterator.hasNext()).isTrue();\r\n        Properties gatewayHistory = historyIterator.next();\r\n        assertThat(gatewayHistory.get(\"name\")).isEqualTo(\"sampleGateway#echo(String)\");\r\n        assertThat(historyIterator.hasNext()).isTrue();\r\n        Properties chainHistory = historyIterator.next();\r\n        assertThat(chainHistory.get(\"name\")).isEqualTo(\"sampleChain\");\r\n        assertThat(historyIterator.hasNext()).isFalse();\r\n        MessageChannel replyChannel = (MessageChannel) message.getHeaders().getReplyChannel();\r\n        replyChannel.send(message);\r\n    }\r\n});",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageHistoryParserWithNamePatterns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(handler, Mockito.times(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 222,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageHistoryParserWithNamePatterns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.router.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\router\\config\\RouterParserTests.java",
+      "className": "RouterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testErrorChannel",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testErrorChannel",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.feed.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-feed\\src\\test\\java\\org\\springframework\\integration\\feed\\config\\FeedInboundChannelAdapterParserTests.java",
+      "className": "FeedInboundChannelAdapterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = spy(message -> latch.countDown());",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulNewsRetrievalWithHttpUrl",
+          "methodAnnotations": [
+            "@Test",
+            "@Disabled"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, atLeast(3)).handleMessage(Mockito.any(Message.class));",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulNewsRetrievalWithHttpUrl",
+          "methodAnnotations": [
+            "@Test",
+            "@Disabled"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.xmpp.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-xmpp\\src\\test\\java\\org\\springframework\\integration\\xmpp\\config\\XmppHeaderEnricherParserTests.java",
+      "className": "XmppHeaderEnricherParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MessageHandler handler = mock(MessageHandler.class);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "to",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler, times(1)).handleMessage(Mockito.any(Message.class));",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "to",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "userVmService",
+    "variableType": "UserVmService",
+    "mockedClass": "UserVmService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserVmService userVmService;",
+        "line": 192,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmService.createBasicSecurityGroupVirtualMachine(any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), eq(userData), eq(userDataId), eq(userDataDetails.toString()), any(), any(), any(), eq(true), any(), any(), any(), any(), any(), any(), any(), eq(true), any())).thenReturn(userVmMock);",
+        "line": 1283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmService).createBasicSecurityGroupVirtualMachine(any(), any(), any(), any(), any(), matches(vmHostNamePattern), matches(vmHostNamePattern), any(), any(), any(), any(), any(), eq(userData), eq(userDataId), eq(userDataDetails.toString()), any(), any(), any(), eq(true), any(), any(), any(), any(), any(), any(), any(), eq(true), any());",
+        "line": 1293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmService.createAdvancedSecurityGroupVirtualMachine(any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), eq(userData), eq(userDataId), eq(userDataDetails.toString()), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), eq(true), any(), any())).thenReturn(userVmMock);",
+        "line": 1332,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmService).createAdvancedSecurityGroupVirtualMachine(any(), any(), any(), any(), any(), any(), matches(vmHostNamePattern), matches(vmHostNamePattern), any(), any(), any(), any(), any(), eq(userData), eq(userDataId), eq(userDataDetails.toString()), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), eq(true), any(), any());",
+        "line": 1342,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmService.createAdvancedVirtualMachine(any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), any(), eq(userData), eq(userDataId), eq(userDataDetails.toString()), any(), any(), any(), eq(true), any(), any(), any(), any(), any(), any(), any(), eq(true), any(), any())).thenReturn(userVmMock);",
+        "line": 1381,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmService).createAdvancedVirtualMachine(any(), any(), any(), any(), any(), matches(vmHostNamePattern), matches(vmHostNamePattern), any(), any(), any(), any(), any(), eq(userData), eq(userDataId), eq(userDataDetails.toString()), any(), any(), any(), eq(true), any(), any(), any(), any(), any(), any(), any(), eq(true), any(), any());",
+        "line": 1391,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNewVM3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

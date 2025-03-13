@@ -1,0 +1,140 @@
+[
+  {
+    "variableName": "vmStatsDaoMock",
+    "variableType": "VmStatsDao",
+    "mockedClass": "VmStatsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.metrics",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\metrics\\src\\test\\java\\org\\apache\\cloudstack\\metrics\\MetricsServiceImplTest.java",
+      "className": "MetricsServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVmStatsDao vmStatsDaoMock;",
+        "line": 75,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmStatsDaoMock).findByVmIdAndTimestampBetween(Mockito.anyLong(), Mockito.any(), Mockito.any());",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findVmStatsAccordingToDateParamsTestWithStartDateAndEndDate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmStatsDaoMock).findByVmIdAndTimestampGreaterThanEqual(Mockito.anyLong(), Mockito.any());",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findVmStatsAccordingToDateParamsTestWithOnlyStartDate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmStatsDaoMock).findByVmIdAndTimestampLessThanEqual(Mockito.anyLong(), Mockito.any());",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findVmStatsAccordingToDateParamsTestWithOnlyEndDate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmStatsDaoMock).findByVmId(Mockito.anyLong());",
+        "line": 280,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findVmStatsAccordingToDateParamsTestWithNoDate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "vmStatsDaoMock",
+    "variableType": "VmStatsDao",
+    "mockedClass": "VmStatsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\StatsCollectorTest.java",
+      "className": "StatsCollectorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVmStatsDao vmStatsDaoMock;",
+        "line": 85,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmStatsDaoMock, Mockito.never()).removeAllByTimestampLessThan(Mockito.any());",
+        "line": 287,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "cleanUpVirtualMachineStatsTestIsDisabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmStatsDaoMock).removeAllByTimestampLessThan(Mockito.any());",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "cleanUpVirtualMachineStatsTestIsEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmStatsDaoMock).persist(vmStatsVOCaptor.capture());",
+        "line": 310,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "persistVirtualMachineStatsTestPersistsSuccessfully",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

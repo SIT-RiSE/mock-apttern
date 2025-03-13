@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "request",
+    "variableType": "FullHttpRequest",
+    "mockedClass": "FullHttpRequest",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.decoder",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\decoder\\HttpCommandDecoderTest.java",
+      "className": "HttpCommandDecoderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FullHttpRequest request = mock(FullHttpRequest.class);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodePost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(request.uri()).thenReturn(\"localhost:80/test\");",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodePost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(request.method()).thenReturn(HttpMethod.POST);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodePost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(request.headers()).thenReturn(HttpHeaders.EMPTY_HEADERS);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodePost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(request.content()).thenReturn(buf);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodePost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

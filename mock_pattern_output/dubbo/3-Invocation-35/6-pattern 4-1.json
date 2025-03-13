@@ -1,0 +1,135 @@
+[
+  {
+    "variableName": "invocation",
+    "variableType": "Invocation",
+    "mockedClass": "Invocation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.support.registry",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\support\\registry\\ZoneAwareClusterInvokerTest.java",
+      "className": "ZoneAwareClusterInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Invocation invocation = mock(Invocation.class);",
+        "line": 47,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getParameterTypes()).willReturn(new Class<?>[] {});",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPreferredStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getArguments()).willReturn(new Object[] {});",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPreferredStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getObjectAttachments()).willReturn(new HashMap<>());",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPreferredStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getParameterTypes()).willReturn(new Class<?>[] {});",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegistryZoneStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getArguments()).willReturn(new Object[] {});",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegistryZoneStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getObjectAttachments()).willReturn(new HashMap<>());",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegistryZoneStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getParameterTypes()).willReturn(new Class<?>[] {});",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegistryZoneForceStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getArguments()).willReturn(new Object[] {});",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegistryZoneForceStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invocation.getObjectAttachments()).willReturn(new HashMap<>());",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegistryZoneForceStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

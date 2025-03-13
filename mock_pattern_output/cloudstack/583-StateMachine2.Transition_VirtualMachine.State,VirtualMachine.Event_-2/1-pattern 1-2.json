@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "transition",
+    "variableType": "StateMachine2.Transition<VirtualMachine.State,VirtualMachine.Event>",
+    "mockedClass": "StateMachine2.Transition",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StateMachine2.Transition<VirtualMachine.State, VirtualMachine.Event> transition = mock(StateMachine2.Transition.class);",
+        "line": 981,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postStateTransitionEventWithVmStartedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(transition.getCurrentState()).thenReturn(VirtualMachine.State.Starting);",
+        "line": 985,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postStateTransitionEventWithVmStartedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(transition.getToState()).thenReturn(VirtualMachine.State.Running);",
+        "line": 986,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postStateTransitionEventWithVmStartedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "transition",
+    "variableType": "StateMachine2.Transition<VirtualMachine.State,VirtualMachine.Event>",
+    "mockedClass": "StateMachine2.Transition",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StateMachine2.Transition<VirtualMachine.State, VirtualMachine.Event> transition = mock(StateMachine2.Transition.class);",
+        "line": 994,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postStateTransitionEventWithVmStopedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(transition.getCurrentState()).thenReturn(VirtualMachine.State.Stopping);",
+        "line": 998,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postStateTransitionEventWithVmStopedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(transition.getToState()).thenReturn(VirtualMachine.State.Stopped);",
+        "line": 999,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postStateTransitionEventWithVmStopedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

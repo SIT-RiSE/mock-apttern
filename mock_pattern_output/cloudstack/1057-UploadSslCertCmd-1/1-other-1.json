@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "uploadCmd",
+    "variableType": "UploadSslCertCmd",
+    "mockedClass": "UploadSslCertCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.ssl",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\network\\ssl\\CertServiceTest.java",
+      "className": "CertServiceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "//creating the command\r\nUploadSslCertCmd uploadCmd = new UploadSslCertCmdExtn();",
+        "line": 294,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runUploadSslCertSelfSignedNoPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "uploadCmd = Mockito.spy(uploadCmd);",
+        "line": 305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runUploadSslCertSelfSignedNoPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(uploadCmd, Mockito.atLeastOnce()).getAccountName();",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runUploadSslCertSelfSignedNoPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(uploadCmd, Mockito.times(1)).getCert();",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runUploadSslCertSelfSignedNoPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  }
+]

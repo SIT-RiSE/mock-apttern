@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "vRouterApiConnector",
+    "variableType": "VRouterApiConnector",
+    "mockedClass": "VRouterApiConnector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenVRouterApiTest.java",
+      "className": "TungstenVRouterApiTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VRouterApiConnector vRouterApiConnector = mock(VRouterApiConnector.class);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenVrouterPortSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vRouterApiConnector.addPort(any(Port.class))).thenReturn(true);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenVrouterPortSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vRouterApiConnector",
+    "variableType": "VRouterApiConnector",
+    "mockedClass": "VRouterApiConnector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenVRouterApiTest.java",
+      "className": "TungstenVRouterApiTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VRouterApiConnector vRouterApiConnector = mock(VRouterApiConnector.class);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenVrouterPortFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vRouterApiConnector.addPort(any(Port.class))).thenThrow(IOException.class);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenVrouterPortFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "vRouterApiConnector",
+    "variableType": "VRouterApiConnector",
+    "mockedClass": "VRouterApiConnector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenVRouterApiTest.java",
+      "className": "TungstenVRouterApiTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VRouterApiConnector vRouterApiConnector = mock(VRouterApiConnector.class);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteTungstenVrouterPortTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vRouterApiConnector.deletePort(anyString())).thenReturn(true);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteTungstenVrouterPortTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

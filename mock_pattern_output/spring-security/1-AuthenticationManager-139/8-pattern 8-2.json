@@ -1,0 +1,392 @@
+[
+  {
+    "variableName": "authenticationManager",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\AuthenticationFilterTests.java",
+      "className": "AuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AuthenticationManager authenticationManager;",
+        "line": 71,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationManager);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndNoAuthenticationThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(authentication);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndAuthenticationSuccessThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationManager).authenticate(any(Authentication.class));",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndAuthenticationSuccessThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(authentication);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenCustomSecurityContextHolderStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationManager).authenticate(any(Authentication.class));",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenCustomSecurityContextHolderStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(authentication);",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthenticationManagerResolverDefaultsAndAuthenticationSuccessThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationManager).authenticate(any(Authentication.class));",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthenticationManagerResolverDefaultsAndAuthenticationSuccessThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willThrow(new BadCredentialsException(\"failed\"));",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenDefaultsAndAuthenticationFailThenUnauthorized",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willThrow(new BadCredentialsException(\"failed\"));",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthenticationManagerResolverDefaultsAndAuthenticationFailThenUnauthorized",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(authentication);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationSuccessThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(null);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationEmptyThenServerError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(authentication);",
+        "line": 276,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenSuccessfulAuthenticationThenSessionIdChanges",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(authentication);",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenSuccessfulAuthenticationThenNoSessionCreated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any())).willReturn(authentication);",
+        "line": 309,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenCustomSecurityContextRepositoryAndSuccessfulAuthenticationRepositoryUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "AuthenticationManager",
+    "mockedClass": "AuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.servletapi",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\servletapi\\SecurityContextHolderAwareRequestFilterTests.java",
+      "className": "SecurityContextHolderAwareRequestFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AuthenticationManager authenticationManager;",
+        "line": 78,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationManager, this.logoutHandler);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationEntryPoint, this.authenticationManager, this.logoutHandler);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationEntryPoint, this.authenticationManager, this.logoutHandler);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateNullEntryPointFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationEntryPoint, this.authenticationManager, this.logoutHandler);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateNullEntryPointTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any(UsernamePasswordAuthenticationToken.class))).willReturn(expectedAuth);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "login",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authenticationManager.authenticate(any(UsernamePasswordAuthenticationToken.class))).willThrow(authException);",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationEntryPoint, this.authenticationManager, this.logoutHandler);",
+        "line": 207,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginNullAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationEntryPoint, this.authenticationManager, this.logoutHandler);",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginNullAuthenticationManagerFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationManager).authenticate(authenticationCaptor.capture());",
+        "line": 234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loginWhenHttpServletRequestHasAuthenticationDetailsThenAuthenticationRequestHasDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationManager, this.logoutHandler);",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationEntryPoint, this.authenticationManager, this.logoutHandler);",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullLogoutHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationManager, this.logoutHandler);",
+        "line": 282,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getAsyncContextStart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationManager, this.logoutHandler);",
+        "line": 302,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "startAsyncStart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationManager, this.logoutHandler);",
+        "line": 322,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "startAsyncWithRequestResponseStart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

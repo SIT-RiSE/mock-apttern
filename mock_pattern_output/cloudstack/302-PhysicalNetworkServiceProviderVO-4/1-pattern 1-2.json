@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "physicalNwSrvProvider",
+    "variableType": "PhysicalNetworkServiceProviderVO",
+    "mockedClass": "PhysicalNetworkServiceProviderVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.router.deployment",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\network\\router\\deployment\\RouterDeploymentDefinitionTest.java",
+      "className": "RouterDeploymentDefinitionTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final PhysicalNetworkServiceProviderVO physicalNwSrvProvider = mock(PhysicalNetworkServiceProviderVO.class);",
+        "line": 588,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindVirtualProvider",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(physicalNwSrvProvider.getId()).thenReturn(PROVIDER_ID);",
+        "line": 591,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindVirtualProvider",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "physicalNwSrvProvider",
+    "variableType": "PhysicalNetworkServiceProviderVO",
+    "mockedClass": "PhysicalNetworkServiceProviderVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.router.deployment",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\network\\router\\deployment\\RouterDeploymentDefinitionTest.java",
+      "className": "RouterDeploymentDefinitionTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final PhysicalNetworkServiceProviderVO physicalNwSrvProvider = mock(PhysicalNetworkServiceProviderVO.class);",
+        "line": 622,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindVirtualProviderWithNullVrProvider",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(physicalNwSrvProvider.getId()).thenReturn(PROVIDER_ID);",
+        "line": 625,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindVirtualProviderWithNullVrProvider",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

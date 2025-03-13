@@ -1,0 +1,218 @@
+[
+  {
+    "variableName": "monitor",
+    "variableType": "Monitor",
+    "mockedClass": "Monitor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\BasicMonitorSchedulerTest.java",
+      "className": "BasicMonitorSchedulerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Monitor monitor = Mockito.mock(Monitor.class);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_RepeatScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(monitor.monitor(ArgumentMatchers.any())).thenReturn(true);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_RepeatScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(monitor, Mockito.atLeast(2)).monitor(ArgumentMatchers.any());",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_RepeatScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "monitor",
+    "variableType": "Monitor",
+    "mockedClass": "Monitor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\BasicMonitorSchedulerTest.java",
+      "className": "BasicMonitorSchedulerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Monitor monitor = Mockito.mock(Monitor.class);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_RepeatAndStopScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(monitor.monitor(ArgumentMatchers.any())).thenReturn(true, true, true, false);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_RepeatAndStopScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// monitor.monitor() is called at least 5 times since a new task is scheduled first and then the current one is executed.\r\n// See ScheduledExecutors.scheduleAtFixedRate() for details.\r\nMockito.verify(monitor, Mockito.atLeast(5)).monitor(ArgumentMatchers.any());",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_RepeatAndStopScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "monitor",
+    "variableType": "Monitor",
+    "mockedClass": "Monitor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\BasicMonitorSchedulerTest.java",
+      "className": "BasicMonitorSchedulerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Monitor monitor = Mockito.mock(Monitor.class);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileMonitoring_ContinueMonitor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(monitor.monitor(ArgumentMatchers.any())).thenThrow(new RuntimeException(\"Test throwing exception while monitoring\"));",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileMonitoring_ContinueMonitor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// monitor.monitor() is called at least twice\r\n// See ScheduledExecutors.scheduleAtFixedRate() for details.\r\nMockito.verify(monitor, Mockito.atLeast(2)).monitor(ArgumentMatchers.any());",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileMonitoring_ContinueMonitor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "monitor",
+    "variableType": "Monitor",
+    "mockedClass": "Monitor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\ClockDriftSafeMonitorSchedulerTest.java",
+      "className": "ClockDriftSafeMonitorSchedulerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Monitor monitor = Mockito.mock(Monitor.class);",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileMonitoring",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(monitor.monitor(ArgumentMatchers.any(ServiceEmitter.class))).thenThrow(new RuntimeException(\"Test throwing exception while monitoring\"));",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileMonitoring",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(monitor, Mockito.times(1)).start();",
+        "line": 298,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileMonitoring",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(monitor, Mockito.times(1)).monitor(ArgumentMatchers.any());",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileMonitoring",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

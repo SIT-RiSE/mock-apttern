@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "ntwkoffer",
+    "variableType": "NetworkOfferingVO",
+    "mockedClass": "NetworkOfferingVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\element\\ConfigDriveNetworkElementTest.java",
+      "className": "ConfigDriveNetworkElementTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final NetworkOfferingVO ntwkoffer = mock(NetworkOfferingVO.class);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCanHandle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ntwkoffer.getTrafficType()).thenReturn(Networks.TrafficType.Guest);",
+        "line": 216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCanHandle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ntwkoffer.getTrafficType()).thenReturn(Networks.TrafficType.Public);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCanHandle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

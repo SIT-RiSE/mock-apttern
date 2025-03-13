@@ -1,0 +1,59 @@
+[
+  {
+    "variableName": "stats",
+    "variableType": "CoordinatorRunStats",
+    "mockedClass": "CoordinatorRunStats",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Other Methods",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\KillUnusedSegmentsTest.java",
+      "className": "KillUnusedSegmentsTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate CoordinatorRunStats stats;",
+        "line": 84,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(stats, Mockito.times(times)).add(Stats.Kill.AVAILABLE_SLOTS, availableSlots);",
+        "line": 416,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "verifyStats",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(stats, Mockito.times(times)).add(Stats.Kill.SUBMITTED_TASKS, submittedTasks);",
+        "line": 417,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "verifyStats",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(stats, Mockito.times(times)).add(Stats.Kill.MAX_SLOTS, maxSlots);",
+        "line": 418,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "verifyStats",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 31
+  }
+]

@@ -1,0 +1,1201 @@
+[
+  {
+    "variableName": "dataCenterDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDataCenterDao dataCenterDao;",
+        "line": 162,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 809,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "shutdownProviderInstancesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 887,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processHostAboutToBeRemovedWithSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 906,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processHostAboutToBeRemovedWithoutSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "dataCenterDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDataCenterDao dataCenterDao;",
+        "line": 274,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 938,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenPolicyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 960,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenPolicyRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 990,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenPolicyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1008,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1023,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenNicTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1037,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenVmTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1067,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenPolicyRuleWithRuleUuidTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1097,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenPolicyRuleWithAllRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenPolicyRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenTagTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenTagTypeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenTagsTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenTagTypesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1241,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyTungstenPolicyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyTungstenTagTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1285,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenPolicyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenTagTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1330,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenAddressGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1349,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenServiceGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1371,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1398,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenFirewallPolicyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1416,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenApplicationPolicySetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1436,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenApplicationPolicySetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1455,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenFirewallPolicyTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1476,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1503,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenAddressGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1523,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenServiceGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1644,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenVmSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1679,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenVmSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1709,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createRoutingLogicalRouterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1728,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addNetworkGatewayToLogicalRouterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1748,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listRoutingLogicalRouterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDao.findById(anyLong())).thenReturn(dataCenterVO);",
+        "line": 1768,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeNetworkGatewayFromLogicalRouterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "dataCenterDaoMock",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.consoleproxy",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\consoleproxy\\ConsoleProxyManagerTest.java",
+      "className": "ConsoleProxyManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDataCenterDao dataCenterDaoMock;",
+        "line": 64,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDaoMock.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForAdvancedNonSG",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDaoMock.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForAdvancedSG",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDaoMock.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 179,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForBasicNonSG",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDaoMock.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForBasicSG",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDaoMock.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForBasicSGWrongZoneType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dataCenterDaoMock.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForAdvancedWrongZoneType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataCenterDaoMock.listEnabledNonEdgeZoneIds()).thenReturn(dbZoneIds);",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetScannablePools",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataCenterDaoMock.listEnabledNonEdgeZoneIds()).thenReturn(dbZoneIds);",
+        "line": 298,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetScannablePools",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_dcDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.ha",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\ha\\HighAvailabilityManagerImplTest.java",
+      "className": "HighAvailabilityManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDataCenterDao _dcDao;",
+        "line": 84,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_dcDao.findById(Mockito.anyLong())).thenReturn(Mockito.mock(DataCenterVO.class));",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_dcDao.findById(Mockito.anyLong())).thenReturn(Mockito.mock(DataCenterVO.class));",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNonEmptyVMList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_dcDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\element\\VirtualRouterElementTest.java",
+      "className": "VirtualRouterElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate DataCenterDao _dcDao;",
+        "line": 132,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(virtualRouterElement._dcDao.findById(dataCenterId)).thenReturn(Mockito.mock(DataCenterVO.class));",
+        "line": 502,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddPasswordAndUserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "dcDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\guru\\DirectNetworkGuruTest.java",
+      "className": "DirectNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDataCenterDao dcDao;",
+        "line": 67,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dcDao.findById(dc.getId())).thenReturn(dc);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCanDesign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dcDao.findById(dc.getId())).thenReturn(dc);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignDns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dcDao.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateNicProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(dcDao.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateNetworkProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "dataCenterDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\guru\\ExternalGuestNetworkGuruTest.java",
+      "className": "ExternalGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDataCenterDao dataCenterDao;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataCenterDao.findById(Mockito.anyLong())).thenReturn(zone);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignDns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataCenterDao.findById(Mockito.anyLong())).thenReturn(zone);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateNicProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataCenterDao.findById(Mockito.anyLong())).thenReturn(zone);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateNetworkProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_datacenterDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\UpdatePhysicalNetworkTest.java",
+      "className": "UpdatePhysicalNetworkTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private DataCenterDao _datacenterDao = mock(DataCenterDao.class);",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_datacenterDao.findById(anyLong())).thenReturn(datacentervo);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updatePhysicalNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "dataCenterDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\snapshot\\SnapshotManagerTest.java",
+      "className": "SnapshotManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDataCenterDao dataCenterDao;",
+        "line": 179,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataCenterDao.findById(1L)).thenReturn(dc);",
+        "line": 555,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "mockForBackupSnapshotToSecondaryZoneTest",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "dataCenterDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\StorageManagerImplTest.java",
+      "className": "StorageManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDataCenterDao dataCenterDao;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataCenterDao.listAll(Mockito.any())).thenReturn(List.of(Mockito.mock(DataCenterVO.class)));",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableDefaultDatastoreDownloadRedirectionForExistingInstallationsOldInstall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataCenterDao.listAll(Mockito.any())).thenReturn(//new installation\r\nnew ArrayList<>());",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnableDefaultDatastoreDownloadRedirectionForExistingInstallationsNewInstall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_dcDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate DataCenterDao _dcDao;",
+        "line": 116,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(anyLong())).thenReturn(_dcMock);",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_dcDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerTest.java",
+      "className": "UserVmManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate DataCenterDao _dcDao;",
+        "line": 207,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(anyLong())).thenReturn(_dcMock);",
+        "line": 571,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVmNicIpSuccess1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(anyLong())).thenReturn(_dcMock);",
+        "line": 618,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVmNicIpSuccess2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(anyLong())).thenReturn(_dcMock);",
+        "line": 714,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVmNicIpFailure2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(anyLong())).thenReturn(_dcMock);",
+        "line": 761,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateVmNicIpFailure3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_dcDao",
+    "variableType": "DataCenterDao",
+    "mockedClass": "DataCenterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.secondarystorage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\secondary-storage\\controller\\src\\test\\java\\org\\apache\\cloudstack\\secondarystorage\\SecondaryStorageManagerTest.java",
+      "className": "SecondaryStorageManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDataCenterDao _dcDao;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForAdvancedNonSG",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForAdvancedSG",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForBasicNonSG",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForBasicSG",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForBasicSGWrongZoneType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_dcDao.findById(Mockito.anyLong())).thenReturn(dc);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getDefaultNetworkForAdvancedWrongZoneType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_dcDao.listEnabledNonEdgeZoneIds()).thenReturn(dbZoneIds);",
+        "line": 233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetScannablePools",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_dcDao.listEnabledNonEdgeZoneIds()).thenReturn(dbZoneIds);",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetScannablePools",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

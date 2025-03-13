@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "mockConnector",
+    "variableType": "MetadataStorageConnector",
+    "mockedClass": "MetadataStorageConnector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\KillCompactionConfigTest.java",
+      "className": "KillCompactionConfigTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MetadataStorageConnector mockConnector;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Set current compaction config to an empty compaction config\r\nMockito.when(mockConnector.lookup(ArgumentMatchers.anyString(), ArgumentMatchers.eq(\"name\"), ArgumentMatchers.eq(\"payload\"), ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY))).thenReturn(null);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunDoNothingIfCurrentConfigIsEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockConnector).lookup(ArgumentMatchers.anyString(), ArgumentMatchers.eq(\"name\"), ArgumentMatchers.eq(\"payload\"), ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY));",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunDoNothingIfCurrentConfigIsEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockConnector.lookup(ArgumentMatchers.anyString(), ArgumentMatchers.eq(\"name\"), ArgumentMatchers.eq(\"payload\"), ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY))).thenReturn(originalCurrentConfigBytes);",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRemoveInactiveDatasourceCompactionConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockConnector).lookup(ArgumentMatchers.anyString(), ArgumentMatchers.eq(\"name\"), ArgumentMatchers.eq(\"payload\"), ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY));",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRemoveInactiveDatasourceCompactionConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockConnector.lookup(ArgumentMatchers.anyString(), ArgumentMatchers.eq(\"name\"), ArgumentMatchers.eq(\"payload\"), ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY))).thenReturn(originalCurrentConfigBytes);",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRetryForRetryableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(mockConnector, Mockito.times(4)).lookup(ArgumentMatchers.anyString(), ArgumentMatchers.eq(\"name\"), ArgumentMatchers.eq(\"payload\"), ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY));",
+        "line": 349,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRunRetryForRetryableException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

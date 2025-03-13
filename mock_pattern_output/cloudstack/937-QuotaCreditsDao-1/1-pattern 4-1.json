@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "quotaCreditsDaoMock",
+    "variableType": "QuotaCreditsDao",
+    "mockedClass": "QuotaCreditsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.response",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\database\\quota\\src\\test\\java\\org\\apache\\cloudstack\\api\\response\\QuotaResponseBuilderImplTest.java",
+      "className": "QuotaResponseBuilderImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nQuotaCreditsDao quotaCreditsDaoMock;",
+        "line": 77,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(quotaCreditsDaoMock.saveCredits(Mockito.any(QuotaCreditsVO.class))).thenReturn(credit);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddQuotaCredits",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

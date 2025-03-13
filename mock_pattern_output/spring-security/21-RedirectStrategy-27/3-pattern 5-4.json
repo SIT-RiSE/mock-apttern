@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "redirectStrategy",
+    "variableType": "RedirectStrategy",
+    "mockedClass": "RedirectStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.cas.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\cas\\src\\test\\java\\org\\springframework\\security\\cas\\web\\CasAuthenticationEntryPointTests.java",
+      "className": "CasAuthenticationEntryPointTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RedirectStrategy redirectStrategy = mock();",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setRedirectStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(redirectStrategy).sendRedirect(eq(req), eq(res), eq(\"https://cas/login?service=https%3A%2F%2Fmycompany.com%2Flogin%2Fcas\"));",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setRedirectStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "redirectStrategy",
+    "variableType": "RedirectStrategy",
+    "mockedClass": "RedirectStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\SavedRequestAwareAuthenticationSuccessHandlerTests.java",
+      "className": "SavedRequestAwareAuthenticationSuccessHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RedirectStrategy redirectStrategy = mock(RedirectStrategy.class);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationSuccessHasSavedRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(redirectStrategy).sendRedirect(request, response, redirectUrl);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationSuccessHasSavedRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "redirect",
+    "variableType": "RedirectStrategy",
+    "mockedClass": "RedirectStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.concurrent",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\concurrent\\ConcurrentSessionFilterTests.java",
+      "className": "ConcurrentSessionFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RedirectStrategy redirect = mock(RedirectStrategy.class);",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomRedirectStrategyThenCustomRedirectStrategyUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(redirect).sendRedirect(request, response, expiredUrl);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomRedirectStrategyThenCustomRedirectStrategyUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "redirect",
+    "variableType": "RedirectStrategy",
+    "mockedClass": "RedirectStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.concurrent",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\concurrent\\ConcurrentSessionFilterTests.java",
+      "className": "ConcurrentSessionFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RedirectStrategy redirect = mock(RedirectStrategy.class);",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenOverrideThenCustomRedirectStrategyUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(redirect).sendRedirect(request, response, expiredUrl);",
+        "line": 222,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenOverrideThenCustomRedirectStrategyUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

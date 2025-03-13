@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "template",
+    "variableType": "RabbitTemplate",
+    "mockedClass": "RabbitTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\outbound\\AmqpOutboundEndpointTests.java",
+      "className": "AmqpOutboundEndpointTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RabbitTemplate template = spy(RabbitTemplate.class);",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "syncConfirmTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(template).send(isNull(), isNull(), any(), correlationCaptor.capture());",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "syncConfirmTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "amqpTemplate",
+    "variableType": "RabbitTemplate",
+    "mockedClass": "RabbitTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\outbound\\OutboundEndpointTests.java",
+      "className": "OutboundEndpointTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RabbitTemplate amqpTemplate = spy(new RabbitTemplate(connectionFactory));",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDelayExpression",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(amqpTemplate).send(eq(\"foo\"), eq(\"bar\"), captor.capture(), isNull());",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDelayExpression",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(amqpTemplate).sendAndReceive(eq(\"foo\"), eq(\"bar\"), captor.capture(), isNull());",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDelayExpression",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(amqpTemplate).sendAndReceive(eq(\"foo\"), eq(\"baz\"), captor.capture(), isNull());",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDelayExpression",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

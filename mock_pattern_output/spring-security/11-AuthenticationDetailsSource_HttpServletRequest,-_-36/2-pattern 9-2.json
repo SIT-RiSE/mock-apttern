@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "authenticationDetailsSource",
+    "variableType": "AuthenticationDetailsSource<HttpServletRequest,?>",
+    "mockedClass": "AuthenticationDetailsSource<HttpServletRequest,?>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\web\\authentication\\BearerTokenAuthenticationFilterTests.java",
+      "className": "BearerTokenAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAuthenticationDetailsSource<HttpServletRequest, ?> authenticationDetailsSource;",
+        "line": 87,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationDetailsSource).buildDetails(this.request);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomAuthenticationDetailsSourceThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "authenticationDetailsSource",
+    "variableType": "AuthenticationDetailsSource<HttpServletRequest,?>",
+    "mockedClass": "AuthenticationDetailsSource<HttpServletRequest,?>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.www",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\www\\BasicAuthenticationConverterTests.java",
+      "className": "BasicAuthenticationConverterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate AuthenticationDetailsSource<HttpServletRequest, ?> authenticationDetailsSource;",
+        "line": 45,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationDetailsSource).buildDetails(any());",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNormalOperation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationDetailsSource).buildDetails(any());",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizationSchemeInMixedCaseThenAuthenticates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.authenticationDetailsSource);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWhenUnsupportedAuthorizationHeaderThenIgnored",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authenticationDetailsSource).buildDetails(any());",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenEmptyPassword",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

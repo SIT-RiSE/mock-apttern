@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "parametersConverter",
+    "variableType": "Converter<OAuth2ClientCredentialsGrantRequest,MultiValueMap<String,String>>",
+    "mockedClass": "Converter<OAuth2ClientCredentialsGrantRequest,MultiValueMap<String,String>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\RestClientClientCredentialsTokenResponseClientTests.java",
+      "className": "RestClientClientCredentialsTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2ClientCredentialsGrantRequest, MultiValueMap<String, String>> parametersConverter = mock();",
+        "line": 402,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterSetThenAbleToOverrideDefaultParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(parametersConverter.convert(grantRequest)).willReturn(parameters);",
+        "line": 406,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterSetThenAbleToOverrideDefaultParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

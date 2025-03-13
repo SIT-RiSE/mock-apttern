@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "claimSetConverter",
+    "variableType": "Converter<Map<String,Object>,Map<String,Object>>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<Map<String, Object>, Map<String, Object>> claimSetConverter = mock(Converter.class);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenUsingSignedJwtThenReturnsClaimsGivenByClaimSetConverter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(claimSetConverter.convert(any(Map.class))).willReturn(Collections.singletonMap(\"custom\", \"value\"));",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenUsingSignedJwtThenReturnsClaimsGivenByClaimSetConverter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "claimSetConverter",
+    "variableType": "Converter<Map<String,Object>,Map<String,Object>>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<Map<String, Object>, Map<String, Object>> claimSetConverter = mock(Converter.class);",
+        "line": 266,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenClaimSetConverterFailsThenBadJwtException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(claimSetConverter.convert(any(Map.class))).willThrow(new IllegalArgumentException(\"bad conversion\"));",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenClaimSetConverterFailsThenBadJwtException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "claimSetConverter",
+    "variableType": "Converter<Map<String,Object>,Map<String,Object>>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusReactiveJwtDecoderTests.java",
+      "className": "NimbusReactiveJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<Map<String, Object>, Map<String, Object>> claimSetConverter = mock(Converter.class);",
+        "line": 279,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenClaimSetConverterFailsThenBadJwtException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(claimSetConverter.convert(any(Map.class))).willThrow(new IllegalArgumentException(\"bad conversion\"));",
+        "line": 281,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decodeWhenClaimSetConverterFailsThenBadJwtException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "builder",
+    "variableType": "Builder",
+    "mockedClass": "Builder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\StatsCollectorTest.java",
+      "className": "StatsCollectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Builder builder = Mockito.mock(Builder.class);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeBatchesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(builder.build()).thenReturn(batchPoints);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "writeBatchesTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

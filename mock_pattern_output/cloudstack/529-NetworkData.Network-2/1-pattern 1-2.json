@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "network",
+    "variableType": "NetworkData.Network",
+    "mockedClass": "NetworkData.Network",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\bigswitch\\src\\test\\java\\com\\cloud\\network\\resource\\BigSwitchBcfResourceTest.java",
+      "className": "BigSwitchBcfResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkData.Network network = mock(NetworkData.Network.class);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network.getId()).thenReturn(\"cccc\");",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkRetryOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "network",
+    "variableType": "NetworkData.Network",
+    "mockedClass": "NetworkData.Network",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\bigswitch\\src\\test\\java\\com\\cloud\\network\\resource\\BigSwitchBcfResourceTest.java",
+      "className": "BigSwitchBcfResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkData.Network network = mock(NetworkData.Network.class);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network.getId()).thenReturn(\"cccc\");",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

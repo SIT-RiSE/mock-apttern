@@ -1,0 +1,308 @@
+[
+  {
+    "variableName": "defaultAuthenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\FormLoginTests.java",
+      "className": "FormLoginTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveAuthenticationManager defaultAuthenticationManager = mock(ReactiveAuthenticationManager.class);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "customAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(defaultAuthenticationManager.authenticate(any())).willThrow(new RuntimeException(\"should not interact with default auth manager\"));",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "customAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(defaultAuthenticationManager);",
+        "line": 298,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "customAuthenticationManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "customAuthenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveAuthenticationManager customAuthenticationManager = mock(ReactiveAuthenticationManager.class);",
+        "line": 456,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenBasicWithAuthenticationManagerInLambdaThenAuthenticationManagerUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(customAuthenticationManager.authenticate(any())).willReturn(Mono.just(new TestingAuthenticationToken(\"rob\", \"rob\", \"ROLE_USER\", \"ROLE_ADMIN\")));",
+        "line": 457,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenBasicWithAuthenticationManagerInLambdaThenAuthenticationManagerUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customAuthenticationManager).authenticate(any(Authentication.class));",
+        "line": 481,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenBasicWithAuthenticationManagerInLambdaThenAuthenticationManagerUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\JwtIssuerReactiveAuthenticationManagerResolverDeprecatedTests.java",
+      "className": "JwtIssuerReactiveAuthenticationManagerResolverDeprecatedTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveAuthenticationManager authenticationManager = mock(ReactiveAuthenticationManager.class);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingCustomIssuerAuthenticationManagerResolverThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authenticationManager.authenticate(token)).willReturn(Mono.empty());",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingCustomIssuerAuthenticationManagerResolverThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authenticationManager).authenticate(any());",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingCustomIssuerAuthenticationManagerResolverThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\JwtIssuerReactiveAuthenticationManagerResolverDeprecatedTests.java",
+      "className": "JwtIssuerReactiveAuthenticationManagerResolverDeprecatedTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveAuthenticationManager authenticationManager = mock(ReactiveAuthenticationManager.class);",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingExternalSourceThenRespondsToChanges",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authenticationManager.authenticate(token)).willReturn(Mono.empty());",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingExternalSourceThenRespondsToChanges",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authenticationManager).authenticate(token);",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingExternalSourceThenRespondsToChanges",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\JwtIssuerReactiveAuthenticationManagerResolverTests.java",
+      "className": "JwtIssuerReactiveAuthenticationManagerResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveAuthenticationManager authenticationManager = mock(ReactiveAuthenticationManager.class);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingCustomIssuerAuthenticationManagerResolverThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authenticationManager.authenticate(token)).willReturn(Mono.empty());",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingCustomIssuerAuthenticationManagerResolverThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authenticationManager).authenticate(any());",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingCustomIssuerAuthenticationManagerResolverThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "authenticationManager",
+    "variableType": "ReactiveAuthenticationManager",
+    "mockedClass": "ReactiveAuthenticationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\authentication\\JwtIssuerReactiveAuthenticationManagerResolverTests.java",
+      "className": "JwtIssuerReactiveAuthenticationManagerResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveAuthenticationManager authenticationManager = mock(ReactiveAuthenticationManager.class);",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingExternalSourceThenRespondsToChanges",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authenticationManager.authenticate(token)).willReturn(Mono.empty());",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingExternalSourceThenRespondsToChanges",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authenticationManager).authenticate(token);",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenUsingExternalSourceThenRespondsToChanges",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

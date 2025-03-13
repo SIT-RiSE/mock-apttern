@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "validator",
+    "variableType": "TicketValidator",
+    "mockedClass": "TicketValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.cas.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\cas\\src\\test\\java\\org\\springframework\\security\\cas\\authentication\\CasAuthenticationProviderTests.java",
+      "className": "CasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TicketValidator validator = mock(TicketValidator.class);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateAllAuthenticationIsSuccessful",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(validator.validate(any(String.class), any(String.class))).willReturn(new AssertionImpl(\"rod\"));",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateAllAuthenticationIsSuccessful",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(validator).validate(ticket, serviceProperties.getService());",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateAllAuthenticationIsSuccessful",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(validator, times(2)).validate(ticket, serviceProperties.getService());",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateAllAuthenticationIsSuccessful",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(validator).validate(ticket, serviceUrl);",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateAllAuthenticationIsSuccessful",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(validator, times(2)).validate(ticket, serviceUrl);",
+        "line": 195,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateAllAuthenticationIsSuccessful",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

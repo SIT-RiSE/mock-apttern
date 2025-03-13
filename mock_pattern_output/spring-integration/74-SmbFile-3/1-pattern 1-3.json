@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "smbFile1",
+    "variableType": "SmbFile",
+    "mockedClass": "SmbFile",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.filters",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\filters\\SmbLastModifiedFileListFilterTests.java",
+      "className": "SmbLastModifiedFileListFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SmbFile smbFile1 = mock(SmbFile.class);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAge",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbFile1.getLastModified()).thenReturn(System.currentTimeMillis());",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAge",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "smbFile3",
+    "variableType": "SmbFile",
+    "mockedClass": "SmbFile",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.filters",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\filters\\SmbLastModifiedFileListFilterTests.java",
+      "className": "SmbLastModifiedFileListFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SmbFile smbFile3 = mock(SmbFile.class);",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAge",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbFile3.getLastModified()).thenReturn(Instant.now().minus(Duration.ofDays(1)).toEpochMilli());",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAge",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "smbFile2",
+    "variableType": "SmbFile",
+    "mockedClass": "SmbFile",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.filters",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\filters\\SmbLastModifiedFileListFilterTests.java",
+      "className": "SmbLastModifiedFileListFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SmbFile smbFile2 = mock(SmbFile.class);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAge",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbFile2.getLastModified()).thenReturn(System.currentTimeMillis());",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAge",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

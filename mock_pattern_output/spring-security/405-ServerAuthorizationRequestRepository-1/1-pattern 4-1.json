@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "authorizationRequestRepository",
+    "variableType": "ServerAuthorizationRequestRepository",
+    "mockedClass": "ServerAuthorizationRequestRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\server\\ServerOAuth2AuthorizationCodeAuthenticationTokenConverterTests.java",
+      "className": "ServerOAuth2AuthorizationCodeAuthenticationTokenConverterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerAuthorizationRequestRepository authorizationRequestRepository;",
+        "line": 56,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationRequestRepository.removeAuthorizationRequest(any())).willReturn(Mono.empty());",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyWhenAuthorizationRequestEmptyThenOAuth2AuthorizationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationRequestRepository.removeAuthorizationRequest(any())).willReturn(Mono.just(this.authorizationRequest.build()));",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyWhenAttributesMissingThenOAuth2AuthorizationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationRequestRepository.removeAuthorizationRequest(any())).willReturn(Mono.just(this.authorizationRequest.build()));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyWhenClientRegistrationMissingThenOAuth2AuthorizationException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationRequestRepository.removeAuthorizationRequest(any())).willReturn(Mono.just(this.authorizationRequest.build()));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyWhenCodeParameterNotFoundThenErrorCode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizationRequestRepository.removeAuthorizationRequest(any())).willReturn(Mono.just(this.authorizationRequest.build()));",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyWhenCodeParameterFoundThenCode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

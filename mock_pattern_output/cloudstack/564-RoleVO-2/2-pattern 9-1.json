@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "roleVoMock",
+    "variableType": "RoleVO",
+    "mockedClass": "RoleVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.acl",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\acl\\RoleManagerImplTest.java",
+      "className": "RoleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate RoleVO roleVoMock;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(roleVoMock, Mockito.times(1)).getRoleType();",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findRoleTestNotRootAdminAndNotRoleAdminType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(roleVoMock, Mockito.times(0)).getRoleType();",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findRoleTestRootAdminAndNotRoleAdminType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(roleVoMock, Mockito.times(0)).getRoleType();",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findRoleTestRootAdminAndRoleAdminType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(roleVoMock, Mockito.times(1)).getRoleType();",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findRoleTestNotRootAdminAndRoleAdminType",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

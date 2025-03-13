@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "destDataStoreTO",
+    "variableType": "PrimaryDataStoreTO",
+    "mockedClass": "PrimaryDataStoreTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\resource\\VmwareResourceTest.java",
+      "className": "VmwareResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nPrimaryDataStoreTO destDataStoreTO;",
+        "line": 153,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destDataStoreTO.isFullCloneFlag()).thenReturn(FULL_CLONE_FLAG);",
+        "line": 201,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(destDataStoreTO, times(2)).isFullCloneFlag();",
+        "line": 382,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExamineStorageSubSystemCommandFullCloneFlagForVmware",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(destDataStoreTO.isFullCloneFlag()).thenReturn(null);",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExamineStorageSubSystemCommandFullCloneFlagForVmwareNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(destDataStoreTO).isFullCloneFlag();",
+        "line": 392,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExamineStorageSubSystemCommandFullCloneFlagForVmwareNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 21
+  }
+]

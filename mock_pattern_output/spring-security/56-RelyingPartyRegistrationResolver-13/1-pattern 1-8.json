@@ -1,0 +1,314 @@
+[
+  {
+    "variableName": "relyingParties",
+    "variableType": "RelyingPartyRegistrationResolver",
+    "mockedClass": "RelyingPartyRegistrationResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\OpenSaml4AuthenticationRequestResolverTests.java",
+      "className": "OpenSaml4AuthenticationRequestResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelyingPartyRegistrationResolver relyingParties = mock(RelyingPartyRegistrationResolver.class);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenRedirectThenSaml2RedirectAuthenticationRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(relyingParties.resolve(any(), any())).willReturn(this.registration);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenRedirectThenSaml2RedirectAuthenticationRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "relyingParties",
+    "variableType": "RelyingPartyRegistrationResolver",
+    "mockedClass": "RelyingPartyRegistrationResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\OpenSaml4AuthenticationRequestResolverTests.java",
+      "className": "OpenSaml4AuthenticationRequestResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelyingPartyRegistrationResolver relyingParties = mock(RelyingPartyRegistrationResolver.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenPostThenSaml2PostAuthenticationRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(relyingParties.resolve(any(), any())).willReturn(registration);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenPostThenSaml2PostAuthenticationRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "relyingParties",
+    "variableType": "RelyingPartyRegistrationResolver",
+    "mockedClass": "RelyingPartyRegistrationResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\OpenSaml4AuthenticationRequestResolverTests.java",
+      "className": "OpenSaml4AuthenticationRequestResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelyingPartyRegistrationResolver relyingParties = mock(RelyingPartyRegistrationResolver.class);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomRelayStateThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(relyingParties.resolve(any(), any())).willReturn(this.registration);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomRelayStateThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "relyingParties",
+    "variableType": "RelyingPartyRegistrationResolver",
+    "mockedClass": "RelyingPartyRegistrationResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml4Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\OpenSaml4AuthenticationRequestResolverTests.java",
+      "className": "OpenSaml4AuthenticationRequestResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelyingPartyRegistrationResolver relyingParties = mock(RelyingPartyRegistrationResolver.class);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomAuthenticationUrlTHenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(relyingParties.resolve(any(), any())).willReturn(this.registration);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomAuthenticationUrlTHenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "relyingParties",
+    "variableType": "RelyingPartyRegistrationResolver",
+    "mockedClass": "RelyingPartyRegistrationResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml5Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\OpenSaml5AuthenticationRequestResolverTests.java",
+      "className": "OpenSaml5AuthenticationRequestResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelyingPartyRegistrationResolver relyingParties = mock(RelyingPartyRegistrationResolver.class);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenRedirectThenSaml2RedirectAuthenticationRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(relyingParties.resolve(any(), any())).willReturn(this.registration);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenRedirectThenSaml2RedirectAuthenticationRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "relyingParties",
+    "variableType": "RelyingPartyRegistrationResolver",
+    "mockedClass": "RelyingPartyRegistrationResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml5Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\OpenSaml5AuthenticationRequestResolverTests.java",
+      "className": "OpenSaml5AuthenticationRequestResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelyingPartyRegistrationResolver relyingParties = mock(RelyingPartyRegistrationResolver.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenPostThenSaml2PostAuthenticationRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(relyingParties.resolve(any(), any())).willReturn(registration);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenPostThenSaml2PostAuthenticationRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "relyingParties",
+    "variableType": "RelyingPartyRegistrationResolver",
+    "mockedClass": "RelyingPartyRegistrationResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml5Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\OpenSaml5AuthenticationRequestResolverTests.java",
+      "className": "OpenSaml5AuthenticationRequestResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelyingPartyRegistrationResolver relyingParties = mock(RelyingPartyRegistrationResolver.class);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomRelayStateThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(relyingParties.resolve(any(), any())).willReturn(this.registration);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomRelayStateThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "relyingParties",
+    "variableType": "RelyingPartyRegistrationResolver",
+    "mockedClass": "RelyingPartyRegistrationResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml5Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\OpenSaml5AuthenticationRequestResolverTests.java",
+      "className": "OpenSaml5AuthenticationRequestResolverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelyingPartyRegistrationResolver relyingParties = mock(RelyingPartyRegistrationResolver.class);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomAuthenticationUrlTHenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(relyingParties.resolve(any(), any())).willReturn(this.registration);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "resolveWhenCustomAuthenticationUrlTHenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

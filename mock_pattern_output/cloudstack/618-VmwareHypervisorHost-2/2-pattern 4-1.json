@@ -1,0 +1,66 @@
+[
+  {
+    "variableName": "hyperHost",
+    "variableType": "VmwareHypervisorHost",
+    "mockedClass": "VmwareHypervisorHost",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\resource\\VmwareResourceTest.java",
+      "className": "VmwareResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVmwareHypervisorHost hyperHost;",
+        "line": 127,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hyperHost.findVmOnHyperHost(\"i-2-3-VM\")).thenReturn(vmMo);",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testScaleVMF1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hyperHost.getMor()).thenReturn(null);",
+        "line": 418,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindVmOnDatacenterNullHyperHostReference",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(hyperHost.getHyperHostDatacenter()).thenReturn(mor);",
+        "line": 425,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindVmOnDatacenter",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

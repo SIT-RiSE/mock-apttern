@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "jpaExecutor",
+    "variableType": "JpaExecutor",
+    "mockedClass": "JpaExecutor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jpa.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jpa\\src\\test\\java\\org\\springframework\\integration\\jpa\\inbound\\JpaPollingChannelAdapterUnitTests.java",
+      "className": "JpaPollingChannelAdapterUnitTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JpaExecutor jpaExecutor = mock(JpaExecutor.class);",
+        "line": 38,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReceiveNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(jpaExecutor.poll()).thenReturn(null);",
+        "line": 40,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReceiveNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "jpaExecutor",
+    "variableType": "JpaExecutor",
+    "mockedClass": "JpaExecutor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jpa.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jpa\\src\\test\\java\\org\\springframework\\integration\\jpa\\inbound\\JpaPollingChannelAdapterUnitTests.java",
+      "className": "JpaPollingChannelAdapterUnitTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JpaExecutor jpaExecutor = mock(JpaExecutor.class);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReceiveNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(jpaExecutor.poll()).thenReturn(\"Spring\");",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReceiveNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

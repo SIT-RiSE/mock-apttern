@@ -1,0 +1,341 @@
+[
+  {
+    "variableName": "event",
+    "variableType": "SessionDestroyedEvent",
+    "mockedClass": "SessionDestroyedEvent",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.jaas",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\jaas\\DefaultJaasAuthenticationProviderTests.java",
+      "className": "DefaultJaasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionDestroyedEvent event = mock(SessionDestroyedEvent.class);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(event.getSecurityContexts()).willReturn(Arrays.asList(securityContext));",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(event).getSecurityContexts();",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(event, securityContext, token, context);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "event",
+    "variableType": "SessionDestroyedEvent",
+    "mockedClass": "SessionDestroyedEvent",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.jaas",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\jaas\\DefaultJaasAuthenticationProviderTests.java",
+      "className": "DefaultJaasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionDestroyedEvent event = mock(SessionDestroyedEvent.class);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(event.getSecurityContexts()).willReturn(Arrays.asList(securityContext));",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(event).getSecurityContexts();",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(event).getSecurityContexts();",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(event, securityContext);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "event",
+    "variableType": "SessionDestroyedEvent",
+    "mockedClass": "SessionDestroyedEvent",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.jaas",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\jaas\\DefaultJaasAuthenticationProviderTests.java",
+      "className": "DefaultJaasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionDestroyedEvent event = mock(SessionDestroyedEvent.class);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNonJaasAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(event.getSecurityContexts()).willReturn(Arrays.asList(securityContext));",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNonJaasAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(event).getSecurityContexts();",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNonJaasAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(event).getSecurityContexts();",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNonJaasAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(event, securityContext);",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNonJaasAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "event",
+    "variableType": "SessionDestroyedEvent",
+    "mockedClass": "SessionDestroyedEvent",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.jaas",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\jaas\\DefaultJaasAuthenticationProviderTests.java",
+      "className": "DefaultJaasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionDestroyedEvent event = mock(SessionDestroyedEvent.class);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullLoginContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(event.getSecurityContexts()).willReturn(Arrays.asList(securityContext));",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullLoginContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(event).getSecurityContexts();",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullLoginContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(event, securityContext, token);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutNullLoginContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "event",
+    "variableType": "SessionDestroyedEvent",
+    "mockedClass": "SessionDestroyedEvent",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.jaas",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\jaas\\DefaultJaasAuthenticationProviderTests.java",
+      "className": "DefaultJaasAuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionDestroyedEvent event = mock(SessionDestroyedEvent.class);",
+        "line": 195,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutLoginException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(event.getSecurityContexts()).willReturn(Arrays.asList(securityContext));",
+        "line": 200,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutLoginException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(event).getSecurityContexts();",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutLoginException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(event, securityContext, token, context);",
+        "line": 210,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "logoutLoginException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

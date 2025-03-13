@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "claimConverter",
+    "variableType": "Converter<Object,String>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\MappedJwtClaimSetConverterTests.java",
+      "className": "MappedJwtClaimSetConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<Object, String> claimConverter = mock(Converter.class);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenUsingCustomConverterThenAllOtherDefaultsAreStillUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(claimConverter.convert(any(Object.class))).willReturn(\"1234\");",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenUsingCustomConverterThenAllOtherDefaultsAreStillUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "claimConverter",
+    "variableType": "Converter<Object,String>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\MappedJwtClaimSetConverterTests.java",
+      "className": "MappedJwtClaimSetConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<Object, String> claimConverter = mock(Converter.class);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenConverterReturnsValueWhenEntryIsMissingThenEntryIsAdded",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(claimConverter.convert(any())).willReturn(\"custom-value\");",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenConverterReturnsValueWhenEntryIsMissingThenEntryIsAdded",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "claimConverter",
+    "variableType": "Converter<Object,String>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\MappedJwtClaimSetConverterTests.java",
+      "className": "MappedJwtClaimSetConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<Object, String> claimConverter = mock(Converter.class);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenUsingConstructorThenOnlyConvertersInThatMapAreUsedForConversion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(claimConverter.convert(any(Object.class))).willReturn(\"1234\");",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "convertWhenUsingConstructorThenOnlyConvertersInThatMapAreUsedForConversion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

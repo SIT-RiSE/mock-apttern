@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "firstDone",
+    "variableType": "boolean",
+    "mockedClass": "boolean",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "TestReceiver"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "class TestReceiver extends ImapMailReceiver {\r\n\r\n    private boolean firstDone;\r\n\r\n    private TestReceiver() {\r\n        setSearchTermStrategy(searchTermStrategy);\r\n    }\r\n\r\n    @Override\r\n    protected Folder getFolder() {\r\n        Folder folder = mock(Folder.class);\r\n        given(folder.isOpen()).willReturn(true);\r\n        try {\r\n            given(folder.getMessages()).willReturn(!this.firstDone ? messages1 : messages2);\r\n        } catch (MessagingException ignored) {\r\n        }\r\n        return folder;\r\n    }\r\n\r\n    @Override\r\n    public Message[] receive() throws MessagingException {\r\n        Message[] messages = searchForNewMessages();\r\n        this.firstDone = true;\r\n        return messages;\r\n    }\r\n}",
+        "line": 915,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 39
+  },
+  {
+    "variableName": "firstDone",
+    "variableType": "boolean",
+    "mockedClass": "boolean",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "TestReceiver"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "class TestReceiver extends ImapMailReceiver {\r\n\r\n    private boolean firstDone;\r\n\r\n    private TestReceiver() {\r\n        setSearchTermStrategy(searchTermStrategy);\r\n    }\r\n\r\n    @Override\r\n    protected Folder getFolder() {\r\n        Folder folder = mock(Folder.class);\r\n        given(folder.isOpen()).willReturn(true);\r\n        try {\r\n            given(folder.getMessages()).willReturn(!this.firstDone ? messages1 : messages2);\r\n        } catch (MessagingException ignored) {\r\n        }\r\n        return folder;\r\n    }\r\n\r\n    @Override\r\n    public Message[] receive() throws MessagingException {\r\n        Message[] messages = searchForNewMessages();\r\n        this.firstDone = true;\r\n        return messages;\r\n    }\r\n}",
+        "line": 915,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 39
+  },
+  {
+    "variableName": "firstDone",
+    "variableType": "boolean",
+    "mockedClass": "boolean",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "TestReceiver"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "class TestReceiver extends ImapMailReceiver {\r\n\r\n    private boolean firstDone;\r\n\r\n    private TestReceiver() {\r\n        setSearchTermStrategy(searchTermStrategy);\r\n    }\r\n\r\n    @Override\r\n    protected Folder getFolder() {\r\n        Folder folder = mock(Folder.class);\r\n        given(folder.isOpen()).willReturn(true);\r\n        try {\r\n            given(folder.getMessages()).willReturn(!this.firstDone ? messages1 : messages2);\r\n        } catch (MessagingException ignored) {\r\n        }\r\n        return folder;\r\n    }\r\n\r\n    @Override\r\n    public Message[] receive() throws MessagingException {\r\n        Message[] messages = searchForNewMessages();\r\n        this.firstDone = true;\r\n        return messages;\r\n    }\r\n}",
+        "line": 915,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 39
+  }
+]

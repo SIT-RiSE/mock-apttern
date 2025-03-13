@@ -1,0 +1,57 @@
+[
+  {
+    "variableName": "_alertDao",
+    "variableType": "AlertDao",
+    "mockedClass": "AlertDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.alert",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\alert\\AlertControlsUnitTest.java",
+      "className": "AlertControlsUnitTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAlertDao _alertDao;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_alertDao.archiveAlert(anyList(), anyString(), any(Date.class), any(Date.class), anyLong())).thenReturn(true);",
+        "line": 61,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_alertDao.deleteAlert(anyList(), anyString(), any(Date.class), any(Date.class), anyLong())).thenReturn(true);",
+        "line": 62,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Override",
+            "@Before",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  }
+]

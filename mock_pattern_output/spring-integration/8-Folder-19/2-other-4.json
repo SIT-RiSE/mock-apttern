@@ -1,0 +1,184 @@
+[
+  {
+    "variableName": "folder",
+    "variableType": "Folder",
+    "mockedClass": "Folder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Folder folder = mock(Folder.class);",
+        "line": 318,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "receiveAndMarkAsReadDontDeleteGuts",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(folder.getPermanentFlags()).willReturn(new Flags(Flags.Flag.USER));",
+        "line": 319,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "receiveAndMarkAsReadDontDeleteGuts",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(folder.isOpen()).willReturn(true);",
+        "line": 320,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "receiveAndMarkAsReadDontDeleteGuts",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 20
+  },
+  {
+    "variableName": "folder",
+    "variableType": "Folder",
+    "mockedClass": "Folder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 @Override\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Folder folder = mock(Folder.class);",
+        "line": 923,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getFolder",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(folder.isOpen()).willReturn(true);",
+        "line": 924,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getFolder",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(folder.getMessages()).willReturn(!this.firstDone ? messages1 : messages2);",
+        "line": 926,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getFolder",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 24
+  },
+  {
+    "variableName": "folder",
+    "variableType": "Folder",
+    "mockedClass": "Folder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 @Override\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "TestReceiver"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Folder folder = mock(Folder.class);",
+        "line": 923,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getFolder",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(folder.isOpen()).willReturn(true);",
+        "line": 924,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getFolder",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(folder.getMessages()).willReturn(!this.firstDone ? messages1 : messages2);",
+        "line": 926,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getFolder",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 24
+  },
+  {
+    "variableName": "folder",
+    "variableType": "Folder",
+    "mockedClass": "Folder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailSearchTermsTests.java",
+      "className": "ImapMailSearchTermsTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Folder folder = mock(Folder.class);",
+        "line": 69,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateSearchTermsWhenShouldMarkAsReadNoExistingFlagsGuts",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(folder.getPermanentFlags()).thenReturn(new Flags(Flags.Flag.USER));",
+        "line": 70,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "validateSearchTermsWhenShouldMarkAsReadNoExistingFlagsGuts",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 20
+  }
+]

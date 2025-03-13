@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "returned",
+    "variableType": "Object",
+    "mockedClass": "Object",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.afterinvocation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\afterinvocation\\AclEntryAfterInvocationCollectionFilteringProviderTests.java",
+      "className": "AclEntryAfterInvocationCollectionFilteringProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Object returned = provider.decide(mock(Authentication.class), new Object(), SecurityConfig.createList(\"AFTER_ACL_COLLECTION_READ\"), new ArrayList(Arrays.asList(new Object(), new Object())));",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "objectsAreRemovedIfPermissionDenied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "returned = provider.decide(mock(Authentication.class), new Object(), SecurityConfig.createList(\"UNSUPPORTED\", \"AFTER_ACL_COLLECTION_READ\"), new Object[] { new Object(), new Object() });",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "objectsAreRemovedIfPermissionDenied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  }
+]

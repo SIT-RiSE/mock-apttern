@@ -1,0 +1,92 @@
+[
+  {
+    "variableName": "invoker",
+    "variableType": "Invoker<DemoService>",
+    "mockedClass": "Invoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-api\\src\\test\\java\\org\\apache\\dubbo\\rpc\\filter\\ContextFilterTest.java",
+      "className": "ContextFilterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "Invoker<DemoService> invoker;",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "invoker = mock(Invoker.class);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetContext",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.isAvailable()).willReturn(true);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetContext",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.getInterface()).willReturn(DemoService.class);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetContext",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.invoke(invocation)).willReturn(result);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetContext",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker.getUrl()).willReturn(url);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetContext",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 23
+  }
+]

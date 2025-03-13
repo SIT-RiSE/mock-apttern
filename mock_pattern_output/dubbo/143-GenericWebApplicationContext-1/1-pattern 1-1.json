@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "GenericWebApplicationContext",
+    "mockedClass": "GenericWebApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config.spring.status",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-spring\\src\\test\\java\\org\\apache\\dubbo\\config\\spring\\status\\SpringStatusCheckerTest.java",
+      "className": "SpringStatusCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "GenericWebApplicationContext context = mock(GenericWebApplicationContext.class);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGenericWebApplicationContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(context.isRunning()).willReturn(true);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGenericWebApplicationContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

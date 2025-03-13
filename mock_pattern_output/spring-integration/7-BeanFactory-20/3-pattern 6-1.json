@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "beanFactory",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.router",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\router\\RecipientListRouterTests.java",
+      "className": "RecipientListRouterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BeanFactory beanFactory = Mockito.mock(BeanFactory.class);",
+        "line": 432,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDefaultChannelResolutionFromName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(Mockito.eq(\"defaultChannel\"), Mockito.eq(MessageChannel.class))).thenReturn(defaultChannel);",
+        "line": 433,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDefaultChannelResolutionFromName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(beanFactory).getBean(Mockito.eq(\"defaultChannel\"), Mockito.eq(MessageChannel.class));",
+        "line": 441,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDefaultChannelResolutionFromName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

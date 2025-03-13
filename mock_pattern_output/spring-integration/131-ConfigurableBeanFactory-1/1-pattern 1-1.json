@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "beanFactory",
+    "variableType": "ConfigurableBeanFactory",
+    "mockedClass": "ConfigurableBeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.util",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\util\\BeanFactoryTypeConverterTests.java",
+      "className": "BeanFactoryTypeConverterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigurableBeanFactory beanFactory = mock(ConfigurableBeanFactory.class);",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initialConcurrency",
+          "methodAnnotations": [
+            "@Test",
+            "@Ignore"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getTypeConverter()).thenReturn(typeConverter);",
+        "line": 305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "initialConcurrency",
+          "methodAnnotations": [
+            "@Test",
+            "@Ignore"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

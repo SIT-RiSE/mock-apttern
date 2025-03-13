@@ -1,0 +1,203 @@
+[
+  {
+    "variableName": "client",
+    "variableType": "FTPClient",
+    "mockedClass": "FTPClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\outbound\\FtpServerOutboundTests.java",
+      "className": "FtpServerOutboundTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FTPClient client = spy(TestUtils.getPropertyValue(session, \"client\", FTPClient.class));",
+        "line": 399,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt3088MPutNotRecursive",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).sendSiteCommand(\"chmod 600 ftpTarget/localSource1.txt\");",
+        "line": 417,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt3088MPutNotRecursive",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).sendSiteCommand(\"chmod 600 ftpTarget/localSource1.txt\");",
+        "line": 418,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt3088MPutNotRecursive",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "FTPClient",
+    "mockedClass": "FTPClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\outbound\\FtpServerOutboundTests.java",
+      "className": "FtpServerOutboundTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FTPClient client = spy(TestUtils.getPropertyValue(session, \"client\", FTPClient.class));",
+        "line": 461,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt3412FileMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client, times(2)).sendSiteCommand(\"chmod 600 ftpTarget/appending.txt\");",
+        "line": 482,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInt3412FileMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "FTPClient",
+    "mockedClass": "FTPClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.session",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\session\\SessionFactoryTests.java",
+      "className": "SessionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final FTPClient client = mock(FTPClient.class);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFtpClientInteraction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).setConnectTimeout(123);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFtpClientInteraction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).setDefaultTimeout(456);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFtpClientInteraction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).setDataTimeout(Duration.ofMillis(789));",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFtpClientInteraction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).logout();",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFtpClientInteraction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).disconnect();",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFtpClientInteraction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).logout();",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFtpClientInteraction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client, times(2)).disconnect();",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFtpClientInteraction",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

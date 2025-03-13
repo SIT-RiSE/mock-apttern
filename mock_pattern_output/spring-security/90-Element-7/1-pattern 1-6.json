@@ -1,0 +1,284 @@
+[
+  {
+    "variableName": "element",
+    "variableType": "Element",
+    "mockedClass": "Element",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Element element = mock(Element.class);",
+        "line": 842,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenMoreThanOneResourceServerModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(element.hasAttribute(OAuth2ResourceServerBeanDefinitionParser.AUTHENTICATION_MANAGER_RESOLVER_REF)).willReturn(true);",
+        "line": 843,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenMoreThanOneResourceServerModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "element",
+    "variableType": "Element",
+    "mockedClass": "Element",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Element element = mock(Element.class);",
+        "line": 858,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoResourceServerModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(element.hasAttribute(OAuth2ResourceServerBeanDefinitionParser.AUTHENTICATION_MANAGER_RESOLVER_REF)).willReturn(false);",
+        "line": 859,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoResourceServerModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "element",
+    "variableType": "Element",
+    "mockedClass": "Element",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Element element = mock(Element.class);",
+        "line": 869,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenBothJwtAttributesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(element.hasAttribute(JwtBeanDefinitionParser.JWK_SET_URI)).willReturn(true);",
+        "line": 870,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenBothJwtAttributesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(element.hasAttribute(JwtBeanDefinitionParser.DECODER_REF)).willReturn(true);",
+        "line": 871,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenBothJwtAttributesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "element",
+    "variableType": "Element",
+    "mockedClass": "Element",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Element element = mock(Element.class);",
+        "line": 880,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoJwtAttributesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(element.hasAttribute(JwtBeanDefinitionParser.JWK_SET_URI)).willReturn(false);",
+        "line": 881,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoJwtAttributesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(element.hasAttribute(JwtBeanDefinitionParser.DECODER_REF)).willReturn(false);",
+        "line": 882,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoJwtAttributesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "element",
+    "variableType": "Element",
+    "mockedClass": "Element",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Element element = mock(Element.class);",
+        "line": 891,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenBothOpaqueTokenModesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(element.hasAttribute(OpaqueTokenBeanDefinitionParser.INTROSPECTION_URI)).willReturn(true);",
+        "line": 892,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenBothOpaqueTokenModesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(element.hasAttribute(OpaqueTokenBeanDefinitionParser.INTROSPECTOR_REF)).willReturn(true);",
+        "line": 893,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenBothOpaqueTokenModesThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "element",
+    "variableType": "Element",
+    "mockedClass": "Element",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\OAuth2ResourceServerBeanDefinitionParserTests.java",
+      "className": "OAuth2ResourceServerBeanDefinitionParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Element element = mock(Element.class);",
+        "line": 902,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoOpaqueTokenModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(element.hasAttribute(OpaqueTokenBeanDefinitionParser.INTROSPECTION_URI)).willReturn(false);",
+        "line": 903,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoOpaqueTokenModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(element.hasAttribute(OpaqueTokenBeanDefinitionParser.INTROSPECTOR_REF)).willReturn(false);",
+        "line": 904,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateConfigurationWhenNoOpaqueTokenModeThenError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

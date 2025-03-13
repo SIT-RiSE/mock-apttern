@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "applicationContext",
+    "variableType": "ApplicationContext",
+    "mockedClass": "ApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config.spring.status",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-spring\\src\\test\\java\\org\\apache\\dubbo\\config\\spring\\status\\DataSourceStatusCheckerTest.java",
+      "className": "DataSourceStatusCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ApplicationContext applicationContext;",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(applicationContext.getBeansOfType(eq(DataSource.class), anyBoolean(), anyBoolean())).willReturn(map);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithoutDatasource",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(applicationContext.getBeansOfType(eq(DataSource.class), anyBoolean(), anyBoolean())).willReturn(map);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithDatasourceHasNextResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(applicationContext.getBeansOfType(eq(DataSource.class), anyBoolean(), anyBoolean())).willReturn(map);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithDatasourceNotHasNextResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

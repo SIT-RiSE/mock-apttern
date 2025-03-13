@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "autoScaleVmGroupVOMock",
+    "variableType": "AutoScaleVmGroupVO",
+    "mockedClass": "AutoScaleVmGroupVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\network\\as\\dao\\AutoScaleVmGroupDaoImplTest.java",
+      "className": "AutoScaleVmGroupDaoImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAutoScaleVmGroupVO autoScaleVmGroupVOMock;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(autoScaleVmGroupVOMock, Mockito.times(1)).setState(newState);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateState2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

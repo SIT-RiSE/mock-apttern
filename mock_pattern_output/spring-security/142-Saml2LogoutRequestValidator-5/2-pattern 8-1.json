@@ -1,0 +1,111 @@
+[
+  {
+    "variableName": "logoutRequestValidator",
+    "variableType": "Saml2LogoutRequestValidator",
+    "mockedClass": "Saml2LogoutRequestValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\Saml2LogoutRequestFilterTests.java",
+      "className": "Saml2LogoutRequestFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "Saml2LogoutRequestValidator logoutRequestValidator = mock(Saml2LogoutRequestValidator.class);",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutRequestValidator.validate(any())).willReturn(Saml2LogoutValidatorResult.success());",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlRequestThenRedirects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logoutRequestValidator).validate(any());",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlRequestThenRedirects",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutRequestValidator.validate(any())).willReturn(Saml2LogoutValidatorResult.success());",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlRequestThenPosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.logoutRequestValidator).validate(any());",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlRequestThenPosts",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.logoutRequestValidator, this.logoutHandler);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenRequestMismatchesThenNoLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.logoutRequestValidator, this.logoutHandler);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenNoSamlRequestOrResponseThenNoLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutRequestValidator.validate(any())).willReturn(Saml2LogoutValidatorResult.withErrors(new Saml2Error(\"error\", \"description\")).build());",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenValidationFailsThen401",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

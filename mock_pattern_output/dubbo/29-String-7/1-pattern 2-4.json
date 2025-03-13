@@ -1,0 +1,110 @@
+[
+  {
+    "variableName": "output",
+    "variableType": "String",
+    "mockedClass": "String",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\HelpTest.java",
+      "className": "HelpTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "String output = help.execute(Mockito.mock(CommandContext.class), null);",
+        "line": 32,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMainHelp",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "output",
+    "variableType": "String",
+    "mockedClass": "String",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\HelpTest.java",
+      "className": "HelpTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "String output = help.execute(Mockito.mock(CommandContext.class), new String[] { \"greeting\" });",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGreeting",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "result",
+    "variableType": "String",
+    "mockedClass": "String",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\LsTest.java",
+      "className": "LsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "String result = ls.execute(Mockito.mock(CommandContext.class), new String[0]);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "output",
+    "variableType": "String",
+    "mockedClass": "String",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\QuitTest.java",
+      "className": "QuitTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "String output = quit.execute(Mockito.mock(CommandContext.class), null);",
+        "line": 32,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

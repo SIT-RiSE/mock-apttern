@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "chain",
+    "variableType": "PayloadInterceptorChain",
+    "mockedClass": "PayloadInterceptorChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\authorization\\AuthorizationPayloadInterceptorTests.java",
+      "className": "AuthorizationPayloadInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate PayloadInterceptorChain chain;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.chain.next(any())).willReturn(this.chainResult.mono());",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticationEmptyAndSubscribedThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.chain.next(any())).willReturn(this.chainResult.mono());",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticationNotSubscribedAndEmptyThenCompletes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.chain.next(any())).willReturn(this.chainResult.mono());",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenNotAuthorizedThenException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.chain.next(any())).willReturn(this.chainResult.mono());",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthorizedThenContinues",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

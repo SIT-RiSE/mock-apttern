@@ -1,0 +1,1078 @@
+[
+  {
+    "variableName": "demoService2Listener",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerTest.java",
+      "className": "ServiceInstancesChangedListenerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NotifyListener demoService2Listener = Mockito.mock(NotifyListener.class);",
+        "line": 364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoService2Listener.getConsumerUrl()).thenReturn(consumerURL2);",
+        "line": 365,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService2Listener, Mockito.times(1)).notify(captor2.capture());",
+        "line": 378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService2Listener, Mockito.times(2)).notify(app2_captor2.capture());",
+        "line": 392,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoService3Listener",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerTest.java",
+      "className": "ServiceInstancesChangedListenerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// test service listener still get notified when added after instance notification.\r\nNotifyListener demoService3Listener = Mockito.mock(NotifyListener.class);",
+        "line": 397,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoService3Listener.getConsumerUrl()).thenReturn(consumerURL3);",
+        "line": 398,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService3Listener, Mockito.times(1)).notify(Mockito.anyList());",
+        "line": 400,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoServiceListener",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerTest.java",
+      "className": "ServiceInstancesChangedListenerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NotifyListener demoServiceListener = Mockito.mock(NotifyListener.class);",
+        "line": 362,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoServiceListener.getConsumerUrl()).thenReturn(consumerURL);",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener, Mockito.times(1)).notify(captor.capture());",
+        "line": 374,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener, Mockito.times(2)).notify(app2_captor.capture());",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoServiceListener1",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerTest.java",
+      "className": "ServiceInstancesChangedListenerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NotifyListener demoServiceListener1 = Mockito.mock(NotifyListener.class);",
+        "line": 410,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoServiceListener1.getConsumerUrl()).thenReturn(consumerURL);",
+        "line": 411,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener1, Mockito.times(1)).notify(captor.capture());",
+        "line": 428,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener1, Mockito.times(2)).notify(app2_captor.capture());",
+        "line": 442,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoService3Listener",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerTest.java",
+      "className": "ServiceInstancesChangedListenerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// test service listener still get notified when added after instance notification.\r\nNotifyListener demoService3Listener = Mockito.mock(NotifyListener.class);",
+        "line": 451,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoService3Listener.getConsumerUrl()).thenReturn(consumerURL3);",
+        "line": 452,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService3Listener, Mockito.times(1)).notify(Mockito.anyList());",
+        "line": 454,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoService2Listener1",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerTest.java",
+      "className": "ServiceInstancesChangedListenerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NotifyListener demoService2Listener1 = Mockito.mock(NotifyListener.class);",
+        "line": 414,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoService2Listener1.getConsumerUrl()).thenReturn(consumerURL2);",
+        "line": 415,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService2Listener1, Mockito.times(1)).notify(captor2.capture());",
+        "line": 432,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService2Listener1, Mockito.times(2)).notify(app2_captor2.capture());",
+        "line": 446,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoServiceListener3",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerTest.java",
+      "className": "ServiceInstancesChangedListenerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// one protocol specified\r\nNotifyListener demoServiceListener3 = Mockito.mock(NotifyListener.class);",
+        "line": 475,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoServiceListener3.getConsumerUrl()).thenReturn(singleProtocolsConsumerURL);",
+        "line": 476,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener3, Mockito.times(1)).notify(single_protocols_captor.capture());",
+        "line": 496,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoServiceListener2",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerTest.java",
+      "className": "ServiceInstancesChangedListenerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// multiple protocols specified\r\nNotifyListener demoServiceListener2 = Mockito.mock(NotifyListener.class);",
+        "line": 471,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoServiceListener2.getConsumerUrl()).thenReturn(multipleProtocolsConsumerURL);",
+        "line": 472,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener2, Mockito.times(1)).notify(multi_protocols_captor.capture());",
+        "line": 491,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoServiceListener1",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerTest.java",
+      "className": "ServiceInstancesChangedListenerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// no protocol specified, consume all instances\r\nNotifyListener demoServiceListener1 = Mockito.mock(NotifyListener.class);",
+        "line": 467,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoServiceListener1.getConsumerUrl()).thenReturn(noProtocolConsumerURL);",
+        "line": 468,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener1, Mockito.times(1)).notify(default_protocol_captor.capture());",
+        "line": 486,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoService2Listener",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerWithoutEmptyProtectTest.java",
+      "className": "ServiceInstancesChangedListenerWithoutEmptyProtectTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NotifyListener demoService2Listener = Mockito.mock(NotifyListener.class);",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoService2Listener.getConsumerUrl()).thenReturn(consumerURL2);",
+        "line": 364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService2Listener, Mockito.times(1)).notify(captor2.capture());",
+        "line": 377,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService2Listener, Mockito.times(2)).notify(app2_captor2.capture());",
+        "line": 391,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoService3Listener",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerWithoutEmptyProtectTest.java",
+      "className": "ServiceInstancesChangedListenerWithoutEmptyProtectTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// test service listener still get notified when added after instance notification.\r\nNotifyListener demoService3Listener = Mockito.mock(NotifyListener.class);",
+        "line": 396,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoService3Listener.getConsumerUrl()).thenReturn(consumerURL3);",
+        "line": 397,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService3Listener, Mockito.times(1)).notify(Mockito.anyList());",
+        "line": 399,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoServiceListener",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerWithoutEmptyProtectTest.java",
+      "className": "ServiceInstancesChangedListenerWithoutEmptyProtectTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NotifyListener demoServiceListener = Mockito.mock(NotifyListener.class);",
+        "line": 361,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoServiceListener.getConsumerUrl()).thenReturn(consumerURL);",
+        "line": 362,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener, Mockito.times(1)).notify(captor.capture());",
+        "line": 373,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener, Mockito.times(2)).notify(app2_captor.capture());",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoServiceListener1",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerWithoutEmptyProtectTest.java",
+      "className": "ServiceInstancesChangedListenerWithoutEmptyProtectTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NotifyListener demoServiceListener1 = Mockito.mock(NotifyListener.class);",
+        "line": 409,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoServiceListener1.getConsumerUrl()).thenReturn(consumerURL);",
+        "line": 410,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener1, Mockito.times(1)).notify(captor.capture());",
+        "line": 427,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener1, Mockito.times(2)).notify(app2_captor.capture());",
+        "line": 441,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoService3Listener",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerWithoutEmptyProtectTest.java",
+      "className": "ServiceInstancesChangedListenerWithoutEmptyProtectTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// test service listener still get notified when added after instance notification.\r\nNotifyListener demoService3Listener = Mockito.mock(NotifyListener.class);",
+        "line": 450,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoService3Listener.getConsumerUrl()).thenReturn(consumerURL3);",
+        "line": 451,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService3Listener, Mockito.times(1)).notify(Mockito.anyList());",
+        "line": 453,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoService2Listener1",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerWithoutEmptyProtectTest.java",
+      "className": "ServiceInstancesChangedListenerWithoutEmptyProtectTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NotifyListener demoService2Listener1 = Mockito.mock(NotifyListener.class);",
+        "line": 413,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoService2Listener1.getConsumerUrl()).thenReturn(consumerURL2);",
+        "line": 414,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService2Listener1, Mockito.times(1)).notify(captor2.capture());",
+        "line": 431,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoService2Listener1, Mockito.times(2)).notify(app2_captor2.capture());",
+        "line": 445,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultiServiceListenerNotification",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoServiceListener3",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerWithoutEmptyProtectTest.java",
+      "className": "ServiceInstancesChangedListenerWithoutEmptyProtectTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// one protocol specified\r\nNotifyListener demoServiceListener3 = Mockito.mock(NotifyListener.class);",
+        "line": 474,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoServiceListener3.getConsumerUrl()).thenReturn(singleProtocolsConsumerURL);",
+        "line": 475,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener3, Mockito.times(1)).notify(single_protocols_captor.capture());",
+        "line": 495,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoServiceListener2",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerWithoutEmptyProtectTest.java",
+      "className": "ServiceInstancesChangedListenerWithoutEmptyProtectTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// multiple protocols specified\r\nNotifyListener demoServiceListener2 = Mockito.mock(NotifyListener.class);",
+        "line": 470,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoServiceListener2.getConsumerUrl()).thenReturn(multipleProtocolsConsumerURL);",
+        "line": 471,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener2, Mockito.times(1)).notify(multi_protocols_captor.capture());",
+        "line": 490,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "demoServiceListener1",
+    "variableType": "NotifyListener",
+    "mockedClass": "NotifyListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.event.listener",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\event\\listener\\ServiceInstancesChangedListenerWithoutEmptyProtectTest.java",
+      "className": "ServiceInstancesChangedListenerWithoutEmptyProtectTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// no protocol specified, consume all instances\r\nNotifyListener demoServiceListener1 = Mockito.mock(NotifyListener.class);",
+        "line": 466,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(demoServiceListener1.getConsumerUrl()).thenReturn(noProtocolConsumerURL);",
+        "line": 467,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(demoServiceListener1, Mockito.times(1)).notify(default_protocol_captor.capture());",
+        "line": 485,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultipleProtocols",
+          "methodAnnotations": [
+            "@Test",
+            "@Order"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

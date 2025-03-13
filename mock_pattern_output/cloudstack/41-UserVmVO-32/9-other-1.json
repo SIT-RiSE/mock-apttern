@@ -1,0 +1,103 @@
+[
+  {
+    "variableName": "userVmVoMock",
+    "variableType": "UserVmVO",
+    "mockedClass": "UserVmVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Helper Method",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UserVmVO userVmVoMock;",
+        "line": 154,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmVoMock.isDisplay()).thenReturn(true);",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVirtualMachineTestDisplayChanged",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmVoMock, Mockito.times(cleanUpDetails || isDetailsEmpty ? 0 : 1)).setDetails(details);",
+        "line": 387,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "prepareAndExecuteMethodDealingWithDetails",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmVoMock.getTemplateId()).thenReturn(2L);",
+        "line": 785,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataVMStateNotStopped",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmVoMock.getState()).thenReturn(VirtualMachine.State.Running);",
+        "line": 789,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataVMStateNotStopped",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmVoMock.getTemplateId()).thenReturn(2L);",
+        "line": 811,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataDontAcceptBothUserdataAndUserdataId",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmVoMock.getState()).thenReturn(VirtualMachine.State.Stopped);",
+        "line": 815,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataDontAcceptBothUserdataAndUserdataId",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 53
+  }
+]

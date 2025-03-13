@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "mockMonitorFactory",
+    "variableType": "MonitorFactory",
+    "mockedClass": "MonitorFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-api\\src\\test\\java\\org\\apache\\dubbo\\monitor\\support\\MonitorFilterTest.java",
+      "className": "MonitorFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MonitorFactory mockMonitorFactory = mock(MonitorFactory.class);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSkipMonitorIfNotHasKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockMonitorFactory, never()).getMonitor(any(URL.class));",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSkipMonitorIfNotHasKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

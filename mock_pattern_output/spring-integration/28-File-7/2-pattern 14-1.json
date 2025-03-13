@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "fileMock",
+    "variableType": "File",
+    "mockedClass": "File",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\FileReadingMessageSourceTests.java",
+      "className": "FileReadingMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final File fileMock = mock();",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(fileMock.toPath()).thenReturn(Path.of(\"[dir]/fileMock\"));",
+        "line": 56,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "prepResource",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "vmTO",
+    "variableType": "VirtualMachineTO",
+    "mockedClass": "VirtualMachineTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.dpdk",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\dpdk\\DpdkHelperImplTest.java",
+      "className": "DpdkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVirtualMachineTO vmTO;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmTO).addExtraConfig(DpdkHelper.DPDK_VHOST_USER_MODE, dpdkVhostMode);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetDpdkVhostUserModeValidDetail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmTO, Mockito.never()).addExtraConfig(Mockito.anyString(), Mockito.anyString());",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetDpdkVhostUserModeInvalidDetail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(vmTO, Mockito.never()).addExtraConfig(Mockito.anyString(), Mockito.anyString());",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetDpdkVhostUserModeNotExistingDetail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

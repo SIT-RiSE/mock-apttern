@@ -1,0 +1,344 @@
+[
+  {
+    "variableName": "producer",
+    "variableType": "Producer",
+    "mockedClass": "Producer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Producer producer = mock(Producer.class);",
+        "line": 551,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(producer.send(any(), any())).willReturn(mock(Future.class));",
+        "line": 552,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).beginTransaction();",
+        "line": 580,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).sendOffsetsToTransaction(Collections.singletonMap(topicPartition, new OffsetAndMetadata(0)), meta);",
+        "line": 581,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).commitTransaction();",
+        "line": 583,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).close(any());",
+        "line": 584,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).beginTransaction();",
+        "line": 585,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).send(captor.capture(), any(Callback.class));",
+        "line": 587,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).sendOffsetsToTransaction(Collections.singletonMap(topicPartition, new OffsetAndMetadata(1)), meta);",
+        "line": 589,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).commitTransaction();",
+        "line": 591,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).close(any());",
+        "line": 592,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(producer);",
+        "line": 595,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "producer",
+    "variableType": "Producer",
+    "mockedClass": "Producer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Producer producer = mock(Producer.class);",
+        "line": 686,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(producer.send(any(), any())).willReturn(mock(Future.class));",
+        "line": 687,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).beginTransaction();",
+        "line": 725,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).sendOffsetsToTransaction(Collections.singletonMap(topicPartition, new OffsetAndMetadata(0)), meta);",
+        "line": 726,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).commitTransaction();",
+        "line": 728,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).close(any());",
+        "line": 729,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).beginTransaction();",
+        "line": 730,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).send(captor.capture(), any(Callback.class));",
+        "line": 732,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).sendOffsetsToTransaction(Collections.singletonMap(topicPartition, new OffsetAndMetadata(1)), meta);",
+        "line": 734,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).commitTransaction();",
+        "line": 736,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).close(any());",
+        "line": 737,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(producer);",
+        "line": 739,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConsumeAndProduceTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

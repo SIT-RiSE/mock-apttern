@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "anotherFileMock",
+    "variableType": "File",
+    "mockedClass": "File",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\FileReadingMessageSourceTests.java",
+      "className": "FileReadingMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "File anotherFileMock = mock();",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scanEachPoll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(anotherFileMock.toPath()).thenReturn(Path.of(\"[dir]/anotherFileMock\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scanEachPoll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "file2",
+    "variableType": "File",
+    "mockedClass": "File",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\FileReadingMessageSourceTests.java",
+      "className": "FileReadingMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "File file2 = mock();",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "orderedReception",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(file2.toPath()).thenReturn(Path.of(\"[dir]/file2\"));",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "orderedReception",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "file3",
+    "variableType": "File",
+    "mockedClass": "File",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\FileReadingMessageSourceTests.java",
+      "className": "FileReadingMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "File file3 = mock();",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "orderedReception",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(file3.toPath()).thenReturn(Path.of(\"[dir]/file3\"));",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "orderedReception",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "file1",
+    "variableType": "File",
+    "mockedClass": "File",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\FileReadingMessageSourceTests.java",
+      "className": "FileReadingMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "File file1 = mock();",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "orderedReception",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(file1.toPath()).thenReturn(Path.of(\"[dir]/file1\"));",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "orderedReception",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

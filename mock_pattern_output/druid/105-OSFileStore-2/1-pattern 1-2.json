@@ -1,0 +1,200 @@
+[
+  {
+    "variableName": "fs2",
+    "variableType": "OSFileStore",
+    "mockedClass": "OSFileStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\OshiSysMonitorTest.java",
+      "className": "OshiSysMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OSFileStore fs2 = Mockito.mock(OSFileStore.class);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs2.getTotalSpace()).thenReturn(400L);",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs2.getUsableSpace()).thenReturn(320L);",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs2.getTotalInodes()).thenReturn(800L);",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs2.getFreeInodes()).thenReturn(600L);",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs2.getVolume()).thenReturn(\"/dev/disk2\");",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs2.getMount()).thenReturn(\"/System/Volumes/boot2\");",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "fs1",
+    "variableType": "OSFileStore",
+    "mockedClass": "OSFileStore",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\OshiSysMonitorTest.java",
+      "className": "OshiSysMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OSFileStore fs1 = Mockito.mock(OSFileStore.class);",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs1.getTotalSpace()).thenReturn(300L);",
+        "line": 164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs1.getUsableSpace()).thenReturn(200L);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs1.getTotalInodes()).thenReturn(1000L);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs1.getFreeInodes()).thenReturn(700L);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs1.getVolume()).thenReturn(\"/dev/disk1\");",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(fs1.getMount()).thenReturn(\"/System/Volumes/boot1\");",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFsStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

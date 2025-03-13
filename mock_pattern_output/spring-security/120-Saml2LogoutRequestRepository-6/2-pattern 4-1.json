@@ -1,0 +1,75 @@
+[
+  {
+    "variableName": "logoutRequestRepository",
+    "variableType": "Saml2LogoutRequestRepository",
+    "mockedClass": "Saml2LogoutRequestRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\Saml2LogoutResponseFilterTests.java",
+      "className": "Saml2LogoutResponseFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "Saml2LogoutRequestRepository logoutRequestRepository = mock(Saml2LogoutRequestRepository.class);",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutRequestRepository.removeLogoutRequest(request, response)).willReturn(logoutRequest);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlResponsePostThenLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutRequestRepository.removeLogoutRequest(request, response)).willReturn(logoutRequest);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenSamlResponseRedirectThenLogout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutRequestRepository.removeLogoutRequest(request, response)).willReturn(logoutRequest);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenValidatorFailsThenStops",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutRequestRepository.removeLogoutRequest(request, response)).willReturn(logoutRequest);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenNoRelyingPartyLogoutThen401",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

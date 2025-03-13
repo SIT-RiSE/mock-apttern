@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "connection",
+    "variableType": "Connection",
+    "mockedClass": "Connection",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config.spring.status",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-spring\\src\\test\\java\\org\\apache\\dubbo\\config\\spring\\status\\DataSourceStatusCheckerTest.java",
+      "className": "DataSourceStatusCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Connection connection = mock(Connection.class, Answers.RETURNS_DEEP_STUBS);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithDatasourceHasNextResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(connection.getMetaData().getTypeInfo().next()).willReturn(true);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithDatasourceHasNextResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "connection",
+    "variableType": "Connection",
+    "mockedClass": "Connection",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config.spring.status",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-spring\\src\\test\\java\\org\\apache\\dubbo\\config\\spring\\status\\DataSourceStatusCheckerTest.java",
+      "className": "DataSourceStatusCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Connection connection = mock(Connection.class, Answers.RETURNS_DEEP_STUBS);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithDatasourceNotHasNextResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(connection.getMetaData().getTypeInfo().next()).willReturn(false);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithDatasourceNotHasNextResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

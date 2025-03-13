@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "authorizedClientManager",
+    "variableType": "ReactiveOAuth2AuthorizedClientManager",
+    "mockedClass": "ReactiveOAuth2AuthorizedClientManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.reactive",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\reactive\\ReactiveOAuth2ClientImportSelectorTests.java",
+      "className": "ReactiveOAuth2ClientImportSelectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOAuth2AuthorizedClientManager authorizedClientManager = mock(ReactiveOAuth2AuthorizedClientManager.class);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientManagerConfiguredThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClientManager.authorize(any())).willReturn(Mono.just(authorizedClient));",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientManagerConfiguredThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizedClientManager).authorize(any());",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestWhenAuthorizedClientManagerConfiguredThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

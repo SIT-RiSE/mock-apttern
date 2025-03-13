@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "userService3",
+    "variableType": "OAuth2UserService<OAuth2UserRequest,OAuth2User>",
+    "mockedClass": "OAuth2UserService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.userinfo",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\userinfo\\DelegatingOAuth2UserServiceTests.java",
+      "className": "DelegatingOAuth2UserServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2UserService<OAuth2UserRequest, OAuth2User> userService3 = mock(OAuth2UserService.class);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadUserWhenUserServiceCanLoadThenReturnUser",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(userService3.loadUser(any(OAuth2UserRequest.class))).willReturn(mockUser);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadUserWhenUserServiceCanLoadThenReturnUser",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

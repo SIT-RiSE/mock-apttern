@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "deferredContext",
+    "variableType": "DeferredSecurityContext",
+    "mockedClass": "DeferredSecurityContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\context\\SecurityContextRepositoryTests.java",
+      "className": "SecurityContextRepositoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DeferredSecurityContext deferredContext = this.repository.loadDeferredContext(mock(HttpServletRequest.class));",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadContextHttpRequestResponseHolderWhenInvokeSupplierTwiceThenOnlyInvokesLoadContextOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

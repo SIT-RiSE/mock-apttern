@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "postProcessor",
+    "variableType": "RequestPostProcessor",
+    "mockedClass": "RequestPostProcessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.servlet.request",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\servlet\\request\\SecurityMockMvcRequestBuildersFormLoginTests.java",
+      "className": "SecurityMockMvcRequestBuildersFormLoginTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RequestPostProcessor postProcessor = mock(RequestPostProcessor.class);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postProcessorsAreMergedDuringMockMvcPerform",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(postProcessor.postProcessRequest(any())).willAnswer((i) -> i.getArgument(0));",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postProcessorsAreMergedDuringMockMvcPerform",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(postProcessor).postProcessRequest(any());",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postProcessorsAreMergedDuringMockMvcPerform",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "postProcessor",
+    "variableType": "RequestPostProcessor",
+    "mockedClass": "RequestPostProcessor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.servlet.request",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\servlet\\request\\SecurityMockMvcRequestBuildersFormLogoutTests.java",
+      "className": "SecurityMockMvcRequestBuildersFormLogoutTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RequestPostProcessor postProcessor = mock(RequestPostProcessor.class);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postProcessorsAreMergedDuringMockMvcPerform",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(postProcessor.postProcessRequest(any())).willAnswer((i) -> i.getArgument(0));",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postProcessorsAreMergedDuringMockMvcPerform",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(postProcessor).postProcessRequest(any());",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postProcessorsAreMergedDuringMockMvcPerform",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

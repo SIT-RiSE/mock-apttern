@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "snapshotStrategy",
+    "variableType": "SnapshotStrategy",
+    "mockedClass": "SnapshotStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\snapshot\\SnapshotManagerTest.java",
+      "className": "SnapshotManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSnapshotStrategy snapshotStrategy;",
+        "line": 141,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(snapshotStrategy.deleteSnapshot(TEST_SNAPSHOT_ID)).thenReturn(true);",
+        "line": 323,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteSnapshotF1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(snapshotStrategy.revertSnapshot(Mockito.any(SnapshotInfo.class))).thenReturn(true);",
+        "line": 359,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotF3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(snapshotStrategy.backupSnapshot(nullable(SnapshotInfo.class))).thenReturn(snapshotInfoMock);",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBackupSnapshotFromVmSnapshotF2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

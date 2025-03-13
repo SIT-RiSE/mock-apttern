@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "_configurable",
+    "variableType": "Configurable",
+    "mockedClass": "Configurable",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.framework.config.impl",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\config\\src\\test\\java\\org\\apache\\cloudstack\\framework\\config\\impl\\ConfigDepotAdminTest.java",
+      "className": "ConfigDepotAdminTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nConfigurable _configurable;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_configurable.getConfigComponentName()).thenReturn(\"UnitTestComponent\");",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoPopulation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_configurable.getConfigKeys()).thenReturn(new ConfigKey<?>[] { DynamicIntCK, StaticIntCK, TestCK });",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAutoPopulation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

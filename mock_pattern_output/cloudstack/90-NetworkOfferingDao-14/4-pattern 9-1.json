@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "networkOfferingDaoMock",
+    "variableType": "NetworkOfferingDao",
+    "mockedClass": "NetworkOfferingDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota.activationrule.presetvariables",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\activationrule\\presetvariables\\PresetVariableHelperTest.java",
+      "className": "PresetVariableHelperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNetworkOfferingDao networkOfferingDaoMock;",
+        "line": 124,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verifyNoInteractions(networkOfferingDaoMock);",
+        "line": 940,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForNetworkOfferingTestRecordIsNotASnapshotDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

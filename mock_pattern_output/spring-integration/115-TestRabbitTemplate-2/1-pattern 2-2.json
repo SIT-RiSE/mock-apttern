@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "amqpTemplate",
+    "variableType": "TestRabbitTemplate",
+    "mockedClass": "TestRabbitTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\outbound\\OutboundEndpointTests.java",
+      "className": "OutboundEndpointTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TestRabbitTemplate amqpTemplate = spy(new TestRabbitTemplate(connectionFactory));",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHeaderMapperWinsGateway",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "amqpTemplate",
+    "variableType": "TestRabbitTemplate",
+    "mockedClass": "TestRabbitTemplate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\outbound\\OutboundEndpointTests.java",
+      "className": "OutboundEndpointTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TestRabbitTemplate amqpTemplate = spy(new TestRabbitTemplate(connectionFactory));",
+        "line": 169,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReplyHeadersWin",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

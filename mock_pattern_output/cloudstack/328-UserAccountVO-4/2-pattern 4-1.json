@@ -1,0 +1,185 @@
+[
+  {
+    "variableName": "userAccountVO",
+    "variableType": "UserAccountVO",
+    "mockedClass": "UserAccountVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.user",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\user\\AccountManagerImplTest.java",
+      "className": "AccountManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UserAccountVO userAccountVO;",
+        "line": 80,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.getAccountId()).thenReturn(1L);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testgetUserCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.getAccountId()).thenReturn(2L);",
+        "line": 250,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetUserKeysCmdDomainAdminRootAdminUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.getLoginAttempts()).thenReturn(attempts);",
+        "line": 839,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateLoginAttemptsEnableMechanismAttemptsLeft",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.getId()).thenReturn(accountId);",
+        "line": 840,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateLoginAttemptsEnableMechanismAttemptsLeft",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.getLoginAttempts()).thenReturn(attempts);",
+        "line": 850,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateLoginAttemptsEnableMechanismNoAttemptsLeft",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.getId()).thenReturn(accountId);",
+        "line": 851,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateLoginAttemptsEnableMechanismNoAttemptsLeft",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.isUser2faEnabled()).thenReturn(false);",
+        "line": 969,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVerify2FAcodeWhen2FAisNotEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.isUser2faEnabled()).thenReturn(true);",
+        "line": 981,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVerify2FAcodeWhen2FAisNotSetup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.getUser2faProvider()).thenReturn(null);",
+        "line": 982,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVerify2FAcodeWhen2FAisNotSetup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.isUser2faEnabled()).thenReturn(true);",
+        "line": 994,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVerify2FAcode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.getUser2faProvider()).thenReturn(\"staticpin\");",
+        "line": 995,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVerify2FAcode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.getKeyFor2fa()).thenReturn(\"352352\");",
+        "line": 996,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testVerify2FAcode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userAccountVO.getDomainId()).thenReturn(1L);",
+        "line": 1019,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnable2FAcode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

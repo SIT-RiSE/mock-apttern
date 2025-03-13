@@ -1,0 +1,344 @@
+[
+  {
+    "variableName": "converter",
+    "variableType": "MappingMongoConverter",
+    "mockedClass": "MappingMongoConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mongodb.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mongodb\\src\\test\\java\\org\\springframework\\integration\\mongodb\\inbound\\MongoDbMessageSourceTests.java",
+      "className": "MongoDbMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MappingMongoConverter converter = new TestMongoConverter(MONGO_DATABASE_FACTORY, new MongoMappingContext());",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulQueryWithCustomConverter",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "converter = spy(converter);",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulQueryWithCustomConverter",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(converter, times(3)).read((Class<Person>) Mockito.any(), Mockito.any(Bson.class));",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulQueryWithCustomConverter",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "converter",
+    "variableType": "MappingMongoConverter",
+    "mockedClass": "MappingMongoConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mongodb.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mongodb\\src\\test\\java\\org\\springframework\\integration\\mongodb\\inbound\\MongoDbMessageSourceTests.java",
+      "className": "MongoDbMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MappingMongoConverter converter = new TestMongoConverter(MONGO_DATABASE_FACTORY, new MongoMappingContext());",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulQueryWithMongoTemplateAndUpdate",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "converter = spy(converter);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulQueryWithMongoTemplateAndUpdate",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(converter, times(3)).read((Class<Person>) Mockito.any(), Mockito.any(Bson.class));",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulQueryWithMongoTemplateAndUpdate",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "converter",
+    "variableType": "MappingMongoConverter",
+    "mockedClass": "MappingMongoConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mongodb.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mongodb\\src\\test\\java\\org\\springframework\\integration\\mongodb\\inbound\\ReactiveMongoDbMessageSourceTests.java",
+      "className": "ReactiveMongoDbMessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MappingMongoConverter converter = new ReactiveTestMongoConverter(REACTIVE_MONGO_DATABASE_FACTORY, new MongoMappingContext());",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulQueryWithCustomConverter",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "converter = spy(converter);",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulQueryWithCustomConverter",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(converter, times(3)).read((Class<Person>) Mockito.any(), Mockito.any(Bson.class));",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateSuccessfulQueryWithCustomConverter",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "converter",
+    "variableType": "MappingMongoConverter",
+    "mockedClass": "MappingMongoConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mongodb.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mongodb\\src\\test\\java\\org\\springframework\\integration\\mongodb\\outbound\\MongoDbStoringMessageHandlerTests.java",
+      "className": "MongoDbStoringMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MappingMongoConverter converter = new TestMongoConverter(MONGO_DATABASE_FACTORY, new MongoMappingContext());",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessageHandlingWithMongoConverter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "converter = spy(converter);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessageHandlingWithMongoConverter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(converter, times(1)).write(Mockito.any(), Mockito.any(Bson.class));",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessageHandlingWithMongoConverter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "converter",
+    "variableType": "MappingMongoConverter",
+    "mockedClass": "MappingMongoConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mongodb.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mongodb\\src\\test\\java\\org\\springframework\\integration\\mongodb\\outbound\\MongoDbStoringMessageHandlerTests.java",
+      "className": "MongoDbStoringMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MappingMongoConverter converter = new TestMongoConverter(MONGO_DATABASE_FACTORY, new MongoMappingContext());",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessageHandlingWithMongoTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "converter = spy(converter);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessageHandlingWithMongoTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(converter, times(1)).write(Mockito.any(), Mockito.any(Bson.class));",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessageHandlingWithMongoTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "converter",
+    "variableType": "MappingMongoConverter",
+    "mockedClass": "MappingMongoConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mongodb.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mongodb\\src\\test\\java\\org\\springframework\\integration\\mongodb\\outbound\\ReactiveMongoDbStoringMessageHandlerTests.java",
+      "className": "ReactiveMongoDbStoringMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MappingMongoConverter converter = new ReactiveTestMongoConverter(REACTIVE_MONGO_DATABASE_FACTORY, new MongoMappingContext());",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessageHandlingWithMongoConverter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "converter = spy(converter);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessageHandlingWithMongoConverter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  },
+  {
+    "variableName": "converter",
+    "variableType": "MappingMongoConverter",
+    "mockedClass": "MappingMongoConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mongodb.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mongodb\\src\\test\\java\\org\\springframework\\integration\\mongodb\\outbound\\ReactiveMongoDbStoringMessageHandlerTests.java",
+      "className": "ReactiveMongoDbStoringMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MappingMongoConverter converter = new ReactiveTestMongoConverter(REACTIVE_MONGO_DATABASE_FACTORY, new MongoMappingContext());",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessageHandlingWithMongoTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "converter = spy(converter);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessageHandlingWithMongoTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "scheduler",
+    "variableType": "Scheduler",
+    "mockedClass": "Scheduler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\UserDetailsRepositoryReactiveAuthenticationManagerTests.java",
+      "className": "UserDetailsRepositoryReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Scheduler scheduler;",
+        "line": 69,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.scheduler.schedule(any())).willAnswer((a) -> {\r\n    Runnable r = a.getArgument(0);\r\n    return Schedulers.immediate().schedule(r);\r\n});",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomSchedulerThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.scheduler).schedule(any());",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomSchedulerThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "scheduler",
+    "variableType": "Scheduler",
+    "mockedClass": "Scheduler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\UserDetailsRepositoryReactiveAuthenticationManagerTests.java",
+      "className": "UserDetailsRepositoryReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Scheduler scheduler;",
+        "line": 69,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.scheduler.schedule(any())).willAnswer((a) -> {\r\n    Runnable r = a.getArgument(0);\r\n    return Schedulers.immediate().schedule(r);\r\n});",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomSchedulerThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.scheduler).schedule(any());",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomSchedulerThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

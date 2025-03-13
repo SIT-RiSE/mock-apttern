@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "exception",
+    "variableType": "AuthenticationException",
+    "mockedClass": "AuthenticationException",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\NoOpAuthenticationEntryPointTests.java",
+      "className": "NoOpAuthenticationEntryPointTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticationException exception = mock(AuthenticationException.class);",
+        "line": 36,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "commenceWhenInvokedThenDoesNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(request, response, exception);",
+        "line": 38,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "commenceWhenInvokedThenDoesNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

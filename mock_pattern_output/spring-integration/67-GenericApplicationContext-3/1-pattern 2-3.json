@@ -1,0 +1,83 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "GenericApplicationContext",
+    "mockedClass": "GenericApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.config.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\config\\annotation\\SubscriberOrderTests.java",
+      "className": "SubscriberOrderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "try (GenericApplicationContext context = TestUtils.createTestApplicationContext()) {\r\n    new IntegrationRegistrar().registerBeanDefinitions(mock(), context.getDefaultListableBeanFactory());\r\n    RootBeanDefinition channelDefinition = new RootBeanDefinition(DirectChannel.class);\r\n    context.registerBeanDefinition(\"input\", channelDefinition);\r\n    RootBeanDefinition testBeanDefinition = new RootBeanDefinition(TestBean.class);\r\n    testBeanDefinition.getConstructorArgumentValues().addGenericArgumentValue(1);\r\n    context.registerBeanDefinition(\"testBean\", testBeanDefinition);\r\n    context.refresh();\r\n    TestBean testBean = (TestBean) context.getBean(\"testBean\");\r\n    MessageChannel channel = (MessageChannel) context.getBean(\"input\");\r\n    channel.send(new GenericMessage<>(\"test-1\"));\r\n    channel.send(new GenericMessage<>(\"test-2\"));\r\n    channel.send(new GenericMessage<>(\"test-3\"));\r\n    channel.send(new GenericMessage<>(\"test-4\"));\r\n    channel.send(new GenericMessage<>(\"test-5\"));\r\n    List<Integer> calls = testBean.calls;\r\n    assertThat(calls.size()).isEqualTo(5);\r\n    assertThat(calls.get(0).intValue()).isEqualTo(1);\r\n    assertThat(calls.get(1).intValue()).isEqualTo(2);\r\n    assertThat(calls.get(2).intValue()).isEqualTo(3);\r\n    assertThat(calls.get(3).intValue()).isEqualTo(4);\r\n    assertThat(calls.get(4).intValue()).isEqualTo(5);\r\n}",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "directChannelAndFailoverDispatcherWithSingleCallPerMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "context",
+    "variableType": "GenericApplicationContext",
+    "mockedClass": "GenericApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.config.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\config\\annotation\\SubscriberOrderTests.java",
+      "className": "SubscriberOrderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "try (GenericApplicationContext context = TestUtils.createTestApplicationContext()) {\r\n    new IntegrationRegistrar().registerBeanDefinitions(mock(), context.getDefaultListableBeanFactory());\r\n    BeanDefinitionBuilder channelBuilder = BeanDefinitionBuilder.rootBeanDefinition(DirectChannel.class);\r\n    channelBuilder.addConstructorArgValue(null);\r\n    RootBeanDefinition channelDefinition = (RootBeanDefinition) channelBuilder.getBeanDefinition();\r\n    context.registerBeanDefinition(\"input\", channelDefinition);\r\n    RootBeanDefinition testBeanDefinition = new RootBeanDefinition(TestBean.class);\r\n    testBeanDefinition.getConstructorArgumentValues().addGenericArgumentValue(2);\r\n    context.registerBeanDefinition(\"testBean\", testBeanDefinition);\r\n    context.refresh();\r\n    TestBean testBean = (TestBean) context.getBean(\"testBean\");\r\n    MessageChannel channel = (MessageChannel) context.getBean(\"input\");\r\n    channel.send(new GenericMessage<>(\"test-1\"));\r\n    channel.send(new GenericMessage<>(\"test-2\"));\r\n    channel.send(new GenericMessage<>(\"test-3\"));\r\n    channel.send(new GenericMessage<>(\"test-4\"));\r\n    channel.send(new GenericMessage<>(\"test-5\"));\r\n    channel.send(new GenericMessage<>(\"test-6\"));\r\n    channel.send(new GenericMessage<>(\"test-7\"));\r\n    channel.send(new GenericMessage<>(\"test-8\"));\r\n    channel.send(new GenericMessage<>(\"test-9\"));\r\n    channel.send(new GenericMessage<>(\"test-10\"));\r\n    assertThat(testBean.calls.size()).isEqualTo(10);\r\n    assertThat(testBean.calls.get(0).intValue()).isEqualTo(1);\r\n    assertThat(testBean.calls.get(1).intValue()).isEqualTo(1);\r\n    assertThat(testBean.calls.get(2).intValue()).isEqualTo(2);\r\n    assertThat(testBean.calls.get(3).intValue()).isEqualTo(2);\r\n    assertThat(testBean.calls.get(4).intValue()).isEqualTo(3);\r\n    assertThat(testBean.calls.get(5).intValue()).isEqualTo(3);\r\n    assertThat(testBean.calls.get(6).intValue()).isEqualTo(4);\r\n    assertThat(testBean.calls.get(7).intValue()).isEqualTo(4);\r\n    assertThat(testBean.calls.get(8).intValue()).isEqualTo(5);\r\n    assertThat(testBean.calls.get(9).intValue()).isEqualTo(5);\r\n    testBean.reset();\r\n    channel.send(new GenericMessage<>(\"test-11\"));\r\n    assertThat(testBean.calls.size()).isEqualTo(1);\r\n    assertThat(testBean.calls.get(0).intValue()).isEqualTo(1);\r\n}",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "directChannelAndFailoverDispatcherWithMultipleCallsPerMethod",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "context",
+    "variableType": "GenericApplicationContext",
+    "mockedClass": "GenericApplicationContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.config.annotation",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\config\\annotation\\SubscriberOrderTests.java",
+      "className": "SubscriberOrderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "try (GenericApplicationContext context = TestUtils.createTestApplicationContext()) {\r\n    new IntegrationRegistrar().registerBeanDefinitions(mock(), context.getDefaultListableBeanFactory());\r\n    RootBeanDefinition channelDefinition = new RootBeanDefinition(DirectChannel.class);\r\n    channelDefinition.getConstructorArgumentValues().addGenericArgumentValue(new RoundRobinLoadBalancingStrategy());\r\n    context.registerBeanDefinition(\"input\", channelDefinition);\r\n    RootBeanDefinition testBeanDefinition = new RootBeanDefinition(TestBean.class);\r\n    testBeanDefinition.getConstructorArgumentValues().addGenericArgumentValue(1000);\r\n    context.registerBeanDefinition(\"testBean\", testBeanDefinition);\r\n    context.refresh();\r\n    TestBean testBean = (TestBean) context.getBean(\"testBean\");\r\n    MessageChannel channel = (MessageChannel) context.getBean(\"input\");\r\n    channel.send(new GenericMessage<>(\"test-1\"));\r\n    channel.send(new GenericMessage<>(\"test-2\"));\r\n    channel.send(new GenericMessage<>(\"test-3\"));\r\n    channel.send(new GenericMessage<>(\"test-4\"));\r\n    channel.send(new GenericMessage<>(\"test-5\"));\r\n    List<Integer> calls = testBean.calls;\r\n    assertThat(calls.size()).isEqualTo(5);\r\n    assertThat(calls.get(0).intValue()).isEqualTo(1);\r\n    assertThat(calls.get(1).intValue()).isEqualTo(2);\r\n    assertThat(calls.get(2).intValue()).isEqualTo(3);\r\n    assertThat(calls.get(3).intValue()).isEqualTo(4);\r\n    assertThat(calls.get(4).intValue()).isEqualTo(5);\r\n}",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "directChannelAndRoundRobinDispatcher",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "client",
+    "variableType": "IMqttAsyncClient",
+    "mockedClass": "IMqttAsyncClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mqtt",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mqtt\\src\\test\\java\\org\\springframework\\integration\\mqtt\\MqttAdapterTests.java",
+      "className": "MqttAdapterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final IMqttAsyncClient client = mock(IMqttAsyncClient.class);",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInboundOptionsApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(client.subscribe(any(String[].class), any(int[].class), any())).willReturn(token);",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInboundOptionsApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(client.isConnected()).willReturn(true);",
+        "line": 305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInboundOptionsApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client, times(1)).connect(any(MqttConnectOptions.class));",
+        "line": 326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInboundOptionsApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).setManualAcks(true);",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInboundOptionsApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).messageArrivedComplete(MqttHeaderAccessor.id(outMessage), MqttHeaderAccessor.receivedQos(outMessage));",
+        "line": 337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInboundOptionsApplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

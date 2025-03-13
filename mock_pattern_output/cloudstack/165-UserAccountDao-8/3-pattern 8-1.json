@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "userAccountDao",
+    "variableType": "UserAccountDao",
+    "mockedClass": "UserAccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\user-authenticators\\saml2\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\SAML2LoginAPIAuthenticatorCmdTest.java",
+      "className": "SAML2LoginAPIAuthenticatorCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserAccountDao userAccountDao;",
+        "line": 99,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(userAccountDao.getUserAccount(Mockito.anyString(), Mockito.anyLong())).thenReturn(user);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthenticate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userAccountDao, Mockito.times(0)).getUserAccount(Mockito.anyString(), Mockito.anyLong());",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthenticate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

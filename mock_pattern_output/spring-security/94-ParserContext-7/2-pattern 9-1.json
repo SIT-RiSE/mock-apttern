@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "parserContext",
+    "variableType": "ParserContext",
+    "mockedClass": "ParserContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\WebConfigUtilsTests.java",
+      "className": "WebConfigUtilsTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ParserContext parserContext;",
+        "line": 33,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.parserContext);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateHttpRedirectSpELNoParserWarning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

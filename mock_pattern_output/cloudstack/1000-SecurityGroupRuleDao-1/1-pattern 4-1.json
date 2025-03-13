@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "securityGroupRuleDao",
+    "variableType": "SecurityGroupRuleDao",
+    "mockedClass": "SecurityGroupRuleDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSecurityGroupRuleDao securityGroupRuleDao;",
+        "line": 266,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityGroupRuleDao.listByAllowedSecurityGroupId(anyLong())).thenReturn(List.of(securityGroupRuleVO));",
+        "line": 896,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenNicSecondaryIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityGroupRuleDao.listByAllowedSecurityGroupId(anyLong())).thenReturn(List.of(securityGroupRuleVO));",
+        "line": 1657,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addTungstenVmSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(securityGroupRuleDao.listByAllowedSecurityGroupId(anyLong())).thenReturn(List.of(securityGroupRuleVO));",
+        "line": 1688,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeTungstenVmSecurityGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

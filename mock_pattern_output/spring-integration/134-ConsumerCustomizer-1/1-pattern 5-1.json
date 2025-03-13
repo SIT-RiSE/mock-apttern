@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "customizer",
+    "variableType": "ConsumerCustomizer",
+    "mockedClass": "ConsumerCustomizer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.dsl",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\dsl\\AmqpTests.java",
+      "className": "AmqpTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConsumerCustomizer customizer = mock(ConsumerCustomizer.class);",
+        "line": 285,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "streamContainer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(customizer).accept(any(), any());",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "streamContainer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

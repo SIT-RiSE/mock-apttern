@@ -1,0 +1,293 @@
+[
+  {
+    "variableName": "tuningConfig",
+    "variableType": "ClientCompactionTaskQueryTuningConfig",
+    "mockedClass": "ClientCompactionTaskQueryTuningConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\CompactSegmentsTest.java",
+      "className": "StaticUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientCompactionTaskQueryTuningConfig tuningConfig = Mockito.mock(ClientCompactionTaskQueryTuningConfig.class);",
+        "line": 2132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeNullPartitionsSpecReturnFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getPartitionsSpec()).thenReturn(null);",
+        "line": 2133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeNullPartitionsSpecReturnFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "tuningConfig",
+    "variableType": "ClientCompactionTaskQueryTuningConfig",
+    "mockedClass": "ClientCompactionTaskQueryTuningConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\CompactSegmentsTest.java",
+      "className": "StaticUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientCompactionTaskQueryTuningConfig tuningConfig = Mockito.mock(ClientCompactionTaskQueryTuningConfig.class);",
+        "line": 2140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeNonRangePartitionVaryingMaxNumConcurrentSubTasks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getPartitionsSpec()).thenReturn(Mockito.mock(PartitionsSpec.class));",
+        "line": 2141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeNonRangePartitionVaryingMaxNumConcurrentSubTasks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getMaxNumConcurrentSubTasks()).thenReturn(null);",
+        "line": 2143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeNonRangePartitionVaryingMaxNumConcurrentSubTasks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getMaxNumConcurrentSubTasks()).thenReturn(1);",
+        "line": 2146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeNonRangePartitionVaryingMaxNumConcurrentSubTasks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getMaxNumConcurrentSubTasks()).thenReturn(2);",
+        "line": 2149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeNonRangePartitionVaryingMaxNumConcurrentSubTasks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "tuningConfig",
+    "variableType": "ClientCompactionTaskQueryTuningConfig",
+    "mockedClass": "ClientCompactionTaskQueryTuningConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\CompactSegmentsTest.java",
+      "className": "StaticUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientCompactionTaskQueryTuningConfig tuningConfig = Mockito.mock(ClientCompactionTaskQueryTuningConfig.class);",
+        "line": 2156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeRangePartitionVaryingMaxNumConcurrentSubTasks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getPartitionsSpec()).thenReturn(Mockito.mock(SingleDimensionPartitionsSpec.class));",
+        "line": 2157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeRangePartitionVaryingMaxNumConcurrentSubTasks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getMaxNumConcurrentSubTasks()).thenReturn(null);",
+        "line": 2159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeRangePartitionVaryingMaxNumConcurrentSubTasks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getMaxNumConcurrentSubTasks()).thenReturn(1);",
+        "line": 2162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeRangePartitionVaryingMaxNumConcurrentSubTasks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getMaxNumConcurrentSubTasks()).thenReturn(2);",
+        "line": 2165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsParallelModeRangePartitionVaryingMaxNumConcurrentSubTasks",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "tuningConfig",
+    "variableType": "ClientCompactionTaskQueryTuningConfig",
+    "mockedClass": "ClientCompactionTaskQueryTuningConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\CompactSegmentsTest.java",
+      "className": "StaticUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientCompactionTaskQueryTuningConfig tuningConfig = Mockito.mock(ClientCompactionTaskQueryTuningConfig.class);",
+        "line": 2172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMaxNumTaskSlotsUsedByOneCompactionTaskWhenIsParallelMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getPartitionsSpec()).thenReturn(Mockito.mock(PartitionsSpec.class));",
+        "line": 2173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMaxNumTaskSlotsUsedByOneCompactionTaskWhenIsParallelMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getMaxNumConcurrentSubTasks()).thenReturn(2);",
+        "line": 2174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMaxNumTaskSlotsUsedByOneCompactionTaskWhenIsParallelMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "tuningConfig",
+    "variableType": "ClientCompactionTaskQueryTuningConfig",
+    "mockedClass": "ClientCompactionTaskQueryTuningConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\CompactSegmentsTest.java",
+      "className": "StaticUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientCompactionTaskQueryTuningConfig tuningConfig = Mockito.mock(ClientCompactionTaskQueryTuningConfig.class);",
+        "line": 2181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMaxNumTaskSlotsUsedByOneCompactionTaskWhenIsSequentialMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getPartitionsSpec()).thenReturn(Mockito.mock(PartitionsSpec.class));",
+        "line": 2182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMaxNumTaskSlotsUsedByOneCompactionTaskWhenIsSequentialMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(tuningConfig.getMaxNumConcurrentSubTasks()).thenReturn(1);",
+        "line": 2183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindMaxNumTaskSlotsUsedByOneCompactionTaskWhenIsSequentialMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

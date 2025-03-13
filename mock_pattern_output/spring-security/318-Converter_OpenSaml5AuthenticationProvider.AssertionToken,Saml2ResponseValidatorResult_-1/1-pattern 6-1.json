@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "validator",
+    "variableType": "Converter<OpenSaml5AuthenticationProvider.AssertionToken,Saml2ResponseValidatorResult>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\opensaml5Test\\java\\org\\springframework\\security\\saml2\\provider\\service\\authentication\\OpenSaml5AuthenticationProviderTests.java",
+      "className": "OpenSaml5AuthenticationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OpenSaml5AuthenticationProvider.AssertionToken, Saml2ResponseValidatorResult> validator = mock(Converter.class);",
+        "line": 540,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAssertionValidatorThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(validator.convert(any(OpenSaml5AuthenticationProvider.AssertionToken.class))).willReturn(Saml2ResponseValidatorResult.success());",
+        "line": 553,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAssertionValidatorThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(validator).convert(any(OpenSaml5AuthenticationProvider.AssertionToken.class));",
+        "line": 556,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenCustomAssertionValidatorThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

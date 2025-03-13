@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "event",
+    "variableType": "FooEvent",
+    "mockedClass": "FooEvent",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\ConnectionFactoryTests.java",
+      "className": "ConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FooEvent event = new FooEvent(client, \"foo\");",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testObtainConnectionIds",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "event = new FooEvent(mock(TcpConnectionSupport.class), \"foo\");",
+        "line": 208,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testObtainConnectionIds",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 19
+  }
+]

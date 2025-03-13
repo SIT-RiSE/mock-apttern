@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "objectInput",
+    "variableType": "ObjectInput",
+    "mockedClass": "ObjectInput",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.serialization",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-compatible\\src\\test\\java\\org\\apache\\dubbo\\serialization\\SerializationTest.java",
+      "className": "SerializationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ObjectInput objectInput = mySerialization.deserialize(null, mock(InputStream.class));",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testObjectInput",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

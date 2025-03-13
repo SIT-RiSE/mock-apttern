@@ -1,0 +1,274 @@
+[
+  {
+    "variableName": "pf",
+    "variableType": "ProducerFactory",
+    "mockedClass": "ProducerFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ProducerFactory pf = mock(ProducerFactory.class);",
+        "line": 357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "immediateFailure",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pf.createProducer()).willReturn(producer);",
+        "line": 358,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "immediateFailure",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "pf",
+    "variableType": "ProducerFactory",
+    "mockedClass": "ProducerFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ProducerFactory pf = mock(ProducerFactory.class);",
+        "line": 506,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pf.transactionCapable()).willReturn(true);",
+        "line": 507,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pf.createProducer(isNull())).willReturn(producer);",
+        "line": 509,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "pf",
+    "variableType": "ProducerFactory",
+    "mockedClass": "ProducerFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ProducerFactory pf = mock(ProducerFactory.class);",
+        "line": 634,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionSynch",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pf.transactionCapable()).willReturn(true);",
+        "line": 635,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionSynch",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pf.createProducer(isNull())).willReturn(producer);",
+        "line": 636,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionSynch",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "pf",
+    "variableType": "ProducerFactory",
+    "mockedClass": "ProducerFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ProducerFactory pf = mock(ProducerFactory.class);",
+        "line": 761,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFlush",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pf.createProducer()).willReturn(producer);",
+        "line": 763,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFlush",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "pf",
+    "variableType": "ProducerFactory",
+    "mockedClass": "ProducerFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ProducerFactory pf = mock(ProducerFactory.class);",
+        "line": 784,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoFlush",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pf.createProducer()).willReturn(producer);",
+        "line": 786,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoFlush",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "pf",
+    "variableType": "ProducerFactory",
+    "mockedClass": "ProducerFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ProducerFactory pf = mock(ProducerFactory.class);",
+        "line": 804,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "conversion",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pf.createProducer()).willReturn(producer);",
+        "line": 806,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "conversion",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

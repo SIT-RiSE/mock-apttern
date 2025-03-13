@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "processor",
+    "variableType": "QCOW2Processor",
+    "mockedClass": "QCOW2Processor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\core\\src\\test\\java\\com\\cloud\\storage\\template\\QCOW2ProcessorTest.java",
+      "className": "QCOW2ProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "QCOW2Processor processor;",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "processor = Mockito.spy(new QCOW2Processor());",
+        "line": 49,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "serviceDiscoveryDirectory",
+    "variableType": "DynamicDirectory",
+    "mockedClass": "DynamicDirectory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\MigrationInvokerTest.java",
+      "className": "MigrationInvokerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DynamicDirectory serviceDiscoveryDirectory = Mockito.mock(DynamicDirectory.class);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(serviceDiscoveryDirectory.getAllInvokers()).thenReturn(serviceDiscoveryInvokers);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(serviceDiscoveryDirectory, Mockito.atLeastOnce()).setInvokersChangedListener(argument.capture());",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

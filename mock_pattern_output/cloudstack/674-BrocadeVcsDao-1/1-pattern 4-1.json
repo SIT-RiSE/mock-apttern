@@ -1,0 +1,135 @@
+[
+  {
+    "variableName": "vcsdao",
+    "variableType": "BrocadeVcsDao",
+    "mockedClass": "BrocadeVcsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\guru\\BrocadeVcsGuestNetworkGuruTest.java",
+      "className": "BrocadeVcsGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "BrocadeVcsDao vcsdao = mock(BrocadeVcsDao.class);",
+        "line": 86,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vcsdao.listByPhysicalNetwork(anyLong())).thenReturn(devices);",
+        "line": 258,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vcsdao.listByPhysicalNetwork(anyLong())).thenReturn(devices);",
+        "line": 318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImplementFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vcsdao.listByPhysicalNetwork(anyLong())).thenReturn(devices);",
+        "line": 372,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vcsdao.listByPhysicalNetwork(anyLong())).thenReturn(devices);",
+        "line": 424,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserveFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vcsdao.listByPhysicalNetwork(anyLong())).thenReturn(devices);",
+        "line": 469,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vcsdao.listByPhysicalNetwork(anyLong())).thenReturn(devices);",
+        "line": 505,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeallocateFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vcsdao.listByPhysicalNetwork(anyLong())).thenReturn(devices);",
+        "line": 544,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrash",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vcsdao.remove((long) anyInt())).thenReturn(true);",
+        "line": 550,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrash",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vcsdao.listByPhysicalNetwork(anyLong())).thenReturn(devices);",
+        "line": 587,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTrashFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

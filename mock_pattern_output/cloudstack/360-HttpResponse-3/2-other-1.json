@@ -1,0 +1,159 @@
+[
+  {
+    "variableName": "response",
+    "variableType": "HttpResponse",
+    "mockedClass": "HttpResponse",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.brocade",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\brocade-vcs\\src\\test\\java\\com\\cloud\\network\\brocade\\BrocadeVcsApiTest.java",
+      "className": "BrocadeVcsApiTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "HttpResponse response;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "response = mock(HttpResponse.class);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetSwitchStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(response.getStatusLine()).thenReturn(statusLine);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetSwitchStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(response.getEntity()).thenReturn(new StringEntity(OUTPUT_XML_RESPONSE));",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetSwitchStatus",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "response = mock(HttpResponse.class);",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(response.getStatusLine()).thenReturn(statusLine);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "response = mock(HttpResponse.class);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(response.getStatusLine()).thenReturn(statusLine);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "response = mock(HttpResponse.class);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAssociateMacToNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(response.getStatusLine()).thenReturn(statusLine);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAssociateMacToNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "response = mock(HttpResponse.class);",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisassociateMacFromNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(response.getStatusLine()).thenReturn(statusLine);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDisassociateMacFromNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 23
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "delegate",
+    "variableType": "SmartApplicationListener",
+    "mockedClass": "SmartApplicationListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\context\\DelegatingApplicationListenerTests.java",
+      "className": "DelegatingApplicationListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nSmartApplicationListener delegate;",
+        "line": 37,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate, never()).onApplicationEvent(any(ApplicationEvent.class));",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processEventNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.supportsEventType(this.event.getClass())).willReturn(true);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processEventSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.supportsSourceType(this.event.getSource().getClass())).willReturn(true);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processEventSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).onApplicationEvent(this.event);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processEventSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate, never()).onApplicationEvent(any(ApplicationEvent.class));",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processEventEventTypeNotSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.supportsEventType(this.event.getClass())).willReturn(true);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processEventSourceTypeNotSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate, never()).onApplicationEvent(any(ApplicationEvent.class));",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "processEventSourceTypeNotSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

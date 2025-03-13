@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "subjectTokenResolver",
+    "variableType": "Function<OAuth2AuthorizationContext,Mono<OAuth2Token>>",
+    "mockedClass": "Function",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\TokenExchangeReactiveOAuth2AuthorizedClientProviderTests.java",
+      "className": "TokenExchangeReactiveOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Function<OAuth2AuthorizationContext, Mono<OAuth2Token>> subjectTokenResolver = mock(Function.class);",
+        "line": 325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenCustomSubjectTokenResolverSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(subjectTokenResolver.apply(any(OAuth2AuthorizationContext.class))).willReturn(Mono.just(this.subjectToken));",
+        "line": 326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenCustomSubjectTokenResolverSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(subjectTokenResolver).apply(authorizationContext);",
+        "line": 347,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenCustomSubjectTokenResolverSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "actorTokenResolver",
+    "variableType": "Function<OAuth2AuthorizationContext,Mono<OAuth2Token>>",
+    "mockedClass": "Function",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\TokenExchangeReactiveOAuth2AuthorizedClientProviderTests.java",
+      "className": "TokenExchangeReactiveOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Function<OAuth2AuthorizationContext, Mono<OAuth2Token>> actorTokenResolver = mock(Function.class);",
+        "line": 358,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenCustomActorTokenResolverSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(actorTokenResolver.apply(any(OAuth2AuthorizationContext.class))).willReturn(Mono.just(this.actorToken));",
+        "line": 359,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenCustomActorTokenResolverSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(actorTokenResolver).apply(authorizationContext);",
+        "line": 378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenCustomActorTokenResolverSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

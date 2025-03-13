@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "override",
+    "variableType": "Trigger",
+    "mockedClass": "Trigger",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\endpoint\\PollerAdviceTests.java",
+      "className": "PollerAdviceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Trigger override = spy(new PeriodicTrigger(Duration.ofMillis(5)));",
+        "line": 341,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCompoundTriggerAdvice",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(override, atLeast(2)).nextExecution(any(TriggerContext.class));",
+        "line": 364,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCompoundTriggerAdvice",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "variableName": "cmd",
+    "variableType": "CreateNetworkCmd",
+    "mockedClass": "CreateNetworkCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkServiceImplTest.java",
+      "className": "NetworkServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateNetworkCmd cmd = Mockito.mock(CreateNetworkCmd.class);",
+        "line": 542,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateL2NetworkDnsFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getIp4Dns1()).thenReturn(ip4Dns[0]);",
+        "line": 544,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateL2NetworkDnsFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "CreateNetworkCmd",
+    "mockedClass": "CreateNetworkCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkServiceImplTest.java",
+      "className": "NetworkServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateNetworkCmd cmd = Mockito.mock(CreateNetworkCmd.class);",
+        "line": 555,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkDnsVpcFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getIp4Dns1()).thenReturn(ip4Dns[0]);",
+        "line": 557,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkDnsVpcFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "CreateNetworkCmd",
+    "mockedClass": "CreateNetworkCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkServiceImplTest.java",
+      "className": "NetworkServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateNetworkCmd cmd = Mockito.mock(CreateNetworkCmd.class);",
+        "line": 568,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkDnsOfferingServiceFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getDomainId()).thenReturn(null);",
+        "line": 569,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkDnsOfferingServiceFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getProjectId()).thenReturn(null);",
+        "line": 570,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkDnsOfferingServiceFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getIp4Dns1()).thenReturn(ip4Dns[0]);",
+        "line": 572,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateNetworkDnsOfferingServiceFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "cmd",
+    "variableType": "CreateNetworkCmd",
+    "mockedClass": "CreateNetworkCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\NetworkServiceImplTest.java",
+      "className": "NetworkServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CreateNetworkCmd cmd = Mockito.mock(CreateNetworkCmd.class);",
+        "line": 583,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateIp4NetworkIp6DnsFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getIp6Dns1()).thenReturn(ip4Dns[0]);",
+        "line": 585,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateIp4NetworkIp6DnsFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

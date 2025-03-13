@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "network",
+    "variableType": "Network",
+    "mockedClass": "Network",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.guru",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\guru\\DirectNetworkGuruTest.java",
+      "className": "DirectNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nNetwork network;",
+        "line": 73,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network.getDns1()).thenReturn(ip4Dns[0]);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignDns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network.getDns2()).thenReturn(ip4Dns[1]);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignDns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network.getIp6Dns1()).thenReturn(ip6Dns[0]);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignDns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(network.getIp6Dns2()).thenReturn(ip6Dns[1]);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDesignDns",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "networkMock",
+    "variableType": "Network",
+    "mockedClass": "Network",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate Network networkMock;",
+        "line": 94,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(networkMock.getNetworkOfferingId()).thenReturn(networkOfferingMockId);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "befoteTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(networkMock.getVpcId()).thenReturn(networkMockVpcMockId);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "befoteTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "synchronizer",
+    "variableType": "FtpInboundFileSynchronizer",
+    "mockedClass": "FtpInboundFileSynchronizer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\inbound\\FtpInboundRemoteFileSystemSynchronizerTests.java",
+      "className": "FtpInboundRemoteFileSystemSynchronizerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FtpInboundFileSynchronizer synchronizer = spy(new FtpInboundFileSynchronizer(ftpSessionFactory));",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSyncRemoteFileOnlyOnceByDefault",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

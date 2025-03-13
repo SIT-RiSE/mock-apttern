@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "dubboProtocol",
+    "variableType": "DubboProtocol",
+    "mockedClass": "DubboProtocol",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.protocol.dubbo.status",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-dubbo\\src\\test\\java\\org\\apache\\dubbo\\rpc\\protocol\\dubbo\\status\\ServerStatusCheckerTest.java",
+      "className": "ServerStatusCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DubboProtocol dubboProtocol = Mockito.mock(DubboProtocol.class);",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dubboProtocol.getServers()).thenReturn(servers);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

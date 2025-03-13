@@ -1,0 +1,155 @@
+[
+  {
+    "variableName": "result",
+    "variableType": "String",
+    "mockedClass": "String",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\OfflineTest.java",
+      "className": "OfflineTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "String result = offline.execute(mock(CommandContext.class), new String[] { DemoService.class.getName() });",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "result = offlineInterface.execute(mock(CommandContext.class), new String[] { DemoService.class.getName() });",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "result = offlineApp.execute(mock(CommandContext.class), new String[] { DemoService.class.getName() });",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  },
+  {
+    "variableName": "result",
+    "variableType": "String",
+    "mockedClass": "String",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\OnlineTest.java",
+      "className": "OnlineTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "String result = online.execute(mock(CommandContext.class), new String[] { DemoService.class.getName() });",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "result = onlineInterface.execute(mock(CommandContext.class), new String[] { DemoService.class.getName() });",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "result = onlineApp.execute(mock(CommandContext.class), new String[] { DemoService.class.getName() });",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  },
+  {
+    "variableName": "result",
+    "variableType": "String",
+    "mockedClass": "String",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.impl",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\impl\\PublishMetadataTest.java",
+      "className": "PublishMetadataTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "String result = publishMetadata.execute(Mockito.mock(CommandContext.class), new String[0]);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "// delay 5s\r\nresult = publishMetadata.execute(Mockito.mock(CommandContext.class), new String[] { \"5\" });",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "// wrong delay param\r\nresult = publishMetadata.execute(Mockito.mock(CommandContext.class), new String[] { \"A\" });",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecute",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  }
+]

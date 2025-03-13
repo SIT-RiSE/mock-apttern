@@ -1,0 +1,215 @@
+[
+  {
+    "variableName": "namingService",
+    "variableType": "NamingService",
+    "mockedClass": "NamingService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosNamingServiceWrapperTest.java",
+      "className": "NacosNamingServiceWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NamingService namingService = Mockito.mock(NamingService.class);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService, Mockito.times(1)).subscribe(\"service_name\", \"test\", eventListener);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService, Mockito.times(2)).subscribe(\"service_name\", \"test\", eventListener);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService, Mockito.times(1)).unsubscribe(\"service_name\", \"test\", eventListener);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService, Mockito.times(1)).unsubscribe(\"service_name\", \"test\", eventListener);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService, Mockito.times(0)).unsubscribe(\"service_name\", \"mock\", eventListener);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribe",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "namingService2",
+    "variableType": "NamingService",
+    "mockedClass": "NamingService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosNamingServiceWrapperTest.java",
+      "className": "NacosNamingServiceWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NamingService namingService2 = Mockito.mock(NamingService.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultiManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService2, Mockito.times(0)).unsubscribe(\"service_name\", \"mock\", eventListener);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultiManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "namingService1",
+    "variableType": "NamingService",
+    "mockedClass": "NamingService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosNamingServiceWrapperTest.java",
+      "className": "NacosNamingServiceWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NamingService namingService1 = Mockito.mock(NamingService.class);",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultiManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService1, Mockito.times(1)).subscribe(\"service_name\", \"test\", eventListener);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultiManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService1, Mockito.times(2)).subscribe(\"service_name\", \"test\", eventListener);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultiManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService1, Mockito.times(1)).unsubscribe(\"service_name\", \"test\", eventListener);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultiManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService1, Mockito.times(1)).unsubscribe(\"service_name\", \"test\", eventListener);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultiManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(namingService1, Mockito.times(0)).unsubscribe(\"service_name\", \"mock\", eventListener);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSubscribeMultiManager",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,308 @@
+[
+  {
+    "variableName": "one",
+    "variableType": "SecurityContextChangedListener",
+    "mockedClass": "SecurityContextChangedListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.core.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\context\\ListeningSecurityContextHolderStrategyTests.java",
+      "className": "ListeningSecurityContextHolderStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextChangedListener one = mock(SecurityContextChangedListener.class);",
+        "line": 42,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenInvokedThenListenersAreNotified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(one).securityContextChanged(any());",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenInvokedThenListenersAreNotified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "two",
+    "variableType": "SecurityContextChangedListener",
+    "mockedClass": "SecurityContextChangedListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.core.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\context\\ListeningSecurityContextHolderStrategyTests.java",
+      "className": "ListeningSecurityContextHolderStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextChangedListener two = mock(SecurityContextChangedListener.class);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenInvokedThenListenersAreNotified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(two).securityContextChanged(any());",
+        "line": 50,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenInvokedThenListenersAreNotified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "listener",
+    "variableType": "SecurityContextChangedListener",
+    "mockedClass": "SecurityContextChangedListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.core.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\context\\ListeningSecurityContextHolderStrategyTests.java",
+      "className": "ListeningSecurityContextHolderStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextChangedListener listener = mock(SecurityContextChangedListener.class);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenNoChangeToContextThenListenersAreNotNotified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(listener);",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenNoChangeToContextThenListenersAreNotNotified",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "listener",
+    "variableType": "SecurityContextChangedListener",
+    "mockedClass": "SecurityContextChangedListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.core.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\context\\ListeningSecurityContextHolderStrategyTests.java",
+      "className": "ListeningSecurityContextHolderStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextChangedListener listener = mock(SecurityContextChangedListener.class);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "clearContextWhenNoGetContextThenContextIsNotRead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(listener).securityContextChanged(event.capture());",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "clearContextWhenNoGetContextThenContextIsNotRead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "listener",
+    "variableType": "SecurityContextChangedListener",
+    "mockedClass": "SecurityContextChangedListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.core.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\context\\ListeningSecurityContextHolderStrategyTests.java",
+      "className": "ListeningSecurityContextHolderStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextChangedListener listener = mock(SecurityContextChangedListener.class);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getContextWhenCalledMultipleTimesThenEventPublishedOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(listener);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getContextWhenCalledMultipleTimesThenEventPublishedOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(listener).securityContextChanged(any());",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getContextWhenCalledMultipleTimesThenEventPublishedOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(listener);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getContextWhenCalledMultipleTimesThenEventPublishedOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "listener",
+    "variableType": "SecurityContextChangedListener",
+    "mockedClass": "SecurityContextChangedListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.core.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\context\\ListeningSecurityContextHolderStrategyTests.java",
+      "className": "ListeningSecurityContextHolderStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextChangedListener listener = mock(SecurityContextChangedListener.class);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenCalledMultipleTimesThenPublishedEventsAlign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(listener);",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenCalledMultipleTimesThenPublishedEventsAlign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(listener).securityContextChanged(event.capture());",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenCalledMultipleTimesThenPublishedEventsAlign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(listener);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenCalledMultipleTimesThenPublishedEventsAlign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(listener);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenCalledMultipleTimesThenPublishedEventsAlign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(listener).securityContextChanged(event.capture());",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextWhenCalledMultipleTimesThenPublishedEventsAlign",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

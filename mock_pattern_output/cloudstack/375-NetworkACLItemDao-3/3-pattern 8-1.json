@@ -1,0 +1,181 @@
+[
+  {
+    "variableName": "networkAclItemDaoMock",
+    "variableType": "NetworkACLItemDao",
+    "mockedClass": "NetworkACLItemDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate NetworkACLItemDao networkAclItemDaoMock;",
+        "line": 81,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(networkAclItemDaoMock.getMaxNumberByACL(networkAclMockId)).thenReturn(5);",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createNetworkACLItemTestForNumberAndExecuteTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(networkAclItemDaoMock, Mockito.times(number == null ? 1 : 0)).getMaxNumberByACL(networkAclMockId);",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createNetworkACLItemTestForNumberAndExecuteTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock).findByAclAndNumber(Mockito.anyLong(), Mockito.anyInt());",
+        "line": 358,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclRuleNumberTestNumberInOtherAcl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock).findByAclAndNumber(Mockito.anyLong(), Mockito.anyInt());",
+        "line": 367,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclRuleNumberTestHappyDay",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock, Mockito.times(0)).findByAclAndNumber(Mockito.anyLong(), Mockito.anyInt());",
+        "line": 376,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclRuleNumberTestNumberNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock).updateNumberFieldNetworkItem(99l, 101);",
+        "line": 1183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleToTheBottomTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock).findById(99l);",
+        "line": 1184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleToTheBottomTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock, times(0)).updateNumberFieldNetworkItem(aclRuleBeingMovedMock.getId(), 11);",
+        "line": 1233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleBetweenAclRulesTestThereIsSpaceBetweenPreviousRuleAndNextRuleToAccomodateTheNewRule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock, times(0)).findById(1l);",
+        "line": 1234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleBetweenAclRulesTestThereIsSpaceBetweenPreviousRuleAndNextRuleToAccomodateTheNewRule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock).updateNumberFieldNetworkItem(aclRuleBeingMovedMock.getId(), 11);",
+        "line": 1260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleBetweenAclRulesTestThereIsNoSpaceBetweenPreviousRuleAndNextRuleToAccomodateTheNewRule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock).findById(1l);",
+        "line": 1261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "moveRuleBetweenAclRulesTestThereIsNoSpaceBetweenPreviousRuleAndNextRuleToAccomodateTheNewRule",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock).updateNumberFieldNetworkItem(1l, 11);",
+        "line": 1318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateAclRuleToNewPositionAndExecuteShiftIfNecessaryTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(networkAclItemDaoMock).updateNumberFieldNetworkItem(50l, 12);",
+        "line": 1319,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateAclRuleToNewPositionAndExecuteShiftIfNecessaryTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

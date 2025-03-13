@@ -1,0 +1,47 @@
+[
+  {
+    "variableName": "vmMo",
+    "variableType": "VirtualMachineMO",
+    "mockedClass": "VirtualMachineMO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.manager",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\manager\\VmwareStorageManagerImplTest.java",
+      "className": "VmwareStorageManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VirtualMachineMO vmMo = Mockito.mock(VirtualMachineMO.class);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCommon",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmMo.getVmName()).thenReturn(\"dummy-vm\");",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCommon",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmMo.getAllDiskDevice()).thenReturn(new VirtualDisk[0]);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCommon",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

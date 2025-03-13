@@ -1,0 +1,76 @@
+[
+  {
+    "variableName": "smbFactory",
+    "variableType": "SmbSessionFactory",
+    "mockedClass": "SmbSessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\config\\SmbInboundChannelAdapterParserTests.java",
+      "className": "TestSessionFactoryBean"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SmbSessionFactory smbFactory = mock(SmbSessionFactory.class);",
+        "line": 127,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "getObject",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(smbFactory.getSession()).thenReturn(session);",
+        "line": 129,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "getObject",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 20
+  },
+  {
+    "variableName": "factory",
+    "variableType": "SmbSessionFactory",
+    "mockedClass": "SmbSessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 @Override\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.smb.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-smb\\src\\test\\java\\org\\springframework\\integration\\smb\\config\\SmbStreamingInboundChannelAdapterParserTests.java",
+      "className": "TestSessionFactoryBean"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SmbSessionFactory factory = mock(SmbSessionFactory.class);",
+        "line": 104,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getObject",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.getSession()).thenReturn(session);",
+        "line": 106,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getObject",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 24
+  }
+]

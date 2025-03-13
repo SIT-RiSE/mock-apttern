@@ -1,0 +1,257 @@
+[
+  {
+    "variableName": "filterChain",
+    "variableType": "FilterChain",
+    "mockedClass": "FilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.csrf",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\csrf\\CsrfFilterTests.java",
+      "className": "CsrfFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate FilterChain filterChain;",
+        "line": 68,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.request, this.response);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterDoesNotSaveCsrfTokenUntilAccessed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.filterChain);",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterAccessDeniedNoTokenPresent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.filterChain);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterAccessDeniedIncorrectTokenPresent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.filterChain);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterAccessDeniedIncorrectTokenPresentHeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.filterChain);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterAccessDeniedIncorrectTokenPresentHeaderPreferredOverParameter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.request, this.response);",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterNotCsrfRequestExistingToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.request, this.response);",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterNotCsrfRequestGenerateToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.request, this.response);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterIsCsrfRequestExistingTokenHeader",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.request, this.response);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterIsCsrfRequestExistingTokenHeaderPreferredOverInvalidParam",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.request, this.response);",
+        "line": 262,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterIsCsrfRequestExistingToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.request, this.response);",
+        "line": 283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterIsCsrfRequestGenerateToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.request, this.response);",
+        "line": 297,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterDefaultRequireCsrfProtectionMatcherAllowedMethods",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.filterChain);",
+        "line": 320,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterDefaultRequireCsrfProtectionMatcherAllowedMethodsCaseSensitive",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.filterChain);",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterDefaultRequireCsrfProtectionMatcherDeniedMethods",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.filterChain);",
+        "line": 352,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterDefaultAccessDenied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.request, this.response);",
+        "line": 394,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenRequestHandlerThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain).doFilter(this.request, this.response);",
+        "line": 406,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenXorCsrfTokenRequestAttributeHandlerAndValidTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.filterChain, times(2)).doFilter(this.request, this.response);",
+        "line": 418,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenXorCsrfTokenRequestAttributeHandlerAndValidTokenThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.filterChain);",
+        "line": 430,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenXorCsrfTokenRequestAttributeHandlerAndRawTokenThenAccessDeniedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

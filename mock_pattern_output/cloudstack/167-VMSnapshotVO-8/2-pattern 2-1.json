@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "vmSnapshotVoMock",
+    "variableType": "VMSnapshotVO",
+    "mockedClass": "VMSnapshotVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota.activationrule.presetvariables",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\activationrule\\presetvariables\\PresetVariableHelperTest.java",
+      "className": "PresetVariableHelperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VMSnapshotVO vmSnapshotVoMock = Mockito.mock(VMSnapshotVO.class);",
+        "line": 981,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForVmSnapshotTestRecordIsVmSnapshotSetFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "storagePoolHostDao",
+    "variableType": "StoragePoolHostDao",
+    "mockedClass": "StoragePoolHostDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.lifecycle",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\lifecycle\\ScaleIOPrimaryDataStoreLifeCycleTest.java",
+      "className": "ScaleIOPrimaryDataStoreLifeCycleTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate StoragePoolHostDao storagePoolHostDao;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolHostDao.findByPoolHost(anyLong(), anyLong())).thenReturn(null);",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(storagePoolHostDao, times(2)).persist(Mockito.any(StoragePoolHostVO.class));",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachZone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(storagePoolHostDao.listByPoolId(anyLong())).thenReturn(poolHostVOs);",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteDataStore",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "handler",
+    "variableType": "ObservationHandler<Observation.Context>",
+    "mockedClass": "ObservationHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Override\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\HttpConfigTests.java",
+      "className": "MockObservationRegistry"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private ObservationHandler<Observation.Context> handler = mock(ObservationHandler.class);",
+        "line": 157,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.handler.supportsContext(any())).willReturn(true);",
+        "line": 163,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getObject",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 71
+  }
+]

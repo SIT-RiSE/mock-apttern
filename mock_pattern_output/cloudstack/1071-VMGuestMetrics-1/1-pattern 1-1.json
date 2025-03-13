@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "mtr",
+    "variableType": "VMGuestMetrics",
+    "mockedClass": "VMGuestMetrics",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource.wrapper.xenbase",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\wrapper\\xenbase\\CitrixRequestWrapperTest.java",
+      "className": "CitrixRequestWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VMGuestMetrics mtr = Mockito.mock(VMGuestMetrics.class);",
+        "line": 1974,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVmIpAddressCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mtr.getRecord(conn)).thenReturn(rec);",
+        "line": 1989,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetVmIpAddressCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

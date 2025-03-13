@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "factory",
+    "variableType": "ServerSocketFactory",
+    "mockedClass": "ServerSocketFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\SocketSupportTests.java",
+      "className": "SocketSupportTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerSocketFactory factory = mock(ServerSocketFactory.class);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetServer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.createServerSocket(0, 5)).thenReturn(serverSocket);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetServer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

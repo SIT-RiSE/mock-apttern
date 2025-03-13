@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "loadbalancerListener",
+    "variableType": "LoadbalancerListener",
+    "mockedClass": "LoadbalancerListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\resource\\TungstenResourceTest.java",
+      "className": "TungstenResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LoadbalancerListener loadbalancerListener = mock(LoadbalancerListener.class);",
+        "line": 637,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestCreateTungstenNetworkLoadbalancerCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadbalancerListener.getUuid()).thenReturn(\"c877d37a-9ad4-4188-a09a-fb13f57f9be0\");",
+        "line": 647,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestCreateTungstenNetworkLoadbalancerCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "loadbalancerListener",
+    "variableType": "LoadbalancerListener",
+    "mockedClass": "LoadbalancerListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\resource\\TungstenResourceTest.java",
+      "className": "TungstenResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LoadbalancerListener loadbalancerListener = mock(LoadbalancerListener.class);",
+        "line": 691,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestDeleteTungstenLoadBalancerCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(loadbalancerListener.getLoadbalancerPoolBackRefs()).thenReturn(List.of(pool));",
+        "line": 706,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeRequestDeleteTungstenLoadBalancerCommandTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

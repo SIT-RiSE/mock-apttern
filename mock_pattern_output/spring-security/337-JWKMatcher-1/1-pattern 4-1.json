@@ -1,0 +1,161 @@
+[
+  {
+    "variableName": "matcher",
+    "variableType": "JWKMatcher",
+    "mockedClass": "JWKMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\ReactiveRemoteJWKSourceTests.java",
+      "className": "ReactiveRemoteJWKSourceTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate JWKMatcher matcher;",
+        "line": 53,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(any())).willReturn(true);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getWhenMultipleRequestThenCached",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(any())).willReturn(true);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getWhenMatchThenCreatesKeys",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(any())).willReturn(false);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getWhenNoMatchAndNoKeyIdThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.getKeyIDs()).willReturn(Collections.emptySet());",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getWhenNoMatchAndNoKeyIdThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(any())).willReturn(false, false, true);",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getWhenNoMatchAndKeyIdNotMatchThenRefreshAndFoundThenFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.getKeyIDs()).willReturn(Collections.singleton(\"rotated\"));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getWhenNoMatchAndKeyIdNotMatchThenRefreshAndFoundThenFound",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(any())).willReturn(false, false, false);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getWhenNoMatchAndKeyIdNotMatchThenRefreshAndNotFoundThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.getKeyIDs()).willReturn(Collections.singleton(\"rotated\"));",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getWhenNoMatchAndKeyIdNotMatchThenRefreshAndNotFoundThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(any())).willReturn(false);",
+        "line": 164,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getWhenNoMatchAndKeyIdMatchThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.getKeyIDs()).willReturn(Collections.singleton(\"7ddf54d3032d1f0d48c3618892ca74c1ac30ad77\"));",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getWhenNoMatchAndKeyIdMatchThenEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.matcher.matches(any())).willReturn(true);",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getShouldRecoverAndReturnKeysAfterErrorCase",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

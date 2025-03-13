@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "principal",
+    "variableType": "AuthenticatedPrincipal",
+    "mockedClass": "AuthenticatedPrincipal",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\AbstractAuthenticationTokenTests.java",
+      "className": "AbstractAuthenticationTokenTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticatedPrincipal principal = mock(AuthenticatedPrincipal.class);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetNameWhenPrincipalIsAuthenticatedPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(principal.getName()).willReturn(principalName);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetNameWhenPrincipalIsAuthenticatedPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(principal, times(1)).getName();",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetNameWhenPrincipalIsAuthenticatedPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "principal",
+    "variableType": "AuthenticatedPrincipal",
+    "mockedClass": "AuthenticatedPrincipal",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.servletapi",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\servletapi\\SecurityContextHolderAwareRequestWrapperTests.java",
+      "className": "SecurityContextHolderAwareRequestWrapperTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthenticatedPrincipal principal = mock(AuthenticatedPrincipal.class);",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRemoteUserStringWithAuthenticatedPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(principal.getName()).willReturn(username);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRemoteUserStringWithAuthenticatedPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(principal, times(1)).getName();",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRemoteUserStringWithAuthenticatedPrincipal",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

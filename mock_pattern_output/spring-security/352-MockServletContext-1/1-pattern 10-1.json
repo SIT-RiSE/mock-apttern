@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "servletContext",
+    "variableType": "MockServletContext",
+    "mockedClass": "MockServletContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\InterceptUrlConfigTests.java",
+      "className": "InterceptUrlConfigTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MockServletContext servletContext = spy(new MockServletContext());",
+        "line": 442,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockServletContext",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(servletContext.getServletRegistrations()).willAnswer(answer);",
+        "line": 447,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockServletContext",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

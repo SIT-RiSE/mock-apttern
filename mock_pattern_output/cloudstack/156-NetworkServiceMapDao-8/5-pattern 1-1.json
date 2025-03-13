@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "ntwkSrvcDao",
+    "variableType": "NetworkServiceMapDao",
+    "mockedClass": "NetworkServiceMapDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLManagerTest.java",
+      "className": "NetworkACLManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NetworkServiceMapDao ntwkSrvcDao = mock(NetworkServiceMapDao.class);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "driveTestApplyNetworkACL",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ntwkSrvcDao.canProviderSupportServiceInNetwork(anyLong(), eq(Network.Service.NetworkACL), nullable(Network.Provider.class))).thenReturn(true);",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "driveTestApplyNetworkACL",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

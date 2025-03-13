@@ -1,0 +1,212 @@
+[
+  {
+    "variableName": "securityContextRepository",
+    "variableType": "ServerSecurityContextRepository",
+    "mockedClass": "ServerSecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\AuthenticationWebFilterTests.java",
+      "className": "AuthenticationWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerSecurityContextRepository securityContextRepository;",
+        "line": 67,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.securityContextRepository, never()).save(any(), any());",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertEmptyThenOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.securityContextRepository, never()).save(any(), any());",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertErrorThenServerError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.securityContextRepository.save(any(), any())).willAnswer((a) -> Mono.just(a.getArguments()[0]));",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationSuccessThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.securityContextRepository).save(any(), any());",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationSuccessThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.securityContextRepository, never()).save(any(), any());",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationEmptyThenServerError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.securityContextRepository, never()).save(any(), any());",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationFailThenEntryPoint",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.securityContextRepository, never()).save(any(), any());",
+        "line": 280,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenConvertAndAuthenticationExceptionThenServerError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "serverSecurityContextRepository",
+    "variableType": "ServerSecurityContextRepository",
+    "mockedClass": "ServerSecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\SwitchUserWebFilterTests.java",
+      "className": "SwitchUserWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerSecurityContextRepository serverSecurityContextRepository;",
+        "line": 83,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(this.serverSecurityContextRepository);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "switchUserWhenRequestNotMatchThenDoesNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.serverSecurityContextRepository.save(eq(exchange), any(SecurityContext.class))).willReturn(Mono.empty());",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "switchUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.serverSecurityContextRepository).save(eq(exchange), securityContextCaptor.capture());",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "switchUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.serverSecurityContextRepository.save(eq(exchange), any(SecurityContext.class))).willReturn(Mono.empty());",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "switchUserWhenUserAlreadySwitchedThenExitSwitchAndSwitchAgain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.serverSecurityContextRepository.save(eq(exchange), any(SecurityContext.class))).willReturn(Mono.empty());",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "exitSwitchThenReturnToOriginalAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.serverSecurityContextRepository).save(eq(exchange), securityContextCaptor.capture());",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "exitSwitchThenReturnToOriginalAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

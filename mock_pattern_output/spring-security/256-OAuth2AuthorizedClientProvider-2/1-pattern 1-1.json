@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "authorizedClientProvider",
+    "variableType": "OAuth2AuthorizedClientProvider",
+    "mockedClass": "OAuth2AuthorizedClientProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\DelegatingOAuth2AuthorizedClientProviderTests.java",
+      "className": "DelegatingOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2AuthorizedClientProvider authorizedClientProvider = mock(OAuth2AuthorizedClientProvider.class);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCanAuthorizeThenReturnAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClientProvider.authorize(any())).willReturn(authorizedClient);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenProviderCanAuthorizeThenReturnAuthorizedClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "nicp",
+    "variableType": "NicProfile",
+    "mockedClass": "NicProfile",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\element\\ConfigDriveNetworkElementTest.java",
+      "className": "ConfigDriveNetworkElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate NicProfile nicp;",
+        "line": 152,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(nicp.getIPv4Address()).thenReturn(\"192.168.111.111\");",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddPasswordAndUserData",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

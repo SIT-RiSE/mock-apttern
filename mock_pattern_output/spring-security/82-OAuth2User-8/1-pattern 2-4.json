@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "mockUser",
+    "variableType": "OAuth2User",
+    "mockedClass": "OAuth2User",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.userinfo",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\userinfo\\DelegatingOAuth2UserServiceTests.java",
+      "className": "DelegatingOAuth2UserServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2User mockUser = mock(OAuth2User.class);",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadUserWhenUserServiceCanLoadThenReturnUser",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "loadedUser",
+    "variableType": "OAuth2User",
+    "mockedClass": "OAuth2User",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.userinfo",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\userinfo\\DelegatingOAuth2UserServiceTests.java",
+      "className": "DelegatingOAuth2UserServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2User loadedUser = delegatingUserService.loadUser(mock(OAuth2UserRequest.class));",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadUserWhenUserServiceCanLoadThenReturnUser",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "loadedUser",
+    "variableType": "OAuth2User",
+    "mockedClass": "OAuth2User",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.userinfo",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\userinfo\\DelegatingOAuth2UserServiceTests.java",
+      "className": "DelegatingOAuth2UserServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2User loadedUser = delegatingUserService.loadUser(mock(OAuth2UserRequest.class));",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadUserWhenUserServiceCannotLoadThenReturnNull",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "user",
+    "variableType": "OAuth2User",
+    "mockedClass": "OAuth2User",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServletOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServletOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2User user = mock(OAuth2User.class);",
+        "line": 642,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenChainedThenDefaultsStillAvailable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

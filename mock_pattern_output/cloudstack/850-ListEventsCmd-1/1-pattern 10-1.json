@@ -1,0 +1,47 @@
+[
+  {
+    "variableName": "cmd",
+    "variableType": "ListEventsCmd",
+    "mockedClass": "ListEventsCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.api.query",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\api\\query\\QueryManagerImplTest.java",
+      "className": "QueryManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ListEventsCmd cmd = Mockito.mock(ListEventsCmd.class);",
+        "line": 110,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMockListEventsCmd",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.getEntryTime()).thenReturn(null);",
+        "line": 111,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMockListEventsCmd",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(cmd.listAll()).thenReturn(true);",
+        "line": 112,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMockListEventsCmd",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

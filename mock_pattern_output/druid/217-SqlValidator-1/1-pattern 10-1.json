@@ -1,0 +1,57 @@
+[
+  {
+    "variableName": "validator",
+    "variableType": "SqlValidator",
+    "mockedClass": "SqlValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.sql.calcite.expression",
+      "filePath": "C:\\java tool\\Apache\\druid\\sql\\src\\test\\java\\org\\apache\\druid\\sql\\calcite\\expression\\OperatorConversionsTest.java",
+      "className": "DefaultOperandTypeCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SqlValidator validator = Mockito.mock(SqlValidator.class);",
+        "line": 460,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(validator.getTypeFactory()).thenReturn(new SqlTypeFactoryImpl(DruidTypeSystem.INSTANCE));",
+        "line": 461,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(validator.deriveType(ArgumentMatchers.any(), ArgumentMatchers.eq(node))).thenReturn(relDataType);",
+        "line": 482,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(validator.newValidationError(ArgumentMatchers.any(), ArgumentMatchers.any())).thenAnswer((Answer<CalciteContextException>) invocationOnMock -> new CalciteContextException(StringUtils.format(\"Exception in test for operator[%s]\", function.getName()), invocationOnMock.getArgument(1, ExInst.class).ex()));",
+        "line": 499,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockCallBinding",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "variableName": "_routerDao",
+    "variableType": "DomainRouterDao",
+    "mockedClass": "DomainRouterDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\element\\VirtualRouterElementTest.java",
+      "className": "VirtualRouterElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate DomainRouterDao _routerDao;",
+        "line": 150,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualRouterElement._routerDao.persist(any(DomainRouterVO.class))).thenAnswer(new Answer<Object>() {\r\n\r\n    @Override\r\n    public Object answer(InvocationOnMock invocationOnMock) throws Throwable {\r\n        Object[] args = invocationOnMock.getArguments();\r\n        DomainRouterVO router = (DomainRouterVO) args[0];\r\n        if (router.getUpdateState() != VirtualRouter.UpdateState.UPDATE_COMPLETE) {\r\n            throw new CloudRuntimeException(\"TestFailed: completeAggregationCommandTest1 failed\");\r\n        } else\r\n            return null;\r\n    }\r\n});",
+        "line": 286,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "completeAggregationCommandTest1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// watchit: (in this test) there can be only one\r\nwhen(_routerDao.getNextInSequence(Long.class, \"id\")).thenReturn(0L);",
+        "line": 333,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockDAOs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(_routerDao.getNextInSequence(Long.class, \"id\")).thenReturn(1L);",
+        "line": 438,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockDAOs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(_routerDao.persist(any(DomainRouterVO.class))).thenReturn(router);",
+        "line": 440,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockDAOs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(_routerDao.findById(router.getId())).thenReturn(router);",
+        "line": 441,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockDAOs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_routerDao.listByNetworkAndRole(1l, VirtualRouter.Role.VIRTUAL_ROUTER)).thenReturn(routerList1);",
+        "line": 442,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockDAOs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_routerDao.listByNetworkAndRole(2l, VirtualRouter.Role.VIRTUAL_ROUTER)).thenReturn(routerList2);",
+        "line": 443,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockDAOs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_routerDao.listByNetworkAndRole(3l, VirtualRouter.Role.VIRTUAL_ROUTER)).thenReturn(routerList1);",
+        "line": 444,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockDAOs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_routerDao.listByNetworkAndRole(6l, VirtualRouter.Role.VIRTUAL_ROUTER)).thenReturn(routerList3);",
+        "line": 445,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockDAOs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_routerDao.persist(any(DomainRouterVO.class))).thenReturn(router);",
+        "line": 449,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockDAOs",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 30
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "proxyFactory",
+    "variableType": "ProxyFactory",
+    "mockedClass": "ProxyFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.monitor.dubbo",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-monitor\\dubbo-monitor-default\\src\\test\\java\\org\\apache\\dubbo\\monitor\\dubbo\\DubboMonitorFactoryTest.java",
+      "className": "DubboMonitorFactoryTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ProxyFactory proxyFactory;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(proxyFactory, atLeastOnce()).getProxy(invokerArgumentCaptor.capture());",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateMonitor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

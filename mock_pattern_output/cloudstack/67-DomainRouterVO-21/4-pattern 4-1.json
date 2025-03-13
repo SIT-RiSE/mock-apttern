@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "domainRouterMock",
+    "variableType": "DomainRouterVO",
+    "mockedClass": "DomainRouterVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDomainRouterVO domainRouterMock;",
+        "line": 389,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(domainRouterMock.getState()).thenReturn(VirtualMachine.State.Running);",
+        "line": 2356,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getNetworkStatsFromVirtualRouterWithOneRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(domainRouterMock.getId()).thenReturn(domainRouterId);",
+        "line": 2357,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getNetworkStatsFromVirtualRouterWithOneRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(domainRouterMock.getHostId()).thenReturn(hostId);",
+        "line": 2358,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getNetworkStatsFromVirtualRouterWithOneRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

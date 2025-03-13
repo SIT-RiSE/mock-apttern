@@ -1,0 +1,629 @@
+[
+  {
+    "variableName": "xenServer610Resource",
+    "variableType": "XenServer610Resource",
+    "mockedClass": "XenServer610Resource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource.wrapper.xenbase",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\wrapper\\xenbase\\XenServer610WrapperTest.java",
+      "className": "XenServer610WrapperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprotected XenServer610Resource xenServer610Resource;",
+        "line": 72,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getConnection()).thenReturn(conn);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getStorageRepository(conn, storage1.getUuid())).thenReturn(sr1);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getStorageRepository(conn, storage2.getUuid())).thenReturn(sr2);",
+        "line": 153,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getVDIbyUuid(conn, storage1.getPath())).thenReturn(vdi1);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getVDIbyUuid(conn, storage2.getPath())).thenReturn(vdi2);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getNativeNetworkForTraffic(conn, TrafficType.Storage, null)).thenReturn(nativeNetworkForTraffic);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getHost()).thenReturn(xsHost);",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getConnection();",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).prepareISO(conn, vmName, null, null);",
+        "line": 175,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getNetwork(conn, nicTO1);",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getNetwork(conn, nicTO2);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getNetwork(conn, nicTO3);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getNativeNetworkForTraffic(conn, TrafficType.Storage, null);",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getHost();",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getConnection()).thenReturn(conn);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getStorageRepository(conn, storage1.getUuid())).thenReturn(sr1);",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getStorageRepository(conn, storage2.getUuid())).thenReturn(sr2);",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getNetwork(conn, nicTO1)).thenReturn(nw1);",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getNetwork(conn, nicTO2)).thenReturn(nw2);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getNetwork(conn, nicTO3)).thenReturn(nw3);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getNativeNetworkForTraffic(conn, TrafficType.Storage, null)).thenReturn(nativeNetworkForTraffic);",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getHost()).thenReturn(xsHost);",
+        "line": 251,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getConnection();",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getNetwork(conn, nicTO1);",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getNetwork(conn, nicTO2);",
+        "line": 265,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getNetwork(conn, nicTO3);",
+        "line": 266,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getNativeNetworkForTraffic(conn, TrafficType.Storage, null);",
+        "line": 268,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getHost();",
+        "line": 271,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageReceiveCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getConnection()).thenReturn(conn);",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getVDIbyUuid(conn, volume1.getPath())).thenReturn(vdi1);",
+        "line": 333,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getVDIbyUuid(conn, volume2.getPath())).thenReturn(vdi2);",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getVifByMac(conn, null, nic1.getMac())).thenReturn(vif1);",
+        "line": 337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getVifByMac(conn, null, nic2.getMac())).thenReturn(vif2);",
+        "line": 338,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getConnection();",
+        "line": 347,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(2)).getVDIbyUuid(conn, volume1.getPath());",
+        "line": 350,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(2)).getVifByMac(conn, null, nic1.getMac());",
+        "line": 351,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getConnection()).thenReturn(conn);",
+        "line": 383,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommandSRException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getConnection();",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommandSRException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getConnection()).thenReturn(conn);",
+        "line": 429,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommandNetException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getVDIbyUuid(conn, volume1.getPath())).thenReturn(vdi1);",
+        "line": 435,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommandNetException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getVDIbyUuid(conn, volume2.getPath())).thenReturn(vdi2);",
+        "line": 436,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommandNetException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getConnection();",
+        "line": 440,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageSendCommandNetException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getConnection()).thenReturn(conn);",
+        "line": 460,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCompleteCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getHost()).thenReturn(xsHost);",
+        "line": 462,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCompleteCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getConnection();",
+        "line": 467,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMigrateWithStorageCompleteCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getConnection()).thenReturn(conn);",
+        "line": 494,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testXenServer610MigrateVolumeCommandWrapper",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getStorageRepository(conn, uuid)).thenReturn(destinationPool);",
+        "line": 496,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testXenServer610MigrateVolumeCommandWrapper",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getVDIbyUuid(conn, volumePath)).thenReturn(srcVolume);",
+        "line": 497,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testXenServer610MigrateVolumeCommandWrapper",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(xenServer610Resource.getMigrateWait()).thenReturn(120);",
+        "line": 509,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testXenServer610MigrateVolumeCommandWrapper",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(xenServer610Resource, times(1)).getConnection();",
+        "line": 513,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testXenServer610MigrateVolumeCommandWrapper",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

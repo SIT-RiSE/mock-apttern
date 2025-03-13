@@ -1,0 +1,155 @@
+[
+  {
+    "variableName": "clock",
+    "variableType": "Clock",
+    "mockedClass": "Clock",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\JwtBearerReactiveOAuth2AuthorizedClientProviderTests.java",
+      "className": "JwtBearerReactiveOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Clock clock = mock(Clock.class);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenClockSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clock.instant()).willReturn(Instant.now());",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenClockSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(clock).instant();",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenClockSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "clock",
+    "variableType": "Clock",
+    "mockedClass": "Clock",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\TokenExchangeOAuth2AuthorizedClientProviderTests.java",
+      "className": "TokenExchangeOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Clock clock = mock(Clock.class);",
+        "line": 384,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenClockSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clock.instant()).willReturn(Instant.now());",
+        "line": 385,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenClockSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(clock).instant();",
+        "line": 396,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenClockSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "clock",
+    "variableType": "Clock",
+    "mockedClass": "Clock",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\TokenExchangeReactiveOAuth2AuthorizedClientProviderTests.java",
+      "className": "TokenExchangeReactiveOAuth2AuthorizedClientProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Clock clock = mock(Clock.class);",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenClockSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clock.instant()).willReturn(Instant.now());",
+        "line": 390,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenClockSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(clock).instant();",
+        "line": 401,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authorizeWhenClockSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

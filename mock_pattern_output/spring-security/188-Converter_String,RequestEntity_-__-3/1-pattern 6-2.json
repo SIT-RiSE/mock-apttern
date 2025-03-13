@@ -1,0 +1,110 @@
+[
+  {
+    "variableName": "requestEntityConverter",
+    "variableType": "Converter<String,RequestEntity<?>>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\NimbusOpaqueTokenIntrospectorTests.java",
+      "className": "NimbusOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<String, RequestEntity<?>> requestEntityConverter = mock(Converter.class);",
+        "line": 302,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setRequestEntityConverterWhenNonNullConverterGivenThenConverterUsed",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(requestEntityConverter.convert(tokenToIntrospect)).willReturn(requestEntity);",
+        "line": 305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setRequestEntityConverterWhenNonNullConverterGivenThenConverterUsed",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(requestEntityConverter).convert(tokenToIntrospect);",
+        "line": 311,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setRequestEntityConverterWhenNonNullConverterGivenThenConverterUsed",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "requestEntityConverter",
+    "variableType": "Converter<String,RequestEntity<?>>",
+    "mockedClass": "Converter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\SpringOpaqueTokenIntrospectorTests.java",
+      "className": "SpringOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<String, RequestEntity<?>> requestEntityConverter = mock(Converter.class);",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setRequestEntityConverterWhenNonNullConverterGivenThenConverterUsed",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(requestEntityConverter.convert(tokenToIntrospect)).willReturn(requestEntity);",
+        "line": 304,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setRequestEntityConverterWhenNonNullConverterGivenThenConverterUsed",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(requestEntityConverter).convert(tokenToIntrospect);",
+        "line": 310,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setRequestEntityConverterWhenNonNullConverterGivenThenConverterUsed",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "mockedStaticNetif",
+    "variableType": "MockedStatic<NetworkInterface>",
+    "mockedClass": "MockedStatic<NetworkInterface>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.common.utils",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-common\\src\\test\\java\\org\\apache\\dubbo\\common\\utils\\NetUtilsInterfaceDisplayNameHasMetaCharactersTest.java",
+      "className": "NetUtilsInterfaceDisplayNameHasMetaCharactersTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// mock static methods of final class NetworkInterface\r\ntry (MockedStatic<NetworkInterface> mockedStaticNetif = Mockito.mockStatic(NetworkInterface.class)) {\r\n    NetworkInterface mockIgnoredNetif = Mockito.mock(NetworkInterface.class);\r\n    NetworkInterface mockSelectedNetif = Mockito.mock(NetworkInterface.class);\r\n    NetworkInterface[] mockNetifs = { mockIgnoredNetif, mockSelectedNetif };\r\n    Enumeration<NetworkInterface> mockEnumIfs = new Enumeration<NetworkInterface>() {\r\n\r\n        private int i = 0;\r\n\r\n        public NetworkInterface nextElement() {\r\n            if (mockNetifs != null && i < mockNetifs.length) {\r\n                NetworkInterface netif = mockNetifs[i++];\r\n                return netif;\r\n            } else {\r\n                throw new NoSuchElementException();\r\n            }\r\n        }\r\n\r\n        public boolean hasMoreElements() {\r\n            return (mockNetifs != null && i < mockNetifs.length);\r\n        }\r\n    };\r\n    InetAddress mockSelectedAddr = Mockito.mock(InetAddress.class);\r\n    InetAddress[] mockAddrs = { mockSelectedAddr };\r\n    Enumeration<InetAddress> mockEnumAddrs = new Enumeration<InetAddress>() {\r\n\r\n        private int i = 0;\r\n\r\n        public InetAddress nextElement() {\r\n            if (mockAddrs != null && i < mockAddrs.length) {\r\n                InetAddress addr = mockAddrs[i++];\r\n                return addr;\r\n            } else {\r\n                throw new NoSuchElementException();\r\n            }\r\n        }\r\n\r\n        public boolean hasMoreElements() {\r\n            return (mockAddrs != null && i < mockAddrs.length);\r\n        }\r\n    };\r\n    // mock static method getNetworkInterfaces\r\n    mockedStaticNetif.when(() -> {\r\n        NetworkInterface.getNetworkInterfaces();\r\n    }).thenReturn(mockEnumIfs);\r\n    Mockito.when(mockIgnoredNetif.isUp()).thenReturn(true);\r\n    Mockito.when(mockIgnoredNetif.getDisplayName()).thenReturn(IGNORED_DISPLAY_NAME_HAS_METACHARACTERS);\r\n    Mockito.when(mockSelectedNetif.isUp()).thenReturn(true);\r\n    Mockito.when(mockSelectedNetif.getDisplayName()).thenReturn(SELECTED_DISPLAY_NAME);\r\n    Mockito.when(mockSelectedNetif.getInetAddresses()).thenReturn(mockEnumAddrs);\r\n    Mockito.when(mockSelectedAddr.isLoopbackAddress()).thenReturn(false);\r\n    Mockito.when(mockSelectedAddr.getHostAddress()).thenReturn(SELECTED_HOST_ADDR);\r\n    Mockito.when(mockSelectedAddr.isReachable(Mockito.anyInt())).thenReturn(true);\r\n    this.setIgnoredInterfaces(IGNORED_DISPLAY_NAME_HAS_METACHARACTERS);\r\n    NetworkInterface newNetworkInterface = NetUtils.findNetworkInterface();\r\n    assertTrue(!IGNORED_DISPLAY_NAME_HAS_METACHARACTERS.equals(newNetworkInterface.getDisplayName()));\r\n} finally {\r\n    // recover the origin ignored interfaces\r\n    this.setIgnoredInterfaces(originIgnoredInterfaces);\r\n}",
+        "line": 40,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIgnoreGivenInterfaceNameWithMetaCharacters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

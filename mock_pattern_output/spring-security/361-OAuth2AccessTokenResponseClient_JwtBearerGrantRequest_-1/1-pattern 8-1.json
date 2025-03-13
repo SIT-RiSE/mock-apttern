@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "jwtBearerTokenResponseClient",
+    "variableType": "OAuth2AccessTokenResponseClient<JwtBearerGrantRequest>",
+    "mockedClass": "OAuth2AccessTokenResponseClient<JwtBearerGrantRequest>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServletOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServletOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate OAuth2AccessTokenResponseClient<JwtBearerGrantRequest> jwtBearerTokenResponseClient;",
+        "line": 152,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.jwtBearerTokenResponseClient.getTokenResponse(any())).willReturn(accessTokenResponse);",
+        "line": 523,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenJwtBearerClientNotAuthorizedThenExchangeToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.jwtBearerTokenResponseClient).getTokenResponse(any());",
+        "line": 548,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenJwtBearerClientNotAuthorizedThenExchangeToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

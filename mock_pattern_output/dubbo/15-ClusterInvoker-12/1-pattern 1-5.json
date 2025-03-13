@@ -1,0 +1,315 @@
+[
+  {
+    "variableName": "invoker2",
+    "variableType": "ClusterInvoker",
+    "mockedClass": "ClusterInvoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.loadbalance",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\loadbalance\\AbstractLoadBalanceTest.java",
+      "className": "AbstractLoadBalanceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClusterInvoker invoker2 = mock(ClusterInvoker.class, Mockito.withSettings().stubOnly());",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRegistryWeight",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getUrl()).willReturn(url2);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRegistryWeight",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(invoker2.getRegistryUrl()).willReturn(registryUrl2);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetRegistryWeight",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "serviceDiscoveryInvoker",
+    "variableType": "ClusterInvoker",
+    "mockedClass": "ClusterInvoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.util",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\util\\ServiceCheckUtilsTest.java",
+      "className": "ServiceCheckUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClusterInvoker serviceDiscoveryInvoker = Mockito.mock(ClusterInvoker.class);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(serviceDiscoveryInvoker.getDirectory()).thenReturn(sdDirectory);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(serviceDiscoveryInvoker.getDirectory()).thenReturn(sdDirectory);",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "invoker",
+    "variableType": "ClusterInvoker",
+    "mockedClass": "ClusterInvoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.command.util",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\command\\util\\ServiceCheckUtilsTest.java",
+      "className": "ServiceCheckUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClusterInvoker invoker = Mockito.mock(ClusterInvoker.class);",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(invoker.getDirectory()).thenReturn(directory);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(invoker.getDirectory()).thenReturn(directory);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetConsumerAddressNum",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "newInvoker",
+    "variableType": "ClusterInvoker",
+    "mockedClass": "ClusterInvoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\DefaultMigrationAddressComparatorTest.java",
+      "className": "DefaultMigrationAddressComparatorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClusterInvoker newInvoker = Mockito.mock(ClusterInvoker.class);",
+        "line": 43,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(newInvoker.getDirectory()).thenReturn(newDirectory);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(newInvoker.getUrl()).thenReturn(url);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(newInvoker.hasProxyInvokers()).thenReturn(false);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(newInvoker.hasProxyInvokers()).thenReturn(true);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "oldInvoker",
+    "variableType": "ClusterInvoker",
+    "mockedClass": "ClusterInvoker",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\DefaultMigrationAddressComparatorTest.java",
+      "className": "DefaultMigrationAddressComparatorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClusterInvoker oldInvoker = Mockito.mock(ClusterInvoker.class);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(oldInvoker.getDirectory()).thenReturn(oldDirectory);",
+        "line": 52,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(oldInvoker.getUrl()).thenReturn(url);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(oldInvoker.hasProxyInvokers()).thenReturn(false);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(oldInvoker.hasProxyInvokers()).thenReturn(true);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

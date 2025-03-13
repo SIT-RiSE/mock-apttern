@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "fcp",
+    "variableType": "FilterChainProxy",
+    "mockedClass": "FilterChainProxy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.debug",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\debug\\DebugFilterTests.java",
+      "className": "DebugFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate FilterChainProxy fcp;",
+        "line": 67,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.fcp).doFilter(this.requestCaptor.capture(), eq(this.response), eq(this.filterChain));",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterProcessesRequests",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.fcp).doFilter(request, this.response, this.filterChain);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterProcessesForwardedRequests",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.fcp).doFilter(fireWalledRequest, this.response, this.filterChain);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterDoesNotWrapWithDebugRequestWrapperAgain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

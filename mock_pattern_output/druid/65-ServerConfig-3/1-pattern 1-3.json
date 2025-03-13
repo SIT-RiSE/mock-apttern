@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "serverConfig",
+    "variableType": "ServerConfig",
+    "mockedClass": "ServerConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.sql.avatica",
+      "filePath": "C:\\java tool\\Apache\\druid\\sql\\src\\test\\java\\org\\apache\\druid\\sql\\avatica\\ErrorHandlerTest.java",
+      "className": "ErrorHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerConfig serverConfig = Mockito.mock(ServerConfig.class);",
+        "line": 37,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testErrorHandlerSanitizesErrorAsExpected",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(serverConfig.getErrorResponseTransformStrategy()).thenReturn(emptyAllowedRegexErrorResponseTransformStrategy);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testErrorHandlerSanitizesErrorAsExpected",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "serverConfig",
+    "variableType": "ServerConfig",
+    "mockedClass": "ServerConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.sql.avatica",
+      "filePath": "C:\\java tool\\Apache\\druid\\sql\\src\\test\\java\\org\\apache\\druid\\sql\\avatica\\ErrorHandlerTest.java",
+      "className": "ErrorHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerConfig serverConfig = Mockito.mock(ServerConfig.class);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testErrorHandlerHasAffectingErrorResponseTransformStrategyReturnsTrueWhenNotUsingNoErrorResponseTransformStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(serverConfig.getErrorResponseTransformStrategy()).thenReturn(emptyAllowedRegexErrorResponseTransformStrategy);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testErrorHandlerHasAffectingErrorResponseTransformStrategyReturnsTrueWhenNotUsingNoErrorResponseTransformStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "serverConfig",
+    "variableType": "ServerConfig",
+    "mockedClass": "ServerConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.sql.avatica",
+      "filePath": "C:\\java tool\\Apache\\druid\\sql\\src\\test\\java\\org\\apache\\druid\\sql\\avatica\\ErrorHandlerTest.java",
+      "className": "ErrorHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerConfig serverConfig = Mockito.mock(ServerConfig.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testErrorHandlerHandlesNonSanitizableExceptionCorrectly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(serverConfig.getErrorResponseTransformStrategy()).thenReturn(emptyAllowedRegexErrorResponseTransformStrategy);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testErrorHandlerHandlesNonSanitizableExceptionCorrectly",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

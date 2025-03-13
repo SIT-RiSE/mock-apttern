@@ -1,0 +1,113 @@
+[
+  {
+    "variableName": "ipAddressDao",
+    "variableType": "IPAddressDao",
+    "mockedClass": "IPAddressDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nIPAddressDao ipAddressDao;",
+        "line": 234,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ipAddressDao.findByIpAndDcId(anyLong(), anyString())).thenReturn(ipAddressVO);",
+        "line": 546,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addPublicNetworkSubnetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ipAddressDao.mark(anyLong(), any(Ip.class))).thenReturn(true);",
+        "line": 547,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addPublicNetworkSubnetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ipAddressDao.findByIpAndDcId(anyLong(), anyString())).thenReturn(ipAddressVO);",
+        "line": 588,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removePublicNetworkSubnetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(ipAddressDao, times(1)).unassignIpAddress(anyLong());",
+        "line": 591,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removePublicNetworkSubnetTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ipAddressDao.findByIpAndDcId(anyLong(), anyString())).thenReturn(ipAddressVO);",
+        "line": 698,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateLoadBalancerTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ipAddressDao.findByIpAndDcId(anyLong(), anyString())).thenReturn(ipAddressVO);",
+        "line": 1621,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSharedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(ipAddressDao.mark(anyLong(), any(Ip.class))).thenReturn(true);",
+        "line": 1622,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSharedNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "variableName": "_networkMdl",
+    "variableType": "NetworkModel",
+    "mockedClass": "NetworkModel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.element",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\element\\VirtualRouterElementTest.java",
+      "className": "VirtualRouterElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate NetworkModel _networkMdl;",
+        "line": 177,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_networkMdl.isProviderEnabledInPhysicalNetwork(0L, \"VirtualRouter\")).thenReturn(true);",
+        "line": 307,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockMgrs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_networkMdl.isProviderSupportServiceInNetwork(testNetwork.getId(), service, Network.Provider.VirtualRouter)).thenReturn(true);",
+        "line": 308,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockMgrs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_networkMdl.isProviderForNetwork(Network.Provider.VirtualRouter, 0L)).thenReturn(true);",
+        "line": 309,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockMgrs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualRouterElement._networkMdl.getPhysicalNetworkId(network)).thenReturn(physicalNetworkId);",
+        "line": 468,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCanHandle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualRouterElement._networkMdl.isProviderEnabledInPhysicalNetwork(physicalNetworkId, Network.Provider.VirtualRouter.getName())).thenReturn(true);",
+        "line": 469,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCanHandle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualRouterElement._networkMdl.isProviderForNetwork(Network.Provider.VirtualRouter, networkId)).thenReturn(true);",
+        "line": 470,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCanHandle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualRouterElement._networkMdl.getPhysicalNetworkId(network)).thenReturn(physicalNetworkId);",
+        "line": 498,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddPasswordAndUserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualRouterElement._networkMdl.isProviderEnabledInPhysicalNetwork(physicalNetworkId, Network.Provider.VirtualRouter.getName())).thenReturn(true);",
+        "line": 499,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddPasswordAndUserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(virtualRouterElement._networkMdl.isProviderSupportServiceInNetwork(networkId, service, Network.Provider.VirtualRouter)).thenReturn(true);",
+        "line": 500,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddPasswordAndUserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 26
+  }
+]

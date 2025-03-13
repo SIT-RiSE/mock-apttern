@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "eventPublisher",
+    "variableType": "AuthorizationEventPublisher",
+    "mockedClass": "AuthorizationEventPublisher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerAfterMethodInterceptorTests.java",
+      "className": "AuthorizationManagerAfterMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthorizationEventPublisher eventPublisher = mock(AuthorizationEventPublisher.class);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenAuthorizationEventPublisherThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(eventPublisher).publishAuthorizationEvent(any(Supplier.class), any(MethodInvocationResult.class), any(AuthorizationDecision.class));",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenAuthorizationEventPublisherThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "eventPublisher",
+    "variableType": "AuthorizationEventPublisher",
+    "mockedClass": "AuthorizationEventPublisher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authorization.method",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authorization\\method\\AuthorizationManagerBeforeMethodInterceptorTests.java",
+      "className": "AuthorizationManagerBeforeMethodInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthorizationEventPublisher eventPublisher = mock(AuthorizationEventPublisher.class);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenAuthorizationEventPublisherThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(eventPublisher).publishAuthorizationEvent(any(Supplier.class), any(MethodInvocation.class), any(AuthorizationDecision.class));",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWhenAuthorizationEventPublisherThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "eventPublisher",
+    "variableType": "AuthorizationEventPublisher",
+    "mockedClass": "AuthorizationEventPublisher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access.intercept",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\intercept\\AuthorizationFilterTests.java",
+      "className": "AuthorizationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthorizationEventPublisher eventPublisher = mock(AuthorizationEventPublisher.class);",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenAuthorizationEventPublisherThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(eventPublisher).publishAuthorizationEvent(any(Supplier.class), any(HttpServletRequest.class), any(AuthorizationDecision.class));",
+        "line": 196,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenAuthorizationEventPublisherThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

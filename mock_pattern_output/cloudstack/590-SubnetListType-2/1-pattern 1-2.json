@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "subnetListType",
+    "variableType": "SubnetListType",
+    "mockedClass": "SubnetListType",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SubnetListType subnetListType = mock(SubnetListType.class);",
+        "line": 1326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenAddressGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(subnetListType.getSubnet()).thenReturn(List.of(subnetType));",
+        "line": 1335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenAddressGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "subnetListType",
+    "variableType": "SubnetListType",
+    "mockedClass": "SubnetListType",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SubnetListType subnetListType = mock(SubnetListType.class);",
+        "line": 1499,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenAddressGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(subnetListType.getSubnet()).thenReturn(List.of(subnetType));",
+        "line": 1508,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenAddressGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

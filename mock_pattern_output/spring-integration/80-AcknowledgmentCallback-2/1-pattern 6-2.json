@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "callback",
+    "variableType": "AcknowledgmentCallback",
+    "mockedClass": "AcknowledgmentCallback",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\endpoint\\MessageSourcePollingTemplateTests.java",
+      "className": "MessageSourcePollingTemplateTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AcknowledgmentCallback callback = mock(AcknowledgmentCallback.class);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckNack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(callback.isAutoAck()).willReturn(true);",
+        "line": 48,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckNack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(callback).acknowledge(Status.ACCEPT);",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckNack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(callback).acknowledge(Status.REJECT);",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckNack",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "callback",
+    "variableType": "AcknowledgmentCallback",
+    "mockedClass": "AcknowledgmentCallback",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\endpoint\\MessageSourcePollingTemplateTests.java",
+      "className": "MessageSourcePollingTemplateTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AcknowledgmentCallback callback = mock(AcknowledgmentCallback.class);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoAutoAck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(callback.isAutoAck()).willReturn(false);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoAutoAck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(callback, never()).acknowledge(Status.ACCEPT);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoAutoAck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(callback, never()).acknowledge(Status.REJECT);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoAutoAck",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

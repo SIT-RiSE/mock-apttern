@@ -1,0 +1,548 @@
+[
+  {
+    "variableName": "securityContextHolderStrategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.concurrent",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\concurrent\\DelegatingSecurityContextCallableTests.java",
+      "className": "DelegatingSecurityContextCallableTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy securityContextHolderStrategy = spy(new MockSecurityContextHolderStrategy());",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callDefaultSecurityContextWithCustomSecurityContextHolderStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(securityContextHolderStrategy, atLeastOnce()).getContext();",
+        "line": 145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callDefaultSecurityContextWithCustomSecurityContextHolderStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "securityContextHolderStrategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.concurrent",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\concurrent\\DelegatingSecurityContextRunnableTests.java",
+      "className": "DelegatingSecurityContextRunnableTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy securityContextHolderStrategy = spy(new MockSecurityContextHolderStrategy());",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callDefaultSecurityContextWithCustomSecurityContextHolderStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(securityContextHolderStrategy, atLeastOnce()).getContext();",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "callDefaultSecurityContextWithCustomSecurityContextHolderStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.core.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\core\\context\\SecurityContextHolderTests.java",
+      "className": "SecurityContextHolderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy delegate = mock(SecurityContextHolderStrategy.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextHolderStrategyWhenCalledThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(delegate).getContext();",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setContextHolderStrategyWhenCalledThenUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "strategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\context\\SecurityContextChannelInterceptorTests.java",
+      "className": "SecurityContextChannelInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy strategy = spy(SecurityContextHolder.getContextHolderStrategy());",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preSendWhenCustomSecurityContextHolderStrategyThenUserSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(strategy).getContext();",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preSendWhenCustomSecurityContextHolderStrategyThenUserSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "strategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\context\\SecurityContextChannelInterceptorTests.java",
+      "className": "SecurityContextChannelInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy strategy = spy(SecurityContextHolder.getContextHolderStrategy());",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "afterSendCompletionWhenCustomSecurityContextHolderStrategyThenNullAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(strategy).clearContext();",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "afterSendCompletionWhenCustomSecurityContextHolderStrategyThenNullAuthentication",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "strategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\context\\SecurityContextChannelInterceptorTests.java",
+      "className": "SecurityContextChannelInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy strategy = spy(SecurityContextHolder.getContextHolderStrategy());",
+        "line": 180,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeHandleWhenCustomSecurityContextHolderStrategyThenUserSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(strategy).getContext();",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeHandleWhenCustomSecurityContextHolderStrategyThenUserSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "strategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\context\\SecurityContextChannelInterceptorTests.java",
+      "className": "SecurityContextChannelInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy strategy = spy(SecurityContextHolder.getContextHolderStrategy());",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "afterMessageHandledWhenCustomSecurityContextHolderStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(strategy).clearContext();",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "afterMessageHandledWhenCustomSecurityContextHolderStrategyThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "strategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.context",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\context\\SecurityContextPropagationChannelInterceptorTests.java",
+      "className": "SecurityContextPropagationChannelInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy strategy = spy(SecurityContextHolder.getContextHolderStrategy());",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preSendWhenCustomSecurityContextHolderStrategyThenUserSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(strategy, times(2)).getContext();",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preSendWhenCustomSecurityContextHolderStrategyThenUserSet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "securityContextHolderStrategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.switchuser",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\switchuser\\SwitchUserFilterTests.java",
+      "className": "SwitchUserFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy securityContextHolderStrategy = spy(new MockSecurityContextHolderStrategy(UsernamePasswordAuthenticationToken.unauthenticated(\"dano\", \"hawaii50\")));",
+        "line": 432,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomSecurityContextRepositoryThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(securityContextHolderStrategy, atLeastOnce()).getContext();",
+        "line": 442,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomSecurityContextRepositoryThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "strategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\UsernamePasswordAuthenticationFilterTests.java",
+      "className": "UsernamePasswordAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy strategy = spy(SecurityContextHolder.getContextHolderStrategy());",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityContextHolderStrategyUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(strategy).setContext(captor.capture());",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityContextHolderStrategyUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "strategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.www",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\www\\BasicAuthenticationFilterTests.java",
+      "className": "BasicAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy strategy = spy(SecurityContextHolder.getContextHolderStrategy());",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityContextHolderStrategyUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(strategy).setContext(captor.capture());",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSecurityContextHolderStrategyUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "securityContextHolderStrategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.www",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\www\\DigestAuthenticationFilterTests.java",
+      "className": "DigestAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy securityContextHolderStrategy = spy(new MockSecurityContextHolderStrategy());",
+        "line": 322,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateUsesCustomSecurityContextHolderStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(securityContextHolderStrategy).setContext(any());",
+        "line": 329,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateUsesCustomSecurityContextHolderStrategy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "securityContextHolderStrategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.concurrent",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\concurrent\\ConcurrentSessionFilterTests.java",
+      "className": "ConcurrentSessionFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy securityContextHolderStrategy = spy(new MockSecurityContextHolderStrategy(new TestingAuthenticationToken(\"user\", \"password\")));",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomSecurityContextHolderStrategyThenHandlersUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(securityContextHolderStrategy).getContext();",
+        "line": 261,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomSecurityContextHolderStrategyThenHandlersUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "strategy",
+    "variableType": "SecurityContextHolderStrategy",
+    "mockedClass": "SecurityContextHolderStrategy",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\FilterChainProxyTests.java",
+      "className": "FilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SecurityContextHolderStrategy strategy = mock(SecurityContextHolderStrategy.class);",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomSecurityContextHolderStrategyClearsSecurityContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(strategy).clearContext();",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenCustomSecurityContextHolderStrategyClearsSecurityContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

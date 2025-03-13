@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "meshEnvListener1",
+    "variableType": "MeshEnvListener",
+    "mockedClass": "MeshEnvListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.cluster.router.mesh.route",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-cluster\\src\\test\\java\\org\\apache\\dubbo\\rpc\\cluster\\router\\mesh\\route\\MeshRuleManagerTest.java",
+      "className": "MeshRuleManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MeshEnvListener meshEnvListener1 = Mockito.mock(MeshEnvListener.class);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegister3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(meshEnvListener1.isEnable()).thenReturn(false);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegister3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

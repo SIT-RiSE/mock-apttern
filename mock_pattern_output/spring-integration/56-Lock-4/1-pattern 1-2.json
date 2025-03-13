@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "firstLock",
+    "variableType": "Lock",
+    "mockedClass": "Lock",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.support.leader",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\support\\leader\\LockRegistryLeaderInitiatorTests.java",
+      "className": "LockRegistryLeaderInitiatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Lock firstLock = mock(Lock.class);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "competingWithLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(firstLock.tryLock(anyLong(), any(TimeUnit.class))).willAnswer(i -> firstLocked.get());",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "competingWithLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "secondLock",
+    "variableType": "Lock",
+    "mockedClass": "Lock",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.support.leader",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\support\\leader\\LockRegistryLeaderInitiatorTests.java",
+      "className": "LockRegistryLeaderInitiatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Lock secondLock = mock(Lock.class);",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "competingWithLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(secondLock.tryLock(anyLong(), any(TimeUnit.class))).willAnswer(i -> !firstLocked.get());",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "competingWithLock",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

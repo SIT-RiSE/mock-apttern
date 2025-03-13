@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "runner",
+    "variableType": "QueryRunner",
+    "mockedClass": "QueryRunner",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.cli",
+      "filePath": "C:\\java tool\\Apache\\druid\\services\\src\\test\\java\\org\\apache\\druid\\cli\\DumpSegmentTest.java",
+      "className": "DumpSegmentTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "QueryRunner runner = Mockito.mock(QueryRunner.class);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteQuery",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

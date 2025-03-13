@@ -1,0 +1,547 @@
+[
+  {
+    "variableName": "authorizationRequestResolver",
+    "variableType": "OAuth2AuthorizationRequestResolver",
+    "mockedClass": "OAuth2AuthorizationRequestResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Global Init in @Before\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\oauth2\\client\\OAuth2ClientConfigurerTests.java",
+      "className": "OAuth2ClientConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private static OAuth2AuthorizationRequestResolver authorizationRequestResolver;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = new DefaultOAuth2AuthorizationRequestResolver(clientRegistrationRepository, \"/oauth2/authorization\");",
+        "line": 137,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestResolver.resolve(any())).willAnswer((invocation) -> defaultAuthorizationRequestResolver.resolve(invocation.getArgument(0)));",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizationRequestResolver).resolve(any());",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestResolver.resolve(any())).willAnswer((invocation) -> defaultAuthorizationRequestResolver.resolve(invocation.getArgument(0)));",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizationRequestResolver).resolve(any());",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 40
+  },
+  {
+    "variableName": "authorizationRequestResolver",
+    "variableType": "OAuth2AuthorizationRequestResolver",
+    "mockedClass": "OAuth2AuthorizationRequestResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Global Init in @Before\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\oauth2\\client\\OAuth2ClientConfigurerTests.java",
+      "className": "OAuth2ClientConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private static OAuth2AuthorizationRequestResolver authorizationRequestResolver;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = new DefaultOAuth2AuthorizationRequestResolver(clientRegistrationRepository, \"/oauth2/authorization\");",
+        "line": 137,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestResolver.resolve(any())).willAnswer((invocation) -> defaultAuthorizationRequestResolver.resolve(invocation.getArgument(0)));",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizationRequestResolver).resolve(any());",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestResolver.resolve(any())).willAnswer((invocation) -> defaultAuthorizationRequestResolver.resolve(invocation.getArgument(0)));",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizationRequestResolver).resolve(any());",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 40
+  },
+  {
+    "variableName": "authorizationRequestResolver",
+    "variableType": "OAuth2AuthorizationRequestResolver",
+    "mockedClass": "OAuth2AuthorizationRequestResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Global Init in @Before\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\oauth2\\client\\OAuth2ClientConfigurerTests.java",
+      "className": "OAuth2ClientConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private static OAuth2AuthorizationRequestResolver authorizationRequestResolver;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = new DefaultOAuth2AuthorizationRequestResolver(clientRegistrationRepository, \"/oauth2/authorization\");",
+        "line": 137,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestResolver.resolve(any())).willAnswer((invocation) -> defaultAuthorizationRequestResolver.resolve(invocation.getArgument(0)));",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizationRequestResolver).resolve(any());",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestResolver.resolve(any())).willAnswer((invocation) -> defaultAuthorizationRequestResolver.resolve(invocation.getArgument(0)));",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizationRequestResolver).resolve(any());",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 40
+  },
+  {
+    "variableName": "authorizationRequestResolver",
+    "variableType": "OAuth2AuthorizationRequestResolver",
+    "mockedClass": "OAuth2AuthorizationRequestResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Global Init in @Before\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\oauth2\\client\\OAuth2ClientConfigurerTests.java",
+      "className": "OAuth2ClientConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private static OAuth2AuthorizationRequestResolver authorizationRequestResolver;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = new DefaultOAuth2AuthorizationRequestResolver(clientRegistrationRepository, \"/oauth2/authorization\");",
+        "line": 137,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestResolver.resolve(any())).willAnswer((invocation) -> defaultAuthorizationRequestResolver.resolve(invocation.getArgument(0)));",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizationRequestResolver).resolve(any());",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestResolver.resolve(any())).willAnswer((invocation) -> defaultAuthorizationRequestResolver.resolve(invocation.getArgument(0)));",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizationRequestResolver).resolve(any());",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 40
+  },
+  {
+    "variableName": "authorizationRequestResolver",
+    "variableType": "OAuth2AuthorizationRequestResolver",
+    "mockedClass": "OAuth2AuthorizationRequestResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\u2014 Global Init in @Before\n\u2014 Lazy-init via Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers.oauth2.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\oauth2\\client\\OAuth2ClientConfigurerTests.java",
+      "className": "OAuth2ClientConfigurerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private static OAuth2AuthorizationRequestResolver authorizationRequestResolver;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = new DefaultOAuth2AuthorizationRequestResolver(clientRegistrationRepository, \"/oauth2/authorization\");",
+        "line": 137,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestResolver.resolve(any())).willAnswer((invocation) -> defaultAuthorizationRequestResolver.resolve(invocation.getArgument(0)));",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizationRequestResolver).resolve(any());",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverSetThenAuthorizationRequestIncludesCustomParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizationRequestResolver = mock(OAuth2AuthorizationRequestResolver.class);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationRequestResolver.resolve(any())).willAnswer((invocation) -> defaultAuthorizationRequestResolver.resolve(invocation.getArgument(0)));",
+        "line": 293,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authorizationRequestResolver).resolve(any());",
+        "line": 301,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureWhenCustomAuthorizationRequestResolverBeanPresentThenAuthorizationRequestResolverUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 40
+  }
+]

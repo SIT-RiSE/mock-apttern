@@ -1,0 +1,83 @@
+[
+  {
+    "variableName": "handler",
+    "variableType": "SegmentLoadDropHandler",
+    "mockedClass": "SegmentLoadDropHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordination",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordination\\SegmentLoadDropHandlerTest.java",
+      "className": "SegmentLoadDropHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SegmentLoadDropHandler handler = new SegmentLoadDropHandler(jsonMapper, new SegmentLoaderConfig() {\r\n\r\n    @Override\r\n    public File getInfoDir() {\r\n        return infoDir;\r\n    }\r\n\r\n    @Override\r\n    public int getNumLoadingThreads() {\r\n        return 5;\r\n    }\r\n\r\n    @Override\r\n    public List<StorageLocationConfig> getLocations() {\r\n        return locations;\r\n    }\r\n\r\n    @Override\r\n    public int getAnnounceIntervalMillis() {\r\n        return 50;\r\n    }\r\n}, announcer, Mockito.mock(DataSegmentServerAnnouncer.class), segmentManager, segmentCacheManager, new ServerTypeConfig(ServerType.HISTORICAL));",
+        "line": 415,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStartStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "segmentLoadDropHandler",
+    "variableType": "SegmentLoadDropHandler",
+    "mockedClass": "SegmentLoadDropHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordination",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordination\\SegmentLoadDropHandlerTest.java",
+      "className": "SegmentLoadDropHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SegmentLoadDropHandler segmentLoadDropHandler = new SegmentLoadDropHandler(jsonMapper, segmentLoaderConfig, announcer, Mockito.mock(DataSegmentServerAnnouncer.class), segmentManager, segmentCacheManager, scheduledExecutorFactory.create(5, \"SegmentLoadDropHandlerTest-[%d]\"), new ServerTypeConfig(ServerType.HISTORICAL));",
+        "line": 525,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchDuplicateLoadRequestsWhenFirstRequestFailsSecondRequestShouldSucceed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "segmentLoadDropHandler",
+    "variableType": "SegmentLoadDropHandler",
+    "mockedClass": "SegmentLoadDropHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordination",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordination\\SegmentLoadDropHandlerTest.java",
+      "className": "SegmentLoadDropHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SegmentLoadDropHandler segmentLoadDropHandler = new SegmentLoadDropHandler(jsonMapper, noAnnouncerSegmentLoaderConfig, announcer, Mockito.mock(DataSegmentServerAnnouncer.class), segmentManager, segmentCacheManager, scheduledExecutorFactory.create(5, \"SegmentLoadDropHandlerTest-[%d]\"), new ServerTypeConfig(ServerType.HISTORICAL));",
+        "line": 572,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessBatchLoadDropLoadSequenceForSameSegment",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

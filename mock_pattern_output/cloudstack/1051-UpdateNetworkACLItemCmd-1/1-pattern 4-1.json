@@ -1,0 +1,497 @@
+[
+  {
+    "variableName": "updateNetworkACLItemCmdMock",
+    "variableType": "UpdateNetworkACLItemCmd",
+    "mockedClass": "UpdateNetworkACLItemCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UpdateNetworkACLItemCmd updateNetworkACLItemCmdMock;",
+        "line": 92,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getNumber()).thenReturn(aclNumberToUpdate);",
+        "line": 749,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNumberOfAcltoBeUpdatedAlreadyInUse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.isPartialUpgrade()).thenReturn(true);",
+        "line": 761,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getNumber()).thenReturn(null);",
+        "line": 762,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getSourcePortStart()).thenReturn(null);",
+        "line": 763,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getSourcePortEnd()).thenReturn(null);",
+        "line": 764,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getSourceCidrList()).thenReturn(null);",
+        "line": 765,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getProtocol()).thenReturn(null);",
+        "line": 766,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getIcmpCode()).thenReturn(null);",
+        "line": 767,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getIcmpType()).thenReturn(null);",
+        "line": 768,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getAction()).thenReturn(null);",
+        "line": 769,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getTrafficType()).thenReturn(null);",
+        "line": 770,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getCustomId()).thenReturn(null);",
+        "line": 771,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getReason()).thenReturn(null);",
+        "line": 772,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.isDisplay()).thenReturn(false);",
+        "line": 774,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.isPartialUpgrade()).thenReturn(false);",
+        "line": 796,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getNumber()).thenReturn(null);",
+        "line": 798,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getSourcePortStart()).thenReturn(null);",
+        "line": 799,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getSourcePortEnd()).thenReturn(null);",
+        "line": 800,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getSourceCidrList()).thenReturn(null);",
+        "line": 801,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getProtocol()).thenReturn(null);",
+        "line": 802,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getIcmpCode()).thenReturn(null);",
+        "line": 803,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getIcmpType()).thenReturn(null);",
+        "line": 804,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getAction()).thenReturn(null);",
+        "line": 805,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getTrafficType()).thenReturn(null);",
+        "line": 806,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getCustomId()).thenReturn(null);",
+        "line": 807,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getReason()).thenReturn(null);",
+        "line": 808,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.isDisplay()).thenReturn(false);",
+        "line": 810,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestNotPartialUpgradeAllValuesNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getNumber()).thenReturn(1);",
+        "line": 832,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getSourcePortStart()).thenReturn(23);",
+        "line": 833,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getSourcePortEnd()).thenReturn(24);",
+        "line": 834,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getSourceCidrList()).thenReturn(cidrsList);",
+        "line": 838,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getProtocol()).thenReturn(\"all\");",
+        "line": 840,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getIcmpCode()).thenReturn(5);",
+        "line": 841,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getIcmpType()).thenReturn(6);",
+        "line": 842,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getAction()).thenReturn(\"deny\");",
+        "line": 843,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getTrafficType()).thenReturn(TrafficType.Egress);",
+        "line": 844,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getCustomId()).thenReturn(\"customUuid\");",
+        "line": 845,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.getReason()).thenReturn(\"reason\");",
+        "line": 846,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(updateNetworkACLItemCmdMock.isDisplay()).thenReturn(true);",
+        "line": 848,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "transferDataToNetworkAclRulePojoTestAllValuesWithUpdateData",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

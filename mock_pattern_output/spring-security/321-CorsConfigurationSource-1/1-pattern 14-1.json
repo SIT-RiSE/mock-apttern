@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "source",
+    "variableType": "CorsConfigurationSource",
+    "mockedClass": "CorsConfigurationSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\CorsSpecTests.java",
+      "className": "CorsSpecTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate CorsConfigurationSource source;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.source.getCorsConfiguration(any())).willReturn(value);",
+        "line": 72,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "givenGetCorsConfigurationWillReturnWildcard",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  }
+]

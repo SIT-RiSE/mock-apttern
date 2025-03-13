@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "selector",
+    "variableType": "BaseObjectColumnValueSelector<List<String>>",
+    "mockedClass": "BaseObjectColumnValueSelector<List<String>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.frame.field",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\frame\\field\\StringArrayFieldWriterTest.java",
+      "className": "StringArrayFieldWriterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\npublic BaseObjectColumnValueSelector<List<String>> selector;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(selector.getObject()).thenReturn(values);",
+        "line": 118,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockSelector",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 11
+  }
+]

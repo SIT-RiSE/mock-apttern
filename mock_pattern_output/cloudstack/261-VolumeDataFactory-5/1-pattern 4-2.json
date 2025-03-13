@@ -1,0 +1,78 @@
+[
+  {
+    "variableName": "volumeDataFactory",
+    "variableType": "VolumeDataFactory",
+    "mockedClass": "VolumeDataFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\KvmNonManagedStorageSystemDataMotionTest.java",
+      "className": "KvmNonManagedStorageSystemDataMotionTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VolumeDataFactory volumeDataFactory;",
+        "line": 100,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(volumeDataFactory.getVolume(Mockito.anyLong(), Mockito.any(DataStore.class))).thenReturn(destVolumeInfo);",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureAndTestcopyTemplateToTargetStorageIfNeeded",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "volFactory",
+    "variableType": "VolumeDataFactory",
+    "mockedClass": "VolumeDataFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\snapshot\\SnapshotServiceImplTest.java",
+      "className": "SnapshotServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVolumeDataFactory volFactory;",
+        "line": 56,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volFactory.getVolume(1L, DataStoreRole.Primary)).thenReturn(volumeInfo);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotWithNoPrimaryStorageEntry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

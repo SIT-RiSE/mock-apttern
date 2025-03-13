@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "timeSelectorForPairs",
+    "variableType": "BaseLongVectorValueSelector",
+    "mockedClass": "BaseLongVectorValueSelector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\u2014 Global Init in @Before\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.query.aggregation.first",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\query\\aggregation\\first\\StringFirstVectorAggregatorTest.java",
+      "className": "StringFirstVectorAggregatorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate BaseLongVectorValueSelector timeSelectorForPairs;",
+        "line": 75,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "timeSelectorForPairs = new BaseLongVectorValueSelector(new NoFilterVectorOffset(timesSame.length, 0, timesSame.length)) {\r\n\r\n    @Override\r\n    public long[] getLongVector() {\r\n        return timesSame;\r\n    }\r\n\r\n    @Nullable\r\n    @Override\r\n    public boolean[] getNullVector() {\r\n        return null;\r\n    }\r\n};",
+        "line": 131,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 27
+  },
+  {
+    "variableName": "timeSelector",
+    "variableType": "BaseLongVectorValueSelector",
+    "mockedClass": "BaseLongVectorValueSelector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\u2014 Global Init in @Before\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.query.aggregation.first",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\query\\aggregation\\first\\StringFirstVectorAggregatorTest.java",
+      "className": "StringFirstVectorAggregatorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate BaseLongVectorValueSelector timeSelector;",
+        "line": 73,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "timeSelector = new BaseLongVectorValueSelector(new NoFilterVectorOffset(times.length, 0, times.length)) {\r\n\r\n    @Override\r\n    public long[] getLongVector() {\r\n        return times;\r\n    }\r\n\r\n    @Nullable\r\n    @Override\r\n    public boolean[] getNullVector() {\r\n        return null;\r\n    }\r\n};",
+        "line": 94,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 27
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "root",
+    "variableType": "WebSecurityExpressionRoot",
+    "mockedClass": "WebSecurityExpressionRoot",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\expression\\WebSecurityExpressionRootTests.java",
+      "className": "WebSecurityExpressionRootTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebSecurityExpressionRoot root = new WebSecurityExpressionRoot(mock(Authentication.class), new FilterInvocation(request, mock(HttpServletResponse.class), mock(FilterChain.class)));",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "ipAddressMatchesForEqualIpAddresses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "root",
+    "variableType": "WebSecurityExpressionRoot",
+    "mockedClass": "WebSecurityExpressionRoot",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\expression\\WebSecurityExpressionRootTests.java",
+      "className": "WebSecurityExpressionRootTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebSecurityExpressionRoot root = new WebSecurityExpressionRoot(mock(Authentication.class), new FilterInvocation(request, mock(HttpServletResponse.class), mock(FilterChain.class)));",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addressesInIpRangeMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

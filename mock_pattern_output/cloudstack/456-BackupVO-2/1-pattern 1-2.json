@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "backup",
+    "variableType": "BackupVO",
+    "mockedClass": "BackupVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.backup",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\backup\\veeam\\src\\test\\java\\org\\apache\\cloudstack\\backup\\VeeamBackupProviderTest.java",
+      "className": "VeeamBackupProviderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BackupVO backup = Mockito.mock(BackupVO.class);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestSuccessWhenForcedIsTrueAndHasMoreThanOneBackup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(backup.getId()).thenReturn(1l);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestSuccessWhenForcedIsTrueAndHasMoreThanOneBackup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(backup.getVmId()).thenReturn(1l);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestSuccessWhenForcedIsTrueAndHasMoreThanOneBackup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(backup.getExternalId()).thenReturn(\"abc\");",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestSuccessWhenForcedIsTrueAndHasMoreThanOneBackup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(backup.getZoneId()).thenReturn(3l);",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestSuccessWhenForcedIsTrueAndHasMoreThanOneBackup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "backup2",
+    "variableType": "BackupVO",
+    "mockedClass": "BackupVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.backup",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\backup\\veeam\\src\\test\\java\\org\\apache\\cloudstack\\backup\\VeeamBackupProviderTest.java",
+      "className": "VeeamBackupProviderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "BackupVO backup2 = Mockito.mock(BackupVO.class);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestSuccessWhenForcedIsTrueAndHasMoreThanOneBackup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(backup2.getId()).thenReturn(2l);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestSuccessWhenForcedIsTrueAndHasMoreThanOneBackup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "userDetailsService",
+    "variableType": "ReactiveUserDetailsService",
+    "mockedClass": "ReactiveUserDetailsService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.ott.reactive",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ott\\reactive\\OneTimeTokenReactiveAuthenticationManagerTests.java",
+      "className": "OneTimeTokenReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveUserDetailsService userDetailsService = mock(ReactiveUserDetailsService.class);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenOneTimeTokenAuthenticationTokenIsPresentThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(userDetailsService.findByUsername(eq(USERNAME))).willReturn(Mono.just(testUser));",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenOneTimeTokenAuthenticationTokenIsPresentThenSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

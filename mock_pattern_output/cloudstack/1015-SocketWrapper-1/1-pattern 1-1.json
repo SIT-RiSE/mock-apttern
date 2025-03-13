@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "socketMock",
+    "variableType": "SocketWrapper",
+    "mockedClass": "SocketWrapper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "common",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\console-proxy\\rdpconsole\\src\\test\\java\\common\\ClientTest.java",
+      "className": "ClientTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SocketWrapper socketMock = mock(SocketWrapper.class);",
+        "line": 35,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAssemblePipelineWhenMainElementIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(socketMock.getId()).thenReturn(\"socket\");",
+        "line": 36,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAssemblePipelineWhenMainElementIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

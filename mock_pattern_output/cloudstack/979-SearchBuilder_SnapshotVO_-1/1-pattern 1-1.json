@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "sb",
+    "variableType": "SearchBuilder<SnapshotVO>",
+    "mockedClass": "SearchBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.vmsnapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\vmsnapshot\\VMSnapshotStrategyKVMTest.java",
+      "className": "VMSnapshotStrategyKVMTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SearchBuilder<SnapshotVO> sb = Mockito.mock(SearchBuilder.class);",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindSnapshotByName",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sb.create()).thenReturn(sc);",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFindSnapshotByName",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

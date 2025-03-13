@@ -1,0 +1,242 @@
+[
+  {
+    "variableName": "sessionFactory",
+    "variableType": "SessionFactory<TestLsEntry>",
+    "mockedClass": "SessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "@SuppressWarnings(\"unchecked\")\r\nSessionFactory<TestLsEntry> sessionFactory = mock(SessionFactory.class);",
+        "line": 652,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetTempFileDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sessionFactory.getSession()).thenReturn(new TestSession() {\r\n\r\n    @Override\r\n    public TestLsEntry[] list(String path) {\r\n        return new TestLsEntry[] { new TestLsEntry(\"f1\", 1234, false, false, 12345, \"-rw-r--r--\") };\r\n    }\r\n\r\n    @Override\r\n    public void read(String source, OutputStream outputStream) {\r\n        throw new RuntimeException(\"test remove .writing\");\r\n    }\r\n});",
+        "line": 658,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetTempFileDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "sessionFactory",
+    "variableType": "SessionFactory<TestLsEntry>",
+    "mockedClass": "SessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "@SuppressWarnings(\"unchecked\")\r\nSessionFactory<TestLsEntry> sessionFactory = mock(SessionFactory.class);",
+        "line": 771,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPut",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sessionFactory.getSession()).thenReturn(session);",
+        "line": 792,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPut",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "sessionFactory",
+    "variableType": "SessionFactory<TestLsEntry>",
+    "mockedClass": "SessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "@SuppressWarnings(\"unchecked\")\r\nSessionFactory<TestLsEntry> sessionFactory = mock(SessionFactory.class);",
+        "line": 806,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPutExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sessionFactory.getSession()).thenReturn(session);",
+        "line": 823,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPutExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "sessionFactory",
+    "variableType": "SessionFactory<TestLsEntry>",
+    "mockedClass": "SessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionFactory<TestLsEntry> sessionFactory = mock(SessionFactory.class);",
+        "line": 868,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMput",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sessionFactory.getSession()).thenReturn(session);",
+        "line": 876,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMput",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "sessionFactory",
+    "variableType": "SessionFactory<TestLsEntry>",
+    "mockedClass": "SessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionFactory<TestLsEntry> sessionFactory = mock(SessionFactory.class);",
+        "line": 895,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMputRecursive",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sessionFactory.getSession()).thenReturn(session);",
+        "line": 904,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMputRecursive",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "sessionFactory",
+    "variableType": "SessionFactory<TestLsEntry>",
+    "mockedClass": "SessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionFactory<TestLsEntry> sessionFactory = mock(SessionFactory.class);",
+        "line": 939,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMputCollection",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sessionFactory.getSession()).thenReturn(session);",
+        "line": 944,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMputCollection",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

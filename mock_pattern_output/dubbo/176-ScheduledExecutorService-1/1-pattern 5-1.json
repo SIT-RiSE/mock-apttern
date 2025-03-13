@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "scheduledExecutorService",
+    "variableType": "ScheduledExecutorService",
+    "mockedClass": "ScheduledExecutorService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-api\\src\\test\\java\\org\\apache\\dubbo\\config\\ServiceConfigTest.java",
+      "className": "ServiceConfigTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ScheduledExecutorService scheduledExecutorService = Mockito.spy(Executors.newScheduledThreadPool(1));",
+        "line": 646,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMappingNoRetry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(scheduledExecutorService, times(0)).schedule((Runnable) any(), anyLong(), any());",
+        "line": 695,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMappingNoRetry",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

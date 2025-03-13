@@ -1,0 +1,27 @@
+[
+  {
+    "variableName": "socketMock",
+    "variableType": "SSLServerSocket",
+    "mockedClass": "SSLServerSocket",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.cluster",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\cluster\\src\\test\\java\\com\\cloud\\cluster\\ClusterServiceServletContainerTest.java",
+      "className": "ClusterServiceServletContainerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SSLServerSocket socketMock = Mockito.mock(SSLServerSocket.class);",
+        "line": 52,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "runGetSecuredServerSocket",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 22
+  }
+]

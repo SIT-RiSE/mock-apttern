@@ -1,0 +1,220 @@
+[
+  {
+    "variableName": "store",
+    "variableType": "Store",
+    "mockedClass": "Store",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Store store = mock(Store.class);",
+        "line": 641,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIdleChannelAdapterException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(store.isConnected()).willReturn(true);",
+        "line": 642,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIdleChannelAdapterException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "store",
+    "variableType": "Store",
+    "mockedClass": "Store",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Store store = mock(Store.class);",
+        "line": 680,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoInitialIdleDelayWhenRecentNotSupported",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(store.isConnected()).willReturn(true);",
+        "line": 681,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoInitialIdleDelayWhenRecentNotSupported",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(store.getFolder(Mockito.any(URLName.class))).willReturn(folder);",
+        "line": 682,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoInitialIdleDelayWhenRecentNotSupported",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "store",
+    "variableType": "Store",
+    "mockedClass": "Store",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Store store = mock(Store.class);",
+        "line": 749,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInitialIdleDelayWhenRecentIsSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(store.isConnected()).willReturn(true);",
+        "line": 750,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInitialIdleDelayWhenRecentIsSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(store.getFolder(Mockito.any(URLName.class))).willReturn(folder);",
+        "line": 751,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInitialIdleDelayWhenRecentIsSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "store",
+    "variableType": "Store",
+    "mockedClass": "Store",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Store store = mock(Store.class);",
+        "line": 809,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImapLifecycleForRaceCondition",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(store.getFolder(Mockito.any(URLName.class))).willReturn(folder);",
+        "line": 814,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testImapLifecycleForRaceCondition",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "store",
+    "variableType": "Store",
+    "mockedClass": "Store",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Store store = mock(Store.class);",
+        "line": 889,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachmentsGuts",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(store.getFolder(Mockito.any(URLName.class))).willReturn(folder);",
+        "line": 896,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAttachmentsGuts",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

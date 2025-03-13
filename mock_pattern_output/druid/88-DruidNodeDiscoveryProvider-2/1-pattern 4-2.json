@@ -1,0 +1,152 @@
+[
+  {
+    "variableName": "discoveryProvider",
+    "variableType": "DruidNodeDiscoveryProvider",
+    "mockedClass": "DruidNodeDiscoveryProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.rpc",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\rpc\\DiscoveryServiceLocatorTest.java",
+      "className": "DiscoveryServiceLocatorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\npublic DruidNodeDiscoveryProvider discoveryProvider;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(discoveryProvider.getForNodeRole(NodeRole.BROKER)).thenReturn(discovery);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_initializeEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(discoveryProvider.getForNodeRole(NodeRole.BROKER)).thenReturn(discovery);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_initializeNonEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(discoveryProvider.getForNodeRole(NodeRole.BROKER)).thenReturn(discovery);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_removeAfterAdd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(discoveryProvider.getForNodeRole(NodeRole.BROKER)).thenReturn(discovery);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_closed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "discoveryProvider",
+    "variableType": "DruidNodeDiscoveryProvider",
+    "mockedClass": "DruidNodeDiscoveryProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.rpc",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\rpc\\DiscoveryServiceLocatorTest.java",
+      "className": "DiscoveryServiceLocatorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\npublic DruidNodeDiscoveryProvider discoveryProvider;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(discoveryProvider.getForNodeRole(NodeRole.BROKER)).thenReturn(discovery);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_initializeEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(discoveryProvider.getForNodeRole(NodeRole.BROKER)).thenReturn(discovery);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_initializeNonEmpty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(discoveryProvider.getForNodeRole(NodeRole.BROKER)).thenReturn(discovery);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_removeAfterAdd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(discoveryProvider.getForNodeRole(NodeRole.BROKER)).thenReturn(discovery);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_locate_closed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

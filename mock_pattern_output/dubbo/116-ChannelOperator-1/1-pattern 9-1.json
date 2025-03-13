@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "channelOperator",
+    "variableType": "ChannelOperator",
+    "mockedClass": "ChannelOperator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.protocol.dubbo.pu",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-dubbo\\src\\test\\java\\org\\apache\\dubbo\\rpc\\protocol\\dubbo\\pu\\DubboWireProtocolTest.java",
+      "className": "DubboWireProtocolTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ChannelOperator channelOperator;",
+        "line": 38,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(channelOperator).configChannelHandler(handlers);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigServerProtocolHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

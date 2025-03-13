@@ -1,0 +1,377 @@
+[
+  {
+    "variableName": "receiver",
+    "variableType": "AbstractMailReceiver",
+    "mockedClass": "AbstractMailReceiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractMailReceiver receiver = new ImapMailReceiver();",
+        "line": 422,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMarkAsReadAndDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "receiver = spy(receiver);",
+        "line": 425,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMarkAsReadAndDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(receiver, times(2)).deleteMessages(Mockito.any());",
+        "line": 456,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMarkAsReadAndDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "receiver",
+    "variableType": "AbstractMailReceiver",
+    "mockedClass": "AbstractMailReceiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractMailReceiver receiver = new ImapMailReceiver();",
+        "line": 461,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDontMarkAsRead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "receiver = spy(receiver);",
+        "line": 463,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDontMarkAsRead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  },
+  {
+    "variableName": "receiver",
+    "variableType": "AbstractMailReceiver",
+    "mockedClass": "AbstractMailReceiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractMailReceiver receiver = new ImapMailReceiver();",
+        "line": 491,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDontMarkAsReadButDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "receiver = spy(receiver);",
+        "line": 494,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDontMarkAsReadButDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  },
+  {
+    "variableName": "receiver",
+    "variableType": "AbstractMailReceiver",
+    "mockedClass": "AbstractMailReceiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractMailReceiver receiver = new ImapMailReceiver();",
+        "line": 531,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndIgnoreMarkAsReadDontDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "receiver = spy(receiver);",
+        "line": 532,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndIgnoreMarkAsReadDontDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(receiver, times(0)).deleteMessages(Mockito.any());",
+        "line": 561,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndIgnoreMarkAsReadDontDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  },
+  {
+    "variableName": "receiver",
+    "variableType": "AbstractMailReceiver",
+    "mockedClass": "AbstractMailReceiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\ImapMailReceiverTests.java",
+      "className": "ImapMailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractMailReceiver receiver = new ImapMailReceiver();",
+        "line": 569,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageHistory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "receiver = spy(receiver);",
+        "line": 570,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMessageHistory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  },
+  {
+    "variableName": "receiver",
+    "variableType": "AbstractMailReceiver",
+    "mockedClass": "AbstractMailReceiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\Pop3MailReceiverTests.java",
+      "className": "Pop3MailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractMailReceiver receiver = new Pop3MailReceiver();",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "receiver = spy(receiver);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  },
+  {
+    "variableName": "receiver",
+    "variableType": "AbstractMailReceiver",
+    "mockedClass": "AbstractMailReceiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\Pop3MailReceiverTests.java",
+      "className": "Pop3MailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractMailReceiver receiver = new Pop3MailReceiver();",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDontDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "receiver = spy(receiver);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDontDelete",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  },
+  {
+    "variableName": "receiver",
+    "variableType": "AbstractMailReceiver",
+    "mockedClass": "AbstractMailReceiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\Pop3MailReceiverTests.java",
+      "className": "Pop3MailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractMailReceiver receiver = new Pop3MailReceiver(\"pop3://some.host\");",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDontSetDeleteWithUrl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "receiver = spy(receiver);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDontSetDeleteWithUrl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  },
+  {
+    "variableName": "receiver",
+    "variableType": "AbstractMailReceiver",
+    "mockedClass": "AbstractMailReceiver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.mail",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mail\\src\\test\\java\\org\\springframework\\integration\\mail\\Pop3MailReceiverTests.java",
+      "className": "Pop3MailReceiverTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractMailReceiver receiver = new Pop3MailReceiver();",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDontSetDeleteWithoutUrl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "receiver = spy(receiver);",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveAndDontSetDeleteWithoutUrl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  }
+]

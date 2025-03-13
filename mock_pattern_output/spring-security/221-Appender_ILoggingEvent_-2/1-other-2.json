@@ -1,0 +1,62 @@
+[
+  {
+    "variableName": "appender",
+    "variableType": "Appender<ILoggingEvent>",
+    "mockedClass": "Appender",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configurers",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configurers\\NamespaceDebugTests.java",
+      "className": "NamespaceDebugTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Appender<ILoggingEvent> appender = mock(Appender.class);",
+        "line": 76,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockAppenderFor",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 17
+  },
+  {
+    "variableName": "appender",
+    "variableType": "Appender<ILoggingEvent>",
+    "mockedClass": "Appender",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\MiscHttpConfigTests.java",
+      "className": "MiscHttpConfigTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Appender<ILoggingEvent> appender = mock(Appender.class);",
+        "line": 826,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "redirectLogsTo",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(appender.isStarted()).willReturn(true);",
+        "line": 827,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "redirectLogsTo",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 20
+  }
+]

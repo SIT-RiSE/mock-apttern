@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "clusterConfigInfo",
+    "variableType": "ClusterConfigInfoEx",
+    "mockedClass": "ClusterConfigInfoEx",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.mo",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\vmware-base\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\mo\\HypervisorHostHelperTest.java",
+      "className": "HypervisorHostHelperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ClusterConfigInfoEx clusterConfigInfo;",
+        "line": 77,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(clusterConfigInfo.getDefaultHardwareVersionKey()).thenReturn(\"vmx-11\");",
+        "line": 929,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetVMHardwareVersionClusterLevel",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(clusterConfigInfo.getDefaultHardwareVersionKey()).thenReturn(null);",
+        "line": 938,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetVMHardwareVersionDatacenterLevel",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(clusterConfigInfo.getDefaultHardwareVersionKey()).thenReturn(null);",
+        "line": 946,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetVMHardwareVersionUnset",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

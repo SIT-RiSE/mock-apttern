@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "pstmt",
+    "variableType": "PreparedStatement",
+    "mockedClass": "PreparedStatement",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.usage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\usage\\src\\test\\java\\com\\cloud\\usage\\UsageSanityCheckerTest.java",
+      "className": "UsageSanityCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PreparedStatement pstmt = Mockito.mock(PreparedStatement.class);",
+        "line": 41,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckItemCountByPstmt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(pstmt.executeQuery()).thenReturn(rs, rs);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckItemCountByPstmt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

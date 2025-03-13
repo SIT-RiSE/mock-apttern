@@ -1,0 +1,208 @@
+[
+  {
+    "variableName": "fileFilterMock2",
+    "variableType": "FileListFilter<File>",
+    "mockedClass": "FileListFilter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.filters",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\filters\\CompositeFileListFilterTests.java",
+      "className": "CompositeFileListFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@SuppressWarnings(\"unchecked\")\r\nprivate final FileListFilter<File> fileFilterMock2 = mock(FileListFilter.class);",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(fileFilterMock2.filterFiles(isA(File[].class))).thenReturn(returnedFiles);",
+        "line": 58,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forwardedToFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(fileFilterMock2).filterFiles(isA(File[].class));",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forwardedToFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(fileFilterMock2.filterFiles(isA(File[].class))).thenReturn(returnedFiles);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forwardedToAddedFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(fileFilterMock2).filterFiles(isA(File[].class));",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forwardedToAddedFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(fileFilterMock2.filterFiles(isA(File[].class))).thenReturn(new ArrayList<>());",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "negative",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(fileFilterMock2, never()).filterFiles(isA(File[].class));",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "excludeFromLaterFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "fileFilterMock1",
+    "variableType": "FileListFilter<File>",
+    "mockedClass": "FileListFilter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.filters",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\filters\\CompositeFileListFilterTests.java",
+      "className": "CompositeFileListFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@SuppressWarnings(\"unchecked\")\r\nprivate final FileListFilter<File> fileFilterMock1 = mock(FileListFilter.class);",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(fileFilterMock1.filterFiles(isA(File[].class))).thenReturn(returnedFiles);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forwardedToFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(fileFilterMock1).filterFiles(isA(File[].class));",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forwardedToFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(fileFilterMock1.filterFiles(isA(File[].class))).thenReturn(returnedFiles);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forwardedToAddedFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(fileFilterMock1).filterFiles(isA(File[].class));",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "forwardedToAddedFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(fileFilterMock1.filterFiles(isA(File[].class))).thenReturn(new ArrayList<>());",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "negative",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(this.fileFilterMock1.filterFiles(isA(File[].class))).thenReturn(noFiles);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "excludeFromLaterFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(fileFilterMock1).filterFiles(isA(File[].class));",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "excludeFromLaterFilters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

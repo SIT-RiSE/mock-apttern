@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "LdapContext",
+    "mockedClass": "LdapContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.security.authentication.validator",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-core\\druid-basic-security\\src\\test\\java\\org\\apache\\druid\\security\\authentication\\validator\\LDAPCredentialsValidatorTest.java",
+      "className": "MockContextFactory"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "LdapContext context = Mockito.mock(LdapContext.class);",
+        "line": 105,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "getInitialContext",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(context.search(ArgumentMatchers.eq(LDAP_CONFIG.getBaseDn()), ArgumentMatchers.eq(StringUtils.format(LDAP_CONFIG.getUserSearch(), encodedUsername)), ArgumentMatchers.any(SearchControls.class))).thenReturn(new NamingEnumeration<SearchResult>() {\r\n\r\n    @Override\r\n    public SearchResult next() {\r\n        return results.next();\r\n    }\r\n\r\n    @Override\r\n    public boolean hasMore() {\r\n        return results.hasNext();\r\n    }\r\n\r\n    @Override\r\n    public void close() {\r\n        // No-op\r\n    }\r\n\r\n    @Override\r\n    public boolean hasMoreElements() {\r\n        return results.hasNext();\r\n    }\r\n\r\n    @Override\r\n    public SearchResult nextElement() {\r\n        return results.next();\r\n    }\r\n});",
+        "line": 112,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "getInitialContext",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

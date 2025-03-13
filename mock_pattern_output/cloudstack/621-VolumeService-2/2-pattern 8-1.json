@@ -1,0 +1,124 @@
+[
+  {
+    "variableName": "volumeServiceMock",
+    "variableType": "VolumeService",
+    "mockedClass": "VolumeService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VolumeService volumeServiceMock;",
+        "line": 172,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeServiceMock.takeSnapshot(Mockito.any(VolumeInfo.class))).thenReturn(snapshotInfoMock);",
+        "line": 547,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTakeSnapshotF2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeServiceMock, Mockito.times(1)).destroyVolume(volumeMockId);",
+        "line": 883,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "destroyVolumeIfPossibleTestVolumeStateReady",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeServiceMock, Mockito.times(0)).destroyVolume(volumeMockId);",
+        "line": 887,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "verifyMocksForTestDestroyVolumeWhenVolumeIsNotInRightState",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeServiceMock, Mockito.times(0)).expungeVolumeAsync(volumeInfoMock);",
+        "line": 908,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "expungeVolumesInPrimaryStorageIfNeededTestVolumeNotInPrimaryDataStore",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeServiceMock, Mockito.times(1)).expungeVolumeAsync(volumeInfoMock);",
+        "line": 919,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "expungeVolumesInPrimaryStorageIfNeededTestVolumeInPrimaryDataStore",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeServiceMock, Mockito.times(0)).expungeVolumeAsync(volumeInfoMock);",
+        "line": 951,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "expungeVolumesInSecondaryStorageIfNeededTestVolumeNotFoundInSecondaryStorage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeServiceMock, Mockito.times(1)).expungeVolumeAsync(volumeInfoMock);",
+        "line": 967,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "expungeVolumesInSecondaryStorageIfNeededTestVolumeFoundInSecondaryStorage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeServiceMock).moveVolumeOnSecondaryStorageToAnotherAccount(volumeVoMock, accountMock, newAccountMock);",
+        "line": 1430,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVolumeAccountTest",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

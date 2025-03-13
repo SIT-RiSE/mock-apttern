@@ -1,0 +1,76 @@
+[
+  {
+    "variableName": "socketAcceptor",
+    "variableType": "SocketAcceptor",
+    "mockedClass": "SocketAcceptor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\core\\PayloadSocketAcceptorInterceptorTests.java",
+      "className": "PayloadSocketAcceptorInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SocketAcceptor socketAcceptor;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.socketAcceptor.accept(any(), any())).willReturn(Mono.just(this.rSocket));",
+        "line": 104,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "captureExchange",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  },
+  {
+    "variableName": "delegate",
+    "variableType": "SocketAcceptor",
+    "mockedClass": "SocketAcceptor",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\core\\PayloadSocketAcceptorTests.java",
+      "className": "PayloadSocketAcceptorTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SocketAcceptor delegate;",
+        "line": 62,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.accept(any(), any())).willReturn(Mono.just(this.rSocket));",
+        "line": 167,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "captureExchange",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 14
+  }
+]

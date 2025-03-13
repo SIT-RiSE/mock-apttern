@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "channelPromise",
+    "variableType": "ChannelPromise",
+    "mockedClass": "ChannelPromise",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.transport.netty4",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-netty4\\src\\test\\java\\org\\apache\\dubbo\\remoting\\transport\\netty4\\NettyChannelTest.java",
+      "className": "NettyChannelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ChannelPromise channelPromise = Mockito.mock(ChannelPromise.class);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channelPromise.await(1000)).thenReturn(true);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channelPromise.cause()).thenReturn(null);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(channelPromise.addListener(Mockito.any())).thenReturn(channelPromise);",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(channelPromise, Mockito.times(1)).addListener(listenerArgumentCaptor.capture());",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

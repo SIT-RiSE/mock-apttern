@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "userVmService",
+    "variableType": "UserVmService",
+    "mockedClass": "UserVmService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\ScaleVMCmdTest.java",
+      "className": "ScaleVMCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserVmService userVmService = Mockito.mock(UserVmService.class);",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmService.upgradeVirtualMachine(scaleVMCmd)).thenReturn(userVm);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userVmService",
+    "variableType": "UserVmService",
+    "mockedClass": "UserVmService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\ScaleVMCmdTest.java",
+      "className": "ScaleVMCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserVmService userVmService = Mockito.mock(UserVmService.class);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmService.upgradeVirtualMachine(scaleVMCmd)).thenReturn(null);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userVmService",
+    "variableType": "UserVmService",
+    "mockedClass": "UserVmService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\UpdateVmNicIpTest.java",
+      "className": "UpdateVmNicIpTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserVmService userVmService = Mockito.mock(UserVmService.class);",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmService.updateNicIpForVirtualMachine(Mockito.any(UpdateVmNicIpCmd.class))).thenReturn(userVm);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "userVmService",
+    "variableType": "UserVmService",
+    "mockedClass": "UserVmService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\UpdateVmNicIpTest.java",
+      "className": "UpdateVmNicIpTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "UserVmService userVmService = Mockito.mock(UserVmService.class);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmService.updateNicIpForVirtualMachine(Mockito.any(UpdateVmNicIpCmd.class))).thenReturn(null);",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

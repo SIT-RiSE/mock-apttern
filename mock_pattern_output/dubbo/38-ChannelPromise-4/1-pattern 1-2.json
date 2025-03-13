@@ -1,0 +1,152 @@
+[
+  {
+    "variableName": "future",
+    "variableType": "ChannelPromise",
+    "mockedClass": "ChannelPromise",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.transport.netty4",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-netty4\\src\\test\\java\\org\\apache\\dubbo\\remoting\\transport\\netty4\\NettyChannelTest.java",
+      "className": "NettyChannelTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ChannelPromise future = Mockito.mock(ChannelPromise.class);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(future.await(1000)).thenReturn(true);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(future.cause()).thenReturn(null);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(future.addListener(Mockito.any())).thenReturn(future);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(future.cause()).thenReturn(exception);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(future.await(1000)).thenReturn(false);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(future.cause()).thenReturn(null);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "future",
+    "variableType": "ChannelPromise",
+    "mockedClass": "ChannelPromise",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.transport.netty4",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-netty4\\src\\test\\java\\org\\apache\\dubbo\\remoting\\transport\\netty4\\NettyClientHandlerTest.java",
+      "className": "NettyClientHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ChannelPromise future = mock(ChannelPromise.class);",
+        "line": 51,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(future.cause()).thenReturn(null);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(future.addListener(Mockito.any())).thenReturn(future);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

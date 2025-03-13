@@ -1,0 +1,305 @@
+[
+  {
+    "variableName": "delegate",
+    "variableType": "RSocket",
+    "mockedClass": "RSocket",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\core\\PayloadInterceptorRSocketTests.java",
+      "className": "PayloadInterceptorRSocketTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nRSocket delegate;",
+        "line": 80,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.fireAndForget(any())).willReturn(this.voidResult.mono());",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "fireAndForgetWhenInterceptorCompletesThenDelegateSubscribed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.fireAndForget(any())).willReturn(Mono.empty());",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "fireAndForgetWhenSecurityContextThenDelegateContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).fireAndForget(this.payload);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "fireAndForgetWhenSecurityContextThenDelegateContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.requestResponse(any())).willReturn(this.payloadResult.mono());",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestResponseWhenInterceptorCompletesThenDelegateSubscribed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).requestResponse(this.payload);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestResponseWhenInterceptorCompletesThenDelegateSubscribed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.delegate);",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestResponseWhenInterceptorErrorsThenDelegateNotInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.requestResponse(any())).willReturn(this.payloadResult.mono());",
+        "line": 205,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestResponseWhenSecurityContextThenDelegateContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).requestResponse(this.payload);",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestResponseWhenSecurityContextThenDelegateContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.requestStream(any())).willReturn(this.payloadResult.flux());",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestStreamWhenInterceptorCompletesThenDelegateSubscribed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.requestStream(any())).willReturn(this.payloadResult.flux());",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestStreamWhenSecurityContextThenDelegateContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).requestStream(this.payload);",
+        "line": 272,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestStreamWhenSecurityContextThenDelegateContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.requestChannel(any())).willReturn(this.payloadResult.flux());",
+        "line": 278,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestChannelWhenInterceptorCompletesThenDelegateSubscribed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).requestChannel(any());",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestChannelWhenInterceptorCompletesThenDelegateSubscribed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.requestChannel(any())).willAnswer((invocation) -> {\r\n    Flux<Payload> input = invocation.getArgument(0);\r\n    return Flux.from(input).switchOnFirst((signal, innerFlux) -> innerFlux.map(Payload::getDataUtf8).transform((data) -> Flux.<String>create((emitter) -> {\r\n        Runnable run = () -> data.subscribe(new CoreSubscriber<String>() {\r\n\r\n            @Override\r\n            public void onSubscribe(Subscription s) {\r\n                s.request(3);\r\n            }\r\n\r\n            @Override\r\n            public void onNext(String s) {\r\n                emitter.next(s);\r\n            }\r\n\r\n            @Override\r\n            public void onError(Throwable t) {\r\n                emitter.error(t);\r\n            }\r\n\r\n            @Override\r\n            public void onComplete() {\r\n                emitter.complete();\r\n            }\r\n        });\r\n        executors.execute(run);\r\n    })).map(DefaultPayload::create));\r\n});",
+        "line": 302,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestChannelWhenInterceptorCompletesThenAllPayloadsRetained",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).requestChannel(any());",
+        "line": 341,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestChannelWhenInterceptorCompletesThenAllPayloadsRetained",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.requestChannel(any())).willReturn(this.payloadResult.flux());",
+        "line": 362,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestChannelWhenSecurityContextThenDelegateContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).requestChannel(any());",
+        "line": 378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "requestChannelWhenSecurityContextThenDelegateContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.metadataPush(any())).willReturn(this.voidResult.mono());",
+        "line": 384,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "metadataPushWhenInterceptorCompletesThenDelegateSubscribed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.metadataPush(any())).willReturn(this.voidResult.mono());",
+        "line": 411,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "metadataPushWhenSecurityContextThenDelegateContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).metadataPush(this.payload);",
+        "line": 423,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "metadataPushWhenSecurityContextThenDelegateContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.fireAndForget(any())).willReturn(this.voidResult.mono());",
+        "line": 432,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "fireAndForgetWhenInterceptorsCompleteThenDelegateInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.delegate.fireAndForget(any())).willReturn(this.voidResult.mono());",
+        "line": 445,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "fireAndForgetWhenInterceptorsMutatesPayloadThenDelegateInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.delegate).fireAndForget(eq(this.payload));",
+        "line": 452,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "fireAndForgetWhenInterceptorsMutatesPayloadThenDelegateInvoked",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

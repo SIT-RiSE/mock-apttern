@@ -1,0 +1,179 @@
+[
+  {
+    "variableName": "connection",
+    "variableType": "XMPPConnection",
+    "mockedClass": "XMPPConnection",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.xmpp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-xmpp\\src\\test\\java\\org\\springframework\\integration\\xmpp\\outbound\\ChatMessageSendingMessageHandlerTests.java",
+      "className": "ChatMessageSendingMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "XMPPConnection connection = mock(XMPPConnection.class);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection, times(1)).sendStanza(Mockito.argThat((org.jivesoftware.smack.packet.Message smackMessage) -> {\r\n    boolean bodyMatches = smackMessage.getBody().equals(\"Test Message\");\r\n    boolean toMatches = smackMessage.getTo().equals(\"kermit@frog.com\");\r\n    return bodyMatches & toMatches;\r\n}));",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// in threaded conversation we need to look for existing chat\r\nverify(connection, times(1)).sendStanza(Mockito.argThat((org.jivesoftware.smack.packet.Message smackMessage) -> {\r\n    boolean bodyMatches = smackMessage.getBody().equals(\"Hello Kitty\");\r\n    boolean toMatches = smackMessage.getTo().equals(\"kermit@frog.com\");\r\n    boolean threadIdMatches = smackMessage.getThread().equals(\"123\");\r\n    return bodyMatches & toMatches & threadIdMatches;\r\n}));",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection, times(1)).sendStanza(Mockito.argThat((org.jivesoftware.smack.packet.Message smackMessage) -> {\r\n    boolean bodyMatches = smackMessage.getBody() == null;\r\n    boolean toMatches = smackMessage.getTo().equals(\"kermit@frog.com\");\r\n    GcmPacketExtension gcmPacketExtension = GcmPacketExtension.from(smackMessage);\r\n    boolean jsonMatches = gcmPacketExtension != null && gcmPacketExtension.getJson().equals(json);\r\n    return bodyMatches & toMatches & jsonMatches;\r\n}));",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendMessages",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "connection",
+    "variableType": "XMPPConnection",
+    "mockedClass": "XMPPConnection",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.xmpp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-xmpp\\src\\test\\java\\org\\springframework\\integration\\xmpp\\outbound\\ChatMessageSendingMessageHandlerTests.java",
+      "className": "ChatMessageSendingMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "XMPPConnection connection = mock(XMPPConnection.class);",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessagePostAsSmackMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection).isConnected();",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessagePostAsSmackMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection).sendStanza(Mockito.argThat((org.jivesoftware.smack.packet.Message m) -> {\r\n    boolean bodyMatches = \"Test Message\".equals(m.getBody());\r\n    boolean toMatches = m.getTo().toString().equals(\"kermit@frog.com\");\r\n    return bodyMatches && toMatches;\r\n}));",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessagePostAsSmackMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// in threaded conversation we need to look for existing chat\r\nverify(connection).isConnected();",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessagePostAsSmackMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection).sendStanza(Mockito.argThat((org.jivesoftware.smack.packet.Message m) -> {\r\n    boolean bodyMatches = \"Hello Kitty\".equals(m.getBody());\r\n    boolean toMatches = \"kermit@frog.com\".equals(m.getTo().toString());\r\n    boolean threadMatches = \"123\".equals(m.getThread());\r\n    return bodyMatches && toMatches && threadMatches;\r\n}));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateMessagePostAsSmackMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "connection",
+    "variableType": "XMPPConnection",
+    "mockedClass": "XMPPConnection",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.xmpp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-xmpp\\src\\test\\java\\org\\springframework\\integration\\xmpp\\outbound\\ChatMessageSendingMessageHandlerTests.java",
+      "className": "ChatMessageSendingMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "XMPPConnection connection = mock(XMPPConnection.class);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExtensionProvider",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(connection).sendStanza(argumentCaptor.capture());",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExtensionProvider",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,1187 @@
+[
+  {
+    "variableName": "factory",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory = mock(AbstractClientConnectionFactory.class);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.isRunning()).thenReturn(true);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.getConnection()).thenReturn(mockConn1).thenReturn(mockConn2);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory = mock(AbstractClientConnectionFactory.class);",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuseNoLimit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.isRunning()).thenReturn(true);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuseNoLimit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.getConnection()).thenReturn(mockConn1).thenReturn(mockConn2);",
+        "line": 166,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuseNoLimit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory = mock(AbstractClientConnectionFactory.class);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuseClosed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.isRunning()).thenReturn(true);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuseClosed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.getConnection()).thenReturn(mockConn1).thenReturn(mockConn2).thenReturn(mockConn1).thenReturn(mockConn2);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReuseClosed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory = mock(AbstractClientConnectionFactory.class);",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLimit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.isRunning()).thenReturn(true);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLimit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.getConnection()).thenReturn(mockConn1).thenReturn(mockConn2);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLimit",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory = mock(AbstractClientConnectionFactory.class);",
+        "line": 232,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.isRunning()).thenReturn(true);",
+        "line": 233,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.getConnection()).thenReturn(mockConn1).thenReturn(mockConn2).thenReturn(makeMockConnection(\"conn\" + (i++)));",
+        "line": 237,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.isRunning()).thenReturn(false);",
+        "line": 253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.isRunning()).thenReturn(true);",
+        "line": 260,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory = mock(AbstractClientConnectionFactory.class);",
+        "line": 270,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnlargePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.isRunning()).thenReturn(true);",
+        "line": 271,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnlargePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.getConnection()).thenReturn(mockConn1, mockConn2, mockConn3, mockConn4);",
+        "line": 276,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEnlargePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory = mock(AbstractClientConnectionFactory.class);",
+        "line": 299,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReducePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.isRunning()).thenReturn(true);",
+        "line": 300,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReducePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.getConnection()).thenReturn(mockConn1).thenReturn(mockConn2).thenReturn(mockConn3).thenReturn(mockConn4);",
+        "line": 305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReducePool",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory2",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory2 = mock(AbstractClientConnectionFactory.class);",
+        "line": 504,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCachedFailover",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.getConnection()).thenReturn(mockConn2);",
+        "line": 511,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCachedFailover",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.isActive()).thenReturn(true);",
+        "line": 513,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCachedFailover",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory1",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\CachingClientConnectionFactoryTests.java",
+      "className": "CachingClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Failover\r\nAbstractClientConnectionFactory factory1 = mock(AbstractClientConnectionFactory.class);",
+        "line": 503,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCachedFailover",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.getConnection()).thenReturn(mockConn1);",
+        "line": 510,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCachedFailover",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.isActive()).thenReturn(true);",
+        "line": 512,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCachedFailover",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory2",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory2 = mock(AbstractClientConnectionFactory.class);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverGood",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.getConnection()).thenReturn(conn2);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverGood",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.isActive()).thenReturn(true);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverGood",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory1",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory1 = mock(AbstractClientConnectionFactory.class);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverGood",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.getConnection()).thenReturn(conn1);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverGood",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.isActive()).thenReturn(true);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverGood",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory2",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory2 = mock(AbstractClientConnectionFactory.class);",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.getConnection()).thenReturn(conn2);",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.isActive()).thenReturn(true);",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory1",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory1 = mock(AbstractClientConnectionFactory.class);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.getConnection()).thenReturn(conn1);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.isActive()).thenReturn(true);",
+        "line": 193,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDead",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory2",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory2 = mock(AbstractClientConnectionFactory.class);",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDeadButOriginalOkAgain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.getConnection()).thenReturn(conn2);",
+        "line": 254,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDeadButOriginalOkAgain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.isActive()).thenReturn(true);",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDeadButOriginalOkAgain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory1",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory1 = mock(AbstractClientConnectionFactory.class);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDeadButOriginalOkAgain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.getConnection()).thenReturn(conn1);",
+        "line": 253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDeadButOriginalOkAgain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.isActive()).thenReturn(true);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverAllDeadButOriginalOkAgain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory2",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory2 = mock(AbstractClientConnectionFactory.class);",
+        "line": 278,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectNone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.getConnection()).thenThrow(new UncheckedIOException(new IOException(\"fail\")));",
+        "line": 283,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectNone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.isActive()).thenReturn(true);",
+        "line": 285,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectNone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory1",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory1 = mock(AbstractClientConnectionFactory.class);",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectNone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.getConnection()).thenThrow(new UncheckedIOException(new IOException(\"fail\")));",
+        "line": 282,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectNone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.isActive()).thenReturn(true);",
+        "line": 284,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectNone",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory2",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory2 = mock(AbstractClientConnectionFactory.class);",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectToFirstAfterTriedAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.getConnection()).thenThrow(new UncheckedIOException(new IOException(\"fail\")));",
+        "line": 305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectToFirstAfterTriedAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.isActive()).thenReturn(true);",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectToFirstAfterTriedAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory1",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory1 = mock(AbstractClientConnectionFactory.class);",
+        "line": 295,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectToFirstAfterTriedAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.getConnection()).thenThrow(new UncheckedIOException(new IOException(\"fail\"))).thenReturn(conn1);",
+        "line": 302,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectToFirstAfterTriedAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.isActive()).thenReturn(true);",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverConnectToFirstAfterTriedAll",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory2",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory2 = mock(AbstractClientConnectionFactory.class);",
+        "line": 319,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOkAgainAfterCompleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.getConnection()).thenReturn(conn2);",
+        "line": 326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOkAgainAfterCompleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory2.isActive()).thenReturn(true);",
+        "line": 328,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOkAgainAfterCompleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory1",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\FailoverClientConnectionFactoryTests.java",
+      "className": "FailoverClientConnectionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractClientConnectionFactory factory1 = mock(AbstractClientConnectionFactory.class);",
+        "line": 318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOkAgainAfterCompleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.getConnection()).thenReturn(conn1);",
+        "line": 325,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOkAgainAfterCompleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.isActive()).thenReturn(true);",
+        "line": 327,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOkAgainAfterCompleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory1",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\TcpOutboundGatewayTests.java",
+      "className": "TcpOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Failover\r\nAbstractClientConnectionFactory factory1 = mock(AbstractClientConnectionFactory.class);",
+        "line": 493,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCachingFailover",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.getConnection()).thenReturn(mockConn1);",
+        "line": 495,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCachingFailover",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory1",
+    "variableType": "AbstractClientConnectionFactory",
+    "mockedClass": "AbstractClientConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\TcpOutboundGatewayTests.java",
+      "className": "TcpOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "// Cache\r\nAbstractClientConnectionFactory factory1 = mock(AbstractClientConnectionFactory.class);",
+        "line": 575,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverCached",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.getConnection()).thenReturn(mockConn1);",
+        "line": 577,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverCached",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory1.isSingleUse()).thenReturn(true);",
+        "line": 578,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailoverCached",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

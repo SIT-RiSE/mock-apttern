@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "volumeToStoragePoolObjectMap",
+    "variableType": "Map<Volume,StoragePool>",
+    "mockedClass": "Map<Volume,StoragePool>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Map<Volume, StoragePool> volumeToStoragePoolObjectMap = Mockito.spy(new HashMap<>());",
+        "line": 502,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "findVolumesThatWereNotMappedByTheUserTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

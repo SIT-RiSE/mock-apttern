@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "authz2",
+    "variableType": "ReactiveAuthorizationManager<PayloadExchangeAuthorizationContext>",
+    "mockedClass": "ReactiveAuthorizationManager<PayloadExchangeAuthorizationContext>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\authorization\\PayloadExchangeMatcherReactiveAuthorizationManagerTests.java",
+      "className": "PayloadExchangeMatcherReactiveAuthorizationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveAuthorizationManager<PayloadExchangeAuthorizationContext> authz2;",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authz2.check(any(), any())).willReturn(Mono.just(expected));",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenSecondMatchThenSecondUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "authz",
+    "variableType": "ReactiveAuthorizationManager<PayloadExchangeAuthorizationContext>",
+    "mockedClass": "ReactiveAuthorizationManager<PayloadExchangeAuthorizationContext>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.authorization",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\authorization\\PayloadExchangeMatcherReactiveAuthorizationManagerTests.java",
+      "className": "PayloadExchangeMatcherReactiveAuthorizationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveAuthorizationManager<PayloadExchangeAuthorizationContext> authz;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authz.check(any(), any())).willReturn(Mono.just(expected));",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenGrantedThenGranted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authz.check(any(), any())).willReturn(Mono.just(expected));",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenDeniedThenDenied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authz.check(any(), any())).willReturn(Mono.just(expected));",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkWhenFirstMatchThenSecondUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

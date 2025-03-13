@@ -1,0 +1,314 @@
+[
+  {
+    "variableName": "client",
+    "variableType": "StatsDClient",
+    "mockedClass": "StatsDClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.emitter.statsd",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\statsd-emitter\\src\\test\\java\\org\\apache\\druid\\emitter\\statsd\\StatsDEmitterTest.java",
+      "className": "StatsDEmitterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StatsDClient client = mock(StatsDClient.class);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConvertRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).gauge(\"broker.query.cache.total.hitRate\", 54);",
+        "line": 55,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConvertRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "StatsDClient",
+    "mockedClass": "StatsDClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.emitter.statsd",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\statsd-emitter\\src\\test\\java\\org\\apache\\druid\\emitter\\statsd\\StatsDEmitterTest.java",
+      "className": "StatsDEmitterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StatsDClient client = mock(StatsDClient.class);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConvertRangeWithDogstatsd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).gauge(\"broker.query.cache.total.hitRate\", 0.54);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConvertRangeWithDogstatsd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "StatsDClient",
+    "mockedClass": "StatsDClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.emitter.statsd",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\statsd-emitter\\src\\test\\java\\org\\apache\\druid\\emitter\\statsd\\StatsDEmitterTest.java",
+      "className": "StatsDEmitterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StatsDClient client = mock(StatsDClient.class);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoConvertRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).time(\"broker.query.time.data-source.groupBy\", 10);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoConvertRange",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "StatsDClient",
+    "mockedClass": "StatsDClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.emitter.statsd",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\statsd-emitter\\src\\test\\java\\org\\apache\\druid\\emitter\\statsd\\StatsDEmitterTest.java",
+      "className": "StatsDEmitterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StatsDClient client = mock(StatsDClient.class);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigOptions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).time(\"brokerHost1#broker#query#time#data-source#groupBy\", 10);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigOptions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "StatsDClient",
+    "mockedClass": "StatsDClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.emitter.statsd",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\statsd-emitter\\src\\test\\java\\org\\apache\\druid\\emitter\\statsd\\StatsDEmitterTest.java",
+      "className": "StatsDEmitterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StatsDClient client = mock(StatsDClient.class);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDogstatsdEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).time(\"broker#query#time\", 10, \"dataSource:data-source\", \"type:groupBy\", \"hostname:brokerHost1\");",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDogstatsdEnabled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "StatsDClient",
+    "mockedClass": "StatsDClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.emitter.statsd",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\statsd-emitter\\src\\test\\java\\org\\apache\\druid\\emitter\\statsd\\StatsDEmitterTest.java",
+      "className": "StatsDEmitterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StatsDClient client = mock(StatsDClient.class);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBlankHolderOptions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).count(\"brokerHost1.broker.jvm.gc.count.G1-GC\", 1);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBlankHolderOptions",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "StatsDClient",
+    "mockedClass": "StatsDClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.emitter.statsd",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\statsd-emitter\\src\\test\\java\\org\\apache\\druid\\emitter\\statsd\\StatsDEmitterTest.java",
+      "className": "StatsDEmitterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StatsDClient client = mock(StatsDClient.class);",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceAsTagOption",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).time(\"druid.query.time\", 10, \"druid_service:druid/broker\", \"dataSource:data-source\", \"type:groupBy\", \"hostname:brokerHost1\");",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testServiceAsTagOption",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "StatsDClient",
+    "mockedClass": "StatsDClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.emitter.statsd",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\statsd-emitter\\src\\test\\java\\org\\apache\\druid\\emitter\\statsd\\StatsDEmitterTest.java",
+      "className": "StatsDEmitterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StatsDClient client = mock(StatsDClient.class);",
+        "line": 193,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAlertEvent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).recordEvent(eventArgumentCaptor.capture(), eq(\"feed:alerts\"), eq(\"druid_service:druid/broker\"), eq(\"severity:anomaly\"), eq(\"hostname:brokerHost1\"));",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAlertEvent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

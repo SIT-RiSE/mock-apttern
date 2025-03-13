@@ -1,0 +1,112 @@
+[
+  {
+    "variableName": "clientResponse",
+    "variableType": "ClientResponse",
+    "mockedClass": "ClientResponse",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\NimbusReactiveOpaqueTokenIntrospectorTests.java",
+      "className": "NimbusReactiveOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientResponse clientResponse = mock(ClientResponse.class);",
+        "line": 272,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientResponse.statusCode()).willReturn(HttpStatus.OK);",
+        "line": 273,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientResponse.bodyToMono(String.class)).willReturn(Mono.just(response));",
+        "line": 274,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientResponse.headers()).willReturn(headers);",
+        "line": 277,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "clientResponse",
+    "variableType": "ClientResponse",
+    "mockedClass": "ClientResponse",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.server.resource.introspection",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-resource-server\\src\\test\\java\\org\\springframework\\security\\oauth2\\server\\resource\\introspection\\SpringReactiveOpaqueTokenIntrospectorTests.java",
+      "className": "SpringReactiveOpaqueTokenIntrospectorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ClientResponse clientResponse = mock(ClientResponse.class);",
+        "line": 273,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientResponse.statusCode()).willReturn(HttpStatus.OK);",
+        "line": 274,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientResponse.bodyToMono(STRING_OBJECT_MAP)).willReturn(Mono.just(response));",
+        "line": 275,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientResponse.headers()).willReturn(headers);",
+        "line": 278,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

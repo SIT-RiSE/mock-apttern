@@ -1,0 +1,221 @@
+[
+  {
+    "variableName": "replyChannel",
+    "variableType": "PollableChannel",
+    "mockedClass": "PollableChannel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\MessagingGatewayTests.java",
+      "className": "MessagingGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final PollableChannel replyChannel = Mockito.mock(PollableChannel.class);",
+        "line": 64,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(replyChannel.receive(30000L)).thenReturn(messageMock);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(replyChannel).receive(30000L);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(replyChannel.receive(30000L)).thenReturn(null);",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage_null",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(replyChannel).receive(30000L);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage_null",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "replyChannel",
+    "variableType": "PollableChannel",
+    "mockedClass": "PollableChannel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\MessagingGatewayTests.java",
+      "className": "MessagingGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final PollableChannel replyChannel = Mockito.mock(PollableChannel.class);",
+        "line": 64,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(replyChannel.receive(30000L)).thenReturn(messageMock);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(replyChannel).receive(30000L);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(replyChannel.receive(30000L)).thenReturn(null);",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage_null",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(replyChannel).receive(30000L);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage_null",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "replyChannel",
+    "variableType": "PollableChannel",
+    "mockedClass": "PollableChannel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\gateway\\MessagingGatewayTests.java",
+      "className": "MessagingGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final PollableChannel replyChannel = Mockito.mock(PollableChannel.class);",
+        "line": 64,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(replyChannel.receive(30000L)).thenReturn(messageMock);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(replyChannel).receive(30000L);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(replyChannel.receive(30000L)).thenReturn(null);",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage_null",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(replyChannel).receive(30000L);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "receiveMessage_null",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

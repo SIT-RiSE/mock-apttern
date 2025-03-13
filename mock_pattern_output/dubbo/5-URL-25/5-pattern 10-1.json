@@ -1,0 +1,57 @@
+[
+  {
+    "variableName": "url",
+    "variableType": "URL",
+    "mockedClass": "URL",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.rpc.stub",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-rpc\\dubbo-rpc-triple\\src\\test\\java\\org\\apache\\dubbo\\rpc\\stub\\StubInvocationUtilTest.java",
+      "className": "StubInvocationUtilTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "URL url = Mockito.mock(URL.class);",
+        "line": 57,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockURL",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(url.getServiceModel()).thenReturn(consumerModel);",
+        "line": 58,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockURL",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(url.getServiceInterface()).thenReturn(IGreeter.class.getName());",
+        "line": 59,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockURL",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(url.getProtocolServiceKey()).thenReturn(IGreeter.class.getName());",
+        "line": 60,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createMockURL",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

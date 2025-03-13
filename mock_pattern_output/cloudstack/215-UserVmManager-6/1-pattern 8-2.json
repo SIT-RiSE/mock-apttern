@@ -1,0 +1,191 @@
+[
+  {
+    "variableName": "userVmMgr",
+    "variableType": "UserVmManager",
+    "mockedClass": "UserVmManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserVmManager userVmMgr;",
+        "line": 195,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmMgr).finalizeUserData(any(), any(), any());",
+        "line": 769,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmMgr).validateUserData(eq(userDataFinal), nullable(BaseCmd.HTTPMethod.class));",
+        "line": 770,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmMgr).finalizeUserData(any(), any(), any());",
+        "line": 833,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmMgr).validateUserData(eq(userDataFinal), nullable(BaseCmd.HTTPMethod.class));",
+        "line": 834,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateAutoScaleVmProfile",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmMgr.startVirtualMachine(virtualMachineId, null, null, null)).thenReturn(startVm);",
+        "line": 1521,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDoScaleUp",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(userVmMgr).expunge(eq(userVmMock));",
+        "line": 2515,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "destroyVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "_userVmManager",
+    "variableType": "UserVmManager",
+    "mockedClass": "UserVmManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.vm.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\snapshot\\VMSnapshotManagerTest.java",
+      "className": "VMSnapshotManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserVmManager _userVmManager;",
+        "line": 137,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_userVmManager.upgradeVirtualMachine(Matchers.eq(TEST_VM_ID), Matchers.eq(SERVICE_OFFERING_ID), mapDetailsCaptor.capture())).thenReturn(true);",
+        "line": 347,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateUserVmServiceOfferingDifferentServiceOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_userVmManager.upgradeVirtualMachine(Matchers.eq(TEST_VM_ID), Matchers.eq(SERVICE_OFFERING_ID), mapDetailsCaptor.capture())).thenReturn(true);",
+        "line": 367,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testChangeUserVmServiceOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_userVmManager.upgradeVirtualMachine(Matchers.eq(TEST_VM_ID), Matchers.eq(SERVICE_OFFERING_ID), mapDetailsCaptor.capture())).thenReturn(false);",
+        "line": 375,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testChangeUserVmServiceOfferingFailOnUpgradeVMServiceOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_userVmManager.upgradeVirtualMachine(TEST_VM_ID, SERVICE_OFFERING_ID, details)).thenReturn(true);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpgradeUserVmServiceOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(_userVmManager).upgradeVirtualMachine(TEST_VM_ID, SERVICE_OFFERING_ID, details);",
+        "line": 390,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpgradeUserVmServiceOffering",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

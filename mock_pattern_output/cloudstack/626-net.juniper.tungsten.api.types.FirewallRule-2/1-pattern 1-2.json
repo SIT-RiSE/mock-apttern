@@ -1,0 +1,176 @@
+[
+  {
+    "variableName": "firewallRule",
+    "variableType": "net.juniper.tungsten.api.types.FirewallRule",
+    "mockedClass": "net.juniper.tungsten.api.types.FirewallRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "net.juniper.tungsten.api.types.FirewallRule firewallRule = mock(net.juniper.tungsten.api.types.FirewallRule.class);",
+        "line": 1363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallRule.getActionList()).thenReturn(actionListType);",
+        "line": 1375,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallRule.getServiceGroup()).thenReturn(List.of(serviceGroup));",
+        "line": 1377,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallRule.getEndpoint1()).thenReturn(firewallRuleEndpointType1);",
+        "line": 1379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallRule.getEndpoint2()).thenReturn(firewallRuleEndpointType2);",
+        "line": 1380,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallRule.getMatchTags()).thenReturn(firewallRuleMatchTagsType);",
+        "line": 1384,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "firewallRule",
+    "variableType": "net.juniper.tungsten.api.types.FirewallRule",
+    "mockedClass": "net.juniper.tungsten.api.types.FirewallRule",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "net.juniper.tungsten.api.types.FirewallRule firewallRule = mock(net.juniper.tungsten.api.types.FirewallRule.class);",
+        "line": 1468,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallRule.getActionList()).thenReturn(actionListType);",
+        "line": 1480,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallRule.getServiceGroup()).thenReturn(List.of(serviceGroup));",
+        "line": 1482,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallRule.getEndpoint1()).thenReturn(firewallRuleEndpointType1);",
+        "line": 1484,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallRule.getEndpoint2()).thenReturn(firewallRuleEndpointType2);",
+        "line": 1485,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallRule.getMatchTags()).thenReturn(firewallRuleMatchTagsType);",
+        "line": 1489,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenFirewallRuleTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

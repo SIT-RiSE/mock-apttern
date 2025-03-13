@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "classUtils",
+    "variableType": "MockedStatic<ClassUtils>",
+    "mockedClass": "MockedStatic<ClassUtils>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\SecurityNamespaceHandlerTests.java",
+      "className": "SecurityNamespaceHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock(answer = Answers.CALLS_REAL_METHODS)\r\nprivate MockedStatic<ClassUtils> classUtils;",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

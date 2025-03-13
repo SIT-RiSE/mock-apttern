@@ -1,0 +1,368 @@
+[
+  {
+    "variableName": "templateDao",
+    "variableType": "VMTemplateDao",
+    "mockedClass": "VMTemplateDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMTemplateDao templateDao;",
+        "line": 171,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateDao.findById(templateId)).thenReturn(null);",
+        "line": 872,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfTemplateNeededForCreatingVmVolumesMissingTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateDao.findById(templateId)).thenReturn(template);",
+        "line": 888,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfTemplateNeededForCreatingVmVolumesMissingZoneTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateDao.findById(templateId)).thenReturn(template);",
+        "line": 904,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfTemplateNeededForCreatingVmVolumesTemplateAvailable",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "templateDao",
+    "variableType": "VMTemplateDao",
+    "mockedClass": "VMTemplateDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.cluster",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\cluster\\KubernetesClusterManagerImplTest.java",
+      "className": "KubernetesClusterManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMTemplateDao templateDao;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateDao.findById(Mockito.anyLong())).thenReturn(null);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleDeletedTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateDao.findById(Mockito.anyLong())).thenReturn(Mockito.mock(VMTemplateVO.class));",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleNotInZoneTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateDao.findById(Mockito.anyLong())).thenReturn(Mockito.mock(VMTemplateVO.class));",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testValidateKubernetesClusterScaleSizeUpscaleNoError",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "templateDao",
+    "variableType": "VMTemplateDao",
+    "mockedClass": "VMTemplateDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.kubernetes.version",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\integrations\\kubernetes-service\\src\\test\\java\\com\\cloud\\kubernetes\\version\\KubernetesVersionServiceTest.java",
+      "className": "KubernetesVersionServiceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VMTemplateDao templateDao;",
+        "line": 86,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateDao.findById(Mockito.anyLong())).thenReturn(templateVO);",
+        "line": 214,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addKubernetesSupportedVersionIsoUrlTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateDao.findById(Mockito.anyLong())).thenReturn(Mockito.mock(VMTemplateVO.class));",
+        "line": 240,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteKubernetesSupportedVersionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_templateDao",
+    "variableType": "VMTemplateDao",
+    "mockedClass": "VMTemplateDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\ManagementServerImplTest.java",
+      "className": "ManagementServerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMTemplateDao _templateDao;",
+        "line": 115,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_templateDao.findTemplatesLinkedToUserdata(1L)).thenReturn(new ArrayList<VMTemplateVO>());",
+        "line": 383,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessfulDeleteUserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_templateDao.findTemplatesLinkedToUserdata(1L)).thenReturn(linkedTemplates);",
+        "line": 415,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteUserdataLinkedToTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_templateDao.findTemplatesLinkedToUserdata(1L)).thenReturn(new ArrayList<VMTemplateVO>());",
+        "line": 441,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteUserdataUsedByVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "templateDao",
+    "variableType": "VMTemplateDao",
+    "mockedClass": "VMTemplateDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VMTemplateDao templateDao;",
+        "line": 190,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateDao.findByIdIncludingRemoved(Mockito.anyLong())).thenReturn(template);",
+        "line": 1326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunTestOfIsNotPossibleToResize",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "templateDao",
+    "variableType": "VMTemplateDao",
+    "mockedClass": "VMTemplateDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VMTemplateDao templateDao;",
+        "line": 169,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(templateDao.findById(Mockito.anyLong())).thenReturn(template);",
+        "line": 534,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunConfigureCustomRootDiskSizeTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateDao.findByIdIncludingRemoved(2L)).thenReturn(template);",
+        "line": 786,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataVMStateNotStopped",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateDao.findByIdIncludingRemoved(2L)).thenReturn(template);",
+        "line": 812,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataDontAcceptBothUserdataAndUserdataId",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateDao.findByIdIncludingRemoved(2L)).thenReturn(template);",
+        "line": 846,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataSuccessResetWithUserdata",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(templateDao.findByIdIncludingRemoved(2L)).thenReturn(template);",
+        "line": 883,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResetVMUserDataSuccessResetWithUserdataId",
+          "methodAnnotations": [
+            "@Test",
+            "@PrepareForTest"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

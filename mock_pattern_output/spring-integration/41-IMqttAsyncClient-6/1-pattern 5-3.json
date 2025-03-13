@@ -1,0 +1,167 @@
+[
+  {
+    "variableName": "client",
+    "variableType": "IMqttAsyncClient",
+    "mockedClass": "IMqttAsyncClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mqtt",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mqtt\\src\\test\\java\\org\\springframework\\integration\\mqtt\\MqttAdapterTests.java",
+      "className": "MqttAdapterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final IMqttAsyncClient client = mock(IMqttAsyncClient.class);",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCloseOnBadConnectOut",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).close();",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCloseOnBadConnectOut",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "IMqttAsyncClient",
+    "mockedClass": "IMqttAsyncClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mqtt",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mqtt\\src\\test\\java\\org\\springframework\\integration\\mqtt\\Mqttv5AdapterTests.java",
+      "className": "Mqttv5AdapterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final IMqttAsyncClient client = mock(IMqttAsyncClient.class);",
+        "line": 53,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).connect(any(MqttConnectionOptions.class));",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).subscribe(any(MqttSubscription[].class), any(), any(), any(IMqttMessageListener.class), any());",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).unsubscribe(any(String[].class));",
+        "line": 62,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStop",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "client",
+    "variableType": "IMqttAsyncClient",
+    "mockedClass": "IMqttAsyncClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.mqtt",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-mqtt\\src\\test\\java\\org\\springframework\\integration\\mqtt\\Mqttv5AdapterTests.java",
+      "className": "Mqttv5AdapterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final IMqttAsyncClient client = mock(IMqttAsyncClient.class);",
+        "line": 67,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopNotClean",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).connect(any(MqttConnectionOptions.class));",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopNotClean",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client).subscribe(any(MqttSubscription[].class), any(), any(), any(IMqttMessageListener.class), any());",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopNotClean",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(client, never()).unsubscribe(any(String[].class));",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStopNotClean",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

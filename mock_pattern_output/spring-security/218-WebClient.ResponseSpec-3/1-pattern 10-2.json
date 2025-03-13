@@ -1,0 +1,82 @@
+[
+  {
+    "variableName": "clientResponse",
+    "variableType": "WebClient.ResponseSpec",
+    "mockedClass": "WebClient.ResponseSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.userinfo",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\userinfo\\DefaultReactiveOAuth2UserServiceTests.java",
+      "className": "DefaultReactiveOAuth2UserServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebClient.ResponseSpec clientResponse = mock(WebClient.ResponseSpec.class);",
+        "line": 345,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "withMockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientResponse.onStatus(any(Predicate.class), any(Function.class))).willReturn(clientResponse);",
+        "line": 348,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "withMockResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clientResponse.bodyToMono(any(ParameterizedTypeReference.class))).willReturn(Mono.just(body));",
+        "line": 349,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "withMockResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "responseSpec",
+    "variableType": "WebClient.ResponseSpec",
+    "mockedClass": "WebClient.ResponseSpec",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusReactiveJwtDecoderTests.java",
+      "className": "NimbusReactiveJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebClient.ResponseSpec responseSpec = mock(WebClient.ResponseSpec.class);",
+        "line": 689,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockJwkSetResponse",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(responseSpec.bodyToMono(String.class)).willReturn(Mono.just(response));",
+        "line": 690,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockJwkSetResponse",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

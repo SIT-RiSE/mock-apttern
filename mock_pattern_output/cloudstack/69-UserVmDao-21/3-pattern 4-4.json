@@ -1,0 +1,293 @@
+[
+  {
+    "variableName": "userVmDao",
+    "variableType": "UserVmDao",
+    "mockedClass": "UserVmDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserVmDao userVmDao;",
+        "line": 252,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmDao.findById(virtualMachineId)).thenReturn(userVmMock);",
+        "line": 1700,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getHostAndVmIdsMap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmDao.findById(virtualMachineId)).thenReturn(userVmMock);",
+        "line": 2510,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "destroyVm",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_userVmDao",
+    "variableType": "UserVmDao",
+    "mockedClass": "UserVmDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.server",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\server\\ManagementServerImplTest.java",
+      "className": "ManagementServerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserVmDao _userVmDao;",
+        "line": 121,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_userVmDao.findByUserDataId(1L)).thenReturn(new ArrayList<UserVmVO>());",
+        "line": 384,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSuccessfulDeleteUserdata",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_userVmDao.findByUserDataId(1L)).thenReturn(vms);",
+        "line": 446,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteUserdataUsedByVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_vmDao",
+    "variableType": "UserVmDao",
+    "mockedClass": "UserVmDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\snapshot\\SnapshotManagerTest.java",
+      "className": "SnapshotManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserVmDao _vmDao;",
+        "line": 115,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmDao.findById(anyLong())).thenReturn(vmMock);",
+        "line": 264,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllocSnapshotF1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmDao.findById(anyLong())).thenReturn(vmMock);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllocSnapshotF2",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmDao.findById(anyLong())).thenReturn(vmMock);",
+        "line": 288,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllocSnapshotF3",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmDao.findById(anyLong())).thenReturn(vmMock);",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllocSnapshotF4",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmDao.findById(anyLong())).thenReturn(vmMock);",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotF1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmDao.findById(anyLong())).thenReturn(vmMock);",
+        "line": 343,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotF2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmDao.findById(anyLong())).thenReturn(vmMock);",
+        "line": 355,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRevertSnapshotF3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmDao.findById(anyLong())).thenReturn(vmMock);",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBackupSnapshotFromVmSnapshotF1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmDao.findById(nullable(Long.class))).thenReturn(vmMock);",
+        "line": 378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBackupSnapshotFromVmSnapshotF2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmDao.findById(nullable(Long.class))).thenReturn(vmMock);",
+        "line": 397,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBackupSnapshotFromVmSnapshotF3",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "userVmDao",
+    "variableType": "UserVmDao",
+    "mockedClass": "UserVmDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\vm\\UnmanagedVMsManagerImplTest.java",
+      "className": "UnmanagedVMsManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UserVmDao userVmDao;",
+        "line": 180,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(userVmDao.findById(virtualMachineId)).thenReturn(userVmVO);",
+        "line": 431,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "unmanageVMInstanceExistingISOAttachedTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

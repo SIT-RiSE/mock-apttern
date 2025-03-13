@@ -1,0 +1,206 @@
+[
+  {
+    "variableName": "parametersConverter",
+    "variableType": "Converter<OAuth2AuthorizationCodeGrantRequest,MultiValueMap<String,String>>",
+    "mockedClass": "Converter<OAuth2AuthorizationCodeGrantRequest,MultiValueMap<String,String>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\RestClientAuthorizationCodeTokenResponseClientTests.java",
+      "className": "RestClientAuthorizationCodeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2AuthorizationCodeGrantRequest, MultiValueMap<String, String>> parametersConverter = mock();",
+        "line": 383,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(parametersConverter.convert(grantRequest)).willReturn(parameters);",
+        "line": 386,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(parametersConverter).convert(grantRequest);",
+        "line": 389,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "parametersConverter",
+    "variableType": "Converter<OAuth2AuthorizationCodeGrantRequest,MultiValueMap<String,String>>",
+    "mockedClass": "Converter<OAuth2AuthorizationCodeGrantRequest,MultiValueMap<String,String>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\RestClientAuthorizationCodeTokenResponseClientTests.java",
+      "className": "RestClientAuthorizationCodeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2AuthorizationCodeGrantRequest, MultiValueMap<String, String>> parametersConverter = mock();",
+        "line": 426,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(parametersConverter.convert(grantRequest)).willReturn(parameters);",
+        "line": 429,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(parametersConverter).convert(grantRequest);",
+        "line": 432,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "addedParametersConverter",
+    "variableType": "Converter<OAuth2AuthorizationCodeGrantRequest,MultiValueMap<String,String>>",
+    "mockedClass": "Converter<OAuth2AuthorizationCodeGrantRequest,MultiValueMap<String,String>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\WebClientReactiveAuthorizationCodeTokenResponseClientTests.java",
+      "className": "WebClientReactiveAuthorizationCodeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2AuthorizationCodeGrantRequest, MultiValueMap<String, String>> addedParametersConverter = mock();",
+        "line": 360,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(addedParametersConverter.convert(request)).willReturn(parameters);",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(addedParametersConverter).convert(request);",
+        "line": 367,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterAddedThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "parametersConverter",
+    "variableType": "Converter<OAuth2AuthorizationCodeGrantRequest,MultiValueMap<String,String>>",
+    "mockedClass": "Converter<OAuth2AuthorizationCodeGrantRequest,MultiValueMap<String,String>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\WebClientReactiveAuthorizationCodeTokenResponseClientTests.java",
+      "className": "WebClientReactiveAuthorizationCodeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<OAuth2AuthorizationCodeGrantRequest, MultiValueMap<String, String>> parametersConverter = mock();",
+        "line": 376,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(parametersConverter.convert(request)).willReturn(parameters);",
+        "line": 379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(parametersConverter).convert(request);",
+        "line": 383,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenParametersConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

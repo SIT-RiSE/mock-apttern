@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "formLoginSecContextRepository",
+    "variableType": "ServerSecurityContextRepository",
+    "mockedClass": "ServerSecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\FormLoginTests.java",
+      "className": "FormLoginTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerSecurityContextRepository formLoginSecContextRepository = mock(ServerSecurityContextRepository.class);",
+        "line": 304,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formLoginSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(formLoginSecContextRepository.save(any(), any())).willReturn(Mono.empty());",
+        "line": 308,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formLoginSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(formLoginSecContextRepository.load(any())).willReturn(authentication(token));",
+        "line": 309,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formLoginSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(formLoginSecContextRepository).save(any(), any());",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formLoginSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "defaultSecContextRepository",
+    "variableType": "ServerSecurityContextRepository",
+    "mockedClass": "ServerSecurityContextRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\FormLoginTests.java",
+      "className": "FormLoginTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerSecurityContextRepository defaultSecContextRepository = mock(ServerSecurityContextRepository.class);",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formLoginSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(defaultSecContextRepository.save(any(), any())).willReturn(Mono.empty());",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formLoginSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(defaultSecContextRepository.load(any())).willReturn(authentication(token));",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formLoginSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(defaultSecContextRepository, atLeastOnce()).load(any());",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "formLoginSecurityContextRepository",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

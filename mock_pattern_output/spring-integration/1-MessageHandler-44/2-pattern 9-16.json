@@ -1,0 +1,1640 @@
+[
+  {
+    "variableName": "handlerC",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\MixedDispatcherConfigurationScenarioTests.java",
+      "className": "MixedDispatcherConfigurationScenarioTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageHandler handlerC = mock(MessageHandler.class);",
+        "line": 76,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(handlerC).handleMessage(message);",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerC, times(1)).handleMessage(message);",
+        "line": 213,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerC, times(13)).handleMessage(message);",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancingConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerC, times(13)).handleMessage(message);",
+        "line": 307,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancingWithExecutorConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerC, never()).handleMessage(message);",
+        "line": 382,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancingConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerC, never()).handleMessage(message);",
+        "line": 422,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancingWithExecutorConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "handlerB",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\MixedDispatcherConfigurationScenarioTests.java",
+      "className": "MixedDispatcherConfigurationScenarioTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageHandler handlerB = mock(MessageHandler.class);",
+        "line": 74,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerB, times(0)).handleMessage(message);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverNoLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerB, times(0)).handleMessage(message);",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverNoLoadBalancingConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerB, times(0)).handleMessage(message);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverNoLoadBalancingWithExecutorConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(handlerB).handleMessage(message);",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerB, times(1)).handleMessage(message);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerB, times(13)).handleMessage(message);",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancingConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerB, times(13)).handleMessage(message);",
+        "line": 306,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancingWithExecutorConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(handlerB).handleMessage(message);",
+        "line": 327,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(handlerB).handleMessage(message);",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerB, times(2)).handleMessage(message);",
+        "line": 338,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerB, times(TOTAL_EXECUTIONS)).handleMessage(message);",
+        "line": 381,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancingConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerB, times(TOTAL_EXECUTIONS)).handleMessage(message);",
+        "line": 421,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancingWithExecutorConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "handlerA",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\MixedDispatcherConfigurationScenarioTests.java",
+      "className": "MixedDispatcherConfigurationScenarioTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageHandler handlerA = mock(MessageHandler.class);",
+        "line": 72,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerA, times(2)).handleMessage(message);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverNoLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerA, times(TOTAL_EXECUTIONS)).handleMessage(message);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverNoLoadBalancingConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerA, times(TOTAL_EXECUTIONS)).handleMessage(message);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverNoLoadBalancingWithExecutorConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(handlerA).handleMessage(message);",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerA, times(1)).handleMessage(message);",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerA, times(14)).handleMessage(message);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancingConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerA, times(14)).handleMessage(message);",
+        "line": 305,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noFailoverLoadBalancingWithExecutorConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(handlerA).handleMessage(message);",
+        "line": 326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(handlerA).handleMessage(message);",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerA, times(2)).handleMessage(message);",
+        "line": 337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerA, times(TOTAL_EXECUTIONS)).handleMessage(message);",
+        "line": 380,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancingConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handlerA, times(TOTAL_EXECUTIONS)).handleMessage(message);",
+        "line": 420,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "failoverNoLoadBalancingWithExecutorConcurrent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "targetMock3",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\BroadcastingDispatcherTests.java",
+      "className": "BroadcastingDispatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageHandler targetMock3 = Mockito.mock(MessageHandler.class);",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3).handleMessage(eq(messageMock));",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithoutTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3).handleMessage(eq(messageMock));",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3).handleMessage(eq(messageMock));",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureFirst",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3).handleMessage(eq(messageMock));",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureMiddle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureLast",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsAllFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3).handleMessage(eq(messageMock));",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBeforeSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3, Mockito.times(2)).handleMessage(eq(messageMock));",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBetweenSends",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "targetMock2",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\BroadcastingDispatcherTests.java",
+      "className": "BroadcastingDispatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageHandler targetMock2 = Mockito.mock(MessageHandler.class);",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2).handleMessage(eq(messageMock));",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithoutTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2).handleMessage(eq(messageMock));",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2).handleMessage(eq(messageMock));",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureFirst",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureMiddle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2).handleMessage(eq(messageMock));",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureLast",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsAllFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBeforeSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2).handleMessage(eq(messageMock));",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBetweenSends",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "targetMock1",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\BroadcastingDispatcherTests.java",
+      "className": "BroadcastingDispatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageHandler targetMock1 = Mockito.mock(MessageHandler.class);",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "singleTargetWithoutTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "singleTargetWithTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithoutTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureFirst",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureMiddle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureLast",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsAllFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noDuplicateSubscription",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBeforeSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1, Mockito.times(2)).handleMessage(eq(messageMock));",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBetweenSends",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "targetMock3",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\BroadcastingDispatcherTests.java",
+      "className": "BroadcastingDispatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageHandler targetMock3 = Mockito.mock(MessageHandler.class);",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3).handleMessage(eq(messageMock));",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithoutTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3).handleMessage(eq(messageMock));",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3).handleMessage(eq(messageMock));",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureFirst",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3).handleMessage(eq(messageMock));",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureMiddle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureLast",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsAllFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3).handleMessage(eq(messageMock));",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBeforeSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock3, Mockito.times(2)).handleMessage(eq(messageMock));",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBetweenSends",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "targetMock2",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\BroadcastingDispatcherTests.java",
+      "className": "BroadcastingDispatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageHandler targetMock2 = Mockito.mock(MessageHandler.class);",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2).handleMessage(eq(messageMock));",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithoutTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2).handleMessage(eq(messageMock));",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2).handleMessage(eq(messageMock));",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureFirst",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureMiddle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2).handleMessage(eq(messageMock));",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureLast",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 161,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsAllFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBeforeSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock2).handleMessage(eq(messageMock));",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBetweenSends",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "targetMock1",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\BroadcastingDispatcherTests.java",
+      "className": "BroadcastingDispatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private final MessageHandler targetMock1 = Mockito.mock(MessageHandler.class);",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "singleTargetWithoutTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "singleTargetWithTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithoutTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsWithTaskExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureFirst",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureMiddle",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsPartialFailureLast",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1, Mockito.never()).handleMessage(eq(messageMock));",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleTargetsAllFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 172,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noDuplicateSubscription",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1).handleMessage(eq(messageMock));",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBeforeSend",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(targetMock1, Mockito.times(2)).handleMessage(eq(messageMock));",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "removeConsumerBetweenSends",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "handler4",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\RoundRobinDispatcherConcurrentTests.java",
+      "className": "RoundRobinDispatcherConcurrentTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageHandler handler4;",
+        "line": 65,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler4, times(TOTAL_EXECUTIONS / 4)).handleMessage(message);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noHandlerExhaustion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "handler3",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\RoundRobinDispatcherConcurrentTests.java",
+      "className": "RoundRobinDispatcherConcurrentTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageHandler handler3;",
+        "line": 62,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler3, times(TOTAL_EXECUTIONS / 4)).handleMessage(message);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noHandlerExhaustion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "handler2",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\RoundRobinDispatcherConcurrentTests.java",
+      "className": "RoundRobinDispatcherConcurrentTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageHandler handler2;",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler2, times(TOTAL_EXECUTIONS / 4)).handleMessage(message);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noHandlerExhaustion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler2, times(TOTAL_EXECUTIONS)).handleMessage(message);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noHandlerSkipUnderConcurrentFailureWithFailover",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "handler1",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\RoundRobinDispatcherConcurrentTests.java",
+      "className": "RoundRobinDispatcherConcurrentTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageHandler handler1;",
+        "line": 56,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler1, times(TOTAL_EXECUTIONS / 4)).handleMessage(message);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noHandlerExhaustion",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(handler1, times(TOTAL_EXECUTIONS / 2)).handleMessage(message);",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noHandlerSkipUnderConcurrentFailureWithFailover",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\RoundRobinDispatcherTests.java",
+      "className": "RoundRobinDispatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageHandler handler;",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.handler).handleMessage(this.message);",
+        "line": 76,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "dispatchMessageWithSingleHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.handler).handleMessage(this.message);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "differentHandlerInvokedOnSecondMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.handler, times(4)).handleMessage(this.message);",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleCyclesThroughHandlers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.handler, atLeast(18)).handleMessage(this.message);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "currentHandlerIndexOverFlow",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.handler).handleMessage(this.message);",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailOverAndLogging",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "differentHandler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.dispatcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\dispatcher\\RoundRobinDispatcherTests.java",
+      "className": "RoundRobinDispatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MessageHandler differentHandler;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.differentHandler).handleMessage(this.message);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "differentHandlerInvokedOnSecondMessage",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.differentHandler, times(3)).handleMessage(this.message);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "multipleCyclesThroughHandlers",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.differentHandler, atLeast(18)).handleMessage(this.message);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "currentHandlerIndexOverFlow",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.differentHandler).handleMessage(this.message);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFailOverAndLogging",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "handler",
+    "variableType": "MessageHandler",
+    "mockedClass": "MessageHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.test.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-test-support\\src\\test\\java\\org\\springframework\\integration\\test\\matcher\\MockitoMessageMatchersTests.java",
+      "className": "MockitoMessageMatchersTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nMessageHandler handler;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.handler).handleMessage(MockitoMessageMatchers.messageWithPayload(SOME_PAYLOAD));",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "anyMatcher_withVerifyArgumentMatcherAndEqualPayload_matching",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.handler).handleMessage(MockitoMessageMatchers.messageWithPayload(Matchers.is(Matchers.instanceOf(Date.class))));",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "anyMatcher_withVerifyArgumentMatcherAndEqualPayload_matching",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.handler).handleMessage(MockitoMessageMatchers.messageWithPayload(Matchers.nullValue()));",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "anyMatcher_withVerifyAndDifferentPayload_notMatching",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

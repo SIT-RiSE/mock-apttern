@@ -1,0 +1,133 @@
+[
+  {
+    "variableName": "testSubscriber",
+    "variableType": "Subscriber<Message<?>>",
+    "mockedClass": "Subscriber<Message<?>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel.reactive",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\reactive\\ReactiveStreamsConsumerTests.java",
+      "className": "ReactiveStreamsConsumerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Subscriber<Message<?>> testSubscriber = Mockito.spy(new Subscriber<Message<?>>() {\r\n\r\n    @Override\r\n    public void onSubscribe(Subscription subscription) {\r\n        subscription.request(1);\r\n    }\r\n\r\n    @Override\r\n    public void onNext(Message<?> message) {\r\n        messages.offer(message);\r\n    }\r\n\r\n    @Override\r\n    public void onError(Throwable t) {\r\n    }\r\n\r\n    @Override\r\n    public void onComplete() {\r\n    }\r\n});",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReactiveStreamsConsumerDirectChannel",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(testSubscriber, never()).onError(any(Throwable.class));",
+        "line": 170,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReactiveStreamsConsumerDirectChannel",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(testSubscriber, never()).onComplete();",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReactiveStreamsConsumerDirectChannel",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "testSubscriber",
+    "variableType": "Subscriber<Message<?>>",
+    "mockedClass": "Subscriber<Message<?>>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.channel.reactive",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-core\\src\\test\\java\\org\\springframework\\integration\\channel\\reactive\\ReactiveStreamsConsumerTests.java",
+      "className": "ReactiveStreamsConsumerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Subscriber<Message<?>> testSubscriber = (Subscriber<Message<?>>) Mockito.mock(Subscriber.class);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReactiveStreamsConsumerPollableChannel",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(testSubscriber).onSubscribe(subscriptionArgumentCaptor.capture());",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReactiveStreamsConsumerPollableChannel",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(testSubscriber, times(2)).onSubscribe(subscriptionArgumentCaptor.capture());",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReactiveStreamsConsumerPollableChannel",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(testSubscriber, never()).onError(any(Throwable.class));",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReactiveStreamsConsumerPollableChannel",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(testSubscriber, never()).onComplete();",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReactiveStreamsConsumerPollableChannel",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

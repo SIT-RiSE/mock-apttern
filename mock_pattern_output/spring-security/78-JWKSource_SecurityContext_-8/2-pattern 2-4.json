@@ -1,0 +1,110 @@
+[
+  {
+    "variableName": "jwkSource",
+    "variableType": "JWKSource<SecurityContext>",
+    "mockedClass": "JWKSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JWKSource<SecurityContext> jwkSource = mock(JWKSource.class);",
+        "line": 599,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "jwsKeySelectorWhenNoAlgorithmThenReturnsRS256Selector",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "jwkSource",
+    "variableType": "JWKSource<SecurityContext>",
+    "mockedClass": "JWKSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JWKSource<SecurityContext> jwkSource = mock(JWKSource.class);",
+        "line": 609,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "jwsKeySelectorWhenOneAlgorithmThenReturnsSingleSelector",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "jwkSource",
+    "variableType": "JWKSource<SecurityContext>",
+    "mockedClass": "JWKSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtDecoderTests.java",
+      "className": "NimbusJwtDecoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JWKSource<SecurityContext> jwkSource = mock(JWKSource.class);",
+        "line": 622,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "jwsKeySelectorWhenMultipleAlgorithmThenReturnsCompositeSelector",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "jwkSourceDelegate",
+    "variableType": "JWKSource<SecurityContext>",
+    "mockedClass": "JWKSource<SecurityContext>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.jwt",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-jose\\src\\test\\java\\org\\springframework\\security\\oauth2\\jwt\\NimbusJwtEncoderTests.java",
+      "className": "NimbusJwtEncoderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "JWKSource<SecurityContext> jwkSourceDelegate = spy(new JWKSource<SecurityContext>() {\r\n\r\n    @Override\r\n    public List<JWK> get(JWKSelector jwkSelector, SecurityContext context) {\r\n        return jwkSource.get(jwkSelector, context);\r\n    }\r\n});",
+        "line": 263,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "encodeWhenKeysRotatedThenNewKeyUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

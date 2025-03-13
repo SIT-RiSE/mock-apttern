@@ -1,0 +1,123 @@
+[
+  {
+    "variableName": "presetVariableHelperSpy",
+    "variableType": "PresetVariableHelper",
+    "mockedClass": "PresetVariableHelper",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota.activationrule.presetvariables",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\activationrule\\presetvariables\\PresetVariableHelperTest.java",
+      "className": "PresetVariableHelperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@InjectMocks\r\nPresetVariableHelper presetVariableHelperSpy = Mockito.spy(PresetVariableHelper.class);",
+        "line": 166,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(presetVariableHelperSpy, Mockito.times(runningAndAllocatedVmUsageTypes.size())).getPresetVariableValueResourceTags(Mockito.anyLong(), Mockito.eq(ResourceObjectType.UserVm));",
+        "line": 518,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForRunningAndAllocatedVmTestRecordIsRunningOrAllocatedVmSetFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(presetVariableHelperSpy).getPresetVariableValueResourceTags(Mockito.anyLong(), Mockito.eq(ResourceObjectType.Volume));",
+        "line": 671,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForVolumeTestRecordIsVolumeAndHasStorageSetFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(presetVariableHelperSpy).getPresetVariableValueResourceTags(Mockito.anyLong(), Mockito.eq(ResourceObjectType.Volume));",
+        "line": 707,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForVolumeTestRecordIsVolumeAndDoesNotHaveStorageSetFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(presetVariableHelperSpy).getPresetVariableValueResourceTags(Mockito.anyLong(), Mockito.eq(ResourceObjectType.Template));",
+        "line": 837,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForTemplateAndIsoTestRecordIsVolumeSetFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(presetVariableHelperSpy).getPresetVariableValueResourceTags(Mockito.anyLong(), Mockito.eq(ResourceObjectType.ISO));",
+        "line": 838,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForTemplateAndIsoTestRecordIsVolumeSetFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(presetVariableHelperSpy).getPresetVariableValueResourceTags(Mockito.anyLong(), Mockito.eq(ResourceObjectType.Snapshot));",
+        "line": 885,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForSnapshotTestRecordIsSnapshotSetFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(presetVariableHelperSpy).getPresetVariableValueResourceTags(Mockito.anyLong(), Mockito.eq(ResourceObjectType.VMSnapshot));",
+        "line": 1002,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForVmSnapshotTestRecordIsVmSnapshotSetFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(presetVariableHelperSpy).getPresetVariableValueBackupOffering(Mockito.anyLong());",
+        "line": 1131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "loadPresetVariableValueForBackupTestRecordIsBackupSetAllFields",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

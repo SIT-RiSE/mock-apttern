@@ -1,0 +1,56 @@
+[
+  {
+    "variableName": "mockAuthenticationRequest",
+    "variableType": "AbstractSaml2AuthenticationRequest",
+    "mockedClass": "AbstractSaml2AuthenticationRequest",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.servlet",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\servlet\\HttpSessionSaml2AuthenticationRequestRepositoryTests.java",
+      "className": "HttpSessionSaml2AuthenticationRequestRepositoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractSaml2AuthenticationRequest mockAuthenticationRequest = mock(AbstractSaml2AuthenticationRequest.class);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saveAuthenticationRequestWhenSessionDontExistsThenCreateAndSave",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "mockAuthenticationRequest",
+    "variableType": "AbstractSaml2AuthenticationRequest",
+    "mockedClass": "AbstractSaml2AuthenticationRequest",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.servlet",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\servlet\\HttpSessionSaml2AuthenticationRequestRepositoryTests.java",
+      "className": "HttpSessionSaml2AuthenticationRequestRepositoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AbstractSaml2AuthenticationRequest mockAuthenticationRequest = mock(AbstractSaml2AuthenticationRequest.class);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "saveAuthenticationRequestWhenSessionExistsThenSave",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

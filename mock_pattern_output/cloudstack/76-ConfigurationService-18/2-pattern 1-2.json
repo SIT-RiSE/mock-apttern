@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "configService",
+    "variableType": "ConfigurationService",
+    "mockedClass": "ConfigurationService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.admin.vlan",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\admin\\vlan\\UpdateVlanIpRangeCmdTest.java",
+      "className": "UpdateVlanIpRangeCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigurationService configService = Mockito.mock(ConfigurationService.class);",
+        "line": 40,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(configService.updateVlanAndPublicIpRange(updateVlanIpRangeCmd)).thenReturn(result);",
+        "line": 46,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "configService",
+    "variableType": "ConfigurationService",
+    "mockedClass": "ConfigurationService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.admin.vlan",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\admin\\vlan\\UpdateVlanIpRangeCmdTest.java",
+      "className": "UpdateVlanIpRangeCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConfigurationService configService = Mockito.mock(ConfigurationService.class);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(configService.updateVlanAndPublicIpRange(updateVlanIpRangeCmd)).thenReturn(null);",
+        "line": 69,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUpdateFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

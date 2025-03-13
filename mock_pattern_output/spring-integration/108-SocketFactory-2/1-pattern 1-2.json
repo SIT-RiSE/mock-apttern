@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "factory",
+    "variableType": "SocketFactory",
+    "mockedClass": "SocketFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\SocketSupportTests.java",
+      "className": "SocketSupportTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SocketFactory factory = Mockito.mock(SocketFactory.class);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.createSocket()).thenReturn(socket);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetClient",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "factory",
+    "variableType": "SocketFactory",
+    "mockedClass": "SocketFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ip.tcp.connection",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ip\\src\\test\\java\\org\\springframework\\integration\\ip\\tcp\\connection\\SocketSupportTests.java",
+      "className": "SocketSupportTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SocketFactory factory = Mockito.mock(SocketFactory.class);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetClientSocketTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(factory.createSocket()).thenReturn(socket);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetClientSocketTimeout",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

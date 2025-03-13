@@ -1,0 +1,308 @@
+[
+  {
+    "variableName": "answer3",
+    "variableType": "Answer",
+    "mockedClass": "Answer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.router",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\router\\NetworkHelperImplTest.java",
+      "className": "NetworkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Answer answer3 = mock(Answer.class);",
+        "line": 84,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(answer3.getResult()).thenReturn(false);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(answer3, times(0)).getResult();",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "answer2",
+    "variableType": "Answer",
+    "mockedClass": "Answer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.router",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\router\\NetworkHelperImplTest.java",
+      "className": "NetworkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Answer answer2 = mock(Answer.class);",
+        "line": 83,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(answer2.getResult()).thenReturn(false);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(answer2, times(1)).getResult();",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "answer1",
+    "variableType": "Answer",
+    "mockedClass": "Answer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.router",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\router\\NetworkHelperImplTest.java",
+      "className": "NetworkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Answer answer1 = mock(Answer.class);",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(answer1.getResult()).thenReturn(true);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(answer1, times(1)).getResult();",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "answer3",
+    "variableType": "Answer",
+    "mockedClass": "Answer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.router",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\router\\NetworkHelperImplTest.java",
+      "className": "NetworkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Answer answer3 = mock(Answer.class);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(answer3.getResult()).thenReturn(true);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(answer3, times(1)).getResult();",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "answer2",
+    "variableType": "Answer",
+    "mockedClass": "Answer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.router",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\router\\NetworkHelperImplTest.java",
+      "className": "NetworkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Answer answer2 = mock(Answer.class);",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(answer2.getResult()).thenReturn(true);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(answer2, times(1)).getResult();",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "answer1",
+    "variableType": "Answer",
+    "mockedClass": "Answer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.network.router",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\router\\NetworkHelperImplTest.java",
+      "className": "NetworkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Answer answer1 = mock(Answer.class);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(answer1.getResult()).thenReturn(true);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(answer1, times(1)).getResult();",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendCommandsToRouterWithTrueResult",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

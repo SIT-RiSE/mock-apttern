@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "requestEntityConverter",
+    "variableType": "Converter<TokenExchangeGrantRequest,RequestEntity<?>>",
+    "mockedClass": "TokenExchangeGrantRequestEntityConverter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.endpoint",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\endpoint\\DefaultTokenExchangeTokenResponseClientTests.java",
+      "className": "DefaultTokenExchangeTokenResponseClientTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Converter<TokenExchangeGrantRequest, RequestEntity<?>> requestEntityConverter = spy(TokenExchangeGrantRequestEntityConverter.class);",
+        "line": 454,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenCustomRequestEntityConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(requestEntityConverter).convert(grantRequest);",
+        "line": 460,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTokenResponseWhenCustomRequestEntityConverterSetThenCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "variableName": "spec",
+    "variableType": "WebClient.RequestHeadersSpec<?>",
+    "mockedClass": "WebClient.RequestHeadersSpec<?>",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Other Methods",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServletOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServletOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate WebClient.RequestHeadersSpec<?> spec;",
+        "line": 167,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.spec).attributes(this.attrs.capture());",
+        "line": 274,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "getDefaultRequestAttributes",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 31
+  }
+]

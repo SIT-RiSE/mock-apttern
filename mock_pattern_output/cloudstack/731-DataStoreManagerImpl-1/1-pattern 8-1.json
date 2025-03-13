@@ -1,0 +1,49 @@
+[
+  {
+    "variableName": "dataStoreManagerImpl",
+    "variableType": "DataStoreManagerImpl",
+    "mockedClass": "DataStoreManagerImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\KvmNonManagedStorageSystemDataMotionTest.java",
+      "className": "KvmNonManagedStorageSystemDataMotionTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate DataStoreManagerImpl dataStoreManagerImpl;",
+        "line": 98,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(dataStoreManagerImpl.getRandomImageStore(Mockito.anyLong())).thenReturn(sourceTemplateDataStore);",
+        "line": 387,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureAndTestcopyTemplateToTargetStorageIfNeeded",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyInOrder.verify(dataStoreManagerImpl, Mockito.times(times)).getRandomImageStore(Mockito.anyLong());",
+        "line": 396,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "configureAndTestcopyTemplateToTargetStorageIfNeeded",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

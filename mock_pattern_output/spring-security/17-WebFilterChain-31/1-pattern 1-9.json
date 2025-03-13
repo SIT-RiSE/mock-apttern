@@ -1,0 +1,355 @@
+[
+  {
+    "variableName": "chain",
+    "variableType": "WebFilterChain",
+    "mockedClass": "WebFilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\ObservationWebFilterChainDecoratorTests.java",
+      "className": "ObservationWebFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebFilterChain chain = mock(WebFilterChain.class);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(chain.filter(any())).willReturn(Mono.empty());",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenDefaultsThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "chain",
+    "variableType": "WebFilterChain",
+    "mockedClass": "WebFilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\ObservationWebFilterChainDecoratorTests.java",
+      "className": "ObservationWebFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebFilterChain chain = mock(WebFilterChain.class);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenNoopThenDoesNotObserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(chain.filter(any())).willReturn(Mono.empty());",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenNoopThenDoesNotObserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "chain",
+    "variableType": "WebFilterChain",
+    "mockedClass": "WebFilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\ObservationWebFilterChainDecoratorTests.java",
+      "className": "ObservationWebFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebFilterChain chain = mock(WebFilterChain.class);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenTerminatingFilterThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(chain.filter(any())).willReturn(Mono.error(() -> new Exception(\"ack\")));",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenTerminatingFilterThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "chain",
+    "variableType": "WebFilterChain",
+    "mockedClass": "WebFilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\ObservationWebFilterChainDecoratorTests.java",
+      "className": "ObservationWebFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebFilterChain chain = mock(WebFilterChain.class);",
+        "line": 145,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenErrorSignalThenStopsObservation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(chain.filter(any())).willReturn(Mono.error(() -> new Exception(\"ack\")));",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenErrorSignalThenStopsObservation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "chain",
+    "variableType": "WebFilterChain",
+    "mockedClass": "WebFilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\ObservationWebFilterChainDecoratorTests.java",
+      "className": "ObservationWebFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebFilterChain chain = mock(WebFilterChain.class);",
+        "line": 182,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenCustomAfterFilterThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(chain.filter(any())).willReturn(Mono.empty());",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateWhenCustomAfterFilterThenObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "chain",
+    "variableType": "WebFilterChain",
+    "mockedClass": "WebFilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\ObservationWebFilterChainDecoratorTests.java",
+      "className": "ObservationWebFilterChainDecoratorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebFilterChain chain = mock(WebFilterChain.class);",
+        "line": 230,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenCompletesThenHasSpringSecurityReachedFilterNameTag",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(chain.filter(any())).willReturn(Mono.empty());",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "decorateFiltersWhenCompletesThenHasSpringSecurityReachedFilterNameTag",
+          "methodAnnotations": [
+            "@ParameterizedTest",
+            "@MethodSource"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockChain",
+    "variableType": "WebFilterChain",
+    "mockedClass": "WebFilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\WebFilterChainProxyTests.java",
+      "className": "WebFilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebFilterChain mockChain = mock(WebFilterChain.class);",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChain.filter(any())).willReturn(Mono.empty());",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockChain",
+    "variableType": "WebFilterChain",
+    "mockedClass": "WebFilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\WebFilterChainProxyTests.java",
+      "className": "WebFilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebFilterChain mockChain = mock(WebFilterChain.class);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMismatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChain.filter(any())).willReturn(Mono.empty());",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenMismatchesThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "mockChain",
+    "variableType": "WebFilterChain",
+    "mockedClass": "WebFilterChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\WebFilterChainProxyTests.java",
+      "className": "WebFilterChainProxyTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebFilterChain mockChain = mock(WebFilterChain.class);",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockChain.filter(any())).willReturn(Mono.empty());",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenFilterExceptionThenObservationRegistryObserves",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "chain",
+    "variableType": "PayloadInterceptorChain",
+    "mockedClass": "PayloadInterceptorChain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\authentication\\AuthenticationPayloadInterceptorTests.java",
+      "className": "AuthenticationPayloadInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "PayloadInterceptorChain chain = mock(PayloadInterceptorChain.class);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticationSuccessThenChainSubscribedOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(chain.next(any())).willReturn(voidResult.mono());",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "interceptWhenAuthenticationSuccessThenChainSubscribedOnce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

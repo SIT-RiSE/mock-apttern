@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "snapshot",
+    "variableType": "Snapshot",
+    "mockedClass": "Snapshot",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.event",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\event\\ActionEventUtilsTest.java",
+      "className": "ActionEventUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Snapshot snapshot = Mockito.mock(Snapshot.class);",
+        "line": 371,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSnapshotEventResource",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(snapshot.getUuid()).thenReturn(snapshotResourceUuid);",
+        "line": 372,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSnapshotEventResource",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(snapshot.getVolumeId()).thenReturn(resourceId);",
+        "line": 373,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSnapshotEventResource",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

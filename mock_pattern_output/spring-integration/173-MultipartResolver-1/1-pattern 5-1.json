@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "multipartResolver",
+    "variableType": "MultipartResolver",
+    "mockedClass": "MultipartResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.http.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-http\\src\\test\\java\\org\\springframework\\integration\\http\\inbound\\HttpRequestHandlingMessagingGatewayTests.java",
+      "className": "HttpRequestHandlingMessagingGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MultipartResolver multipartResolver = mock(MultipartResolver.class);",
+        "line": 459,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultipart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(multipartResolver).isMultipart(any(HttpServletRequest.class));",
+        "line": 473,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testMultipart",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

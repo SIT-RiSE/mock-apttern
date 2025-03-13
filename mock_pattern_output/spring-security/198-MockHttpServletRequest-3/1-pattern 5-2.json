@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "mockRequest",
+    "variableType": "MockHttpServletRequest",
+    "mockedClass": "MockHttpServletRequest",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.configuration",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\configuration\\DeferHttpSessionJavaConfigTests.java",
+      "className": "DeferHttpSessionJavaConfigTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MockHttpServletRequest mockRequest = spy(request);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "explicitDeferHttpSession",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockRequest, never()).getSession(anyBoolean());",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "explicitDeferHttpSession",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockRequest, never()).getSession();",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "explicitDeferHttpSession",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "mockRequest",
+    "variableType": "MockHttpServletRequest",
+    "mockedClass": "MockHttpServletRequest",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.http",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\http\\DeferHttpSessionXmlConfigTests.java",
+      "className": "DeferHttpSessionXmlConfigTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MockHttpServletRequest mockRequest = spy(request);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "explicitDeferHttpSession",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockRequest, never()).isRequestedSessionIdValid();",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "explicitDeferHttpSession",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockRequest, never()).changeSessionId();",
+        "line": 64,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "explicitDeferHttpSession",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockRequest, never()).getSession(anyBoolean());",
+        "line": 65,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "explicitDeferHttpSession",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockRequest, never()).getSession();",
+        "line": 66,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "explicitDeferHttpSession",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

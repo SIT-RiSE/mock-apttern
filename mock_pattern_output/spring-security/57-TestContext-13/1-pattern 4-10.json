@@ -1,0 +1,1832 @@
+[
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TestContext testContext;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testNoAnnotation\"));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testWithMockUser\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TestContext testContext;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testNoAnnotation\"));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testWithMockUser\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TestContext testContext;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testNoAnnotation\"));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testWithMockUser\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TestContext testContext;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testNoAnnotation\"));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testWithMockUser\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TestContext testContext;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testNoAnnotation\"));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testWithMockUser\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TestContext testContext;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testNoAnnotation\"));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testWithMockUser\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TestContext testContext;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testNoAnnotation\"));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testWithMockUser\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TestContext testContext;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testNoAnnotation\"));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testWithMockUser\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TestContext testContext;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testNoAnnotation\"));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testWithMockUser\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "testContext",
+    "variableType": "TestContext",
+    "mockedClass": "TestContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithSecurityContextTestExcecutionListenerTests.java",
+      "className": "WithSecurityContextTestExcecutionListenerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate TestContext testContext;",
+        "line": 58,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testNoAnnotation\"));",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNullSecurityContextNoError",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException());",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(ReflectionUtils.findMethod(testClass, \"testWithMockUser\"));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodNoApplicationContext",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getApplicationContext()).willThrow(new IllegalStateException(\"\"));",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerInnerClass",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestClass()).willReturn(testClass);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.testContext.getTestMethod()).willReturn(testNoAnnotation);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "beforeTestMethodInnerClassWhenOverride",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "conglomerate",
+    "variableType": "QueryRunnerFactoryConglomerate",
+    "mockedClass": "QueryRunnerFactoryConglomerate",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.cli",
+      "filePath": "C:\\java tool\\Apache\\druid\\services\\src\\test\\java\\org\\apache\\druid\\cli\\DumpSegmentTest.java",
+      "className": "DumpSegmentTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "QueryRunnerFactoryConglomerate conglomerate = Mockito.mock(QueryRunnerFactoryConglomerate.class);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteQuery",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(conglomerate.findFactory(ArgumentMatchers.any())).thenReturn(factory);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteQuery",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

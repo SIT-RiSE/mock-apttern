@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "injector",
+    "variableType": "Injector",
+    "mockedClass": "Injector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 @Override\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.cli",
+      "filePath": "C:\\java tool\\Apache\\druid\\services\\src\\test\\java\\org\\apache\\druid\\cli\\CreateTablesTest.java",
+      "className": "CreateTablesTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Injector injector = Mockito.mock(Injector.class);",
+        "line": 71,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "makeInjector",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(injector.getInstance(MetadataStorageConnector.class)).thenReturn(connector);",
+        "line": 72,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "makeInjector",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 24
+  }
+]

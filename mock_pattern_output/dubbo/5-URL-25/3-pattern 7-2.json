@@ -1,0 +1,172 @@
+[
+  {
+    "variableName": "triUrl",
+    "variableType": "URL",
+    "mockedClass": "URL",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.protocol",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\protocol\\QosProtocolWrapperTest.java",
+      "className": "QosProtocolWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private URL triUrl = Mockito.mock(URL.class);",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// url2 use tri protocol and qos.accept.foreign.ip=true\r\nwhen(triUrl.getParameter(QOS_ENABLE, true)).thenReturn(true);",
+        "line": 69,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(triUrl.getParameter(QOS_HOST)).thenReturn(\"localhost\");",
+        "line": 70,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(triUrl.getParameter(QOS_PORT, 22222)).thenReturn(12345);",
+        "line": 71,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(triUrl.getParameter(ACCEPT_FOREIGN_IP, \"false\")).thenReturn(\"true\");",
+        "line": 72,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(triUrl.getProtocol()).thenReturn(CommonConstants.TRIPLE);",
+        "line": 73,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "url",
+    "variableType": "URL",
+    "mockedClass": "URL",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.protocol",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\protocol\\QosProtocolWrapperTest.java",
+      "className": "QosProtocolWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private URL url = Mockito.mock(URL.class);",
+        "line": 44,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(url.getParameter(QOS_ENABLE, true)).thenReturn(true);",
+        "line": 58,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(url.getParameter(QOS_HOST)).thenReturn(\"localhost\");",
+        "line": 59,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(url.getParameter(QOS_PORT, 22222)).thenReturn(12345);",
+        "line": 60,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(url.getParameter(ACCEPT_FOREIGN_IP, \"false\")).thenReturn(\"false\");",
+        "line": 61,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(url.getProtocol()).thenReturn(REGISTRY_PROTOCOL);",
+        "line": 62,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@BeforeEach"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  }
+]

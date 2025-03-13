@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "ipstats",
+    "variableType": "InternetProtocolStats",
+    "mockedClass": "InternetProtocolStats",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\OshiSysMonitorTest.java",
+      "className": "OshiSysMonitorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InternetProtocolStats ipstats = Mockito.mock(InternetProtocolStats.class);",
+        "line": 557,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(ipstats.getTCPv4Stats()).thenReturn(tcpv4);",
+        "line": 567,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTcpStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

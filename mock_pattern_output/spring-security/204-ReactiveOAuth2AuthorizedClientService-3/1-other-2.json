@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "authorizedClientService",
+    "variableType": "ReactiveOAuth2AuthorizedClientService",
+    "mockedClass": "ReactiveOAuth2AuthorizedClientService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 Other Methods\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.config.annotation.web.reactive",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\annotation\\web\\reactive\\ReactiveOAuth2AuthorizedClientManagerConfigurationTests.java",
+      "className": "CustomAuthorizedClientServiceConfig"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOAuth2AuthorizedClientService authorizedClientService = mock(ReactiveOAuth2AuthorizedClientService.class);",
+        "line": 427,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "authorizedClientService",
+          "methodAnnotations": [
+            "@Bean"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizedClientService.loadAuthorizedClient(anyString(), anyString())).willReturn(Mono.empty());",
+        "line": 429,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "authorizedClientService",
+          "methodAnnotations": [
+            "@Bean"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 20
+  },
+  {
+    "variableName": "authorizedClientService",
+    "variableType": "ReactiveOAuth2AuthorizedClientService",
+    "mockedClass": "ReactiveOAuth2AuthorizedClientService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServerOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServerOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ReactiveOAuth2AuthorizedClientService authorizedClientService = new ReactiveOAuth2AuthorizedClientService() {\r\n\r\n    @Override\r\n    public <T extends OAuth2AuthorizedClient> Mono<T> loadAuthorizedClient(String clientRegistrationId, String principalName) {\r\n        return authorizedClientServiceDelegate.loadAuthorizedClient(clientRegistrationId, principalName);\r\n    }\r\n\r\n    @Override\r\n    public Mono<Void> saveAuthorizedClient(OAuth2AuthorizedClient authorizedClient, Authentication principal) {\r\n        return authorizedClientServiceDelegate.saveAuthorizedClient(authorizedClient, principal);\r\n    }\r\n\r\n    @Override\r\n    public Mono<Void> removeAuthorizedClient(String clientRegistrationId, String principalName) {\r\n        return authorizedClientServiceDelegate.removeAuthorizedClient(clientRegistrationId, principalName);\r\n    }\r\n};",
+        "line": 870,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientCredentialsClientNotAuthorizedAndOutsideRequestContextThenGetNewToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "authorizedClientService = spy(authorizedClientService);",
+        "line": 887,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientCredentialsClientNotAuthorizedAndOutsideRequestContextThenGetNewToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authorizedClientService).loadAuthorizedClient(any(), any());",
+        "line": 909,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientCredentialsClientNotAuthorizedAndOutsideRequestContextThenGetNewToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authorizedClientService).saveAuthorizedClient(any(), any());",
+        "line": 911,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenClientCredentialsClientNotAuthorizedAndOutsideRequestContextThenGetNewToken",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 16
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "variableName": "affinityGroupDao",
+    "variableType": "AffinityGroupDao",
+    "mockedClass": "AffinityGroupDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.affinity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\affinity-group-processors\\non-strict-host-affinity\\src\\test\\java\\org\\apache\\cloudstack\\affinity\\NonStrictHostAffinityProcessorTest.java",
+      "className": "NonStrictHostAffinityProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAffinityGroupDao affinityGroupDao;",
+        "line": 60,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(affinityGroupDao.findById(affinityGroupId)).thenReturn(affinityGroupVO);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithEmptyPlan",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(affinityGroupDao.findById(affinityGroupId)).thenReturn(affinityGroupVO);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithPlan",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(affinityGroupDao.findById(affinityGroupId)).thenReturn(affinityGroupVO);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithNotRunningVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "affinityGroupDao",
+    "variableType": "AffinityGroupDao",
+    "mockedClass": "AffinityGroupDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.affinity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\affinity-group-processors\\non-strict-host-anti-affinity\\src\\test\\java\\org\\apache\\cloudstack\\affinity\\NonStrictHostAntiAffinityProcessorTest.java",
+      "className": "NonStrictHostAntiAffinityProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAffinityGroupDao affinityGroupDao;",
+        "line": 59,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(affinityGroupDao.findById(affinityGroupId)).thenReturn(affinityGroupVO);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithEmptyPlan",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(affinityGroupDao.findById(affinityGroupId)).thenReturn(affinityGroupVO);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithPlan",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(affinityGroupDao.findById(affinityGroupId)).thenReturn(affinityGroupVO);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithNotRunningVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "affinityGroupDao",
+    "variableType": "AffinityGroupDao",
+    "mockedClass": "AffinityGroupDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nAffinityGroupDao affinityGroupDao;",
+        "line": 238,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(affinityGroupDao.findByUuid(anyString())).thenReturn(affintyGroup1).thenReturn(affintyGroup2);",
+        "line": 1482,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getVmAffinityGroupId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

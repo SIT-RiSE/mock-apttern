@@ -1,0 +1,1321 @@
+[
+  {
+    "variableName": "vmInstanceDaoMock",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\orchestration\\src\\test\\java\\com\\cloud\\vm\\VirtualMachineManagerImplTest.java",
+      "className": "VirtualMachineManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VMInstanceDao vmInstanceDaoMock;",
+        "line": 126,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDaoMock.findByUuid(\"vm-uuid\")).thenReturn(vmInstance);",
+        "line": 974,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNonNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDaoMock.findByUuid(\"vm-uuid\")).thenReturn(vmInstance);",
+        "line": 1066,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testOrchestrateStartNullPodId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.affinity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\affinity-group-processors\\non-strict-host-affinity\\src\\test\\java\\org\\apache\\cloudstack\\affinity\\NonStrictHostAffinityProcessorTest.java",
+      "className": "NonStrictHostAffinityProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao vmInstanceDao;",
+        "line": 62,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(vm2Id)).thenReturn(vm2);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithEmptyPlan",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(vm2Id)).thenReturn(vm2);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithPlan",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(vm3Id)).thenReturn(vm3);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithPlan",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(vm2Id)).thenReturn(vm2);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithNotRunningVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.affinity",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\affinity-group-processors\\non-strict-host-anti-affinity\\src\\test\\java\\org\\apache\\cloudstack\\affinity\\NonStrictHostAntiAffinityProcessorTest.java",
+      "className": "NonStrictHostAntiAffinityProcessorTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao vmInstanceDao;",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(vm2Id)).thenReturn(vm2);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithEmptyPlan",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(vm2Id)).thenReturn(vm2);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithPlan",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(vm3Id)).thenReturn(vm3);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithPlan",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(vm2Id)).thenReturn(vm2);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testProcessWithNotRunningVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.backup",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\backup\\veeam\\src\\test\\java\\org\\apache\\cloudstack\\backup\\VeeamBackupProviderTest.java",
+      "className": "VeeamBackupProviderTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao vmInstanceDao;",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceDao.findByIdIncludingRemoved(Mockito.anyLong())).thenReturn(null);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestExceptionWhenVmIsNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceDao.findByIdIncludingRemoved(Mockito.anyLong())).thenReturn(vmInstanceVO);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestExceptionWhenForcedIsFalse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceDao.findByIdIncludingRemoved(Mockito.anyLong())).thenReturn(vmInstanceVO);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestSuccessWhenForcedIsTrueAndHasJustOneBackup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceDao.findByIdIncludingRemoved(Mockito.anyLong())).thenReturn(vmInstanceVO);",
+        "line": 122,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteBackupTestSuccessWhenForcedIsTrueAndHasMoreThanOneBackup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenElementTest.java",
+      "className": "TungstenElementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao vmInstanceDao;",
+        "line": 138,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByIdIncludingRemoved(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyStaticNatsAddRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByIdIncludingRemoved(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyStaticNatsAddRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByIdIncludingRemoved(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 299,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyStaticNatsRevokeRuleSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findByIdIncludingRemoved(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 321,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "applyStaticNatsRevokeRuleFailTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 616,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "preparePublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 645,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareManagementNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 671,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareWithExceptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 695,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releasePublicNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 725,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseManagementNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 751,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "releaseWithExceptionTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 1018,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareMigrationTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenGuestNetworkGuruTest.java",
+      "className": "TungstenGuestNetworkGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao vmInstanceDao;",
+        "line": 139,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 388,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReserve",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 414,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRelease",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(anyLong())).thenReturn(vmInstanceVO);",
+        "line": 487,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrepareMigration",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao _vmInstanceDao;",
+        "line": 183,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 641,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 656,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 674,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 692,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(arrayList);",
+        "line": 710,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 728,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnClusterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 740,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 758,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 776,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPodTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 790,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 804,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPublicIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(arrayList);",
+        "line": 822,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 840,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 858,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPhysicalNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao _vmInstanceDao;",
+        "line": 183,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 641,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 656,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 674,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 692,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(arrayList);",
+        "line": 710,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 728,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnClusterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 740,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 758,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 776,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPodTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 790,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 804,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPublicIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(arrayList);",
+        "line": 822,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 840,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 858,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPhysicalNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.configuration",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\configuration\\ConfigurationManagerTest.java",
+      "className": "ConfigurationManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao _vmInstanceDao;",
+        "line": 183,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 641,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 656,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 674,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 692,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(arrayList);",
+        "line": 710,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByPodId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 728,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfPodIsDeletableFailureOnClusterTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 740,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableSuccessTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 758,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnHostTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 776,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPodTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 790,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPrivateIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 804,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPublicIpAddressTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(arrayList);",
+        "line": 822,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVmInstanceTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 840,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_vmInstanceDao.listByZoneId(anyLong())).thenReturn(new ArrayList<VMInstanceVO>());",
+        "line": 858,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkIfZoneIsDeletableFailureOnPhysicalNetworkTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_instanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.ha",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\ha\\HighAvailabilityManagerImplTest.java",
+      "className": "HighAvailabilityManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao _instanceDao;",
+        "line": 80,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(_instanceDao.listByHostId(42l)).thenReturn(Arrays.asList(Mockito.mock(VMInstanceVO.class)));",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_instanceDao.listByHostId(Mockito.anyLong())).thenReturn(vms);",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNonEmptyVMList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_instanceDao.findByUuid(vm1.getUuid())).thenReturn(vm1);",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNonEmptyVMList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(_instanceDao.findByUuid(vm2.getUuid())).thenReturn(vm2);",
+        "line": 200,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "scheduleRestartForVmsOnHostNonEmptyVMList",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.as",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\as\\AutoScaleManagerImplTest.java",
+      "className": "AutoScaleManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao vmInstanceDao;",
+        "line": 256,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(vmInstanceDao.findById(virtualMachineId)).thenReturn(userVmMock);",
+        "line": 1957,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "checkNetScalerAsGroup",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\StorageManagerImplTest.java",
+      "className": "StorageManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMInstanceDao vmInstanceDao;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceDao.findById(1L)).thenReturn(Mockito.mock(VMInstanceVO.class));",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVolumeSuspectedDestroyDuplicateNoVmVolumes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(vmInstanceDao.findById(1L)).thenReturn(Mockito.mock(VMInstanceVO.class));",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVolumeSuspectedDestroyDuplicateTrue",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "_vmInstanceDao",
+    "variableType": "VMInstanceDao",
+    "mockedClass": "VMInstanceDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerTest.java",
+      "className": "UserVmManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VMInstanceDao _vmInstanceDao;",
+        "line": 151,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(_vmInstanceDao.findById(anyLong())).thenReturn(_vmInstance);",
+        "line": 297,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testScaleVMF1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "lenient().when(_vmInstanceDao.findById(anyLong())).thenReturn(_vmInstance);",
+        "line": 329,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testScaleVMF2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmInstanceDao.findById(anyLong())).thenReturn(_vmInstance);",
+        "line": 368,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testScaleVMF3",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//UserContext.current().setEventDetails(\"Vm Id: \"+getId());\r\n//Account account = (Account) new AccountVO(\"testaccount\", 1L, \"networkdomain\", (short) 0, 1);\r\n//AccountVO(String accountName, long domainId, String networkDomain, short type, int regionId)\r\n//UserContext.registerContext(1, account, null, true);\r\nwhen(_vmInstanceDao.findById(anyLong())).thenReturn(_vmInstance);",
+        "line": 414,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testScaleVMF4",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

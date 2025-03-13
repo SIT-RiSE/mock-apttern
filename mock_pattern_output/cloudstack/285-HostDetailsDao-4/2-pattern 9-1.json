@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "hostDetailsDao",
+    "variableType": "HostDetailsDao",
+    "mockedClass": "HostDetailsDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.vmware.manager",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\vmware\\src\\test\\java\\com\\cloud\\hypervisor\\vmware\\manager\\VmwareManagerImplTest.java",
+      "className": "VmwareManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HostDetailsDao hostDetailsDao;",
+        "line": 66,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(hostDetailsDao, Mockito.times(1)).persist(Mockito.anyLong(), Mockito.anyMapOf(String.class, String.class));",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "updateVmwareDatacenterNormalUpdate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

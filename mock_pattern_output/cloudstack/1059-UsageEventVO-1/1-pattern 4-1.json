@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "usageEventVOMock",
+    "variableType": "UsageEventVO",
+    "mockedClass": "UsageEventVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.usage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\usage\\src\\test\\java\\com\\cloud\\usage\\UsageManagerImplTest.java",
+      "className": "UsageManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate UsageEventVO usageEventVOMock;",
+        "line": 49,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(this.usageEventVOMock.getType()).thenReturn(EventTypes.EVENT_VPN_USER_ADD);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleVpnUserEventTestAddUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(this.usageEventVOMock.getType()).thenReturn(EventTypes.EVENT_VPN_USER_REMOVE);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleVpnUserEventTestRemoveUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(this.usageEventVOMock.getType()).thenReturn(\"VPN.USER.UPDATE\");",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleVpnUserEventTestEventIsNeitherAddNorRemove",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(usageEventVOMock.getType()).thenReturn(EventTypes.EVENT_VM_SNAPSHOT_CREATE);",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleVMSnapshotEventTestCreateVMSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(usageEventVOMock.getType()).thenReturn(EventTypes.EVENT_VM_SNAPSHOT_DELETE);",
+        "line": 228,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleVMSnapshotEventTestDeleteVMSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(this.usageEventVOMock.getType()).thenReturn(\"VPN.USER.UPDATE\");",
+        "line": 239,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "handleVMSnapshotEventTestEventIsNeitherAddNorRemove",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

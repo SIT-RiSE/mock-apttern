@@ -1,0 +1,137 @@
+[
+  {
+    "variableName": "provider",
+    "variableType": "AclEntryAfterInvocationProvider",
+    "mockedClass": "AclEntryAfterInvocationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.afterinvocation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\afterinvocation\\AclEntryAfterInvocationProviderTests.java",
+      "className": "AclEntryAfterInvocationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AclEntryAfterInvocationProvider provider = new AclEntryAfterInvocationProvider(service, Arrays.asList(mock(Permission.class)));",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "accessIsAllowedIfPermissionIsGranted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "provider",
+    "variableType": "AclEntryAfterInvocationProvider",
+    "mockedClass": "AclEntryAfterInvocationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.afterinvocation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\afterinvocation\\AclEntryAfterInvocationProviderTests.java",
+      "className": "AclEntryAfterInvocationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AclEntryAfterInvocationProvider provider = new AclEntryAfterInvocationProvider(mock(AclService.class), Arrays.asList(mock(Permission.class)));",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "accessIsGrantedIfNoAttributesDefined",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "provider",
+    "variableType": "AclEntryAfterInvocationProvider",
+    "mockedClass": "AclEntryAfterInvocationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.afterinvocation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\afterinvocation\\AclEntryAfterInvocationProviderTests.java",
+      "className": "AclEntryAfterInvocationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AclEntryAfterInvocationProvider provider = new AclEntryAfterInvocationProvider(mock(AclService.class), Arrays.asList(mock(Permission.class)));",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "accessIsGrantedIfObjectTypeNotSupported",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "provider",
+    "variableType": "AclEntryAfterInvocationProvider",
+    "mockedClass": "AclEntryAfterInvocationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.afterinvocation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\afterinvocation\\AclEntryAfterInvocationProviderTests.java",
+      "className": "AclEntryAfterInvocationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AclEntryAfterInvocationProvider provider = new AclEntryAfterInvocationProvider(service, Arrays.asList(mock(Permission.class)));",
+        "line": 107,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "accessIsDeniedIfPermissionIsNotGranted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "provider",
+    "variableType": "AclEntryAfterInvocationProvider",
+    "mockedClass": "AclEntryAfterInvocationProvider",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.acls.afterinvocation",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\acl\\src\\test\\java\\org\\springframework\\security\\acls\\afterinvocation\\AclEntryAfterInvocationProviderTests.java",
+      "className": "AclEntryAfterInvocationProviderTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AclEntryAfterInvocationProvider provider = new AclEntryAfterInvocationProvider(service, Arrays.asList(mock(Permission.class)));",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "nullReturnObjectIsIgnored",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "variableName": "secondSuccess",
+    "variableType": "OAuth2TokenValidator<OAuth2Token>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\DelegatingOAuth2TokenValidatorTests.java",
+      "className": "DelegatingOAuth2TokenValidatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<OAuth2Token> secondSuccess = mock(OAuth2TokenValidator.class);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorsWhenInvokedWithSameInputsThenResultInSameOutputs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(secondSuccess.validate(any(OAuth2Token.class))).willReturn(OAuth2TokenValidatorResult.success());",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorsWhenInvokedWithSameInputsThenResultInSameOutputs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(secondSuccess, times(2)).validate(token);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorsWhenInvokedWithSameInputsThenResultInSameOutputs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "firstSuccess",
+    "variableType": "OAuth2TokenValidator<OAuth2Token>",
+    "mockedClass": "OAuth2TokenValidator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.core",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-core\\src\\test\\java\\org\\springframework\\security\\oauth2\\core\\DelegatingOAuth2TokenValidatorTests.java",
+      "className": "DelegatingOAuth2TokenValidatorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "OAuth2TokenValidator<OAuth2Token> firstSuccess = mock(OAuth2TokenValidator.class);",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorsWhenInvokedWithSameInputsThenResultInSameOutputs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(firstSuccess.validate(any(OAuth2Token.class))).willReturn(OAuth2TokenValidatorResult.success());",
+        "line": 102,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorsWhenInvokedWithSameInputsThenResultInSameOutputs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(firstSuccess, times(2)).validate(token);",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorsWhenInvokedWithSameInputsThenResultInSameOutputs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

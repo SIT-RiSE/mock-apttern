@@ -1,0 +1,54 @@
+[
+  {
+    "variableName": "executor",
+    "variableType": "ExecutorService",
+    "mockedClass": "ExecutorService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 @Override\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.java.util.metrics",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\java\\util\\metrics\\ClockDriftSafeMonitorSchedulerTest.java",
+      "className": "ClockDriftSafeMonitorSchedulerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ExecutorService executor = Mockito.mock(ExecutorService.class);",
+        "line": 311,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(executor.submit(ArgumentMatchers.any(Callable.class))).thenThrow(new RuntimeException(\"Test throwing exception while scheduling\"));",
+        "line": 326,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "answer",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(executor, Mockito.times(1)).submit(ArgumentMatchers.any(Callable.class));",
+        "line": 353,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStart_UnexpectedExceptionWhileScheduling",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 68
+  }
+]

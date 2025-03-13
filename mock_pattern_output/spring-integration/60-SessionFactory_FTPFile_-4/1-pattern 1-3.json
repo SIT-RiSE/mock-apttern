@@ -1,0 +1,136 @@
+[
+  {
+    "variableName": "sessionFactory",
+    "variableType": "SessionFactory<FTPFile>",
+    "mockedClass": "SessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.session",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\session\\FtpRemoteFileTemplateTests.java",
+      "className": "FtpRemoteFileTemplateTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "@SuppressWarnings(\"unchecked\")\r\nSessionFactory<FTPFile> sessionFactory = mock(SessionFactory.class);",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFileCloseOnBadConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sessionFactory.getSession()).thenThrow(new RuntimeException(\"bar\"));",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFileCloseOnBadConnect",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "sessionFactory",
+    "variableType": "SessionFactory<FTPFile>",
+    "mockedClass": "SessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.session",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\session\\SessionFactoryTests.java",
+      "className": "SessionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionFactory<FTPFile> sessionFactory = Mockito.mock(SessionFactory.class);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaleConnection",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(sessionFactory.getSession()).thenReturn(sessionA);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaleConnection",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(sessionFactory.getSession()).thenReturn(sessionB);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaleConnection",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "sessionFactory",
+    "variableType": "SessionFactory<FTPFile>",
+    "mockedClass": "SessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ftp.session",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ftp\\src\\test\\java\\org\\springframework\\integration\\ftp\\session\\SessionFactoryTests.java",
+      "className": "SessionFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionFactory<FTPFile> sessionFactory = Mockito.mock(SessionFactory.class);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSessionWaitExpire",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(sessionFactory.getSession()).thenReturn(session);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSessionWaitExpire",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

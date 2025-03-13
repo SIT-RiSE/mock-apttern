@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "beanFactory",
+    "variableType": "ScopeBeanFactory",
+    "mockedClass": "ScopeBeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metrics.collector",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metrics\\dubbo-metrics-default\\src\\test\\java\\org\\apache\\dubbo\\metrics\\collector\\AggregateMetricsCollectorTest.java",
+      "className": "AggregateMetricsCollectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ScopeBeanFactory beanFactory = mock(ScopeBeanFactory.class);",
+        "line": 211,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(DefaultMetricsCollector.class)).thenReturn(defaultMetricsCollector);",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "beanFactory",
+    "variableType": "ScopeBeanFactory",
+    "mockedClass": "ScopeBeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.metadata",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\metadata\\ServiceInstanceHostPortCustomizerTest.java",
+      "className": "ServiceInstanceHostPortCustomizerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ScopeBeanFactory beanFactory = mock(ScopeBeanFactory.class);",
+        "line": 57,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "customizePreferredProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(beanFactory.getBean(MetadataService.class)).thenReturn(metadataService);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "customizePreferredProtocol",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

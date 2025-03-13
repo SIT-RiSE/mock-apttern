@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "registry",
+    "variableType": "SessionRegistry",
+    "mockedClass": "SessionRegistry",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.concurrent",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\concurrent\\ConcurrentSessionFilterTests.java",
+      "className": "ConcurrentSessionFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionRegistry registry = mock(SessionRegistry.class);",
+        "line": 277,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockSessionRegistry",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(registry.getSessionInformation(anyString())).willReturn(information);",
+        "line": 281,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockSessionRegistry",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

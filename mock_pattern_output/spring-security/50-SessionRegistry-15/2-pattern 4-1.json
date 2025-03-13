@@ -1,0 +1,101 @@
+[
+  {
+    "variableName": "sessionRegistry",
+    "variableType": "SessionRegistry",
+    "mockedClass": "SessionRegistry",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.authentication.session",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\authentication\\session\\ConcurrentSessionControlAuthenticationStrategyTests.java",
+      "className": "ConcurrentSessionControlAuthenticationStrategyTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate SessionRegistry sessionRegistry;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.getAllSessions(any(), anyBoolean())).willReturn(Collections.<SessionInformation>emptyList());",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "noRegisteredSession",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.getAllSessions(any(), anyBoolean())).willReturn(Collections.<SessionInformation>singletonList(this.sessionInformation));",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "maxSessionsSameSessionId",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.getAllSessions(any(), anyBoolean())).willReturn(Collections.<SessionInformation>singletonList(this.sessionInformation));",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "maxSessionsWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.getAllSessions(any(), anyBoolean())).willReturn(Collections.<SessionInformation>singletonList(this.sessionInformation));",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "maxSessionsExpireExistingUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.getAllSessions(any(), anyBoolean())).willReturn(Arrays.<SessionInformation>asList(moreRecentSessionInfo, this.sessionInformation));",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "maxSessionsExpireLeastRecentExistingUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.getAllSessions(any(), anyBoolean())).willReturn(Arrays.<SessionInformation>asList(oldestSessionInfo, secondOldestSessionInfo, this.sessionInformation));",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationWhenMaxSessionsExceededByTwoThenTwoSessionsExpired",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

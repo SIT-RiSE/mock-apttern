@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "createVol",
+    "variableType": "CreateVolumeCmd",
+    "mockedClass": "CreateVolumeCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate CreateVolumeCmd createVol;",
+        "line": 174,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(createVol.getVolumeName()).thenReturn(null);",
+        "line": 556,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNullGetVolumeNameFromCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(createVol.getVolumeName()).thenReturn(\"\");",
+        "line": 562,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testEmptyGetVolumeNameFromCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(createVol.getVolumeName()).thenReturn(\"   \");",
+        "line": 568,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testBlankGetVolumeNameFromCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(createVol.getVolumeName()).thenReturn(\"abc\");",
+        "line": 574,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNonEmptyGetVolumeNameFromCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "variableName": "client",
+    "variableType": "ScaleIOGatewayClient",
+    "mockedClass": "ScaleIOGatewayClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ScaleIOGatewayClient client = Mockito.mock(ScaleIOGatewayClient.class);",
+        "line": 359,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.deleteVolume(any())).thenReturn(true);",
+        "line": 362,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "client",
+    "variableType": "ScaleIOGatewayClient",
+    "mockedClass": "ScaleIOGatewayClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ScaleIOGatewayClient client = Mockito.mock(ScaleIOGatewayClient.class);",
+        "line": 396,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.deleteVolume(any())).thenReturn(false);",
+        "line": 399,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "revertBlockCopyVolumeOperationsOnDeleteFailure",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "client",
+    "variableType": "ScaleIOGatewayClient",
+    "mockedClass": "ScaleIOGatewayClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ScaleIOGatewayClient client = Mockito.mock(ScaleIOGatewayClient.class);",
+        "line": 427,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeSuccessScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.deleteVolume(any())).thenReturn(true);",
+        "line": 430,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeSuccessScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "client",
+    "variableType": "ScaleIOGatewayClient",
+    "mockedClass": "ScaleIOGatewayClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.datastore.driver",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\storage\\volume\\scaleio\\src\\test\\java\\org\\apache\\cloudstack\\storage\\datastore\\driver\\ScaleIOPrimaryDataStoreDriverTest.java",
+      "className": "ScaleIOPrimaryDataStoreDriverTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ScaleIOGatewayClient client = Mockito.mock(ScaleIOGatewayClient.class);",
+        "line": 453,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(client.deleteVolume(any())).thenReturn(false);",
+        "line": 457,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteSourceVolumeFailureScenarioAfterSuccessfulBlockCopy",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

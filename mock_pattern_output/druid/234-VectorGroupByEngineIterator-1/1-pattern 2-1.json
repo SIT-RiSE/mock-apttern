@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "iterator",
+    "variableType": "VectorGroupByEngineIterator",
+    "mockedClass": "VectorGroupByEngineIterator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.query.groupby.epinephelinae.vector",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\query\\groupby\\epinephelinae\\vector\\VectorGroupByEngineIteratorTest.java",
+      "className": "VectorGroupByEngineIteratorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final VectorGroupByEngineIterator iterator = new VectorGroupByEngineIterator(query, new GroupByQueryConfig(), GroupByQueryRunnerTest.DEFAULT_PROCESSING_CONFIG, storageAdapter, cursor, interval, dimensions, byteBuffer, null) {\r\n\r\n    @Override\r\n    VectorGrouper makeGrouper() {\r\n        grouperCaptor.setValue(Mockito.spy(super.makeGrouper()));\r\n        return grouperCaptor.getValue();\r\n    }\r\n};",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateOneGrouperAndCloseItWhenClose",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

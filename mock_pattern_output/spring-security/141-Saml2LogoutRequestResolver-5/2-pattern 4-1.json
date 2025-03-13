@@ -1,0 +1,51 @@
+[
+  {
+    "variableName": "logoutRequestResolver",
+    "variableType": "Saml2LogoutRequestResolver",
+    "mockedClass": "Saml2LogoutRequestResolver",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication.logout",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\logout\\Saml2RelyingPartyInitiatedLogoutSuccessHandlerTests.java",
+      "className": "Saml2RelyingPartyInitiatedLogoutSuccessHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "Saml2LogoutRequestResolver logoutRequestResolver = mock(Saml2LogoutRequestResolver.class);",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutRequestResolver.resolve(any(), any())).willReturn(logoutRequest);",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessWhenRedirectThenRedirectsToAssertingParty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.logoutRequestResolver.resolve(any(), any())).willReturn(logoutRequest);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onLogoutSuccessWhenPostThenPostsToAssertingParty",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

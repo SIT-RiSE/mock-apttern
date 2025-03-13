@@ -1,0 +1,263 @@
+[
+  {
+    "variableName": "template",
+    "variableType": "TemplateObjectTO",
+    "mockedClass": "TemplateObjectTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\integration-test\\src\\test\\java\\org\\apache\\cloudstack\\storage\\test\\DirectAgentTest.java",
+      "className": "DirectAgentTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TemplateObjectTO template = Mockito.mock(TemplateObjectTO.class);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownloadTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getPath()).thenReturn(getTemplateUrl());",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownloadTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getDataStore()).thenReturn(imageStore);",
+        "line": 140,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDownloadTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "template",
+    "variableType": "TemplateObjectTO",
+    "mockedClass": "TemplateObjectTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\secondary-storage\\server\\src\\test\\java\\org\\apache\\cloudstack\\storage\\resource\\LocalNfsSecondaryStorageResourceTest.java",
+      "className": "LocalNfsSecondaryStorageResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TemplateObjectTO template = Mockito.mock(TemplateObjectTO.class);",
+        "line": 81,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getDataStore()).thenReturn(swift);",
+        "line": 90,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getPath()).thenReturn(\"template/1/1/\");",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.isRequiresHvm()).thenReturn(true);",
+        "line": 92,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getId()).thenReturn(1L);",
+        "line": 93,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getFormat()).thenReturn(Storage.ImageFormat.VHD);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getOrigUrl()).thenReturn(\"http://nfs1.lab.vmops.com/templates/test.bz2\");",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getName()).thenReturn(UUID.randomUUID().toString());",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getObjectType()).thenReturn(DataObjectType.TEMPLATE);",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getPath()).thenReturn(answer.getInstallPath());",
+        "line": 104,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(template.getDataStore()).thenReturn(swift);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "destTemplate",
+    "variableType": "TemplateObjectTO",
+    "mockedClass": "TemplateObjectTO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\secondary-storage\\server\\src\\test\\java\\org\\apache\\cloudstack\\storage\\resource\\LocalNfsSecondaryStorageResourceTest.java",
+      "className": "LocalNfsSecondaryStorageResourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "TemplateObjectTO destTemplate = Mockito.mock(TemplateObjectTO.class);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(destTemplate.getPath()).thenReturn(\"template/1/2\");",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(destTemplate.getDataStore()).thenReturn(cacheStore);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(destTemplate.getObjectType()).thenReturn(DataObjectType.TEMPLATE);",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testExecuteRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

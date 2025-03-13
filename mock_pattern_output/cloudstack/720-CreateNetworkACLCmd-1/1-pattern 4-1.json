@@ -1,0 +1,207 @@
+[
+  {
+    "variableName": "createNetworkAclCmdMock",
+    "variableType": "CreateNetworkACLCmd",
+    "mockedClass": "CreateNetworkACLCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.vpc",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\network\\vpc\\NetworkACLServiceImplTest.java",
+      "className": "NetworkACLServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate CreateNetworkACLCmd createNetworkAclCmdMock;",
+        "line": 90,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getNetworkId()).thenReturn(1L);",
+        "line": 135,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "befoteTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getProtocol()).thenReturn(\"tcp\");",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "befoteTest",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getNumber()).thenReturn(number);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createNetworkACLItemTestForNumberAndExecuteTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getACLId()).thenReturn(expectedAclListId);",
+        "line": 200,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAclListIfNeededTestAclRuleListIdNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getACLId()).thenReturn(null);",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAclListIfNeededTestAclRuleListIdNullAndNetworkDoesNotHaveVpc",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getNetworkId()).thenReturn(networkId);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAclListIfNeededTestAclRuleListIdNullAndNetworkDoesNotHaveVpc",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getACLId()).thenReturn(null);",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAclListIfNeededTestAclRuleListIdNullAndNetworkWithVpcAndNotAclListYet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getNetworkId()).thenReturn(networkId);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAclListIfNeededTestAclRuleListIdNullAndNetworkWithVpcAndNotAclListYet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getACLId()).thenReturn(null);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAclListIfNeededTestAclRuleListIdNullAndNetworkWithVpcAndAclListAlreadyCreated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getNetworkId()).thenReturn(networkId);",
+        "line": 249,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createAclListIfNeededTestAclRuleListIdNullAndNetworkWithVpcAndAclListAlreadyCreated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getNumber()).thenReturn(0);",
+        "line": 341,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclRuleNumberTestNumberLessThanOne",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getNumber()).thenReturn(-1);",
+        "line": 347,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclRuleNumberTestNumberNegative",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getNumber()).thenReturn(1);",
+        "line": 353,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclRuleNumberTestNumberInOtherAcl",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getNumber()).thenReturn(1);",
+        "line": 363,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclRuleNumberTestHappyDay",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(createNetworkAclCmdMock.getNumber()).thenReturn(null);",
+        "line": 372,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateAclRuleNumberTestNumberNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

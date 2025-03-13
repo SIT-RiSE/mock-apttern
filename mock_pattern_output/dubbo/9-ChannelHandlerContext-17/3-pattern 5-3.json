@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "context",
+    "variableType": "ChannelHandlerContext",
+    "mockedClass": "ChannelHandlerContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\TelnetProcessHandlerTest.java",
+      "className": "TelnetProcessHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ChannelHandlerContext context = mock(ChannelHandlerContext.class);",
+        "line": 40,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrompt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(context).writeAndFlush(QosProcessHandler.PROMPT);",
+        "line": 47,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrompt",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "context",
+    "variableType": "ChannelHandlerContext",
+    "mockedClass": "ChannelHandlerContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\TelnetProcessHandlerTest.java",
+      "className": "TelnetProcessHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ChannelHandlerContext context = mock(ChannelHandlerContext.class);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnknownCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(context, Mockito.atLeastOnce()).writeAndFlush(captor.capture());",
+        "line": 68,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnknownCommand",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "context",
+    "variableType": "ChannelHandlerContext",
+    "mockedClass": "ChannelHandlerContext",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.qos.server.handler",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-plugin\\dubbo-qos\\src\\test\\java\\org\\apache\\dubbo\\qos\\server\\handler\\TelnetProcessHandlerTest.java",
+      "className": "TelnetProcessHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ChannelHandlerContext context = mock(ChannelHandlerContext.class);",
+        "line": 74,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGreeting",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(context).writeAndFlush(captor.capture());",
+        "line": 82,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGreeting",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

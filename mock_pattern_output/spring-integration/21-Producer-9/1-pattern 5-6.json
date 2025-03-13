@@ -1,0 +1,391 @@
+[
+  {
+    "variableName": "producer",
+    "variableType": "Producer",
+    "mockedClass": "Producer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Producer producer = mock(Producer.class);",
+        "line": 508,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).beginTransaction();",
+        "line": 520,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).send(any(ProducerRecord.class), any(Callback.class));",
+        "line": 521,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).commitTransaction();",
+        "line": 522,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransaction",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "producer",
+    "variableType": "Producer",
+    "mockedClass": "Producer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Producer producer = mock(Producer.class);",
+        "line": 601,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).beginTransaction();",
+        "line": 624,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).send(any(ProducerRecord.class), any(Callback.class));",
+        "line": 625,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).commitTransaction();",
+        "line": 626,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionTxIdOverride",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "producer",
+    "variableType": "Producer",
+    "mockedClass": "Producer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Producer producer = mock(Producer.class);",
+        "line": 633,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionSynch",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(producer).beginTransaction();",
+        "line": 653,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionSynch",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(producer).send(any(ProducerRecord.class), any(Callback.class));",
+        "line": 654,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionSynch",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(producer).abortTransaction();",
+        "line": 655,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionSynch",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(producer).close(any());",
+        "line": 656,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionSynch",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(producer);",
+        "line": 657,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTransactionSynch",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "producer",
+    "variableType": "Producer",
+    "mockedClass": "Producer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Producer producer = mock(Producer.class);",
+        "line": 762,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFlush",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).send(captor.capture(), any(Callback.class));",
+        "line": 775,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFlush",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).flush();",
+        "line": 776,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFlush",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "producer",
+    "variableType": "Producer",
+    "mockedClass": "Producer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Producer producer = mock(Producer.class);",
+        "line": 785,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoFlush",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer).send(any(ProducerRecord.class), any(Callback.class));",
+        "line": 796,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoFlush",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(producer, never()).flush();",
+        "line": 797,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNoFlush",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "producer",
+    "variableType": "Producer",
+    "mockedClass": "Producer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Producer producer = mock(Producer.class);",
+        "line": 805,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "conversion",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(producer).send(captor.capture(), any(Callback.class));",
+        "line": 824,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "conversion",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(producer, times(2)).send(captor.capture(), any(Callback.class));",
+        "line": 828,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "conversion",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

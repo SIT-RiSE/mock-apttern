@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "message",
+    "variableType": "WebServiceMessage",
+    "mockedClass": "WebServiceMessage",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.ws.config",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-ws\\src\\test\\java\\org\\springframework\\integration\\ws\\config\\StubMessageFactory.java",
+      "className": "StubMessageFactory"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "WebServiceMessage message = mock(WebServiceMessage.class);",
+        "line": 45,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createWebServiceMessage",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(message.getPayloadSource()).thenReturn(source);",
+        "line": 47,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "createWebServiceMessage",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

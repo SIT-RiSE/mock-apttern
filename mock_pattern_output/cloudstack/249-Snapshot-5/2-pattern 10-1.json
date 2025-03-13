@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "snapshot",
+    "variableType": "Snapshot",
+    "mockedClass": "Snapshot",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\snapshot\\src\\test\\java\\org\\apache\\cloudstack\\storage\\snapshot\\CephSnapshotStrategyTest.java",
+      "className": "CephSnapshotStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Snapshot snapshot = Mockito.mock(Snapshot.class);",
+        "line": 77,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureAndVerifyCanHandle",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(snapshot.getVolumeId()).thenReturn(0l);",
+        "line": 80,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureAndVerifyCanHandle",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

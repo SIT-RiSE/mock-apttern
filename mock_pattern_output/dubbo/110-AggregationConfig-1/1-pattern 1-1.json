@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "aggregationConfig",
+    "variableType": "AggregationConfig",
+    "mockedClass": "AggregationConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metrics.collector",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metrics\\dubbo-metrics-default\\src\\test\\java\\org\\apache\\dubbo\\metrics\\collector\\AggregateMetricsCollectorTest.java",
+      "className": "AggregateMetricsCollectorTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AggregationConfig aggregationConfig = mock(AggregationConfig.class);",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(aggregationConfig.getEnabled()).thenReturn(Boolean.TRUE);",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testQPS",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

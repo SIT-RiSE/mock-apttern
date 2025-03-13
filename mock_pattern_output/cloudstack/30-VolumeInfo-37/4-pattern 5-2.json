@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "volumeInfoMock1",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo volumeInfoMock1 = Mockito.mock(VolumeInfo.class);",
+        "line": 1005,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "cleanVolumesCacheTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeInfoMock1).delete();",
+        "line": 1023,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "cleanVolumesCacheTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "volumeInfoMock2",
+    "variableType": "VolumeInfo",
+    "mockedClass": "VolumeInfo",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "VolumeInfo volumeInfoMock2 = Mockito.mock(VolumeInfo.class);",
+        "line": 1006,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "cleanVolumesCacheTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeInfoMock2).delete();",
+        "line": 1024,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "cleanVolumesCacheTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

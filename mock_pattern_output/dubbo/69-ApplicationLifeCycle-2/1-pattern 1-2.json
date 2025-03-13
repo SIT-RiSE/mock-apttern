@@ -1,0 +1,92 @@
+[
+  {
+    "variableName": "applicationLifeCycle",
+    "variableType": "ApplicationLifeCycle",
+    "mockedClass": "ApplicationLifeCycle",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config.spring.status",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-spring\\src\\test\\java\\org\\apache\\dubbo\\config\\spring\\status\\SpringStatusCheckerTest.java",
+      "className": "SpringStatusCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationLifeCycle applicationLifeCycle = mock(ApplicationLifeCycle.class);",
+        "line": 59,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithLifeCycleRunning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(applicationLifeCycle.getConfigLocations()).willReturn(new String[] { \"test1\", \"test2\" });",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithLifeCycleRunning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(applicationLifeCycle.isRunning()).willReturn(true);",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithLifeCycleRunning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "applicationLifeCycle",
+    "variableType": "ApplicationLifeCycle",
+    "mockedClass": "ApplicationLifeCycle",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.config.spring.status",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-config\\dubbo-config-spring\\src\\test\\java\\org\\apache\\dubbo\\config\\spring\\status\\SpringStatusCheckerTest.java",
+      "className": "SpringStatusCheckerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ApplicationLifeCycle applicationLifeCycle = mock(ApplicationLifeCycle.class);",
+        "line": 72,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithoutLifeCycleRunning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(applicationLifeCycle.isRunning()).willReturn(false);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testWithoutLifeCycleRunning",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

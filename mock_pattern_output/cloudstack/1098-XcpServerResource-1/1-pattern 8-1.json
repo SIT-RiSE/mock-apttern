@@ -1,0 +1,221 @@
+[
+  {
+    "variableName": "XcpServerResource",
+    "variableType": "XcpServerResource",
+    "mockedClass": "XcpServerResource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.xenserver.resource.wrapper.xenbase",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\xenserver\\src\\test\\java\\com\\cloud\\hypervisor\\xenserver\\resource\\wrapper\\xenbase\\XcpServerWrapperTest.java",
+      "className": "XcpServerWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprotected XcpServerResource XcpServerResource;",
+        "line": 48,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getConnection()).thenReturn(conn);",
+        "line": 70,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandCreate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.networkUsage(conn, usageCommand.getPrivateIP(), \"create\", null)).thenReturn(\"success\");",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandCreate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(XcpServerResource, times(1)).getConnection();",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandCreate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getConnection()).thenReturn(conn);",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandGet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getNetworkStats(conn, usageCommand.getPrivateIP(), null)).thenReturn(new long[] { 1l, 1l });",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandGet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(XcpServerResource, times(1)).getConnection();",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandGet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getConnection()).thenReturn(conn);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandExceptiopn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.networkUsage(conn, usageCommand.getPrivateIP(), \"create\", null)).thenThrow(new CloudRuntimeException(\"FAILED\"));",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandExceptiopn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(XcpServerResource, times(1)).getConnection();",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNetworkUsageCommandExceptiopn",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getVPCNetworkStats(getAutoScaleMetricsCommand.getPrivateIP(), getAutoScaleMetricsCommand.getPublicIP())).thenReturn(vpcStats);",
+        "line": 141,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetAutoScaleMetricsCommandForVpc",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getNetworkLbStats(getAutoScaleMetricsCommand.getPrivateIP(), getAutoScaleMetricsCommand.getPublicIP(), getAutoScaleMetricsCommand.getPort())).thenReturn(lbStats);",
+        "line": 142,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetAutoScaleMetricsCommandForVpc",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getConnection()).thenReturn(conn);",
+        "line": 176,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetAutoScaleMetricsCommandForNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getNetworkStats(conn, getAutoScaleMetricsCommand.getPrivateIP(), getAutoScaleMetricsCommand.getPublicIP())).thenReturn(networkStats);",
+        "line": 177,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetAutoScaleMetricsCommandForNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getNetworkLbStats(getAutoScaleMetricsCommand.getPrivateIP(), getAutoScaleMetricsCommand.getPublicIP(), getAutoScaleMetricsCommand.getPort())).thenReturn(lbStats);",
+        "line": 178,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetAutoScaleMetricsCommandForNetwork",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getConnection()).thenReturn(conn);",
+        "line": 208,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetAutoScaleMetricsCommandWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(XcpServerResource.getNetworkStats(conn, getAutoScaleMetricsCommand.getPrivateIP(), getAutoScaleMetricsCommand.getPublicIP())).thenThrow(NumberFormatException.class);",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetAutoScaleMetricsCommandWithException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

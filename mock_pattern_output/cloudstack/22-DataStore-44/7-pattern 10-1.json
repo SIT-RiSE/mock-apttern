@@ -1,0 +1,37 @@
+[
+  {
+    "variableName": "destDataStore",
+    "variableType": "DataStore",
+    "mockedClass": "PrimaryDataStoreImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\StorageSystemDataMotionStrategyTest.java",
+      "className": "StorageSystemDataMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "DataStore destDataStore = Mockito.mock(PrimaryDataStoreImpl.class);",
+        "line": 281,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureAndVerifyIsSourceAndDestinationPoolTypeOfNfs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(destDataStore.getId()).thenReturn(1l);",
+        "line": 282,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureAndVerifyIsSourceAndDestinationPoolTypeOfNfs",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

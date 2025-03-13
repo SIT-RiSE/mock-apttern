@@ -1,0 +1,128 @@
+[
+  {
+    "variableName": "sftpClient",
+    "variableType": "SftpClient",
+    "mockedClass": "SftpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 @Override\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.sftp.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-sftp\\src\\test\\java\\org\\springframework\\integration\\sftp\\inbound\\SftpInboundRemoteFileSystemSynchronizerTests.java",
+      "className": "TestSftpSessionFactory"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SftpClient sftpClient = mock(SftpClient.class);",
+        "line": 194,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sftpClient.canonicalPath(\"remote-test-dir\")).thenReturn(\"/remote-test-dir\");",
+        "line": 195,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sftpClient.canonicalPath(remoteFilePath)).thenReturn(\"/\" + remoteFilePath);",
+        "line": 200,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sftpClient.read(\"/\" + remoteFilePath)).thenReturn(new FileInputStream(remoteFilePath));",
+        "line": 202,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sftpClient.readDir(\"/remote-test-dir\")).thenReturn(this.sftpEntries);",
+        "line": 205,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 24
+  },
+  {
+    "variableName": "sftpClient",
+    "variableType": "SftpClient",
+    "mockedClass": "SftpClient",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in @Override\n\nStubbing:\n\u2014 @Override\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.sftp.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-sftp\\src\\test\\java\\org\\springframework\\integration\\sftp\\outbound\\SftpOutboundTests.java",
+      "className": "TestSftpSessionFactory"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SftpClient sftpClient = mock(SftpClient.class);",
+        "line": 307,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sftpClient.getVersion()).thenReturn(SftpConstants.SFTP_V6);",
+        "line": 309,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(sftpClient.readDir(\"/remote-test-dir\")).thenReturn(dirEntries);",
+        "line": 329,
+        "locate": "@Override",
+        "locationContext": {
+          "methodName": "getSession",
+          "methodAnnotations": [
+            "@Override"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 24
+  }
+]

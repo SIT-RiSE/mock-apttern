@@ -1,0 +1,293 @@
+[
+  {
+    "variableName": "daoMock",
+    "variableType": "DatabaseAccessObject",
+    "mockedClass": "DatabaseAccessObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.upgrade.dao",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\schema\\src\\test\\java\\com\\cloud\\upgrade\\dao\\DbUpgradeUtilsTest.java",
+      "className": "DbUpgradeUtilsTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate DatabaseAccessObject daoMock;",
+        "line": 43,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(0)).dropKey(eq(conn), eq(tableName), anyString(), eq(isForeignKey));",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyIfExistWhenNoKeysAreSupplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).dropKey(conn, tableName, key, isForeignKey);",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyIfExistWhenOneKeysIsSupplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).dropKey(conn, tableName, key1, isForeignKey);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyIfExistWhenThreeKeysAreSupplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).dropKey(conn, tableName, key2, isForeignKey);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropKeyIfExistWhenThreeKeysAreSupplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).dropPrimaryKey(conn, tableName);",
+        "line": 98,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropPrimaryKey",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(0)).columnExists(eq(conn), eq(tableName), anyString());",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenNoKeysAreSupplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(0)).dropColumn(eq(conn), eq(tableName), anyString());",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenNoKeysAreSupplied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(daoMock.columnExists(conn, tableName, column)).thenReturn(true);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenOneKeysIsSuppliedAndColumnExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).columnExists(conn, tableName, column);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenOneKeysIsSuppliedAndColumnExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).dropColumn(conn, tableName, column);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenOneKeysIsSuppliedAndColumnExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(daoMock.columnExists(conn, tableName, column)).thenReturn(false);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenOneKeysIsSuppliedAndColumnDoesNotExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).columnExists(conn, tableName, column);",
+        "line": 137,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenOneKeysIsSuppliedAndColumnDoesNotExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(0)).dropColumn(conn, tableName, column);",
+        "line": 138,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenOneKeysIsSuppliedAndColumnDoesNotExists",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(daoMock.columnExists(conn, tableName, column1)).thenReturn(true);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenThreeKeysAreSuppliedAnOneDoesnotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(daoMock.columnExists(conn, tableName, column2)).thenReturn(false);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenThreeKeysAreSuppliedAnOneDoesnotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(daoMock.columnExists(conn, tableName, column3)).thenReturn(true);",
+        "line": 150,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenThreeKeysAreSuppliedAnOneDoesnotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).columnExists(conn, tableName, column1);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenThreeKeysAreSuppliedAnOneDoesnotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).dropColumn(conn, tableName, column1);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenThreeKeysAreSuppliedAnOneDoesnotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).columnExists(conn, tableName, column2);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenThreeKeysAreSuppliedAnOneDoesnotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(0)).dropColumn(conn, tableName, column2);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenThreeKeysAreSuppliedAnOneDoesnotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).columnExists(conn, tableName, column3);",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenThreeKeysAreSuppliedAnOneDoesnotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(daoMock, times(1)).dropColumn(conn, tableName, column3);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDropTableColumnsIfExistWhenThreeKeysAreSuppliedAnOneDoesnotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

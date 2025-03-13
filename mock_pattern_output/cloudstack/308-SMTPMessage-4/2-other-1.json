@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "messageMock",
+    "variableType": "SMTPMessage",
+    "mockedClass": "SMTPMessage",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\u2014 Local Assignment in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.utils.mailing",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\utils\\src\\test\\java\\org\\apache\\cloudstack\\utils\\mailing\\SMTPMailSenderTest.java",
+      "className": "SMTPMailSenderTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SMTPMessage messageMock = new SMTPMessage(Mockito.mock(MimeMessage.class));",
+        "line": 571,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setMailRecipientsTestOnlyInvalidEmailSettings",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "ASSIGNMENT",
+        "code": "messageMock = messageMock = Mockito.spy(messageMock);",
+        "line": 573,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "setMailRecipientsTestOnlyInvalidEmailSettings",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 19
+  }
+]

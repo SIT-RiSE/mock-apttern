@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "routeMatcher",
+    "variableType": "RouteMatcher",
+    "mockedClass": "RouteMatcher",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.rsocket.util.matcher",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\rsocket\\src\\test\\java\\org\\springframework\\security\\rsocket\\util\\matcher\\RoutePayloadExchangeMatcherTests.java",
+      "className": "RoutePayloadExchangeMatcherTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate RouteMatcher routeMatcher;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.routeMatcher.parseRoute(any())).willReturn(this.route);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenMatchAndNoVariablesThenMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.routeMatcher.matchAndExtract(any(), any())).willReturn(Collections.emptyMap());",
+        "line": 100,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenMatchAndNoVariablesThenMatch",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.routeMatcher.parseRoute(any())).willReturn(this.route);",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenMatchAndVariablesThenMatchAndVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.routeMatcher.matchAndExtract(any(), any())).willReturn(variables);",
+        "line": 112,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "matchesWhenMatchAndVariablesThenMatchAndVariables",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

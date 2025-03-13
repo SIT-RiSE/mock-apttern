@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "frameworkExecutorRepository",
+    "variableType": "FrameworkExecutorRepository",
+    "mockedClass": "FrameworkExecutorRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.metrics.collector.sample",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-metrics\\dubbo-metrics-default\\src\\test\\java\\org\\apache\\dubbo\\metrics\\collector\\sample\\ThreadPoolMetricsSamplerTest.java",
+      "className": "ThreadPoolMetricsSamplerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate FrameworkExecutorRepository frameworkExecutorRepository;",
+        "line": 132,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(frameworkExecutorRepository.getSharedExecutor()).thenReturn(Executors.newFixedThreadPool(5));",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegistryDefaultSampleThreadPoolExecutor",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(frameworkExecutorRepository.getSharedExecutor()).thenReturn(null);",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDataSourceNotify",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

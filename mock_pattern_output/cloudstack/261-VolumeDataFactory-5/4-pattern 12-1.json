@@ -1,0 +1,125 @@
+[
+  {
+    "variableName": "volumeDataFactoryMock",
+    "variableType": "VolumeDataFactory",
+    "mockedClass": "VolumeDataFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.storage",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\storage\\VolumeApiServiceImplTest.java",
+      "className": "VolumeApiServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate VolumeDataFactory volumeDataFactoryMock;",
+        "line": 164,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeDataFactoryMock.getVolume(5L)).thenReturn(volumeWithIncorrectVolumeType);",
+        "line": 329,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeDataFactoryMock.getVolume(6L)).thenReturn(correctRootVolume);",
+        "line": 340,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeDataFactoryMock.getVolume(7L)).thenReturn(managedVolume);",
+        "line": 351,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeDataFactoryMock.getVolume(8L)).thenReturn(uploadedVolume);",
+        "line": 374,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeDataFactoryMock.getVolume(10L)).thenReturn(dataVolume);",
+        "line": 401,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeDataFactoryMock.getVolume(anyLong())).thenReturn(volumeInfoMock);",
+        "line": 535,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTakeSnapshotF1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeDataFactoryMock.getVolume(anyLong())).thenReturn(volumeInfoMock);",
+        "line": 543,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testTakeSnapshotF2",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(volumeDataFactoryMock.getVolume(9L)).thenReturn(volumeToAttach);",
+        "line": 633,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testResourceLimitCheckForUploadedVolume",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  }
+]

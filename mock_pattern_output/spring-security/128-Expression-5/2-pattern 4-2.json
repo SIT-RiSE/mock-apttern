@@ -1,0 +1,116 @@
+[
+  {
+    "variableName": "expression",
+    "variableType": "Expression",
+    "mockedClass": "Expression",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\access\\expression\\MessageExpressionConfigAttributeTests.java",
+      "className": "MessageExpressionConfigAttributeTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nExpression expression;",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.expression.getExpressionString()).willReturn(\"toString\");",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "toStringUsesExpressionString",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "expression",
+    "variableType": "Expression",
+    "mockedClass": "Expression",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.messaging.access.expression",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\messaging\\src\\test\\java\\org\\springframework\\security\\messaging\\access\\expression\\MessageExpressionVoterTests.java",
+      "className": "MessageExpressionVoterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nExpression expression;",
+        "line": 57,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.expression.getValue(any(EvaluationContext.class), eq(Boolean.class))).willReturn(true);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "voteGranted",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.expression.getValue(any(EvaluationContext.class), eq(Boolean.class))).willReturn(false);",
+        "line": 87,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "voteDenied",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.expression.getValue(this.evaluationContext, Boolean.class)).willReturn(true);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "customExpressionHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.expression.getValue(any(EvaluationContext.class), eq(Boolean.class))).willReturn(true);",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "postProcessEvaluationContext",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

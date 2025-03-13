@@ -1,0 +1,30 @@
+[
+  {
+    "variableName": "httpUploadServerHandler",
+    "variableType": "HttpUploadServerHandler",
+    "mockedClass": "HttpUploadServerHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\services\\secondary-storage\\server\\src\\test\\java\\org\\apache\\cloudstack\\storage\\resource\\HttpUploadServerHandlerTest.java",
+      "className": "HttpUploadServerHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Spy\r\n@InjectMocks\r\nHttpUploadServerHandler httpUploadServerHandler = new HttpUploadServerHandler(Mockito.mock(NfsSecondaryStorageResource.class));",
+        "line": 35,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Spy",
+            "@InjectMocks"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 3
+  }
+]

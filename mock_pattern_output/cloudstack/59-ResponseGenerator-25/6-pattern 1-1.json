@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "responseGenerator",
+    "variableType": "ResponseGenerator",
+    "mockedClass": "ResponseGenerator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.test",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\test\\ScaleVMCmdTest.java",
+      "className": "ScaleVMCmdTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ResponseGenerator responseGenerator = Mockito.mock(ResponseGenerator.class);",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(responseGenerator.createUserVmResponse(ResponseView.Restricted, \"virtualmachine\", userVm)).thenReturn(list);",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

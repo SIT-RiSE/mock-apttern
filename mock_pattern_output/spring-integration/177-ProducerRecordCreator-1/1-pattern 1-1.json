@@ -1,0 +1,43 @@
+[
+  {
+    "variableName": "creator",
+    "variableType": "ProducerRecordCreator",
+    "mockedClass": "ProducerRecordCreator",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.outbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\outbound\\KafkaProducerMessageHandlerTests.java",
+      "className": "KafkaProducerMessageHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ProducerRecordCreator creator = mock(ProducerRecordCreator.class);",
+        "line": 816,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "conversion",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(creator.create(any(), any(), any(), any(), any(), any(), any())).willReturn(recordFromCreator);",
+        "line": 818,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "conversion",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "variableName": "destStoragePool",
+    "variableType": "StoragePoolVO",
+    "mockedClass": "StoragePoolVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\StorageSystemDataMotionStrategyTest.java",
+      "className": "StorageSystemDataMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StoragePoolVO destStoragePool = Mockito.mock(StoragePoolVO.class);",
+        "line": 284,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureAndVerifyIsSourceAndDestinationPoolTypeOfNfs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(destStoragePool.getPoolType()).thenReturn(destStoragePoolType);",
+        "line": 285,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureAndVerifyIsSourceAndDestinationPoolTypeOfNfs",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  },
+  {
+    "variableName": "sourceStoragePool",
+    "variableType": "StoragePoolVO",
+    "mockedClass": "StoragePoolVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.storage.motion",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\engine\\storage\\datamotion\\src\\test\\java\\org\\apache\\cloudstack\\storage\\motion\\StorageSystemDataMotionStrategyTest.java",
+      "className": "StorageSystemDataMotionStrategyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StoragePoolVO sourceStoragePool = Mockito.mock(StoragePoolVO.class);",
+        "line": 287,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureAndVerifyIsSourceAndDestinationPoolTypeOfNfs",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(sourceStoragePool.getPoolType()).thenReturn(sourceStoragePoolType);",
+        "line": 288,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "configureAndVerifyIsSourceAndDestinationPoolTypeOfNfs",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

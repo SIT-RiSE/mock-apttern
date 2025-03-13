@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "pf",
+    "variableType": "ProducerFactory<Integer,String>",
+    "mockedClass": "ProducerFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.config.xml",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\config\\xml\\KafkaOutboundAdapterParserTests.java",
+      "className": "KafkaOutboundAdapterParserTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "@SuppressWarnings(\"unchecked\")\r\nProducerFactory<Integer, String> pf = mock(ProducerFactory.class);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSyncMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pf.createProducer()).willReturn(mockProducer);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSyncMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(pf.getConfigurationProperties()).willReturn(props);",
+        "line": 118,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSyncMode",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

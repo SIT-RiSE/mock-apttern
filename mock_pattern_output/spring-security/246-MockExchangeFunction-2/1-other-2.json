@@ -1,0 +1,166 @@
+[
+  {
+    "variableName": "exchange",
+    "variableType": "MockExchangeFunction",
+    "mockedClass": "MockExchangeFunction",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\nStubbing:\n\u2014 Helper Method\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServerOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServerOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private MockExchangeFunction exchange = new MockExchangeFunction();",
+        "line": 163,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getResponse().headers()).willReturn(mock(ClientResponse.Headers.class));",
+        "line": 204,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "setupMockHeaders",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.exchange.getResponse().statusCode()).willReturn(HttpStatus.UNAUTHORIZED);",
+        "line": 498,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenUnauthorizedThenInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// @formatter:on\r\ngiven(this.exchange.getResponse().statusCode()).willReturn(HttpStatus.FORBIDDEN);",
+        "line": 573,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenForbiddenThenInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getResponse().headers()).willReturn(headers);",
+        "line": 647,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenWWWAuthenticateHeaderIncludesErrorThenInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getResponse().statusCode()).willReturn(HttpStatus.BAD_REQUEST);",
+        "line": 704,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenOtherHttpStatusShouldNotInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 72
+  },
+  {
+    "variableName": "exchange",
+    "variableType": "MockExchangeFunction",
+    "mockedClass": "MockExchangeFunction",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Declaration Attribute\n\nStubbing:\n\u2014 Other Methods\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.reactive.function.client",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\reactive\\function\\client\\ServletOAuth2AuthorizedClientExchangeFilterFunctionTests.java",
+      "className": "ServletOAuth2AuthorizedClientExchangeFilterFunctionTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_DECLARATION",
+        "code": "private MockExchangeFunction exchange = new MockExchangeFunction();",
+        "line": 185,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getResponse().statusCode()).willReturn(httpStatus);",
+        "line": 696,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "assertHttpStatusInvokesFailureHandler",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getResponse().headers()).willReturn(mock(ClientResponse.Headers.class));",
+        "line": 697,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "assertHttpStatusInvokesFailureHandler",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getResponse().headers()).willReturn(headers);",
+        "line": 732,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenWWWAuthenticateHeaderIncludesErrorThenInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getResponse().statusCode()).willReturn(HttpStatus.BAD_REQUEST);",
+        "line": 841,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenOtherHttpStatusThenDoesNotInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.exchange.getResponse().headers()).willReturn(mock(ClientResponse.Headers.class));",
+        "line": 842,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenOtherHttpStatusThenDoesNotInvokeFailureHandler",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 73
+  }
+]

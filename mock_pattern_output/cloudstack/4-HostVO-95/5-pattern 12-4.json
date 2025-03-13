@@ -1,0 +1,518 @@
+[
+  {
+    "variableName": "hostVO",
+    "variableType": "HostVO",
+    "mockedClass": "HostVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.dpdk",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\dpdk\\DpdkHelperImplTest.java",
+      "className": "DpdkHelperImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostVO hostVO;",
+        "line": 79,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getCapabilities()).thenReturn(hostCapabilities);",
+        "line": 126,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getCapabilities()).thenReturn(hostCapabilities + \",dpdk\");",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsHostDpdkEnabledDpdkHost",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getCapabilities()).thenReturn(hostCapabilities + \",dpdk\");",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVMDPDKEnabledDPDKEnabledVM",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getCapabilities()).thenReturn(hostCapabilities + \",dpdk\");",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVMDpdkEnabledGuestTypeMissingConfigurationOnVmDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getCapabilities()).thenReturn(hostCapabilities + \",dpdk\");",
+        "line": 234,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVMDpdkEnabledGuestTypeEmptyVmDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(hostVO.getCapabilities()).thenReturn(hostCapabilities + \",dpdk\");",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testIsVMDpdkEnabledGuestTypeMixedConfigurationOnDetails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  },
+  {
+    "variableName": "host",
+    "variableType": "HostVO",
+    "mockedClass": "HostVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\hypervisor\\KVMGuruTest.java",
+      "className": "KVMGuruTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostVO host;",
+        "line": 74,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(host.getCpus()).thenReturn(3);",
+        "line": 121,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host.getSpeed()).thenReturn(1995L);",
+        "line": 122,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host.getSpeed()).thenReturn(0l);",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetVmQuotaPercentageZeroDivision",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host.getTotalMemory()).thenReturn(maxMemory);",
+        "line": 255,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetHostMaxMemoryAndCpuCoresHostNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host.getCpus()).thenReturn(maxCpuCores);",
+        "line": 256,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetHostMaxMemoryAndCpuCoresHostNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host.getTotalMemory()).thenReturn(maxMemory);",
+        "line": 295,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetHostMaxMemoryAndCpuCoresHostNullAndLastHostIdNotNullAndLastHostNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host.getCpus()).thenReturn(maxCpuCores);",
+        "line": 296,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateGetHostMaxMemoryAndCpuCoresHostNullAndLastHostIdNotNullAndLastHostNotNull",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  },
+  {
+    "variableName": "host",
+    "variableType": "HostVO",
+    "mockedClass": "HostVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\resource\\ResourceManagerImplTest.java",
+      "className": "ResourceManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate HostVO host;",
+        "line": 112,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getType()).thenReturn(Host.Type.Routing);",
+        "line": 161,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getId()).thenReturn(hostId);",
+        "line": 162,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getResourceState()).thenReturn(ResourceState.Enabled);",
+        "line": 163,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getHypervisorType()).thenReturn(Hypervisor.HypervisorType.KVM);",
+        "line": 164,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getClusterId()).thenReturn(1L);",
+        "line": 165,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getDetail(\"username\")).thenReturn(hostUsername);",
+        "line": 167,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getDetail(\"password\")).thenReturn(hostPassword);",
+        "line": 168,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getStatus()).thenReturn(Status.Up);",
+        "line": 170,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getPrivateIpAddress()).thenReturn(hostPrivateIp);",
+        "line": 171,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "// Test switching back to PrepareForMaintenance\r\nwhen(host.getResourceState()).thenReturn(ResourceState.ErrorInPrepareForMaintenance);",
+        "line": 295,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAndMaintainReturnsToPrepareForMaintenanceRunningVms",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getHypervisorType()).thenReturn(Hypervisor.HypervisorType.KVM);",
+        "line": 303,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConfigureVncAccessForKVMHostFailedMigrations",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getDetail(\"password\")).thenReturn(null);",
+        "line": 318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetHostCredentialsMissingParameter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getStatus()).thenReturn(Status.Disconnected);",
+        "line": 353,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHandleAgentSSHEnabledNotConnectedAgent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getStatus()).thenReturn(Status.Up);",
+        "line": 361,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHandleAgentSSHEnabledConnectedAgent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getStatus()).thenReturn(Status.Disconnected);",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHandleAgentSSHDisabledNotConnectedAgent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(host.getStatus()).thenReturn(Status.Up);",
+        "line": 376,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testHandleAgentSSHDisabledConnectedAgent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  },
+  {
+    "variableName": "host1",
+    "variableType": "HostVO",
+    "mockedClass": "HostVO",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\resource\\RollingMaintenanceManagerImplTest.java",
+      "className": "RollingMaintenanceManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHostVO host1;",
+        "line": 46,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host1.getClusterId()).thenReturn(clusterId1);",
+        "line": 88,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host1.getStatus()).thenReturn(Status.Up);",
+        "line": 99,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host1.getResourceState()).thenReturn(ResourceState.Enabled);",
+        "line": 101,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host1.getStatus()).thenReturn(Status.Error);",
+        "line": 148,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPerformStateChecksNotForce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(host1.getStatus()).thenReturn(Status.Error);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPerformStateChecksForce",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  }
+]

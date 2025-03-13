@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "repository",
+    "variableType": "RelyingPartyRegistrationRepository",
+    "mockedClass": "RelyingPartyRegistrationRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\Saml2MetadataFilterTests.java",
+      "className": "Saml2MetadataFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RelyingPartyRegistrationRepository repository = mock(RelyingPartyRegistrationRepository.class);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorWhenRelyingPartyRegistrationRepositoryThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(repository).findByRegistrationId(\"one\");",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "constructorWhenRelyingPartyRegistrationRepositoryThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

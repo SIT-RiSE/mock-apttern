@@ -1,0 +1,137 @@
+[
+  {
+    "variableName": "inputSource",
+    "variableType": "CloudObjectInputSource",
+    "mockedClass": "CloudObjectInputSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.data.input.impl",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\data\\input\\impl\\CloudObjectInputSourceTest.java",
+      "className": "CloudObjectInputSourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CloudObjectInputSource inputSource = Mockito.mock(CloudObjectInputSource.class, Mockito.withSettings().useConstructor(SCHEME, URIS, null, null, null).defaultAnswer(Mockito.CALLS_REAL_METHODS));",
+        "line": 77,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetUris",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "inputSource",
+    "variableType": "CloudObjectInputSource",
+    "mockedClass": "CloudObjectInputSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.data.input.impl",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\data\\input\\impl\\CloudObjectInputSourceTest.java",
+      "className": "CloudObjectInputSourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CloudObjectInputSource inputSource = Mockito.mock(CloudObjectInputSource.class, Mockito.withSettings().useConstructor(SCHEME, null, PREFIXES, null, null).defaultAnswer(Mockito.CALLS_REAL_METHODS));",
+        "line": 91,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetPrefixes",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "inputSource",
+    "variableType": "CloudObjectInputSource",
+    "mockedClass": "CloudObjectInputSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.data.input.impl",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\data\\input\\impl\\CloudObjectInputSourceTest.java",
+      "className": "CloudObjectInputSourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CloudObjectInputSource inputSource = Mockito.mock(CloudObjectInputSource.class, Mockito.withSettings().useConstructor(SCHEME, URIS, null, null, \"**.parquet\").defaultAnswer(Mockito.CALLS_REAL_METHODS));",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testGetObjectGlob",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "inputSource2",
+    "variableType": "CloudObjectInputSource",
+    "mockedClass": "CloudObjectInputSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.data.input.impl",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\data\\input\\impl\\CloudObjectInputSourceTest.java",
+      "className": "CloudObjectInputSourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CloudObjectInputSource inputSource2 = Mockito.mock(CloudObjectInputSource.class, Mockito.withSettings().useConstructor(SCHEME, URIS, null, null, \"**.csv\").defaultAnswer(Mockito.CALLS_REAL_METHODS));",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInequality",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "inputSource1",
+    "variableType": "CloudObjectInputSource",
+    "mockedClass": "CloudObjectInputSource",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.data.input.impl",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\data\\input\\impl\\CloudObjectInputSourceTest.java",
+      "className": "CloudObjectInputSourceTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "CloudObjectInputSource inputSource1 = Mockito.mock(CloudObjectInputSource.class, Mockito.withSettings().useConstructor(SCHEME, URIS, null, null, \"**.parquet\").defaultAnswer(Mockito.CALLS_REAL_METHODS));",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInequality",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

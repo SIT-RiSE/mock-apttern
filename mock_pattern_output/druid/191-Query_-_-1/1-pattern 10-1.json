@@ -1,0 +1,47 @@
+[
+  {
+    "variableName": "query",
+    "variableType": "Query<?>",
+    "mockedClass": "Query",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Helper\n\nStubbing:\n\u2014 Helper Method\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.client",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\client\\JsonParserIteratorTest.java",
+      "className": "TimeoutExceptionConversionTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Query<?> query = Mockito.mock(Query.class);",
+        "line": 310,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockQuery",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(query.getId()).thenReturn(queryId);",
+        "line": 312,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockQuery",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(query.context()).thenReturn(QueryContext.of(ImmutableMap.of(DirectDruidClient.QUERY_FAIL_TIME, timeoutAt)));",
+        "line": 313,
+        "locate": "Helper Method",
+        "locationContext": {
+          "methodName": "mockQuery",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 10
+  }
+]

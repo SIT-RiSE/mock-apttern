@@ -1,0 +1,284 @@
+[
+  {
+    "variableName": "writer",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\MultiPartBodyTest.java",
+      "className": "MultiPartBodyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writer = mock(SerializationWriter.class);",
+        "line": 75,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "notAddFilename",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writer).writeStringValue(\"Content-Disposition\", \"form-data; name=\\\"foo\\\"\");",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "notAddFilename",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "writer",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\MultiPartBodyTest.java",
+      "className": "MultiPartBodyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writer = mock(SerializationWriter.class);",
+        "line": 85,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addFilename",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writer).writeStringValue(\"Content-Disposition\", \"form-data; name=\\\"foo\\\"; filename=\\\"image.png\\\"\");",
+        "line": 89,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "addFilename",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "writerMock",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writerMock = mock(SerializationWriter.class);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, times(1)).writeObjectValue(any(), any(TestEntity.class));",
+        "line": 198,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, never()).writeCollectionOfObjectValues(anyString(), any(ArrayList.class));",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "writerMock",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writerMock = mock(SerializationWriter.class);",
+        "line": 209,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, never()).writeObjectValue(any(), any(TestEntity.class));",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, times(1)).writeCollectionOfObjectValues(any(), any(Iterable.class));",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsParsableContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "writerMock",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writerMock = mock(SerializationWriter.class);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, never()).writeStringValue(any(), anyString());",
+        "line": 235,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, times(1)).writeCollectionOfPrimitiveValues(any(), any(Iterable.class));",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContentCollection",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  },
+  {
+    "variableName": "writerMock",
+    "variableType": "SerializationWriter",
+    "mockedClass": "SerializationWriter",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.microsoft.kiota",
+      "filePath": "C:\\java tool\\Microsoft\\kiota-java\\components\\abstractions\\src\\test\\java\\com\\microsoft\\kiota\\RequestInformationTest.java",
+      "className": "RequestInformationTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SerializationWriter writerMock = mock(SerializationWriter.class);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, times(1)).writeStringValue(any(), anyString());",
+        "line": 252,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(writerMock, never()).writeCollectionOfPrimitiveValues(any(), any(Iterable.class));",
+        "line": 253,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "SetsScalarContent",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

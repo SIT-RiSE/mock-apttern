@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "mockTaskMaster",
+    "variableType": "LoadQueueTaskMaster",
+    "mockedClass": "LoadQueueTaskMaster",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator.duty",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\duty\\CollectSegmentAndServerStatsTest.java",
+      "className": "CollectSegmentAndServerStatsTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate LoadQueueTaskMaster mockTaskMaster;",
+        "line": 42,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockTaskMaster.getAllPeons()).thenReturn(ImmutableMap.of(\"server1\", new TestLoadQueuePeon()));",
+        "line": 56,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCollectedSegmentStats",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

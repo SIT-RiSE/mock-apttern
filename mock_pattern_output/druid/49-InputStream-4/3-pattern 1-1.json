@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "exceptionThrowingStream",
+    "variableType": "InputStream",
+    "mockedClass": "InputStream",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.client",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\client\\JsonParserIteratorTest.java",
+      "className": "FutureExceptionTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "InputStream exceptionThrowingStream = Mockito.mock(InputStream.class);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConvertIOExceptionToQueryInterruptedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(exceptionThrowingStream.read()).thenThrow(ioException);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConvertIOExceptionToQueryInterruptedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(exceptionThrowingStream.read(ArgumentMatchers.any())).thenThrow(ioException);",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConvertIOExceptionToQueryInterruptedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(exceptionThrowingStream.read(ArgumentMatchers.any(), ArgumentMatchers.anyInt(), ArgumentMatchers.anyInt())).thenThrow(ioException);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testConvertIOExceptionToQueryInterruptedException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

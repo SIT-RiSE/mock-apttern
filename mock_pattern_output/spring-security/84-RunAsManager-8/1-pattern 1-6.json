@@ -1,0 +1,242 @@
+[
+  {
+    "variableName": "ram",
+    "variableType": "RunAsManager",
+    "mockedClass": "RunAsManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.intercept.aopalliance",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\intercept\\aopalliance\\MethodSecurityInterceptorTests.java",
+      "className": "MethodSecurityInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RunAsManager ram = mock(RunAsManager.class);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "intitalizationRejectsRunAsManagerThatDoesNotSupportMethodInvocation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(ram.supports(MethodInvocation.class)).willReturn(false);",
+        "line": 168,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "intitalizationRejectsRunAsManagerThatDoesNotSupportMethodInvocation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "runAs",
+    "variableType": "RunAsManager",
+    "mockedClass": "RunAsManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.intercept.aopalliance",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\intercept\\aopalliance\\MethodSecurityInterceptorTests.java",
+      "className": "MethodSecurityInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RunAsManager runAs = mock(RunAsManager.class);",
+        "line": 271,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runAsReplacementIsCorrectlySet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(runAs.buildRunAs(eq(this.token), any(MethodInvocation.class), any(List.class))).willReturn(runAsToken);",
+        "line": 276,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runAsReplacementIsCorrectlySet",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "runAs",
+    "variableType": "RunAsManager",
+    "mockedClass": "RunAsManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.intercept.aopalliance",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\intercept\\aopalliance\\MethodSecurityInterceptorTests.java",
+      "className": "MethodSecurityInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RunAsManager runAs = mock(RunAsManager.class);",
+        "line": 292,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runAsReplacementCleansAfterException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(runAs.buildRunAs(eq(this.token), any(MethodInvocation.class), any(List.class))).willReturn(runAsToken);",
+        "line": 297,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "runAsReplacementCleansAfterException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "runAs",
+    "variableType": "RunAsManager",
+    "mockedClass": "RunAsManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.intercept.aspectj",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\intercept\\aspectj\\AspectJMethodSecurityInterceptorTests.java",
+      "className": "AspectJMethodSecurityInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RunAsManager runAs = mock(RunAsManager.class);",
+        "line": 167,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWithAspectJCallbackRunAsReplacementCleansAfterException",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(runAs.buildRunAs(eq(this.token), any(MethodInvocation.class), any(List.class))).willReturn(runAsToken);",
+        "line": 171,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeWithAspectJCallbackRunAsReplacementCleansAfterException",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "runAs",
+    "variableType": "RunAsManager",
+    "mockedClass": "RunAsManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.access.intercept.aspectj",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\access\\intercept\\aspectj\\AspectJMethodSecurityInterceptorTests.java",
+      "className": "AspectJMethodSecurityInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final RunAsManager runAs = mock(RunAsManager.class);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeRunAsReplacementCleansAfterException",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(runAs.buildRunAs(eq(this.token), any(MethodInvocation.class), any(List.class))).willReturn(runAsToken);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "invokeRunAsReplacementCleansAfterException",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "runAsManager",
+    "variableType": "RunAsManager",
+    "mockedClass": "RunAsManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access.intercept",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\intercept\\FilterSecurityInterceptorTests.java",
+      "className": "FilterSecurityInterceptorTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "RunAsManager runAsManager = mock(RunAsManager.class);",
+        "line": 151,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "finallyInvocationIsInvokedIfExceptionThrown",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(runAsManager.buildRunAs(eq(token), any(), anyCollection())).willReturn(new RunAsUserToken(\"key\", \"someone\", \"creds\", token.getAuthorities(), token.getClass()));",
+        "line": 152,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "finallyInvocationIsInvokedIfExceptionThrown",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

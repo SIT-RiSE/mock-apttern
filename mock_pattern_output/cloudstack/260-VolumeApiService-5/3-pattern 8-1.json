@@ -1,0 +1,51 @@
+[
+  {
+    "variableName": "volumeApiService",
+    "variableType": "VolumeApiService",
+    "mockedClass": "VolumeApiService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\UserVmManagerImplTest.java",
+      "className": "UserVmManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVolumeApiService volumeApiService;",
+        "line": 178,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(volumeApiService.validateVolumeSizeInBytes(Mockito.anyLong())).thenReturn(true);",
+        "line": 540,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "prepareAndRunConfigureCustomRootDiskSizeTest",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(volumeApiService).recoverVolume(volumeVOMock.getId());",
+        "line": 911,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "recoverRootVolumeTestDestroyState",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

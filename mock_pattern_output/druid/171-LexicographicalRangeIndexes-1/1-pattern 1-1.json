@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "rangeIndex",
+    "variableType": "LexicographicalRangeIndexes",
+    "mockedClass": "LexicographicalRangeIndexes",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.query.filter",
+      "filePath": "C:\\java tool\\Apache\\druid\\processing\\src\\test\\java\\org\\apache\\druid\\query\\filter\\LikeDimFilterTest.java",
+      "className": "LikeDimFilterTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final LexicographicalRangeIndexes rangeIndex = Mockito.mock(LexicographicalRangeIndexes.class);",
+        "line": 114,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrefixMatchUsesRangeIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(// Verify that likeFilter uses forRange without a matcher predicate; it's unnecessary and slows things down\r\nrangeIndex.forRange(\"f\", false, \"f\" + Character.MAX_VALUE, false)).thenReturn(bitmapColumnIndex);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPrefixMatchUsesRangeIndex",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

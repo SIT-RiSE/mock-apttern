@@ -1,0 +1,87 @@
+[
+  {
+    "variableName": "validation",
+    "variableType": "Validation",
+    "mockedClass": "Validation",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.validation.filter",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-filter\\dubbo-filter-validation\\src\\test\\java\\org\\apache\\dubbo\\validation\\filter\\ValidationFilterTest.java",
+      "className": "ValidationFilterTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private Validation validation = mock(Validation.class);",
+        "line": 39,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(validation.getValidator(url)).willThrow(new IllegalStateException(\"Not found class test, cause: test\"));",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testItWithNotExistClass",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(validation.getValidator(url)).willReturn(validator);",
+        "line": 71,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testItWithExistClass",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(validation.getValidator(url)).willReturn(validator);",
+        "line": 88,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testItWithoutUrlParameters",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(validation.getValidator(url)).willReturn(validator);",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testItWhileMethodNameStartWithDollar",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(validation.getValidator(url)).willThrow(new RpcException(\"rpc exception\"));",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testItWhileThrowoutRpcException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

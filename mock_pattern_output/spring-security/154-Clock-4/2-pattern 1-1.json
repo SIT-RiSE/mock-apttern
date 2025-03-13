@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "clock",
+    "variableType": "Clock",
+    "mockedClass": "Clock",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication.ott",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\ott\\JdbcOneTimeTokenServiceTests.java",
+      "className": "JdbcOneTimeTokenServiceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Clock clock = mock(Clock.class);",
+        "line": 163,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "cleanupExpiredTokens",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(clock.instant()).willReturn(tenMinutesAgo);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "cleanupExpiredTokens",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

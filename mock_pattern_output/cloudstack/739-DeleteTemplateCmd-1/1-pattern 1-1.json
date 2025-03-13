@@ -1,0 +1,89 @@
+[
+  {
+    "variableName": "cmd",
+    "variableType": "DeleteTemplateCmd",
+    "mockedClass": "DeleteTemplateCmd",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.template",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\template\\TemplateManagerImplTest.java",
+      "className": "TemplateManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "//In this Unit test all the conditions related to \"force template delete flag\" are tested.\r\nDeleteTemplateCmd cmd = mock(DeleteTemplateCmd.class);",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForceDeleteTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getId()).thenReturn(0L);",
+        "line": 257,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForceDeleteTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(cmd.getZoneId()).thenReturn(null);",
+        "line": 259,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForceDeleteTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//case 1: When Force delete flag is 'true' but VM instance VO list is empty.\r\nwhen(cmd.isForced()).thenReturn(true);",
+        "line": 269,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForceDeleteTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//case 2.1: When Force delete flag is 'false' and VM instance VO list is empty.\r\nwhen(cmd.isForced()).thenReturn(false);",
+        "line": 273,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForceDeleteTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "//case 2.2: When Force delete flag is 'false' and VM instance VO list is non empty.\r\nwhen(cmd.isForced()).thenReturn(false);",
+        "line": 277,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testForceDeleteTemplate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

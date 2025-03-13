@@ -1,0 +1,129 @@
+[
+  {
+    "variableName": "resp",
+    "variableType": "HttpServletResponse",
+    "mockedClass": "HttpServletResponse",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\user-authenticators\\saml2\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\ListAndSwitchSAMLAccountCmdTest.java",
+      "className": "ListAndSwitchSAMLAccountCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHttpServletResponse resp;",
+        "line": 86,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resp, Mockito.times(1)).sendRedirect(anyString());",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListAndSwitchSAMLAccountCmd",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "resp",
+    "variableType": "HttpServletResponse",
+    "mockedClass": "HttpServletResponse",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\user-authenticators\\saml2\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\SAML2LoginAPIAuthenticatorCmdTest.java",
+      "className": "SAML2LoginAPIAuthenticatorCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHttpServletResponse resp;",
+        "line": 108,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resp, Mockito.times(1)).sendRedirect(Mockito.anyString());",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthenticate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resp, Mockito.times(timesOfSendRedirect)).sendRedirect(Mockito.anyString());",
+        "line": 311,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "verifyTestWhenFailToAuthenticateThrowExceptionOrRedirectToUrl",
+          "methodAnnotations": []
+        }
+      }
+    ],
+    "pattern_id": 9
+  },
+  {
+    "variableName": "resp",
+    "variableType": "HttpServletResponse",
+    "mockedClass": "HttpServletResponse",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\user-authenticators\\saml2\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\SAML2LogoutAPIAuthenticatorCmdTest.java",
+      "className": "SAML2LogoutAPIAuthenticatorCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nHttpServletResponse resp;",
+        "line": 56,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(resp, Mockito.times(1)).sendRedirect(Mockito.anyString());",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAuthenticate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

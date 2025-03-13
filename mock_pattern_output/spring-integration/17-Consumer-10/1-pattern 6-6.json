@@ -1,0 +1,1002 @@
+[
+  {
+    "variableName": "consumer",
+    "variableType": "Consumer",
+    "mockedClass": "Consumer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\inbound\\MessageSourceTests.java",
+      "className": "MessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Consumer consumer = mock(Consumer.class);",
+        "line": 238,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(consumer.poll(any(Duration.class))).willReturn(cr1, cr2, cr3, cr4, cr5);",
+        "line": 275,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).subscribe(anyCollection(), any(ConsumerRebalanceListener.class));",
+        "line": 323,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 324,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 326,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 328,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 330,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 332,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).pause(partitions.getAllValues().get(0));",
+        "line": 333,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).resume(partitions.getAllValues().get(1));",
+        "line": 335,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 336,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).close(any());",
+        "line": 337,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckCommon",
+          "methodAnnotations": [
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "consumer",
+    "variableType": "Consumer",
+    "mockedClass": "Consumer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\inbound\\MessageSourceTests.java",
+      "className": "MessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Consumer consumer = mock(Consumer.class);",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(consumer.poll(any(Duration.class))).willReturn(cr1, cr2, cr3, cr4, cr5, cr6, cr7);",
+        "line": 413,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).subscribe(anyCollection(), any(ConsumerRebalanceListener.class));",
+        "line": 446,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 447,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).paused();",
+        "line": 448,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 449,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).paused();",
+        "line": 450,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 451,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).paused();",
+        "line": 452,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 453,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).paused();",
+        "line": 454,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(3L)));",
+        "line": 455,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(6L)));",
+        "line": 456,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 457,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).close(any());",
+        "line": 458,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAckOutOfOrder",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "consumer",
+    "variableType": "Consumer",
+    "mockedClass": "Consumer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\inbound\\MessageSourceTests.java",
+      "className": "MessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Consumer consumer = mock(Consumer.class);",
+        "line": 465,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(consumer.poll(any(Duration.class))).willReturn(cr1, cr1, cr2, cr2, cr3);",
+        "line": 489,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 518,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// rollback\r\ninOrder.verify(consumer).seek(topicPartition, 0L);",
+        "line": 519,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 520,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(1L)), Duration.ofSeconds(30));",
+        "line": 521,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 523,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// rollback\r\ninOrder.verify(consumer).seek(topicPartition, 1L);",
+        "line": 524,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 525,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(2L)), Duration.ofSeconds(30));",
+        "line": 526,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 528,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).close(any());",
+        "line": 529,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNack",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "consumer",
+    "variableType": "Consumer",
+    "mockedClass": "Consumer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\inbound\\MessageSourceTests.java",
+      "className": "MessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Consumer consumer = mock(Consumer.class);",
+        "line": 536,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(consumer.poll(any(Duration.class))).willReturn(cr1, cr2, cr1, cr2, cr3);",
+        "line": 560,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 596,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).paused();",
+        "line": 597,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 598,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// rollback\r\ninOrder.verify(consumer).seek(topicPartition, 0L);",
+        "line": 599,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 612,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(1L)));",
+        "line": 613,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 614,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(2L)));",
+        "line": 615,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 616,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).close(any());",
+        "line": 617,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testNackWithLaterInflight",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "consumer",
+    "variableType": "Consumer",
+    "mockedClass": "Consumer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\inbound\\MessageSourceTests.java",
+      "className": "MessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Consumer consumer = mock(Consumer.class);",
+        "line": 644,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPollTimeouts",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(consumer.poll(Duration.of(20 * 5000, ChronoUnit.MILLIS))).willReturn(cr1, ConsumerRecords.EMPTY);",
+        "line": 658,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPollTimeouts",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(consumer.poll(Duration.of(5000, ChronoUnit.MILLIS))).willReturn(cr2, ConsumerRecords.EMPTY);",
+        "line": 664,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPollTimeouts",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).subscribe(anyCollection(), any(ConsumerRebalanceListener.class));",
+        "line": 693,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPollTimeouts",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// assignTimeout used on initial poll (before partition assigned)\r\ninOrder.verify(consumer).poll(Duration.of(20 * 5000, ChronoUnit.MILLIS));",
+        "line": 695,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPollTimeouts",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(1L)));",
+        "line": 696,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPollTimeouts",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// pollTimeout used on subsequent polls\r\ninOrder.verify(consumer).poll(Duration.of(5000, ChronoUnit.MILLIS));",
+        "line": 698,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPollTimeouts",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(2L)));",
+        "line": 699,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPollTimeouts",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// assignTimeout used after partitions revoked\r\ninOrder.verify(consumer).poll(Duration.of(20 * 5000, ChronoUnit.MILLIS));",
+        "line": 701,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPollTimeouts",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "consumer",
+    "variableType": "Consumer",
+    "mockedClass": "Consumer",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.integration.kafka.inbound",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-kafka\\src\\test\\java\\org\\springframework\\integration\\kafka\\inbound\\MessageSourceTests.java",
+      "className": "MessageSourceTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Consumer consumer = mock(Consumer.class);",
+        "line": 707,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllowMulti",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(consumer.poll(any(Duration.class))).willReturn(cr1, cr2);",
+        "line": 730,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllowMulti",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).subscribe(anyCollection(), any(ConsumerRebalanceListener.class));",
+        "line": 762,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllowMulti",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 763,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllowMulti",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(1L)));",
+        "line": 764,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllowMulti",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(2L)));",
+        "line": 765,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllowMulti",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(3L)));",
+        "line": 766,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllowMulti",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).commitSync(Collections.singletonMap(topicPartition, new OffsetAndMetadata(4L)));",
+        "line": 767,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllowMulti",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).poll(any(Duration.class));",
+        "line": 768,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllowMulti",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(consumer).close(any());",
+        "line": 769,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllowMulti",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

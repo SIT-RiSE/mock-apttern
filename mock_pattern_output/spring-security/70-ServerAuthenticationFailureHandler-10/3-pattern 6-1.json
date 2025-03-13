@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "authenticationFailureHandler",
+    "variableType": "ServerAuthenticationFailureHandler",
+    "mockedClass": "ServerAuthenticationFailureHandler",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.config.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\config\\src\\test\\java\\org\\springframework\\security\\config\\web\\server\\ServerHttpSecurityTests.java",
+      "className": "ServerHttpSecurityTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ServerAuthenticationFailureHandler authenticationFailureHandler = mock(ServerAuthenticationFailureHandler.class);",
+        "line": 229,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWhenCustomAuthenticationFailureHandlerThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authenticationFailureHandler.onAuthenticationFailure(any(), any())).willReturn(Mono.empty());",
+        "line": 236,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWhenCustomAuthenticationFailureHandlerThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "// @formatter:on\r\nverify(authenticationFailureHandler).onAuthenticationFailure(any(), any());",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "basicWhenCustomAuthenticationFailureHandlerThenUses",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

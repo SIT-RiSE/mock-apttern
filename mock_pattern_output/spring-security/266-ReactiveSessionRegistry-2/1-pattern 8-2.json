@@ -1,0 +1,138 @@
+[
+  {
+    "variableName": "sessionRegistry",
+    "variableType": "ReactiveSessionRegistry",
+    "mockedClass": "ReactiveSessionRegistry",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication.session",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\session\\ConcurrentSessionControlServerAuthenticationSuccessHandlerTests.java",
+      "className": "ConcurrentSessionControlServerAuthenticationSuccessHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "ReactiveSessionRegistry sessionRegistry = mock();",
+        "line": 61,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoInteractions(handler, this.sessionRegistry);",
+        "line": 108,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationWhenSessionLimitIsUnlimitedThenDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.getAllSessions(authentication.getPrincipal())).willReturn(Flux.fromIterable(sessions));",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationWhenMaximumSessionsIsOneAndExceededThenHandlerIsCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.getAllSessions(authentication.getPrincipal())).willReturn(Flux.fromIterable(sessions));",
+        "line": 132,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationWhenMaximumSessionsIsGreaterThanOneAndExceededThenHandlerIsCalled",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.getAllSessions(user.getPrincipal())).willReturn(Flux.fromIterable(userSessions));",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationWhenMaximumSessionsForUsersAreDifferentThenHandlerIsCalledWhereNeeded",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.getAllSessions(admin.getPrincipal())).willReturn(Flux.fromIterable(adminSessions));",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationWhenMaximumSessionsForUsersAreDifferentThenHandlerIsCalledWhereNeeded",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "sessionRegistry",
+    "variableType": "ReactiveSessionRegistry",
+    "mockedClass": "ReactiveSessionRegistry",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.server.authentication.session",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\server\\authentication\\session\\RegisterSessionServerAuthenticationSuccessHandlerTests.java",
+      "className": "RegisterSessionServerAuthenticationSuccessHandlerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nReactiveSessionRegistry sessionRegistry;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.sessionRegistry.saveSessionInformation(any())).willReturn(Mono.empty());",
+        "line": 73,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationWhenSessionExistsThenSaveSessionInformation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.sessionRegistry).saveSessionInformation(captor.capture());",
+        "line": 78,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "onAuthenticationWhenSessionExistsThenSaveSessionInformation",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

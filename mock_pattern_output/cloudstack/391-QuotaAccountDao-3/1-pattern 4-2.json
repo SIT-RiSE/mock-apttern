@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "quotaAcc",
+    "variableType": "QuotaAccountDao",
+    "mockedClass": "QuotaAccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\QuotaAlertManagerImplTest.java",
+      "className": "QuotaAlertManagerImplTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate QuotaAccountDao quotaAcc;",
+        "line": 63,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(quotaAcc.listAllQuotaAccount()).thenReturn(accounts);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCheckAndSendQuotaAlertEmails",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  },
+  {
+    "variableName": "quotaAcc",
+    "variableType": "QuotaAccountDao",
+    "mockedClass": "QuotaAccountDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.quota",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\framework\\quota\\src\\test\\java\\org\\apache\\cloudstack\\quota\\QuotaStatementTest.java",
+      "className": "QuotaStatementTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nQuotaAccountDao quotaAcc;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.lenient().when(quotaAcc.listAllQuotaAccount()).thenReturn(accounts);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSendStatement",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

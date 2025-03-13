@@ -1,0 +1,152 @@
+[
+  {
+    "variableName": "userDetailsPasswordService",
+    "variableType": "ReactiveUserDetailsPasswordService",
+    "mockedClass": "ReactiveUserDetailsPasswordService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\UserDetailsRepositoryReactiveAuthenticationManagerTests.java",
+      "className": "UserDetailsRepositoryReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveUserDetailsPasswordService userDetailsPasswordService;",
+        "line": 66,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsPasswordService.updatePassword(any(), any())).willReturn(Mono.just(this.user));",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.userDetailsPasswordService).updatePassword(eq(this.user), eq(encodedPassword));",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.userDetailsPasswordService);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndBadCredentialsThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.userDetailsPasswordService);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndUpgradeFalseThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "userDetailsPasswordService",
+    "variableType": "ReactiveUserDetailsPasswordService",
+    "mockedClass": "ReactiveUserDetailsPasswordService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\core\\src\\test\\java\\org\\springframework\\security\\authentication\\UserDetailsRepositoryReactiveAuthenticationManagerTests.java",
+      "className": "UserDetailsRepositoryReactiveAuthenticationManagerTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ReactiveUserDetailsPasswordService userDetailsPasswordService;",
+        "line": 66,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.userDetailsPasswordService.updatePassword(any(), any())).willReturn(Mono.just(this.user));",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.userDetailsPasswordService).updatePassword(eq(this.user), eq(encodedPassword));",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceThenUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.userDetailsPasswordService);",
+        "line": 136,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndBadCredentialsThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verifyNoMoreInteractions(this.userDetailsPasswordService);",
+        "line": 149,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "authenticateWhenPasswordServiceAndUpgradeFalseThenNotUpdated",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

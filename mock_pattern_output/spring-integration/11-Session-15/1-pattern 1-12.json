@@ -1,0 +1,530 @@
+[
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 119,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/x/\")).thenReturn(files);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 328,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_f",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/x/\")).thenReturn(files);",
+        "line": 334,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_f",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 369,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_f_R",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/x/\")).thenReturn(level1);",
+        "line": 377,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_f_R",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/x/d1/\")).thenReturn(level2);",
+        "line": 378,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_f_R",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/x/d1/d2/\")).thenReturn(level3);",
+        "line": 379,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_f_R",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 395,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_f_R_dirs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/x/\")).thenReturn(level1);",
+        "line": 403,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_f_R_dirs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/x/d1/\")).thenReturn(level2);",
+        "line": 404,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_f_R_dirs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/x/d1/d2/\")).thenReturn(level3);",
+        "line": 405,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_f_R_dirs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 423,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_None",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/\")).thenReturn(files);",
+        "line": 428,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_None",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 439,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/\")).thenReturn(files);",
+        "line": 445,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 458,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1_f",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/\")).thenReturn(files);",
+        "line": 464,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1_f",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 476,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1_dirs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/\")).thenReturn(files);",
+        "line": 482,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1_dirs",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 495,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1_dirs_links",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/\")).thenReturn(files);",
+        "line": 501,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1_dirs_links",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 515,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1_a_f_dirs_links",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/\")).thenReturn(files);",
+        "line": 521,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1_a_f_dirs_links",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 537,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1_a_f_dirs_links_filtered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.list(\"testremote/\")).thenReturn(files);",
+        "line": 544,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testLs_1_a_f_dirs_links_filtered",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "session",
+    "variableType": "Session",
+    "mockedClass": "Session",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.jms",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-jms\\src\\test\\java\\org\\springframework\\integration\\jms\\JmsOutboundGatewayTests.java",
+      "className": "JmsOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Session session = mock(Session.class);",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReplyContainerRecovery",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.createConsumer(any(Destination.class), isNull())).thenReturn(consumer);",
+        "line": 116,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReplyContainerRecovery",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(session.createTemporaryQueue()).thenReturn(mock(TemporaryQueue.class));",
+        "line": 117,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testReplyContainerRecovery",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

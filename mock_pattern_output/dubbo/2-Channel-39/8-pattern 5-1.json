@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.remoting.telnet.support",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-remoting\\dubbo-remoting-api\\src\\test\\java\\org\\apache\\dubbo\\remoting\\telnet\\support\\ExitTelnetHandlerTest.java",
+      "className": "ExitTelnetHandlerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Channel channel = Mockito.mock(Channel.class);",
+        "line": 31,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(channel, times(1)).close();",
+        "line": 36,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "variableName": "authorizedClientRepository",
+    "variableType": "ServerOAuth2AuthorizedClientRepository",
+    "mockedClass": "ServerOAuth2AuthorizedClientRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.oauth2.client.web.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\oauth2\\oauth2-client\\src\\test\\java\\org\\springframework\\security\\oauth2\\client\\web\\server\\OAuth2AuthorizationCodeGrantWebFilterTests.java",
+      "className": "OAuth2AuthorizationCodeGrantWebFilterTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerOAuth2AuthorizedClientRepository authorizedClientRepository;",
+        "line": 77,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.saveAuthorizedClient(any(), any(), any())).willReturn(Mono.empty());",
+        "line": 139,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenMatchThenAuthorizedClientSaved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).saveAuthorizedClient(any(), any(AnonymousAuthenticationToken.class), any());",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenMatchThenAuthorizedClientSaved",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.saveAuthorizedClient(any(), any(), any())).willReturn(Mono.empty());",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationRequestRedirectUriParametersMatchThenProcessed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.saveAuthorizedClient(any(), any(), any())).willReturn(Mono.empty());",
+        "line": 231,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationSucceedsAndRequestCacheConfiguredThenRequestCacheUsed",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "authorizedClientRepository",
+    "variableType": "ServerOAuth2AuthorizedClientRepository",
+    "mockedClass": "ServerOAuth2AuthorizedClientRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.reactive.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\reactive\\server\\SecurityMockServerConfigurersOAuth2ClientTests.java",
+      "className": "SecurityMockServerConfigurersOAuth2ClientTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerOAuth2AuthorizedClientRepository authorizedClientRepository;",
+        "line": 65,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(eq(\"registration-id\"), any(Authentication.class), any(ServerWebExchange.class))).willReturn(Mono.just(client));",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "oauth2ClientWhenUsedOnceThenDoesNotAffectRemainingTests",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).loadAuthorizedClient(eq(\"registration-id\"), any(Authentication.class), any(ServerWebExchange.class));",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "oauth2ClientWhenUsedOnceThenDoesNotAffectRemainingTests",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  },
+  {
+    "variableName": "authorizedClientRepository",
+    "variableType": "ServerOAuth2AuthorizedClientRepository",
+    "mockedClass": "ServerOAuth2AuthorizedClientRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.web.reactive.server",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\web\\reactive\\server\\SecurityMockServerConfigurersOAuth2ClientTests.java",
+      "className": "SecurityMockServerConfigurersOAuth2ClientTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate ServerOAuth2AuthorizedClientRepository authorizedClientRepository;",
+        "line": 65,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.authorizedClientRepository.loadAuthorizedClient(eq(\"registration-id\"), any(Authentication.class), any(ServerWebExchange.class))).willReturn(Mono.just(client));",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "oauth2ClientWhenUsedOnceThenDoesNotAffectRemainingTests",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.authorizedClientRepository).loadAuthorizedClient(eq(\"registration-id\"), any(Authentication.class), any(ServerWebExchange.class));",
+        "line": 197,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "oauth2ClientWhenUsedOnceThenDoesNotAffectRemainingTests",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

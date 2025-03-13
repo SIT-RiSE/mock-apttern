@@ -1,0 +1,30 @@
+[
+  {
+    "variableName": "sessionFactory",
+    "variableType": "SessionFactory<TestLsEntry>",
+    "mockedClass": "SessionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.file.remote.gateway",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-file\\src\\test\\java\\org\\springframework\\integration\\file\\remote\\gateway\\RemoteFileOutboundGatewayTests.java",
+      "className": "RemoteFileOutboundGatewayTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SessionFactory<TestLsEntry> sessionFactory = mock(SessionFactory.class);",
+        "line": 928,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRemoteFileTemplateImmutability",
+          "methodAnnotations": [
+            "@Test",
+            "@SuppressWarnings"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

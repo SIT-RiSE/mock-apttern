@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "migrationRuleListener",
+    "variableType": "MigrationRuleListener",
+    "mockedClass": "MigrationRuleListener",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.integration",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\integration\\RegistryProtocolTest.java",
+      "className": "RegistryProtocolTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "MigrationRuleListener migrationRuleListener = mock(MigrationRuleListener.class);",
+        "line": 391,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterceptInvokerForMigrationRuleListener",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(migrationRuleListener, times(1)).onRefer(registryProtocol, clusterInvoker, consumerUrl, url);",
+        "line": 409,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testInterceptInvokerForMigrationRuleListener",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "swiftObject",
+    "variableType": "SwiftObject",
+    "mockedClass": "SwiftObject",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.apache.druid.storage.cloudfiles",
+      "filePath": "C:\\java tool\\Apache\\druid\\extensions-contrib\\cloudfiles-extensions\\src\\test\\java\\org\\apache\\druid\\storage\\cloudfiles\\CloudFilesObjectApiProxyTest.java",
+      "className": "CloudFilesObjectApiProxyTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "SwiftObject swiftObject = mock(SwiftObject.class);",
+        "line": 44,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(swiftObject.getPayload()).thenReturn(payload);",
+        "line": 49,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(swiftObject).getPayload();",
+        "line": 61,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "getTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

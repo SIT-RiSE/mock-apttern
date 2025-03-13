@@ -1,0 +1,137 @@
+[
+  {
+    "variableName": "nacosConnectionManager",
+    "variableType": "NacosConnectionManager",
+    "mockedClass": "NacosConnectionManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosConnectionsManagerTest.java",
+      "className": "NacosConnectionsManagerTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NacosConnectionManager nacosConnectionManager = new NacosConnectionManager(URL.valueOf(\"\"), false, 0, 0) {\r\n\r\n    @Override\r\n    protected NamingService createNamingService() {\r\n        NamingService namingService = Mockito.mock(NamingService.class);\r\n        namingServiceList.add(namingService);\r\n        return namingService;\r\n    }\r\n};",
+        "line": 54,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreate",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "nacosConnectionManager",
+    "variableType": "NacosConnectionManager",
+    "mockedClass": "NacosConnectionManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosNamingServiceWrapperTest.java",
+      "className": "NacosNamingServiceWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NacosConnectionManager nacosConnectionManager = new NacosConnectionManager(URL.valueOf(\"\"), false, 0, 0) {\r\n\r\n    @Override\r\n    protected NamingService createNamingService() {\r\n        NamingService namingService = Mockito.mock(NamingService.class);\r\n        namingServiceList.add(namingService);\r\n        return namingService;\r\n    }\r\n};",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegisterNacos2_0_x",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "nacosConnectionManager",
+    "variableType": "NacosConnectionManager",
+    "mockedClass": "NacosConnectionManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosNamingServiceWrapperTest.java",
+      "className": "NacosNamingServiceWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NacosConnectionManager nacosConnectionManager = new NacosConnectionManager(URL.valueOf(\"\"), false, 0, 0) {\r\n\r\n    @Override\r\n    protected NamingService createNamingService() {\r\n        NamingService namingService = Mockito.mock(NamingService.class);\r\n        try {\r\n            Mockito.doThrow(new NacosException()).when(namingService).batchRegisterInstance(Mockito.anyString(), Mockito.anyString(), Mockito.any(List.class));\r\n        } catch (NacosException e) {\r\n            throw new RuntimeException(e);\r\n        }\r\n        namingServiceList.add(namingService);\r\n        return namingService;\r\n    }\r\n};",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegisterNacos2_1_xClient2_0_xServer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "nacosConnectionManager",
+    "variableType": "NacosConnectionManager",
+    "mockedClass": "NacosConnectionManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosNamingServiceWrapperTest.java",
+      "className": "NacosNamingServiceWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NacosConnectionManager nacosConnectionManager = new NacosConnectionManager(URL.valueOf(\"\"), false, 0, 0) {\r\n\r\n    @Override\r\n    protected NamingService createNamingService() {\r\n        NamingService namingService = Mockito.mock(NamingService.class);\r\n        namingServiceList.add(namingService);\r\n        return namingService;\r\n    }\r\n};",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testRegisterNacos2_1_xClient2_1_xServer",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  },
+  {
+    "variableName": "nacosConnectionManager",
+    "variableType": "NacosConnectionManager",
+    "mockedClass": "NacosConnectionManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.nacos",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-nacos\\src\\test\\java\\org\\apache\\dubbo\\registry\\nacos\\NacosNamingServiceWrapperTest.java",
+      "className": "NacosNamingServiceWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "NacosConnectionManager nacosConnectionManager = new NacosConnectionManager(URL.valueOf(\"\"), false, 0, 0) {\r\n\r\n    @Override\r\n    protected NamingService createNamingService() {\r\n        NamingService namingService = Mockito.mock(NamingService.class);\r\n        namingServiceList.add(namingService);\r\n        return namingService;\r\n    }\r\n};",
+        "line": 391,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testUnregister",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 2
+  }
+]

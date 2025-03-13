@@ -1,0 +1,75 @@
+[
+  {
+    "variableName": "mapping",
+    "variableType": "ServiceNameMapping",
+    "mockedClass": "ServiceNameMapping",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.dubbo.registry.client.migration.model",
+      "filePath": "C:\\java tool\\Apache\\dubbo\\dubbo-registry\\dubbo-registry-api\\src\\test\\java\\org\\apache\\dubbo\\registry\\client\\migration\\model\\MigrationRuleTest.java",
+      "className": "MigrationRuleTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "private static final ServiceNameMapping mapping = mock(ServiceNameMapping.class);",
+        "line": 41,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mapping.getMapping(any(URL.class))).thenReturn(Collections.emptySet());",
+        "line": 45,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_parse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mapping.getRemoteMapping(any(URL.class))).thenReturn(Collections.singleton(\"TestApplication\"));",
+        "line": 105,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_parse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mapping.getMapping(any(URL.class))).thenReturn(services);",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_parse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(mapping.getMapping(any(URL.class))).thenReturn(Collections.emptySet());",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "test_parse",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

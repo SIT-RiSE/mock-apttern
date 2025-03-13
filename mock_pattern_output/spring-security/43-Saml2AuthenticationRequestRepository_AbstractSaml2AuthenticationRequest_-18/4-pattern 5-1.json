@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "authenticationRequestRepository",
+    "variableType": "Saml2AuthenticationRequestRepository<AbstractSaml2AuthenticationRequest>",
+    "mockedClass": "Saml2AuthenticationRequestRepository",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.saml2.provider.service.web.authentication",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\saml2\\saml2-service-provider\\src\\test\\java\\org\\springframework\\security\\saml2\\provider\\service\\web\\authentication\\Saml2WebSsoAuthenticationFilterTests.java",
+      "className": "Saml2WebSsoAuthenticationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "Saml2AuthenticationRequestRepository<AbstractSaml2AuthenticationRequest> authenticationRequestRepository = mock(Saml2AuthenticationRequestRepository.class);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "attemptAuthenticationWhenSavedAuthnRequestThenRemovesAuthnRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authenticationRequestRepository).removeAuthenticationRequest(this.request, this.response);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "attemptAuthenticationWhenSavedAuthnRequestThenRemovesAuthnRequest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]

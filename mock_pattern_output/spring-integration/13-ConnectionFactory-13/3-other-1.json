@@ -1,0 +1,29 @@
+[
+  {
+    "variableName": "cf",
+    "variableType": "ConnectionFactory",
+    "mockedClass": "ConnectionFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Other Methods\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.support",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\support\\BoundRabbitChannelAdviceTests.java",
+      "className": "Config"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "ConnectionFactory cf = mock(ConnectionFactory.class);",
+        "line": 96,
+        "locate": "Other Methods",
+        "locationContext": {
+          "methodName": "cf",
+          "methodAnnotations": [
+            "@Bean"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 22
+  }
+]

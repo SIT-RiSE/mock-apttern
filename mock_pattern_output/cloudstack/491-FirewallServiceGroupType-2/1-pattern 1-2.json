@@ -1,0 +1,80 @@
+[
+  {
+    "variableName": "firewallServiceGroupType",
+    "variableType": "FirewallServiceGroupType",
+    "mockedClass": "FirewallServiceGroupType",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FirewallServiceGroupType firewallServiceGroupType = mock(FirewallServiceGroupType.class);",
+        "line": 1344,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenServiceGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallServiceGroupType.getFirewallService()).thenReturn(List.of(firewallServiceType));",
+        "line": 1354,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createTungstenServiceGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  },
+  {
+    "variableName": "firewallServiceGroupType",
+    "variableType": "FirewallServiceGroupType",
+    "mockedClass": "FirewallServiceGroupType",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.tungsten.service",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\tungsten\\src\\test\\java\\org\\apache\\cloudstack\\network\\tungsten\\service\\TungstenServiceImplTest.java",
+      "className": "TungstenServiceImplTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "FirewallServiceGroupType firewallServiceGroupType = mock(FirewallServiceGroupType.class);",
+        "line": 1518,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenServiceGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(firewallServiceGroupType.getFirewallService()).thenReturn(List.of(firewallServiceType));",
+        "line": 1528,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "listTungstenServiceGroupTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

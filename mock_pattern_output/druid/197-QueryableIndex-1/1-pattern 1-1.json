@@ -1,0 +1,65 @@
+[
+  {
+    "variableName": "queryableIndex",
+    "variableType": "QueryableIndex",
+    "mockedClass": "QueryableIndex",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.cli",
+      "filePath": "C:\\java tool\\Apache\\druid\\services\\src\\test\\java\\org\\apache\\druid\\cli\\DumpSegmentTest.java",
+      "className": "DumpSegmentTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "QueryableIndex queryableIndex = Mockito.mock(QueryableIndex.class);",
+        "line": 120,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDumpBitmap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(queryableIndex.getBitmapFactoryForDimensions()).thenReturn(bitmapFactory);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDumpBitmap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(queryableIndex.getColumnHolder(\"x\")).thenReturn(xHolder);",
+        "line": 133,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDumpBitmap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(queryableIndex.getColumnHolder(\"y\")).thenReturn(yHolder);",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDumpBitmap",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

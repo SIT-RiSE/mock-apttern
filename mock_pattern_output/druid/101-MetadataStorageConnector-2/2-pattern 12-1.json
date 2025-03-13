@@ -1,0 +1,77 @@
+[
+  {
+    "variableName": "mockConnector",
+    "variableType": "MetadataStorageConnector",
+    "mockedClass": "MetadataStorageConnector",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.http",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\http\\CoordinatorCompactionConfigsResourceTest.java",
+      "className": "CoordinatorCompactionConfigsResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate MetadataStorageConnector mockConnector;",
+        "line": 94,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockConnector.lookup(ArgumentMatchers.anyString(), ArgumentMatchers.eq(\"name\"), ArgumentMatchers.eq(\"payload\"), ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY))).thenReturn(OLD_CONFIG_IN_BYTES);",
+        "line": 108,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockConnector.lookup(ArgumentMatchers.anyString(), ArgumentMatchers.eq(\"name\"), ArgumentMatchers.eq(\"payload\"), ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY))).thenReturn(null);",
+        "line": 328,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSetCompactionTaskLimitWithoutExistingConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockConnector.lookup(ArgumentMatchers.anyString(), ArgumentMatchers.eq(\"name\"), ArgumentMatchers.eq(\"payload\"), ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY))).thenReturn(null);",
+        "line": 375,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAddOrUpdateCompactionConfigWithoutExistingConfig",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(mockConnector.lookup(ArgumentMatchers.anyString(), ArgumentMatchers.eq(\"name\"), ArgumentMatchers.eq(\"payload\"), ArgumentMatchers.eq(CoordinatorCompactionConfig.CONFIG_KEY))).thenReturn(null);",
+        "line": 431,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testDeleteCompactionConfigWithoutExistingConfigShouldFailAsDatasourceNotExist",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  }
+]

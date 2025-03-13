@@ -1,0 +1,149 @@
+[
+  {
+    "variableName": "beans",
+    "variableType": "BeanFactory",
+    "mockedClass": "BeanFactory",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.test.context.support",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\test\\src\\test\\java\\org\\springframework\\security\\test\\context\\support\\WithUserDetailsSecurityContextFactoryTests.java",
+      "className": "WithUserDetailsSecurityContextFactoryTests"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nprivate BeanFactory beans;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.beans.getBean(ReactiveUserDetailsService.class)).willThrow(new NoSuchBeanDefinitionException(\"\"));",
+        "line": 79,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithExistingUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.beans.getBean(UserDetailsService.class)).willReturn(this.userDetailsService);",
+        "line": 80,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithExistingUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.beans).getBean(UserDetailsService.class);",
+        "line": 86,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithExistingUser",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.beans.getBean(beanName, ReactiveUserDetailsService.class)).willThrow(new BeanNotOfRequiredTypeException(\"\", ReactiveUserDetailsService.class, UserDetailsService.class));",
+        "line": 94,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithUserDetailsServiceName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.beans.getBean(beanName, UserDetailsService.class)).willReturn(this.userDetailsService);",
+        "line": 99,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithUserDetailsServiceName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.beans).getBean(beanName, UserDetailsService.class);",
+        "line": 103,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithUserDetailsServiceName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.beans.getBean(ReactiveUserDetailsService.class)).willReturn(this.reactiveUserDetailsService);",
+        "line": 110,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithReactiveUserDetailsService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.beans).getBean(ReactiveUserDetailsService.class);",
+        "line": 115,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithReactiveUserDetailsService",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(this.beans.getBean(beanName, ReactiveUserDetailsService.class)).willReturn(this.reactiveUserDetailsService);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithReactiveUserDetailsServiceAndBeanName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(this.beans).getBean(beanName, ReactiveUserDetailsService.class);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "createSecurityContextWithReactiveUserDetailsServiceAndBeanName",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 8
+  }
+]

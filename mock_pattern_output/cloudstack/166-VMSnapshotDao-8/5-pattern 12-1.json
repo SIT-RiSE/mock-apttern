@@ -1,0 +1,90 @@
+[
+  {
+    "variableName": "_vmSnapshotDao",
+    "variableType": "VMSnapshotDao",
+    "mockedClass": "VMSnapshotDao",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.vm.snapshot",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\com\\cloud\\vm\\snapshot\\VMSnapshotManagerTest.java",
+      "className": "VMSnapshotManagerTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nVMSnapshotDao _vmSnapshotDao;",
+        "line": 97,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmSnapshotDao.findByName(anyLong(), anyString())).thenReturn(null);",
+        "line": 203,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmSnapshotDao.findByVm(anyLong())).thenReturn(new ArrayList<VMSnapshotVO>());",
+        "line": 204,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setup",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmSnapshotDao.findByVm(TEST_VM_ID)).thenReturn(mockList);",
+        "line": 286,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testAllocVMSnapshotF4",
+          "methodAnnotations": [
+            "@SuppressWarnings",
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmSnapshotDao.persist(any(VMSnapshotVO.class))).thenReturn(vmSnapshotVO);",
+        "line": 309,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAndPersistVMSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_vmSnapshotDao.persist(any(VMSnapshotVO.class))).thenReturn(null);",
+        "line": 318,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateAndPersistVMSnapshotNullVMSnapshot",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 12
+  }
+]

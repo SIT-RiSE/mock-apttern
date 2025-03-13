@@ -1,0 +1,161 @@
+[
+  {
+    "variableName": "userVmServiceMock",
+    "variableType": "UserVmService",
+    "mockedClass": "UserVmService",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.api.command.admin.vm",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\admin\\vm\\MigrateVirtualMachineWithVolumeCmdTest.java",
+      "className": "MigrateVirtualMachineWithVolumeCmdTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nUserVmService userVmServiceMock;",
+        "line": 51,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.getVm(Mockito.anyLong())).thenReturn(virtualMachineMock);",
+        "line": 106,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestVMIsStoppedAndHostIdIsNotNullThrowsInvalidParameterValueException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.getVm(Mockito.anyLong())).thenReturn(virtualMachineMock);",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestVMIsRunningAndHostIdIsNullThrowsInvalidParameterValueException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.getVm(Mockito.anyLong())).thenReturn(virtualMachineMock);",
+        "line": 143,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestHostIdIsNullThrowsInvalidParameterValueException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.getVm(Mockito.anyLong())).thenReturn(virtualMachineMock);",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestHostIsNotNullMigratedVMIsNullThrowsServerApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.migrateVirtualMachineWithVolume(virtualMachineUuid, hostMock, migrateVolumeTo)).thenReturn(null);",
+        "line": 165,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestHostIsNotNullMigratedVMIsNullThrowsServerApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.getVm(Mockito.anyLong())).thenReturn(virtualMachineMock);",
+        "line": 181,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestHostIsNullMigratedVMIsNullThrowsServerApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.vmStorageMigration(virtualMachineUuid, migrateVolumeTo)).thenReturn(null);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestHostIsNullMigratedVMIsNullThrowsServerApiException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.getVm(Mockito.anyLong())).thenReturn(virtualMachineMock);",
+        "line": 199,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestSystemVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.vmStorageMigration(virtualMachineUuid, migrateVolumeTo)).thenReturn(virtualMachineMock);",
+        "line": 201,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestSystemVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.getVm(Mockito.anyLong())).thenReturn(userVmMock);",
+        "line": 216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestUserVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(userVmServiceMock.vmStorageMigration(virtualMachineUuid, migrateVolumeTo)).thenReturn(userVmMock);",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "executeTestUserVMMigratedWithSuccess",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

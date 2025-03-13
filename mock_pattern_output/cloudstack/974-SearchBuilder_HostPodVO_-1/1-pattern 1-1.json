@@ -1,0 +1,53 @@
+[
+  {
+    "variableName": "podIdSearch",
+    "variableType": "SearchBuilder<HostPodVO>",
+    "mockedClass": "SearchBuilder",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.cloudstack.network.router.deployment",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\server\\src\\test\\java\\org\\apache\\cloudstack\\network\\router\\deployment\\RouterDeploymentDefinitionTest.java",
+      "className": "RouterDeploymentDefinitionTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final SearchBuilder<HostPodVO> podIdSearch = mock(SearchBuilder.class);",
+        "line": 448,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListByDataCenterIdVMTypeAndStates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(podIdSearch.entity()).thenReturn(hostPodVO);",
+        "line": 452,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListByDataCenterIdVMTypeAndStates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(podIdSearch.create()).thenReturn(sc);",
+        "line": 455,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testListByDataCenterIdVMTypeAndStates",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

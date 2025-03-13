@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "channel",
+    "variableType": "Channel",
+    "mockedClass": "Channel",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.springframework.integration.amqp.channel",
+      "filePath": "C:\\java tool\\Spring\\spring-integration\\spring-integration-amqp\\src\\test\\java\\org\\springframework\\integration\\amqp\\channel\\DispatcherHasNoSubscribersTests.java",
+      "className": "DispatcherHasNoSubscribersTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "final Channel channel = mock(Channel.class);",
+        "line": 60,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPtP",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(channel.queueDeclare(anyString(), anyBoolean(), anyBoolean(), anyBoolean(), isNull())).thenReturn(declareOk);",
+        "line": 63,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPtP",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 1
+  }
+]

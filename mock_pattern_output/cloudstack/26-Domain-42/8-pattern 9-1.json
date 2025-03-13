@@ -1,0 +1,197 @@
+[
+  {
+    "variableName": "domainMock",
+    "variableType": "Domain",
+    "mockedClass": "Domain",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource.wrapper",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\wrapper\\LibvirtScaleVmCommandWrapperTest.java",
+      "className": "LibvirtScaleVmCommandWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock\r\nDomain domainMock;",
+        "line": 55,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock).setVcpus(Mockito.anyInt());",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleVcpusRunningVcpusLessThanNewVcpusSetNewVcpu",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock, Mockito.never()).setVcpus(Mockito.anyInt());",
+        "line": 109,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleVcpusRunningVcpusEqualThanNewVcpusDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock, Mockito.never()).setVcpus(Mockito.anyInt());",
+        "line": 121,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleVcpusRunningVcpusHigherThanNewVcpusDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock, Mockito.never()).setVcpus(Mockito.anyInt());",
+        "line": 134,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleVcpusSetVcpusThrowLibvirtException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock, Mockito.never()).getXMLDesc(Mockito.anyInt());",
+        "line": 146,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleMemoryMemoryLessThanZeroDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock, Mockito.never()).attachDevice(Mockito.anyString());",
+        "line": 147,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleMemoryMemoryLessThanZeroDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock, Mockito.never()).getXMLDesc(Mockito.anyInt());",
+        "line": 159,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleMemoryMemoryEqualToZeroDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock, Mockito.never()).attachDevice(Mockito.anyString());",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleMemoryMemoryEqualToZeroDoNothing",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock).getXMLDesc(Mockito.anyInt());",
+        "line": 173,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleMemoryDomainXmlDoesNotContainsMaxMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock, Mockito.never()).attachDevice(Mockito.anyString());",
+        "line": 174,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleMemoryDomainXmlDoesNotContainsMaxMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock).getXMLDesc(Mockito.anyInt());",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleMemoryAttachDeviceThrowsLibvirtException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock).attachDevice(Mockito.anyString());",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleMemoryAttachDeviceThrowsLibvirtException",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock).getXMLDesc(Mockito.anyInt());",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "Mockito.verify(domainMock).attachDevice(Mockito.anyString());",
+        "line": 204,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "validateScaleMemory",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 9
+  }
+]

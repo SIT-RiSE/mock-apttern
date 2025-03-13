@@ -1,0 +1,119 @@
+[
+  {
+    "variableName": "configForDataSourceWithChange",
+    "variableType": "DataSourceCompactionConfig",
+    "mockedClass": "DataSourceCompactionConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\DataSourceCompactionConfigHistoryTest.java",
+      "className": "DataSourceCompactionConfigHistoryTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock(answer = Answers.RETURNS_MOCKS)\r\nprivate DataSourceCompactionConfig configForDataSourceWithChange;",
+        "line": 52,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(configForDataSourceWithChange.getDataSource()).thenReturn(DATASOURCE);",
+        "line": 72,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "configForDataSource",
+    "variableType": "DataSourceCompactionConfig",
+    "mockedClass": "DataSourceCompactionConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\DataSourceCompactionConfigHistoryTest.java",
+      "className": "DataSourceCompactionConfigHistoryTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock(answer = Answers.RETURNS_MOCKS)\r\nprivate DataSourceCompactionConfig configForDataSource;",
+        "line": 50,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(configForDataSource.getDataSource()).thenReturn(DATASOURCE);",
+        "line": 71,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  },
+  {
+    "variableName": "configForDataSource2",
+    "variableType": "DataSourceCompactionConfig",
+    "mockedClass": "DataSourceCompactionConfig",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 @Before\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "org.apache.druid.server.coordinator",
+      "filePath": "C:\\java tool\\Apache\\druid\\server\\src\\test\\java\\org\\apache\\druid\\server\\coordinator\\DataSourceCompactionConfigHistoryTest.java",
+      "className": "DataSourceCompactionConfigHistoryTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "@Mock(answer = Answers.RETURNS_MOCKS)\r\nprivate DataSourceCompactionConfig configForDataSource2;",
+        "line": 54,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": [
+            "@Mock"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "Mockito.when(configForDataSource2.getDataSource()).thenReturn(DATASOURCE_2);",
+        "line": 73,
+        "locate": "@Before",
+        "locationContext": {
+          "methodName": "setUp",
+          "methodAnnotations": [
+            "@Before"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 7
+  }
+]

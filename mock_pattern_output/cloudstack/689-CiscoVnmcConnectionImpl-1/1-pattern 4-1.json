@@ -1,0 +1,615 @@
+[
+  {
+    "variableName": "_connection",
+    "variableType": "CiscoVnmcConnectionImpl",
+    "mockedClass": "CiscoVnmcConnectionImpl",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Attribute Mock Creation\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 None",
+    "classContext": {
+      "packageName": "com.cloud.network.resource",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\network-elements\\cisco-vnmc\\src\\test\\java\\com\\cloud\\network\\resource\\CiscoVnmcResourceTest.java",
+      "className": "CiscoVnmcResourceTest"
+    },
+    "statements": [
+      {
+        "type": "FIELD_MOCK_CREATION",
+        "code": "CiscoVnmcConnectionImpl _connection = mock(CiscoVnmcConnectionImpl.class);",
+        "line": 56,
+        "locate": "Attribute",
+        "locationContext": {
+          "methodName": "[FieldDeclaration]",
+          "methodAnnotations": []
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.login()).thenReturn(true);",
+        "line": 101,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusOk",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.login()).thenReturn(false);",
+        "line": 111,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPingCommandStatusFail",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.login()).thenReturn(true);",
+        "line": 125,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSourceNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCNatPolicySet(anyString())).thenReturn(true);",
+        "line": 126,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSourceNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCSourceNatPolicy(anyString(), anyString())).thenReturn(true);",
+        "line": 127,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSourceNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCSourceNatPolicyRef(anyString(), anyString())).thenReturn(true);",
+        "line": 128,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSourceNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCSourceNatIpPool(anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 129,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSourceNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCSourceNatRule(anyString(), anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 130,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSourceNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.associateNatPolicySet(anyString())).thenReturn(true);",
+        "line": 131,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testSourceNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclPolicySet(anyString(), anyBoolean())).thenReturn(true);",
+        "line": 154,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclPolicy(anyString(), anyString())).thenReturn(true);",
+        "line": 155,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclPolicyRef(anyString(), anyString(), anyBoolean())).thenReturn(true);",
+        "line": 156,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.deleteTenantVDCAclRule(anyString(), anyLong(), anyString())).thenReturn(true);",
+        "line": 157,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCIngressAclRule(anyString(), anyLong(), anyString(), anyString(), anyString(), anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 158,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCEgressAclRule(anyString(), anyLong(), anyString(), anyString(), anyString(), anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 160,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.associateAclPolicySet(anyString())).thenReturn(true);",
+        "line": 162,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCNatPolicySet(anyString())).thenReturn(true);",
+        "line": 183,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclPolicySet(anyString(), anyBoolean())).thenReturn(true);",
+        "line": 184,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCDNatPolicy(anyString(), anyString())).thenReturn(true);",
+        "line": 185,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCDNatPolicyRef(anyString(), anyString())).thenReturn(true);",
+        "line": 186,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclPolicy(anyString(), anyString())).thenReturn(true);",
+        "line": 187,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclPolicyRef(anyString(), anyString(), anyBoolean())).thenReturn(true);",
+        "line": 188,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.deleteTenantVDCDNatRule(anyString(), anyLong(), anyString())).thenReturn(true);",
+        "line": 189,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.deleteTenantVDCAclRule(anyString(), anyLong(), anyString())).thenReturn(true);",
+        "line": 190,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCDNatIpPool(anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 191,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCDNatRule(anyString(), anyLong(), anyString(), anyString())).thenReturn(true);",
+        "line": 192,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclRuleForDNat(anyString(), anyLong(), anyString(), anyString())).thenReturn(true);",
+        "line": 193,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.associateAclPolicySet(anyString())).thenReturn(true);",
+        "line": 194,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testStaticNat",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCNatPolicySet(anyString())).thenReturn(true);",
+        "line": 215,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclPolicySet(anyString(), anyBoolean())).thenReturn(true);",
+        "line": 216,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCPFPolicy(anyString(), anyString())).thenReturn(true);",
+        "line": 217,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCPFPolicyRef(anyString(), anyString())).thenReturn(true);",
+        "line": 218,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclPolicy(anyString(), anyString())).thenReturn(true);",
+        "line": 219,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclPolicyRef(anyString(), anyString(), anyBoolean())).thenReturn(true);",
+        "line": 220,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.deleteTenantVDCPFRule(anyString(), anyLong(), anyString())).thenReturn(true);",
+        "line": 221,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.deleteTenantVDCAclRule(anyString(), anyLong(), anyString())).thenReturn(true);",
+        "line": 222,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCPFIpPool(anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 223,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCPFPortPool(anyString(), anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 224,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCPFRule(anyString(), anyLong(), anyString(), anyString(), anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 225,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCAclRuleForPF(anyString(), anyLong(), anyString(), anyString(), anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 226,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.associateAclPolicySet(anyString())).thenReturn(true);",
+        "line": 227,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testPortForwarding",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenant(anyString())).thenReturn(true);",
+        "line": 242,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDC(anyString())).thenReturn(true);",
+        "line": 243,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCEdgeSecurityProfile(anyString())).thenReturn(true);",
+        "line": 244,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCEdgeDeviceProfile(anyString())).thenReturn(true);",
+        "line": 245,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCEdgeStaticRoutePolicy(anyString())).thenReturn(true);",
+        "line": 246,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createTenantVDCEdgeStaticRoute(anyString(), anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 247,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.associateTenantVDCEdgeStaticRoutePolicy(anyString())).thenReturn(true);",
+        "line": 248,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "when(_connection.createEdgeFirewall(anyString(), anyString(), anyString(), anyString(), anyString())).thenReturn(true);",
+        "line": 249,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "testCreateEdgeFirewall",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 4
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "variableName": "mockAuthorizationManager",
+    "variableType": "AuthorizationManager<HttpServletRequest>",
+    "mockedClass": "AuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access.intercept",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\intercept\\AuthorizationFilterTests.java",
+      "className": "AuthorizationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthorizationManager<HttpServletRequest> mockAuthorizationManager = mock(AuthorizationManager.class);",
+        "line": 95,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationManagerVerifyPassesThenNextFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockAuthorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 96,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationManagerVerifyPassesThenNextFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockAuthorizationManager.check(any(Supplier.class), any(HttpServletRequest.class))).willReturn(new AuthorizationDecision(true));",
+        "line": 97,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationManagerVerifyPassesThenNextFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockAuthorizationManager).check(authenticationCaptor.capture(), eq(mockRequest));",
+        "line": 113,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationManagerVerifyPassesThenNextFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "mockAuthorizationManager",
+    "variableType": "AuthorizationManager<HttpServletRequest>",
+    "mockedClass": "AuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access.intercept",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\intercept\\AuthorizationFilterTests.java",
+      "className": "AuthorizationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthorizationManager<HttpServletRequest> mockAuthorizationManager = mock(AuthorizationManager.class);",
+        "line": 123,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationManagerVerifyThrowsAccessDeniedExceptionThenStopFilterChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(mockAuthorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 124,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationManagerVerifyThrowsAccessDeniedExceptionThenStopFilterChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(mockAuthorizationManager).check(authenticationCaptor.capture(), eq(mockRequest));",
+        "line": 144,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "filterWhenAuthorizationManagerVerifyThrowsAccessDeniedExceptionThenStopFilterChain",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  },
+  {
+    "variableName": "authorizationManager",
+    "variableType": "AuthorizationManager<HttpServletRequest>",
+    "mockedClass": "AuthorizationManager",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 Test Case\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "org.springframework.security.web.access.intercept",
+      "filePath": "C:\\java tool\\Spring\\spring-security\\web\\src\\test\\java\\org\\springframework\\security\\web\\access\\intercept\\AuthorizationFilterTests.java",
+      "className": "AuthorizationFilterTests"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "AuthorizationManager<HttpServletRequest> authorizationManager = mock(AuthorizationManager.class);",
+        "line": 202,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenErrorThenDoFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "STUBBING",
+        "code": "given(authorizationManager.authorize(any(), any())).willCallRealMethod();",
+        "line": 203,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenErrorThenDoFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "verify(authorizationManager).check(any(Supplier.class), eq(mockRequest));",
+        "line": 212,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "doFilterWhenErrorThenDoFilter",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 6
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "variableName": "storageVolLookupByPath",
+    "variableType": "StorageVol",
+    "mockedClass": "StorageVol",
+    "isReuseableMock": false,
+    "mockPattern": "Creation:\n\u2014 Local Mock Creation in Test Case\n\nStubbing:\n\u2014 None\n\nVerification:\n\u2014 Test Case",
+    "classContext": {
+      "packageName": "com.cloud.hypervisor.kvm.resource.wrapper",
+      "filePath": "C:\\java tool\\Apache\\cloudstack\\plugins\\hypervisors\\kvm\\src\\test\\java\\com\\cloud\\hypervisor\\kvm\\resource\\wrapper\\LibvirtMigrateCommandWrapperTest.java",
+      "className": "LibvirtMigrateCommandWrapperTest"
+    },
+    "statements": [
+      {
+        "type": "DECLARATION",
+        "code": "StorageVol storageVolLookupByPath = Mockito.mock(StorageVol.class);",
+        "line": 666,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteLocalVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      },
+      {
+        "type": "VERIFICATION",
+        "code": "inOrder.verify(storageVolLookupByPath, Mockito.times(1)).delete(0);",
+        "line": 675,
+        "locate": "Test Case",
+        "locationContext": {
+          "methodName": "deleteLocalVolumeTest",
+          "methodAnnotations": [
+            "@Test"
+          ]
+        }
+      }
+    ],
+    "pattern_id": 5
+  }
+]
