@@ -1,9 +1,3 @@
-
-
-Here's a concise English README focused on pattern classification and key findings:
-
----
-
 # Mock Sequence Pattern Analyzer
 
 ## Overview
