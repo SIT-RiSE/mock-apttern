@@ -29,9 +29,11 @@ pip install -r requirements.txt
 ```
 output/
 ├── project1/
-│   ├── 1-Service-3/          # Pattern category directory
+│   ├── 1-Dependency 1-10/          # Pattern category directory
 │   │   ├── 1-pattern1-5.json  # Individual pattern file
 │   │   └── 2-pattern2-3.json
+│   ├── 2-Dependency 2-3/   
+│   │   └── 1-pattern4-7.json
 │   └── project1_summary.xlsx  # Project-level statistics
 └── global_summary.xlsx        # Cross-project aggregation
 ```
@@ -45,52 +47,66 @@ output/
      - Project-level Excel summary
 
 2. **Pattern Category Directories** (e.g. `1-Service-3/`)
-   - Naming format: `[Rank]-[Type]-[Count]`
+   - Naming format: `[Rank]-[Dependency]-[Count]`
      - **Rank**: Pattern's frequency ranking
-     - **Type**: Mock type classification (Service/Dao/Controller/etc)
+     - **Dependency**: Mock Dependency classification (Service/Dao/Controller/etc)
      - **Count**: Number of cases in this category
 
 3. **Pattern Files** (e.g. `1-pattern1-5.json`)
-   - Naming format: `[ID]-[pattern]-[cases].json`
+   - Naming format: `[ID]-[pattern]-[Count].json`
      - **ID**: Unique pattern identifier
      - **pattern**: Pattern name/number
-     - **cases**: Number of mock sequences in this file
+     - **Count**: Number of mock sequences in this pattern
    - Contains detailed mock patterns:
-     ```json
+      ```json
       {
-        "variableName": "uuidMock",
-        "variableType": "UUID",
-        "mockedClass": "UUID",
+        "variableName": "network",
+        "variableType": "Network",
+        "mockedClass": "Network",
         "isReuseableMock": false,
-        "mockPattern": "Creation:\n— Attribute Mock Creation\n\nStubbing:\n— None\n\nVerification:\n— None",
+        "mockPattern": "Creation: Local Mock Creation in Test Case; Stubbing: Test Case; Verification: None",
         "classContext": {
-          "packageName": "com.cloud.agent",
-          "filePath": "C:\\java tool\\Apache\\cloudstack\\agent\\src\\test\\java\\com\\cloud\\agent\\AgentShellTest.java",
-          "className": "AgentShellTest"
+          "packageName": "org.apache.cloudstack.api.command.user.network",
+          "filePath": "C:\\java tool\\Apache\\cloudstack\\api\\src\\test\\java\\org\\apache\\cloudstack\\api\\command\\user\\network\\UpdateNetworkCmdTest.java",
+          "className": "UpdateNetworkCmdTest"
         },
         "statements": [
           {
-            "type": "FIELD_MOCK_CREATION",
-            "code": "@Mock\r\nUUID uuidMock;",
-            "line": 58,
-            "locate": "Attribute",
+            "type": "DECLARATION",
+            "code": "Network network = Mockito.mock(Network.class);",
+            "line": 163,
+            "locate": "Test Case",
             "locationContext": {
-              "methodName": "[FieldDeclaration]",
+              "methodName": "testEventDescription",
               "methodAnnotations": [
-                "@Mock"
+                "@Test"
+              ]
+            }
+          },
+          {
+            "type": "STUBBING",
+            "code": "Mockito.when(network.getNetworkOfferingId()).thenReturn(networkOfferingId);",
+            "line": 167,
+            "locate": "Test Case",
+            "locationContext": {
+              "methodName": "testEventDescription",
+              "methodAnnotations": [
+                "@Test"
               ]
             }
           }
-        ]
-      }
-     ```
+        ],
+        "pattern_id": 1
+      },
+      ```
+
 
 4. **Excel Reports**
    - `project1_summary.xlsx` (Per-project)
      - Columns:
        | Column | Description |
        |---|---|
-       | Dependency | Mocked component type |
+       | Dependency | Name of Mocked Dependency|
        | Total | Total mocks per type |
        | Pattern1-Pattern15 | Frequency of predefined patterns |
        | Other | Unclassified patterns |
