@@ -2,7 +2,7 @@
 # Mock Sequence Pattern Analyzer
 
 ## Overview
-This tool analyzes Mockito usage patterns in Java test code to identify mock clones and suggest refactoring opportunities. It automatically classifies mock sequences into 15 core patterns that cover 97% of all observed cases.
+This tool categorizes and organizes mock patterns in Java test code using Mockito. It identifies and classifies mock sequences into 15 core patterns, providing a comprehensive overview of mock usage.
 
 ## Pattern Classification
 ### 1. Pattern Components
@@ -123,6 +123,6 @@ This structure enables:
 
 ## Why 15 Patterns?
 We focus on these 15 patterns because:
-- They cover **97%** of 11,334 analyzed cases
+- They cover **97%** of 11,334 analyzed mock objects
 - The remaining 58 patterns account for just **2%** combined
 
