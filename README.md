@@ -126,9 +126,3 @@ We focus on these 15 patterns because:
 - They cover **97%** of 11,334 analyzed cases
 - The remaining 58 patterns account for just **2%** combined
 
-Our analysis of 6 Java projects (dubbo, spring-security, etc.) revealed:
-1. **Diminishing Returns**: Patterns 16-73 each had <0.5% frequency
-2. **Clear Patterns**: Top 15 show distinct usage characteristics
-3. **Actionable Insights**: 90% clone reduction potential in top 5 patterns
-
-
