@@ -63,7 +63,7 @@ output/
         "variableName": "network",
         "variableType": "Network",
         "mockedClass": "Network",
-        "isReuseableMock": false,
+        "isReuseableMock": "Fully Localized",
         "pattern_id": 1,
         "mockPattern": "Creation: Local Mock Creation in Test Case; Stubbing: Test Case; Verification: None",
         "classContext": {
