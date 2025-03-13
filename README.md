@@ -64,6 +64,7 @@ output/
         "variableType": "Network",
         "mockedClass": "Network",
         "isReuseableMock": false,
+        "pattern_id": 1,
         "mockPattern": "Creation: Local Mock Creation in Test Case; Stubbing: Test Case; Verification: None",
         "classContext": {
           "packageName": "org.apache.cloudstack.api.command.user.network",
@@ -95,8 +96,7 @@ output/
               ]
             }
           }
-        ],
-        "pattern_id": 1
+        ]
       },
       ```
 
